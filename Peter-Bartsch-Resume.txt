@@ -1,57 +1,58 @@
-﻿Peter Bartsch            (847) 636-2708        peter@peterbartsch.com
-A visionary product leader who transforms complex challenges into elegant solutions. With over 20 years of experience,  spanning startups to Fortune 500 companies, I bring strategic vision and hands-on leadership to organizations ready for change. Known for building high-performing teams and delivering results that drive business growth.
+﻿PETER BARTSCH                  PETER@PETERBARTSCH.COM                          (847) 636-2708
+Howdy. I'm Pete. I create, develop and manage new digital products and experiences, and the teams that make it all happen. From scrappy startups to Fortune 500s, I've brought strategic vision and hands-on leadership to projects and groups in rapid transformation. I am passionate about automation and AI as a design tool, and love complex challenges.
 
 
-EXPERIENCE
-THIOSPHERE.ORG / THIOS.CO
-Inventor | July 2024 - Present
-* Pioneering an open-source modular shelter system
-* Leading end-to-end product development of the initial product, the Saunosphere, from concept to manufacturing
-* Establishing scalable production methodologies for diverse Thiosphere applications globally
+PROFESSIONAL EXPERIENCE
+THIOSPHERE.ORG / THIOS + COMPANY
+Inventor/Founder | July 2024 - Present
+* Invented modular shelter system for diverse applications, designed to be built  with simple tools and common materials
+* Mastered Blender 3D, OnShape CAD, 3D printing and carpentry skills while prototyping the concept to market readiness
+* Iterated designs to production-ready specifications, including comprehensive bill of materials and fabrication cost analysis
+* Leveraged Cursor AI + Claude Code to build online marketing sites and business tools, integrating multiple AI services
+* Open-sourced design files to focus on key use case: building zero-mile farming communities with Agrospheres
 
 
 JOHN DEERE AND COMPANY
-Senior Lead UX, Digital Customer Experience | August 2020 - July 2024
-* Led digital transformation initiative that increased global recurring revenue by creating seamless self-service experiences
-* Unified global customer authentication and account management, establishing consistent experience across all markets
-* Guided enterprise-wide transition to modern design tools and practices, improving team efficiency and product quality
-* Architected license management platform now used across multiple product lines worldwide
+Senior Lead User Experience, Digital Customer Experience | August 2020 - July 2024
+* Led User Experience for Digital Customer Experience, creating seamless self-service experiences across the enterprise
+* Unified global customer authentication and account management, establishing consistent experiences across all markets
+* Guided enterprise-wide transition to Figma from Sketch while creating comprehensive global design systems
+* Designed license management system deployed across all product lines worldwide, significantly increasing recurring revenue
 
 
-FOURKITES
-Head of UX Design | January 2017 - January 2020
+FOURKITES.COM
+Head of User Experience | January 2017 - January 2020
 * Grew design organization from sole practitioner to team of 10, launching 6 major products that secured key enterprise clients
 * Built design practice from ground up as early employee (#28), establishing processes that scaled with rapid company growth
-* Created and implemented design system that supported 300% year-over-year product growth
-* Led customer workshops at annual conference, growing attendance from 50 to 500+ participants
+* Created user research protocols that supported 300% year-over-year revenue growth, reaching $100MM annually
+* Led customer workshops at annual conference, growing attendance from 15 to 500+ participants over three years
 
 
-MAVENWAVE PARTNERS
-Senior Management Consultant | January 2014 - January 2017
+MAVENWAVE CONSULTING
+Senior Management Consultant / Agile + UX | January 2014 - January 2017
 * Transformed digital product development for Fortune 500 clients including Abbott, Nike, and OptumRx
-* Built and mentored cross-functional teams that consistently delivered ahead of schedule
-* Expanded client engagements through demonstrated value and strategic partnership
+* Built and mentored cross-functional design teams that consistently delivered ahead of schedule using Agile methodologies
+* Led “Understanding Agile” to a wide range of enterprise stakeholders, teaching fundamentals and fostering engagement
 
 
 NOKIA / HERE MAPS
-Product Marketing Manager | August 2012 - January 2014
-* Directed product strategy for real-time traffic platform serving millions of users globally
-* Created innovative data visualization tools that helped secure major automotive partnerships
+Product Marketing Manager, HERE Traffic | August 2012 - January 2014
+* Managed product marketing strategy for real-time traffic platform serving millions of users globally through in-dash GPS
+* Created revenue-generating inflight products including flight tracker that functioned even during connection outages
+* Joined acquired Trapster app to lead app  onboarding experience and integration into the HERE Traffic platform
 
 
 GOGO INFLIGHT INTERNET
-Product Manager | April 2008 - August 2012
-* Joined pre-launch team that scaled service across major US airlines
-* Created revenue-generating inflight products including sponsored flight tracker
-* Pioneered social media integration programs that increased user engagement
+Product Manager, Signature Services | April 2008 - August 2012
+* Joined pre-launch product team that brought inflight connectivity and related airborne/terrestrial web services to 6 airlines
+* Created revenue-generating inflight products including sponsored flight tracker that worked even when the connection didn’t
+* On team for first Agile integration with an FAA proctored manufacturing process
 
 
-EARLIER EXPERIENCE
-* Co-founder of two successful digital media startups
-* Led production teams creating online education content
-* Early innovator in e-commerce and digital product visualization
-
-
-EDUCATION
-Arizona State University
-B.A. Humanities: Architectural Theory
+ADDITIONALLY
+* Built and managed digital video production teams for online education startup cognistar.com as 1 of 6 co-founders
+* Led Quality Assurance on four Super Nintendo games for Life Fitness' exercise equipment platform "Exertainment"
+* Original crew member and board director for the 501(c)(3) supporting the How Weird Street Faire (howweird.org)
+* Snowboard instructor for disadvantaged inner city teens (chill.org @ Wachusett Mountain, MA) for 3 seasons
+* Started skateboard shop at 16 - helped pay for college
+Arizona State University, B.A. Humanities and Architectural Theory
