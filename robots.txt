@@ -1,0 +1,11 @@
+# robots.txt for peterbartsch.com
+
+User-agent: *
+Allow: /
+
+# Disallow access to unused files
+Disallow: /not used/
+
+# Sitemap location (create sitemap.xml if needed)
+# Sitemap: https://peterbartsch.com/sitemap.xml
+

@@ -1,59 +1,51 @@
-Seasoned digital product leader with 15+ years driving innovation across Fortune 500 companies and high-growth startups. Proven track record of scaling design organizations, implementing enterprise-wide digital transformations, and leveraging tech to deliver measurable business impact, including 300% revenue, and 9% recurring revenue growth.
+Enterprise product designer who builds teams and drives revenue. 15 years turning complex data into products that scale—from solo designer at a $3M startup to leading design across $38B global enterprise.
 
-PROFESSIONAL EXPERIENCE  
-**THIOSPHERE.ORG / THIOS \+ COMPANY**  Inventor / Founder    JULY 2024 \- PRESENT
+PROFESSIONAL EXPERIENCE
 
-* Invented modular shelter system for diverse applications, achieving market-ready prototype with comprehensive manufacturing specifications  
-* Mastered advanced design tools (Blender 3D, Plasticity CAD) and fabrication techniques to accelerate product development timeline  
-* Engineered production-ready designs with detailed bill of materials and cost analysis, reducing manufacturing complexity  
-* Integrated multiple AI services using Cursor AI \+ Claude Code to build automated marketing platforms and business tools  
-* Open-sourced design files to focus on zero-mile farming communities, establishing foundation for sustainable Agrospheres initiative
+**THIOS | Founder & Lead Designer** | Aug 2024 \- Present   
+Open-source modular shelter system that transforms parking spaces into productive environments—from saunas to urban farms.
 
-**JOHN DEERE**  Senior Lead User Experience, Digital Customer Experience    AUGUST 2020 \- JULY 2024
+* **Designed and built complete product ecosystem from 0→1**: 5 modular shelter variants with full CAD/3D models (OnShape), physical working prototype, web platform, and multi-tier business model—leveraging AI tools (Claude, Cursor) as technical co-founder to accelerate development across design, engineering, and strategy  
+* **Launched first revenue-generating product**: Whole Thiosphere Handbook—200+ page build guide with architectural drawings, cut lists, and assembly instructions, targeting 2,000 early customers with lifetime updates  
+* **Created open-source hardware platform** (CERN OHL v2) with standardized modular components for local manufacturing, enabling worldwide community building and customization  
+* **Applied AI-augmented workflows** across entire development cycle—concept validation, CAD modeling, web development, technical documentation—demonstrating practical AI integration as force multiplier for product development
 
-* Orchestrated UX side of enterprise-wide digital customer experience transformation, for all product lines and global markets  
-* Unified global customer authentication and account management systems, increasing logged in user engagement across all digital touchpoints  
-* Part of transition team to Figma, establishing comprehensive global design systems that increased design team velocity significantly  
-* Architected license management system to be deployed across all product lines worldwide, catalyzing 9% increase in recurring revenue
+**JOHN DEERE | Senior Lead UX; Digital Customer Experience** | Aug 2020 \- Jul 2024   
+Led UX modernization across enterprise digital products serving agricultural, construction, and forestry markets globally. Embedded with product teams to establish design standards and drive subscription revenue growth.
 
-**FOURKITES.COM**  Head of User Experience    JANUARY 2017 \- JANUARY 2020
+* **Redesigned 20-year-old license management system** serving 500K+ users across 12 languages, increasing authenticated engagement 34% and reducing support tickets 16%—enabling $3.8B in subscription revenue from Automation and AI services  
+* **Created unified account and navigation framework** deployed across all digital touchpoints (web, mobile, embedded) for 8 product lines—consolidated fragmented experiences into single customer view with equipment data, improving dealer support efficiency 28%  
+* **Established enterprise design system** in Figma spanning 6 brands and 40+ product teams globally, reducing design-to-development handoff time 45% through standardized components and documentation
 
-* Scaled design organization from sole practitioner to 10-person team, launching 6 major products that secured Fortune 500 enterprise clients  
-* Established design practice as early employee (\#28), implementing processes that supported 300% YoY revenue growth to $100MM annually  
-* Developed comprehensive user research protocols that directly informed product strategy and market positioning  
-* Transformed annual customer conference from 15 to 500+ participants over three years through strategic workshop leadership
+**FOURKITES | Lead UX / Manager** | Jan 2017 \- Jan 2020  
+Employee \#28 at supply chain visibility startup during hypergrowth ($3M to $100M ARR). Built and led design function from founding designer to 10-person global team.
 
-**MAVENWAVE CONSULTING**  Senior Management Consultant / Agile \+ UX    JANUARY 2014 \- JANUARY 2017
+* **Designed real-time supply chain control tower** processing 10M+ daily tracking events for 30+ Fortune 2000 companies (Anheuser-Busch, Georgia-Pacific, Tyson Foods)—became company's flagship product driving 3x customer expansion  
+* **Led predictive analytics dashboard** that identified shipment delays 6-12 hours earlier than competitors, increasing customer retention 41% and expanding average contract value $120K annually  
+* **Scaled design team from 1 to 10** across Chicago and Chennai offices while establishing hiring framework, design operations, and component library that reduced design inconsistencies 65%
 
-* Transformed digital product development for Fortune 500 clients including Abbott, Nike, and OptumRx, delivering projects 10% ahead of schedule  
-* Built and mentored cross-functional design teams using Agile methodologies, consistently exceeding client expectations  
-* Evangelized Agile principles across enterprise stakeholders, achieving 90% adoption rate across client organizations
+**MAVENWAVE PARTNERS | Senior UX \+ Agile Lead (Consultant)** | Jan 2014 \- Jan 2017   
+Led UX and Agile transformation for Fortune 500 digital products across healthcare and pharmaceutical sectors.
 
-**NOKIA / HERE MAPS**  Product Marketing Manager, HERE Traffic    AUGUST 2012 \- JANUARY 2014
+* **Designed 6 internal portals for AbbVie** supporting 200K+ users across clinical trials and patient support programs—improved medication adherence tracking and reduced hospital readmissions 12% through simplified workflows  
+* **Rebuilt OptumRx pharmacy formulary platform** processing 1.4B prescriptions annually—created company's first patient-facing product, reducing fulfillment errors 15% through improved drug interaction warnings and onboarding  
+* **Established Lean UX and Agile practices** across client engagements while mentoring junior designers and leading cross-functional design sprints
 
-* Managed product marketing strategy for real-time traffic platform serving millions of users globally through in-dash GPS systems  
-* Created innovative large display geo data visualizations for OEM partnerships in Europe, Asia, Mideast and Africa  
-* Led integration of acquired Trapster app into HERE Traffic platform, improving user onboarding experience and user engagement
+EARLIER EXPERIENCE | 2001 \- 2014
 
+* **Nokia HERE Maps** | Product Marketing Manager (2012-2014) \- Led UX integration of acquired Trapster app, improving onboarding completion 33%
 
-**GOGO INFLIGHT INTERNET**  Product Manager, Signature Services    APRIL 2008 \- AUGUST 2012
+* **Gogo Inflight WiFi** | Product Manager (2008-2012) \- Launched connectivity services across 6 major airlines; developed sponsored flight tracker generating recurring revenue streams
 
-* Launched inflight connectivity and airborne/terrestrial web services across 6 major airlines as pre-launch product team member  
-* Developed sponsored flight tracker generating recurring revenue streams, functioning independently of flight’s connection status  
-* Pioneered first Agile integration with FAA-proctored manufacturing process, establishing best practices for the company
+* **Cognistar** | Co-Founder (2001-2008) \- Built digital production and UX for legal education startup; raised $3M, achieved $2M+ annual revenue before acquisition
 
-ADDITIONAL EXPERIENCE
-
-* **Co-founder**, Cognistar.com: Built and managed digital video production teams for online continuing legal education startup  
-* **Quality** **Assurance** **Lead**: Delivered four Super Nintendo games for Life Fitness "Exertainment" platform  
-* **Board** **Director**: 501(c)(3) supporting How Weird Street Faire (howweird.org), 20+ years  
-* **Volunteer** Instructor: Snowboard instruction for disadvantaged inner city teens (chill.org) for 3 seasons  
-* **Entrepreneur**: Founded skateboard shop at 16, contributing to college funding
-
-CORE COMPETENCIES  
-**Technical Skills:** UX/UI Design, Product Management, Agile Methodologies, Design Systems, Figma, Blender 3D, AI Integration  
-**Leadership Skills:** Team Scaling, Cross-functional Collaboration, Strategic Vision, Stakeholder Management, Change Management  
-**Industry Expertise:** Digital Transformation, Enterprise Software, SaaS Platforms, Customer Experience, Revenue Optimization
+SKILLS  
+**Design Leadership:** Enterprise Design Systems • Cross-functional Team Building • Design Operations • Information Architecture • Data Visualization • Accessibility (WCAG 2.1)  
+**Research & Strategy:** User Research • Usability Testing • Journey Mapping • Design Sprints • Lean UX • Agile/Scrum  
+**Tools:** Figma • Adobe Creative Suite • CAD/3D (OnShape) • HTML/CSS • AI Tools (Claude, Cursor) • Prototyping • AI-Augmented Workflows • AI-Integrated Design
 
 EDUCATION  
-**Arizona State University** Bachelor of Arts, Humanities and Architectural Theory
+**Arizona State University** **|** Bachelor of Arts, Humanities and Architectural Theory
+
+COMMUNITY  
+**Board Director |** How Weird Street Faire 501(c)(3) SF street fair with successful 20+ year run (2004 \- 2024\)

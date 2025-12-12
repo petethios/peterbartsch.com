@@ -1,2 +1,0 @@
-# peterbartsch.com
-CV site
