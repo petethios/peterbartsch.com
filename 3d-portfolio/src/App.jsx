@@ -2,7 +2,7 @@ import { Suspense, useState } from 'react'
 import { Canvas } from '@react-three/fiber'
 import { OrbitControls, Environment, Html } from '@react-three/drei'
 import { Physics, RigidBody } from '@react-three/rapier'
-import { BlockoutModel2 } from './components/BlockoutModel2'
+import { BlockoutModel3 } from './components/BlockoutModel3'
 
 export default function App() {
   const [clickedObject, setClickedObject] = useState(null)
@@ -24,8 +24,8 @@ export default function App() {
           </mesh>
         </RigidBody>
 
-        {/* Blockout Model 2 */}
-        <BlockoutModel2
+        {/* Blockout Model 3 */}
+        <BlockoutModel3
           scale={0.1}
           position={[0, 0, 0]}
           onClick={(e) => {

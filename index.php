@@ -90,7 +90,7 @@
         style="position:absolute;left:-10000px;top:auto;width:1px;height:1px;overflow:hidden;">Skip to main content</a>
     <!-- Sticky Header Nav -->
     <div id="experimental-banner">
-        <a href="http://localhost:5173" target="_blank">TRY NEW 3D RESUME (EXPERIMENTAL)</a>
+        <a href="3d-experiment.php">TRY MY NEW 3D RESUME (EXPERIMENTAL)!</a>
     </div>
     <header id="site-header" role="banner">
         <h1 id="page-title" class="visually-hidden">Peter Bartsch — Curriculum Vitae</h1>
