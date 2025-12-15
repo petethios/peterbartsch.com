@@ -1,0 +1,36 @@
+# Allow CORS for assets
+<IfModule mod_headers.c>
+    # Unset any parent CSP headers first
+    Header unset Content-Security-Policy
+    Header unset X-Content-Security-Policy
+    
+    # Set permissive CSP for Three.js (using 'always' to override parent)
+    Header always set Content-Security-Policy "default-src 'self'; script-src 'self' 'unsafe-eval' 'unsafe-inline' 'wasm-unsafe-eval'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https: blob:; font-src 'self' data:; connect-src 'self' https: wss: blob: data:; worker-src 'self' blob:; child-src 'self' blob:; object-src 'none';"
+    
+    Header always set Access-Control-Allow-Origin "*"
+    Header always set Access-Control-Allow-Methods "GET, OPTIONS"
+    Header always set Access-Control-Allow-Headers "Content-Type"
+</IfModule>
+
+# Enable compression for faster loading
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css text/javascript application/javascript application/json
+    AddOutputFilterByType DEFLATE application/wasm
+</IfModule>
+
+# Set proper MIME types
+<IfModule mod_mime.c>
+    AddType application/javascript .js
+    AddType text/css .css
+    AddType model/gltf-binary .glb
+    AddType application/wasm .wasm
+</IfModule>
+
+# Enable browser caching for assets
+<IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresByType model/gltf-binary "access plus 1 year"
+    ExpiresByType application/javascript "access plus 1 month"
+    ExpiresByType text/css "access plus 1 month"
+    ExpiresByType application/wasm "access plus 1 year"
+</IfModule>

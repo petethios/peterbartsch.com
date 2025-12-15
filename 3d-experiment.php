@@ -25,8 +25,7 @@
     <!-- Twitter -->
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Peter Bartsch - 3D Interactive Resume Experiment">
-    <meta name="twitter:description"
-        content="An experimental 3D portfolio experience built with Three.js.">
+    <meta name="twitter:description" content="An experimental 3D portfolio experience built with Three.js.">
 
     <meta name="theme-color" content="#2f4f50">
     <meta name="theme-color" content="#2f4f50" media="(prefers-color-scheme: light)">
@@ -69,12 +68,12 @@
     <link rel="preload" href="ari.ttf" as="font" type="font/ttf" crossorigin>
     <a href="#main" class="visually-hidden"
         style="position:absolute;left:-10000px;top:auto;width:1px;height:1px;overflow:hidden;">Skip to main content</a>
-    
+
     <!-- Experimental Banner -->
     <div id="experimental-banner">
-        <a href="index.php">< BACK</a> <strong>EXPERIMENTAL</strong>
+        <a href="index.php">&lt; BACK</a> <strong>EXPERIMENTAL</strong>
     </div>
-    
+
     <!-- Sticky Header Nav -->
     <header id="site-header" role="banner">
         <h1 id="page-title" class="visually-hidden">3D Interactive Resume Experiment</h1>
@@ -112,7 +111,8 @@
         <section>
             <p
                 style="text-align: justify; font-family: Ari, monospace; font-size: 24px; font-weight: 400; margin-top: 20px;">
-                An experimental 3D portfolio experience built with <strong>Three.js</strong>. Navigate through my work in an immersive 3D environment. Based on Bruno Simon's folio-2025 template.
+                An experimental 3D portfolio experience built with <strong>Three.js</strong>. Navigate through my work
+                in an immersive 3D environment. Based on Bruno Simon's folio-2025 template.
             </p>
         </section>
     </section>
@@ -122,20 +122,20 @@
             <aside id="left">
                 <header id="banner">
                     <div style="display: flex; justify-content: space-between; align-items: center;">
-                        <h4 id="name"><a href="index.php"
-                                style="text-decoration:none; color:inherit;">3D EXPERIMENT</a></h4>
+                        <h4 id="name"><a href="3d/pb3dcv.html" style="text-decoration:none; color:inherit;">3D
+                                EXPERIMENT</a></h4>
                     </div>
                     <h2 id="title">INTERACTIVE RESUME</h2>
                 </header>
 
                 <section id="desc-section">
                     <p id="desc" style="text-align: justify;">
-                        An experimental 3D portfolio experience built with <strong>Three.js</strong> and WebGL. 
-                        Navigate through my work in an immersive 3D environment. This is a work-in-progress experiment 
+                        An experimental 3D portfolio experience built with <strong>Three.js</strong> and WebGL.
+                        Navigate through my work in an immersive 3D environment. This is a work-in-progress experiment
                         exploring new ways to present portfolio content.
                     </p>
                     <p id="desc" style="text-align: justify; margin-top: 20px;">
-                        <strong>Note:</strong> This experience requires a modern browser with WebGL support. 
+                        <strong>Note:</strong> This experience requires a modern browser with WebGL support.
                         Best viewed on desktop. Performance may vary on mobile devices.
                     </p>
                 </section>
@@ -145,7 +145,7 @@
                 <section id="resume-links" style="margin-top: 30px;">
                     <h4 style="margin-top: 20px;">LAUNCH EXPERIENCE</h4>
                     <p style="margin-top: 20px;">
-                        <a href="http://localhost:5173" target="_blank" class="button button2" rel="noopener noreferrer"
+                        <a href="3d/pb3dcv.html" target="_blank" class="button button2" rel="noopener noreferrer"
                             style="font-size: 18px; padding: 15px 30px; display: inline-block; text-align: center;">
                             🚀 ENTER 3D EXPERIENCE
                         </a>
@@ -154,21 +154,23 @@
                         Opens in a new window. Make sure the development server is running on port 5173.
                     </p>
 
-                    <hr style="margin-top: 30px; border: 0; border-top: 2px solid rgba(134, 216, 221, 0.3); width: 86%;">
+                    <hr
+                        style="margin-top: 30px; border: 0; border-top: 2px solid rgba(134, 216, 221, 0.3); width: 86%;">
 
                     <h4 style="margin-top: 30px;">ABOUT THIS PROJECT</h4>
                     <p style="text-align: justify; font-size: 14px; line-height: 1.6; margin-top: 15px;">
-                        This 3D interactive resume is built using <strong>Three.js</strong> and is based on 
-                        <a href="https://github.com/brunosimon/folio-2025" target="_blank" rel="noopener noreferrer" 
-                           style="color: #86d8dd; text-decoration: underline;">Bruno Simon's folio-2025</a> template.
+                        This 3D interactive resume is built using <strong>Three.js</strong> and is based on
+                        <a href="https://github.com/brunosimon/folio-2025" target="_blank" rel="noopener noreferrer"
+                            style="color: #86d8dd; text-decoration: underline;">Bruno Simon's folio-2025</a> template.
                     </p>
                     <p style="text-align: justify; font-size: 14px; line-height: 1.6; margin-top: 15px;">
-                        The experience features real-time 3D rendering, physics-based interactions, and an 
-                        immersive environment to explore my portfolio work. It's an experimental approach to 
+                        The experience features real-time 3D rendering, physics-based interactions, and an
+                        immersive environment to explore my portfolio work. It's an experimental approach to
                         portfolio presentation that pushes the boundaries of web-based 3D experiences.
                     </p>
 
-                    <hr style="margin-top: 30px; border: 0; border-top: 2px solid rgba(134, 216, 221, 0.3); width: 86%;">
+                    <hr
+                        style="margin-top: 30px; border: 0; border-top: 2px solid rgba(134, 216, 221, 0.3); width: 86%;">
 
                     <h4 style="margin-top: 30px;">TECHNICAL DETAILS</h4>
                     <ul style="font-size: 14px; line-height: 1.8; margin-top: 15px; padding-left: 20px;">
@@ -179,7 +181,8 @@
                         <li><strong>Status:</strong> Experimental / Work in Progress</li>
                     </ul>
 
-                    <hr style="margin-top: 30px; border: 0; border-top: 2px solid rgba(134, 216, 221, 0.3); width: 86%;">
+                    <hr
+                        style="margin-top: 30px; border: 0; border-top: 2px solid rgba(134, 216, 221, 0.3); width: 86%;">
 
                     <h4 style="margin-top: 30px;">CONTROLS</h4>
                     <ul style="font-size: 14px; line-height: 1.8; margin-top: 15px; padding-left: 20px;">
@@ -189,7 +192,8 @@
                         <li><strong>Space:</strong> Jump</li>
                     </ul>
 
-                    <hr style="margin-top: 30px; border: 0; border-top: 2px solid rgba(134, 216, 221, 0.3); width: 86%;">
+                    <hr
+                        style="margin-top: 30px; border: 0; border-top: 2px solid rgba(134, 216, 221, 0.3); width: 86%;">
 
                     <p style="margin-top: 30px;">
                         <a href="index.php" class="button button2" style="display: inline-block;">
@@ -202,32 +206,38 @@
             <section id="right">
                 <div style="padding: 40px 20px; text-align: center;">
                     <div style="max-width: 600px; margin: 0 auto;">
-                        <h2 style="font-family: Rombyte, monospace; font-size: 48px; margin-bottom: 30px; color: #ffffff;">
+                        <h2
+                            style="font-family: Rombyte, monospace; font-size: 48px; margin-bottom: 30px; color: #ffffff;">
                             3D INTERACTIVE EXPERIENCE
                         </h2>
-                        <p style="font-family: Ari, monospace; font-size: 20px; line-height: 1.6; margin-bottom: 40px; color: #86d8dd;">
-                            Explore my portfolio in an immersive 3D environment. Navigate through projects, 
+                        <p
+                            style="font-family: Ari, monospace; font-size: 20px; line-height: 1.6; margin-bottom: 40px; color: #86d8dd;">
+                            Explore my portfolio in an immersive 3D environment. Navigate through projects,
                             interact with elements, and experience my work in a new dimension.
                         </p>
-                        
+
                         <div style="background: rgba(0, 0, 0, 0.3); padding: 40px; border: 2px solid rgba(134, 216, 221, 0.3); 
                                     margin: 40px 0; border-radius: 4px;">
-                            <h3 style="font-family: Rombyte, monospace; font-size: 32px; margin-bottom: 20px; color: #ffffff;">
+                            <h3
+                                style="font-family: Rombyte, monospace; font-size: 32px; margin-bottom: 20px; color: #ffffff;">
                                 READY TO EXPLORE?
                             </h3>
-                            <p style="font-family: Ari, monospace; font-size: 16px; line-height: 1.6; margin-bottom: 30px; color: #ffffff;">
-                                Click the button below to launch the 3D experience. Make sure you have a modern browser 
+                            <p
+                                style="font-family: Ari, monospace; font-size: 16px; line-height: 1.6; margin-bottom: 30px; color: #ffffff;">
+                                Click the button below to launch the 3D experience. Make sure you have a modern browser
                                 and WebGL support enabled.
                             </p>
-                            <a href="http://localhost:5173" target="_blank" class="button button2" rel="noopener noreferrer"
-                                style="font-size: 20px; padding: 20px 40px; display: inline-block; text-align: center; 
+                            <a href="3d/pb3dcv.html" target="_blank" class="button button2"
+                                rel="noopener noreferrer" style="font-size: 20px; padding: 20px 40px; display: inline-block; text-align: center; 
                                        background: rgba(134, 216, 221, 0.2); border: 2px solid #86d8dd;">
                                 🚀 LAUNCH 3D EXPERIENCE
                             </a>
                         </div>
 
-                        <div style="margin-top: 60px; padding: 30px; background: rgba(0, 0, 0, 0.2); border-radius: 4px;">
-                            <h4 style="font-family: Rombyte, monospace; font-size: 24px; margin-bottom: 20px; color: #86d8dd;">
+                        <div
+                            style="margin-top: 60px; padding: 30px; background: rgba(0, 0, 0, 0.2); border-radius: 4px;">
+                            <h4
+                                style="font-family: Rombyte, monospace; font-size: 24px; margin-bottom: 20px; color: #86d8dd;">
                                 EXPERIMENTAL FEATURES
                             </h4>
                             <ul style="text-align: left; font-family: Ari, monospace; font-size: 16px; line-height: 2; 
@@ -241,8 +251,8 @@
                         </div>
 
                         <div style="margin-top: 40px; font-size: 14px; opacity: 0.7;">
-                            <p>Based on <a href="https://github.com/brunosimon/folio-2025" target="_blank" 
-                                           rel="noopener noreferrer" style="color: #86d8dd;">Bruno Simon's folio-2025</a></p>
+                            <p>Based on <a href="https://github.com/brunosimon/folio-2025" target="_blank"
+                                    rel="noopener noreferrer" style="color: #86d8dd;">Bruno Simon's folio-2025</a></p>
                         </div>
                     </div>
                 </div>
@@ -264,4 +274,3 @@
 </body>
 
 </html>
-

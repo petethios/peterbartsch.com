@@ -1,6 +1,6 @@
 ﻿PETER BARTSCH
 (847) 636-2708   |   peter@peterbartsch.com   |   portfolio: peterbartsch.com  |  http://linkedin.com/in/peterbartsch
-Enterprise product designer who builds teams and drives revenue. 15 years turning complex data into products that scale—from solo designer at a $3M startup to leading design across $38B global enterprise.
+Product designer specializing in enterprise design systems and complex data products. 15 years hands-on work—from solo IC at $3M startup to senior designer at $38B enterprise. Research, prototyping, systematic design, and occasional team building along the way.
 
 
 PROFESSIONAL EXPERIENCE
@@ -8,7 +8,6 @@ THIOS | Founder & Lead Designer | Aug 2024 - Present
 Open-source modular shelter system that transforms parking spaces into productive environments—from saunas to urban farms.
 * Designed and built complete product ecosystem from 0→1: 5 modular shelter variants with full CAD/3D models (OnShape), physical working prototype, web platform, and multi-tier business model—leveraging AI tools (Claude, Cursor) as technical co-founder to accelerate development across design, engineering, and strategy
 * Launched first revenue-generating product: Whole Thiosphere Handbook—200+ page build guide with architectural drawings, cut lists, and assembly instructions, targeting 2,000 early customers with lifetime updates
-* Created open-source hardware platform (CERN OHL v2) with standardized modular components for local manufacturing, enabling worldwide community building and customization
 * Applied AI-augmented workflows across entire development cycle—concept validation, CAD modeling, web development, technical documentation—demonstrating practical AI integration as force multiplier for product development
 
 JOHN DEERE | Senior Lead UX; Digital Customer Experience | Aug 2020 - Jul 2024 
