@@ -197,17 +197,17 @@ export default function App() {
             {/* Post Processing: Bloom for Neon Effect + Cinematic touches */}
             <EffectComposer disableNormalPass>
               <Bloom
-                luminanceThreshold={0.2}
+                luminanceThreshold={0.8}
                 mipmappedBlur
-                intensity={1.5}
-                radius={0.5}
+                intensity={0.2}
+                radius={0.1}
               />
-              <DepthOfField
+              {/* <DepthOfField
                 focusDistance={0} // Focus on camera/near objects
                 focalLength={0.02} // Wide focal length
                 bokehScale={2} // Blur strength
                 height={480} // Resolution scale
-              />
+              /> */}
               <Vignette
                 eskil={false}
                 offset={0.1}
