@@ -43,14 +43,19 @@ export function FakeVehicle({ position = [0, 0, 0], mobileControls = {} }) {
         const direction = new Vector3(0, 0, 1)
         direction.applyQuaternion(ref.current.quaternion)
 
+        const moveVector = new Vector3()
+
         // Simple position-based movement
         // Keyboard or touch
         if (forward || mobileControls.forward) {
-            ref.current.position.addScaledVector(direction, speed * delta)
+            moveVector.addScaledVector(direction, speed * delta)
         }
         if (backward || mobileControls.backward) {
-            ref.current.position.addScaledVector(direction, -speed * delta)
+            moveVector.addScaledVector(direction, -speed * delta)
         }
+
+        // Apply movement to bike
+        ref.current.position.add(moveVector)
 
         // --- 3. Ground Following (Simple floor at Y=0 for now) ---
         // Keep bike on the ground
@@ -59,21 +64,28 @@ export function FakeVehicle({ position = [0, 0, 0], mobileControls = {} }) {
         // --- 4. Respawn Logic ---
         if (ref.current.position.y < -10) {
             ref.current.position.set(position[0], position[1], position[2])
-            ref.current.rotation.set(0, 0, 0) // Reset rotation too if needed
-            // Reset velocity if we had physics velocity, but here it's direct position
+            ref.current.rotation.set(0, 0, 0)
+            // Reset camera to default offset if respawned?
+            state.camera.position.set(position[0], position[1] + 5, position[2] + 10)
         }
 
-        // --- 5. Camera Follow ---
-        const cameraOffset = new Vector3(0, 5, -10)
-        cameraOffset.applyQuaternion(ref.current.quaternion)
-        const targetCamPos = ref.current.position.clone().add(cameraOffset)
+        // --- 5. Camera & Orbiter Logic ---
+        // Instead of forcing the camera to a specific spot, we drag it along with the bike.
+        // This allows OrbitControls to handle the rotation/zoom relative to the bike.
 
-        state.camera.position.lerp(targetCamPos, 0.1)
-        state.camera.lookAt(ref.current.position)
+        // Move camera by the same amount the bike moved
+        state.camera.position.add(moveVector)
+
+        // Update OrbitControls target to stay focused on the bike
+        if (state.controls) {
+            state.controls.target.copy(ref.current.position)
+            state.controls.target.y += 1.5 // Look slightly above the ground (at the rider/images)
+            state.controls.update()
+        }
     })
 
     return (
-        <group ref={ref} position={position}>
+        <group ref={ref} position={position} rotation={[0, 0, 0]}>
             <Bike />
         </group>
     )

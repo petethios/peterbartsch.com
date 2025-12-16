@@ -2037,13 +2037,13 @@
             font-size: 14px;
             letter-spacing: 1px;
             opacity: 1 !important;
-            /* Cyan Glow Effect */
-            text-shadow: 0 0 8px rgba(134, 216, 221, 0.8), 0 0 15px rgba(134, 216, 221, 0.4);
+            /* Cyan Glow Effect - Reduced intensity */
+            text-shadow: 0 0 4px rgba(134, 216, 221, 0.6), 0 0 8px rgba(134, 216, 221, 0.3);
             transition: all 0.3s ease;
         }
 
         #experimental-banner a:hover {
-            text-shadow: 0 0 12px rgba(134, 216, 221, 1), 0 0 20px rgba(134, 216, 221, 0.6);
+            text-shadow: 0 0 8px rgba(134, 216, 221, 0.8), 0 0 12px rgba(134, 216, 221, 0.5);
             letter-spacing: 2px;
             /* Slight expansion on hover */
         }

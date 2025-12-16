@@ -10,7 +10,7 @@ export function Environment(props) {
   const { nodes, materials } = useGLTF('./Blockout11.glb')
   return (
     <group {...props} dispose={null}>
-      <group position={[10.883, 3.001, 58.261]} rotation={[0, -1.28, 0]} scale={0.646}>
+      <group position={[25, 3.001, 80]} rotation={[0, -1.28, 0]} scale={0.646}>
         <mesh geometry={nodes.ContainerContainer.geometry} material={nodes.ContainerContainer.material} position={[0, -0.37, 0]} rotation={[0, -1.571, 0]} />
         <mesh geometry={nodes.ContainerDecals.geometry} material={nodes.ContainerDecals.material} position={[0, -0.988, 0]} rotation={[0, -1.571, 0]} />
         <mesh geometry={nodes.ContainerDoors.geometry} material={nodes.ContainerDoors.material} position={[0, -0.87, 0]} rotation={[0, -1.571, 0]} />
@@ -124,7 +124,7 @@ export function Environment(props) {
         <mesh geometry={nodes.Torus001.geometry} material={nodes.Torus001.material} />
         <mesh geometry={nodes.Torus002.geometry} material={nodes.Torus002.material} />
       </group> */}
-      <mesh geometry={nodes.Tractor.geometry} material={nodes.Tractor.material} position={[-15.387, 2.994, 69.542]} rotation={[Math.PI / 2, 0, -2.156]} scale={0.027} />
+      <mesh geometry={nodes.Tractor.geometry} material={nodes.Tractor.material} position={[-30, 2.994, 110]} rotation={[Math.PI / 2, 0, -2.156]} scale={0.027} />
       <mesh geometry={nodes['Traffic_Cone_(Photoscanned)'].geometry} material={nodes['Traffic_Cone_(Photoscanned)'].material} position={[-9.733, 2.206, 44.881]} scale={3.195} />
       <mesh geometry={nodes.Curve005.geometry} material={nodes.Curve005.material} position={[15.41, 1.702, 78.369]} rotation={[1.441, 0.034, 2.676]} scale={30.703} />
       <mesh geometry={nodes.Curve004.geometry} material={nodes.Curve004.material} position={[15.465, 1.698, 78.478]} rotation={[1.441, 0.034, 2.676]} scale={30.703} />
@@ -134,13 +134,13 @@ export function Environment(props) {
       <mesh geometry={nodes.Curve.geometry} material={nodes.Curve.material} position={[15.52, 1.657, 78.586]} rotation={[1.441, 0.034, 2.676]} scale={30.703} />
       <mesh geometry={nodes.Snowboard2.geometry} material={nodes.Snowboard2.material} position={[-6.453, 2.994, 23.993]} rotation={[0.912, -0.011, 0.449]} scale={2.184} />
       <mesh geometry={nodes.Skateboard.geometry} material={nodes.Skateboard.material} position={[5.2, 3.024, 17.96]} rotation={[0, -0.833, -1.386]} scale={2.133} />
-      <mesh geometry={nodes.gogo_inflight.geometry} material={nodes.gogo_inflight.material} position={[10.893, 0.415, 42.081]} rotation={[1.317, 0.073, 2.868]} />
+      <mesh geometry={nodes.gogo_inflight.geometry} material={nodes.gogo_inflight.material} position={[20, 0.415, 20]} rotation={[1.317, 0.073, 2.868]} />
       <mesh geometry={nodes.life_fitness.geometry} material={nodes.life_fitness.material} position={[-10.079, 0.42, 67.705]} rotation={[1.313, -0.056, -2.932]} />
-      <mesh geometry={nodes.FourKites.geometry} material={nodes.FourKites.material} position={[15.43, 0.41, 76.655]} rotation={[1.602, 0.042, 2.848]} />
+      <mesh geometry={nodes.FourKites.geometry} material={nodes.FourKites.material} position={[30, 0.41, 140]} rotation={[1.602, 0.042, 2.848]} />
       <mesh geometry={nodes.FA_Skates.geometry} material={nodes.FA_Skates.material} position={[7.284, 0.309, 17.617]} rotation={[1.317, 0.071, 2.874]} />
       <mesh geometry={nodes.Chillorg.geometry} material={nodes.Chillorg.material} position={[-4.914, 0.415, 25.117]} rotation={[1.334, -0.118, -2.687]} />
-      <mesh geometry={nodes.Thios.geometry} material={nodes.Thios.material} position={[13.094, 0.4, 57.573]} rotation={[1.602, 0.042, 2.848]} />
-      <mesh geometry={nodes.HERE.geometry} material={nodes.HERE.material} position={[-7.988, 0.308, 46.766]} rotation={[1.356, -0.154, -2.53]} />
+      <mesh geometry={nodes.Thios.geometry} material={nodes.Thios.material} position={[25, 0.4, 80]} rotation={[1.602, 0.042, 2.848]} />
+      <mesh geometry={nodes.HERE.geometry} material={nodes.HERE.material} position={[-20, 0.308, 50]} rotation={[1.356, -0.154, -2.53]} />
     </group>
   )
 }

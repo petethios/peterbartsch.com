@@ -119,89 +119,7 @@
 
     <div id="frame-container">
         <main id="main" role="main" aria-labelledby="page-title">
-            <aside id="left">
-                <header id="banner">
-                    <div style="display: flex; justify-content: space-between; align-items: center;">
-                        <h4 id="name"><a href="3d/pb3dcv.html" style="text-decoration:none; color:inherit;">3D
-                                EXPERIMENT</a></h4>
-                    </div>
-                    <h2 id="title">INTERACTIVE RESUME</h2>
-                </header>
 
-                <section id="desc-section">
-                    <p id="desc" style="text-align: justify;">
-                        An experimental 3D portfolio experience built with <strong>Three.js</strong> and WebGL.
-                        Navigate through my work in an immersive 3D environment. This is a work-in-progress experiment
-                        exploring new ways to present portfolio content.
-                    </p>
-                    <p id="desc" style="text-align: justify; margin-top: 20px;">
-                        <strong>Note:</strong> This experience requires a modern browser with WebGL support.
-                        Best viewed on desktop. Performance may vary on mobile devices.
-                    </p>
-                </section>
-
-                <hr style="margin-top: 20px; border: 0; border-top: 2px solid rgba(134, 216, 221, 0.3); width: 86%;">
-
-                <section id="resume-links" style="margin-top: 30px;">
-                    <h4 style="margin-top: 20px;">LAUNCH EXPERIENCE</h4>
-                    <p style="margin-top: 20px;">
-                        <a href="3d/pb3dcv.html" target="_blank" class="button button2" rel="noopener noreferrer"
-                            style="font-size: 18px; padding: 15px 30px; display: inline-block; text-align: center;">
-                            🚀 ENTER 3D EXPERIENCE
-                        </a>
-                    </p>
-                    <p style="margin-top: 20px; font-size: 14px; opacity: 0.8;">
-                        Opens in a new window. Make sure the development server is running on port 5173.
-                    </p>
-
-                    <hr
-                        style="margin-top: 30px; border: 0; border-top: 2px solid rgba(134, 216, 221, 0.3); width: 86%;">
-
-                    <h4 style="margin-top: 30px;">ABOUT THIS PROJECT</h4>
-                    <p style="text-align: justify; font-size: 14px; line-height: 1.6; margin-top: 15px;">
-                        This 3D interactive resume is built using <strong>Three.js</strong> and is based on
-                        <a href="https://github.com/brunosimon/folio-2025" target="_blank" rel="noopener noreferrer"
-                            style="color: #86d8dd; text-decoration: underline;">Bruno Simon's folio-2025</a> template.
-                    </p>
-                    <p style="text-align: justify; font-size: 14px; line-height: 1.6; margin-top: 15px;">
-                        The experience features real-time 3D rendering, physics-based interactions, and an
-                        immersive environment to explore my portfolio work. It's an experimental approach to
-                        portfolio presentation that pushes the boundaries of web-based 3D experiences.
-                    </p>
-
-                    <hr
-                        style="margin-top: 30px; border: 0; border-top: 2px solid rgba(134, 216, 221, 0.3); width: 86%;">
-
-                    <h4 style="margin-top: 30px;">TECHNICAL DETAILS</h4>
-                    <ul style="font-size: 14px; line-height: 1.8; margin-top: 15px; padding-left: 20px;">
-                        <li><strong>Framework:</strong> Three.js / WebGL</li>
-                        <li><strong>Template:</strong> Bruno Simon's folio-2025</li>
-                        <li><strong>Physics:</strong> Cannon.js</li>
-                        <li><strong>Build Tool:</strong> Vite</li>
-                        <li><strong>Status:</strong> Experimental / Work in Progress</li>
-                    </ul>
-
-                    <hr
-                        style="margin-top: 30px; border: 0; border-top: 2px solid rgba(134, 216, 221, 0.3); width: 86%;">
-
-                    <h4 style="margin-top: 30px;">CONTROLS</h4>
-                    <ul style="font-size: 14px; line-height: 1.8; margin-top: 15px; padding-left: 20px;">
-                        <li><strong>WASD</strong> or <strong>Arrow Keys:</strong> Move</li>
-                        <li><strong>Mouse:</strong> Look around</li>
-                        <li><strong>Click:</strong> Interact with objects</li>
-                        <li><strong>Space:</strong> Jump</li>
-                    </ul>
-
-                    <hr
-                        style="margin-top: 30px; border: 0; border-top: 2px solid rgba(134, 216, 221, 0.3); width: 86%;">
-
-                    <p style="margin-top: 30px;">
-                        <a href="index.php" class="button button2" style="display: inline-block;">
-                            ← Back to Main Resume
-                        </a>
-                    </p>
-                </section>
-            </aside>
 
             <section id="right">
                 <div style="padding: 40px 20px; text-align: center;">
@@ -227,8 +145,8 @@
                                 Click the button below to launch the 3D experience. Make sure you have a modern browser
                                 and WebGL support enabled.
                             </p>
-                            <a href="3d/pb3dcv.html" target="_blank" class="button button2"
-                                rel="noopener noreferrer" style="font-size: 20px; padding: 20px 40px; display: inline-block; text-align: center; 
+                            <a href="3d/pb3dcv.html" target="_blank" class="button button2" rel="noopener noreferrer"
+                                style="font-size: 20px; padding: 20px 40px; display: inline-block; text-align: center; 
                                        background: rgba(134, 216, 221, 0.2); border: 2px solid #86d8dd;">
                                 🚀 LAUNCH 3D EXPERIENCE
                             </a>

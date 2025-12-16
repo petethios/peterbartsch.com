@@ -8,6 +8,7 @@ import { Physics, Debug, usePlane } from '@react-three/cannon'
 
 import { Vehicle } from './components/Vehicle'
 import { FakeVehicle } from './components/FakeVehicle'
+import { Road } from './components/Road'
 import { InteractiveHotspot } from './components/InteractiveHotspot'
 import { InfoPanel } from './components/InfoPanel'
 import { MobileControls } from './components/MobileControls'
@@ -121,7 +122,7 @@ export default function App() {
           { name: 'left', keys: ['ArrowLeft', 'a', 'A'] },
           { name: 'right', keys: ['ArrowRight', 'd', 'D'] },
         ]}>
-          <Canvas shadows camera={{ position: [0, 5, 20], fov: 50, near: 0.1, far: 1000 }}>
+          <Canvas shadows camera={{ position: [0, 5, -10], fov: 50, near: 0.1, far: 1000 }}>
             {/* Site Theme: Teal Background */}
             <color attach="background" args={['#518285']} />
 
@@ -133,39 +134,45 @@ export default function App() {
             <Suspense fallback={null}>
               <Physics gravity={[0, -9.8, 0]}>
                 <FloorCollider />
-                <Environment />
+                {/* <Environment /> */}
                 <FakeVehicle position={[0, 0, 0]} mobileControls={mobileControls} />
-
+                <Road />
 
               </Physics>
 
-              {/* Interactive Hotspots - positioned near company logos that match resume */}
+              {/* Interactive Hotspots - Arranged like highway billboards */}
               <InteractiveHotspot
-                position={[13.094, 2, 57.573]}
+                position={[-25, 1.0, 50]}
                 title="Thios"
+                images={["./portfolio-images/fourkites.png", "./portfolio-images/fourkites2.png", "./portfolio-images/fourkites3.png"]}
                 onOpen={() => setSelectedExperience(experiences.thios)}
               />
               <InteractiveHotspot
-                position={[-15.387, 4, 69.542]}
+                position={[25, 1.0, 100]}
                 title="John Deere"
+                images={["./portfolio-images/johndeere.png", "./portfolio-images/johndeere2.png", "./portfolio-images/johndeere3.png"]}
                 onOpen={() => setSelectedExperience(experiences.johndeere)}
               />
               <InteractiveHotspot
-                position={[15.43, 2, 76.655]}
+                position={[-25, 1.0, 150]}
                 title="FourKites"
+                image="./portfolio-images/thios.png" // Maintaining the swap logic requested earlier
                 onOpen={() => setSelectedExperience(experiences.fourkites)}
               />
               <InteractiveHotspot
-                position={[-7.988, 2, 46.766]}
+                position={[25, 1.0, 200]}
                 title="HERE"
+                images={["./portfolio-images/here.png", "./portfolio-images/here2.png", "./portfolio-images/here3.png"]}
                 onOpen={() => setSelectedExperience(experiences.here)}
               />
               <InteractiveHotspot
-                position={[10.893, 2, 42.081]}
+                position={[-25, 1.0, 250]}
                 title="Gogo"
+                images={["./portfolio-images/gogo.png", "./portfolio-images/gogo2.png", "./portfolio-images/gogo3.png"]}
                 onOpen={() => setSelectedExperience(experiences.gogo)}
               />
               <EnvPreset preset="city" />
+              <OrbitControls makeDefault maxPolarAngle={Math.PI / 2} enablePan={false} />
             </Suspense>
 
             {/* Site Grid: Infinite grid with fade to match site aesthetic */}
