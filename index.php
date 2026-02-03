@@ -73,9 +73,12 @@
     <!-- Font Preloads -->
     <link rel="preload" href="rombyte.ttf" as="font" type="font/ttf" crossorigin>
 
-    <!-- Google Fonts - Space Mono for readable body text -->
+    <!-- Preconnect to external resources for performance -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://www.googletagmanager.com">
+    <link rel="preconnect" href="https://www.clarity.ms">
+    <link rel="dns-prefetch" href="https://thios.co">
     <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
     <link rel="preload" href="ari.ttf" as="font" type="font/ttf" crossorigin>
 
@@ -136,11 +139,6 @@
     <a href="#right" class="visually-hidden"
         style="position:absolute;left:-10000px;top:auto;width:1px;height:1px;overflow:hidden;">Skip to main content</a>
     <!-- Sticky Header Nav -->
-    <!-- 3D Experiment disabled
-    <div id="experimental-banner">
-        <a href="3d-experiment.php">TRY MY NEW 3D RESUME (EXPERIMENTAL)!</a>
-    </div>
-    -->
     <header id="site-header" role="banner">
         <h1 id="page-title" class="visually-hidden">Peter Bartsch — Curriculum Vitae</h1>
         <div class="header-inner">
@@ -437,6 +435,55 @@
                         </div>
                     </div>
                 </div>
+
+                <!-- Configurator Showcase -->
+                <section class="configurator-showcase scroll-reveal">
+                    <div class="configurator-showcase-inner">
+                        <div class="configurator-preview">
+                            <img src="img/configurator-screenshot.png" alt="Thios 3D Configurator Preview" loading="lazy">
+                            <div class="grid-overlay"></div>
+                        </div>
+                        <div class="configurator-content">
+                            <div class="configurator-badge">Interactive Demo</div>
+                            <h3 class="configurator-title">3D PRODUCT CONFIGURATOR</h3>
+                            <p class="configurator-desc">Design custom modular shelters in real-time. Built solo using AI as technical co-founder—Three.js, React, with AR preview.</p>
+                            <a href="https://thios.co/configurator" target="_blank" rel="noopener noreferrer" class="configurator-cta" data-track="configurator_click">Try the Configurator</a>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Company Logos -->
+                <section class="company-logos-section scroll-reveal">
+                    <h4 class="company-logos-header">Trusted By Industry Leaders</h4>
+                    <div class="company-logos-grid scroll-reveal-stagger">
+                        <img src="img/logos/John-Deere-Logo 1.png" alt="John Deere" class="company-logo" loading="lazy">
+                        <img src="img/logos/FourKites_Logo_light.png" alt="FourKites" class="company-logo" loading="lazy">
+                        <img src="img/logos/maven 1.png" alt="MavenWave" class="company-logo" loading="lazy">
+                        <img src="img/logos/Gogo-Inc-RGB-RedBlue-WEB1000px 1.png" alt="Gogo" class="company-logo" loading="lazy">
+                        <img src="img/logos/here-white-200px.webp" alt="HERE Maps" class="company-logo" loading="lazy">
+                        <img src="img/logos/Thios-and-company-badge.png" alt="Thios" class="company-logo" loading="lazy">
+                    </div>
+                </section>
+
+                <!-- Metrics Callouts -->
+                <section class="metrics-section scroll-reveal scroll-reveal-stagger">
+                    <div class="metric-card">
+                        <p class="metric-value">500K+</p>
+                        <p class="metric-label">Users Impacted</p>
+                    </div>
+                    <div class="metric-card">
+                        <p class="metric-value">$3.8B</p>
+                        <p class="metric-label">Revenue Enabled</p>
+                    </div>
+                    <div class="metric-card">
+                        <p class="metric-value">40+</p>
+                        <p class="metric-label">Teams Supported</p>
+                    </div>
+                    <div class="metric-card">
+                        <p class="metric-value">15+</p>
+                        <p class="metric-label">Years Experience</p>
+                    </div>
+                </section>
 
                 <div id="songlist">
                     <table id="tracklist">

@@ -435,6 +435,153 @@ if (coverVideo) {
     carousel.addEventListener('mouseenter', stopAutoRotate);
     carousel.addEventListener('mouseleave', startAutoRotate);
 
+    // Keyboard navigation for carousel
+    document.addEventListener('keydown', function(e) {
+        // Skip if a modal is open or user is typing in a form
+        if (document.querySelector('.modal[style*="block"]')) return;
+        if (document.activeElement.tagName === 'INPUT' || document.activeElement.tagName === 'TEXTAREA') return;
+
+        if (e.key === 'ArrowLeft') {
+            e.preventDefault();
+            prevSlide();
+            // Track analytics
+            if (typeof gtag === 'function') {
+                gtag('event', 'carousel_navigation', {
+                    'event_category': 'engagement',
+                    'event_label': 'keyboard_left',
+                    'value': currentIndex
+                });
+            }
+        } else if (e.key === 'ArrowRight') {
+            e.preventDefault();
+            nextSlide();
+            // Track analytics
+            if (typeof gtag === 'function') {
+                gtag('event', 'carousel_navigation', {
+                    'event_category': 'engagement',
+                    'event_label': 'keyboard_right',
+                    'value': currentIndex
+                });
+            }
+        }
+    });
+
     // Start auto-rotation
     startAutoRotate();
+})();
+
+// ========================================
+// Scroll Reveal Animations
+// ========================================
+(function() {
+    // Respect reduced motion preference
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+        // Make all elements visible immediately
+        document.querySelectorAll('.scroll-reveal, .scroll-reveal-stagger').forEach(el => {
+            el.classList.add('visible');
+        });
+        return;
+    }
+
+    const observerOptions = {
+        root: null,
+        rootMargin: '0px 0px -50px 0px',
+        threshold: 0.1
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+                // Optionally unobserve after revealing
+                observer.unobserve(entry.target);
+            }
+        });
+    }, observerOptions);
+
+    // Observe all scroll-reveal elements
+    document.querySelectorAll('.scroll-reveal, .scroll-reveal-stagger').forEach(el => {
+        observer.observe(el);
+    });
+})();
+
+// ========================================
+// Analytics Event Tracking
+// ========================================
+(function() {
+    // Helper to safely call gtag
+    function trackEvent(eventName, params) {
+        if (typeof gtag === 'function') {
+            gtag('event', eventName, params);
+        }
+    }
+
+    // Track case study clicks
+    document.querySelectorAll('.project-link, a[href*="Case-Study"]').forEach(link => {
+        link.addEventListener('click', function() {
+            const label = this.textContent.trim() || this.getAttribute('href');
+            trackEvent('case_study_click', {
+                'event_category': 'engagement',
+                'event_label': label
+            });
+        });
+    });
+
+    // Track resume/portfolio downloads
+    document.querySelectorAll('a[href*="Resume.pdf"], a[href*="Portfolio.pdf"]').forEach(link => {
+        link.addEventListener('click', function() {
+            const fileName = this.getAttribute('href').split('/').pop();
+            trackEvent('resume_download', {
+                'event_category': 'engagement',
+                'event_label': fileName
+            });
+        });
+    });
+
+    // Track modal opens
+    document.querySelectorAll('[id^="openModal"]').forEach(trigger => {
+        trigger.addEventListener('click', function() {
+            const modalId = this.id.replace('openModal', '');
+            const companyName = this.textContent.trim();
+            trackEvent('modal_open', {
+                'event_category': 'engagement',
+                'event_label': companyName,
+                'value': parseInt(modalId) || 0
+            });
+        });
+    });
+
+    // Track external links (Figma, configurator, etc.)
+    document.querySelectorAll('a[target="_blank"]').forEach(link => {
+        const href = link.getAttribute('href') || '';
+        if (href.includes('figma.com') || href.includes('thios.co')) {
+            link.addEventListener('click', function() {
+                trackEvent('external_link_click', {
+                    'event_category': 'engagement',
+                    'event_label': href.includes('figma') ? 'figma' : 'thios_configurator'
+                });
+            });
+        }
+    });
+
+    // Track contact form submissions
+    const contactForm = document.getElementById('contactForm');
+    if (contactForm) {
+        contactForm.addEventListener('submit', function() {
+            trackEvent('contact_form_submit', {
+                'event_category': 'conversion',
+                'event_label': 'contact_form'
+            });
+        });
+    }
+
+    // Track configurator CTA click
+    document.querySelectorAll('[data-track="configurator_click"]').forEach(el => {
+        el.addEventListener('click', function() {
+            trackEvent('configurator_click', {
+                'event_category': 'engagement',
+                'event_label': 'configurator_cta'
+            });
+        });
+    });
 })();
