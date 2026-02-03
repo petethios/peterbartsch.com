@@ -72,6 +72,11 @@
 
     <!-- Font Preloads -->
     <link rel="preload" href="rombyte.ttf" as="font" type="font/ttf" crossorigin>
+
+    <!-- Google Fonts - Space Mono for readable body text -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
     <link rel="preload" href="ari.ttf" as="font" type="font/ttf" crossorigin>
 
     <link rel="stylesheet" href="styles.css?v=<?php echo filemtime('styles.css'); ?>">

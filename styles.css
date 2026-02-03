@@ -24,7 +24,7 @@
             --color-text-subtle: rgba(255, 255, 255, 0.4);
 
             /* Shadows */
-            --shadow-text: 0px 1px 1px rgba(47, 47, 47, 0.7);
+            --shadow-text: 0px 1px 0px rgba(0, 0, 0, 0.5);
             --shadow-box: 0 4px 8px rgba(0, 0, 0, 0.4);
             --shadow-box-hover: 0 6px 12px rgba(134, 216, 221, 0.5), 0 4px 8px rgba(0, 0, 0, 0.3);
             --shadow-glow: 0 0 15px rgba(134, 216, 221, 0.6);
@@ -32,6 +32,7 @@
             /* Typography */
             --font-display: 'Rombyte', monospace;
             --font-body: 'Ari', monospace;
+            --font-readable: 'Space Mono', 'Courier New', monospace;
             --font-system: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 
             /* Spacing Scale */
@@ -70,11 +71,23 @@
            Visual Polish - Subtle Refinements
            ======================================== */
 
-        /* Smooth text rendering */
+        /* Sharp text rendering */
+        html {
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
         body {
             -webkit-font-smoothing: antialiased;
             -moz-osx-font-smoothing: grayscale;
-            text-rendering: optimizeLegibility;
+            text-rendering: geometricPrecision;
+        }
+
+        /* Ensure all text elements render sharply */
+        h1, h2, h3, h4, h5, h6, p, a, span, li, td, th, label, button {
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            text-rendering: geometricPrecision;
         }
 
         /* Subtle hover lift for interactive elements */
@@ -478,7 +491,9 @@
         }
 
         .modal-content {
-            font-family: var(--font-system);
+            font-family: var(--font-body);
+            letter-spacing: normal;
+            color: #333333;
             background-image: radial-gradient(circle at center, var(--color-primary), var(--color-primary-dark)), url(gridnew.png);
             margin: 5% auto;
             padding: var(--space-lg);
@@ -491,6 +506,23 @@
             transform: translateY(-20px);
             opacity: 0;
             transition: transform var(--transition-base), opacity var(--transition-base);
+        }
+
+        .modal-content,
+        .modal-content h2,
+        .modal-content h3,
+        .modal-content h4,
+        .modal-content p,
+        .modal-content ul,
+        .modal-content li {
+            color: #333333 !important;
+            opacity: 1 !important;
+            font-family: var(--font-body) !important;
+            letter-spacing: 0.5px !important;
+        }
+
+        .modal-content .carousel-nav button {
+            color: var(--color-text-primary) !important;
         }
 
         .modal.modal-open .modal-content {
@@ -513,19 +545,30 @@
         }
 
 
+        .modal-content ul,
+        .modal-content ul li,
         .modal-content p ul li {
-            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-family: inherit;
+            font-size: 16px;
+            line-height: 1.6;
+            color: #333333;
+            letter-spacing: normal;
         }
 
         .modal-content h2,
-        h3,
-        h4,
-        h5,
-        h6 {
+        .modal-content h3,
+        .modal-content h4,
+        .modal-content h5,
+        .modal-content h6 {
             font-family: 'Rombyte';
             src: url('rombyte.ttf') format('truetype');
             font-weight: normal;
             font-style: normal;
+            color: #333333;
+        }
+
+        .modal-content p {
+            color: #333333;
         }
 
         .close {
@@ -1301,7 +1344,7 @@
         }
 
         #tracklist td {
-            font-weight: 600;
+            font-weight: 500;
         }
 
         #tracklist td.year-range {
@@ -2037,25 +2080,34 @@
 
         /* Inline Role Details Styling */
         .role-details {
-            background-color: rgba(0, 0, 0, 0.15);
+            background-color: rgba(0, 0, 0, 0.6);
+            background-image: none;
         }
 
         .role-details:hover {
-            background-color: rgba(0, 0, 0, 0.15) !important;
+            background-color: rgba(0, 0, 0, 0.6) !important;
         }
 
         .role-details td {
-            padding: 8px 10px 12px 10px !important;
+            padding: 10px 12px 14px 12px !important;
+            background: transparent;
         }
 
         .inline-bullets {
-            font-family: var(--font-body);
-            font-size: 14px;
-            line-height: 1.5;
+            font-family: var(--font-readable);
+            font-size: 13px;
+            font-weight: 700;
+            line-height: 1.7;
+            letter-spacing: 0.2px;
             margin: 0;
-            padding-left: 20px;
-            opacity: 0.85;
+            padding-left: 18px;
+            opacity: 1;
             list-style-type: disc;
+            list-style-position: outside;
+            color: #ffffff;
+            text-shadow: none;
+            -webkit-font-smoothing: antialiased;
+            text-rendering: geometricPrecision;
         }
 
         .inline-bullets li {
@@ -2069,17 +2121,25 @@
         .view-more {
             font-family: var(--font-display);
             font-size: 12px;
-            color: var(--color-primary);
-            text-decoration: none;
             font-weight: bold;
+            color: var(--color-text-primary);
+            text-decoration: none;
             display: inline-block;
-            margin-top: 4px;
-            opacity: 0.9;
-            transition: opacity var(--transition-fast);
+            margin-top: 8px;
+            margin-left: 0;
+            padding: 8px 14px;
+            background-color: var(--color-primary-darker);
+            border: var(--border-width) solid var(--color-primary);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            box-shadow: var(--shadow-box);
+            transition: all var(--transition-fast);
+            opacity: 1 !important;
         }
 
         .view-more:hover {
-            opacity: 1;
+            box-shadow: var(--shadow-box-hover);
+            transform: translateY(-1px);
             color: var(--color-text-primary);
         }
 
