@@ -135,8 +135,27 @@
         /* Subtle section dividers */
         #right > *:not(:last-child) {
             border-bottom: 1px solid rgba(134, 216, 221, 0.1);
-            padding-bottom: var(--space-xl);
-            margin-bottom: var(--space-xl);
+            padding-bottom: var(--space-md);
+            margin-bottom: var(--space-md);
+        }
+
+        /* Tighter spacing for specific sections */
+        #player {
+            border-bottom: none !important;
+            padding-bottom: 0 !important;
+            margin-bottom: 10px !important;
+        }
+
+        .cta-section {
+            border-bottom: none !important;
+            padding-bottom: 0 !important;
+            margin-bottom: 10px !important;
+            margin-top: 0 !important;
+        }
+
+        .portfolio-carousel {
+            border-bottom: none !important;
+            padding-bottom: 0 !important;
         }
 
         /* ========================================
@@ -411,8 +430,8 @@
         /* Right Panel Styles */
         #right {
             flex: 1;
-            gap: 40px;
-            padding: 50px 50px 0 50px;
+            gap: 16px;
+            padding: 0 50px 0 50px;
             height: 100%;
             box-sizing: border-box;
             display: flex;
@@ -2120,16 +2139,14 @@
 
         .portfolio-slides {
             position: relative;
-            min-height: 140px;
             overflow: hidden;
         }
 
         .portfolio-slide {
             display: none;
             animation: fadeIn 0.5s ease-in;
-            align-items: stretch;
+            align-items: flex-start;
             gap: 0;
-            min-height: 180px;
         }
 
         .portfolio-slide.active {
@@ -2139,15 +2156,13 @@
         /* Thumbnail with grid overlay */
         .slide-thumbnail {
             position: relative;
-            width: 100%;
-            max-width: 380px;
-            min-width: 120px;
-            aspect-ratio: 1 / 1;
+            width: 235px;
+            height: 235px;
             flex-shrink: 0;
             overflow: hidden;
-            background-color: rgba(0, 0, 0, 0.5);
-            align-self: center;
-            display: flex;
+            background-color: transparent;
+            align-self: flex-start;
+            display: block;
         }
 
         .slide-thumbnail img {
@@ -2323,7 +2338,6 @@
                 height: auto;
                 min-width: 100px;
                 max-width: 380px;
-                aspect-ratio: 1 / 1;
                 align-self: stretch;
             }
         }
@@ -2370,7 +2384,8 @@
             letter-spacing: 2px;
         }
 
-        /* Adjust sticky header to sit below banner */
+        /* Adjust sticky header to sit below banner (only when banner is enabled)
         #site-header {
             top: 30px;
         }
+        */

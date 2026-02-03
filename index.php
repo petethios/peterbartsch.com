@@ -21,12 +21,18 @@
     <meta property="og:description"
         content="Peter Bartsch: Product designer who ships. 15+ years building 0→1 products and scaling design systems. Portfolio, resume, and experience.">
     <meta property="og:site_name" content="Peter Bartsch">
+    <meta property="og:image" content="https://peterbartsch.com/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Peter Bartsch - Product Designer with 15+ years experience">
 
     <!-- Twitter -->
-    <meta name="twitter:card" content="summary">
+    <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Peter Bartsch - Product and UX Leader">
     <meta name="twitter:description"
         content="Product and UX leader: portfolio, resume, professional experience, and tools.">
+    <meta name="twitter:image" content="https://peterbartsch.com/og-image.png">
+    <meta name="twitter:image:alt" content="Peter Bartsch - Product Designer with 15+ years experience">
 
     <meta name="theme-color" content="#2f4f50">
     <meta name="theme-color" content="#2f4f50" media="(prefers-color-scheme: light)">
@@ -63,7 +69,12 @@
     </script>
 
     <title>Peter Bartsch - Product and UX Leader | Portfolio & Resume</title>
-    <link rel="stylesheet" href="styles.css">
+
+    <!-- Font Preloads -->
+    <link rel="preload" href="rombyte.ttf" as="font" type="font/ttf" crossorigin>
+    <link rel="preload" href="ari.ttf" as="font" type="font/ttf" crossorigin>
+
+    <link rel="stylesheet" href="styles.css?v=<?php echo filemtime('styles.css'); ?>">
 
     <!-- Structured Data (JSON-LD) -->
     <script type="application/ld+json">
@@ -76,16 +87,47 @@
       "sameAs": [
         "https://linkedin.com/in/peterbartsch"
       ],
-      "description": "Product and UX leader: portfolio, resume, professional experience, and tools.",
-      "knowsAbout": ["User Experience Design", "Product Management", "Digital Product Development", "Design Systems"],
-      "email": "peter@peterbartsch.com"
+      "description": "Product designer who ships. 15+ years building 0→1 products and scaling design systems—from solo founder to employee #28 at hypergrowth startup to senior IC at $38B enterprise.",
+      "knowsAbout": ["User Experience Design", "Product Management", "Design Systems", "Enterprise Software", "Data Visualization", "Figma", "Prototyping"],
+      "email": "peter@peterbartsch.com",
+      "hasOccupation": [
+        {
+          "@type": "Occupation",
+          "name": "Founder & Lead Designer",
+          "occupationLocation": { "@type": "City", "name": "Chicago" },
+          "description": "AI as technical co-founder. Complete product ecosystem in 18 months."
+        }
+      ],
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Thios + Co"
+      },
+      "alumniOf": [
+        {
+          "@type": "Organization",
+          "name": "John Deere",
+          "description": "Senior Lead UX; Digital Customer Experience (2020-2024)"
+        },
+        {
+          "@type": "Organization",
+          "name": "FourKites",
+          "description": "Lead UX / Manager (2017-2020)"
+        }
+      ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Peter Bartsch Portfolio",
+      "url": "https://peterbartsch.com",
+      "description": "Portfolio and resume of Peter Bartsch, Product and UX Leader"
     }
     </script>
 </head>
 
 <body>
-    <link rel="preload" href="rombyte.ttf" as="font" type="font/ttf" crossorigin>
-    <link rel="preload" href="ari.ttf" as="font" type="font/ttf" crossorigin>
     <a href="#right" class="visually-hidden"
         style="position:absolute;left:-10000px;top:auto;width:1px;height:1px;overflow:hidden;">Skip to main content</a>
     <!-- Sticky Header Nav -->
@@ -115,8 +157,7 @@
                 </ul>
                 <p>Case Studies<br></p>
                 <ul>
-                    <li><a href="Peter-Bartsch-Case-Study_Thios.pdf" target="_blank" rel="noopener noreferrer">Thios:
-                            Idea to Market</a></li>
+                    <li><a href="Peter-Bartsch-Case-Study_Thios.pdf" target="_blank" rel="noopener noreferrer">Thios: AI as Co-founder</a></li>
                     <li><a href="Peter-Bartsch-Case-Study_Deere_Common-UX.pdf" target="_blank"
                             rel="noopener noreferrer">Deere: Common UX</a></li>
                     <li><a href="Peter-Bartsch-Case-Study_Deere_Consistent-Nav.pdf" target="_blank"
@@ -154,7 +195,7 @@
             </ul>
             <div class="mobile-menu-header">Case Studies</div>
             <ul>
-                <li><a href="Peter-Bartsch-Case-Study_Thios.pdf" target="_blank" rel="noopener noreferrer">Thios: Idea to Market</a></li>
+                <li><a href="Peter-Bartsch-Case-Study_Thios.pdf" target="_blank" rel="noopener noreferrer">Thios: AI as Technical Co-founder</a></li>
                 <li><a href="Peter-Bartsch-Case-Study_Deere_Common-UX.pdf" target="_blank" rel="noopener noreferrer">Deere: Common UX</a></li>
                 <li><a href="Peter-Bartsch-Case-Study_Deere_Consistent-Nav.pdf" target="_blank" rel="noopener noreferrer">Deere: Consistent Nav</a></li>
                 <li><a href="Peter-Bartsch-Case-Study_FourKites_Tracking.pdf" target="_blank" rel="noopener noreferrer">FourKites: Tracking</a></li>
@@ -181,7 +222,7 @@
         <section>
             <p
                 style="text-align: justify; font-family: Ari, monospace; font-size: 24px; font-weight: 400; margin-top: 20px;">
-                <strong>I fix systems where users, data, and business reality collide.</strong> Forced adoption at scale. Trust problems in uncertain data. Platform migrations without breaking production. 15 years turning organizational complexity into shipped products—$3.8B in enabled revenue.
+                <strong>Product designer who ships.</strong> 15+ years building 0→1 products and scaling design systems—from solo founder to employee #28 at hypergrowth startup to senior IC at $38B enterprise. Research-driven, prototype-obsessed, comfortable with ambiguity.
             </p>
         </section>
     </section>
@@ -197,7 +238,7 @@
                 </header>
 
                 <section id="desc-section">
-                    <p id="desc" style="text-align: justify;">I fix systems where users, data, and business reality collide. Forced adoption at scale. Trust problems in uncertain data. Platform migrations without breaking production. 15 years turning organizational complexity into shipped products—$3.8B in enabled revenue.
+                    <p id="desc" style="text-align: justify;">Product designer who ships. 15+ years building 0→1 products and scaling design systems—from solo founder to employee #28 at hypergrowth startup to senior IC at $38B enterprise. Research-driven, prototype-obsessed, comfortable with ambiguity.
                     </p>
                 </section>
                 <hr style="margin-top: 20px; border: 0; border-top: 2px solid rgba(134, 216, 221, 0.3); width: 86%;">
@@ -212,8 +253,7 @@
                     </p>
                     <h4 style="margin-top: 20px;">CASE STUDIES</h4>
                     <p><a href="Peter-Bartsch-Case-Study_Thios.pdf" target="_blank" class="button button2"
-                            rel="noopener noreferrer"><img src="pdf.png" alt="PDF" class="pdf-icon">THIOS: IDEA TO
-                            MARKET</a>
+                            rel="noopener noreferrer"><img src="pdf.png" alt="PDF" class="pdf-icon">THIOS: AI AS CO-FOUNDER</a>
                     </p>
                     <p><a href="Peter-Bartsch-Case-Study_Deere_Common-UX.pdf" target="_blank" class="button button2"
                             rel="noopener noreferrer"><img src="pdf.png" alt="PDF" class="pdf-icon">DEERE: COMMON UX</a>
