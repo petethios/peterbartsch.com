@@ -348,8 +348,7 @@
                                 <h4>FLAGSHIP CASE STUDY</h4>
                                 <h3 class="project-title">DEERE: FORCED ADOPTION</h3>
                                 <p class="project-desc">Drove 34%→87% engagement without destroying trust • $3.8B revenue enabled</p>
-                                <a href="Peter-Bartsch-Case-Study_Deere_Common-UX.pdf" target="_blank"
-                                    rel="noopener noreferrer" class="project-link">View Case Study →</a>
+                                <a href="case-studies/deere-common-ux" class="project-link">View Case Study →</a>
                                 <div class="portfolio-nav">
                                     <button class="portfolio-prev" aria-label="Previous project">‹</button>
                                     <div class="portfolio-dots"></div>
@@ -367,8 +366,7 @@
                                 <h4>FEATURED WORK</h4>
                                 <h3 class="project-title">FOURKITES: DATA TRUST</h3>
                                 <p class="project-desc">Made customers trust tracking when data was uncertain • "Never hide uncertainty"</p>
-                                <a href="Peter-Bartsch-Case-Study_FourKites_Tracking.pdf" target="_blank"
-                                    rel="noopener noreferrer" class="project-link">View Case Study →</a>
+                                <a href="case-studies/fourkites-tracking" class="project-link">View Case Study →</a>
                                 <div class="portfolio-nav">
                                     <button class="portfolio-prev" aria-label="Previous project">‹</button>
                                     <div class="portfolio-dots"></div>
@@ -386,8 +384,7 @@
                                 <h4>FEATURED WORK</h4>
                                 <h3 class="project-title">FOURKITES: INCENTIVE DESIGN</h3>
                                 <p class="project-desc">Reconciled competing driver/shipper incentives • 41% retention increase</p>
-                                <a href="Peter-Bartsch-Case-Study_FourKites_Driver.pdf" target="_blank"
-                                    rel="noopener noreferrer" class="project-link">View Case Study →</a>
+                                <a href="case-studies/fourkites-driver" class="project-link">View Case Study →</a>
                                 <div class="portfolio-nav">
                                     <button class="portfolio-prev" aria-label="Previous project">‹</button>
                                     <div class="portfolio-dots"></div>
@@ -405,8 +402,7 @@
                                 <h4>FEATURED WORK</h4>
                                 <h3 class="project-title">DEERE: PLATFORM UNIFICATION</h3>
                                 <p class="project-desc">Unified navigation across 47 sites • Zero-downtime migration</p>
-                                <a href="Peter-Bartsch-Case-Study_Deere_Consistent-Nav.pdf" target="_blank"
-                                    rel="noopener noreferrer" class="project-link">View Case Study →</a>
+                                <a href="case-studies/deere-nav" class="project-link">View Case Study →</a>
                                 <div class="portfolio-nav">
                                     <button class="portfolio-prev" aria-label="Previous project">‹</button>
                                     <div class="portfolio-dots"></div>
@@ -424,8 +420,7 @@
                                 <h4>FEATURED WORK</h4>
                                 <h3 class="project-title">THIOS: SOLO FOUNDER</h3>
                                 <p class="project-desc">AI as technical co-founder • Idea to revenue in 18 months</p>
-                                <a href="Peter-Bartsch-Case-Study_Thios.pdf" target="_blank" rel="noopener noreferrer"
-                                    class="project-link">View Case Study →</a>
+                                <a href="case-studies/thios" class="project-link">View Case Study →</a>
                                 <div class="portfolio-nav">
                                     <button class="portfolio-prev" aria-label="Previous project">‹</button>
                                     <div class="portfolio-dots"></div>
