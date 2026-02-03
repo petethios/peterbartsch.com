@@ -24,23 +24,24 @@ const experiences = {
     title: 'Thios',
     role: 'Founder & Lead Designer',
     duration: 'Aug 2024 - Present',
-    description: 'Open-source modular shelter system that transforms parking spaces into productive environments—from saunas to urban farms.',
+    description: 'Treating AI as my technical co-founder, learning how to compress timelines, work across disciplines, and ship products that traditionally require full teams. Building open-source modular shelter systems that transform parking spot sized spaces into productive environments.',
     highlights: [
-      'Designed and built complete product ecosystem from 0→1: 5 modular shelter variants with full CAD/3D models',
-      'Launched first revenue-generating product: Whole Thiosphere Handbook—200+ page build guide',
-      'Applied AI-augmented workflows across entire development cycle using Claude and Cursor'
+      'Created complete product ecosystem solo in 18 months: brand identity inspired by early 2000s open-source culture, 3 websites (thios.co, blog, store), 5 shelter variants with CAD models, physical prototype, and handbook generating first revenue',
+      'Applied full career toolkit simultaneously—product strategy, marketing, and design execution using GitHub Copilot → Cursor → Anti Gravity progression; proving experienced generalists can operate across traditional role boundaries with AI partnership',
+      'Established AI-augmented workflows: Obsidian MD + AI for project management and research synthesis; Figma Make for design-to-code; compressed prototyping cycles 70% through conversational development in Cursor and Anti-Gravity & Claude Code',
+      'Outcomes: Validated AI as practical force multiplier for startups; demonstrating how to maintain product quality while working at solo-founder velocity; any prototype is possible'
     ],
-    link: 'https://thios.org'
+    link: 'https://thios.co'
   },
   johndeere: {
     title: 'John Deere',
     role: 'Senior Lead UX; Digital Customer Experience',
     duration: 'Aug 2020 - Jul 2024',
-    description: 'Led UX modernization across enterprise digital products serving agricultural, construction, and forestry markets globally.',
+    description: 'Embedded with product teams to modernize 20-year-old systems and drive subscription revenue. Proving enterprise design can move fast when you have the right frameworks.',
     highlights: [
-      'Redesigned 20-year-old license management system serving 500K+ users, increasing authenticated engagement 34%',
-      'Created unified account and navigation framework deployed across all digital touchpoints for 8 product lines',
-      'Established enterprise design system in Figma spanning 6 brands and 40+ product teams globally'
+      'Redesigned license management system serving 500K+ users across 12 languages—increased authenticated engagement 34%, reduced support tickets 16%, enabled $3.8B in subscription revenue from Automation and AI services',
+      'Built unified account and navigation framework deployed across 8 product lines (web, mobile, embedded)—consolidated fragmented experiences into single customer view, improved dealer support efficiency 28%',
+      'Established enterprise design system in Figma spanning 6 brands and 40+ product teams globally—reduced design-to-development handoff time 45% through standardized components that actually shipped'
     ],
     link: 'https://www.deere.com'
   },
@@ -48,11 +49,11 @@ const experiences = {
     title: 'FourKites',
     role: 'Lead UX / Manager',
     duration: 'Jan 2017 - Jan 2020',
-    description: 'Employee #28 at supply chain visibility startup during hypergrowth ($3M to $100M ARR). Built and led design function from founding designer to 10-person global team.',
+    description: 'Employee #28 during hypergrowth ($3M to $100M ARR). Built design function from scratch—founding designer to 10-person global team.',
     highlights: [
-      'Designed real-time supply chain control tower processing 10M+ daily tracking events for 30+ Fortune 2000 companies',
-      'Led predictive analytics dashboard that identified shipment delays 6-12 hours earlier than competitors',
-      'Scaled design team from 1 to 10 across Chicago and Chennai offices'
+      'Designed flagship products from 0→1: Real-time supply chain control tower and related mobile apps processing 10M+ daily tracking events for 30+ Fortune 2000 companies (Anheuser-Busch, Georgia-Pacific, Tyson); products became primary driver of 3x customer expansion',
+      'Led bespoke predictive analytics dashboard products identifying shipment delays 6-12 hours earlier than competitors; increased customer retention 41% and expanded average contract value $120K annually',
+      'Scaled design org: Hired and managed team across Chicago and Chennai; established component library, design operations, and hiring framework—reduced design inconsistencies 65% while maintaining startup velocity'
     ],
     link: 'https://www.fourkites.com'
   },
@@ -60,18 +61,18 @@ const experiences = {
     title: 'MavenWave Partners',
     role: 'Senior UX + Agile Lead (Consultant)',
     duration: 'Jan 2014 - Jan 2017',
-    description: 'Led UX and Agile transformation for Fortune 500 digital products across healthcare and pharmaceutical sectors.',
+    description: 'Led digital product design for Fortune 500 healthcare and pharmaceutical clients. Fast iteration in slow-moving industries.',
     highlights: [
-      'Designed 6 internal portals for AbbVie supporting 200K+ users across clinical trials and patient support programs',
-      'Rebuilt OptumRx pharmacy formulary platform processing 1.4B prescriptions annually',
-      'Established Lean UX and Agile practices across client engagements'
+      'Designed 6 internal portals for AbbVie supporting 200K+ users across clinical trials and patient support programs—improved medication adherence tracking, reduced hospital readmissions 12%',
+      'Rebuilt OptumRx pharmacy formulary platform processing 1.4B prescriptions annually—created company\'s first patient-facing product, reduced fulfillment errors 15% through improved drug interaction warnings',
+      'Established Lean UX and Agile practices across client engagements while mentoring junior designers and leading cross-functional design sprints'
     ]
   },
   here: {
     title: 'Nokia HERE Maps',
     role: 'Product Marketing Manager',
     duration: '2012 - 2014',
-    description: 'Led UX integration of acquired Trapster app into HERE Maps navigation platform.',
+    description: 'Led UX integration of acquired Trapster app, improving onboarding completion 33%',
     highlights: [
       'Improved onboarding completion 33% through UX redesign',
       'Integrated community-based traffic and speed trap reporting',
@@ -83,7 +84,7 @@ const experiences = {
     title: 'Gogo Inflight WiFi',
     role: 'Product Manager',
     duration: '2008 - 2012',
-    description: 'Launched connectivity services across 6 major airlines and developed revenue-generating products.',
+    description: 'Launched connectivity across 6 major airlines; developed sponsored flight tracker generating recurring revenue',
     highlights: [
       'Launched inflight WiFi services across 6 major airlines',
       'Developed sponsored flight tracker generating recurring revenue streams',
@@ -95,10 +96,9 @@ const experiences = {
     title: 'Cognistar',
     role: 'Co-Founder',
     duration: '2001 - 2008',
-    description: 'Built digital production and UX for legal education startup.',
+    description: 'Built digital production and UX for legal education startup; raised $3M, achieved $2M+ annual revenue before acquisition',
     highlights: [
-      'Raised $3M in funding',
-      'Achieved $2M+ annual revenue before acquisition',
+      'Built digital production and UX for legal education startup; raised $3M, achieved $2M+ annual revenue before acquisition',
       'Led UX and digital production for legal education platform'
     ]
   }
