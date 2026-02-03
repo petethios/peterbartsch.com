@@ -8,7 +8,7 @@
     <link rel="icon" type="image/svg+xml" href="pblogo.svg">
     <link rel="apple-touch-icon" href="pblogo.png">
     <meta name="description"
-        content="Peter Bartsch – Product and UX leader: portfolio, resume, professional experience, and tools.">
+        content="Peter Bartsch: Product designer who ships. 15+ years building 0→1 products and scaling design systems. Portfolio, resume, and experience.">
     <meta name="keywords"
         content="Peter Bartsch, UX leader, product design, user experience, portfolio, resume, product manager">
     <meta name="author" content="Peter Bartsch">
@@ -19,7 +19,7 @@
     <meta property="og:url" content="https://peterbartsch.com/">
     <meta property="og:title" content="Peter Bartsch - Product and UX Leader">
     <meta property="og:description"
-        content="Product and UX leader: portfolio, resume, professional experience, and tools.">
+        content="Peter Bartsch: Product designer who ships. 15+ years building 0→1 products and scaling design systems. Portfolio, resume, and experience.">
     <meta property="og:site_name" content="Peter Bartsch">
 
     <!-- Twitter -->
@@ -89,9 +89,11 @@
     <a href="#right" class="visually-hidden"
         style="position:absolute;left:-10000px;top:auto;width:1px;height:1px;overflow:hidden;">Skip to main content</a>
     <!-- Sticky Header Nav -->
+    <!-- 3D Experiment disabled
     <div id="experimental-banner">
         <a href="3d-experiment.php">TRY MY NEW 3D RESUME (EXPERIMENTAL)!</a>
     </div>
+    -->
     <header id="site-header" role="banner">
         <h1 id="page-title" class="visually-hidden">Peter Bartsch — Curriculum Vitae</h1>
         <div class="header-inner">
@@ -102,7 +104,7 @@
                 <ul>
                     <li><a href="#mobile-intro">Top</a></li>
                     <li><a href="#right">Experience</a></li>
-                    <li><a href="https://www.figma.com/proto/i1SMndpgNnRCEBZceZJ7NK/Peter-Bartsch-Resume---Use-Cases?page-id=488%3A1680&node-id=963-950&viewport=-766%2C-71%2C0.25&t=I6QCuqvrNv2jU96e-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=963%3A950"
+                    <li><a href="https://www.figma.com/proto/i1SMndpgNnRCEBZceZJ7NK/Peter-Bartsch-CV--Portfolio---Cases-Studies?node-id=963-950&t=tsQyOT4yQLBTD8ms-1"
                             target="_blank" rel="noopener noreferrer">All in Figma</a></li>
                 </ul>
                 <p>Learn More<br></p>
@@ -132,24 +134,34 @@
                 <span></span><span></span><span></span>
             </button>
         </div>
+        <!-- Mobile menu backdrop -->
+        <div id="mobileMenuBackdrop" class="mobile-menu-backdrop"></div>
+
+        <!-- Mobile navigation drawer -->
         <nav id="mobileMenu" class="mobile-menu" aria-label="Mobile" hidden>
+            <button id="mobileMenuClose" class="mobile-menu-close" aria-label="Close menu">&times;</button>
+            <div class="mobile-menu-header">Navigation</div>
             <ul>
                 <li><a href="#mobile-intro">Top</a></li>
                 <li><a href="#right">Experience</a></li>
-                <li><a href="https://www.figma.com/proto/i1SMndpgNnRCEBZceZJ7NK/Peter-Bartsch-Resume---Use-Cases?page-id=488%3A1680&node-id=963-950&viewport=-766%2C-71%2C0.25&t=I6QCuqvrNv2jU96e-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=963%3A950"
+                <li><a href="https://www.figma.com/proto/i1SMndpgNnRCEBZceZJ7NK/Peter-Bartsch-CV--Portfolio---Cases-Studies?node-id=963-950&t=tsQyOT4yQLBTD8ms-1"
                         target="_blank" rel="noopener noreferrer">All in Figma</a></li>
-                <li><a href="Peter-Bartsch-Resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a></li>
-                <li><a href="Peter-Bartsch-Portfolio.pdf" target="_blank" rel="noopener noreferrer">Portfolio</a></li>
-                <li><a href="Peter-Bartsch-Case-Study_Thios.pdf" target="_blank" rel="noopener noreferrer">Thios: Idea
-                        to Market</a></li>
-                <li><a href="Peter-Bartsch-Case-Study_Deere_Common-UX.pdf" target="_blank"
-                        rel="noopener noreferrer">Deere: Common UX</a></li>
-                <li><a href="Peter-Bartsch-Case-Study_Deere_Consistent-Nav.pdf" target="_blank"
-                        rel="noopener noreferrer">Deere: Consistent Nav</a></li>
-                <li><a href="Peter-Bartsch-Case-Study_FourKites_Tracking.pdf" target="_blank"
-                        rel="noopener noreferrer">FourKites: Tracking</a></li>
-                <li><a href="Peter-Bartsch-Case-Study_FourKites_Driver.pdf" target="_blank"
-                        rel="noopener noreferrer">FourKites: Driver</a></li>
+            </ul>
+            <div class="mobile-menu-header">Downloads</div>
+            <ul>
+                <li><a href="Peter-Bartsch-Resume.pdf" target="_blank" rel="noopener noreferrer">Resume (PDF)</a></li>
+                <li><a href="Peter-Bartsch-Portfolio.pdf" target="_blank" rel="noopener noreferrer">Portfolio (PDF)</a></li>
+            </ul>
+            <div class="mobile-menu-header">Case Studies</div>
+            <ul>
+                <li><a href="Peter-Bartsch-Case-Study_Thios.pdf" target="_blank" rel="noopener noreferrer">Thios: Idea to Market</a></li>
+                <li><a href="Peter-Bartsch-Case-Study_Deere_Common-UX.pdf" target="_blank" rel="noopener noreferrer">Deere: Common UX</a></li>
+                <li><a href="Peter-Bartsch-Case-Study_Deere_Consistent-Nav.pdf" target="_blank" rel="noopener noreferrer">Deere: Consistent Nav</a></li>
+                <li><a href="Peter-Bartsch-Case-Study_FourKites_Tracking.pdf" target="_blank" rel="noopener noreferrer">FourKites: Tracking</a></li>
+                <li><a href="Peter-Bartsch-Case-Study_FourKites_Driver.pdf" target="_blank" rel="noopener noreferrer">FourKites: Driver</a></li>
+            </ul>
+            <div class="mobile-menu-header">More</div>
+            <ul>
                 <li><a href="#tools-section">Tools</a></li>
                 <li><a href="#footer">Contact</a></li>
             </ul>
@@ -161,7 +173,7 @@
     <section id="mobile-intro">
         <header>
             <div style="display: flex; justify-content: space-between; align-items: center;">
-                <h4><a href="https://peterbartsch.com" style="text-decoration:none; color:inherit;">CURRICULUM VITAE</a>
+                <h4><a href="https://peterbartsch.com" style="text-decoration:none; color:inherit;">PRODUCT & UX LEADER</a>
                 </h4>
             </div>
             <h2 style="font-family: Rombyte, monospace; margin-top: 10px; color:#ffffff;">PETER BARTSCH</h2>
@@ -169,9 +181,7 @@
         <section>
             <p
                 style="text-align: justify; font-family: Ari, monospace; font-size: 24px; font-weight: 400; margin-top: 20px;">
-                <strong>Product Designer</strong> crafting enterprise design systems that enable $3.8B revenue. 15 years
-                hands-on: research, prototyping, and systematic design from $3M startups to $38B enterprises. 34%
-                engagement gains, 16% fewer support tickets, 45% faster dev handoffs. Built teams (1→10) along the way.
+                <strong>I fix systems where users, data, and business reality collide.</strong> Forced adoption at scale. Trust problems in uncertain data. Platform migrations without breaking production. 15 years turning organizational complexity into shipped products—$3.8B in enabled revenue.
             </p>
         </section>
     </section>
@@ -181,15 +191,14 @@
                 <header id="banner">
                     <div style="display: flex; justify-content: space-between; align-items: center;">
                         <h4 id="name"><a href="https://peterbartsch.com"
-                                style="text-decoration:none; color:inherit;">CURRICULUM VITAE</a></h4>
+                                style="text-decoration:none; color:inherit;">PRODUCT & UX LEADER</a></h4>
                     </div>
                     <h2 id="title">PETER BARTSCH</h2>
                 </header>
 
                 <section id="desc-section">
-                    <p id="desc" style="text-align: justify;">Product designer specializing in enterprise design systems
-                        and complex data products. 15 years hands-on work—from solo IC at $3M startup to senior designer
-                        at $38B enterprise. Research, prototyping, systematic design, and occasional team building.</p>
+                    <p id="desc" style="text-align: justify;">I fix systems where users, data, and business reality collide. Forced adoption at scale. Trust problems in uncertain data. Platform migrations without breaking production. 15 years turning organizational complexity into shipped products—$3.8B in enabled revenue.
+                    </p>
                 </section>
                 <hr style="margin-top: 20px; border: 0; border-top: 2px solid rgba(134, 216, 221, 0.3); width: 86%;">
                 <section id="resume-links">
@@ -224,7 +233,7 @@
                     <hr
                         style="margin-top: 20px; border: 0; border-top: 2px solid rgba(134, 216, 221, 0.3); width: 86%;">
                     <p><br><a
-                            href="https://www.figma.com/proto/i1SMndpgNnRCEBZceZJ7NK/Peter-Bartsch-Resume---Use-Cases?page-id=488%3A1680&node-id=963-950&viewport=-766%2C-71%2C0.25&t=I6QCuqvrNv2jU96e-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=963%3A950"
+                            href="https://www.figma.com/proto/i1SMndpgNnRCEBZceZJ7NK/Peter-Bartsch-CV--Portfolio---Cases-Studies?node-id=963-950&t=tsQyOT4yQLBTD8ms-1"
                             target="_blank" class="button button2" rel="noopener noreferrer"><img src="figma.png"
                                 alt="Figma" class="figma-icon" height="22px" width="22px">&nbsp;EVERYTHING IN
                             FIGMA</a></p>
@@ -271,48 +280,31 @@
                     </div>
                     <div class="song-info">
                         <h2 id="songTitle">PETER BARTSCH</h2>
-                        <p id="artistName">Product & UX Designer</p>
-                        <p id="releaseDate">Design Systems • Research & Prototyping • $3.8B Revenue Impact
+                        <p id="artistName">Product & UX Leader</p>
+                        <p id="releaseDate">Enterprise Platforms • Forced Adoption • Data Trust • $3.8B Impact
                         </p>
                     </div>
                 </div>
 
                 <!-- CTA Section -->
                 <div class="cta-section">
-                    <a href="https://www.figma.com/proto/i1SMndpgNnRCEBZceZJ7NK/Peter-Bartsch-Resume---Use-Cases?page-id=488%3A1680&node-id=963-950&viewport=-766%2C-71%2C0.25&t=I6QCuqvrNv2jU96e-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=963%3A950"
+                    <a href="https://www.figma.com/proto/i1SMndpgNnRCEBZceZJ7NK/Peter-Bartsch-CV--Portfolio---Cases-Studies?node-id=963-950&t=tsQyOT4yQLBTD8ms-1"
                         target="_blank" rel="noopener noreferrer" class="button button2"><img src="figma.png"
                             alt="Figma" class="figma-icon" height="22px" width="22px">&nbsp;RESUME + CASE STUDIES</a>
                 </div>
 
                 <div class="portfolio-carousel">
                     <div class="portfolio-slides">
+                        <!-- 1. Deere Common UX - Flagship: Forced adoption at scale -->
                         <div class="portfolio-slide active" data-index="0">
-                            <div class="slide-thumbnail">
-                                <img src="carousel-thumb-thios.png" alt="Thios Project">
-                                <div class="grid-overlay"></div>
-                            </div>
-                            <div class="slide-content">
-                                <h4>FEATURED WORK</h4>
-                                <h3 class="project-title">THIOS: IDEA TO MARKET</h3>
-                                <p class="project-desc">0→1 Product Ecosystem • Open-Source Hardware Platform</p>
-                                <a href="Peter-Bartsch-Case-Study_Thios.pdf" target="_blank" rel="noopener noreferrer"
-                                    class="project-link">View Case Study →</a>
-                                <div class="portfolio-nav">
-                                    <button class="portfolio-prev" aria-label="Previous project">‹</button>
-                                    <div class="portfolio-dots"></div>
-                                    <button class="portfolio-next" aria-label="Next project">›</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="portfolio-slide" data-index="1">
                             <div class="slide-thumbnail">
                                 <img src="carousel-thumb-deere-ux.png" alt="Deere Common UX">
                                 <div class="grid-overlay"></div>
                             </div>
                             <div class="slide-content">
-                                <h4>FEATURED WORK</h4>
-                                <h3 class="project-title">DEERE: COMMON UX</h3>
-                                <p class="project-desc">Enterprise Design System • 40+ Teams • 45% Faster Handoffs</p>
+                                <h4>FLAGSHIP CASE STUDY</h4>
+                                <h3 class="project-title">DEERE: FORCED ADOPTION</h3>
+                                <p class="project-desc">Drove 34%→87% engagement without destroying trust • $3.8B revenue enabled</p>
                                 <a href="Peter-Bartsch-Case-Study_Deere_Common-UX.pdf" target="_blank"
                                     rel="noopener noreferrer" class="project-link">View Case Study →</a>
                                 <div class="portfolio-nav">
@@ -322,34 +314,16 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="portfolio-slide" data-index="2">
-                            <div class="slide-thumbnail">
-                                <img src="carousel-thumb-deere-nav.png" alt="Deere Consistent Nav">
-                                <div class="grid-overlay"></div>
-                            </div>
-                            <div class="slide-content">
-                                <h4>FEATURED WORK</h4>
-                                <h3 class="project-title">DEERE: CONSISTENT NAV</h3>
-                                <p class="project-desc">Unified Navigation • 8 Product Lines • 500K+ Users</p>
-                                <a href="Peter-Bartsch-Case-Study_Deere_Consistent-Nav.pdf" target="_blank"
-                                    rel="noopener noreferrer" class="project-link">View Case Study →</a>
-                                <div class="portfolio-nav">
-                                    <button class="portfolio-prev" aria-label="Previous project">‹</button>
-                                    <div class="portfolio-dots"></div>
-                                    <button class="portfolio-next" aria-label="Next project">›</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="portfolio-slide" data-index="3">
+                        <!-- 2. FourKites Tracking - Trust in uncertain data -->
+                        <div class="portfolio-slide" data-index="1">
                             <div class="slide-thumbnail">
                                 <img src="carousel-thumb-fourkites-tracking.png" alt="FourKites Tracking">
                                 <div class="grid-overlay"></div>
                             </div>
                             <div class="slide-content">
                                 <h4>FEATURED WORK</h4>
-                                <h3 class="project-title">FOURKITES: TRACKING</h3>
-                                <p class="project-desc">Real-Time Control Tower • 10M+ Daily Events • 30+ Fortune 2000
-                                </p>
+                                <h3 class="project-title">FOURKITES: DATA TRUST</h3>
+                                <p class="project-desc">Made customers trust tracking when data was uncertain • "Never hide uncertainty"</p>
                                 <a href="Peter-Bartsch-Case-Study_FourKites_Tracking.pdf" target="_blank"
                                     rel="noopener noreferrer" class="project-link">View Case Study →</a>
                                 <div class="portfolio-nav">
@@ -359,18 +333,56 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="portfolio-slide" data-index="4">
+                        <!-- 3. FourKites Driver - Incentive alignment -->
+                        <div class="portfolio-slide" data-index="2">
                             <div class="slide-thumbnail">
                                 <img src="carousel-thumb-fourkites-driver.png" alt="FourKites Driver">
                                 <div class="grid-overlay"></div>
                             </div>
                             <div class="slide-content">
                                 <h4>FEATURED WORK</h4>
-                                <h3 class="project-title">FOURKITES: DRIVER</h3>
-                                <p class="project-desc">Mobile Driver App • Predictive Analytics • 41% Retention
-                                    Increase</p>
+                                <h3 class="project-title">FOURKITES: INCENTIVE DESIGN</h3>
+                                <p class="project-desc">Reconciled competing driver/shipper incentives • 41% retention increase</p>
                                 <a href="Peter-Bartsch-Case-Study_FourKites_Driver.pdf" target="_blank"
                                     rel="noopener noreferrer" class="project-link">View Case Study →</a>
+                                <div class="portfolio-nav">
+                                    <button class="portfolio-prev" aria-label="Previous project">‹</button>
+                                    <div class="portfolio-dots"></div>
+                                    <button class="portfolio-next" aria-label="Next project">›</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 4. Deere Nav - Platform governance -->
+                        <div class="portfolio-slide" data-index="3">
+                            <div class="slide-thumbnail">
+                                <img src="carousel-thumb-deere-nav.png" alt="Deere Consistent Nav">
+                                <div class="grid-overlay"></div>
+                            </div>
+                            <div class="slide-content">
+                                <h4>FEATURED WORK</h4>
+                                <h3 class="project-title">DEERE: PLATFORM UNIFICATION</h3>
+                                <p class="project-desc">Unified navigation across 47 sites • Zero-downtime migration</p>
+                                <a href="Peter-Bartsch-Case-Study_Deere_Consistent-Nav.pdf" target="_blank"
+                                    rel="noopener noreferrer" class="project-link">View Case Study →</a>
+                                <div class="portfolio-nav">
+                                    <button class="portfolio-prev" aria-label="Previous project">‹</button>
+                                    <div class="portfolio-dots"></div>
+                                    <button class="portfolio-next" aria-label="Next project">›</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 5. Thios - AI as force multiplier -->
+                        <div class="portfolio-slide" data-index="4">
+                            <div class="slide-thumbnail">
+                                <img src="carousel-thumb-thios.png" alt="Thios Project">
+                                <div class="grid-overlay"></div>
+                            </div>
+                            <div class="slide-content">
+                                <h4>FEATURED WORK</h4>
+                                <h3 class="project-title">THIOS: SOLO FOUNDER</h3>
+                                <p class="project-desc">AI as technical co-founder • Idea to revenue in 18 months</p>
+                                <a href="Peter-Bartsch-Case-Study_Thios.pdf" target="_blank" rel="noopener noreferrer"
+                                    class="project-link">View Case Study →</a>
                                 <div class="portfolio-nav">
                                     <button class="portfolio-prev" aria-label="Previous project">‹</button>
                                     <div class="portfolio-dots"></div>
@@ -399,10 +411,9 @@
                                 <td></td>
                                 <td colspan="2">
                                     <ul class="inline-bullets">
-                                        <li>Designed 0→1 product ecosystem: 5 modular shelter variants with CAD models,
-                                            physical prototype, web platform, and multi-tier business model</li>
-                                        <li>Launched first revenue product: 200+ page build guide targeting 2,000 early
-                                            customers with lifetime updates</li>
+                                        <li><strong>Problem:</strong> Can AI compress the timeline from idea to market for a solo founder shipping physical products?</li>
+                                        <li><strong>Result:</strong> Complete product ecosystem in 18 months—brand, 3 websites, 5 CAD shelter variants, physical prototype, handbook generating revenue</li>
+                                        <li><strong>Method:</strong> AI as technical co-founder; 70% faster prototyping cycles through conversational development</li>
                                     </ul>
                                     <a href="#" class="view-more"
                                         onclick="document.getElementById('openModal1').click(); return false;">View More
@@ -418,11 +429,9 @@
                                 <td></td>
                                 <td colspan="2">
                                     <ul class="inline-bullets">
-                                        <li>Redesigned license management system (500K+ users, 12 languages)—34%
-                                            engagement increase, 16% fewer support tickets, enabling $3.8B subscription
-                                            revenue</li>
-                                        <li>Established enterprise design system in Figma for 40+ teams globally,
-                                            reducing design-to-dev handoff time 45%</li>
+                                        <li><strong>Problem:</strong> Force platform-wide data adoption across 500K+ users (farmers to dealers) without destroying trust—enabling $3.8B subscription revenue</li>
+                                        <li><strong>Result:</strong> 34% → 87% profile completion; unified navigation across 8 product lines; 45% faster design-to-dev handoffs</li>
+                                        <li><strong>Method:</strong> Multi-channel forced adoption strategy; enterprise design system spanning 40+ teams globally</li>
                                     </ul>
                                     <a href="#" class="view-more"
                                         onclick="document.getElementById('openModal2').click(); return false;">View More
@@ -438,12 +447,9 @@
                                 <td></td>
                                 <td colspan="2">
                                     <ul class="inline-bullets">
-                                        <li>Designed real-time supply chain control tower processing 10M+ daily events
-                                            for 30+ Fortune 2000 companies—became flagship product driving 3x customer
-                                            expansion</li>
-                                        <li>Scaled design team from 1 to 10 across Chicago and Chennai while
-                                            establishing hiring framework and component library (65% fewer
-                                            inconsistencies)</li>
+                                        <li><strong>Problem:</strong> Make customers trust real-time tracking when underlying data is uncertain, incomplete, or conflicting</li>
+                                        <li><strong>Result:</strong> $3M→$100M ARR hypergrowth; 41% retention increase; 3x customer expansion; team scaled 1→10</li>
+                                        <li><strong>Method:</strong> "Never hide uncertainty" design principle; predictive analytics 6-12 hours ahead of competitors</li>
                                     </ul>
                                     <a href="#" class="view-more"
                                         onclick="document.getElementById('openModal3').click(); return false;">View More
@@ -466,56 +472,24 @@
                                 <td>Product Manager</td>
                                 <td><a href="#" id="openModal7">Gogo Inflight Wi-Fi</a></td>
                             </tr>
-                            <!-- <tr>
-                                <td class="year-range">2004<br>2008</td>
-                                <td>Principal</td>
-                                <td><a href="#" id="openModal8">Dig the Pixels / D7TV.com</a></td>
-                            </tr> -->
+
                             <tr>
-                                <td class="year-range">2001-2024</td>
-                                <td>Director</td>
+                                <td class="year-range">2001-2008</td>
+                                <td>Co-Founder</td>
+                                <td><a href="#" id="openModal9">Cognistar</a></td>
+                            </tr>
+
+                            <tr>
+                                <td class="year-range">1989-1993</td>
+                                <td>BA, Humanities & Arch Theory</td>
+                                <td><a href="#" id="openModal13">Arizona State University</a></td>
+                            </tr>
+
+                            <tr>
+                                <td class="year-range">2004-2024</td>
+                                <td>Board Director</td>
                                 <td><a href="#" id="openModal5">How Weird Street Faire</a></td>
                             </tr>
-                            <!-- <tr>
-                                <td class="year-range">2000<br>2002</td>
-                                <td>Snowboard Instructor</td>
-                                <td><a href="#" id="openModal16">The Burton Chill Program</a></td>
-                            </tr> -->
-                            <!-- <tr>
-                                <td class="year-range">2000<br>2004</td>
-                                <td>Product Manager</td>
-                                <td><a href="#" id="openModal9">Cognistar.com</a></td>
-                            </tr> -->
-                            <!-- <tr>
-                                <td class="year-range">1998<br>2000</td>
-                                <td>Product Manager</td>
-                                <td><a href="#" id="openModal10">SkyMall.com</a></td>
-                            </tr> -->
-                            <!-- <tr>
-                                <td class="year-range">1997<br>1998</td>
-                                <td>Principal</td>
-                                <td><a href="#" id="openModal11">tronicmedia</a></td>
-                            </tr> -->
-                            <!-- <tr>
-                                <td class="year-range">1994<br>1997</td>
-                                <td>Interactive Specialist</td>
-                                <td><a href="#" id="openModal12">Life Fitness</a></td>
-                            </tr> -->
-                            <!-- <tr>
-                                <td class="year-range">1989<br>1993</td>
-                                <td>BA: Humanities</td>
-                                <td><a href="#" id="openModal13">Arizona State University</a></td>
-                            </tr> -->
-                            <!-- <tr>
-                                <td class="year-range">1987<br>1989</td>
-                                <td>Student@Large</td>
-                                <td><a href="#" id="openModal14">School of the Art Institute of Chicago</a></td>
-                            </tr> -->
-                            <!-- <tr>
-                                <td class="year-range">1985<br>1988</td>
-                                <td>Founder</td>
-                                <td><a href="#" id="openModal15">F. A. Skates</a></td>
-                            </tr> -->
                         </tbody>
                     </table>
                 </div>
@@ -527,10 +501,9 @@
                             Visualization • Accessibility (WCAG 2.1)</p>
                         <p style="margin-bottom: 10px;"><strong>Research & Strategy:</strong> User Research • Usability
                             Testing • Journey Mapping • Design Sprints • Lean UX • Agile/Scrum</p>
-                        <p style="margin-bottom: 10px;"><strong>Tools:</strong> Figma • Figma Make • Adobe Creative
-                            Suite • CAD/3D
+                        <p style="margin-bottom: 10px;"><strong>Tools:</strong> Figma • Adobe Creative Suite • CAD/3D
                             (OnShape) • HTML/CSS • AI Tools (Claude, Cursor) • Prototyping • AI-Augmented Workflows •
-                            AI-Integrated Design</p>
+                            AI-Integrated Design • Blender 3D</p>
                     </div>
                 </section>
                 <p>&nbsp;</p>
@@ -551,21 +524,21 @@
             <h2 id="myModal1-title">Thios</h2>
             <p>Founder & Lead Designer</p>
             <p>Aug 2024 - Present</p>
-            <p>Open-source modular shelter system that transforms parking spaces into productive environments—from
-                saunas to urban farms.</p>
+            <p>Treating AI as my technical co-founder, learning how to compress timelines, work across disciplines, and
+                ship products that traditionally require full teams. Building open-source modular shelter systems that
+                transform parking spot sized spaces into productive environments.</p>
             <ul>
-                <li>Designed and built complete product ecosystem from 0→1: 5 modular shelter variants with full CAD/3D
-                    models (OnShape), physical working prototype, web platform, and multi-tier business model—leveraging
-                    AI tools (Claude, Cursor) as technical co-founder to accelerate development across design,
-                    engineering, and strategy</li>
-                <li>Launched first revenue-generating product: Whole Thiosphere Handbook—200+ page build guide with
-                    architectural drawings, cut lists, and assembly instructions, targeting 2,000 early customers with
-                    lifetime updates</li>
-                <li>Created open-source hardware platform (CERN OHL v2) with standardized modular components for local
-                    manufacturing, enabling worldwide community building and customization</li>
-                <li>Applied AI-augmented workflows across entire development cycle—concept validation, CAD modeling, web
-                    development, technical documentation—demonstrating practical AI integration as force multiplier for
-                    product development</li>
+                <li>Created complete product ecosystem solo in 18 months: brand identity inspired by early 2000s
+                    open-source culture, 3 websites (thios.co, blog, store), 5 shelter variants with CAD models,
+                    physical prototype, and handbook generating first revenue</li>
+                <li>Applied full career toolkit simultaneously—product strategy, marketing, and design execution using
+                    GitHub Copilot → Cursor → Anti Gravity progression; proving experienced generalists can operate
+                    across traditional role boundaries with AI partnership</li>
+                <li>Established AI-augmented workflows: Obsidian MD + AI for project management and research synthesis;
+                    Figma Make for design-to-code; compressed prototyping cycles 70% through conversational development
+                    in Cursor and Anti-Gravity & Claude Code</li>
+                <li>Outcomes: Validated AI as practical force multiplier for startups; demonstrating how to maintain
+                    product quality while working at solo-founder velocity; any prototype is possible</li>
             </ul>
             <div class="carousel">
                 <img src="img/thios-01.png" alt="Image 1" class="active">
@@ -599,19 +572,18 @@
             <h2 id="myModal2-title">John Deere</h2>
             <p>Senior Lead UX; Digital Customer Experience</p>
             <p>Aug 2020 - Jul 2024</p>
-            <p>Led UX modernization across enterprise digital products serving agricultural, construction, and forestry
-                markets globally. Embedded with product teams to establish design standards and drive subscription
-                revenue growth.</p>
+            <p>Embedded with product teams to modernize 20-year-old systems and drive subscription revenue. Proving
+                enterprise design can move fast when you have the right frameworks.</p>
             <ul>
-                <li>Redesigned 20-year-old license management system serving 500K+ users across 12 languages, increasing
-                    authenticated engagement 34% and reducing support tickets 16%—enabling $3.8B in subscription revenue
-                    from Automation and AI services</li>
-                <li>Created unified account and navigation framework deployed across all digital touchpoints (web,
-                    mobile, embedded) for 8 product lines—consolidated fragmented experiences into single customer view
-                    with equipment data, improving dealer support efficiency 28%</li>
-                <li>Established enterprise design system in Figma spanning 6 brands and 40+ product teams globally,
-                    reducing design-to-development handoff time 45% through standardized components and documentation
-                </li>
+                <li>Redesigned license management system serving 500K+ users across 12 languages—increased authenticated
+                    engagement 34%, reduced support tickets 16%, enabled $3.8B in subscription revenue from Automation
+                    and AI services</li>
+                <li>Built unified account and navigation framework deployed across 8 product lines (web, mobile,
+                    embedded)—consolidated fragmented experiences into single customer view, improved dealer support
+                    efficiency 28%</li>
+                <li>Established enterprise design system in Figma spanning 6 brands and 40+ product teams
+                    globally—reduced design-to-development handoff time 45% through standardized components that
+                    actually shipped</li>
             </ul>
             <div class="carousel">
                 <img src="img/deere-01.png" alt="Image 1" class="active">
@@ -634,17 +606,18 @@
             <h2 id="myModal3-title">FourKites</h2>
             <p>Lead UX / Manager</p>
             <p>Jan 2017 - Jan 2020</p>
-            <p>Employee #28 at supply chain visibility startup during hypergrowth ($3M to $100M ARR). Built and led
-                design function from founding designer to 10-person global team.</p>
+            <p>Employee #28 during hypergrowth ($3M to $100M ARR). Built design function from scratch—founding designer
+                to 10-person global team.</p>
             <ul>
-                <li>Designed real-time supply chain control tower processing 10M+ daily tracking events for 30+ Fortune
-                    2000 companies (Anheuser-Busch, Georgia-Pacific, Tyson Foods)—became company's flagship product
-                    driving 3x customer expansion</li>
-                <li>Led predictive analytics dashboard that identified shipment delays 6-12 hours earlier than
-                    competitors, increasing customer retention 41% and expanding average contract value $120K annually
-                </li>
-                <li>Scaled design team from 1 to 10 across Chicago and Chennai offices while establishing hiring
-                    framework, design operations, and component library that reduced design inconsistencies 65%</li>
+                <li>Designed flagship products from 0→1: Real-time supply chain control tower and related mobile apps
+                    processing 10M+ daily tracking events for 30+ Fortune 2000 companies (Anheuser-Busch,
+                    Georgia-Pacific, Tyson); products became primary driver of 3x customer expansion</li>
+                <li>Led bespoke predictive analytics dashboard products identifying shipment delays 6-12 hours earlier
+                    than competitors; increased customer retention 41% and expanded average contract value $120K
+                    annually</li>
+                <li>Scaled design org: Hired and managed team across Chicago and Chennai; established component library,
+                    design operations, and hiring framework—reduced design inconsistencies 65% while maintaining startup
+                    velocity</li>
             </ul>
             <div class="carousel">
                 <img src="img/fourkites-01.png" alt="Image 1" class="active">
@@ -671,15 +644,14 @@
             <h2 id="myModal4-title">MavenWave Partners</h2>
             <p>Senior UX + Agile Lead (Consultant)</p>
             <p>Jan 2014 - Jan 2017</p>
-            <p>Led UX and Agile transformation for Fortune 500 digital products across healthcare and pharmaceutical
-                sectors.</p>
+            <p>Led digital product design for Fortune 500 healthcare and pharmaceutical clients. Fast iteration in
+                slow-moving industries.</p>
             <ul>
                 <li>Designed 6 internal portals for AbbVie supporting 200K+ users across clinical trials and patient
-                    support programs—improved medication adherence tracking and reduced hospital readmissions 12%
-                    through simplified workflows</li>
+                    support programs—improved medication adherence tracking, reduced hospital readmissions 12%</li>
                 <li>Rebuilt OptumRx pharmacy formulary platform processing 1.4B prescriptions annually—created company's
-                    first patient-facing product, reducing fulfillment errors 15% through improved drug interaction
-                    warnings and onboarding</li>
+                    first patient-facing product, reduced fulfillment errors 15% through improved drug interaction
+                    warnings</li>
                 <li>Established Lean UX and Agile practices across client engagements while mentoring junior designers
                     and leading cross-functional design sprints</li>
             </ul>
@@ -731,8 +703,8 @@
             <p>Product Manager</p>
             <p>April 2008 - August 2012</p>
             <ul>
-                <li>Launched connectivity services across 6 major airlines; developed sponsored flight tracker
-                    generating recurring revenue streams</li>
+                <li>Launched connectivity across 6 major airlines; developed sponsored flight tracker generating
+                    recurring revenue</li>
             </ul>
             <div class="carousel">
                 <img src="img/gogo-01.png" alt="Image 1" class="active">
@@ -757,8 +729,8 @@
         <div class="modal-content">
             <span class="close">&CircleTimes;</span>
             <h2>How Weird Street Faire</h2>
-            <p>Member, Board of Directors</p>
-            <p>May 2001 - November 2024</p>
+            <p>Board Director</p>
+            <p>2004 - 2024</p>
             <ul>
                 <li>Member of Board of Directors for 501(c)(3) Non-Profit, in good standing with both state and federal
                     for over 20 years</li>
@@ -807,9 +779,9 @@
     <div id="myModal9" class="modal" role="dialog" aria-modal="true" aria-labelledby="myModal9-title">
         <div class="modal-content">
             <span class="close">&CircleTimes;</span>
-            <h2 id="myModal9-title">Cognistar.com</h2>
+            <h2 id="myModal9-title">Cognistar</h2>
             <p>Co-Founder</p>
-            <p>June 2000 - August 2004</p>
+            <p>2001 - 2008</p>
             <ul>
                 <li>Built digital production and UX for legal education startup; raised $3M, achieved $2M+ annual
                     revenue before acquisition</li>
@@ -898,17 +870,15 @@
     <div id="myModal13" class="modal" role="dialog" aria-modal="true" aria-labelledby="myModal13-title">
         <div class="modal-content">
             <span class="close">&CircleTimes;</span>
-            <h2 id="myModal13-title">A.S.U.</h2>
-            <p>B.A. Humanities</p>
-            <p>August 1989 - May 1993</p>
+            <h2 id="myModal13-title">Arizona State University</h2>
+            <p>Bachelor of Arts</p>
+            <p>1989 - 1993</p>
             <ul>
-                <li>Focus on Architectural Theory</li>
-                <li>(and vert ramp skateboarding)</li>
-                <li>Minor in snowboarding</li>
+                <li>Major: Humanities</li>
+                <li>Concentration: Architectural Theory</li>
             </ul>
             <div class="carousel">
                 <img src="img/asu-01.png" alt="Image 1" class="active">
-
             </div>
             <div class="carousel-nav">
             </div>
@@ -988,6 +958,12 @@
         </div>
     </div>
 
+    <!-- Modal Container (dynamically populated) -->
+    <div id="modal-container"></div>
+
+    <!-- Scripts -->
+    <script src="portfolio-data.js"></script>
+    <script src="modal-system.js"></script>
     <script src="script.js"></script>
     <footer id="site-footer-final" style="text-align:center; padding:20px 12px;">
         <p style="margin:0;">

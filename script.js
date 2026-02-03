@@ -1,61 +1,15 @@
-function setupModal(modalId, openBtnId) {
-    const modal = document.getElementById(modalId);
-    if (!modal) {
-        console.warn(`Modal with ID ${modalId} not found`);
-        return;
-    }
-
-    const openBtn = document.getElementById(openBtnId);
-    if (!openBtn) {
-        console.warn(`Open button with ID ${openBtnId} not found`);
-        return;
-    }
-
-    const closeBtn = modal.querySelector(".close");
-    const prevBtn = modal.querySelector(".prevBtn");
-    const nextBtn = modal.querySelector(".nextBtn");
-    const images = modal.querySelectorAll(".carousel img");
-
-    let currentIndex = 0;
-
-    openBtn.onclick = (e) => {
-        e.preventDefault();
-        modal.style.display = "block";
-    };
-
-    if (closeBtn) {
-        ['click', 'touchend'].forEach(evt =>
-            closeBtn.addEventListener(evt, (e) => {
-                e.preventDefault();
-                modal.style.display = "none";
-            })
-        );
-    }
-
-    ['click', 'touchend'].forEach(evt =>
-        window.addEventListener(evt, (event) => {
-            if (event.target.classList.contains('modal')) {
-                event.target.style.display = "none";
-            }
-        })
-    );
-
-    function showImage(index) {
-        images[currentIndex].classList.remove("active");
-        currentIndex = (index + images.length) % images.length;
-        images[currentIndex].classList.add("active");
-    }
-
-    if (prevBtn && nextBtn) {
-        prevBtn.onclick = () => showImage(currentIndex - 1);
-        nextBtn.onclick = () => showImage(currentIndex + 1);
-    }
-}
-
-// Set up all modals
-for (let i = 1; i <= 16; i++) {
-    setupModal(`myModal${i}`, `openModal${i}`);
-}
+/**
+ * Legacy modal setup - now handled by modal-system.js
+ * The new system uses portfolio-data.js for content and
+ * dynamically renders modals on demand.
+ *
+ * Benefits:
+ * - Single source of truth for portfolio data
+ * - Lazy loading of modal content
+ * - Better accessibility (focus trap, escape to close)
+ * - Keyboard navigation for carousels
+ * - Touch swipe support
+ */
 
 // Image and video click handlers - video autoplays and loops, only pauses on tap
 const coverArt = document.getElementById('coverArt');
@@ -190,35 +144,86 @@ if (coverVideo) {
     document.addEventListener('DOMContentLoaded', updateAriaCurrent);
 })();
 
-// Hamburger menu toggle
+// Mobile menu drawer with backdrop
 (function () {
     const hamburgerBtn = document.getElementById('hamburgerBtn');
     const mobileMenu = document.getElementById('mobileMenu');
-    if (hamburgerBtn && mobileMenu) {
-        function closeMenu() {
-            mobileMenu.hidden = true;
-            hamburgerBtn.setAttribute('aria-expanded', 'false');
-        }
-        function openMenu() {
-            mobileMenu.hidden = false;
-            hamburgerBtn.setAttribute('aria-expanded', 'true');
-        }
-        hamburgerBtn.addEventListener('click', function () {
-            const expanded = hamburgerBtn.getAttribute('aria-expanded') === 'true';
-            if (expanded) { closeMenu(); } else { openMenu(); }
-        });
-        // Close when clicking a link
-        mobileMenu.addEventListener('click', function (e) {
-            const target = e.target;
-            if (target && target.tagName === 'A') { closeMenu(); }
-        });
-        // Click-away close
-        document.addEventListener('click', function (e) {
-            if (!mobileMenu.hidden && !mobileMenu.contains(e.target) && e.target !== hamburgerBtn && !hamburgerBtn.contains(e.target)) {
-                closeMenu();
-            }
-        });
+    const backdrop = document.getElementById('mobileMenuBackdrop');
+    const closeBtn = document.getElementById('mobileMenuClose');
+
+    if (!hamburgerBtn || !mobileMenu) return;
+
+    function closeMenu() {
+        mobileMenu.hidden = true;
+        hamburgerBtn.setAttribute('aria-expanded', 'false');
+        if (backdrop) backdrop.classList.remove('active');
+        document.body.style.overflow = '';
     }
+
+    function openMenu() {
+        mobileMenu.hidden = false;
+        hamburgerBtn.setAttribute('aria-expanded', 'true');
+        if (backdrop) backdrop.classList.add('active');
+        document.body.style.overflow = 'hidden';
+        // Focus first link for accessibility
+        const firstLink = mobileMenu.querySelector('a');
+        if (firstLink) setTimeout(() => firstLink.focus(), 100);
+    }
+
+    function toggleMenu() {
+        const expanded = hamburgerBtn.getAttribute('aria-expanded') === 'true';
+        if (expanded) {
+            closeMenu();
+        } else {
+            openMenu();
+        }
+    }
+
+    // Hamburger button click
+    hamburgerBtn.addEventListener('click', toggleMenu);
+
+    // Close button inside menu
+    if (closeBtn) {
+        closeBtn.addEventListener('click', closeMenu);
+    }
+
+    // Backdrop click closes menu
+    if (backdrop) {
+        backdrop.addEventListener('click', closeMenu);
+    }
+
+    // Close when clicking a link
+    mobileMenu.addEventListener('click', function (e) {
+        const target = e.target;
+        if (target && target.tagName === 'A') {
+            closeMenu();
+        }
+    });
+
+    // Escape key closes menu
+    document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape' && !mobileMenu.hidden) {
+            closeMenu();
+            hamburgerBtn.focus();
+        }
+    });
+
+    // Focus trap within menu
+    mobileMenu.addEventListener('keydown', function (e) {
+        if (e.key !== 'Tab') return;
+
+        const focusable = mobileMenu.querySelectorAll('a, button');
+        const first = focusable[0];
+        const last = focusable[focusable.length - 1];
+
+        if (e.shiftKey && document.activeElement === first) {
+            e.preventDefault();
+            last.focus();
+        } else if (!e.shiftKey && document.activeElement === last) {
+            e.preventDefault();
+            first.focus();
+        }
+    });
 })();
 
 // Contact form: compose mailto without exposing address in HTML (pure JS, no TS types)
