@@ -1,0 +1,38 @@
+{
+  "name": "peterbartsch-portfolio",
+  "version": "2.0.0",
+  "description": "Personal portfolio website for Peter Bartsch",
+  "author": "Peter Bartsch",
+  "private": true,
+  "scripts": {
+    "build": "npm run build:css && npm run build:js",
+    "build:css": "npx lightningcss --minify --bundle styles.css -o dist/styles.min.css",
+    "build:js": "npx esbuild script.js portfolio-data.js modal-system.js --bundle --minify --outdir=dist",
+    "build:images": "npx imagemin img/*.{png,jpg,jpeg,gif} --out-dir=dist/img",
+    "build:all": "npm run build && npm run build:images",
+    "watch": "npx concurrently \"npm run watch:css\" \"npm run watch:js\"",
+    "watch:css": "npx lightningcss --minify --bundle styles.css -o dist/styles.min.css --watch",
+    "watch:js": "npx esbuild script.js portfolio-data.js modal-system.js --bundle --minify --outdir=dist --watch",
+    "serve": "php -S localhost:8000",
+    "dev": "npx concurrently \"npm run watch\" \"npm run serve\"",
+    "lint:css": "npx stylelint '**/*.css' --ignore-path .gitignore",
+    "lint:js": "npx eslint '*.js' --ignore-path .gitignore",
+    "lint": "npm run lint:css && npm run lint:js",
+    "clean": "rm -rf dist",
+    "prebuild": "mkdir -p dist/img",
+    "resume": "./scripts/build-resume.sh"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.0",
+    "esbuild": "^0.20.0",
+    "lightningcss-cli": "^1.23.0"
+  },
+  "optionalDependencies": {
+    "imagemin-cli": "^7.0.0",
+    "stylelint": "^16.0.0",
+    "eslint": "^8.56.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
