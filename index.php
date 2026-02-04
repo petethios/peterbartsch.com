@@ -8,7 +8,7 @@
     <link rel="icon" type="image/svg+xml" href="pblogo.svg">
     <link rel="apple-touch-icon" href="pblogo.png">
     <meta name="description"
-        content="Peter Bartsch: Product designer who ships. 15+ years building 0→1 products and scaling design systems. Portfolio, resume, and experience.">
+        content="Enterprise UX & Product Leader. Enabled $3.8B revenue, drove 34%→87% platform adoption across 500K+ users, scaled design org 1→10. Portfolio and case studies.">
     <meta name="keywords"
         content="Peter Bartsch, UX leader, product design, user experience, portfolio, resume, product manager">
     <meta name="author" content="Peter Bartsch">
@@ -19,18 +19,18 @@
     <meta property="og:url" content="https://peterbartsch.com/">
     <meta property="og:title" content="Peter Bartsch - Product and UX Leader">
     <meta property="og:description"
-        content="Peter Bartsch: Product designer who ships. 15+ years building 0→1 products and scaling design systems. Portfolio, resume, and experience.">
+        content="Enterprise UX & Product Leader. Enabled $3.8B revenue, drove 34%→87% platform adoption across 500K+ users, scaled design org 1→10.">
     <meta property="og:site_name" content="Peter Bartsch">
     <meta property="og:image" content="https://peterbartsch.com/og-image.png">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
-    <meta property="og:image:alt" content="Peter Bartsch - Product Designer with 15+ years experience">
+    <meta property="og:image:alt" content="Peter Bartsch - Product & UX Leader | $3.8B Revenue Enabled | 500K+ Users">
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Peter Bartsch - Product and UX Leader">
     <meta name="twitter:description"
-        content="Product and UX leader: portfolio, resume, professional experience, and tools.">
+        content="Enterprise UX & Product Leader. Enabled $3.8B revenue, drove 34%→87% platform adoption across 500K+ users, scaled design org 1→10.">
     <meta name="twitter:image" content="https://peterbartsch.com/og-image.png">
     <meta name="twitter:image:alt" content="Peter Bartsch - Product Designer with 15+ years experience">
 
@@ -95,7 +95,7 @@
       "sameAs": [
         "https://linkedin.com/in/peterbartsch"
       ],
-      "description": "Product designer who ships. 15+ years building 0→1 products and scaling design systems—from solo founder to employee #28 at hypergrowth startup to senior IC at $38B enterprise.",
+      "description": "Enterprise UX & Product Leader. Enabled $3.8B revenue, drove 34%→87% platform adoption across 500K+ users, scaled design org 1→10.",
       "knowsAbout": ["User Experience Design", "Product Management", "Design Systems", "Enterprise Software", "Data Visualization", "Figma", "Prototyping"],
       "email": "peter@peterbartsch.com",
       "hasOccupation": [
@@ -160,16 +160,11 @@
                 </ul>
                 <p>Case Studies<br></p>
                 <ul>
-                    <li><a href="Peter-Bartsch-Case-Study_Thios.pdf" target="_blank" rel="noopener noreferrer">Thios: AI as Co-founder</a></li>
-                    <li><a href="Peter-Bartsch-Case-Study_Deere_Common-UX.pdf" target="_blank"
-                            rel="noopener noreferrer">Deere: Common UX</a></li>
-                    <li><a href="Peter-Bartsch-Case-Study_Deere_Consistent-Nav.pdf" target="_blank"
-                            rel="noopener noreferrer">Deere: Consistent Nav</a></li>
-                    <li><a href="Peter-Bartsch-Case-Study_FourKites_Tracking.pdf" target="_blank"
-                            rel="noopener noreferrer">FourKites: Tracking</a></li>
-                    <li><a href="Peter-Bartsch-Case-Study_FourKites_Driver.pdf" target="_blank"
-                            rel="noopener noreferrer">FourKites: Driver</a></li>
-                    <li><a href="#tools-section">Tools</a></li>
+                    <li><a href="case-studies/deere-common-ux">Deere: Forced Adoption</a></li>
+                    <li><a href="case-studies/deere-nav">Deere: Platform Unification</a></li>
+                    <li><a href="case-studies/fourkites-tracking">FourKites: Data Trust</a></li>
+                    <li><a href="case-studies/fourkites-driver">FourKites: Incentive Design</a></li>
+                    <li><a href="case-studies/thios">Thios: AI as Co-founder</a></li>
                     <li><a href="#footer">Contact</a></li>
                 </ul>
             </nav>
@@ -198,15 +193,14 @@
             </ul>
             <div class="mobile-menu-header">Case Studies</div>
             <ul>
-                <li><a href="Peter-Bartsch-Case-Study_Thios.pdf" target="_blank" rel="noopener noreferrer">Thios: AI as Technical Co-founder</a></li>
-                <li><a href="Peter-Bartsch-Case-Study_Deere_Common-UX.pdf" target="_blank" rel="noopener noreferrer">Deere: Common UX</a></li>
-                <li><a href="Peter-Bartsch-Case-Study_Deere_Consistent-Nav.pdf" target="_blank" rel="noopener noreferrer">Deere: Consistent Nav</a></li>
-                <li><a href="Peter-Bartsch-Case-Study_FourKites_Tracking.pdf" target="_blank" rel="noopener noreferrer">FourKites: Tracking</a></li>
-                <li><a href="Peter-Bartsch-Case-Study_FourKites_Driver.pdf" target="_blank" rel="noopener noreferrer">FourKites: Driver</a></li>
+                <li><a href="case-studies/deere-common-ux">Deere: Forced Adoption</a></li>
+                <li><a href="case-studies/deere-nav">Deere: Platform Unification</a></li>
+                <li><a href="case-studies/fourkites-tracking">FourKites: Data Trust</a></li>
+                <li><a href="case-studies/fourkites-driver">FourKites: Incentive Design</a></li>
+                <li><a href="case-studies/thios">Thios: AI as Co-founder</a></li>
             </ul>
             <div class="mobile-menu-header">More</div>
             <ul>
-                <li><a href="#tools-section">Tools</a></li>
                 <li><a href="#footer">Contact</a></li>
             </ul>
         </nav>
@@ -225,7 +219,7 @@
         <section>
             <p
                 style="text-align: justify; font-family: Ari, monospace; font-size: 24px; font-weight: 400; margin-top: 20px;">
-                <strong>Product designer who ships.</strong> 15+ years building 0→1 products and scaling design systems—from solo founder to employee #28 at hypergrowth startup to senior IC at $38B enterprise. Research-driven, prototype-obsessed, comfortable with ambiguity.
+                <strong>Enterprise UX & Product Leader</strong> — Simplifying complex systems for users and businesses. Enabled $3.8B revenue, drove 34%→87% platform adoption across 500K+ users, scaled design org 1→10.
             </p>
         </section>
     </section>
@@ -241,13 +235,12 @@
                 </header>
 
                 <section id="desc-section">
-                    <p id="desc" style="text-align: justify;">Product designer who ships. 15+ years building 0→1 products and scaling design systems—from solo founder to employee #28 at hypergrowth startup to senior IC at $38B enterprise. Research-driven, prototype-obsessed, comfortable with ambiguity.
+                    <p id="desc" style="text-align: justify;">Enterprise UX & Product Leader — Simplifying complex systems for users and businesses. Enabled $3.8B revenue, drove 34%→87% platform adoption across 500K+ users, scaled design org 1→10.
                     </p>
                 </section>
-                <hr style="margin-top: 20px; border: 0; border-top: 2px solid rgba(134, 216, 221, 0.3); width: 86%;">
                 <section id="resume-links">
 
-                    <h4 style="margin-top: 20px;">LEARN MORE</h4>
+                    <h4 style="margin-top: 40px;">LEARN MORE</h4>
                     <p><a href="Peter-Bartsch-Resume.pdf" target="_blank" class="button button2"
                             rel="noopener noreferrer"><img src="pdf.png" alt="PDF" class="pdf-icon">RESUME</a>
                     </p>
@@ -255,37 +248,24 @@
                             rel="noopener noreferrer"><img src="pdf.png" alt="PDF" class="pdf-icon">PORTFOLIO</a>
                     </p>
                     <h4 style="margin-top: 20px;">CASE STUDIES</h4>
-                    <p><a href="Peter-Bartsch-Case-Study_Thios.pdf" target="_blank" class="button button2"
-                            rel="noopener noreferrer"><img src="pdf.png" alt="PDF" class="pdf-icon">THIOS: AI AS CO-FOUNDER</a>
+                    <p><a href="case-studies/deere-common-ux" class="button button2">DEERE: FORCED ADOPTION →</a>
                     </p>
-                    <p><a href="Peter-Bartsch-Case-Study_Deere_Common-UX.pdf" target="_blank" class="button button2"
-                            rel="noopener noreferrer"><img src="pdf.png" alt="PDF" class="pdf-icon">DEERE: COMMON UX</a>
+                    <p><a href="case-studies/deere-nav" class="button button2">DEERE: PLATFORM UNIFICATION →</a>
                     </p>
-                    <p><a href="Peter-Bartsch-Case-Study_Deere_Consistent-Nav.pdf" target="_blank"
-                            class="button button2" rel="noopener noreferrer"><img src="pdf.png" alt="PDF"
-                                class="pdf-icon">DEERE: CONSISTENT NAV</a>
+                    <p><a href="case-studies/fourkites-tracking" class="button button2">FOURKITES: DATA TRUST →</a>
                     </p>
-                    <p><a href="Peter-Bartsch-Case-Study_FourKites_Tracking.pdf" target="_blank" class="button button2"
-                            rel="noopener noreferrer"><img src="pdf.png" alt="PDF" class="pdf-icon">FOURKITES:
-                            TRACKING</a>
+                    <p><a href="case-studies/fourkites-driver" class="button button2">FOURKITES: INCENTIVE DESIGN →</a>
                     </p>
-                    <p><a href="Peter-Bartsch-Case-Study_FourKites_Driver.pdf" target="_blank" class="button button2"
-                            rel="noopener noreferrer"><img src="pdf.png" alt="PDF" class="pdf-icon">FOURKITES:
-                            DRIVER</a>
+                    <p><a href="case-studies/thios" class="button button2">THIOS: AI AS CO-FOUNDER →</a>
                     </p>
-                    <hr
-                        style="margin-top: 20px; border: 0; border-top: 2px solid rgba(134, 216, 221, 0.3); width: 86%;">
-                    <p><br><a
+                    <p style="margin-top: 40px;"><a
                             href="https://www.figma.com/proto/i1SMndpgNnRCEBZceZJ7NK/Peter-Bartsch-CV--Portfolio---Cases-Studies?node-id=963-950&t=tsQyOT4yQLBTD8ms-1"
                             target="_blank" class="button button2" rel="noopener noreferrer"><img src="figma.png"
                                 alt="Figma" class="figma-icon" height="22px" width="22px">&nbsp;EVERYTHING IN
                             FIGMA</a></p>
-                    <p>&nbsp;</p>
                 </section>
-                <hr style="margin-top: 20px; border: 0; border-top: 2px solid rgba(134, 216, 221, 0.3); width: 86%;">
                 <section id="footer">
-                    <p>&nbsp;</p>
-                    <h4>LET'S TALK</h4>
+                    <h4 style="margin-top: 40px;">LET'S TALK</h4>
                     <!-- Contact form without exposing email in HTML -->
                     <form id="contactForm" class="contact-form">
                         <div class="form-group">
@@ -324,7 +304,7 @@
                     <div class="song-info">
                         <h2 id="songTitle">PETER BARTSCH</h2>
                         <p id="artistName">Product & UX Leader</p>
-                        <p id="releaseDate">Enterprise Platforms • Forced Adoption • Data Trust • $3.8B Impact
+                        <p id="releaseDate">$3.8B Revenue Enabled • 500K+ Users • 34%→87% Adoption • Team 1→10
                         </p>
                     </div>
                 </div>
@@ -356,44 +336,8 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- 2. FourKites Tracking - Trust in uncertain data -->
+                        <!-- 2. Deere Nav - Platform governance -->
                         <div class="portfolio-slide" data-index="1">
-                            <div class="slide-thumbnail">
-                                <img src="carousel-thumb-fourkites-tracking.png" alt="FourKites Tracking">
-                                <div class="grid-overlay"></div>
-                            </div>
-                            <div class="slide-content">
-                                <h4>FEATURED WORK</h4>
-                                <h3 class="project-title">FOURKITES: DATA TRUST</h3>
-                                <p class="project-desc">Made customers trust tracking when data was uncertain • "Never hide uncertainty"</p>
-                                <a href="case-studies/fourkites-tracking" class="project-link">View Case Study →</a>
-                                <div class="portfolio-nav">
-                                    <button class="portfolio-prev" aria-label="Previous project">‹</button>
-                                    <div class="portfolio-dots"></div>
-                                    <button class="portfolio-next" aria-label="Next project">›</button>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- 3. FourKites Driver - Incentive alignment -->
-                        <div class="portfolio-slide" data-index="2">
-                            <div class="slide-thumbnail">
-                                <img src="carousel-thumb-fourkites-driver.png" alt="FourKites Driver">
-                                <div class="grid-overlay"></div>
-                            </div>
-                            <div class="slide-content">
-                                <h4>FEATURED WORK</h4>
-                                <h3 class="project-title">FOURKITES: INCENTIVE DESIGN</h3>
-                                <p class="project-desc">Reconciled competing driver/shipper incentives • 41% retention increase</p>
-                                <a href="case-studies/fourkites-driver" class="project-link">View Case Study →</a>
-                                <div class="portfolio-nav">
-                                    <button class="portfolio-prev" aria-label="Previous project">‹</button>
-                                    <div class="portfolio-dots"></div>
-                                    <button class="portfolio-next" aria-label="Next project">›</button>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- 4. Deere Nav - Platform governance -->
-                        <div class="portfolio-slide" data-index="3">
                             <div class="slide-thumbnail">
                                 <img src="carousel-thumb-deere-nav.png" alt="Deere Consistent Nav">
                                 <div class="grid-overlay"></div>
@@ -410,6 +354,42 @@
                                 </div>
                             </div>
                         </div>
+                        <!-- 3. FourKites Tracking - Trust in uncertain data -->
+                        <div class="portfolio-slide" data-index="2">
+                            <div class="slide-thumbnail">
+                                <img src="carousel-thumb-fourkites-tracking.png" alt="FourKites Tracking">
+                                <div class="grid-overlay"></div>
+                            </div>
+                            <div class="slide-content">
+                                <h4>FEATURED WORK</h4>
+                                <h3 class="project-title">FOURKITES: DATA TRUST</h3>
+                                <p class="project-desc">Made customers trust tracking when data was uncertain • "Never hide uncertainty"</p>
+                                <a href="case-studies/fourkites-tracking" class="project-link">View Case Study →</a>
+                                <div class="portfolio-nav">
+                                    <button class="portfolio-prev" aria-label="Previous project">‹</button>
+                                    <div class="portfolio-dots"></div>
+                                    <button class="portfolio-next" aria-label="Next project">›</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 4. FourKites Driver - Incentive alignment -->
+                        <div class="portfolio-slide" data-index="3">
+                            <div class="slide-thumbnail">
+                                <img src="carousel-thumb-fourkites-driver.png" alt="FourKites Driver">
+                                <div class="grid-overlay"></div>
+                            </div>
+                            <div class="slide-content">
+                                <h4>FEATURED WORK</h4>
+                                <h3 class="project-title">FOURKITES: INCENTIVE DESIGN</h3>
+                                <p class="project-desc">Reconciled competing driver/shipper incentives • 32% more tracked shipments</p>
+                                <a href="case-studies/fourkites-driver" class="project-link">View Case Study →</a>
+                                <div class="portfolio-nav">
+                                    <button class="portfolio-prev" aria-label="Previous project">‹</button>
+                                    <div class="portfolio-dots"></div>
+                                    <button class="portfolio-next" aria-label="Next project">›</button>
+                                </div>
+                            </div>
+                        </div>
                         <!-- 5. Thios - AI as force multiplier -->
                         <div class="portfolio-slide" data-index="4">
                             <div class="slide-thumbnail">
@@ -418,7 +398,7 @@
                             </div>
                             <div class="slide-content">
                                 <h4>FEATURED WORK</h4>
-                                <h3 class="project-title">THIOS: SOLO FOUNDER</h3>
+                                <h3 class="project-title">THIOS: AI AS CO-FOUNDER</h3>
                                 <p class="project-desc">AI as technical co-founder • Idea to revenue in 18 months</p>
                                 <a href="case-studies/thios" class="project-link">View Case Study →</a>
                                 <div class="portfolio-nav">
@@ -431,25 +411,9 @@
                     </div>
                 </div>
 
-                <!-- Configurator Showcase -->
-                <section class="configurator-showcase scroll-reveal">
-                    <div class="configurator-showcase-inner">
-                        <div class="configurator-preview">
-                            <img src="img/configurator-screenshot.png" alt="Thios 3D Configurator Preview" loading="lazy">
-                            <div class="grid-overlay"></div>
-                        </div>
-                        <div class="configurator-content">
-                            <div class="configurator-badge">Interactive Demo</div>
-                            <h3 class="configurator-title">3D PRODUCT CONFIGURATOR</h3>
-                            <p class="configurator-desc">Design custom modular shelters in real-time. Built solo using AI as technical co-founder—Three.js, React, with AR preview.</p>
-                            <a href="https://thios.co/configurator" target="_blank" rel="noopener noreferrer" class="configurator-cta" data-track="configurator_click">Try the Configurator</a>
-                        </div>
-                    </div>
-                </section>
-
                 <!-- Company Logos -->
                 <section class="company-logos-section scroll-reveal">
-                    <h4 class="company-logos-header">Trusted By Industry Leaders</h4>
+                    <h4 class="company-logos-header">Companies I've Designed For</h4>
                     <div class="company-logos-grid scroll-reveal-stagger">
                         <img src="img/logos/John-Deere-Logo 1.png" alt="John Deere" class="company-logo" loading="lazy">
                         <img src="img/logos/FourKites_Logo_light.png" alt="FourKites" class="company-logo" loading="lazy">
@@ -480,6 +444,22 @@
                     </div>
                 </section>
 
+                <!-- Configurator Showcase -->
+                <section class="configurator-showcase scroll-reveal">
+                    <div class="configurator-showcase-inner">
+                        <div class="configurator-preview">
+                            <img src="img/configurator-screenshot.png" alt="Thios 3D Configurator Preview" loading="lazy">
+                            <div class="grid-overlay"></div>
+                        </div>
+                        <div class="configurator-content">
+                            <div class="configurator-badge">Interactive Demo</div>
+                            <h3 class="configurator-title">3D PRODUCT CONFIGURATOR</h3>
+                            <p class="configurator-desc">Design custom modular shelters in real-time. Built solo using AI as technical co-founder—Three.js, React, with AR preview.</p>
+                            <a href="https://thios.co/configurator" target="_blank" rel="noopener noreferrer" class="configurator-cta" data-track="configurator_click">Try the Configurator</a>
+                        </div>
+                    </div>
+                </section>
+
                 <div id="songlist">
                     <table id="tracklist">
                         <thead>
@@ -502,9 +482,7 @@
                                         <li><strong>Result:</strong> Complete product ecosystem in 18 months—brand, 3 websites, 5 CAD shelter variants, physical prototype, handbook generating revenue</li>
                                         <li><strong>Method:</strong> AI as technical co-founder; 70% faster prototyping cycles through conversational development</li>
                                     </ul>
-                                    <a href="#" class="view-more"
-                                        onclick="document.getElementById('openModal1').click(); return false;">View More
-                                        →</a>
+                                    <a href="case-studies/thios" class="view-more">View More →</a>
                                 </td>
                             </tr>
                             <tr class="featured-role">
@@ -520,9 +498,7 @@
                                         <li><strong>Result:</strong> 34% → 87% profile completion; unified navigation across 8 product lines; 45% faster design-to-dev handoffs</li>
                                         <li><strong>Method:</strong> Multi-channel forced adoption strategy; enterprise design system spanning 40+ teams globally</li>
                                     </ul>
-                                    <a href="#" class="view-more"
-                                        onclick="document.getElementById('openModal2').click(); return false;">View More
-                                        →</a>
+                                    <a href="case-studies/deere-common-ux" class="view-more">View More →</a>
                                 </td>
                             </tr>
                             <tr class="featured-role">
@@ -538,9 +514,7 @@
                                         <li><strong>Result:</strong> $3M→$100M ARR hypergrowth; 41% retention increase; 3x customer expansion; team scaled 1→10</li>
                                         <li><strong>Method:</strong> "Never hide uncertainty" design principle; predictive analytics 6-12 hours ahead of competitors</li>
                                     </ul>
-                                    <a href="#" class="view-more"
-                                        onclick="document.getElementById('openModal3').click(); return false;">View More
-                                        →</a>
+                                    <a href="case-studies/fourkites-tracking" class="view-more">View More →</a>
                                 </td>
                             </tr>
                             <tr>
@@ -580,20 +554,6 @@
                         </tbody>
                     </table>
                 </div>
-                <section id="tools-section" style="margin-top: 40px; padding: 0 20px;">
-                    <h4 style="margin-bottom: 20px;">SKILLS & TOOLS</h4>
-                    <div style="font-family: Ari, monospace; font-size: 16px; line-height: 1.6;">
-                        <p style="margin-bottom: 10px;"><strong>Design Leadership:</strong> Enterprise Design Systems •
-                            Cross-functional Team Building • Design Operations • Information Architecture • Data
-                            Visualization • Accessibility (WCAG 2.1)</p>
-                        <p style="margin-bottom: 10px;"><strong>Research & Strategy:</strong> User Research • Usability
-                            Testing • Journey Mapping • Design Sprints • Lean UX • Agile/Scrum</p>
-                        <p style="margin-bottom: 10px;"><strong>Tools:</strong> Figma • Adobe Creative Suite • CAD/3D
-                            (OnShape) • HTML/CSS • AI Tools (Claude, Cursor) • Prototyping • AI-Augmented Workflows •
-                            AI-Integrated Design • Blender 3D</p>
-                    </div>
-                </section>
-                <p>&nbsp;</p>
             </section>
 
         </main>
@@ -606,42 +566,19 @@
 
     <!-- Modals -->
     <div id="myModal1" class="modal" role="dialog" aria-modal="true" aria-labelledby="myModal1-title">
-        <div class="modal-content">
+        <div class="modal-content modal-compact">
             <span class="close">&CircleTimes;</span>
             <h2 id="myModal1-title">Thios</h2>
-            <p>Founder & Lead Designer</p>
-            <p>Aug 2024 - Present</p>
-            <p>Treating AI as my technical co-founder, learning how to compress timelines, work across disciplines, and
-                ship products that traditionally require full teams. Building open-source modular shelter systems that
-                transform parking spot sized spaces into productive environments.</p>
-            <ul>
-                <li>Created complete product ecosystem solo in 18 months: brand identity inspired by early 2000s
-                    open-source culture, 3 websites (thios.co, blog, store), 5 shelter variants with CAD models,
-                    physical prototype, and handbook generating first revenue</li>
-                <li>Applied full career toolkit simultaneously—product strategy, marketing, and design execution using
-                    GitHub Copilot → Cursor → Anti Gravity progression; proving experienced generalists can operate
-                    across traditional role boundaries with AI partnership</li>
-                <li>Established AI-augmented workflows: Obsidian MD + AI for project management and research synthesis;
-                    Figma Make for design-to-code; compressed prototyping cycles 70% through conversational development
-                    in Cursor and Anti-Gravity & Claude Code</li>
-                <li>Outcomes: Validated AI as practical force multiplier for startups; demonstrating how to maintain
-                    product quality while working at solo-founder velocity; any prototype is possible</li>
-            </ul>
+            <p class="modal-role">Founder & Lead Designer</p>
+            <p class="modal-dates">Aug 2024 - Present</p>
+            <p class="modal-summary">AI as technical co-founder • Complete product ecosystem in 18 months • Idea to revenue solo</p>
+            <div class="modal-cta-container">
+                <a href="case-studies/thios" class="modal-case-study-cta">View Full Case Study →</a>
+            </div>
             <div class="carousel">
-                <img src="img/thios-01.png" alt="Image 1" class="active">
-                <img src="img/thios-02.png" alt="Image 2">
-                <img src="img/thios-03.png" alt="Image 3">
-                <img src="img/thios-04.png" alt="Image 4">
-                <img src="img/thios-05.png" alt="Image 5">
-                <img src="img/thios-06.png" alt="Image 6">
-                <img src="img/thios-07.png" alt="Image 7">
-                <img src="img/thios-08.png" alt="Image 8">
-                <img src="img/thios-09.png" alt="Image 9">
-                <img src="img/thios-10.png" alt="Image 10">
-                <img src="img/thios-11.png" alt="Image 11">
-                <img src="img/thios-12.png" alt="Image 12">
-                <img src="img/thios-13.png" alt="Image 13">
-                <img src="img/thios-14.png" alt="Image 14">
+                <img src="img/thios-01.png" alt="Thios modular shelter system" class="active">
+                <img src="img/thios-02.png" alt="Thios design">
+                <img src="img/thios-03.png" alt="Thios prototype">
             </div>
             <div class="carousel-nav">
                 <button class="prevBtn">BACK</button>
@@ -654,31 +591,20 @@
 
 
     <div id="myModal2" class="modal" role="dialog" aria-modal="true" aria-labelledby="myModal2-title">
-        <div class="modal-content">
+        <div class="modal-content modal-compact">
             <span class="close">&CircleTimes;</span>
             <h2 id="myModal2-title">John Deere</h2>
-            <p>Senior Lead UX; Digital Customer Experience</p>
-            <p>Aug 2020 - Jul 2024</p>
-            <p>Embedded with product teams to modernize 20-year-old systems and drive subscription revenue. Proving
-                enterprise design can move fast when you have the right frameworks.</p>
-            <ul>
-                <li>Redesigned license management system serving 500K+ users across 12 languages—increased authenticated
-                    engagement 34%, reduced support tickets 16%, enabled $3.8B in subscription revenue from Automation
-                    and AI services</li>
-                <li>Built unified account and navigation framework deployed across 8 product lines (web, mobile,
-                    embedded)—consolidated fragmented experiences into single customer view, improved dealer support
-                    efficiency 28%</li>
-                <li>Established enterprise design system in Figma spanning 6 brands and 40+ product teams
-                    globally—reduced design-to-development handoff time 45% through standardized components that
-                    actually shipped</li>
-            </ul>
+            <p class="modal-role">Senior Lead UX; Digital Customer Experience</p>
+            <p class="modal-dates">Aug 2020 - Jul 2024</p>
+            <p class="modal-summary">500K+ users • $3.8B revenue enabled • 34%→87% adoption • Enterprise design system across 40+ teams</p>
+            <div class="modal-cta-container">
+                <a href="case-studies/deere-common-ux" class="modal-case-study-cta">Forced Adoption Case Study →</a>
+                <a href="case-studies/deere-nav" class="modal-case-study-cta modal-cta-secondary">Platform Unification Case Study →</a>
+            </div>
             <div class="carousel">
-                <img src="img/deere-01.png" alt="Image 1" class="active">
-                <img src="img/deere-02.png" alt="Image 2">
-                <img src="img/deere-03.png" alt="Image 3">
-                <img src="img/deere-04.png" alt="Image 4">
-                <img src="img/deere-05.png" alt="Image 5">
-                <img src="img/deere-06.png" alt="Image 6">
+                <img src="img/deere-01.png" alt="Deere Operations Center" class="active">
+                <img src="img/deere-02.png" alt="Deere design system">
+                <img src="img/deere-03.png" alt="Deere navigation">
             </div>
             <div class="carousel-nav">
                 <button class="prevBtn">BACK</button>
@@ -688,35 +614,20 @@
     </div>
 
     <div id="myModal3" class="modal" role="dialog" aria-modal="true" aria-labelledby="myModal3-title">
-        <div class="modal-content">
+        <div class="modal-content modal-compact">
             <span class="close">&CircleTimes;</span>
             <h2 id="myModal3-title">FourKites</h2>
-            <p>Lead UX / Manager</p>
-            <p>Jan 2017 - Jan 2020</p>
-            <p>Employee #28 during hypergrowth ($3M to $100M ARR). Built design function from scratch—founding designer
-                to 10-person global team.</p>
-            <ul>
-                <li>Designed flagship products from 0→1: Real-time supply chain control tower and related mobile apps
-                    processing 10M+ daily tracking events for 30+ Fortune 2000 companies (Anheuser-Busch,
-                    Georgia-Pacific, Tyson); products became primary driver of 3x customer expansion</li>
-                <li>Led bespoke predictive analytics dashboard products identifying shipment delays 6-12 hours earlier
-                    than competitors; increased customer retention 41% and expanded average contract value $120K
-                    annually</li>
-                <li>Scaled design org: Hired and managed team across Chicago and Chennai; established component library,
-                    design operations, and hiring framework—reduced design inconsistencies 65% while maintaining startup
-                    velocity</li>
-            </ul>
+            <p class="modal-role">Lead UX / Manager</p>
+            <p class="modal-dates">Jan 2017 - Jan 2020</p>
+            <p class="modal-summary">Employee #28 • $3M→$100M ARR hypergrowth • Built design team 1→10 • 41% retention increase</p>
+            <div class="modal-cta-container">
+                <a href="case-studies/fourkites-tracking" class="modal-case-study-cta">Data Trust Case Study →</a>
+                <a href="case-studies/fourkites-driver" class="modal-case-study-cta modal-cta-secondary">Incentive Design Case Study →</a>
+            </div>
             <div class="carousel">
-                <img src="img/fourkites-01.png" alt="Image 1" class="active">
-                <img src="img/fourkites-02.png" alt="Image 2">
-                <img src="img/fourkites-03.png" alt="Image 3">
-                <img src="img/fourkites-04.png" alt="Image 4">
-                <img src="img/fourkites-05.png" alt="Image 5">
-                <img src="img/fourkites-06.png" alt="Image 6">
-                <img src="img/fourkites-07.png" alt="Image 7">
-                <img src="img/fourkites-08.png" alt="Image 8">
-                <img src="img/fourkites-09.png" alt="Image 9">
-
+                <img src="img/fourkites-01.png" alt="FourKites control tower" class="active">
+                <img src="img/fourkites-02.png" alt="FourKites dashboard">
+                <img src="img/fourkites-03.png" alt="FourKites mobile">
             </div>
             <div class="carousel-nav">
                 <button class="prevBtn">BACK</button>
