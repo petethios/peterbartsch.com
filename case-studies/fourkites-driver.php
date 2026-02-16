@@ -4,107 +4,124 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FourKites: Incentive Design | Peter Bartsch Case Study</title>
-    <meta name="description" content="Reconciling competing driver/shipper incentives—41% retention increase through behavioral design.">
+    <meta name="description" content="Reconciling competing driver/shipper incentives—32% more tracked shipments through behavioral design.">
     <link rel="canonical" href="https://peterbartsch.com/case-studies/fourkites-driver">
     <link rel="icon" type="image/svg+xml" href="../pblogo.svg">
 
     <meta property="og:title" content="FourKites: Incentive Design | Peter Bartsch">
-    <meta property="og:description" content="Reconciling competing driver/shipper incentives—41% retention increase.">
+    <meta property="og:description" content="Reconciling competing driver/shipper incentives—32% more tracked shipments.">
     <meta property="og:type" content="article">
     <meta property="og:url" content="https://peterbartsch.com/case-studies/fourkites-driver">
+    <meta property="og:image" content="https://peterbartsch.com/og-image.png">
 
     <link rel="preload" href="../rombyte.ttf" as="font" type="font/ttf" crossorigin>
     <link rel="preload" href="../ari.ttf" as="font" type="font/ttf" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../styles.css">
-    <style>
-        .case-study-page { max-width: 900px; margin: 0 auto; padding: 40px 24px 80px; }
-        .case-study-header { margin-bottom: 40px; }
-        .case-study-breadcrumb { font-family: var(--font-body); font-size: 13px; color: var(--color-text-muted); margin-bottom: 20px; }
-        .case-study-breadcrumb a { color: var(--color-primary); text-decoration: none; }
-        .case-study-title { font-family: var(--font-display); font-size: 36px; color: var(--color-white); margin: 0 0 12px 0; text-shadow: 0 0 20px rgba(134, 216, 221, 0.4); }
-        .case-study-subtitle { font-family: var(--font-body); font-size: 18px; color: var(--color-text-muted); margin: 0 0 24px 0; }
-        .case-study-meta { display: flex; gap: 24px; flex-wrap: wrap; font-family: var(--font-body); font-size: 14px; color: var(--color-text-muted); padding: 16px 0; border-top: 1px solid rgba(134, 216, 221, 0.2); border-bottom: 1px solid rgba(134, 216, 221, 0.2); }
-        .case-study-meta-item { display: flex; flex-direction: column; gap: 4px; }
-        .case-study-meta-label { font-size: 11px; text-transform: uppercase; letter-spacing: 1px; color: var(--color-primary); }
-        .case-study-hero { margin: 40px 0; border: 2px solid rgba(134, 216, 221, 0.3); overflow: hidden; }
-        .case-study-hero img { width: 100%; height: auto; display: block; }
-        .case-study-section { margin: 48px 0; }
-        .case-study-section h2 { font-family: var(--font-display); font-size: 20px; color: var(--color-primary); margin: 0 0 20px 0; text-transform: uppercase; letter-spacing: 1px; }
-        .case-study-section p { font-family: var(--font-readable); font-size: 16px; line-height: 1.8; color: var(--color-text-primary); margin: 0 0 16px 0; }
-        .case-study-section ul { font-family: var(--font-readable); font-size: 15px; line-height: 1.7; color: var(--color-text-primary); padding-left: 24px; margin: 0 0 16px 0; }
-        .case-study-section li { margin-bottom: 12px; }
-        .case-study-metrics { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 20px; margin: 32px 0; }
-        .case-study-metric { background: rgba(0, 0, 0, 0.4); border: 1px solid rgba(134, 216, 221, 0.2); padding: 24px; text-align: center; }
-        .case-study-metric-value { font-family: var(--font-display); font-size: 32px; color: var(--color-primary); margin: 0; }
-        .case-study-metric-label { font-family: var(--font-body); font-size: 12px; color: var(--color-text-muted); text-transform: uppercase; letter-spacing: 1px; margin-top: 8px; }
-        .case-study-gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px; margin: 32px 0; }
-        .case-study-gallery img { width: 100%; height: auto; border: 1px solid rgba(134, 216, 221, 0.2); }
-        .case-study-cta { display: flex; gap: 16px; flex-wrap: wrap; margin-top: 40px; padding-top: 40px; border-top: 1px solid rgba(134, 216, 221, 0.2); }
-        .case-study-cta a { display: inline-flex; align-items: center; gap: 8px; font-family: var(--font-display); font-size: 12px; color: var(--color-text-primary); text-decoration: none; text-transform: uppercase; letter-spacing: 1px; padding: 12px 24px; background-color: var(--color-primary-darker); border: 3px solid var(--color-primary); transition: all 0.3s ease; }
-        .case-study-cta a:hover { background-color: var(--color-primary); border-color: var(--color-white); transform: translateY(-2px); }
-        .case-study-nav { display: flex; justify-content: space-between; margin-top: 60px; padding-top: 40px; border-top: 1px solid rgba(134, 216, 221, 0.2); }
-        .case-study-nav a { font-family: var(--font-body); font-size: 14px; color: var(--color-primary); text-decoration: none; }
-        @media (max-width: 600px) { .case-study-title { font-size: 28px; } .case-study-metric-value { font-size: 24px; } }
-    </style>
+    <link rel="stylesheet" href="case-study.css">
+    <?php $themeBasePath = '../'; include('../themes/theme-head.php'); ?>
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="FourKites: Incentive Design | Peter Bartsch">
+    <meta name="twitter:description" content="Reconciling competing driver/shipper incentives—32% more tracked shipments.">
+    <meta name="twitter:image" content="https://peterbartsch.com/og-image.png">
+
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-QB3EL923YF"></script>
     <script>window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag('js', new Date()); gtag('config', 'G-QB3EL923YF');</script>
+
+    <!-- Microsoft Clarity -->
+    <script type="text/javascript">(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window,document,"clarity","script","uhlenklp4t");</script>
 </head>
 <body>
+    <?php include('../themes/theme-banner.php'); ?>
     <header id="site-header" role="banner">
         <div class="header-inner">
             <a href="../" class="header-logo" aria-label="Home"><img src="../pblogo.svg" alt="PB logo" height="40" /></a>
-            <nav style="display: flex; gap: 16px;"><a href="../" style="color: var(--color-text-primary); text-decoration: none; font-family: var(--font-body); font-size: 14px;">← Back to Portfolio</a></nav>
+            <nav aria-label="Breadcrumb" style="display: flex; gap: 16px;"><a href="../" style="color: var(--color-text-primary); text-decoration: none; font-family: var(--font-body); font-size: 14px;">← Back to Portfolio</a></nav>
         </div>
     </header>
 
     <main class="case-study-page">
         <article>
             <header class="case-study-header">
-                <nav class="case-study-breadcrumb"><a href="../">Portfolio</a> / <a href="../#right">Case Studies</a> / FourKites Driver</nav>
+                <nav class="case-study-breadcrumb"><a href="../">Portfolio</a> / <a href="../#right">Case Studies</a> / Incentive Design</nav>
                 <h1 class="case-study-title">FOURKITES: INCENTIVE DESIGN</h1>
-                <p class="case-study-subtitle">Reconciling competing driver/shipper incentives through behavioral design</p>
+                <p class="case-study-subtitle">Reconciling competing driver/shipper incentives through behavioral design—turning resistance into adoption</p>
                 <div class="case-study-meta">
                     <div class="case-study-meta-item"><span class="case-study-meta-label">Role</span><span>Lead UX / Manager</span></div>
+                    <div class="case-study-meta-item"><span class="case-study-meta-label">Scope</span><span>Mobile App · Behavioral Design · Two-Sided Marketplace</span></div>
                     <div class="case-study-meta-item"><span class="case-study-meta-label">Timeline</span><span>2018 – 2019</span></div>
-                    <div class="case-study-meta-item"><span class="case-study-meta-label">Focus</span><span>Mobile App, Behavioral Design</span></div>
                 </div>
             </header>
+
+            <div class="case-study-metrics">
+                <div class="case-study-metric"><p class="case-study-metric-value">32%</p><p class="case-study-metric-label">More Tracked Shipments</p></div>
+                <div class="case-study-metric"><p class="case-study-metric-value">41%</p><p class="case-study-metric-label">Driver Retention Increase</p></div>
+            </div>
 
             <div class="case-study-hero"><img src="../img/fourkites-05.png" alt="FourKites driver mobile app"></div>
 
             <section class="case-study-section">
-                <h2>The Challenge</h2>
-                <p>FourKites needed drivers to share their location—but drivers had no incentive to do so. Worse, they had reasons NOT to: sharing location meant shippers could see if they stopped for breaks, took detours, or ran late.</p>
-                <p>The fundamental tension: shippers wanted maximum visibility; drivers wanted privacy and autonomy. How do you design an app that both parties will actually use?</p>
+                <h2>The Strategic Problem</h2>
+                <p>FourKites' predictive visibility platform depended on rich driver location data—but <strong>drivers actively resisted sharing it</strong> because they perceived it as surveillance. Shippers wanted maximum visibility; drivers wanted autonomy, privacy, and proof for detention billing disputes.</p>
+                <p><strong>The challenge wasn't UI design. It was incentive alignment: how do you get two parties with opposing interests to both participate willingly?</strong></p>
             </section>
 
-            <div class="case-study-metrics">
-                <div class="case-study-metric"><p class="case-study-metric-value">41%</p><p class="case-study-metric-label">Retention Increase</p></div>
-                <div class="case-study-metric"><p class="case-study-metric-value">3x</p><p class="case-study-metric-label">Customer Expansion</p></div>
-                <div class="case-study-metric"><p class="case-study-metric-value">10M+</p><p class="case-study-metric-label">Daily Events</p></div>
-                <div class="case-study-metric"><p class="case-study-metric-value">1→10</p><p class="case-study-metric-label">Team Scaled</p></div>
-            </div>
+            <section class="case-study-section case-study-constraints">
+                <h2>Why This Was Hard</h2>
+                <p>This was a two-sided marketplace problem disguised as a mobile app project:</p>
+                <ul>
+                    <li><strong>Competing incentives:</strong> Shippers wanted surveillance; drivers wanted privacy and autonomy</li>
+                    <li><strong>Trust deficit:</strong> Drivers viewed any tracking app as management control and potential job risk</li>
+                    <li><strong>Technical friction:</strong> Battery drain, data costs, and unreliable connectivity on the road</li>
+                    <li><strong>Zero mandate:</strong> Drivers could simply refuse to use any app—and many did</li>
+                    <li><strong>Asymmetric value:</strong> Shippers got visibility; drivers got... what exactly?</li>
+                </ul>
+                <p style="margin-top: 16px; margin-bottom: 0;"><strong>A surveillance-first approach would have failed. Drivers needed reasons to participate, not just pressure.</strong></p>
+            </section>
 
             <section class="case-study-section">
-                <h2>Approach</h2>
+                <h2>Strategy</h2>
+                <p>We reframed the problem: <strong>What if the driver app was designed for drivers first?</strong></p>
                 <ul>
-                    <li><strong>Driver-first value proposition:</strong> Showed drivers benefits they cared about—proof of detention time for billing disputes, traffic-aware routing, facility ratings from other drivers</li>
-                    <li><strong>Minimal friction:</strong> One-tap trip start, automatic detection when possible, background tracking that didn't kill battery</li>
-                    <li><strong>Privacy controls:</strong> Drivers could see exactly what shippers could see, with clear controls over what was shared</li>
-                    <li><strong>Gamification:</strong> Subtle rewards for consistent participation without feeling manipulative</li>
+                    <li><strong>Driver-First Value:</strong> Lead with benefits drivers actually care about—detention evidence, facility ratings, traffic-aware routing</li>
+                    <li><strong>Transparency as Trust:</strong> Show drivers exactly what's shared and why—no hidden tracking</li>
+                    <li><strong>Friction Elimination:</strong> Make participation effortless—one-tap trip start, smart background triggers, battery optimization</li>
+                    <li><strong>Gentle Incentives:</strong> Encourage participation through value, not manipulation</li>
                 </ul>
+            </section>
+
+            <section class="case-study-section">
+                <h2>Execution</h2>
+                <h3 style="font-family: var(--font-display); font-size: 16px; color: var(--color-white); margin: 24px 0 12px 0;">Driver-Centric Feature Set</h3>
+                <p>Built features drivers requested: timestamped detention evidence for billing disputes, facility ratings from other drivers, and traffic-aware routing. Tracking became a byproduct of value, not the primary ask.</p>
+
+                <h3 style="font-family: var(--font-display); font-size: 16px; color: var(--color-white); margin: 24px 0 12px 0;">Transparency Dashboard</h3>
+                <p>Showed drivers exactly what shippers could see, with clear controls. Visibility into the visibility built trust.</p>
+
+                <h3 style="font-family: var(--font-display); font-size: 16px; color: var(--color-white); margin: 24px 0 12px 0;">Zero-Friction Onboarding</h3>
+                <p>One-tap trip activation, automatic trip detection when possible, and battery-optimized tracking that didn't kill phones.</p>
             </section>
 
             <section class="case-study-section">
                 <h2>Results</h2>
                 <ul>
-                    <li>Created driver app that drivers actually wanted to use—not just tolerated</li>
-                    <li>41% increase in retention across the platform</li>
-                    <li>Became primary driver of 3x customer expansion</li>
-                    <li>Scaled design team from 1 (me) to 10 across Chicago and Chennai</li>
-                    <li>Established component library and design operations that reduced inconsistencies by 65%</li>
+                    <li><strong>32% more shipments tracked with real-time GPS</strong>—the core metric that mattered for shipper value</li>
+                    <li><strong>41% driver retention increase</strong>—drivers chose to keep using the app</li>
+                    <li>Built an app that <strong>drivers preferred to use</strong>—not just tolerated under pressure</li>
+                    <li>Enabled shipper expansion by solving the data quality problem at its source</li>
                 </ul>
+            </section>
+
+            <section class="case-study-section">
+                <h2>What This Unlocked</h2>
+                <p>This work demonstrated:</p>
+                <ul>
+                    <li>That <strong>behavioral design can solve incentive problems</strong> that seem intractable</li>
+                    <li>The <strong>importance of designing for both sides</strong> of a marketplace, not just the paying customer</li>
+                    <li>How to <strong>scale a design team</strong> during hypergrowth without losing velocity</li>
+                </ul>
+                <p><strong>The real outcome was proving that adoption problems are often incentive problems—and UX can solve them.</strong></p>
             </section>
 
             <section class="case-study-section">
@@ -116,15 +133,24 @@
                 </div>
             </section>
 
-            <div class="case-study-cta">
-                <a href="../Peter-Bartsch-Case-Study_FourKites_Driver.pdf" target="_blank"><img src="../pdf.png" alt="" width="18" height="18"> Download Full Case Study (PDF)</a>
-            </div>
+            <section class="case-study-contact">
+                <h3>LET'S TALK</h3>
+                <p>Interested in discussing enterprise design challenges or exploring opportunities?</p>
+                <div class="case-study-contact-links">
+                    <a href="mailto:peter@peterbartsch.com">Email Me</a>
+                    <a href="https://www.linkedin.com/in/petermbartsch/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                    <a href="../" class="secondary">← Back to Portfolio</a>
+                </div>
+            </section>
 
-            <nav class="case-study-nav">
-                <a href="fourkites-tracking">← Previous: FourKites Tracking</a>
-                <a href="thios">Next: Thios →</a>
+            <nav class="case-study-nav" aria-label="Case study navigation">
+                <a href="fourkites-tracking.php">← Previous: Data Trust</a>
+                <a href="thios.php">Next: AI as Co-founder →</a>
             </nav>
         </article>
     </main>
+
+    <script>if (typeof gtag === 'function') { gtag('event', 'case_study_view', { 'event_category': 'engagement', 'event_label': 'fourkites-driver' }); }</script>
+    <script src="../themes/theme-switcher.js"></script>
 </body>
 </html>

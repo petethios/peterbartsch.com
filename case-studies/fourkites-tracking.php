@@ -12,75 +12,51 @@
     <meta property="og:description" content="Designing for trust when data is uncertain—predictive analytics 6-12 hours ahead of competitors.">
     <meta property="og:type" content="article">
     <meta property="og:url" content="https://peterbartsch.com/case-studies/fourkites-tracking">
+    <meta property="og:image" content="https://peterbartsch.com/og-image.png">
 
     <link rel="preload" href="../rombyte.ttf" as="font" type="font/ttf" crossorigin>
     <link rel="preload" href="../ari.ttf" as="font" type="font/ttf" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="case-study.css">
+    <?php $themeBasePath = '../'; include('../themes/theme-head.php'); ?>
     <style>
-        .case-study-page { max-width: 900px; margin: 0 auto; padding: 40px 24px 80px; }
-        .case-study-header { margin-bottom: 40px; }
-        .case-study-breadcrumb { font-family: var(--font-body); font-size: 13px; color: var(--color-text-muted); margin-bottom: 20px; }
-        .case-study-breadcrumb a { color: var(--color-primary); text-decoration: none; }
-        .case-study-title { font-family: var(--font-display); font-size: 36px; color: var(--color-white); margin: 0 0 12px 0; text-shadow: 0 0 20px rgba(134, 216, 221, 0.4); }
-        .case-study-subtitle { font-family: var(--font-body); font-size: 18px; color: var(--color-text-muted); margin: 0 0 24px 0; }
-        .case-study-meta { display: flex; gap: 24px; flex-wrap: wrap; font-family: var(--font-body); font-size: 14px; color: var(--color-text-muted); padding: 16px 0; border-top: 1px solid rgba(134, 216, 221, 0.2); border-bottom: 1px solid rgba(134, 216, 221, 0.2); }
-        .case-study-meta-item { display: flex; flex-direction: column; gap: 4px; }
-        .case-study-meta-label { font-size: 11px; text-transform: uppercase; letter-spacing: 1px; color: var(--color-primary); }
-        .case-study-hero { margin: 40px 0; border: 2px solid rgba(134, 216, 221, 0.3); overflow: hidden; }
-        .case-study-hero img { width: 100%; height: auto; display: block; }
-        .case-study-section { margin: 48px 0; }
-        .case-study-section h2 { font-family: var(--font-display); font-size: 20px; color: var(--color-primary); margin: 0 0 20px 0; text-transform: uppercase; letter-spacing: 1px; }
-        .case-study-section p { font-family: var(--font-readable); font-size: 16px; line-height: 1.8; color: var(--color-text-primary); margin: 0 0 16px 0; }
-        .case-study-section ul { font-family: var(--font-readable); font-size: 15px; line-height: 1.7; color: var(--color-text-primary); padding-left: 24px; margin: 0 0 16px 0; }
-        .case-study-section li { margin-bottom: 12px; }
-        .case-study-metrics { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 20px; margin: 32px 0; }
-        .case-study-metric { background: rgba(0, 0, 0, 0.4); border: 1px solid rgba(134, 216, 221, 0.2); padding: 24px; text-align: center; }
-        .case-study-metric-value { font-family: var(--font-display); font-size: 32px; color: var(--color-primary); margin: 0; }
-        .case-study-metric-label { font-family: var(--font-body); font-size: 12px; color: var(--color-text-muted); text-transform: uppercase; letter-spacing: 1px; margin-top: 8px; }
-        .case-study-gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px; margin: 32px 0; }
-        .case-study-gallery img { width: 100%; height: auto; border: 1px solid rgba(134, 216, 221, 0.2); }
-        .case-study-cta { display: flex; gap: 16px; flex-wrap: wrap; margin-top: 40px; padding-top: 40px; border-top: 1px solid rgba(134, 216, 221, 0.2); }
-        .case-study-cta a { display: inline-flex; align-items: center; gap: 8px; font-family: var(--font-display); font-size: 12px; color: var(--color-text-primary); text-decoration: none; text-transform: uppercase; letter-spacing: 1px; padding: 12px 24px; background-color: var(--color-primary-darker); border: 3px solid var(--color-primary); transition: all 0.3s ease; }
-        .case-study-cta a:hover { background-color: var(--color-primary); border-color: var(--color-white); transform: translateY(-2px); }
-        .case-study-nav { display: flex; justify-content: space-between; margin-top: 60px; padding-top: 40px; border-top: 1px solid rgba(134, 216, 221, 0.2); }
-        .case-study-nav a { font-family: var(--font-body); font-size: 14px; color: var(--color-primary); text-decoration: none; }
         .highlight-quote { font-family: var(--font-display); font-size: 24px; color: var(--color-primary); border-left: 4px solid var(--color-primary); padding-left: 20px; margin: 32px 0; }
-        @media (max-width: 600px) { .case-study-title { font-size: 28px; } .case-study-metric-value { font-size: 24px; } .highlight-quote { font-size: 20px; } }
+        @media (max-width: 600px) { .highlight-quote { font-size: 20px; } }
     </style>
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="FourKites: Data Trust Design | Peter Bartsch">
+    <meta name="twitter:description" content="Designing for trust when data is uncertain—predictive analytics 6-12 hours ahead of competitors.">
+    <meta name="twitter:image" content="https://peterbartsch.com/og-image.png">
+
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-QB3EL923YF"></script>
     <script>window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag('js', new Date()); gtag('config', 'G-QB3EL923YF');</script>
+
+    <!-- Microsoft Clarity -->
+    <script type="text/javascript">(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window,document,"clarity","script","uhlenklp4t");</script>
 </head>
 <body>
+    <?php include('../themes/theme-banner.php'); ?>
     <header id="site-header" role="banner">
         <div class="header-inner">
             <a href="../" class="header-logo" aria-label="Home"><img src="../pblogo.svg" alt="PB logo" height="40" /></a>
-            <nav style="display: flex; gap: 16px;"><a href="../" style="color: var(--color-text-primary); text-decoration: none; font-family: var(--font-body); font-size: 14px;">← Back to Portfolio</a></nav>
+            <nav aria-label="Breadcrumb" style="display: flex; gap: 16px;"><a href="../" style="color: var(--color-text-primary); text-decoration: none; font-family: var(--font-body); font-size: 14px;">← Back to Portfolio</a></nav>
         </div>
     </header>
 
     <main class="case-study-page">
         <article>
             <header class="case-study-header">
-                <nav class="case-study-breadcrumb"><a href="../">Portfolio</a> / <a href="../#right">Case Studies</a> / FourKites Tracking</nav>
+                <nav class="case-study-breadcrumb"><a href="../">Portfolio</a> / <a href="../#right">Case Studies</a> / Data Trust</nav>
                 <h1 class="case-study-title">FOURKITES: DATA TRUST</h1>
-                <p class="case-study-subtitle">Making customers trust real-time tracking when underlying data is uncertain, incomplete, or conflicting</p>
+                <p class="case-study-subtitle">Designing for trust when real-time data is uncertain, incomplete, or conflicting—enabling mission-critical decisions</p>
                 <div class="case-study-meta">
                     <div class="case-study-meta-item"><span class="case-study-meta-label">Role</span><span>Lead UX / Manager</span></div>
+                    <div class="case-study-meta-item"><span class="case-study-meta-label">Scope</span><span>Real-time Visibility · Predictive Analytics · Control Tower UX</span></div>
                     <div class="case-study-meta-item"><span class="case-study-meta-label">Timeline</span><span>2017 – 2020</span></div>
-                    <div class="case-study-meta-item"><span class="case-study-meta-label">Growth</span><span>$3M → $100M ARR</span></div>
                 </div>
             </header>
-
-            <div class="case-study-hero"><img src="../img/fourkites-01.png" alt="FourKites real-time tracking dashboard"></div>
-
-            <section class="case-study-section">
-                <h2>The Challenge</h2>
-                <p>FourKites processed 10M+ daily tracking events from trucks, trains, ships, and planes. The problem: this data was often uncertain, incomplete, or conflicting. GPS signals drop. Carriers report late. ETAs shift constantly.</p>
-                <p>Customers—logistics managers at Fortune 500 companies—needed to trust the system enough to make million-dollar decisions. How do you design for trust when you can't guarantee accuracy?</p>
-            </section>
-
-            <p class="highlight-quote">"Never hide uncertainty"</p>
 
             <div class="case-study-metrics">
                 <div class="case-study-metric"><p class="case-study-metric-value">41%</p><p class="case-study-metric-label">Retention Increase</p></div>
@@ -89,25 +65,72 @@
                 <div class="case-study-metric"><p class="case-study-metric-value">30+</p><p class="case-study-metric-label">Fortune 2000 Clients</p></div>
             </div>
 
+            <div class="case-study-hero"><img src="../img/fourkites-01.png" alt="FourKites real-time tracking dashboard"></div>
+
             <section class="case-study-section">
-                <h2>Approach</h2>
+                <h2>The Strategic Problem</h2>
+                <p>FourKites' core product promise was <strong>real-time visibility that customers could trust</strong>—but real-world supply chain data is messy: duplicate sources, stale GPS pings, conflicting carrier feeds, and ETAs that shift every hour.</p>
+                <p><strong>The question wasn't "how do we show tracking?" It was: how do we design a visibility experience that customers trust enough to make million-dollar decisions?</strong></p>
+            </section>
+
+            <section class="case-study-section case-study-constraints">
+                <h2>Why This Was Hard</h2>
+                <p>Trust in data products is fragile—one bad prediction can undo months of credibility:</p>
                 <ul>
-                    <li><strong>"Never hide uncertainty":</strong> Established this as a core design principle. If confidence was low, we showed it—with clear explanations of why</li>
-                    <li><strong>Progressive disclosure:</strong> Surface level showed simple status; drill-down revealed data sources, confidence intervals, and alternative scenarios</li>
-                    <li><strong>Predictive analytics:</strong> Instead of just showing current state, we predicted problems 6-12 hours before they happened</li>
-                    <li><strong>Actionable intelligence:</strong> Every alert included recommended actions, not just notifications</li>
+                    <li><strong>Data quality:</strong> 10M+ daily tracking events from trucks, trains, ships, and planes—often uncertain, incomplete, or conflicting</li>
+                    <li><strong>Technical reality:</strong> GPS signals drop, carriers report late, ETAs shift constantly</li>
+                    <li><strong>User stakes:</strong> Fortune 500 logistics managers making million-dollar decisions based on this data</li>
+                    <li><strong>Competitive pressure:</strong> Needed to differentiate on trust, not just features</li>
+                    <li><strong>Hypergrowth context:</strong> Building while scaling from $3M to $100M ARR</li>
                 </ul>
+                <p style="margin-top: 16px; margin-bottom: 0;"><strong>Hiding uncertainty would have been easier. But it would have destroyed trust the moment predictions failed.</strong></p>
+            </section>
+
+            <p class="highlight-quote">"Never hide uncertainty"</p>
+
+            <section class="case-study-section">
+                <h2>Strategy</h2>
+                <p>We established <strong>"Never hide uncertainty"</strong> as the core design principle. This meant:</p>
+                <ul>
+                    <li><strong>Confidence as First-Class Data:</strong> Show data confidence alongside status—users know when to trust and when to verify</li>
+                    <li><strong>Progressive Disclosure:</strong> Surface reliable status at a glance; reveal sources, confidence intervals, and alternatives on demand</li>
+                    <li><strong>Predictive, Not Reactive:</strong> Predict problems 6-12 hours before they happen—give users time to act, not just react</li>
+                    <li><strong>Action-First Alerts:</strong> Every notification includes recommended actions, not just status updates</li>
+                </ul>
+            </section>
+
+            <section class="case-study-section">
+                <h2>Execution</h2>
+                <h3 style="font-family: var(--font-display); font-size: 16px; color: var(--color-white); margin: 24px 0 12px 0;">Real-Time Control Tower</h3>
+                <p>Designed the flagship visibility platform showing shipment status, confidence levels, and predicted exceptions. Users could drill into any data point to understand sources and reliability.</p>
+
+                <h3 style="font-family: var(--font-display); font-size: 16px; color: var(--color-white); margin: 24px 0 12px 0;">Predictive Analytics Dashboard</h3>
+                <p>Built interfaces that surfaced delays 6-12 hours before traditional ETAs—turning logistics managers from firefighters into planners.</p>
+
+                <h3 style="font-family: var(--font-display); font-size: 16px; color: var(--color-white); margin: 24px 0 12px 0;">Alert System Redesign</h3>
+                <p>Transformed alerts from "something happened" to "here's what happened, why, and what you should do about it."</p>
             </section>
 
             <section class="case-study-section">
                 <h2>Results</h2>
                 <ul>
-                    <li>Designed flagship real-time control tower serving 30+ Fortune 2000 companies (Anheuser-Busch, Georgia-Pacific, Tyson)</li>
-                    <li>Predictive analytics identified delays 6-12 hours earlier than competitors</li>
-                    <li>Increased customer retention 41%</li>
-                    <li>Expanded average contract value by $120K annually</li>
-                    <li>Products became primary driver of 3x customer expansion</li>
+                    <li>Increased <strong>customer retention by 41%</strong> YoY</li>
+                    <li>Boosted <strong>average contract value by $120K</strong> annually</li>
+                    <li>Predictive analytics surfaced issues <strong>6–12 hours earlier</strong> than competitors</li>
+                    <li>Enabled a <strong>real-time control tower</strong> trusted by 30+ Fortune 2000 enterprises</li>
+                    <li>Made FourKites' platform a <strong>primary driver of 3× customer expansion</strong></li>
                 </ul>
+            </section>
+
+            <section class="case-study-section">
+                <h2>What This Unlocked</h2>
+                <p>This work established:</p>
+                <ul>
+                    <li>A <strong>differentiated market position</strong>—trust became FourKites' competitive moat</li>
+                    <li>A <strong>design principle</strong> ("Never hide uncertainty") now used across all products</li>
+                    <li>The <strong>foundation for the Driver app</strong>—data trust enabled the incentive design work that followed</li>
+                </ul>
+                <p><strong>The real outcome was proving that transparency about uncertainty builds more trust than false confidence.</strong></p>
             </section>
 
             <section class="case-study-section">
@@ -119,15 +142,24 @@
                 </div>
             </section>
 
-            <div class="case-study-cta">
-                <a href="../Peter-Bartsch-Case-Study_FourKites_Tracking.pdf" target="_blank"><img src="../pdf.png" alt="" width="18" height="18"> Download Full Case Study (PDF)</a>
-            </div>
+            <section class="case-study-contact">
+                <h3>LET'S TALK</h3>
+                <p>Interested in discussing enterprise design challenges or exploring opportunities?</p>
+                <div class="case-study-contact-links">
+                    <a href="mailto:peter@peterbartsch.com">Email Me</a>
+                    <a href="https://www.linkedin.com/in/petermbartsch/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                    <a href="../" class="secondary">← Back to Portfolio</a>
+                </div>
+            </section>
 
-            <nav class="case-study-nav">
-                <a href="deere-nav">← Previous: Deere Navigation</a>
-                <a href="fourkites-driver">Next: FourKites Driver →</a>
+            <nav class="case-study-nav" aria-label="Case study navigation">
+                <a href="deere-nav.php">← Previous: Platform Unification</a>
+                <a href="fourkites-driver.php">Next: Incentive Design →</a>
             </nav>
         </article>
     </main>
+
+    <script>if (typeof gtag === 'function') { gtag('event', 'case_study_view', { 'event_category': 'engagement', 'event_label': 'fourkites-tracking' }); }</script>
+    <script src="../themes/theme-switcher.js"></script>
 </body>
 </html>

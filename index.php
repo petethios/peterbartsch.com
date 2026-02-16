@@ -46,7 +46,7 @@
     <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
     <meta http-equiv="Permissions-Policy" content="geolocation=(), microphone=(), camera=()">
     <meta http-equiv="Content-Security-Policy"
-        content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://www.clarity.ms https://*.clarity.ms; style-src 'self' 'unsafe-inline'; img-src 'self' data: https: https://*.clarity.ms https://c.bing.com; font-src 'self'; connect-src 'self' https://www.google-analytics.com https://www.clarity.ms https://*.clarity.ms; frame-ancestors 'self'; base-uri 'self'; form-action 'self' mailto:;">
+        content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://www.clarity.ms https://*.clarity.ms; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https: https://*.clarity.ms https://c.bing.com; font-src 'self' https://fonts.gstatic.com; connect-src 'self' https://www.google-analytics.com https://www.clarity.ms https://*.clarity.ms; frame-ancestors 'self'; base-uri 'self'; form-action 'self' mailto:;">
 
     <!-- Google Analytics 4 -->
     <!-- Note: SRI (Subresource Integrity) not used for GA as Google's CDN doesn't provide integrity hashes.
@@ -83,6 +83,28 @@
     <link rel="preload" href="ari.ttf" as="font" type="font/ttf" crossorigin>
 
     <link rel="stylesheet" href="styles.css?v=<?php echo filemtime('styles.css'); ?>">
+    <link rel="stylesheet" href="themes/theme-switcher.css?v=<?php echo filemtime('themes/theme-switcher.css'); ?>">
+
+    <!-- Theme fonts (lazy-loaded: media="print" until activated by JS) -->
+    <link id="font-90s" rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,400;0,700;1,400&display=swap"
+        media="print">
+    <link id="font-2010s" rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+        media="print">
+    <link id="font-2026" rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap"
+        media="print">
+
+    <!-- FOUC prevention: apply saved theme before first paint -->
+    <script>
+        (function() {
+            var saved = localStorage.getItem('pb-theme');
+            if (saved && saved !== '80s') {
+                document.documentElement.setAttribute('data-theme', saved);
+            }
+        })();
+    </script>
 
     <!-- Structured Data (JSON-LD) -->
     <script type="application/ld+json">
@@ -136,7 +158,9 @@
 </head>
 
 <body>
-    <a href="#right" class="visually-hidden"
+<?php include 'themes/theme-banner.php'; ?>
+
+    <a href="#about" class="visually-hidden"
         style="position:absolute;left:-10000px;top:auto;width:1px;height:1px;overflow:hidden;">Skip to main content</a>
     <!-- Sticky Header Nav -->
     <header id="site-header" role="banner">
@@ -145,27 +169,12 @@
             <a href="#" class="header-logo" aria-label="Home">
                 <img src="pblogo.svg" alt="PB logo" height="40" />
             </a>
-            <nav class="header-nav" aria-label="Primary">
-                <ul>
-                    <li><a href="#mobile-intro">Top</a></li>
-                    <li><a href="#right">Experience</a></li>
-                    <li><a href="https://www.figma.com/proto/i1SMndpgNnRCEBZceZJ7NK/Peter-Bartsch-CV--Portfolio---Cases-Studies?node-id=963-950&t=tsQyOT4yQLBTD8ms-1"
-                            target="_blank" rel="noopener noreferrer">All in Figma</a></li>
-                </ul>
-                <p>Learn More<br></p>
-                <ul>
-                    <li><a href="Peter-Bartsch-Resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a></li>
-                    <li><a href="Peter-Bartsch-Portfolio.pdf" target="_blank" rel="noopener noreferrer">Portfolio</a>
-                    </li>
-                </ul>
-                <p>Case Studies<br></p>
-                <ul>
-                    <li><a href="case-studies/deere-common-ux">Deere: Forced Adoption</a></li>
-                    <li><a href="case-studies/deere-nav">Deere: Platform Unification</a></li>
-                    <li><a href="case-studies/fourkites-tracking">FourKites: Data Trust</a></li>
-                    <li><a href="case-studies/fourkites-driver">FourKites: Incentive Design</a></li>
-                    <li><a href="case-studies/thios">Thios: AI as Co-founder</a></li>
-                    <li><a href="#footer">Contact</a></li>
+            <nav class="header-nav header-nav-simplified" aria-label="Primary">
+                <ul class="nav-primary">
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#portfolio-carousel">CASES</a></li>
+                    <li><a href="Peter-Bartsch-Resume.pdf" target="_blank" rel="noopener noreferrer">RESUME</a></li>
+                    <li><a href="#footer">CONTACT</a></li>
                 </ul>
             </nav>
             <button class="hamburger" id="hamburgerBtn" aria-label="Open menu" aria-expanded="false"
@@ -178,94 +187,69 @@
 
         <!-- Mobile navigation drawer -->
         <nav id="mobileMenu" class="mobile-menu" aria-label="Mobile" hidden>
-            <button id="mobileMenuClose" class="mobile-menu-close" aria-label="Close menu">&times;</button>
-            <div class="mobile-menu-header">Navigation</div>
-            <ul>
-                <li><a href="#mobile-intro">Top</a></li>
-                <li><a href="#right">Experience</a></li>
-                <li><a href="https://www.figma.com/proto/i1SMndpgNnRCEBZceZJ7NK/Peter-Bartsch-CV--Portfolio---Cases-Studies?node-id=963-950&t=tsQyOT4yQLBTD8ms-1"
-                        target="_blank" rel="noopener noreferrer">All in Figma</a></li>
+            <button id="mobileMenuClose" class="mobile-menu-close" aria-label="Close menu"></button>
+            <ul class="mobile-nav-primary">
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#portfolio-carousel">CASES</a></li>
+                <li><a href="Peter-Bartsch-Resume.pdf" target="_blank" rel="noopener noreferrer">RESUME</a></li>
+                <li><a href="#footer">CONTACT</a></li>
             </ul>
-            <div class="mobile-menu-header">Downloads</div>
-            <ul>
-                <li><a href="Peter-Bartsch-Resume.pdf" target="_blank" rel="noopener noreferrer">Resume (PDF)</a></li>
-                <li><a href="Peter-Bartsch-Portfolio.pdf" target="_blank" rel="noopener noreferrer">Portfolio (PDF)</a></li>
-            </ul>
+            <div class="mobile-menu-divider"></div>
             <div class="mobile-menu-header">Case Studies</div>
             <ul>
-                <li><a href="case-studies/deere-common-ux">Deere: Forced Adoption</a></li>
-                <li><a href="case-studies/deere-nav">Deere: Platform Unification</a></li>
-                <li><a href="case-studies/fourkites-tracking">FourKites: Data Trust</a></li>
-                <li><a href="case-studies/fourkites-driver">FourKites: Incentive Design</a></li>
-                <li><a href="case-studies/thios">Thios: AI as Co-founder</a></li>
-            </ul>
-            <div class="mobile-menu-header">More</div>
-            <ul>
-                <li><a href="#footer">Contact</a></li>
+                <li><a href="case-studies/deere-common-ux.php">Deere: Forced Adoption</a></li>
+                <li><a href="case-studies/deere-nav.php">Deere: Platform Unification</a></li>
+                <li><a href="case-studies/fourkites-tracking.php">FourKites: Data Trust</a></li>
+                <li><a href="case-studies/fourkites-driver.php">FourKites: Incentive Design</a></li>
+                <li><a href="case-studies/thios.php">Thios: AI as Co-founder</a></li>
             </ul>
         </nav>
     </header>
     <!-- End Sticky Header Nav -->
 
-    <!-- Mobile-only intro to appear at the very top on narrow screens -->
-    <section id="mobile-intro">
-        <header>
-            <div style="display: flex; justify-content: space-between; align-items: center;">
-                <h4><a href="https://peterbartsch.com" style="text-decoration:none; color:inherit;">PRODUCT & UX LEADER</a>
-                </h4>
-            </div>
-            <h2 style="font-family: Rombyte, monospace; margin-top: 10px; color:#ffffff;">PETER BARTSCH</h2>
-        </header>
-        <section>
-            <p
-                style="text-align: justify; font-family: Ari, monospace; font-size: 24px; font-weight: 400; margin-top: 20px;">
-                <strong>Enterprise UX & Product Leader</strong> — Simplifying complex systems for users and businesses. Enabled $3.8B revenue, drove 34%→87% platform adoption across 500K+ users, scaled design org 1→10.
-            </p>
-        </section>
-    </section>
     <div id="frame-container">
         <main id="main" role="main" aria-labelledby="page-title">
-            <aside id="left">
+            <!-- Hero intro (shows first on mobile) -->
+            <div id="left-hero" class="left-hero">
                 <header id="banner">
                     <div style="display: flex; justify-content: space-between; align-items: center;">
                         <h4 id="name"><a href="https://peterbartsch.com"
                                 style="text-decoration:none; color:inherit;">PRODUCT & UX LEADER</a></h4>
                     </div>
-                    <h2 id="title">PETER BARTSCH</h2>
+                    <h2 id="title" class="phosphor-text">PETER BARTSCH</h2>
                 </header>
 
-                <section id="desc-section">
-                    <p id="desc" style="text-align: justify;">Enterprise UX & Product Leader — Simplifying complex systems for users and businesses. Enabled $3.8B revenue, drove 34%→87% platform adoption across 500K+ users, scaled design org 1→10.
-                    </p>
-                </section>
-                <section id="resume-links">
+                <div class="sidebar-portrait">
+                    <picture><source srcset="peterb.webp" type="image/webp"><img src="peterb.png" alt="Peter Bartsch" width="250" height="250" /></picture>
+                </div>
 
-                    <h4 style="margin-top: 40px;">LEARN MORE</h4>
-                    <p><a href="Peter-Bartsch-Resume.pdf" target="_blank" class="button button2"
-                            rel="noopener noreferrer"><img src="pdf.png" alt="PDF" class="pdf-icon">RESUME</a>
+                <section id="desc-section">
+                    <p class="hero-tagline">
+                        Enterprise UX leader with 15+ years driving adoption, revenue, and design systems at scale.
                     </p>
-                    <p><a href="Peter-Bartsch-Portfolio.pdf" target="_blank" class="button button2"
-                            rel="noopener noreferrer"><img src="pdf.png" alt="PDF" class="pdf-icon">PORTFOLIO</a>
+                    <p class="hero-stats">
+                        $3.8B revenue · 500K+ users · 34%→87% adoption
                     </p>
-                    <h4 style="margin-top: 20px;">CASE STUDIES</h4>
-                    <p><a href="case-studies/deere-common-ux" class="button button2">DEERE: FORCED ADOPTION →</a>
-                    </p>
-                    <p><a href="case-studies/deere-nav" class="button button2">DEERE: PLATFORM UNIFICATION →</a>
-                    </p>
-                    <p><a href="case-studies/fourkites-tracking" class="button button2">FOURKITES: DATA TRUST →</a>
-                    </p>
-                    <p><a href="case-studies/fourkites-driver" class="button button2">FOURKITES: INCENTIVE DESIGN →</a>
-                    </p>
-                    <p><a href="case-studies/thios" class="button button2">THIOS: AI AS CO-FOUNDER →</a>
-                    </p>
-                    <p style="margin-top: 40px;"><a
-                            href="https://www.figma.com/proto/i1SMndpgNnRCEBZceZJ7NK/Peter-Bartsch-CV--Portfolio---Cases-Studies?node-id=963-950&t=tsQyOT4yQLBTD8ms-1"
-                            target="_blank" class="button button2" rel="noopener noreferrer"><img src="figma.png"
-                                alt="Figma" class="figma-icon" height="22px" width="22px">&nbsp;EVERYTHING IN
-                            FIGMA</a></p>
+                    <!-- Primary CTA -->
+                    <div class="brutalist-cta-container sidebar-cta">
+                        <a href="#portfolio-carousel" class="brutalist-cta">
+                            <span class="brutalist-cta-prompt">></span>
+                            <span class="brutalist-cta-text">VIEW CASE STUDIES</span>
+                        </a>
+                    </div>
+                </section>
+            </div>
+
+            <!-- Sidebar with resume + contact (shows after right panel on mobile) -->
+            <aside id="left" class="left-footer">
+                <!-- Sidebar quick links -->
+                <section id="resume-links">
+                    <div class="sidebar-quick-links">
+                        <a href="Peter-Bartsch-Resume.pdf" target="_blank" rel="noopener noreferrer" class="sidebar-link">Download Resume (PDF)</a>
+                    </div>
                 </section>
                 <section id="footer">
-                    <h4 style="margin-top: 40px;">LET'S TALK</h4>
+                    <h4 class="phosphor-text" style="margin-top: 40px;">LET'S TALK</h4>
                     <!-- Contact form without exposing email in HTML -->
                     <form id="contactForm" class="contact-form">
                         <div class="form-group">
@@ -288,47 +272,53 @@
                         <noscript>email me: peter at peterbartsch dot com</noscript>
                     </form>
                 </section>
-
             </aside>
 
             <section id="right">
-                <div id="player">
-                    <div class="cover-art">
-                        <img id="coverArt" src="peterb.png" alt="Peter Bartsch" fetchpriority="high" decoding="async" />
-                        <div class="hover-text" id="hoverText">click this</div>
-                        <video id="coverVideo" src="take-ride-square-bw.mp4" loop playsinline>
-                            Your browser does not support the video tag.
-                        </video>
-                        <div class="grid-overlay"></div>
+                <!-- About Section -->
+                <section id="about" class="about-section">
+                    <div class="about-inner">
+                        <div id="player" class="about-photo">
+                            <div class="cover-art">
+                                <div class="hover-text" id="hoverText">click this</div>
+                                <video id="coverVideo" src="take-ride-square-bw.mp4" loop playsinline>
+                                    Your browser does not support the video tag.
+                                </video>
+                                <div class="grid-overlay"></div>
+                            </div>
+                        </div>
+                        <div class="about-content">
+                            <h2 class="about-heading phosphor-text">ABOUT</h2>
+                            <p class="about-bio">
+                                I'm a product and UX leader who specializes in enterprise-scale design challenges — the kind where adoption isn't optional, stakeholders number in the dozens, and the user base spans half a million people. I've led design orgs through hypergrowth, built design systems adopted across 40+ teams, and consistently turned complex constraints into measurable business outcomes.
+                            </p>
+                            <div class="about-strengths">
+                                <span class="strength-tag">Enterprise Design Systems</span>
+                                <span class="strength-tag">Cross-Functional Leadership</span>
+                                <span class="strength-tag">Data-Driven UX</span>
+                                <span class="strength-tag">Platform Strategy</span>
+                            </div>
+                        </div>
                     </div>
-                    <div class="song-info">
-                        <h2 id="songTitle">PETER BARTSCH</h2>
-                        <p id="artistName">Product & UX Leader</p>
-                        <p id="releaseDate">$3.8B Revenue Enabled • 500K+ Users • 34%→87% Adoption • Team 1→10
-                        </p>
-                    </div>
-                </div>
+                </section>
 
-                <!-- CTA Section -->
-                <div class="cta-section">
-                    <a href="https://www.figma.com/proto/i1SMndpgNnRCEBZceZJ7NK/Peter-Bartsch-CV--Portfolio---Cases-Studies?node-id=963-950&t=tsQyOT4yQLBTD8ms-1"
-                        target="_blank" rel="noopener noreferrer" class="button button2"><img src="figma.png"
-                            alt="Figma" class="figma-icon" height="22px" width="22px">&nbsp;RESUME + CASE STUDIES</a>
-                </div>
-
-                <div class="portfolio-carousel">
+                <div id="portfolio-carousel" class="portfolio-carousel">
                     <div class="portfolio-slides">
                         <!-- 1. Deere Common UX - Flagship: Forced adoption at scale -->
-                        <div class="portfolio-slide active" data-index="0">
+                        <div class="portfolio-slide portfolio-slide-flagship active" data-index="0">
                             <div class="slide-thumbnail">
-                                <img src="carousel-thumb-deere-ux.png" alt="Deere Common UX">
+                                <picture><source srcset="carousel-thumb-deere-ux.webp" type="image/webp"><img src="carousel-thumb-deere-ux.png" alt="Deere Common UX" width="250" height="250"></picture>
                                 <div class="grid-overlay"></div>
                             </div>
                             <div class="slide-content">
                                 <h4>FLAGSHIP CASE STUDY</h4>
-                                <h3 class="project-title">DEERE: FORCED ADOPTION</h3>
-                                <p class="project-desc">Drove 34%→87% engagement without destroying trust • $3.8B revenue enabled</p>
-                                <a href="case-studies/deere-common-ux" class="project-link">View Case Study →</a>
+                                <h3 class="project-title phosphor-text">DEERE: FORCED ADOPTION</h3>
+                                <div class="project-structure">
+                                    <p class="structure-item"><span class="structure-label">Challenge:</span> Get 500K users to complete profiles without killing trust</p>
+                                    <p class="structure-item"><span class="structure-label">Approach:</span> Stepped onboarding with targeted prompts across channels</p>
+                                    <p class="structure-item"><span class="structure-label">Result:</span> 34%→87% completion · $3.8B revenue enabled</p>
+                                </div>
+                                <a href="case-studies/deere-common-ux.php" class="project-link brutalist-link">VIEW CASE STUDY →</a>
                                 <div class="portfolio-nav">
                                     <button class="portfolio-prev" aria-label="Previous project">‹</button>
                                     <div class="portfolio-dots"></div>
@@ -339,14 +329,18 @@
                         <!-- 2. Deere Nav - Platform governance -->
                         <div class="portfolio-slide" data-index="1">
                             <div class="slide-thumbnail">
-                                <img src="carousel-thumb-deere-nav.png" alt="Deere Consistent Nav">
+                                <picture><source srcset="carousel-thumb-deere-nav.webp" type="image/webp"><img src="carousel-thumb-deere-nav.png" alt="Deere Consistent Nav" loading="lazy" width="250" height="250"></picture>
                                 <div class="grid-overlay"></div>
                             </div>
                             <div class="slide-content">
                                 <h4>FEATURED WORK</h4>
                                 <h3 class="project-title">DEERE: PLATFORM UNIFICATION</h3>
-                                <p class="project-desc">Unified navigation across 47 sites • Zero-downtime migration</p>
-                                <a href="case-studies/deere-nav" class="project-link">View Case Study →</a>
+                                <div class="project-structure">
+                                    <p class="structure-item"><span class="structure-label">Challenge:</span> 47 product sites, each with its own navigation</p>
+                                    <p class="structure-item"><span class="structure-label">Approach:</span> Shared design system rolled out without breaking existing products</p>
+                                    <p class="structure-item"><span class="structure-label">Result:</span> One consistent experience across all 47 sites</p>
+                                </div>
+                                <a href="case-studies/deere-nav.php" class="project-link brutalist-link">VIEW CASE STUDY →</a>
                                 <div class="portfolio-nav">
                                     <button class="portfolio-prev" aria-label="Previous project">‹</button>
                                     <div class="portfolio-dots"></div>
@@ -357,14 +351,18 @@
                         <!-- 3. FourKites Tracking - Trust in uncertain data -->
                         <div class="portfolio-slide" data-index="2">
                             <div class="slide-thumbnail">
-                                <img src="carousel-thumb-fourkites-tracking.png" alt="FourKites Tracking">
+                                <picture><source srcset="carousel-thumb-fourkites-tracking.webp" type="image/webp"><img src="carousel-thumb-fourkites-tracking.png" alt="FourKites Tracking" loading="lazy" width="250" height="250"></picture>
                                 <div class="grid-overlay"></div>
                             </div>
                             <div class="slide-content">
                                 <h4>FEATURED WORK</h4>
                                 <h3 class="project-title">FOURKITES: DATA TRUST</h3>
-                                <p class="project-desc">Made customers trust tracking when data was uncertain • "Never hide uncertainty"</p>
-                                <a href="case-studies/fourkites-tracking" class="project-link">View Case Study →</a>
+                                <div class="project-structure">
+                                    <p class="structure-item"><span class="structure-label">Challenge:</span> Customers didn't trust tracking data that was often incomplete</p>
+                                    <p class="structure-item"><span class="structure-label">Approach:</span> Showed data confidence levels instead of hiding uncertainty</p>
+                                    <p class="structure-item"><span class="structure-label">Result:</span> 41% retention increase · 3x customer expansion</p>
+                                </div>
+                                <a href="case-studies/fourkites-tracking.php" class="project-link brutalist-link">VIEW CASE STUDY →</a>
                                 <div class="portfolio-nav">
                                     <button class="portfolio-prev" aria-label="Previous project">‹</button>
                                     <div class="portfolio-dots"></div>
@@ -375,14 +373,18 @@
                         <!-- 4. FourKites Driver - Incentive alignment -->
                         <div class="portfolio-slide" data-index="3">
                             <div class="slide-thumbnail">
-                                <img src="carousel-thumb-fourkites-driver.png" alt="FourKites Driver">
+                                <picture><source srcset="carousel-thumb-fourkites-driver.webp" type="image/webp"><img src="carousel-thumb-fourkites-driver.png" alt="FourKites Driver" loading="lazy" width="250" height="250"></picture>
                                 <div class="grid-overlay"></div>
                             </div>
                             <div class="slide-content">
                                 <h4>FEATURED WORK</h4>
                                 <h3 class="project-title">FOURKITES: INCENTIVE DESIGN</h3>
-                                <p class="project-desc">Reconciled competing driver/shipper incentives • 32% more tracked shipments</p>
-                                <a href="case-studies/fourkites-driver" class="project-link">View Case Study →</a>
+                                <div class="project-structure">
+                                    <p class="structure-item"><span class="structure-label">Challenge:</span> Drivers had no reason to share their location data</p>
+                                    <p class="structure-item"><span class="structure-label">Approach:</span> Rewards system that benefited both drivers and shippers</p>
+                                    <p class="structure-item"><span class="structure-label">Result:</span> 32% more tracked shipments · driver NPS +28</p>
+                                </div>
+                                <a href="case-studies/fourkites-driver.php" class="project-link brutalist-link">VIEW CASE STUDY →</a>
                                 <div class="portfolio-nav">
                                     <button class="portfolio-prev" aria-label="Previous project">‹</button>
                                     <div class="portfolio-dots"></div>
@@ -393,14 +395,18 @@
                         <!-- 5. Thios - AI as force multiplier -->
                         <div class="portfolio-slide" data-index="4">
                             <div class="slide-thumbnail">
-                                <img src="carousel-thumb-thios.png" alt="Thios Project">
+                                <picture><source srcset="carousel-thumb-thios.webp" type="image/webp"><img src="carousel-thumb-thios.png" alt="Thios Project" loading="lazy" width="250" height="250"></picture>
                                 <div class="grid-overlay"></div>
                             </div>
                             <div class="slide-content">
                                 <h4>FEATURED WORK</h4>
                                 <h3 class="project-title">THIOS: AI AS CO-FOUNDER</h3>
-                                <p class="project-desc">AI as technical co-founder • Idea to revenue in 18 months</p>
-                                <a href="case-studies/thios" class="project-link">View Case Study →</a>
+                                <div class="project-structure">
+                                    <p class="structure-item"><span class="structure-label">Challenge:</span> Solo founder needs to ship brand, websites, and physical products</p>
+                                    <p class="structure-item"><span class="structure-label">Approach:</span> Used AI to handle code, CAD, and brand design at startup speed</p>
+                                    <p class="structure-item"><span class="structure-label">Result:</span> Full product ecosystem generating revenue in 18 months</p>
+                                </div>
+                                <a href="case-studies/thios.php" class="project-link brutalist-link">VIEW CASE STUDY →</a>
                                 <div class="portfolio-nav">
                                     <button class="portfolio-prev" aria-label="Previous project">‹</button>
                                     <div class="portfolio-dots"></div>
@@ -417,7 +423,9 @@
                     <div class="company-logos-grid scroll-reveal-stagger">
                         <img src="img/logos/John-Deere-Logo 1.png" alt="John Deere" class="company-logo" loading="lazy">
                         <img src="img/logos/FourKites_Logo_light.png" alt="FourKites" class="company-logo" loading="lazy">
-                        <img src="img/logos/maven 1.png" alt="MavenWave" class="company-logo" loading="lazy">
+                        <img src="img/logos/abbvie_logo-white.png" alt="AbbVie" class="company-logo" loading="lazy">
+                        <img src="img/logos/Comerica-new-logo.svg.png" alt="Comerica" class="company-logo" loading="lazy">
+                        <img src="img/logos/maven 1.png" alt="MavenWave" class="company-logo company-logo-sm" loading="lazy">
                         <img src="img/logos/Gogo-Inc-RGB-RedBlue-WEB1000px 1.png" alt="Gogo" class="company-logo" loading="lazy">
                         <img src="img/logos/here-white-200px.webp" alt="HERE Maps" class="company-logo" loading="lazy">
                         <img src="img/logos/Thios-and-company-badge.png" alt="Thios" class="company-logo" loading="lazy">
@@ -478,11 +486,11 @@
                                 <td></td>
                                 <td colspan="2">
                                     <ul class="inline-bullets">
-                                        <li><strong>Problem:</strong> Can AI compress the timeline from idea to market for a solo founder shipping physical products?</li>
-                                        <li><strong>Result:</strong> Complete product ecosystem in 18 months—brand, 3 websites, 5 CAD shelter variants, physical prototype, handbook generating revenue</li>
-                                        <li><strong>Method:</strong> AI as technical co-founder; 70% faster prototyping cycles through conversational development</li>
+                                        <li><strong>Problem:</strong> Solo founder needed to ship brand, websites, and physical products fast</li>
+                                        <li><strong>Result:</strong> Full product ecosystem in 18 months — 3 websites, 5 CAD variants, revenue</li>
+                                        <li><strong>Approach:</strong> Used AI for code, CAD, and brand work; 70% faster prototyping cycles</li>
                                     </ul>
-                                    <a href="case-studies/thios" class="view-more">View More →</a>
+                                    <a href="case-studies/thios.php" class="view-more">View Case Study →</a>
                                 </td>
                             </tr>
                             <tr class="featured-role">
@@ -494,11 +502,11 @@
                                 <td></td>
                                 <td colspan="2">
                                     <ul class="inline-bullets">
-                                        <li><strong>Problem:</strong> Force platform-wide data adoption across 500K+ users (farmers to dealers) without destroying trust—enabling $3.8B subscription revenue</li>
-                                        <li><strong>Result:</strong> 34% → 87% profile completion; unified navigation across 8 product lines; 45% faster design-to-dev handoffs</li>
-                                        <li><strong>Method:</strong> Multi-channel forced adoption strategy; enterprise design system spanning 40+ teams globally</li>
+                                        <li><strong>Problem:</strong> 500K+ users weren't completing profiles — blocking $3.8B in subscription revenue</li>
+                                        <li><strong>Result:</strong> 34%→87% profile completion; unified nav across 8 product lines; 45% faster handoffs</li>
+                                        <li><strong>Approach:</strong> Stepped onboarding prompts + design system adopted by 40+ teams</li>
                                     </ul>
-                                    <a href="case-studies/deere-common-ux" class="view-more">View More →</a>
+                                    <a href="case-studies/deere-common-ux.php" class="view-more">View Case Study →</a>
                                 </td>
                             </tr>
                             <tr class="featured-role">
@@ -510,11 +518,11 @@
                                 <td></td>
                                 <td colspan="2">
                                     <ul class="inline-bullets">
-                                        <li><strong>Problem:</strong> Make customers trust real-time tracking when underlying data is uncertain, incomplete, or conflicting</li>
-                                        <li><strong>Result:</strong> $3M→$100M ARR hypergrowth; 41% retention increase; 3x customer expansion; team scaled 1→10</li>
-                                        <li><strong>Method:</strong> "Never hide uncertainty" design principle; predictive analytics 6-12 hours ahead of competitors</li>
+                                        <li><strong>Problem:</strong> Customers didn't trust tracking dashboards built on incomplete data</li>
+                                        <li><strong>Result:</strong> $3M→$100M ARR; 41% retention increase; 3x expansion; team 1→10</li>
+                                        <li><strong>Approach:</strong> Showed confidence levels openly; added predictive ETAs ahead of competitors</li>
                                     </ul>
-                                    <a href="case-studies/fourkites-tracking" class="view-more">View More →</a>
+                                    <a href="case-studies/fourkites-tracking.php" class="view-more">View Case Study →</a>
                                 </td>
                             </tr>
                             <tr>
@@ -573,7 +581,7 @@
             <p class="modal-dates">Aug 2024 - Present</p>
             <p class="modal-summary">AI as technical co-founder • Complete product ecosystem in 18 months • Idea to revenue solo</p>
             <div class="modal-cta-container">
-                <a href="case-studies/thios" class="modal-case-study-cta">View Full Case Study →</a>
+                <a href="case-studies/thios.php" class="modal-case-study-cta">View Full Case Study →</a>
             </div>
             <div class="carousel">
                 <img src="img/thios-01.png" alt="Thios modular shelter system" class="active">
@@ -598,8 +606,8 @@
             <p class="modal-dates">Aug 2020 - Jul 2024</p>
             <p class="modal-summary">500K+ users • $3.8B revenue enabled • 34%→87% adoption • Enterprise design system across 40+ teams</p>
             <div class="modal-cta-container">
-                <a href="case-studies/deere-common-ux" class="modal-case-study-cta">Forced Adoption Case Study →</a>
-                <a href="case-studies/deere-nav" class="modal-case-study-cta modal-cta-secondary">Platform Unification Case Study →</a>
+                <a href="case-studies/deere-common-ux.php" class="modal-case-study-cta">Forced Adoption Case Study →</a>
+                <a href="case-studies/deere-nav.php" class="modal-case-study-cta modal-cta-secondary">Platform Unification Case Study →</a>
             </div>
             <div class="carousel">
                 <img src="img/deere-01.png" alt="Deere Operations Center" class="active">
@@ -621,8 +629,8 @@
             <p class="modal-dates">Jan 2017 - Jan 2020</p>
             <p class="modal-summary">Employee #28 • $3M→$100M ARR hypergrowth • Built design team 1→10 • 41% retention increase</p>
             <div class="modal-cta-container">
-                <a href="case-studies/fourkites-tracking" class="modal-case-study-cta">Data Trust Case Study →</a>
-                <a href="case-studies/fourkites-driver" class="modal-case-study-cta modal-cta-secondary">Incentive Design Case Study →</a>
+                <a href="case-studies/fourkites-tracking.php" class="modal-case-study-cta">Data Trust Case Study →</a>
+                <a href="case-studies/fourkites-driver.php" class="modal-case-study-cta modal-cta-secondary">Incentive Design Case Study →</a>
             </div>
             <div class="carousel">
                 <img src="img/fourkites-01.png" alt="FourKites control tower" class="active">
@@ -654,14 +662,14 @@
                     and leading cross-functional design sprints</li>
             </ul>
             <div class="carousel">
-                <img src="img/mavenwave-abbvie-01.png" alt="Image 1" class="active">
-                <img src="img/mavenwave-abbvie-02.png" alt="Image 2">
-                <img src="img/mavenwave-abbvie-03.png" alt="Image 3">
-                <img src="img/mavenwave-abbvie-04.png" alt="Image 4">
-                <img src="img/mavenwave-abbvie-05.png" alt="Image 5">
-                <img src="img/mavenwave-catamaran-rx-01.png" alt="Image 6">
-                <img src="img/mavenwave-catamaran-rx-02.png" alt="Image 7">
-                <img src="img/mavenwave-comerica-01.png" alt="Image 8">
+                <img src="img/mavenwave-abbvie-01.png" alt="AbbVie portal design 1" class="active">
+                <img src="img/mavenwave-abbvie-02.png" alt="AbbVie portal design 2">
+                <img src="img/mavenwave-abbvie-03.png" alt="AbbVie portal design 3">
+                <img src="img/mavenwave-abbvie-04.png" alt="AbbVie portal design 4">
+                <img src="img/mavenwave-abbvie-05.png" alt="AbbVie portal design 5">
+                <img src="img/mavenwave-catamaran-rx-01.png" alt="OptumRx pharmacy platform design 1">
+                <img src="img/mavenwave-catamaran-rx-02.png" alt="OptumRx pharmacy platform design 2">
+                <img src="img/mavenwave-comerica-01.png" alt="Comerica banking portal design">
 
 
             </div>
@@ -683,9 +691,9 @@
                 <li>Led UX integration of acquired Trapster app, improving onboarding completion 33%</li>
             </ul>
             <div class="carousel">
-                <img src="img/nokia-here-01.png" alt="Image 1" class="active">
-                <img src="img/nokia-here-02.png" alt="Image 2">
-                <img src="img/nokia-here-03.png" alt="Image 3">
+                <img src="img/nokia-here-01.png" alt="Nokia HERE Maps interface design 1" class="active">
+                <img src="img/nokia-here-02.png" alt="Nokia HERE Maps interface design 2">
+                <img src="img/nokia-here-03.png" alt="Nokia HERE Maps interface design 3">
             </div>
             <div class="carousel-nav">
                 <button class="prevBtn">BACK</button>
@@ -705,14 +713,14 @@
                     recurring revenue</li>
             </ul>
             <div class="carousel">
-                <img src="img/gogo-01.png" alt="Image 1" class="active">
-                <img src="img/gogo-02.png" alt="Image 2">
-                <img src="img/gogo-03.png" alt="Image 3">
-                <img src="img/gogo-04.png" alt="Image 4">
-                <img src="img/gogo-05.png" alt="Image 5">
-                <img src="img/gogo-06.png" alt="Image 6">
-                <img src="img/gogo-07.png" alt="Image 7">
-                <img src="img/gogo-08.png" alt="Image 8">
+                <img src="img/gogo-01.png" alt="Gogo inflight internet product design 1" class="active">
+                <img src="img/gogo-02.png" alt="Gogo inflight internet product design 2">
+                <img src="img/gogo-03.png" alt="Gogo inflight internet product design 3">
+                <img src="img/gogo-04.png" alt="Gogo inflight internet product design 4">
+                <img src="img/gogo-05.png" alt="Gogo inflight internet product design 5">
+                <img src="img/gogo-06.png" alt="Gogo inflight internet product design 6">
+                <img src="img/gogo-07.png" alt="Gogo inflight internet product design 7">
+                <img src="img/gogo-08.png" alt="Gogo inflight internet product design 8">
             </div>
             <div class="carousel-nav">
                 <button class="prevBtn">BACK</button>
@@ -723,10 +731,10 @@
 
 
 
-    <div id="myModal5" class="modal">
+    <div id="myModal5" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal5-title">
         <div class="modal-content">
             <span class="close">&CircleTimes;</span>
-            <h2>How Weird Street Faire</h2>
+            <h2 id="modal5-title">How Weird Street Faire</h2>
             <p>Board Director</p>
             <p>2004 - 2024</p>
             <ul>
@@ -735,9 +743,9 @@
                 <li>Donated proceeds for local SF-based women's shelter and STEM educational center in Vallejo, CA</li>
             </ul>
             <div class="carousel">
-                <img src="img/how-weird-01.png" alt="Image 1" class="active">
-                <img src="img/how-weird-02.png" alt="Image 2">
-                <img src="img/how-weird-03.png" alt="Image 3">
+                <img src="img/how-weird-01.png" alt="How Weird Street Faire event 1" class="active">
+                <img src="img/how-weird-02.png" alt="How Weird Street Faire event 2">
+                <img src="img/how-weird-03.png" alt="How Weird Street Faire event 3">
             </div>
             <div class="carousel-nav">
                 <button class="prevBtn">BACK</button>
@@ -747,32 +755,6 @@
     </div>
 
 
-    <div id="myModal8" class="modal" role="dialog" aria-modal="true" aria-labelledby="myModal8-title">
-        <div class="modal-content">
-            <span class="close">&CircleTimes;</span>
-            <h2 id="myModal8-title">Dig the Pixels / D7TV.com</h2>
-            <p>Founder / Principal Designer</p>
-            <p>August 2004 - April 2008</p>
-            <ul>
-                <li>Awarded Best Designed Site at Drupalcon 2008 Boston</li>
-                <li><a href="https://techcrunch.com/2006/12/06/d7tv-may-be-the-next-mtv-for-mobile-content/"
-                        target="_blank" rel="noopener noreferrer">Featured in TechCrunch as "The Next MTV for Mobile
-                        Content"</a></li>
-            </ul>
-            <div class="carousel">
-                <img src="img/dig-the-pixels-01.png" alt="Image 1" class="active">
-                <img src="img/dig-the-pixels-02.png" alt="Image 2">
-                <img src="img/dig-the-pixels-03.png" alt="Image 3">
-                <img src="img/dig-the-pixels-04.png" alt="Image 4">
-                <img src="img/dig-the-pixels-05.png" alt="Image 5">
-                <img src="img/dig-the-pixels-06.png" alt="Image 6">
-            </div>
-            <div class="carousel-nav">
-                <button class="prevBtn">BACK</button>
-                <button class="nextBtn">NEXT</button>
-            </div>
-        </div>
-    </div>
 
     <div id="myModal9" class="modal" role="dialog" aria-modal="true" aria-labelledby="myModal9-title">
         <div class="modal-content">
@@ -785,9 +767,9 @@
                     revenue before acquisition</li>
             </ul>
             <div class="carousel">
-                <img src="img/cognistar-01.png" alt="Image 1" class="active">
-                <img src="img/cognistar-02.png" alt="Image 2">
-                <img src="img/cognistar-03.png" alt="Image 3">
+                <img src="img/cognistar-01.png" alt="Cognistar legal education platform 1" class="active">
+                <img src="img/cognistar-02.png" alt="Cognistar legal education platform 2">
+                <img src="img/cognistar-03.png" alt="Cognistar legal education platform 3">
             </div>
             <div class="carousel-nav">
                 <button class="prevBtn">BACK</button>
@@ -796,74 +778,6 @@
         </div>
     </div>
 
-    <div id="myModal10" class="modal" role="dialog" aria-modal="true" aria-labelledby="myModal10-title">
-        <div class="modal-content">
-            <span class="close">&CircleTimes;</span>
-            <h2 id="myModal10-title">SkyMall.com</h2>
-            <p>Product Manager</p>
-            <p>August 1998 - March 2000</p>
-            <ul>
-                <li>Spearheaded DVD catalog production and distribution</li>
-                <li>Created detailed 3D product models for DVD-ROM integration</li>
-                <li>Enhanced digital shopping experience through interactive content</li>
-            </ul>
-            <div class="carousel">
-                <img src="img/skymall-01.png" alt="Image 1" class="active">
-                <img src="img/skymall-02.png" alt="Image 2">
-                <img src="img/skymall-03.png" alt="Image 3">
-                <img src="img/skymall-04.png" alt="Image 4">
-            </div>
-            <div class="carousel-nav">
-                <button class="prevBtn">BACK</button>
-                <button class="nextBtn">NEXT</button>
-            </div>
-        </div>
-    </div>
-
-    <div id="myModal11" class="modal" role="dialog" aria-modal="true" aria-labelledby="myModal11-title">
-        <div class="modal-content">
-            <span class="close">&CircleTimes;</span>
-            <h2 id="myModal11-title">tronicmedia</h2>
-            <p>Founder</p>
-            <p>August 1997 - December 1998</p>
-            <ul>
-                <li>Provided custom web development and hosting solutions</li>
-                <li>Specialized in creating animated 3D GIFs for early web applications</li>
-                <li>Managed client relationships and project deliverables</li>
-            </ul>
-            <div class="carousel">
-                <img src="img/tronicmedia-01.png" alt="Image 1" class="active">
-                <img src="img/tronicmedia-02.png" alt="Image 2">
-            </div>
-            <div class="carousel-nav">
-                <button class="prevBtn">BACK</button>
-                <button class="nextBtn">NEXT</button>
-            </div>
-        </div>
-    </div>
-
-    <div id="myModal12" class="modal" role="dialog" aria-modal="true" aria-labelledby="myModal12-title">
-        <div class="modal-content">
-            <span class="close">&CircleTimes;</span>
-            <h2 id="myModal12-title">Life Fitness</h2>
-            <p>Interactive Specialist</p>
-            <p>August 1994 - March 1997</p>
-            <ul>
-                <li>Developed and tested Exertainment Systems prototypes</li>
-                <li>Created and launched first lifefitness.com website</li>
-                <li>Demonstrated products at major events including MTV Beach House and CES</li>
-                <li>Collaborated with production team on system optimization</li>
-            </ul>
-            <div class="carousel">
-                <img src="img/life-fitness-01.png" alt="Image 1" class="active">
-                <img src="img/life-fitness-02.png" alt="Image 2">
-            </div>
-            <div class="carousel-nav">
-                <button class="prevBtn">BACK</button>
-                <button class="nextBtn">NEXT</button>
-            </div>
-        </div>
-    </div>
 
     <div id="myModal13" class="modal" role="dialog" aria-modal="true" aria-labelledby="myModal13-title">
         <div class="modal-content">
@@ -876,99 +790,24 @@
                 <li>Concentration: Architectural Theory</li>
             </ul>
             <div class="carousel">
-                <img src="img/asu-01.png" alt="Image 1" class="active">
+                <img src="img/asu-01.png" alt="Arizona State University campus" class="active">
             </div>
             <div class="carousel-nav">
             </div>
         </div>
     </div>
 
-    <div id="myModal14" class="modal" role="dialog" aria-modal="true" aria-labelledby="myModal14-title">
-        <div class="modal-content">
-            <span class="close">&CircleTimes;</span>
-            <h2 id="myModal14-title">School of the Art Institute of Chicago</h2>
-            <p>Student-at-Large</p>
-            <p>September 1987 - June 1989</p>
-            <ul>
-                <li>Oil Painting</li>
-                <li>Copper Sculpture</li>
-                <li>Neon</li>
-            </ul>
-            <div class="carousel">
-                <img src="img/saic-01.png" alt="Image 1" class="active">
-                <img src="img/saic-02.png" alt="Image 2">
-                <img src="img/saic-03.png" alt="Image 3">
-                <img src="img/saic-04.png" alt="Image 4">
-                <img src="img/saic-05.png" alt="Image 5">
-                <img src="img/saic-06.png" alt="Image 6">
-                <img src="img/saic-07.png" alt="Image 7">
-                <img src="img/saic-08.png" alt="Image 8">
-                <img src="img/saic-09.png" alt="Image 9">
-                <img src="img/saic-10.png" alt="Image 10">
-                <img src="img/saic-11.png" alt="Image 11">
-            </div>
-            <div class="carousel-nav">
-                <button class="prevBtn">BACK</button>
-                <button class="nextBtn">NEXT</button>
-            </div>
-        </div>
-    </div>
-
-    <div id="myModal15" class="modal" role="dialog" aria-modal="true" aria-labelledby="myModal15-title">
-        <div class="modal-content">
-            <span class="close">&CircleTimes;</span>
-            <h2 id="myModal15-title">F. A. Skates</h2>
-            <p>Founder</p>
-            <p>August 1985 - March 1988</p>
-            <ul>
-                <li>Founded and operated independent skateboard retail business</li>
-                <li>Managed inventory, sales, and customer service</li>
-                <li>Built local skateboarding community through events and promotions</li>
-            </ul>
-            <div class="carousel">
-                <img src="img/fa-skates-01.png" alt="Image 1" class="active">
-
-            </div>
-            <div class="carousel-nav">
-            </div>
-        </div>
-    </div>
-
-    <div id="myModal16" class="modal" role="dialog" aria-modal="true" aria-labelledby="myModal16-title">
-        <div class="modal-content">
-            <span class="close">&CircleTimes;</span>
-            <h2 id="myModal16-title">Burton Chill Foundation</h2>
-            <p>Snowboard Instructor</p>
-            <p>November 2000 - March 2002</p>
-            <ul>
-                <li>Instructed underserved high school students at Wachusett Mountain, MA</li>
-                <li>Taught snowboarding fundamentals to ~70 students per season</li>
-                <li>Participated in youth mentorship and development program</li>
-            </ul>
-            <div class="carousel">
-                <img src="img/burton-chill-01.png" alt="Image 1" class="active">
-                <img src="img/burton-chill-02.png" alt="Image 2">
-            </div>
-            <div class="carousel-nav">
-                <button class="prevBtn">BACK</button>
-                <button class="nextBtn">NEXT</button>
-            </div>
-        </div>
-    </div>
 
     <!-- Modal Container (dynamically populated) -->
     <div id="modal-container"></div>
 
     <!-- Scripts -->
-    <script src="portfolio-data.js"></script>
-    <script src="modal-system.js"></script>
-    <script src="script.js"></script>
-    <footer id="site-footer-final" style="text-align:center; padding:20px 12px;">
-        <p style="margin:0;">
-            © 2025 Peter Bartsch</p>
-        <p>&nbsp;</p>
-        <p>&nbsp;</p>
-        <p>&nbsp;</p>
+    <script src="portfolio-data.js?v=<?php echo filemtime('portfolio-data.js'); ?>"></script>
+    <script src="modal-system.js?v=<?php echo filemtime('modal-system.js'); ?>"></script>
+    <script src="themes/theme-switcher.js?v=<?php echo filemtime('themes/theme-switcher.js'); ?>"></script>
+    <script src="script.js?v=<?php echo filemtime('script.js'); ?>"></script>
+    <footer id="site-footer-final" style="text-align:center; padding:20px 12px 80px;">
+        <p style="margin:0;">© 2026 Peter Bartsch</p>
     </footer>
 </body>
 

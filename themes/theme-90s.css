@@ -1,0 +1,603 @@
+/* ========================================
+   1990s GeoCities Theme
+   Black background, twinkling stars, Comic Sans,
+   hot pink/lime/yellow/cyan, beveled buttons,
+   rainbow borders, hit counter vibes
+   ======================================== */
+
+/* ---- Custom Properties Override ---- */
+[data-theme="90s"] {
+    --color-primary: #ff00ff;
+    --color-primary-dark: #000080;
+    --color-primary-darker: #000000;
+    --color-accent-green: #00ff00;
+    --color-accent-green-bg: rgba(0, 255, 0, 0.15);
+    --color-accent-green-hover: #00ff00;
+    --color-text-primary: #ffff00;
+    --color-text-muted: #00ffff;
+    --color-text-subtle: #999999;
+    --color-black: #000000;
+    --color-white: #ffffff;
+    --color-gray-dark: #333333;
+    --color-gray-mid: #808080;
+    --font-display: 'Comic Neue', 'Comic Sans MS', cursive;
+    --font-body: 'Comic Neue', 'Comic Sans MS', cursive;
+    --font-readable: 'Courier New', monospace;
+    --font-system: 'Times New Roman', serif;
+    --shadow-text: none;
+    --shadow-box: 2px 2px 0 #000;
+    --shadow-box-hover: 3px 3px 0 #000;
+    --shadow-glow: none;
+    --gradient-primary: none;
+    --gradient-dark: none;
+    --glass-bg: #000080;
+    --glass-border: #808080;
+    --border-radius: 0;
+    --border-radius-lg: 0;
+    --border-width: 2px;
+
+    /* Case study page overrides */
+    --cs-page-bg: rgba(0, 0, 128, 0.4);
+    --cs-border-color: #808080;
+    --cs-title-glow: none;
+    --cs-text-color: #ffffff;
+    --cs-muted-color: #00ffff;
+    --cs-metric-bg: #000080;
+    --cs-constraints-bg: rgba(0, 0, 128, 0.3);
+    --cs-contact-bg: #000080;
+}
+
+/* ---- Background ---- */
+[data-theme="90s"] html {
+    background-color: #000000;
+}
+
+[data-theme="90s"] body {
+    background-color: #000000 !important;
+    background-image: none !important;
+    background-blend-mode: normal !important;
+    color: #ffff00;
+}
+
+/* ---- Typography ---- */
+[data-theme="90s"] h1,
+[data-theme="90s"] h2,
+[data-theme="90s"] h3,
+[data-theme="90s"] h4,
+[data-theme="90s"] p,
+[data-theme="90s"] a,
+[data-theme="90s"] th,
+[data-theme="90s"] td {
+    font-family: 'Comic Neue', 'Comic Sans MS', cursive;
+    text-shadow: none;
+}
+
+[data-theme="90s"] #title {
+    font-family: 'Comic Neue', 'Comic Sans MS', cursive !important;
+    color: #ff00ff !important;
+    text-shadow: 3px 3px 0 #000080 !important;
+    font-size: 32px;
+}
+
+[data-theme="90s"] #name a {
+    color: #00ffff !important;
+}
+
+/* ---- Links ---- */
+[data-theme="90s"] a {
+    color: #00ffff;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+[data-theme="90s"] a:visited {
+    color: #cc66ff !important;
+}
+
+[data-theme="90s"] a:hover {
+    color: #ff00ff !important;
+}
+
+/* ---- Blinking text for headings ---- */
+@keyframes blink90s {
+    0%, 49% { opacity: 1; }
+    50%, 100% { opacity: 0; }
+}
+
+[data-theme="90s"] .phosphor-text {
+    text-shadow: none !important;
+    animation: blink90s 1.2s step-end infinite;
+}
+
+/* ---- Marquee-style scrolling tagline ---- */
+@keyframes marquee90s {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+}
+
+[data-theme="90s"] .hero-tagline {
+    overflow: hidden;
+    white-space: nowrap;
+    animation: marquee90s 12s linear infinite;
+    color: #00ff00;
+    font-weight: bold;
+}
+
+[data-theme="90s"] .hero-stats {
+    color: #ffff00;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* ---- Header ---- */
+[data-theme="90s"] #site-header {
+    background-color: #000080 !important;
+    background-image: none !important;
+    border-bottom: 4px solid;
+    border-image: linear-gradient(to right, red, orange, yellow, green, cyan, blue, violet) 1;
+}
+
+[data-theme="90s"] .header-nav a {
+    color: #ffff00 !important;
+    font-family: 'Comic Neue', 'Comic Sans MS', cursive;
+    text-decoration: underline;
+}
+
+[data-theme="90s"] .header-nav a:hover {
+    color: #ff00ff !important;
+}
+
+[data-theme="90s"] .header-logo img {
+    filter: none !important;
+}
+
+[data-theme="90s"] .header-logo:hover img {
+    animation: none !important;
+}
+
+[data-theme="90s"] .header-logo::after {
+    display: none !important;
+}
+
+/* ---- Hamburger / Mobile Menu ---- */
+[data-theme="90s"] .hamburger {
+    border-color: #ffff00;
+}
+
+[data-theme="90s"] .hamburger span {
+    background: #ffff00;
+}
+
+[data-theme="90s"] .mobile-menu {
+    background-color: #000080 !important;
+    background-image: none !important;
+    border-left: 3px solid #ff00ff;
+}
+
+[data-theme="90s"] .mobile-menu a {
+    color: #ffff00 !important;
+    font-family: 'Comic Neue', 'Comic Sans MS', cursive;
+}
+
+[data-theme="90s"] .mobile-menu a:hover {
+    color: #00ff00 !important;
+}
+
+[data-theme="90s"] .mobile-menu-header {
+    color: #ff00ff;
+    border-bottom-color: #ff00ff;
+}
+
+[data-theme="90s"] .mobile-menu-close {
+    border-color: #ff00ff;
+}
+
+[data-theme="90s"] .mobile-menu-close::before,
+[data-theme="90s"] .mobile-menu-close::after {
+    background-color: #ff00ff;
+}
+
+/* ---- Buttons: Win95 beveled style ---- */
+[data-theme="90s"] .button,
+[data-theme="90s"] .button2,
+[data-theme="90s"] .form-submit {
+    background-color: #c0c0c0 !important;
+    color: #000000 !important;
+    border: none !important;
+    border-style: outset !important;
+    border-width: 3px !important;
+    border-color: #ffffff #808080 #808080 #ffffff !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+    font-family: 'Comic Neue', 'Comic Sans MS', cursive !important;
+    padding: 8px 16px !important;
+}
+
+[data-theme="90s"] .button:hover,
+[data-theme="90s"] .button2:hover,
+[data-theme="90s"] .form-submit:hover {
+    background-color: #d4d4d4 !important;
+    transform: none !important;
+}
+
+[data-theme="90s"] .button:active,
+[data-theme="90s"] .button2:active,
+[data-theme="90s"] .form-submit:active {
+    border-style: inset !important;
+    border-color: #808080 #ffffff #ffffff #808080 !important;
+}
+
+/* ---- Brutalist CTA ---- */
+[data-theme="90s"] .brutalist-cta {
+    background-color: #c0c0c0 !important;
+    color: #000000 !important;
+    border-style: outset !important;
+    border-width: 3px !important;
+    border-color: #ffffff #808080 #808080 #ffffff !important;
+    box-shadow: none !important;
+    text-decoration: none !important;
+}
+
+[data-theme="90s"] .brutalist-cta-prompt {
+    color: #000000 !important;
+}
+
+[data-theme="90s"] .brutalist-cta-text {
+    color: #000000 !important;
+    text-shadow: none !important;
+}
+
+/* ---- About Section ---- */
+[data-theme="90s"] .about-heading {
+    color: #ff00ff !important;
+    text-shadow: 2px 2px 0 #000080 !important;
+    animation: blink90s 1.2s step-end infinite;
+}
+
+[data-theme="90s"] .about-bio {
+    color: #ffffff;
+    font-family: 'Comic Neue', 'Comic Sans MS', cursive;
+}
+
+[data-theme="90s"] .about-content {
+    color: #ffffff;
+}
+
+[data-theme="90s"] .strength-tag {
+    background-color: #000080 !important;
+    color: #00ffff !important;
+    border: 2px solid #00ffff !important;
+    border-radius: 0 !important;
+    font-family: 'Comic Neue', 'Comic Sans MS', cursive;
+}
+
+/* ---- Cover Art / Video ---- */
+[data-theme="90s"] .cover-art {
+    border: 3px ridge #808080;
+}
+
+[data-theme="90s"] .hover-text {
+    background-color: #000080;
+    color: #ffff00;
+    font-family: 'Comic Neue', 'Comic Sans MS', cursive;
+    border: 2px solid #ffff00;
+    border-radius: 0;
+}
+
+/* ---- Portfolio Carousel ---- */
+[data-theme="90s"] .portfolio-carousel {
+    background-color: #000080 !important;
+    border: 3px ridge #808080 !important;
+}
+
+[data-theme="90s"] .portfolio-carousel h4 {
+    color: #ffff00 !important;
+    font-family: 'Comic Neue', 'Comic Sans MS', cursive;
+}
+
+[data-theme="90s"] .project-title {
+    color: #ff00ff !important;
+    font-family: 'Comic Neue', 'Comic Sans MS', cursive !important;
+    text-shadow: 2px 2px 0 #000000 !important;
+}
+
+[data-theme="90s"] .structure-label {
+    color: #00ff00 !important;
+}
+
+[data-theme="90s"] .structure-item {
+    color: #ffffff !important;
+}
+
+[data-theme="90s"] .project-link,
+[data-theme="90s"] .brutalist-link {
+    color: #00ffff !important;
+    text-decoration: underline !important;
+}
+
+[data-theme="90s"] .portfolio-dot {
+    background-color: #808080 !important;
+    border-radius: 0 !important;
+}
+
+[data-theme="90s"] .portfolio-dot.active {
+    background-color: #ff00ff !important;
+}
+
+[data-theme="90s"] .portfolio-prev,
+[data-theme="90s"] .portfolio-next {
+    background-color: #c0c0c0 !important;
+    color: #000000 !important;
+    border-style: outset !important;
+    border-width: 3px !important;
+    border-color: #ffffff #808080 #808080 #ffffff !important;
+    box-shadow: none !important;
+    font-family: 'Comic Neue', 'Comic Sans MS', cursive !important;
+}
+
+[data-theme="90s"] .portfolio-prev:active,
+[data-theme="90s"] .portfolio-next:active {
+    border-style: inset !important;
+}
+
+/* ---- Tracklist / Experience Table ---- */
+[data-theme="90s"] #tracklist {
+    border: 3px ridge #808080;
+    background-color: #000040;
+}
+
+[data-theme="90s"] #tracklist th {
+    background-color: #000080;
+    color: #ffff00 !important;
+    border-bottom: 3px ridge #808080 !important;
+}
+
+[data-theme="90s"] #tracklist td {
+    color: #ffffff !important;
+    border-bottom: 1px solid #000080 !important;
+    font-family: 'Comic Neue', 'Comic Sans MS', cursive;
+}
+
+[data-theme="90s"] #tracklist td a {
+    color: #00ffff !important;
+    text-shadow: none !important;
+    text-decoration: underline;
+}
+
+[data-theme="90s"] #tracklist td a:hover {
+    color: #ff00ff !important;
+    text-shadow: none !important;
+}
+
+[data-theme="90s"] #tracklist tbody tr:hover {
+    background-color: rgba(0, 0, 255, 0.3) !important;
+}
+
+[data-theme="90s"] tr.featured-role td:first-child::before {
+    background: #ff00ff !important;
+}
+
+[data-theme="90s"] tr.featured-role:hover {
+    background-color: rgba(255, 0, 255, 0.2) !important;
+}
+
+[data-theme="90s"] .role-details {
+    background-color: #000020 !important;
+}
+
+[data-theme="90s"] .inline-bullets {
+    color: #00ff00 !important;
+    font-family: 'Courier New', monospace;
+}
+
+[data-theme="90s"] .inline-bullets li {
+    color: #00ff00 !important;
+}
+
+[data-theme="90s"] .view-more {
+    background-color: #c0c0c0 !important;
+    color: #000000 !important;
+    border-style: outset !important;
+    border-width: 3px !important;
+    border-color: #ffffff #808080 #808080 #ffffff !important;
+    box-shadow: none !important;
+}
+
+/* ---- Company Logos ---- */
+[data-theme="90s"] .company-logos-section {
+    border: 3px ridge #808080;
+    background-color: #000040;
+    padding: 16px;
+}
+
+[data-theme="90s"] .company-logos-header {
+    color: #ffff00 !important;
+    font-family: 'Comic Neue', 'Comic Sans MS', cursive;
+}
+
+/* ---- Metrics ---- */
+[data-theme="90s"] .metric-card {
+    background: #000080 !important;
+    border: 3px ridge #808080 !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+}
+
+[data-theme="90s"] .metric-card:hover {
+    border-color: #ff00ff !important;
+    box-shadow: none !important;
+}
+
+[data-theme="90s"] .metric-value {
+    color: #00ff00 !important;
+    font-family: 'Courier New', monospace !important;
+    text-shadow: 0 0 8px rgba(0, 255, 0, 0.5) !important;
+}
+
+[data-theme="90s"] .metric-label {
+    color: #ffff00 !important;
+}
+
+/* ---- Configurator Showcase ---- */
+[data-theme="90s"] .configurator-showcase {
+    background-color: #000040 !important;
+    border: 3px ridge #808080;
+}
+
+[data-theme="90s"] .configurator-showcase-inner {
+    background: none !important;
+}
+
+[data-theme="90s"] .configurator-badge {
+    background-color: #ff00ff !important;
+    color: #ffffff !important;
+    border-radius: 0 !important;
+}
+
+[data-theme="90s"] .configurator-title {
+    color: #ffff00 !important;
+    font-family: 'Comic Neue', 'Comic Sans MS', cursive !important;
+}
+
+[data-theme="90s"] .configurator-desc {
+    color: #ffffff !important;
+}
+
+[data-theme="90s"] .configurator-cta {
+    background-color: #c0c0c0 !important;
+    color: #000000 !important;
+    border-style: outset !important;
+    border-width: 3px !important;
+    border-color: #ffffff #808080 #808080 #ffffff !important;
+    border-radius: 0 !important;
+    text-decoration: none !important;
+}
+
+/* ---- Contact Form ---- */
+[data-theme="90s"] .form-label {
+    color: #ff00ff !important;
+    font-family: 'Comic Neue', 'Comic Sans MS', cursive;
+}
+
+[data-theme="90s"] .form-input,
+[data-theme="90s"] .form-textarea {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+    border: 2px inset #808080 !important;
+    border-radius: 0 !important;
+    font-family: 'Courier New', monospace !important;
+    box-shadow: none !important;
+}
+
+[data-theme="90s"] .form-input:focus,
+[data-theme="90s"] .form-textarea:focus {
+    background-color: #ffffcc !important;
+    border-color: #000080 !important;
+    box-shadow: none !important;
+}
+
+/* ---- Modals ---- */
+[data-theme="90s"] .modal-content {
+    background-color: #ffffcc !important;
+    background-image: none !important;
+    border: 3px ridge #808080 !important;
+    color: #000000 !important;
+    box-shadow: 5px 5px 0 #000000 !important;
+}
+
+[data-theme="90s"] .modal-content h2,
+[data-theme="90s"] .modal-content h3,
+[data-theme="90s"] .modal-content h4,
+[data-theme="90s"] .modal-content p,
+[data-theme="90s"] .modal-content li {
+    color: #000000 !important;
+    font-family: 'Comic Neue', 'Comic Sans MS', cursive !important;
+}
+
+[data-theme="90s"] .modal-content h2 {
+    color: #000080 !important;
+    text-shadow: 1px 1px 0 #808080 !important;
+}
+
+[data-theme="90s"] .close {
+    color: #ff0000 !important;
+}
+
+[data-theme="90s"] .close:hover {
+    color: #cc0000 !important;
+}
+
+[data-theme="90s"] .modal-case-study-cta {
+    background-color: #c0c0c0 !important;
+    color: #000000 !important;
+    border-style: outset !important;
+    border-width: 3px !important;
+    border-color: #ffffff #808080 #808080 #ffffff !important;
+}
+
+[data-theme="90s"] .carousel-nav button {
+    background-color: #c0c0c0 !important;
+    color: #000000 !important;
+    border-style: outset !important;
+    border-width: 3px !important;
+    border-color: #ffffff #808080 #808080 #ffffff !important;
+    box-shadow: none !important;
+}
+
+/* ---- Sidebar ---- */
+[data-theme="90s"] .sidebar-portrait img {
+    border: 3px ridge #808080;
+    border-radius: 0 !important;
+}
+
+[data-theme="90s"] .sidebar-link {
+    color: #00ffff !important;
+    text-decoration: underline !important;
+}
+
+[data-theme="90s"] #footer h4 {
+    color: #ff00ff !important;
+}
+
+/* ---- Footer with "hit counter" ---- */
+[data-theme="90s"] #site-footer-final {
+    background-color: #000080;
+    border-top: 4px solid;
+    border-image: linear-gradient(to right, red, orange, yellow, green, cyan, blue, violet) 1;
+    color: #ffffff;
+    padding: 20px !important;
+}
+
+[data-theme="90s"] #site-footer-final p::after {
+    content: ' | Visitors: 001,337';
+    font-family: 'Courier New', monospace;
+    color: #00ff00;
+}
+
+/* ---- Screensaver clock ---- */
+[data-theme="90s"] #screensaver-clock .clock-text {
+    color: #00ff00 !important;
+    font-family: 'Courier New', monospace !important;
+    text-shadow: 0 0 10px rgba(0, 255, 0, 0.8) !important;
+}
+
+/* ---- Focus states ---- */
+[data-theme="90s"] :focus-visible {
+    outline: 3px solid #ffff00 !important;
+    box-shadow: none !important;
+}
+
+/* ---- Rainbow HR dividers between sections ---- */
+[data-theme="90s"] .mobile-menu-divider {
+    height: 4px;
+    background: linear-gradient(to right, red, orange, yellow, green, cyan, blue, violet);
+    border: none;
+    margin: 8px 0;
+}
+
+/* ---- Scroll reveal: disable fancy animations ---- */
+[data-theme="90s"] .scroll-reveal,
+[data-theme="90s"] .scroll-reveal-stagger {
+    opacity: 1 !important;
+    transform: none !important;
+}

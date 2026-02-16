@@ -11,11 +11,10 @@
  * - Touch swipe support
  */
 
-// Image and video click handlers - video autoplays and loops, only pauses on tap
-const coverArt = document.getElementById('coverArt');
+// Video click handlers - video autoplays and loops, only pauses on tap
 const coverVideo = document.getElementById('coverVideo');
 const hoverText = document.getElementById('hoverText');
-const coverArtContainer = coverArt ? coverArt.closest('.cover-art') : null;
+const coverArtContainer = coverVideo ? coverVideo.closest('.cover-art') : null;
 
 // Ensure video loops continuously and starts playing
 if (coverVideo) {
@@ -83,11 +82,6 @@ if (coverVideo) {
         }
     }
 
-    if (coverArt) {
-        coverArt.addEventListener('click', handleVideoToggle);
-        coverArt.addEventListener('touchend', handleVideoToggle);
-    }
-
     coverVideo.addEventListener('click', handleVideoToggle);
     coverVideo.addEventListener('touchend', handleVideoToggle);
 
@@ -120,7 +114,7 @@ if (coverVideo) {
         allImgs.forEach(img => {
             const id = img.getAttribute('id') || '';
             const cls = img.getAttribute('class') || '';
-            if (id === 'coverArt' || cls.includes('logo-placeholder') || cls.includes('hamburger')) return;
+            if (cls.includes('logo-placeholder') || cls.includes('hamburger')) return;
             if (!img.hasAttribute('loading')) img.setAttribute('loading', 'lazy');
             if (!img.hasAttribute('decoding')) img.setAttribute('decoding', 'async');
             if (!img.hasAttribute('fetchpriority')) img.setAttribute('fetchpriority', 'low');
@@ -137,7 +131,7 @@ if (coverVideo) {
 
     function updateAriaCurrent() {
         const links = document.querySelectorAll('#site-header a[href^="#"]');
-        const hash = location.hash || '#mobile-intro';
+        const hash = location.hash || '#about';
         links.forEach(a => { a.removeAttribute('aria-current'); if (a.getAttribute('href') === hash) a.setAttribute('aria-current', 'page'); });
     }
     window.addEventListener('hashchange', updateAriaCurrent);
@@ -493,15 +487,21 @@ if (coverVideo) {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 entry.target.classList.add('visible');
-                // Optionally unobserve after revealing
                 observer.unobserve(entry.target);
             }
         });
     }, observerOptions);
 
     // Observe all scroll-reveal elements
-    document.querySelectorAll('.scroll-reveal, .scroll-reveal-stagger').forEach(el => {
-        observer.observe(el);
+    const els = document.querySelectorAll('.scroll-reveal, .scroll-reveal-stagger');
+    els.forEach(el => {
+        // If element is already in viewport on load, reveal immediately
+        const rect = el.getBoundingClientRect();
+        if (rect.top < window.innerHeight && rect.bottom > 0) {
+            el.classList.add('visible');
+        } else {
+            observer.observe(el);
+        }
     });
 })();
 
@@ -585,3 +585,122 @@ if (coverVideo) {
         });
     });
 })();
+
+// ========================================
+// Ambient Dimming System + Screensaver Clock
+// ========================================
+(function() {
+    // Respect reduced motion preference
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+        return;
+    }
+
+    const IDLE_TIMEOUT = 180000; // 3 minutes
+    let idleTimer = null;
+    let isDimmed = false;
+
+    // --- Screensaver clock setup ---
+    var clockEl = document.createElement('div');
+    clockEl.id = 'screensaver-clock';
+    clockEl.innerHTML = '<span class="clock-text"></span><span class="clock-tagline">Time to talk with Pete</span>';
+    document.body.parentNode.appendChild(clockEl); // append to <html> so it's outside body filter
+
+    var clockText = clockEl.querySelector('.clock-text');
+    var clockTagline = clockEl.querySelector('.clock-tagline');
+    var animFrame = null;
+
+    // Bounce state
+    var posX = Math.random() * 60 + 10; // start 10-70% from left
+    var posY = Math.random() * 60 + 10; // start 10-70% from top
+    var velX = 0.3 + Math.random() * 0.3; // px per frame speed
+    var velY = 0.2 + Math.random() * 0.3;
+    if (Math.random() > 0.5) velX *= -1;
+    if (Math.random() > 0.5) velY *= -1;
+
+    function updateClockText() {
+        var now = new Date();
+        var h = now.getHours();
+        var m = now.getMinutes();
+        var s = now.getSeconds();
+        var ampm = h >= 12 ? 'PM' : 'AM';
+        h = h % 12;
+        if (h === 0) h = 12;
+        var timeStr = h + ':' + (m < 10 ? '0' : '') + m + ':' + (s < 10 ? '0' : '') + s + ' ' + ampm;
+        clockText.textContent = timeStr;
+    }
+
+    function animateClock() {
+        updateClockText();
+
+        // Get bounds - include tagline height
+        var cw = clockText.offsetWidth;
+        var ch = clockText.offsetHeight + clockTagline.offsetHeight + 4;
+        var vw = window.innerWidth;
+        var vh = window.innerHeight;
+
+        // Move
+        posX += velX;
+        posY += velY;
+
+        // Bounce off edges
+        if (posX + cw >= vw) { posX = vw - cw; velX *= -1; }
+        if (posX <= 0) { posX = 0; velX *= -1; }
+        if (posY + ch >= vh) { posY = vh - ch; velY *= -1; }
+        if (posY <= 0) { posY = 0; velY *= -1; }
+
+        clockText.style.left = posX + 'px';
+        clockText.style.top = posY + 'px';
+        var taglineOffset = (clockText.offsetWidth - clockTagline.offsetWidth) / 2;
+        clockTagline.style.left = (posX + taglineOffset) + 'px';
+        clockTagline.style.top = (posY + clockText.offsetHeight + 4) + 'px';
+
+        animFrame = requestAnimationFrame(animateClock);
+    }
+
+    function startScreensaver() {
+        // Randomize starting position
+        posX = Math.random() * (window.innerWidth * 0.6) + (window.innerWidth * 0.1);
+        posY = Math.random() * (window.innerHeight * 0.6) + (window.innerHeight * 0.1);
+        clockEl.classList.add('active');
+        updateClockText();
+        animFrame = requestAnimationFrame(animateClock);
+    }
+
+    function stopScreensaver() {
+        clockEl.classList.remove('active');
+        if (animFrame) {
+            cancelAnimationFrame(animFrame);
+            animFrame = null;
+        }
+    }
+
+    // --- Dimming ---
+    function dimPage() {
+        if (!isDimmed) {
+            document.body.classList.add('dimmed');
+            isDimmed = true;
+            startScreensaver();
+        }
+    }
+
+    function wakePage() {
+        if (isDimmed) {
+            document.body.classList.remove('dimmed');
+            isDimmed = false;
+            stopScreensaver();
+        }
+        // Reset the timer
+        clearTimeout(idleTimer);
+        idleTimer = setTimeout(dimPage, IDLE_TIMEOUT);
+    }
+
+    // Wake on any interaction
+    const wakeEvents = ['mousemove', 'mousedown', 'keydown', 'scroll', 'touchstart', 'touchmove'];
+    wakeEvents.forEach(event => {
+        document.addEventListener(event, wakePage, { passive: true });
+    });
+
+    // Start the initial timer
+    idleTimer = setTimeout(dimPage, IDLE_TIMEOUT);
+})();
+

@@ -12,110 +12,147 @@
     <meta property="og:description" content="Unified navigation across 47 sites with zero-downtime migration.">
     <meta property="og:type" content="article">
     <meta property="og:url" content="https://peterbartsch.com/case-studies/deere-nav">
+    <meta property="og:image" content="https://peterbartsch.com/og-image.png">
 
     <link rel="preload" href="../rombyte.ttf" as="font" type="font/ttf" crossorigin>
     <link rel="preload" href="../ari.ttf" as="font" type="font/ttf" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../styles.css">
-    <style>
-        .case-study-page { max-width: 900px; margin: 0 auto; padding: 40px 24px 80px; }
-        .case-study-header { margin-bottom: 40px; }
-        .case-study-breadcrumb { font-family: var(--font-body); font-size: 13px; color: var(--color-text-muted); margin-bottom: 20px; }
-        .case-study-breadcrumb a { color: var(--color-primary); text-decoration: none; }
-        .case-study-breadcrumb a:hover { text-decoration: underline; }
-        .case-study-title { font-family: var(--font-display); font-size: 36px; color: var(--color-white); margin: 0 0 12px 0; text-shadow: 0 0 20px rgba(134, 216, 221, 0.4); }
-        .case-study-subtitle { font-family: var(--font-body); font-size: 18px; color: var(--color-text-muted); margin: 0 0 24px 0; }
-        .case-study-meta { display: flex; gap: 24px; flex-wrap: wrap; font-family: var(--font-body); font-size: 14px; color: var(--color-text-muted); padding: 16px 0; border-top: 1px solid rgba(134, 216, 221, 0.2); border-bottom: 1px solid rgba(134, 216, 221, 0.2); }
-        .case-study-meta-item { display: flex; flex-direction: column; gap: 4px; }
-        .case-study-meta-label { font-size: 11px; text-transform: uppercase; letter-spacing: 1px; color: var(--color-primary); }
-        .case-study-hero { margin: 40px 0; border: 2px solid rgba(134, 216, 221, 0.3); overflow: hidden; }
-        .case-study-hero img { width: 100%; height: auto; display: block; }
-        .case-study-section { margin: 48px 0; }
-        .case-study-section h2 { font-family: var(--font-display); font-size: 20px; color: var(--color-primary); margin: 0 0 20px 0; text-transform: uppercase; letter-spacing: 1px; }
-        .case-study-section p { font-family: var(--font-readable); font-size: 16px; line-height: 1.8; color: var(--color-text-primary); margin: 0 0 16px 0; }
-        .case-study-section ul { font-family: var(--font-readable); font-size: 15px; line-height: 1.7; color: var(--color-text-primary); padding-left: 24px; margin: 0 0 16px 0; }
-        .case-study-section li { margin-bottom: 12px; }
-        .case-study-metrics { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 20px; margin: 32px 0; }
-        .case-study-metric { background: rgba(0, 0, 0, 0.4); border: 1px solid rgba(134, 216, 221, 0.2); padding: 24px; text-align: center; }
-        .case-study-metric-value { font-family: var(--font-display); font-size: 32px; color: var(--color-primary); margin: 0; }
-        .case-study-metric-label { font-family: var(--font-body); font-size: 12px; color: var(--color-text-muted); text-transform: uppercase; letter-spacing: 1px; margin-top: 8px; }
-        .case-study-gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px; margin: 32px 0; }
-        .case-study-gallery img { width: 100%; height: auto; border: 1px solid rgba(134, 216, 221, 0.2); }
-        .case-study-cta { display: flex; gap: 16px; flex-wrap: wrap; margin-top: 40px; padding-top: 40px; border-top: 1px solid rgba(134, 216, 221, 0.2); }
-        .case-study-cta a { display: inline-flex; align-items: center; gap: 8px; font-family: var(--font-display); font-size: 12px; color: var(--color-text-primary); text-decoration: none; text-transform: uppercase; letter-spacing: 1px; padding: 12px 24px; background-color: var(--color-primary-darker); border: 3px solid var(--color-primary); transition: all 0.3s ease; }
-        .case-study-cta a:hover { background-color: var(--color-primary); border-color: var(--color-white); transform: translateY(-2px); }
-        .case-study-nav { display: flex; justify-content: space-between; margin-top: 60px; padding-top: 40px; border-top: 1px solid rgba(134, 216, 221, 0.2); }
-        .case-study-nav a { font-family: var(--font-body); font-size: 14px; color: var(--color-primary); text-decoration: none; }
-        @media (max-width: 600px) { .case-study-title { font-size: 28px; } .case-study-metric-value { font-size: 24px; } }
-    </style>
+    <link rel="stylesheet" href="case-study.css">
+    <?php $themeBasePath = '../'; include('../themes/theme-head.php'); ?>
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="John Deere: Platform Unification | Peter Bartsch">
+    <meta name="twitter:description" content="Unified navigation across 47 sites with zero-downtime migration.">
+    <meta name="twitter:image" content="https://peterbartsch.com/og-image.png">
+
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-QB3EL923YF"></script>
     <script>window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag('js', new Date()); gtag('config', 'G-QB3EL923YF');</script>
+
+    <!-- Microsoft Clarity -->
+    <script type="text/javascript">(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window,document,"clarity","script","uhlenklp4t");</script>
 </head>
 <body>
+    <?php include('../themes/theme-banner.php'); ?>
     <header id="site-header" role="banner">
         <div class="header-inner">
             <a href="../" class="header-logo" aria-label="Home"><img src="../pblogo.svg" alt="PB logo" height="40" /></a>
-            <nav style="display: flex; gap: 16px;"><a href="../" style="color: var(--color-text-primary); text-decoration: none; font-family: var(--font-body); font-size: 14px;">← Back to Portfolio</a></nav>
+            <nav aria-label="Breadcrumb" style="display: flex; gap: 16px;"><a href="../" style="color: var(--color-text-primary); text-decoration: none; font-family: var(--font-body); font-size: 14px;">← Back to Portfolio</a></nav>
         </div>
     </header>
 
     <main class="case-study-page">
         <article>
             <header class="case-study-header">
-                <nav class="case-study-breadcrumb"><a href="../">Portfolio</a> / <a href="../#right">Case Studies</a> / Deere Navigation</nav>
+                <nav class="case-study-breadcrumb"><a href="../">Portfolio</a> / <a href="../#right">Case Studies</a> / Platform Unification</nav>
                 <h1 class="case-study-title">DEERE: PLATFORM UNIFICATION</h1>
-                <p class="case-study-subtitle">Unified navigation across 47 sites with zero-downtime migration</p>
+                <p class="case-study-subtitle">Unifying navigation across 47 acquired properties with zero-downtime migration—enabling a single customer view</p>
                 <div class="case-study-meta">
-                    <div class="case-study-meta-item"><span class="case-study-meta-label">Role</span><span>Senior Lead UX</span></div>
+                    <div class="case-study-meta-item"><span class="case-study-meta-label">Role</span><span>Senior Lead UX — Enterprise Platforms</span></div>
+                    <div class="case-study-meta-item"><span class="case-study-meta-label">Scope</span><span>Navigation Systems · Design System Governance · Cross-Platform Patterns</span></div>
                     <div class="case-study-meta-item"><span class="case-study-meta-label">Timeline</span><span>2021 – 2023</span></div>
-                    <div class="case-study-meta-item"><span class="case-study-meta-label">Scope</span><span>8 Product Lines, 47 Sites</span></div>
                 </div>
             </header>
+
+            <div class="case-study-metrics">
+                <div class="case-study-metric"><p class="case-study-metric-value">47</p><p class="case-study-metric-label">Sites Unified</p></div>
+                <div class="case-study-metric"><p class="case-study-metric-value">0</p><p class="case-study-metric-label">Downtime</p></div>
+                <div class="case-study-metric"><p class="case-study-metric-value">45%</p><p class="case-study-metric-label">Faster Handoffs</p></div>
+                <div class="case-study-metric"><p class="case-study-metric-value">40+</p><p class="case-study-metric-label">Teams Aligned</p></div>
+            </div>
 
             <div class="case-study-hero"><img src="../img/deere-03.png" alt="Deere unified navigation"></div>
 
             <section class="case-study-section">
-                <h2>The Challenge</h2>
-                <p>Deere's digital ecosystem had grown through 20+ years of acquisitions, resulting in 47 different sites with inconsistent navigation patterns. Customers couldn't easily move between products—a farmer using precision ag software had no clear path to parts ordering or financing.</p>
-                <p>The challenge: unify navigation across all properties while migrating live systems with zero downtime.</p>
+                <h2>The Strategic Problem</h2>
+                <p>Deere's digital ecosystem had grown organically over 20+ years through acquisitions, resulting in <strong>47 disparate customer experiences with no unified navigation</strong>. A farmer using precision ag software had no clear path to parts ordering or financing—hurting adoption and reinforcing siloed perceptions of value.</p>
+                <p><strong>The challenge wasn't just visual consistency. It was creating a unified experience across independent teams, legacy systems, and multiple brands—without breaking anything.</strong></p>
             </section>
 
-            <div class="case-study-metrics">
-                <div class="case-study-metric"><p class="case-study-metric-value">47</p><p class="case-study-metric-label">Sites Unified</p></div>
-                <div class="case-study-metric"><p class="case-study-metric-value">8</p><p class="case-study-metric-label">Product Lines</p></div>
-                <div class="case-study-metric"><p class="case-study-metric-value">0</p><p class="case-study-metric-label">Downtime</p></div>
-                <div class="case-study-metric"><p class="case-study-metric-value">45%</p><p class="case-study-metric-label">Faster Handoffs</p></div>
-            </div>
+            <section class="case-study-section case-study-constraints">
+                <h2>Why This Was Hard</h2>
+                <p>This wasn't a design refresh—it was organizational coordination at enterprise scale:</p>
+                <ul>
+                    <li><strong>Governance complexity:</strong> 40+ product teams with independent backlogs, priorities, and release cycles</li>
+                    <li><strong>Brand diversity:</strong> 6 acquired companies with distinct brand identities and customer expectations</li>
+                    <li><strong>Technical fragmentation:</strong> Legacy systems with varying tech stacks, APIs, and deployment patterns</li>
+                    <li><strong>Zero tolerance for downtime:</strong> Farmers depend on these tools during critical planting and harvest windows</li>
+                    <li><strong>Cross-platform scope:</strong> Web, mobile, and in-cab displays all needed consistent patterns</li>
+                </ul>
+                <p style="margin-top: 16px; margin-bottom: 0;"><strong>A top-down mandate would have created resistance. A bottom-up approach would have taken years.</strong></p>
+            </section>
 
             <section class="case-study-section">
-                <h2>Approach</h2>
+                <h2>Strategy</h2>
+                <p>We treated this as a <strong>governance problem first, design problem second</strong>. Our approach:</p>
                 <ul>
-                    <li><strong>Design system governance:</strong> Established shared navigation component library in Figma across 40+ teams globally</li>
-                    <li><strong>Progressive rollout:</strong> Migrated sites in waves, gathering feedback and iterating between each phase</li>
-                    <li><strong>Cross-functional alignment:</strong> Weekly syncs with engineering, product, and brand to ensure consistency</li>
-                    <li><strong>Embedded systems support:</strong> Adapted patterns for in-cab displays and mobile apps, not just web</li>
+                    <li><strong>Shared Ownership:</strong> Established navigation as a cross-team concern with clear roles, not a central team's mandate</li>
+                    <li><strong>Progressive Adoption:</strong> Migrated sites in waves, gathering feedback and iterating between phases—no big-bang rollout</li>
+                    <li><strong>Value-First Positioning:</strong> Framed unification as "unlocking cross-sell and customer satisfaction" not "enforcing consistency"</li>
+                    <li><strong>Platform Flexibility:</strong> Patterns adapted for context—web, mobile, and in-cab displays—while maintaining conceptual coherence</li>
                 </ul>
+            </section>
+
+            <section class="case-study-section">
+                <h2>Execution</h2>
+                <h3 style="font-family: var(--font-display); font-size: 16px; color: var(--color-white); margin: 24px 0 12px 0;">Design System as Contract</h3>
+                <p>Built shared navigation components in Figma with clear specs, usage guidelines, and governance processes. Teams could adopt at their own pace, but the contract was clear.</p>
+
+                <h3 style="font-family: var(--font-display); font-size: 16px; color: var(--color-white); margin: 24px 0 12px 0;">Cross-Functional Alignment</h3>
+                <p>Weekly syncs with engineering, product, and brand stakeholders ensured buy-in and surfaced blockers early. Navigation became a shared language, not a design team deliverable.</p>
+
+                <h3 style="font-family: var(--font-display); font-size: 16px; color: var(--color-white); margin: 24px 0 12px 0;">Zero-Downtime Migration</h3>
+                <p>Coordinated rollouts with engineering to ensure no customer-facing disruption. Each wave was tested, monitored, and validated before proceeding.</p>
             </section>
 
             <section class="case-study-section">
                 <h2>Results</h2>
                 <ul>
-                    <li>Consolidated fragmented experiences into single customer view</li>
-                    <li>Reduced design-to-development handoff time by 45% through standardized components</li>
-                    <li>Zero downtime during migration</li>
-                    <li>Established enterprise design system spanning 6 brands and 40+ product teams globally</li>
+                    <li>Consolidated <strong>47 fragmented experiences</strong> into a single trusted navigation paradigm</li>
+                    <li>Reduced design-to-development handoff time by <strong>45%</strong> through standardized components</li>
+                    <li>Achieved <strong>zero downtime</strong> during migration</li>
+                    <li>Established an <strong>enterprise design system</strong> used by 6 brands and 40+ teams globally</li>
                 </ul>
             </section>
 
-            <div class="case-study-cta">
-                <a href="../Peter-Bartsch-Case-Study_Deere_Consistent-Nav.pdf" target="_blank"><img src="../pdf.png" alt="" width="18" height="18"> Download Full Case Study (PDF)</a>
-            </div>
+            <section class="case-study-section">
+                <h2>What This Unlocked</h2>
+                <p>This work created:</p>
+                <ul>
+                    <li>A <strong>reusable governance model</strong> for future cross-team initiatives</li>
+                    <li><strong>Customer confidence</strong> in Deere as a unified digital platform, not a collection of tools</li>
+                    <li>A <strong>foundation for the Forced Adoption work</strong>—unified navigation made cross-product onboarding possible</li>
+                </ul>
+                <p><strong>The real outcome was proving that enterprise-scale design unification is possible without top-down mandates—if you treat it as a coordination problem.</strong></p>
+            </section>
 
-            <nav class="case-study-nav">
-                <a href="deere-common-ux">← Previous: Deere Common UX</a>
-                <a href="fourkites-tracking">Next: FourKites Tracking →</a>
+            <section class="case-study-section">
+                <h2>Gallery</h2>
+                <div class="case-study-gallery">
+                    <img src="../img/deere-03.png" alt="Deere unified navigation system" loading="lazy">
+                    <img src="../img/deere-04.png" alt="Deere design system components" loading="lazy">
+                    <img src="../img/deere-05.png" alt="Deere cross-platform patterns" loading="lazy">
+                </div>
+            </section>
+
+            <section class="case-study-contact">
+                <h3>LET'S TALK</h3>
+                <p>Interested in discussing enterprise design challenges or exploring opportunities?</p>
+                <div class="case-study-contact-links">
+                    <a href="mailto:peter@peterbartsch.com">Email Me</a>
+                    <a href="https://www.linkedin.com/in/petermbartsch/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                    <a href="../" class="secondary">← Back to Portfolio</a>
+                </div>
+            </section>
+
+            <nav class="case-study-nav" aria-label="Case study navigation">
+                <a href="deere-common-ux.php">← Previous: Forced Adoption</a>
+                <a href="fourkites-tracking.php">Next: Data Trust →</a>
             </nav>
         </article>
     </main>
+
+    <script>if (typeof gtag === 'function') { gtag('event', 'case_study_view', { 'event_category': 'engagement', 'event_label': 'deere-nav' }); }</script>
+    <script src="../themes/theme-switcher.js"></script>
 </body>
 </html>

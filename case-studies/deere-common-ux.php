@@ -21,98 +21,114 @@
     <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="../styles.css">
-    <style>
-        .case-study-page { max-width: 900px; margin: 0 auto; padding: 40px 24px 80px; }
-        .case-study-header { margin-bottom: 40px; }
-        .case-study-breadcrumb { font-family: var(--font-body); font-size: 13px; color: var(--color-text-muted); margin-bottom: 20px; }
-        .case-study-breadcrumb a { color: var(--color-primary); text-decoration: none; }
-        .case-study-breadcrumb a:hover { text-decoration: underline; }
-        .case-study-title { font-family: var(--font-display); font-size: 36px; color: var(--color-white); margin: 0 0 12px 0; text-shadow: 0 0 20px rgba(134, 216, 221, 0.4); }
-        .case-study-subtitle { font-family: var(--font-body); font-size: 18px; color: var(--color-text-muted); margin: 0 0 24px 0; }
-        .case-study-meta { display: flex; gap: 24px; flex-wrap: wrap; font-family: var(--font-body); font-size: 14px; color: var(--color-text-muted); padding: 16px 0; border-top: 1px solid rgba(134, 216, 221, 0.2); border-bottom: 1px solid rgba(134, 216, 221, 0.2); }
-        .case-study-meta-item { display: flex; flex-direction: column; gap: 4px; }
-        .case-study-meta-label { font-size: 11px; text-transform: uppercase; letter-spacing: 1px; color: var(--color-primary); }
-        .case-study-hero { margin: 40px 0; border: 2px solid rgba(134, 216, 221, 0.3); overflow: hidden; }
-        .case-study-hero img { width: 100%; height: auto; display: block; }
-        .case-study-section { margin: 48px 0; }
-        .case-study-section h2 { font-family: var(--font-display); font-size: 20px; color: var(--color-primary); margin: 0 0 20px 0; text-transform: uppercase; letter-spacing: 1px; }
-        .case-study-section p { font-family: var(--font-readable); font-size: 16px; line-height: 1.8; color: var(--color-text-primary); margin: 0 0 16px 0; }
-        .case-study-section ul { font-family: var(--font-readable); font-size: 15px; line-height: 1.7; color: var(--color-text-primary); padding-left: 24px; margin: 0 0 16px 0; }
-        .case-study-section li { margin-bottom: 12px; }
-        .case-study-metrics { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 20px; margin: 32px 0; }
-        .case-study-metric { background: rgba(0, 0, 0, 0.4); border: 1px solid rgba(134, 216, 221, 0.2); padding: 24px; text-align: center; }
-        .case-study-metric-value { font-family: var(--font-display); font-size: 32px; color: var(--color-primary); margin: 0; }
-        .case-study-metric-label { font-family: var(--font-body); font-size: 12px; color: var(--color-text-muted); text-transform: uppercase; letter-spacing: 1px; margin-top: 8px; }
-        .case-study-gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px; margin: 32px 0; }
-        .case-study-gallery img { width: 100%; height: auto; border: 1px solid rgba(134, 216, 221, 0.2); cursor: pointer; transition: transform 0.3s ease, border-color 0.3s ease; }
-        .case-study-gallery img:hover { transform: scale(1.02); border-color: var(--color-primary); }
-        .case-study-cta { display: flex; gap: 16px; flex-wrap: wrap; margin-top: 40px; padding-top: 40px; border-top: 1px solid rgba(134, 216, 221, 0.2); }
-        .case-study-cta a { display: inline-flex; align-items: center; gap: 8px; font-family: var(--font-display); font-size: 12px; color: var(--color-text-primary); text-decoration: none; text-transform: uppercase; letter-spacing: 1px; padding: 12px 24px; background-color: var(--color-primary-darker); border: 3px solid var(--color-primary); transition: all 0.3s ease; }
-        .case-study-cta a:hover { background-color: var(--color-primary); border-color: var(--color-white); transform: translateY(-2px); }
-        .case-study-nav { display: flex; justify-content: space-between; margin-top: 60px; padding-top: 40px; border-top: 1px solid rgba(134, 216, 221, 0.2); }
-        .case-study-nav a { font-family: var(--font-body); font-size: 14px; color: var(--color-primary); text-decoration: none; }
-        .case-study-nav a:hover { text-decoration: underline; }
-        @media (max-width: 600px) { .case-study-title { font-size: 28px; } .case-study-meta { gap: 16px; } .case-study-metric-value { font-size: 24px; } }
-    </style>
+    <link rel="stylesheet" href="case-study.css">
+    <?php $themeBasePath = '../'; include('../themes/theme-head.php'); ?>
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="John Deere: Forced Adoption at Scale | Peter Bartsch">
+    <meta name="twitter:description" content="Driving platform adoption without destroying trust—34% to 87% engagement.">
+    <meta name="twitter:image" content="https://peterbartsch.com/img/deere-01.png">
 
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-QB3EL923YF"></script>
     <script>window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag('js', new Date()); gtag('config', 'G-QB3EL923YF');</script>
+
+    <!-- Microsoft Clarity -->
+    <script type="text/javascript">(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window,document,"clarity","script","uhlenklp4t");</script>
 </head>
 <body>
+    <?php include('../themes/theme-banner.php'); ?>
     <header id="site-header" role="banner">
         <div class="header-inner">
             <a href="../" class="header-logo" aria-label="Home"><img src="../pblogo.svg" alt="PB logo" height="40" /></a>
-            <nav style="display: flex; gap: 16px;"><a href="../" style="color: var(--color-text-primary); text-decoration: none; font-family: var(--font-body); font-size: 14px;">← Back to Portfolio</a></nav>
+            <nav aria-label="Breadcrumb" style="display: flex; gap: 16px;"><a href="../" style="color: var(--color-text-primary); text-decoration: none; font-family: var(--font-body); font-size: 14px;">← Back to Portfolio</a></nav>
         </div>
     </header>
 
     <main class="case-study-page">
         <article>
             <header class="case-study-header">
-                <nav class="case-study-breadcrumb"><a href="../">Portfolio</a> / <a href="../#right">Case Studies</a> / Deere Common UX</nav>
+                <nav class="case-study-breadcrumb"><a href="../">Portfolio</a> / <a href="../#right">Case Studies</a> / Forced Adoption</nav>
                 <h1 class="case-study-title">DEERE: FORCED ADOPTION AT SCALE</h1>
-                <p class="case-study-subtitle">Driving platform-wide data adoption across 500K+ users without destroying trust—enabling $3.8B subscription revenue</p>
+                <p class="case-study-subtitle">Driving platform-wide data adoption across 500K+ users without destroying trust—enabling $3.8B in connected services revenue</p>
                 <div class="case-study-meta">
-                    <div class="case-study-meta-item"><span class="case-study-meta-label">Role</span><span>Senior Lead UX</span></div>
+                    <div class="case-study-meta-item"><span class="case-study-meta-label">Role</span><span>Senior Lead UX — Enterprise Platforms</span></div>
+                    <div class="case-study-meta-item"><span class="case-study-meta-label">Scope</span><span>Account Systems · Identity · Dealer Workflows · Multi-channel Onboarding</span></div>
                     <div class="case-study-meta-item"><span class="case-study-meta-label">Timeline</span><span>2020 – 2024</span></div>
-                    <div class="case-study-meta-item"><span class="case-study-meta-label">Company</span><span>John Deere ($38B Enterprise)</span></div>
                 </div>
             </header>
-
-            <div class="case-study-hero"><img src="../img/deere-01.png" alt="John Deere Common UX platform"></div>
-
-            <section class="case-study-section">
-                <h2>The Challenge</h2>
-                <p>John Deere needed to force platform-wide data adoption across 500K+ users—farmers, dealers, and enterprise customers—to enable a $3.8B subscription revenue stream from Automation and AI services. The catch: do it without destroying trust in a 185-year-old brand.</p>
-                <p>Users had fragmented experiences across 20+ years of acquired products. Profile completion sat at 34%. Support tickets were high. The existing approach of optional data sharing wasn't working.</p>
-            </section>
 
             <div class="case-study-metrics">
                 <div class="case-study-metric"><p class="case-study-metric-value">34%→87%</p><p class="case-study-metric-label">Profile Completion</p></div>
                 <div class="case-study-metric"><p class="case-study-metric-value">$3.8B</p><p class="case-study-metric-label">Revenue Enabled</p></div>
-                <div class="case-study-metric"><p class="case-study-metric-value">-16%</p><p class="case-study-metric-label">Support Tickets</p></div>
-                <div class="case-study-metric"><p class="case-study-metric-value">12</p><p class="case-study-metric-label">Languages</p></div>
+                <div class="case-study-metric"><p class="case-study-metric-value">-16%</p><p class="case-study-metric-label">Support Burden</p></div>
+                <div class="case-study-metric"><p class="case-study-metric-value">500K+</p><p class="case-study-metric-label">Users · 12 Languages</p></div>
             </div>
 
+            <div class="case-study-hero"><img src="../img/deere-01.png" alt="John Deere Common UX platform"></div>
+
             <section class="case-study-section">
-                <h2>Approach</h2>
+                <h2>The Strategic Problem</h2>
+                <p>John Deere's future depended on connected services, automation, and AI—but those capabilities required high-quality customer data. The existing model relied on optional data sharing across a fragmented ecosystem of legacy systems, which resulted in low adoption, incomplete profiles, and limited downstream value.</p>
+                <p><strong>The challenge wasn't convincing users to click through forms. It was forcing adoption without eroding trust in a 185-year-old brand built on reliability.</strong></p>
+            </section>
+
+            <section class="case-study-section case-study-constraints">
+                <h2>Why This Was Hard</h2>
+                <p>This problem sat at the intersection of business risk, user trust, and organizational complexity:</p>
                 <ul>
-                    <li><strong>Multi-channel forced adoption strategy:</strong> Designed progressive disclosure that made data sharing feel valuable rather than extractive</li>
-                    <li><strong>Trust through transparency:</strong> Clear value exchange messaging—"Share your equipment data to unlock predictive maintenance"</li>
-                    <li><strong>Dealer enablement:</strong> Built tools so dealers could help customers complete profiles, reducing friction</li>
-                    <li><strong>Graceful degradation:</strong> Non-compliant users could still access core features, but premium features required profile completion</li>
+                    <li><strong>User diversity:</strong> Customers ranged from highly technical operators to users without email access</li>
+                    <li><strong>Data sensitivity:</strong> Sharing triggered deep concerns around surveillance, ownership, and value exchange</li>
+                    <li><strong>System fragmentation:</strong> Decades of acquisitions created inconsistent data models and experiences</li>
+                    <li><strong>Relationship complexity:</strong> Dealers—not Deere—owned many customer relationships</li>
+                    <li><strong>Global scale:</strong> 12 languages across diverse regulatory environments</li>
                 </ul>
+                <p style="margin-top: 16px; margin-bottom: 0;"><strong>A purely coercive approach would have increased churn and damaged long-term brand trust.</strong></p>
+            </section>
+
+            <section class="case-study-section">
+                <h2>Strategy</h2>
+                <p>Instead of "forcing" adoption directly, we reframed the problem as <strong>progressive value exchange</strong>. Our strategy was built on four principles:</p>
+                <ul>
+                    <li><strong>Value Before Friction:</strong> Users should experience tangible benefits before being asked to share more data</li>
+                    <li><strong>Transparency Builds Trust:</strong> Make it clear what data is requested, why, and how it's used—no dark patterns</li>
+                    <li><strong>Multiple Paths, One Outcome:</strong> Support adoption through digital flows, dealer-assisted onboarding, and in-field support</li>
+                    <li><strong>Graceful Degradation:</strong> Users who didn't complete profiles immediately still retained access—urgency was created through value, not lockout</li>
+                </ul>
+            </section>
+
+            <section class="case-study-section">
+                <h2>Execution</h2>
+                <h3 style="font-family: var(--font-display); font-size: 16px; color: var(--color-white); margin: 24px 0 12px 0;">Progressive Profile Completion</h3>
+                <p>Instead of a single blocking form, we designed contextual prompts tied to moments of value: predictive maintenance, equipment insights, automation features. Each step answered one question: <strong>"What do I get if I do this right now?"</strong></p>
+
+                <h3 style="font-family: var(--font-display); font-size: 16px; color: var(--color-white); margin: 24px 0 12px 0;">Dealer-Enabled Adoption</h3>
+                <p>Dealers became UX multipliers, not just support. Clear dealer workflows for assisting customers, shared visibility into completion state, and consistent language across touchpoints reduced friction while preserving trust in local relationships.</p>
+
+                <h3 style="font-family: var(--font-display); font-size: 16px; color: var(--color-white); margin: 24px 0 12px 0;">Trust-First Messaging</h3>
+                <p>We replaced abstract legal language with plain-language explanations, explicit benefit statements, and clear reassurance around data use and control. This dramatically reduced resistance during onboarding.</p>
             </section>
 
             <section class="case-study-section">
                 <h2>Results</h2>
                 <ul>
-                    <li>Increased authenticated engagement from 34% to 87%</li>
-                    <li>Reduced support tickets by 16%</li>
-                    <li>Enabled $3.8B in subscription revenue from Automation and AI services</li>
-                    <li>Deployed across 12 languages and 8 product lines</li>
-                    <li>Improved dealer support efficiency by 28%</li>
+                    <li>Profile completion increased from <strong>34% to 87%</strong></li>
+                    <li>Enabled <strong>$3.8B in connected services, automation, and AI-driven revenue</strong></li>
+                    <li>Reduced support tickets related to account setup by <strong>16%</strong></li>
+                    <li>Improved dealer efficiency by <strong>28%</strong></li>
+                    <li>Established a reusable adoption framework used across multiple Deere platforms</li>
                 </ul>
+            </section>
+
+            <section class="case-study-section">
+                <h2>What This Unlocked</h2>
+                <p>This work didn't just solve onboarding. It created:</p>
+                <ul>
+                    <li>A <strong>scalable foundation</strong> for AI-driven services</li>
+                    <li>A <strong>repeatable model</strong> for introducing "forced" change without backlash</li>
+                    <li>A <strong>trust-based approach</strong> now reused across Deere's digital ecosystem</li>
+                </ul>
+                <p><strong>The real outcome was organizational confidence in using UX to drive adoption—not just usability.</strong></p>
             </section>
 
             <section class="case-study-section">
@@ -125,17 +141,24 @@
                 </div>
             </section>
 
-            <div class="case-study-cta">
-                <a href="../Peter-Bartsch-Case-Study_Deere_Common-UX.pdf" target="_blank"><img src="../pdf.png" alt="" width="18" height="18"> Download Full Case Study (PDF)</a>
-            </div>
+            <section class="case-study-contact">
+                <h3>LET'S TALK</h3>
+                <p>Interested in discussing enterprise design challenges or exploring opportunities?</p>
+                <div class="case-study-contact-links">
+                    <a href="mailto:peter@peterbartsch.com">Email Me</a>
+                    <a href="https://www.linkedin.com/in/petermbartsch/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                    <a href="../" class="secondary">← Back to Portfolio</a>
+                </div>
+            </section>
 
-            <nav class="case-study-nav">
-                <a href="thios">← Previous: Thios</a>
-                <a href="deere-nav">Next: Deere Navigation →</a>
+            <nav class="case-study-nav" aria-label="Case study navigation">
+                <a href="thios.php">← Previous: Thios</a>
+                <a href="deere-nav.php">Next: Platform Unification →</a>
             </nav>
         </article>
     </main>
 
     <script>if (typeof gtag === 'function') { gtag('event', 'case_study_view', { 'event_category': 'engagement', 'event_label': 'deere-common-ux' }); }</script>
+    <script src="../themes/theme-switcher.js"></script>
 </body>
 </html>

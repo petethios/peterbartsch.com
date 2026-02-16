@@ -184,7 +184,7 @@
     <script src="script.js"></script>
     <footer id="site-footer-final" style="text-align:center; padding:20px 12px;">
         <p style="margin:0;">
-            © 2025 Peter Bartsch</p>
+            © 2026 Peter Bartsch</p>
         <p>&nbsp;</p>
         <p>&nbsp;</p>
         <p>&nbsp;</p>

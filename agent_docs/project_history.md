@@ -65,6 +65,27 @@ Site is optimized for modern browsers. Some features may not work in older brows
 
 ## Recent Major Changes
 
+### Theme Switcher — Web Design Era Time Machine (2025)
+
+Added a complete theme switching system with 5 design eras:
+- **1980s — Retro Terminal** (default): CRT frame, phosphor glow, grid overlay, monospace fonts
+- **1990s — GeoCities**: Comic Neue font, hot pink/lime/cyan colors, twinkling stars canvas, Win95 beveled buttons, hit counter
+- **2000s — Web 2.0**: Georgia/Verdana, glossy gel buttons, light gray background, rounded corners, drop shadows
+- **2010s — Corporate Memphis**: Inter font, pastel colors (coral/lavender/mint), pill buttons, white background, lots of whitespace
+- **2026 — Modern/AI**: JetBrains Mono headings, system font body, black-on-white, electric blue accent, CLI-inspired aesthetic
+
+Architecture: Separate CSS files per theme, loaded dynamically via JS. `data-theme` attribute on `<html>`. localStorage persistence with FOUC prevention. See `agent_docs/styling_conventions.md` for full technical details.
+
+### Portfolio Improvements (2025)
+
+- Added dedicated HTML case study pages (replacing PDF-only approach)
+- Added company logos section, metrics bar, scroll animations
+- Added carousel thumbnails for case studies
+- Improved SEO with sitemap and meta tags
+- Refactored case-study CSS with custom properties for theme compatibility
+
+### Earlier Changes
+
 See conversation history for detailed context on:
 - Dashboard and index refinements
 - Favicon fixes

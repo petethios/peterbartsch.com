@@ -1,0 +1,736 @@
+/* ========================================
+   2026 Modern / AI Theme
+   Ultra-clean, printed resume feel,
+   JetBrains Mono headings, system font body,
+   Claude Code CLI aesthetic,
+   hairline borders, black on white
+   ======================================== */
+
+/* ---- Custom Properties Override ---- */
+[data-theme="2026"] {
+    --color-primary: #0066FF;
+    --color-primary-dark: #0052cc;
+    --color-primary-darker: #003d99;
+    --color-accent-green: #10b981;
+    --color-accent-green-bg: rgba(16, 185, 129, 0.08);
+    --color-accent-green-hover: #059669;
+    --color-black: #ffffff;
+    --color-white: #111111;
+    --color-gray-dark: #e5e5e5;
+    --color-gray-mid: #f5f5f5;
+    --color-text-primary: #111111;
+    --color-text-muted: #555555;
+    --color-text-subtle: #999999;
+    --font-display: 'JetBrains Mono', 'SF Mono', 'Fira Code', monospace;
+    --font-body: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+    --font-readable: 'JetBrains Mono', 'SF Mono', monospace;
+    --font-system: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    --shadow-text: none;
+    --shadow-box: none;
+    --shadow-box-hover: 0 2px 8px rgba(0, 0, 0, 0.06);
+    --shadow-glow: none;
+    --gradient-primary: none;
+    --gradient-dark: none;
+    --glass-bg: #ffffff;
+    --glass-border: #e5e5e5;
+    --border-radius: 4px;
+    --border-radius-lg: 8px;
+    --border-width: 1px;
+    --section-gap: 80px;
+
+    /* Case study page overrides */
+    --cs-page-bg: #ffffff;
+    --cs-border-color: #e5e5e5;
+    --cs-title-glow: none;
+    --cs-text-color: #111111;
+    --cs-muted-color: #555555;
+    --cs-metric-bg: #f9f9f9;
+    --cs-constraints-bg: rgba(0, 102, 255, 0.03);
+    --cs-contact-bg: #f5f5f5;
+}
+
+/* ---- Background ---- */
+[data-theme="2026"] html {
+    background-color: #fafafa;
+}
+
+[data-theme="2026"] body {
+    background-color: #fafafa !important;
+    background-image: none !important;
+    background-blend-mode: normal !important;
+    color: #111111;
+}
+
+/* ---- Typography ---- */
+[data-theme="2026"] h1,
+[data-theme="2026"] h2,
+[data-theme="2026"] h3,
+[data-theme="2026"] h4 {
+    font-family: 'JetBrains Mono', 'SF Mono', monospace;
+    text-shadow: none;
+    color: #111111;
+    letter-spacing: -0.02em;
+}
+
+[data-theme="2026"] p,
+[data-theme="2026"] td,
+[data-theme="2026"] th {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+    text-shadow: none;
+    color: #333;
+}
+
+[data-theme="2026"] a {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+    text-shadow: none;
+}
+
+[data-theme="2026"] #title {
+    font-family: 'JetBrains Mono', monospace !important;
+    color: #111111 !important;
+    text-shadow: none !important;
+    font-weight: 700;
+    font-size: 32px;
+    letter-spacing: -0.03em;
+}
+
+[data-theme="2026"] #name a {
+    color: #555 !important;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+    letter-spacing: 0.1em;
+}
+
+[data-theme="2026"] .phosphor-text {
+    text-shadow: none !important;
+}
+
+/* ---- Links ---- */
+[data-theme="2026"] a {
+    color: #0066FF;
+    text-decoration: none;
+}
+
+[data-theme="2026"] a:visited {
+    color: #0052cc !important;
+}
+
+[data-theme="2026"] a:hover {
+    color: #003d99 !important;
+    text-decoration: underline;
+}
+
+/* ---- Header ---- */
+[data-theme="2026"] #site-header {
+    background-color: #ffffff !important;
+    background-image: none !important;
+    border-bottom: 1px solid #e5e5e5 !important;
+}
+
+[data-theme="2026"] .header-nav a {
+    color: #555 !important;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+    font-weight: 500;
+    text-decoration: none;
+    letter-spacing: 0.05em;
+}
+
+[data-theme="2026"] .header-nav a:hover {
+    color: #0066FF !important;
+}
+
+[data-theme="2026"] .header-logo img {
+    filter: brightness(0.15) !important;
+}
+
+[data-theme="2026"] .header-logo:hover img {
+    animation: none !important;
+    filter: brightness(0) !important;
+}
+
+[data-theme="2026"] .header-logo::after {
+    display: none !important;
+}
+
+/* ---- Hamburger / Mobile Menu ---- */
+[data-theme="2026"] .hamburger {
+    border-color: #ddd;
+    border-radius: 4px;
+}
+
+[data-theme="2026"] .hamburger span {
+    background: #333;
+}
+
+[data-theme="2026"] .hamburger:hover {
+    border-color: #0066FF;
+    background-color: rgba(0, 102, 255, 0.04);
+}
+
+[data-theme="2026"] .mobile-menu {
+    background-color: #ffffff !important;
+    background-image: none !important;
+    border-left: 1px solid #e5e5e5;
+    box-shadow: -4px 0 16px rgba(0, 0, 0, 0.06);
+}
+
+[data-theme="2026"] .mobile-menu a {
+    color: #333 !important;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 13px;
+}
+
+[data-theme="2026"] .mobile-menu a:hover {
+    color: #0066FF !important;
+}
+
+[data-theme="2026"] .mobile-menu li {
+    border-bottom-color: #f0f0f0;
+}
+
+[data-theme="2026"] .mobile-menu-header {
+    color: #0066FF;
+    font-family: 'JetBrains Mono', monospace;
+    border-bottom-color: #e5e5e5;
+    font-size: 11px;
+}
+
+[data-theme="2026"] .mobile-menu-close {
+    border-color: #ddd;
+}
+
+[data-theme="2026"] .mobile-menu-close::before,
+[data-theme="2026"] .mobile-menu-close::after {
+    background-color: #888;
+}
+
+/* ---- Buttons: Minimal hairline ---- */
+[data-theme="2026"] .button,
+[data-theme="2026"] .button2,
+[data-theme="2026"] .form-submit {
+    background-color: #ffffff !important;
+    color: #111 !important;
+    border: 1px solid #ddd !important;
+    border-radius: 4px !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+    font-family: 'JetBrains Mono', monospace !important;
+    font-size: 13px !important;
+    font-weight: 500 !important;
+    padding: 10px 20px !important;
+    text-transform: none !important;
+    letter-spacing: 0 !important;
+}
+
+[data-theme="2026"] .button:hover,
+[data-theme="2026"] .button2:hover,
+[data-theme="2026"] .form-submit:hover {
+    border-color: #0066FF !important;
+    color: #0066FF !important;
+    background-color: rgba(0, 102, 255, 0.03) !important;
+    transform: none !important;
+}
+
+/* ---- Brutalist CTA: CLI prompt style ---- */
+[data-theme="2026"] .brutalist-cta {
+    background-color: #111 !important;
+    color: #ffffff !important;
+    border: 1px solid #333 !important;
+    border-radius: 4px !important;
+    box-shadow: none !important;
+    text-decoration: none !important;
+    padding: 12px 24px !important;
+    font-family: 'JetBrains Mono', monospace !important;
+}
+
+[data-theme="2026"] .brutalist-cta:hover {
+    background-color: #0066FF !important;
+    border-color: #0066FF !important;
+}
+
+[data-theme="2026"] .brutalist-cta-prompt {
+    color: #0066FF !important;
+    text-shadow: none !important;
+    font-family: 'JetBrains Mono', monospace;
+}
+
+@keyframes cursorBlink2026 {
+    0%, 49% { opacity: 1; }
+    50%, 100% { opacity: 0; }
+}
+
+[data-theme="2026"] .brutalist-cta-prompt::after {
+    content: '_';
+    animation: cursorBlink2026 1s step-end infinite;
+    margin-left: 2px;
+}
+
+[data-theme="2026"] .brutalist-cta-text {
+    color: #ffffff !important;
+    text-shadow: none !important;
+    text-transform: none !important;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 13px;
+    letter-spacing: 0;
+}
+
+/* ---- About Section ---- */
+[data-theme="2026"] .about-heading {
+    color: #111 !important;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+}
+
+[data-theme="2026"] .about-bio {
+    color: #444;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+[data-theme="2026"] .about-content {
+    color: #333;
+}
+
+[data-theme="2026"] .strength-tag {
+    background-color: #f5f5f5 !important;
+    color: #555 !important;
+    border: 1px solid #e5e5e5 !important;
+    border-radius: 4px !important;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+}
+
+/* ---- Cover Art ---- */
+[data-theme="2026"] .cover-art {
+    border: 1px solid #e5e5e5;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+[data-theme="2026"] .hover-text {
+    background-color: rgba(0, 0, 0, 0.75);
+    color: #ffffff;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 13px;
+    border: none;
+    border-radius: 4px;
+}
+
+/* ---- Portfolio Carousel ---- */
+[data-theme="2026"] .portfolio-carousel {
+    background-color: #ffffff !important;
+    border: 1px solid #e5e5e5 !important;
+    border-radius: 6px !important;
+    padding: 24px !important;
+}
+
+[data-theme="2026"] .portfolio-carousel h4 {
+    color: #999 !important;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+[data-theme="2026"] .project-title {
+    color: #111 !important;
+    font-family: 'JetBrains Mono', monospace !important;
+    text-shadow: none !important;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+}
+
+/* Comment-style structure labels */
+[data-theme="2026"] .structure-label {
+    color: #999 !important;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+}
+
+[data-theme="2026"] .structure-label::before {
+    content: '// ';
+    color: #ccc;
+}
+
+[data-theme="2026"] .structure-item {
+    color: #333 !important;
+    font-size: 14px;
+    padding: 4px 0 4px 0;
+    border-left: 2px solid #f0f0f0;
+    padding-left: 12px;
+    margin-bottom: 4px;
+}
+
+[data-theme="2026"] .project-link,
+[data-theme="2026"] .brutalist-link {
+    color: #0066FF !important;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 13px;
+    font-weight: 500;
+    text-decoration: none !important;
+}
+
+[data-theme="2026"] .portfolio-dot {
+    border-radius: 2px !important;
+    background-color: #ddd !important;
+}
+
+[data-theme="2026"] .portfolio-dot.active {
+    background-color: #0066FF !important;
+}
+
+[data-theme="2026"] .portfolio-prev,
+[data-theme="2026"] .portfolio-next {
+    background-color: #ffffff !important;
+    color: #555 !important;
+    border: 1px solid #ddd !important;
+    border-radius: 4px !important;
+    box-shadow: none !important;
+    font-family: 'JetBrains Mono', monospace !important;
+    font-size: 12px !important;
+}
+
+[data-theme="2026"] .portfolio-prev:hover,
+[data-theme="2026"] .portfolio-next:hover {
+    border-color: #0066FF !important;
+    color: #0066FF !important;
+}
+
+[data-theme="2026"] .slide-thumbnail img {
+    border-radius: 4px;
+    border: 1px solid #e5e5e5;
+}
+
+/* ---- Tracklist: clean code-like table ---- */
+[data-theme="2026"] #tracklist {
+    border: 1px solid #e5e5e5;
+    border-radius: 4px;
+    overflow: hidden;
+    background-color: #ffffff;
+}
+
+[data-theme="2026"] #tracklist th {
+    background-color: #f8f8f8;
+    color: #999 !important;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px !important;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    border-bottom: 1px solid #e5e5e5 !important;
+}
+
+[data-theme="2026"] #tracklist td {
+    color: #333 !important;
+    border-bottom: 1px solid #f0f0f0 !important;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    font-size: 14px;
+}
+
+[data-theme="2026"] #tracklist td a {
+    color: #111 !important;
+    text-shadow: none !important;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+[data-theme="2026"] #tracklist td a:hover {
+    color: #0066FF !important;
+    text-shadow: none !important;
+}
+
+[data-theme="2026"] #tracklist tbody tr:hover {
+    background-color: rgba(0, 102, 255, 0.02) !important;
+}
+
+[data-theme="2026"] #tracklist td.year-range {
+    font-family: 'JetBrains Mono', monospace;
+    color: #999 !important;
+}
+
+[data-theme="2026"] tr.featured-role td:first-child::before {
+    background: #0066FF !important;
+    border-radius: 0 !important;
+    width: 2px;
+}
+
+[data-theme="2026"] .role-details {
+    background-color: #f8f9fa !important;
+    border-left: 2px solid #f0f0f0;
+}
+
+[data-theme="2026"] .inline-bullets {
+    color: #444 !important;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    font-size: 13px;
+}
+
+[data-theme="2026"] .inline-bullets li {
+    color: #444 !important;
+}
+
+[data-theme="2026"] .view-more {
+    background-color: #ffffff !important;
+    color: #0066FF !important;
+    border: 1px solid #ddd !important;
+    border-radius: 4px !important;
+    box-shadow: none !important;
+    font-family: 'JetBrains Mono', monospace !important;
+    font-size: 12px !important;
+}
+
+[data-theme="2026"] .view-more:hover {
+    border-color: #0066FF !important;
+}
+
+/* ---- Company Logos ---- */
+[data-theme="2026"] .company-logos-section {
+    background: none;
+}
+
+[data-theme="2026"] .company-logos-header {
+    color: #999 !important;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+[data-theme="2026"] .company-logo {
+    filter: grayscale(100%) brightness(0.3) !important;
+    opacity: 0.4;
+    transition: opacity 0.2s ease;
+}
+
+[data-theme="2026"] .company-logo:hover {
+    opacity: 0.7;
+}
+
+/* ---- Hero Stats ---- */
+[data-theme="2026"] .hero-stats {
+    color: #111 !important;
+    text-shadow: none !important;
+}
+
+/* ---- Metrics ---- */
+[data-theme="2026"] .metric-card {
+    background: #ffffff !important;
+    border: 1px solid #e5e5e5 !important;
+    border-radius: 4px !important;
+}
+
+[data-theme="2026"] .metric-card:hover {
+    border-color: #0066FF !important;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06) !important;
+}
+
+[data-theme="2026"] .metric-value {
+    color: #111 !important;
+    font-family: 'JetBrains Mono', monospace !important;
+    font-weight: 700 !important;
+    text-shadow: none !important;
+    letter-spacing: -0.03em;
+}
+
+[data-theme="2026"] .metric-label {
+    color: #999 !important;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 12px;
+}
+
+/* ---- Configurator ---- */
+[data-theme="2026"] .configurator-showcase {
+    background-color: #ffffff !important;
+    border: 1px solid #e5e5e5;
+    border-radius: 6px;
+}
+
+[data-theme="2026"] .configurator-showcase-inner {
+    background: none !important;
+}
+
+[data-theme="2026"] .configurator-badge {
+    background-color: #f0f0f0 !important;
+    color: #555 !important;
+    border-radius: 4px !important;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+}
+
+[data-theme="2026"] .configurator-title {
+    color: #111 !important;
+    font-family: 'JetBrains Mono', monospace !important;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+}
+
+[data-theme="2026"] .configurator-desc {
+    color: #555 !important;
+    font-size: 15px;
+}
+
+[data-theme="2026"] .configurator-cta {
+    background-color: #111 !important;
+    color: #ffffff !important;
+    border: none !important;
+    border-radius: 4px !important;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 13px;
+    font-weight: 500;
+    text-decoration: none !important;
+}
+
+[data-theme="2026"] .configurator-cta:hover {
+    background-color: #0066FF !important;
+}
+
+[data-theme="2026"] .configurator-preview img {
+    border-radius: 4px;
+    border: 1px solid #e5e5e5;
+}
+
+/* ---- Contact Form ---- */
+[data-theme="2026"] .form-label {
+    color: #999 !important;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+[data-theme="2026"] .form-input,
+[data-theme="2026"] .form-textarea {
+    background-color: #ffffff !important;
+    color: #111 !important;
+    border: 1px solid #ddd !important;
+    border-radius: 4px !important;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif !important;
+    font-size: 15px !important;
+    box-shadow: none !important;
+}
+
+[data-theme="2026"] .form-input:focus,
+[data-theme="2026"] .form-textarea:focus {
+    border-color: #0066FF !important;
+    box-shadow: 0 0 0 3px rgba(0, 102, 255, 0.08) !important;
+}
+
+[data-theme="2026"] .form-input::placeholder,
+[data-theme="2026"] .form-textarea::placeholder {
+    font-family: 'JetBrains Mono', monospace !important;
+    font-size: 13px;
+    color: #ccc !important;
+}
+
+/* ---- Modals ---- */
+[data-theme="2026"] .modal-content {
+    background-color: #ffffff !important;
+    background-image: none !important;
+    border: 1px solid #e5e5e5 !important;
+    border-radius: 8px !important;
+    box-shadow: 0 16px 48px rgba(0, 0, 0, 0.12) !important;
+}
+
+[data-theme="2026"] .modal-content h2 {
+    font-family: 'JetBrains Mono', monospace !important;
+    color: #111 !important;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+}
+
+[data-theme="2026"] .modal-case-study-cta {
+    background-color: #111 !important;
+    color: #ffffff !important;
+    border: 1px solid #111 !important;
+    border-radius: 4px !important;
+}
+
+[data-theme="2026"] .modal-case-study-cta:hover {
+    background-color: #0066FF !important;
+    border-color: #0066FF !important;
+}
+
+[data-theme="2026"] .modal-cta-secondary {
+    background-color: #ffffff !important;
+    color: #333 !important;
+    border: 1px solid #ddd !important;
+}
+
+[data-theme="2026"] .carousel-nav button {
+    background-color: #ffffff !important;
+    color: #555 !important;
+    border: 1px solid #ddd !important;
+    border-radius: 4px !important;
+    box-shadow: none !important;
+    font-family: 'JetBrains Mono', monospace !important;
+    font-size: 11px !important;
+}
+
+[data-theme="2026"] .close {
+    color: #ccc !important;
+}
+
+[data-theme="2026"] .close:hover {
+    color: #666 !important;
+}
+
+/* ---- Sidebar ---- */
+[data-theme="2026"] .sidebar-portrait img {
+    border-radius: 4px;
+    border: 1px solid #e5e5e5;
+}
+
+[data-theme="2026"] .sidebar-link {
+    color: #0066FF !important;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 13px;
+}
+
+[data-theme="2026"] #footer h4 {
+    color: #111 !important;
+    font-family: 'JetBrains Mono', monospace;
+    text-shadow: none;
+}
+
+/* ---- Footer ---- */
+[data-theme="2026"] #site-footer-final {
+    background-color: #fafafa;
+    border-top: 1px solid #e5e5e5;
+}
+
+[data-theme="2026"] #site-footer-final p {
+    color: #999 !important;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+}
+
+/* ---- iOS toolbar guard ---- */
+[data-theme="2026"] .ios-toolbar-guard {
+    background: #fafafa !important;
+}
+
+/* ---- Focus states ---- */
+[data-theme="2026"] :focus-visible {
+    outline: 2px solid #0066FF !important;
+    outline-offset: 2px;
+    box-shadow: none !important;
+}
+
+/* ---- Screensaver ---- */
+[data-theme="2026"] #screensaver-clock .clock-text {
+    color: #0066FF !important;
+    font-family: 'JetBrains Mono', monospace !important;
+    text-shadow: none !important;
+}
+
+/* ---- Scroll reveals ---- */
+[data-theme="2026"] .scroll-reveal,
+[data-theme="2026"] .scroll-reveal-stagger {
+    opacity: 1 !important;
+    transform: none !important;
+}
