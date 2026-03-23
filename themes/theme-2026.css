@@ -326,7 +326,7 @@
     padding: 24px !important;
 }
 
-[data-theme="2026"] .portfolio-carousel h4 {
+[data-theme="2026"] .portfolio-carousel .slide-label {
     color: #999 !important;
     font-family: 'JetBrains Mono', monospace;
     font-size: 11px;

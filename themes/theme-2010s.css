@@ -309,7 +309,7 @@
     padding: 24px !important;
 }
 
-[data-theme="2010s"] .portfolio-carousel h4 {
+[data-theme="2010s"] .portfolio-carousel .slide-label {
     color: #999 !important;
     font-family: 'Inter', -apple-system, sans-serif;
     font-weight: 500;

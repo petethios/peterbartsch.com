@@ -304,7 +304,7 @@
     padding: 20px !important;
 }
 
-[data-theme="2000s"] .portfolio-carousel h4 {
+[data-theme="2000s"] .portfolio-carousel .slide-label {
     color: #ff8c00 !important;
     font-family: Georgia, serif;
     font-style: italic;

@@ -46,27 +46,13 @@
     <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
     <meta http-equiv="Permissions-Policy" content="geolocation=(), microphone=(), camera=()">
     <meta http-equiv="Content-Security-Policy"
-        content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://www.clarity.ms https://*.clarity.ms; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https: https://*.clarity.ms https://c.bing.com; font-src 'self' https://fonts.gstatic.com; connect-src 'self' https://www.google-analytics.com https://www.clarity.ms https://*.clarity.ms; frame-ancestors 'self'; base-uri 'self'; form-action 'self' mailto:;">
+        content="default-src 'self'; script-src 'self' https://www.googletagmanager.com https://www.google-analytics.com https://www.clarity.ms https://*.clarity.ms; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https: https://*.clarity.ms https://c.bing.com; font-src 'self' https://fonts.gstatic.com; connect-src 'self' https://www.google-analytics.com https://www.clarity.ms https://*.clarity.ms; frame-ancestors 'self'; base-uri 'self'; form-action 'self' mailto:;">
 
     <!-- Google Analytics 4 -->
     <!-- Note: SRI (Subresource Integrity) not used for GA as Google's CDN doesn't provide integrity hashes.
          CSP policy above restricts script sources to trusted Google domains. -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-QB3EL923YF"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-        gtag('config', 'G-QB3EL923YF');
-    </script>
-
-    <!-- Microsoft Clarity -->
-    <script type="text/javascript">
-        (function (c, l, a, r, i, t, y) {
-            c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments) };
-            t = l.createElement(r); t.async = 1; t.src = "https://www.clarity.ms/tag/" + i;
-            y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y);
-        })(window, document, "clarity", "script", "uhlenklp4t");
-    </script>
+    <script src="analytics.js"></script>
 
     <title>Peter Bartsch - Product and UX Leader | Portfolio & Resume</title>
 
@@ -96,15 +82,8 @@
         href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap"
         media="print">
 
-    <!-- FOUC prevention: apply saved theme before first paint (default: 2026) -->
-    <script>
-        (function() {
-            var saved = localStorage.getItem('pb-theme') || '2026';
-            if (saved !== '80s') {
-                document.documentElement.setAttribute('data-theme', saved);
-            }
-        })();
-    </script>
+    <!-- FOUC prevention: apply saved theme before first paint -->
+    <script src="theme-init.js"></script>
 
     <!-- Structured Data (JSON-LD) -->
     <script type="application/ld+json">
@@ -288,7 +267,7 @@
                                 <div class="grid-overlay"></div>
                             </div>
                             <div class="slide-content">
-                                <h4>FLAGSHIP CASE STUDY</h4>
+                                <p class="slide-label">FLAGSHIP CASE STUDY</p>
                                 <h3 class="project-title phosphor-text">DEERE: 34%→87% ADOPTION AT SCALE</h3>
                                 <div class="project-structure">
                                     <p class="structure-item"><span class="structure-label">Challenge:</span> 500K users weren't completing profiles — blocking $3.8B in subscription revenue</p>
@@ -310,7 +289,7 @@
                                 <div class="grid-overlay"></div>
                             </div>
                             <div class="slide-content">
-                                <h4>FEATURED WORK</h4>
+                                <p class="slide-label">FEATURED WORK</p>
                                 <h3 class="project-title">DEERE: ONE SYSTEM, 47 PRODUCTS</h3>
                                 <div class="project-structure">
                                     <p class="structure-item"><span class="structure-label">Challenge:</span> 47 product sites, each with its own navigation and identity</p>
@@ -332,7 +311,7 @@
                                 <div class="grid-overlay"></div>
                             </div>
                             <div class="slide-content">
-                                <h4>FEATURED WORK</h4>
+                                <p class="slide-label">FEATURED WORK</p>
                                 <h3 class="project-title">FOURKITES: DESIGNING FOR UNCERTAINTY</h3>
                                 <div class="project-structure">
                                     <p class="structure-item"><span class="structure-label">Challenge:</span> Customers didn't trust tracking data — incomplete data was hidden, not explained</p>
@@ -354,7 +333,7 @@
                                 <div class="grid-overlay"></div>
                             </div>
                             <div class="slide-content">
-                                <h4>FEATURED WORK</h4>
+                                <p class="slide-label">FEATURED WORK</p>
                                 <h3 class="project-title">FOURKITES: REALIGNING INCENTIVES</h3>
                                 <div class="project-structure">
                                     <p class="structure-item"><span class="structure-label">Challenge:</span> Drivers had no reason to share location data — the platform needed them to</p>
@@ -376,7 +355,7 @@
                                 <div class="grid-overlay"></div>
                             </div>
                             <div class="slide-content">
-                                <h4>CAPABILITY DEMO</h4>
+                                <p class="slide-label">CAPABILITY DEMO</p>
                                 <h3 class="project-title">0→1: SHIPPING SOLO WITH AI</h3>
                                 <div class="project-structure">
                                     <p class="structure-item"><span class="structure-label">Challenge:</span> Can a senior designer ship an entire product ecosystem — brand, web, physical products — solo?</p>
@@ -398,14 +377,14 @@
                 <section class="company-logos-section scroll-reveal">
                     <h4 class="company-logos-header">Shipped At</h4>
                     <div class="company-logos-grid scroll-reveal-stagger">
-                        <img src="img/logos/John-Deere-Logo 1.png" alt="John Deere" class="company-logo" loading="lazy" width="148" height="92">
-                        <img src="img/logos/FourKites_Logo_light.png" alt="FourKites" class="company-logo" loading="lazy" width="277" height="84">
-                        <img src="img/logos/abbvie_logo-white.png" alt="AbbVie" class="company-logo" loading="lazy" width="286" height="146">
-                        <img src="img/logos/Comerica-new-logo.svg.png" alt="Comerica" class="company-logo" loading="lazy" width="500" height="162">
-                        <img src="img/logos/maven 1.png" alt="MavenWave" class="company-logo company-logo-sm" loading="lazy" width="321" height="64">
-                        <img src="img/logos/Gogo-Inc-RGB-RedBlue-WEB1000px 1.png" alt="Gogo" class="company-logo" loading="lazy" width="160" height="105">
+                        <picture><source srcset="img/logos/John-Deere-Logo 1.webp" type="image/webp"><img src="img/logos/John-Deere-Logo 1.png" alt="John Deere" class="company-logo" loading="lazy" width="148" height="92"></picture>
+                        <picture><source srcset="img/logos/FourKites_Logo_light.webp" type="image/webp"><img src="img/logos/FourKites_Logo_light.png" alt="FourKites" class="company-logo" loading="lazy" width="277" height="84"></picture>
+                        <picture><source srcset="img/logos/abbvie_logo-white.webp" type="image/webp"><img src="img/logos/abbvie_logo-white.png" alt="AbbVie" class="company-logo" loading="lazy" width="286" height="146"></picture>
+                        <picture><source srcset="img/logos/Comerica-new-logo.svg.webp" type="image/webp"><img src="img/logos/Comerica-new-logo.svg.png" alt="Comerica" class="company-logo" loading="lazy" width="500" height="162"></picture>
+                        <picture><source srcset="img/logos/maven 1.webp" type="image/webp"><img src="img/logos/maven 1.png" alt="MavenWave" class="company-logo company-logo-sm" loading="lazy" width="321" height="64"></picture>
+                        <picture><source srcset="img/logos/Gogo-Inc-RGB-RedBlue-WEB1000px 1.webp" type="image/webp"><img src="img/logos/Gogo-Inc-RGB-RedBlue-WEB1000px 1.png" alt="Gogo" class="company-logo" loading="lazy" width="160" height="105"></picture>
                         <img src="img/logos/here-white-200px.webp" alt="HERE Maps" class="company-logo" loading="lazy" width="200" height="203">
-                        <img src="img/logos/Thios-and-company-badge.png" alt="Thios" class="company-logo" loading="lazy" width="312" height="70">
+                        <picture><source srcset="img/logos/Thios-and-company-badge.webp" type="image/webp"><img src="img/logos/Thios-and-company-badge.png" alt="Thios" class="company-logo" loading="lazy" width="312" height="70"></picture>
                     </div>
                 </section>
 

@@ -290,7 +290,7 @@
     border: 3px ridge #808080 !important;
 }
 
-[data-theme="90s"] .portfolio-carousel h4 {
+[data-theme="90s"] .portfolio-carousel .slide-label {
     color: #ffff00 !important;
     font-family: 'Comic Neue', 'Comic Sans MS', cursive;
 }

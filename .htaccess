@@ -43,7 +43,7 @@ RewriteRule ^scripts - [F,L]
     Header set Referrer-Policy "strict-origin-when-cross-origin"
     
     # Content Security Policy (backup to meta tag)
-    Header set Content-Security-Policy "default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://www.clarity.ms https://*.clarity.ms; style-src 'self' 'unsafe-inline'; img-src 'self' data: https: https://*.clarity.ms https://c.bing.com; font-src 'self'; connect-src 'self' https://www.google-analytics.com https://www.clarity.ms https://*.clarity.ms; frame-ancestors 'self'; base-uri 'self'; form-action 'self' mailto:;"
+    Header set Content-Security-Policy "default-src 'self'; script-src 'self' https://www.googletagmanager.com https://www.google-analytics.com https://www.clarity.ms https://*.clarity.ms; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https: https://*.clarity.ms https://c.bing.com; font-src 'self' https://fonts.gstatic.com; connect-src 'self' https://www.google-analytics.com https://www.clarity.ms https://*.clarity.ms; frame-ancestors 'self'; base-uri 'self'; form-action 'self' mailto:;"
     
     # Permissions Policy
     Header set Permissions-Policy "geolocation=(), microphone=(), camera=()"
