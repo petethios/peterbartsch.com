@@ -80,7 +80,7 @@
     <link rel="preconnect" href="https://www.clarity.ms">
     <link rel="dns-prefetch" href="https://thios.co">
     <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="preload" href="ari.ttf" as="font" type="font/ttf" crossorigin>
+    <link rel="prefetch" href="ari.ttf" as="font" type="font/ttf" crossorigin>
 
     <link rel="stylesheet" href="styles.css?v=<?php echo filemtime('styles.css'); ?>">
     <link rel="stylesheet" href="themes/theme-switcher.css?v=<?php echo filemtime('themes/theme-switcher.css'); ?>">
@@ -398,14 +398,14 @@
                 <section class="company-logos-section scroll-reveal">
                     <h4 class="company-logos-header">Shipped At</h4>
                     <div class="company-logos-grid scroll-reveal-stagger">
-                        <img src="img/logos/John-Deere-Logo 1.png" alt="John Deere" class="company-logo" loading="lazy">
-                        <img src="img/logos/FourKites_Logo_light.png" alt="FourKites" class="company-logo" loading="lazy">
-                        <img src="img/logos/abbvie_logo-white.png" alt="AbbVie" class="company-logo" loading="lazy">
-                        <img src="img/logos/Comerica-new-logo.svg.png" alt="Comerica" class="company-logo" loading="lazy">
-                        <img src="img/logos/maven 1.png" alt="MavenWave" class="company-logo company-logo-sm" loading="lazy">
-                        <img src="img/logos/Gogo-Inc-RGB-RedBlue-WEB1000px 1.png" alt="Gogo" class="company-logo" loading="lazy">
-                        <img src="img/logos/here-white-200px.webp" alt="HERE Maps" class="company-logo" loading="lazy">
-                        <img src="img/logos/Thios-and-company-badge.png" alt="Thios" class="company-logo" loading="lazy">
+                        <img src="img/logos/John-Deere-Logo 1.png" alt="John Deere" class="company-logo" loading="lazy" width="148" height="92">
+                        <img src="img/logos/FourKites_Logo_light.png" alt="FourKites" class="company-logo" loading="lazy" width="277" height="84">
+                        <img src="img/logos/abbvie_logo-white.png" alt="AbbVie" class="company-logo" loading="lazy" width="286" height="146">
+                        <img src="img/logos/Comerica-new-logo.svg.png" alt="Comerica" class="company-logo" loading="lazy" width="500" height="162">
+                        <img src="img/logos/maven 1.png" alt="MavenWave" class="company-logo company-logo-sm" loading="lazy" width="321" height="64">
+                        <img src="img/logos/Gogo-Inc-RGB-RedBlue-WEB1000px 1.png" alt="Gogo" class="company-logo" loading="lazy" width="160" height="105">
+                        <img src="img/logos/here-white-200px.webp" alt="HERE Maps" class="company-logo" loading="lazy" width="200" height="203">
+                        <img src="img/logos/Thios-and-company-badge.png" alt="Thios" class="company-logo" loading="lazy" width="312" height="70">
                     </div>
                 </section>
 
@@ -766,7 +766,6 @@
     <div id="modal-container"></div>
 
     <!-- Scripts -->
-    <script src="portfolio-data.js?v=<?php echo filemtime('portfolio-data.js'); ?>"></script>
     <script src="modal-system.js?v=<?php echo filemtime('modal-system.js'); ?>"></script>
     <script src="themes/theme-switcher.js?v=<?php echo filemtime('themes/theme-switcher.js'); ?>"></script>
     <script src="script.js?v=<?php echo filemtime('script.js'); ?>"></script>

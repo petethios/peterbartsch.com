@@ -48,7 +48,7 @@ if (coverVideo) {
     function toggleVideo() {
         if (coverVideo.paused) {
             coverVideo.play().catch(function (error) {
-                console.log('Play prevented:', error);
+                // Video autoplay blocked by browser
             });
         } else {
             coverVideo.pause();

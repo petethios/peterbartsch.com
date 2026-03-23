@@ -8,19 +8,30 @@ RewriteEngine On
 # RewriteCond %{HTTPS} off
 # RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
-# Clean URL: /resume serves index.php
-RewriteRule ^resume/?$ index.php [L]
-
-# Clean URLs for case studies (remove .php extension)
+# Clean URLs: remove .php extension
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME}.php -f
 RewriteRule ^(.+)$ $1.php [L]
 
-# Optional: Redirect root to /resume (uncomment if desired)
-# RewriteRule ^$ /resume [R=301,L]
+# Block sensitive directories
+RewriteRule ^\.git - [F,L]
+RewriteRule ^\.claude - [F,L]
+RewriteRule ^agent_docs - [F,L]
+RewriteRule ^folio-3d - [F,L]
+RewriteRule ^scripts - [F,L]
 
-# Security Headers (if server doesn't set them via meta tags)
+# Block dotfiles (except .htaccess)
+<FilesMatch "^\.(?!htaccess)">
+    Require all denied
+</FilesMatch>
+
+# Block deployment/build artifacts
+<FilesMatch "\.(exp|sh|md)$">
+    Require all denied
+</FilesMatch>
+
+# Security Headers
 <IfModule mod_headers.c>
     # Prevent clickjacking
     Header set X-Frame-Options "SAMEORIGIN"
@@ -63,7 +74,6 @@ RewriteRule ^(.+)$ $1.php [L]
 # Prevent directory listing
 Options -Indexes
 
-# Custom error pages (optional - create these if needed)
-# ErrorDocument 404 /404.html
-# ErrorDocument 500 /500.html
+# Custom error pages
+ErrorDocument 404 /404.php
 
