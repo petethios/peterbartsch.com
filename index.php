@@ -234,15 +234,15 @@
                 <div class="hero-layout">
                     <div class="hero-text">
                         <h2 id="title" class="phosphor-text">PETER BARTSCH</h2>
-                        <p class="hero-subtitle">Product & UX Leader</p>
+                        <p class="hero-subtitle">Staff Product Designer</p>
                         <p class="hero-tagline">
-                            Enterprise UX leader with 15+ years driving adoption, revenue, and design systems at scale.
+                            I design enterprise systems that 500K+ people actually use — then build the design orgs that scale them.
                         </p>
                         <div class="hero-metrics">
-                            <div class="hero-metric"><span class="hero-metric-value">500K+</span><span class="hero-metric-label">Users Impacted</span></div>
-                            <div class="hero-metric"><span class="hero-metric-value">$3.8B</span><span class="hero-metric-label">Revenue Enabled</span></div>
-                            <div class="hero-metric"><span class="hero-metric-value">40+</span><span class="hero-metric-label">Teams Supported</span></div>
-                            <div class="hero-metric"><span class="hero-metric-value">15+</span><span class="hero-metric-label">Years Experience</span></div>
+                            <div class="hero-metric"><span class="hero-metric-value">500K+</span><span class="hero-metric-label">Users Shipped To</span></div>
+                            <div class="hero-metric"><span class="hero-metric-value">$3.8B</span><span class="hero-metric-label">Revenue Unlocked</span></div>
+                            <div class="hero-metric"><span class="hero-metric-value">40+</span><span class="hero-metric-label">Teams Adopted System</span></div>
+                            <div class="hero-metric"><span class="hero-metric-value">15+</span><span class="hero-metric-label">Years Enterprise UX</span></div>
                         </div>
                     </div>
                     <div class="hero-portrait">
@@ -266,13 +266,13 @@
                     <div class="about-content">
                         <h2 class="about-heading phosphor-text">ABOUT</h2>
                         <p class="about-bio">
-                            I'm a product and UX leader who specializes in enterprise-scale design challenges — the kind where adoption isn't optional, stakeholders number in the dozens, and the user base spans half a million people. I've led design orgs through hypergrowth, built design systems adopted across 40+ teams, and consistently turned complex constraints into measurable business outcomes. I studied humanities and architectural theory at Arizona State University.
+                            I solve the design problems most designers avoid: forced adoption across 500K users, unifying 47 product lines into one system, making enterprise customers trust data they didn't believe. I've taken design orgs from 1 to 10, shipped systems adopted by 40+ teams globally, and consistently turned "this can't be done" constraints into measurable business outcomes — including $3.8B in enabled revenue at John Deere and a $1.2B exit at FourKites.
                         </p>
                         <div class="about-strengths">
-                            <span class="strength-tag">Enterprise Design Systems</span>
-                            <span class="strength-tag">Cross-Functional Leadership</span>
-                            <span class="strength-tag">Data-Driven UX</span>
-                            <span class="strength-tag">Platform Strategy</span>
+                            <span class="strength-tag">Design Systems at Scale</span>
+                            <span class="strength-tag">Org Building (1→10)</span>
+                            <span class="strength-tag">Adoption & Retention Design</span>
+                            <span class="strength-tag">Complex Systems / 0→1</span>
                         </div>
                     </div>
                 </div>
@@ -289,11 +289,11 @@
                             </div>
                             <div class="slide-content">
                                 <h4>FLAGSHIP CASE STUDY</h4>
-                                <h3 class="project-title phosphor-text">DEERE: FORCED ADOPTION</h3>
+                                <h3 class="project-title phosphor-text">DEERE: 34%→87% ADOPTION AT SCALE</h3>
                                 <div class="project-structure">
-                                    <p class="structure-item"><span class="structure-label">Challenge:</span> Get 500K users to complete profiles without killing trust</p>
-                                    <p class="structure-item"><span class="structure-label">Approach:</span> Stepped onboarding with targeted prompts across channels</p>
-                                    <p class="structure-item"><span class="structure-label">Result:</span> 34%→87% completion · $3.8B revenue enabled</p>
+                                    <p class="structure-item"><span class="structure-label">Challenge:</span> 500K users weren't completing profiles — blocking $3.8B in subscription revenue</p>
+                                    <p class="structure-item"><span class="structure-label">Approach:</span> I designed a multi-channel forced adoption flow that didn't destroy trust</p>
+                                    <p class="structure-item"><span class="structure-label">Result:</span> 34%→87% profile completion in 6 months · $3.8B revenue unlocked</p>
                                 </div>
                                 <a href="case-studies/deere-common-ux.php" class="project-link brutalist-link">VIEW CASE STUDY →</a>
                                 <div class="portfolio-nav">
@@ -311,11 +311,11 @@
                             </div>
                             <div class="slide-content">
                                 <h4>FEATURED WORK</h4>
-                                <h3 class="project-title">DEERE: PLATFORM UNIFICATION</h3>
+                                <h3 class="project-title">DEERE: ONE SYSTEM, 47 PRODUCTS</h3>
                                 <div class="project-structure">
-                                    <p class="structure-item"><span class="structure-label">Challenge:</span> 47 product sites, each with its own navigation</p>
-                                    <p class="structure-item"><span class="structure-label">Approach:</span> Shared design system rolled out without breaking existing products</p>
-                                    <p class="structure-item"><span class="structure-label">Result:</span> One consistent experience across all 47 sites</p>
+                                    <p class="structure-item"><span class="structure-label">Challenge:</span> 47 product sites, each with its own navigation and identity</p>
+                                    <p class="structure-item"><span class="structure-label">Approach:</span> I built a shared design system and rolled it out without breaking a single live product</p>
+                                    <p class="structure-item"><span class="structure-label">Result:</span> One consistent experience across all 47 sites · 45% faster dev handoffs</p>
                                 </div>
                                 <a href="case-studies/deere-nav.php" class="project-link brutalist-link">VIEW CASE STUDY →</a>
                                 <div class="portfolio-nav">
@@ -333,11 +333,11 @@
                             </div>
                             <div class="slide-content">
                                 <h4>FEATURED WORK</h4>
-                                <h3 class="project-title">FOURKITES: DATA TRUST</h3>
+                                <h3 class="project-title">FOURKITES: DESIGNING FOR UNCERTAINTY</h3>
                                 <div class="project-structure">
-                                    <p class="structure-item"><span class="structure-label">Challenge:</span> Customers didn't trust tracking data that was often incomplete</p>
-                                    <p class="structure-item"><span class="structure-label">Approach:</span> Showed data confidence levels instead of hiding uncertainty</p>
-                                    <p class="structure-item"><span class="structure-label">Result:</span> 41% retention increase · 3x customer expansion</p>
+                                    <p class="structure-item"><span class="structure-label">Challenge:</span> Customers didn't trust tracking data — incomplete data was hidden, not explained</p>
+                                    <p class="structure-item"><span class="structure-label">Approach:</span> I introduced confidence levels that showed uncertainty instead of hiding it</p>
+                                    <p class="structure-item"><span class="structure-label">Result:</span> 41% retention increase · 3x customer expansion · contributed to $1.2B exit</p>
                                 </div>
                                 <a href="case-studies/fourkites-tracking.php" class="project-link brutalist-link">VIEW CASE STUDY →</a>
                                 <div class="portfolio-nav">
@@ -355,11 +355,11 @@
                             </div>
                             <div class="slide-content">
                                 <h4>FEATURED WORK</h4>
-                                <h3 class="project-title">FOURKITES: INCENTIVE DESIGN</h3>
+                                <h3 class="project-title">FOURKITES: REALIGNING INCENTIVES</h3>
                                 <div class="project-structure">
-                                    <p class="structure-item"><span class="structure-label">Challenge:</span> Drivers had no reason to share their location data</p>
-                                    <p class="structure-item"><span class="structure-label">Approach:</span> Rewards system that benefited both drivers and shippers</p>
-                                    <p class="structure-item"><span class="structure-label">Result:</span> 32% more tracked shipments · driver NPS +28</p>
+                                    <p class="structure-item"><span class="structure-label">Challenge:</span> Drivers had no reason to share location data — the platform needed them to</p>
+                                    <p class="structure-item"><span class="structure-label">Approach:</span> I designed a rewards system that made data sharing beneficial for both sides</p>
+                                    <p class="structure-item"><span class="structure-label">Result:</span> 32% more tracked shipments · Driver NPS +28</p>
                                 </div>
                                 <a href="case-studies/fourkites-driver.php" class="project-link brutalist-link">VIEW CASE STUDY →</a>
                                 <div class="portfolio-nav">
@@ -376,12 +376,12 @@
                                 <div class="grid-overlay"></div>
                             </div>
                             <div class="slide-content">
-                                <h4>FEATURED WORK</h4>
-                                <h3 class="project-title">THIOS: AI AS CO-FOUNDER</h3>
+                                <h4>CAPABILITY DEMO</h4>
+                                <h3 class="project-title">0→1: SHIPPING SOLO WITH AI</h3>
                                 <div class="project-structure">
-                                    <p class="structure-item"><span class="structure-label">Challenge:</span> Solo founder needs to ship brand, websites, and physical products</p>
-                                    <p class="structure-item"><span class="structure-label">Approach:</span> Used AI to handle code, CAD, and brand design at startup speed</p>
-                                    <p class="structure-item"><span class="structure-label">Result:</span> Full product ecosystem generating revenue in 18 months</p>
+                                    <p class="structure-item"><span class="structure-label">Challenge:</span> Can a senior designer ship an entire product ecosystem — brand, web, physical products — solo?</p>
+                                    <p class="structure-item"><span class="structure-label">Approach:</span> I used AI as a technical co-founder to handle code, CAD, and brand design</p>
+                                    <p class="structure-item"><span class="structure-label">Result:</span> Full product ecosystem in 18 months — 3 sites, 5 product variants, revenue</p>
                                 </div>
                                 <a href="case-studies/thios.php" class="project-link brutalist-link">VIEW CASE STUDY →</a>
                                 <div class="portfolio-nav">
@@ -396,7 +396,7 @@
 
                 <!-- Company Logos -->
                 <section class="company-logos-section scroll-reveal">
-                    <h4 class="company-logos-header">Companies I've Designed For</h4>
+                    <h4 class="company-logos-header">Shipped At</h4>
                     <div class="company-logos-grid scroll-reveal-stagger">
                         <img src="img/logos/John-Deere-Logo 1.png" alt="John Deere" class="company-logo" loading="lazy">
                         <img src="img/logos/FourKites_Logo_light.png" alt="FourKites" class="company-logo" loading="lazy">
@@ -417,9 +417,9 @@
                             <div class="grid-overlay"></div>
                         </div>
                         <div class="configurator-content">
-                            <div class="configurator-badge">Interactive Demo</div>
-                            <h3 class="configurator-title">3D PRODUCT CONFIGURATOR</h3>
-                            <p class="configurator-desc">Design custom modular shelters in real-time. Built solo using AI as technical co-founder—Three.js, React, with AR preview.</p>
+                            <div class="configurator-badge">Technical Capability</div>
+                            <h3 class="configurator-title">BUILT THIS SOLO — THREE.JS, REACT, AR</h3>
+                            <p class="configurator-desc">Real-time 3D product configurator with AR preview. Proof that design leaders who code ship differently.</p>
                             <a href="https://thios.co/configurator" target="_blank" rel="noopener noreferrer" class="configurator-cta" data-track="configurator_click">Try the Configurator</a>
                         </div>
                     </div>
@@ -444,9 +444,9 @@
                                 <td></td>
                                 <td colspan="2">
                                     <ul class="inline-bullets">
-                                        <li><strong>Problem:</strong> Solo founder needed to ship brand, websites, and physical products fast</li>
-                                        <li><strong>Result:</strong> Full product ecosystem in 18 months — 3 websites, 5 CAD variants, revenue</li>
-                                        <li><strong>Approach:</strong> Used AI for code, CAD, and brand work; 70% faster prototyping cycles</li>
+                                        <li><strong>Problem:</strong> Test: Can a senior designer ship brand, web, and physical products solo using AI?</li>
+                                        <li><strong>Result:</strong> Full product ecosystem in 18 months — 3 sites, 5 CAD variants, generating revenue</li>
+                                        <li><strong>Approach:</strong> AI as technical co-founder; 70% faster prototyping cycles</li>
                                     </ul>
                                     <a href="case-studies/thios.php" class="view-more">View Case Study →</a>
                                 </td>
@@ -461,8 +461,8 @@
                                 <td colspan="2">
                                     <ul class="inline-bullets">
                                         <li><strong>Problem:</strong> 500K+ users weren't completing profiles — blocking $3.8B in subscription revenue</li>
-                                        <li><strong>Result:</strong> 34%→87% profile completion; unified nav across 8 product lines; 45% faster handoffs</li>
-                                        <li><strong>Approach:</strong> Stepped onboarding prompts + design system adopted by 40+ teams</li>
+                                        <li><strong>Result:</strong> 34%→87% completion; unified nav across 8 product lines; design system adopted by 40+ teams</li>
+                                        <li><strong>Approach:</strong> Multi-channel forced adoption + enterprise design system; 45% faster handoffs</li>
                                     </ul>
                                     <a href="case-studies/deere-common-ux.php" class="view-more">View Case Study →</a>
                                 </td>
@@ -476,9 +476,9 @@
                                 <td></td>
                                 <td colspan="2">
                                     <ul class="inline-bullets">
-                                        <li><strong>Problem:</strong> Customers didn't trust tracking dashboards built on incomplete data</li>
-                                        <li><strong>Result:</strong> $3M→$100M ARR; 41% retention increase; 3x expansion; team 1→10</li>
-                                        <li><strong>Approach:</strong> Showed confidence levels openly; added predictive ETAs ahead of competitors</li>
+                                        <li><strong>Problem:</strong> Customers didn't trust dashboards built on incomplete data</li>
+                                        <li><strong>Result:</strong> $3M→$100M ARR; 41% retention increase; 3x expansion; company acquired for $1.2B</li>
+                                        <li><strong>Approach:</strong> Showed confidence levels openly; added predictive ETAs ahead of competitors; team 1→10</li>
                                     </ul>
                                     <a href="case-studies/fourkites-tracking.php" class="view-more">View Case Study →</a>
                                 </td>
@@ -503,7 +503,7 @@
                     <div class="contact-inner">
                         <div class="contact-info">
                             <h3 class="phosphor-text">LET'S TALK</h3>
-                            <p class="contact-desc">Interested in working together? Send me a message or grab my resume.</p>
+                            <p class="contact-desc">I'm looking for Staff or Principal IC roles where complex systems need clear design leadership. Let's talk.</p>
                             <a href="Peter-Bartsch-Resume.pdf" target="_blank" rel="noopener noreferrer" class="sidebar-link">Download Resume (PDF)</a>
                         </div>
                         <form id="contactForm" class="contact-form">
