@@ -183,7 +183,7 @@
                 <ul class="nav-primary">
                     <li><a href="#about">ABOUT</a></li>
                     <li><a href="#portfolio-carousel">CASES</a></li>
-                    <li><a href="Peter-Bartsch-Resume.pdf" target="_blank" rel="noopener noreferrer">RESUME</a></li>
+                    <li><a href="resume.php">RESUME</a></li>
                     <li><a href="#contact">CONTACT</a></li>
                 </ul>
             </nav>
@@ -201,7 +201,7 @@
             <ul class="mobile-nav-primary">
                 <li><a href="#about">ABOUT</a></li>
                 <li><a href="#portfolio-carousel">CASES</a></li>
-                <li><a href="Peter-Bartsch-Resume.pdf" target="_blank" rel="noopener noreferrer">RESUME</a></li>
+                <li><a href="resume.php">RESUME</a></li>
                 <li><a href="#contact">CONTACT</a></li>
             </ul>
             <div class="mobile-menu-divider"></div>
@@ -504,7 +504,7 @@
                         <div class="contact-info">
                             <h3 class="phosphor-text">LET'S TALK</h3>
                             <p class="contact-desc">I'm looking for Staff or Principal IC roles where complex systems need clear design leadership. Let's talk.</p>
-                            <a href="Peter-Bartsch-Resume.pdf" target="_blank" rel="noopener noreferrer" class="sidebar-link">Download Resume (PDF)</a>
+                            <a href="resume.php" class="sidebar-link">View Resume</a>
                         </div>
                         <form id="contactForm" class="contact-form">
                             <div class="form-group">
