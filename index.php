@@ -231,25 +231,42 @@
 
             <!-- Hero Section -->
             <section id="hero" class="hero-section">
-                <header id="banner">
-                    <h4 id="name">PRODUCT & UX LEADER</h4>
-                    <h2 id="title" class="phosphor-text">PETER BARTSCH</h2>
-                </header>
-                <p class="hero-tagline">
-                    Enterprise UX leader with 15+ years driving adoption, revenue, and design systems at scale.
-                </p>
+                <div class="hero-layout">
+                    <div class="hero-text">
+                        <h2 id="title" class="phosphor-text">PETER BARTSCH</h2>
+                        <p class="hero-subtitle">Product & UX Leader</p>
+                        <p class="hero-tagline">
+                            Enterprise UX leader with 15+ years driving adoption, revenue, and design systems at scale.
+                        </p>
+                        <div class="hero-metrics">
+                            <div class="hero-metric"><span class="hero-metric-value">500K+</span><span class="hero-metric-label">Users Impacted</span></div>
+                            <div class="hero-metric"><span class="hero-metric-value">$3.8B</span><span class="hero-metric-label">Revenue Enabled</span></div>
+                            <div class="hero-metric"><span class="hero-metric-value">40+</span><span class="hero-metric-label">Teams Supported</span></div>
+                            <div class="hero-metric"><span class="hero-metric-value">15+</span><span class="hero-metric-label">Years Experience</span></div>
+                        </div>
+                    </div>
+                    <div class="hero-portrait">
+                        <picture><source srcset="peterb.webp" type="image/webp"><img src="peterb.png" alt="Peter Bartsch" width="200" height="200" loading="eager" /></picture>
+                    </div>
+                </div>
             </section>
 
             <!-- About Section -->
             <section id="about" class="about-section">
                 <div class="about-inner">
-                    <div class="about-portrait">
-                        <picture><source srcset="peterb.webp" type="image/webp"><img src="peterb.png" alt="Peter Bartsch" width="250" height="250" /></picture>
+                    <div id="player" class="about-photo">
+                        <div class="cover-art">
+                            <div class="hover-text" id="hoverText">click this</div>
+                            <video id="coverVideo" src="take-ride-square-bw.mp4" loop playsinline>
+                                Your browser does not support the video tag.
+                            </video>
+                            <div class="grid-overlay"></div>
+                        </div>
                     </div>
                     <div class="about-content">
                         <h2 class="about-heading phosphor-text">ABOUT</h2>
                         <p class="about-bio">
-                            I'm a product and UX leader who specializes in enterprise-scale design challenges — the kind where adoption isn't optional, stakeholders number in the dozens, and the user base spans half a million people. I've led design orgs through hypergrowth, built design systems adopted across 40+ teams, and consistently turned complex constraints into measurable business outcomes.
+                            I'm a product and UX leader who specializes in enterprise-scale design challenges — the kind where adoption isn't optional, stakeholders number in the dozens, and the user base spans half a million people. I've led design orgs through hypergrowth, built design systems adopted across 40+ teams, and consistently turned complex constraints into measurable business outcomes. I studied humanities and architectural theory at Arizona State University.
                         </p>
                         <div class="about-strengths">
                             <span class="strength-tag">Enterprise Design Systems</span>
@@ -377,26 +394,6 @@
                     </div>
                 </div>
 
-                <!-- Metrics Callouts -->
-                <section class="metrics-section scroll-reveal scroll-reveal-stagger">
-                    <div class="metric-card">
-                        <p class="metric-value">500K+</p>
-                        <p class="metric-label">Users Impacted</p>
-                    </div>
-                    <div class="metric-card">
-                        <p class="metric-value">$3.8B</p>
-                        <p class="metric-label">Revenue Enabled</p>
-                    </div>
-                    <div class="metric-card">
-                        <p class="metric-value">40+</p>
-                        <p class="metric-label">Teams Supported</p>
-                    </div>
-                    <div class="metric-card">
-                        <p class="metric-value">15+</p>
-                        <p class="metric-label">Years Experience</p>
-                    </div>
-                </section>
-
                 <!-- Company Logos -->
                 <section class="company-logos-section scroll-reveal">
                     <h4 class="company-logos-header">Companies I've Designed For</h4>
@@ -409,6 +406,22 @@
                         <img src="img/logos/Gogo-Inc-RGB-RedBlue-WEB1000px 1.png" alt="Gogo" class="company-logo" loading="lazy">
                         <img src="img/logos/here-white-200px.webp" alt="HERE Maps" class="company-logo" loading="lazy">
                         <img src="img/logos/Thios-and-company-badge.png" alt="Thios" class="company-logo" loading="lazy">
+                    </div>
+                </section>
+
+                <!-- Configurator Showcase -->
+                <section class="configurator-showcase scroll-reveal">
+                    <div class="configurator-showcase-inner">
+                        <div class="configurator-preview">
+                            <img src="img/configurator-screenshot.png" alt="Thios 3D Configurator Preview" loading="lazy">
+                            <div class="grid-overlay"></div>
+                        </div>
+                        <div class="configurator-content">
+                            <div class="configurator-badge">Interactive Demo</div>
+                            <h3 class="configurator-title">3D PRODUCT CONFIGURATOR</h3>
+                            <p class="configurator-desc">Design custom modular shelters in real-time. Built solo using AI as technical co-founder—Three.js, React, with AR preview.</p>
+                            <a href="https://thios.co/configurator" target="_blank" rel="noopener noreferrer" class="configurator-cta" data-track="configurator_click">Try the Configurator</a>
+                        </div>
                     </div>
                 </section>
 
@@ -481,48 +494,9 @@
                                 <td>Product Marketing Manager</td>
                                 <td><a href="#" id="openModal6">Nokia (HERE Maps)</a></td>
                             </tr>
-                            <tr>
-                                <td class="year-range">2008-2012</td>
-                                <td>Product Manager</td>
-                                <td><a href="#" id="openModal7">Gogo Inflight Wi-Fi</a></td>
-                            </tr>
-
-                            <tr>
-                                <td class="year-range">2001-2008</td>
-                                <td>Co-Founder</td>
-                                <td><a href="#" id="openModal9">Cognistar</a></td>
-                            </tr>
-
-                            <tr>
-                                <td class="year-range">1989-1993</td>
-                                <td>BA, Humanities & Arch Theory</td>
-                                <td><a href="#" id="openModal13">Arizona State University</a></td>
-                            </tr>
-
-                            <tr>
-                                <td class="year-range">2004-2024</td>
-                                <td>Board Director</td>
-                                <td><a href="#" id="openModal5">How Weird Street Faire</a></td>
-                            </tr>
                         </tbody>
                     </table>
                 </div>
-
-                <!-- Configurator Showcase -->
-                <section class="configurator-showcase scroll-reveal">
-                    <div class="configurator-showcase-inner">
-                        <div class="configurator-preview">
-                            <img src="img/configurator-screenshot.png" alt="Thios 3D Configurator Preview" loading="lazy">
-                            <div class="grid-overlay"></div>
-                        </div>
-                        <div class="configurator-content">
-                            <div class="configurator-badge">Interactive Demo</div>
-                            <h3 class="configurator-title">3D PRODUCT CONFIGURATOR</h3>
-                            <p class="configurator-desc">Design custom modular shelters in real-time. Built solo using AI as technical co-founder—Three.js, React, with AR preview.</p>
-                            <a href="https://thios.co/configurator" target="_blank" rel="noopener noreferrer" class="configurator-cta" data-track="configurator_click">Try the Configurator</a>
-                        </div>
-                    </div>
-                </section>
 
                 <!-- Contact Section -->
                 <section id="contact" class="contact-section">
