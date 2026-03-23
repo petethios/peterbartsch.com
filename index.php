@@ -46,7 +46,7 @@
     <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
     <meta http-equiv="Permissions-Policy" content="geolocation=(), microphone=(), camera=()">
     <meta http-equiv="Content-Security-Policy"
-        content="default-src 'self'; script-src 'self' https://www.googletagmanager.com https://www.google-analytics.com https://www.clarity.ms https://*.clarity.ms; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https: https://*.clarity.ms https://c.bing.com; font-src 'self' https://fonts.gstatic.com; connect-src 'self' https://www.google-analytics.com https://www.clarity.ms https://*.clarity.ms; frame-ancestors 'self'; base-uri 'self'; form-action 'self' mailto:;">
+        content="default-src 'self'; script-src 'self' https://www.googletagmanager.com https://www.google-analytics.com https://www.clarity.ms https://*.clarity.ms; style-src 'self'; img-src 'self' data: https: https://*.clarity.ms https://c.bing.com; font-src 'self'; connect-src 'self' https://www.google-analytics.com https://www.clarity.ms https://*.clarity.ms; frame-ancestors 'self'; base-uri 'self'; form-action 'self' mailto:;">
 
     <!-- Google Analytics 4 -->
     <!-- Note: SRI (Subresource Integrity) not used for GA as Google's CDN doesn't provide integrity hashes.
@@ -60,27 +60,20 @@
     <link rel="preload" href="rombyte.ttf" as="font" type="font/ttf" crossorigin>
 
     <!-- Preconnect to external resources for performance -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Fonts are self-hosted, no preconnect needed -->
     <link rel="preconnect" href="https://www.googletagmanager.com">
     <link rel="preconnect" href="https://www.clarity.ms">
     <link rel="dns-prefetch" href="https://thios.co">
-    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="fonts/space-mono.css">
     <link rel="prefetch" href="ari.ttf" as="font" type="font/ttf" crossorigin>
 
     <link rel="stylesheet" href="styles.css?v=<?php echo filemtime('styles.css'); ?>">
     <link rel="stylesheet" href="themes/theme-switcher.css?v=<?php echo filemtime('themes/theme-switcher.css'); ?>">
 
-    <!-- Theme fonts (lazy-loaded: media="print" until activated by JS) -->
-    <link id="font-90s" rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,400;0,700;1,400&display=swap"
-        media="print">
-    <link id="font-2010s" rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
-        media="print">
-    <link id="font-2026" rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap"
-        media="print">
+    <!-- Theme fonts (lazy-loaded: media="print" until activated by JS) — self-hosted -->
+    <link id="font-90s" rel="stylesheet" href="fonts/comic-neue.css" media="print">
+    <link id="font-2010s" rel="stylesheet" href="fonts/inter.css" media="print">
+    <link id="font-2026" rel="stylesheet" href="fonts/jetbrains-mono.css" media="print">
 
     <!-- FOUC prevention: apply saved theme before first paint -->
     <script src="theme-init.js"></script>
@@ -139,7 +132,7 @@
 <body>
 
     <a href="#about" class="visually-hidden"
-        style="position:absolute;left:-10000px;top:auto;width:1px;height:1px;overflow:hidden;">Skip to main content</a>
+        class="skip-link">Skip to main content</a>
     <!-- Sticky Header Nav -->
     <header id="site-header" role="banner">
         <h1 id="page-title" class="visually-hidden">Peter Bartsch — Curriculum Vitae</h1>
@@ -748,8 +741,8 @@
     <script src="modal-system.js?v=<?php echo filemtime('modal-system.js'); ?>"></script>
     <script src="themes/theme-switcher.js?v=<?php echo filemtime('themes/theme-switcher.js'); ?>"></script>
     <script src="script.js?v=<?php echo filemtime('script.js'); ?>"></script>
-    <footer id="site-footer-final" style="text-align:center; padding:20px 12px 80px;">
-        <p style="margin:0;">© 2026 Peter Bartsch</p>
+    <footer id="site-footer-final">
+        <p>© 2026 Peter Bartsch</p>
     </footer>
 </body>
 
