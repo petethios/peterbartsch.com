@@ -734,3 +734,72 @@
     opacity: 1 !important;
     transform: none !important;
 }
+
+/* ---- Theme Era Bar & Buttons ---- */
+[data-theme="2026"] .theme-era-bar {
+    background: #ffffff !important;
+    background-image: none !important;
+    border-bottom: 1px solid #e5e5e5 !important;
+    animation: none !important;
+}
+
+[data-theme="2026"] .theme-era-btn {
+    font-family: 'JetBrains Mono', 'SF Mono', monospace !important;
+    font-size: 12px;
+    font-weight: 500;
+    color: #999;
+    background: none;
+    border: none;
+    padding: 4px 12px;
+    letter-spacing: 0.02em;
+}
+
+[data-theme="2026"] .theme-era-btn:hover {
+    color: #555;
+}
+
+[data-theme="2026"] .theme-era-btn.active {
+    color: #0066FF;
+    border: 1px solid #0066FF;
+    border-radius: 4px;
+    background-color: rgba(0, 102, 255, 0.04);
+}
+
+/* ---- Terminal cursor blink on hero #name ---- */
+[data-theme="2026"] #name a::after {
+    content: '_';
+    animation: cursorBlink2026 1s step-end infinite;
+    color: #0066FF;
+    margin-left: 2px;
+    font-family: 'JetBrains Mono', monospace;
+}
+
+/* ---- AI-assisted feel: line numbers on about bio ---- */
+[data-theme="2026"] .about-bio {
+    counter-reset: bio-line;
+    padding-left: 40px;
+    position: relative;
+}
+
+[data-theme="2026"] .about-bio p {
+    counter-increment: bio-line;
+    position: relative;
+}
+
+[data-theme="2026"] .about-bio p::before {
+    content: counter(bio-line, decimal-leading-zero);
+    position: absolute;
+    left: -40px;
+    color: #ccc;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    width: 28px;
+    text-align: right;
+    user-select: none;
+}
+
+/* ---- Subtle grid dot pattern on hero section ---- */
+[data-theme="2026"] .hero-section {
+    background-image: radial-gradient(circle, #ddd 1px, transparent 1px);
+    background-size: 24px 24px;
+}

@@ -93,9 +93,15 @@
         // Save
         localStorage.setItem(STORAGE_KEY, themeId);
 
-        // Update dropdown
-        var select = document.getElementById('theme-select');
-        if (select) select.value = themeId;
+        // Update all theme era buttons
+        var btns = document.querySelectorAll('.theme-era-btn');
+        for (var b = 0; b < btns.length; b++) {
+            if (btns[b].getAttribute('data-theme') === themeId) {
+                btns[b].classList.add('active');
+            } else {
+                btns[b].classList.remove('active');
+            }
+        }
 
         // Analytics
         if (typeof gtag === 'function') {
@@ -194,13 +200,14 @@
     // Init
     // ========================================
     function init() {
-        var saved = localStorage.getItem(STORAGE_KEY) || '80s';
+        var saved = localStorage.getItem(STORAGE_KEY) || '2026';
         setTheme(saved);
 
-        var select = document.getElementById('theme-select');
-        if (select) {
-            select.addEventListener('change', function () {
-                setTheme(this.value);
+        // Theme era buttons
+        var btns = document.querySelectorAll('.theme-era-btn');
+        for (var b = 0; b < btns.length; b++) {
+            btns[b].addEventListener('click', function () {
+                setTheme(this.getAttribute('data-theme'));
             });
         }
     }

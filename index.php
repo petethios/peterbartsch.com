@@ -96,11 +96,11 @@
         href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap"
         media="print">
 
-    <!-- FOUC prevention: apply saved theme before first paint -->
+    <!-- FOUC prevention: apply saved theme before first paint (default: 2026) -->
     <script>
         (function() {
-            var saved = localStorage.getItem('pb-theme');
-            if (saved && saved !== '80s') {
+            var saved = localStorage.getItem('pb-theme') || '2026';
+            if (saved !== '80s') {
                 document.documentElement.setAttribute('data-theme', saved);
             }
         })();
@@ -158,13 +158,23 @@
 </head>
 
 <body>
-<?php include 'themes/theme-banner.php'; ?>
 
     <a href="#about" class="visually-hidden"
         style="position:absolute;left:-10000px;top:auto;width:1px;height:1px;overflow:hidden;">Skip to main content</a>
     <!-- Sticky Header Nav -->
     <header id="site-header" role="banner">
         <h1 id="page-title" class="visually-hidden">Peter Bartsch — Curriculum Vitae</h1>
+        <!-- Theme era selector bar -->
+        <div class="theme-era-bar">
+            <span class="theme-era-label">Design era</span>
+            <div class="theme-era-buttons" role="radiogroup" aria-label="Switch design era theme">
+                <button class="theme-era-btn" data-theme="80s" aria-label="1980s Retro Terminal">80s</button>
+                <button class="theme-era-btn" data-theme="90s" aria-label="1990s GeoCities">90s</button>
+                <button class="theme-era-btn" data-theme="2000s" aria-label="2000s Web 2.0">00s</button>
+                <button class="theme-era-btn" data-theme="2010s" aria-label="2010s Corporate Memphis">10s</button>
+                <button class="theme-era-btn active" data-theme="2026" aria-label="2026 Modern AI">2026</button>
+            </div>
+        </div>
         <div class="header-inner">
             <a href="#" class="header-logo" aria-label="Home">
                 <img src="pblogo.svg" alt="PB logo" height="40" />
@@ -174,7 +184,7 @@
                     <li><a href="#about">ABOUT</a></li>
                     <li><a href="#portfolio-carousel">CASES</a></li>
                     <li><a href="Peter-Bartsch-Resume.pdf" target="_blank" rel="noopener noreferrer">RESUME</a></li>
-                    <li><a href="#footer">CONTACT</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
                 </ul>
             </nav>
             <button class="hamburger" id="hamburgerBtn" aria-label="Open menu" aria-expanded="false"
@@ -192,7 +202,7 @@
                 <li><a href="#about">ABOUT</a></li>
                 <li><a href="#portfolio-carousel">CASES</a></li>
                 <li><a href="Peter-Bartsch-Resume.pdf" target="_blank" rel="noopener noreferrer">RESUME</a></li>
-                <li><a href="#footer">CONTACT</a></li>
+                <li><a href="#contact">CONTACT</a></li>
             </ul>
             <div class="mobile-menu-divider"></div>
             <div class="mobile-menu-header">Case Studies</div>
@@ -203,106 +213,56 @@
                 <li><a href="case-studies/fourkites-driver.php">FourKites: Incentive Design</a></li>
                 <li><a href="case-studies/thios.php">Thios: AI as Co-founder</a></li>
             </ul>
+            <div class="mobile-menu-divider"></div>
+            <div class="mobile-menu-header">Design Era</div>
+            <div class="mobile-theme-buttons">
+                <button class="theme-era-btn" data-theme="80s">80s</button>
+                <button class="theme-era-btn" data-theme="90s">90s</button>
+                <button class="theme-era-btn" data-theme="2000s">00s</button>
+                <button class="theme-era-btn" data-theme="2010s">10s</button>
+                <button class="theme-era-btn active" data-theme="2026">2026</button>
+            </div>
         </nav>
     </header>
     <!-- End Sticky Header Nav -->
 
     <div id="frame-container">
         <main id="main" role="main" aria-labelledby="page-title">
-            <!-- Hero intro (shows first on mobile) -->
-            <div id="left-hero" class="left-hero">
+
+            <!-- Hero Section -->
+            <section id="hero" class="hero-section">
                 <header id="banner">
-                    <div style="display: flex; justify-content: space-between; align-items: center;">
-                        <h4 id="name"><a href="https://peterbartsch.com"
-                                style="text-decoration:none; color:inherit;">PRODUCT & UX LEADER</a></h4>
-                    </div>
+                    <h4 id="name">PRODUCT & UX LEADER</h4>
                     <h2 id="title" class="phosphor-text">PETER BARTSCH</h2>
                 </header>
+                <p class="hero-tagline">
+                    Enterprise UX leader with 15+ years driving adoption, revenue, and design systems at scale.
+                </p>
+            </section>
 
-                <div class="sidebar-portrait">
-                    <picture><source srcset="peterb.webp" type="image/webp"><img src="peterb.png" alt="Peter Bartsch" width="250" height="250" /></picture>
+            <!-- About Section -->
+            <section id="about" class="about-section">
+                <div class="about-inner">
+                    <div class="about-portrait">
+                        <picture><source srcset="peterb.webp" type="image/webp"><img src="peterb.png" alt="Peter Bartsch" width="250" height="250" /></picture>
+                    </div>
+                    <div class="about-content">
+                        <h2 class="about-heading phosphor-text">ABOUT</h2>
+                        <p class="about-bio">
+                            I'm a product and UX leader who specializes in enterprise-scale design challenges — the kind where adoption isn't optional, stakeholders number in the dozens, and the user base spans half a million people. I've led design orgs through hypergrowth, built design systems adopted across 40+ teams, and consistently turned complex constraints into measurable business outcomes.
+                        </p>
+                        <div class="about-strengths">
+                            <span class="strength-tag">Enterprise Design Systems</span>
+                            <span class="strength-tag">Cross-Functional Leadership</span>
+                            <span class="strength-tag">Data-Driven UX</span>
+                            <span class="strength-tag">Platform Strategy</span>
+                        </div>
+                    </div>
                 </div>
+            </section>
 
-                <section id="desc-section">
-                    <p class="hero-tagline">
-                        Enterprise UX leader with 15+ years driving adoption, revenue, and design systems at scale.
-                    </p>
-                    <p class="hero-stats">
-                        $3.8B revenue · 500K+ users · 34%→87% adoption
-                    </p>
-                    <!-- Primary CTA -->
-                    <div class="brutalist-cta-container sidebar-cta">
-                        <a href="#portfolio-carousel" class="brutalist-cta">
-                            <span class="brutalist-cta-prompt">></span>
-                            <span class="brutalist-cta-text">VIEW CASE STUDIES</span>
-                        </a>
-                    </div>
-                </section>
-            </div>
-
-            <!-- Sidebar with resume + contact (shows after right panel on mobile) -->
-            <aside id="left" class="left-footer">
-                <!-- Sidebar quick links -->
-                <section id="resume-links">
-                    <div class="sidebar-quick-links">
-                        <a href="Peter-Bartsch-Resume.pdf" target="_blank" rel="noopener noreferrer" class="sidebar-link">Download Resume (PDF)</a>
-                    </div>
-                </section>
-                <section id="footer">
-                    <h4 class="phosphor-text" style="margin-top: 40px;">LET'S TALK</h4>
-                    <!-- Contact form without exposing email in HTML -->
-                    <form id="contactForm" class="contact-form">
-                        <div class="form-group">
-                            <label for="cf-name" class="form-label">NAME</label>
-                            <input id="cf-name" name="name" type="text" required maxlength="100" class="form-input" />
-                        </div>
-                        <div class="form-group">
-                            <label for="cf-email" class="form-label">YOUR EMAIL</label>
-                            <input id="cf-email" name="email" type="email" required maxlength="254"
-                                class="form-input" />
-                        </div>
-                        <div class="form-group">
-                            <label for="cf-message" class="form-label">MESSAGE</label>
-                            <textarea id="cf-message" name="message" rows="5" required maxlength="5000"
-                                class="form-textarea"></textarea>
-                        </div>
-                        <button type="submit" class="button button2 form-submit">SEND MESSAGE</button>
-                        <!-- Obfuscated email holder (reversed strings) -->
-                        <span id="cf-target" data-user-rev="retep" data-domain-rev="moc.hcstrabretep"></span>
-                        <noscript>email me: peter at peterbartsch dot com</noscript>
-                    </form>
-                </section>
-            </aside>
-
-            <section id="right">
-                <!-- About Section -->
-                <section id="about" class="about-section">
-                    <div class="about-inner">
-                        <div id="player" class="about-photo">
-                            <div class="cover-art">
-                                <div class="hover-text" id="hoverText">click this</div>
-                                <video id="coverVideo" src="take-ride-square-bw.mp4" loop playsinline>
-                                    Your browser does not support the video tag.
-                                </video>
-                                <div class="grid-overlay"></div>
-                            </div>
-                        </div>
-                        <div class="about-content">
-                            <h2 class="about-heading phosphor-text">ABOUT</h2>
-                            <p class="about-bio">
-                                I'm a product and UX leader who specializes in enterprise-scale design challenges — the kind where adoption isn't optional, stakeholders number in the dozens, and the user base spans half a million people. I've led design orgs through hypergrowth, built design systems adopted across 40+ teams, and consistently turned complex constraints into measurable business outcomes.
-                            </p>
-                            <div class="about-strengths">
-                                <span class="strength-tag">Enterprise Design Systems</span>
-                                <span class="strength-tag">Cross-Functional Leadership</span>
-                                <span class="strength-tag">Data-Driven UX</span>
-                                <span class="strength-tag">Platform Strategy</span>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-                <div id="portfolio-carousel" class="portfolio-carousel">
+            <!-- Portfolio Carousel -->
+            <div id="portfolio-carousel" class="portfolio-carousel">
                     <div class="portfolio-slides">
                         <!-- 1. Deere Common UX - Flagship: Forced adoption at scale -->
                         <div class="portfolio-slide portfolio-slide-flagship active" data-index="0">
@@ -417,21 +377,6 @@
                     </div>
                 </div>
 
-                <!-- Company Logos -->
-                <section class="company-logos-section scroll-reveal">
-                    <h4 class="company-logos-header">Companies I've Designed For</h4>
-                    <div class="company-logos-grid scroll-reveal-stagger">
-                        <img src="img/logos/John-Deere-Logo 1.png" alt="John Deere" class="company-logo" loading="lazy">
-                        <img src="img/logos/FourKites_Logo_light.png" alt="FourKites" class="company-logo" loading="lazy">
-                        <img src="img/logos/abbvie_logo-white.png" alt="AbbVie" class="company-logo" loading="lazy">
-                        <img src="img/logos/Comerica-new-logo.svg.png" alt="Comerica" class="company-logo" loading="lazy">
-                        <img src="img/logos/maven 1.png" alt="MavenWave" class="company-logo company-logo-sm" loading="lazy">
-                        <img src="img/logos/Gogo-Inc-RGB-RedBlue-WEB1000px 1.png" alt="Gogo" class="company-logo" loading="lazy">
-                        <img src="img/logos/here-white-200px.webp" alt="HERE Maps" class="company-logo" loading="lazy">
-                        <img src="img/logos/Thios-and-company-badge.png" alt="Thios" class="company-logo" loading="lazy">
-                    </div>
-                </section>
-
                 <!-- Metrics Callouts -->
                 <section class="metrics-section scroll-reveal scroll-reveal-stagger">
                     <div class="metric-card">
@@ -452,22 +397,22 @@
                     </div>
                 </section>
 
-                <!-- Configurator Showcase -->
-                <section class="configurator-showcase scroll-reveal">
-                    <div class="configurator-showcase-inner">
-                        <div class="configurator-preview">
-                            <img src="img/configurator-screenshot.png" alt="Thios 3D Configurator Preview" loading="lazy">
-                            <div class="grid-overlay"></div>
-                        </div>
-                        <div class="configurator-content">
-                            <div class="configurator-badge">Interactive Demo</div>
-                            <h3 class="configurator-title">3D PRODUCT CONFIGURATOR</h3>
-                            <p class="configurator-desc">Design custom modular shelters in real-time. Built solo using AI as technical co-founder—Three.js, React, with AR preview.</p>
-                            <a href="https://thios.co/configurator" target="_blank" rel="noopener noreferrer" class="configurator-cta" data-track="configurator_click">Try the Configurator</a>
-                        </div>
+                <!-- Company Logos -->
+                <section class="company-logos-section scroll-reveal">
+                    <h4 class="company-logos-header">Companies I've Designed For</h4>
+                    <div class="company-logos-grid scroll-reveal-stagger">
+                        <img src="img/logos/John-Deere-Logo 1.png" alt="John Deere" class="company-logo" loading="lazy">
+                        <img src="img/logos/FourKites_Logo_light.png" alt="FourKites" class="company-logo" loading="lazy">
+                        <img src="img/logos/abbvie_logo-white.png" alt="AbbVie" class="company-logo" loading="lazy">
+                        <img src="img/logos/Comerica-new-logo.svg.png" alt="Comerica" class="company-logo" loading="lazy">
+                        <img src="img/logos/maven 1.png" alt="MavenWave" class="company-logo company-logo-sm" loading="lazy">
+                        <img src="img/logos/Gogo-Inc-RGB-RedBlue-WEB1000px 1.png" alt="Gogo" class="company-logo" loading="lazy">
+                        <img src="img/logos/here-white-200px.webp" alt="HERE Maps" class="company-logo" loading="lazy">
+                        <img src="img/logos/Thios-and-company-badge.png" alt="Thios" class="company-logo" loading="lazy">
                     </div>
                 </section>
 
+                <!-- Professional Experience -->
                 <div id="songlist">
                     <table id="tracklist">
                         <thead>
@@ -562,10 +507,55 @@
                         </tbody>
                     </table>
                 </div>
-            </section>
+
+                <!-- Configurator Showcase -->
+                <section class="configurator-showcase scroll-reveal">
+                    <div class="configurator-showcase-inner">
+                        <div class="configurator-preview">
+                            <img src="img/configurator-screenshot.png" alt="Thios 3D Configurator Preview" loading="lazy">
+                            <div class="grid-overlay"></div>
+                        </div>
+                        <div class="configurator-content">
+                            <div class="configurator-badge">Interactive Demo</div>
+                            <h3 class="configurator-title">3D PRODUCT CONFIGURATOR</h3>
+                            <p class="configurator-desc">Design custom modular shelters in real-time. Built solo using AI as technical co-founder—Three.js, React, with AR preview.</p>
+                            <a href="https://thios.co/configurator" target="_blank" rel="noopener noreferrer" class="configurator-cta" data-track="configurator_click">Try the Configurator</a>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Contact Section -->
+                <section id="contact" class="contact-section">
+                    <div class="contact-inner">
+                        <div class="contact-info">
+                            <h3 class="phosphor-text">LET'S TALK</h3>
+                            <p class="contact-desc">Interested in working together? Send me a message or grab my resume.</p>
+                            <a href="Peter-Bartsch-Resume.pdf" target="_blank" rel="noopener noreferrer" class="sidebar-link">Download Resume (PDF)</a>
+                        </div>
+                        <form id="contactForm" class="contact-form">
+                            <div class="form-group">
+                                <label for="cf-name" class="form-label">NAME</label>
+                                <input id="cf-name" name="name" type="text" required maxlength="100" class="form-input" />
+                            </div>
+                            <div class="form-group">
+                                <label for="cf-email" class="form-label">YOUR EMAIL</label>
+                                <input id="cf-email" name="email" type="email" required maxlength="254"
+                                    class="form-input" />
+                            </div>
+                            <div class="form-group">
+                                <label for="cf-message" class="form-label">MESSAGE</label>
+                                <textarea id="cf-message" name="message" rows="5" required maxlength="5000"
+                                    class="form-textarea"></textarea>
+                            </div>
+                            <button type="submit" class="button button2 form-submit">SEND MESSAGE</button>
+                            <!-- Obfuscated email holder (reversed strings) -->
+                            <span id="cf-target" data-user-rev="retep" data-domain-rev="moc.hcstrabretep"></span>
+                            <noscript>email me: peter at peterbartsch dot com</noscript>
+                        </form>
+                    </div>
+                </section>
 
         </main>
-
 
     </div>
 

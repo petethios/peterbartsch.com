@@ -601,3 +601,60 @@
     opacity: 1 !important;
     transform: none !important;
 }
+
+/* ---- Theme Era Bar & Buttons ---- */
+[data-theme="90s"] .theme-era-bar {
+    background: #000080 !important;
+    background-image: none !important;
+    border-bottom: 4px solid !important;
+    border-image: linear-gradient(to right, red, orange, yellow, green, cyan, blue, violet) 1 !important;
+    animation: none !important;
+}
+
+[data-theme="90s"] .theme-era-btn {
+    font-family: 'Comic Neue', 'Comic Sans MS', cursive !important;
+    color: #00ffff;
+    background: none;
+    border: none;
+    text-shadow: none;
+}
+
+[data-theme="90s"] .theme-era-btn:hover {
+    color: #00ff00;
+}
+
+[data-theme="90s"] .theme-era-btn.active {
+    color: #ff00ff;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* ---- Rainbow dividers between main sections ---- */
+[data-theme="90s"] #main > * {
+    border-bottom: 4px solid;
+    border-image: linear-gradient(to right, red, orange, yellow, green, cyan, blue, violet) 1;
+    padding-bottom: 24px;
+}
+
+/* ---- "Under Construction" hero stripe ---- */
+[data-theme="90s"] .hero-section {
+    border-bottom: 12px solid transparent;
+    border-image: repeating-linear-gradient(
+        -45deg,
+        #ffcc00 0px,
+        #ffcc00 10px,
+        #000000 10px,
+        #000000 20px
+    ) 12;
+}
+
+/* ---- "Best viewed in Netscape" footer text ---- */
+[data-theme="90s"] #site-footer-final::before {
+    content: '\01F310  Best viewed in Netscape Navigator 4.0 at 800x600';
+    display: block;
+    text-align: center;
+    font-family: 'Courier New', monospace;
+    font-size: 11px;
+    color: #00ffff;
+    margin-bottom: 10px;
+}

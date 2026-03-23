@@ -1,102 +1,6 @@
 /* ========================================
-   Theme Switcher — Sticky Banner
+   Theme Switcher — Supporting Styles
    ======================================== */
-
-:root {
-    --banner-h: 56px;
-}
-
-.theme-switcher-banner {
-    position: sticky;
-    top: 0;
-    z-index: 2001;
-    width: 100%;
-    background: #111;
-    border-bottom: 1px solid #2a2a2a;
-    padding: 0;
-    box-sizing: border-box;
-    height: var(--banner-h);
-    user-select: none;
-    -webkit-user-select: none;
-}
-
-.theme-switcher-inner {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    padding: 0 20px;
-    gap: 16px;
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-/* ========================================
-   Label — "View my resume across design eras"
-   ======================================== */
-.banner-label {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
-    font-size: 15px;
-    font-weight: 400;
-    color: #999;
-    white-space: nowrap;
-    cursor: pointer;
-    letter-spacing: 0.2px;
-}
-
-/* ========================================
-   Select wrapper + dropdown
-   ======================================== */
-.banner-select-wrap {
-    position: relative;
-    flex-shrink: 0;
-}
-
-.theme-select {
-    appearance: none;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    background: #1a1a1a;
-    color: #e0e0e0;
-    border: 1px solid #333;
-    border-radius: 6px;
-    padding: 10px 36px 10px 16px;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
-    font-size: 15px;
-    font-weight: 500;
-    cursor: pointer;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6' viewBox='0 0 10 6'%3E%3Cpath d='M1 1l4 4 4-4' stroke='%23888' stroke-width='1.2' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
-    background-repeat: no-repeat;
-    background-position: right 12px center;
-    background-size: 10px 6px;
-    min-width: 0;
-    text-align: left;
-    outline: none;
-    transition: border-color 0.2s ease, box-shadow 0.2s ease;
-}
-
-.theme-select:hover {
-    border-color: #555;
-}
-
-.theme-select:focus {
-    outline: none;
-    border-color: #86d8dd;
-    box-shadow: 0 0 0 2px rgba(134, 216, 221, 0.2);
-}
-
-.theme-select option {
-    background: #1a1a1a;
-    color: #e0e0e0;
-    padding: 8px;
-}
-
-/* ========================================
-   Sticky header offset
-   ======================================== */
-#site-header {
-    top: var(--banner-h) !important;
-}
 
 /* 90s Stars Canvas */
 #geocities-stars {
@@ -126,45 +30,10 @@
 }
 
 /* ========================================
-   Mobile responsive
-   ======================================== */
-@media (max-width: 600px) {
-    :root {
-        --banner-h: 44px;
-    }
-
-    .theme-switcher-inner {
-        padding: 0 14px;
-        gap: 8px;
-    }
-
-    .banner-label {
-        font-size: 11px;
-        white-space: normal;
-        line-height: 1.2;
-    }
-
-    .theme-select {
-        font-size: 12px;
-        padding: 6px 28px 6px 10px;
-    }
-}
-
-@media (max-width: 380px) {
-    .banner-label {
-        display: none;
-    }
-}
-
-/* ========================================
-   Print: hide banner
+   Print: hide theme controls
    ======================================== */
 @media print {
-    .theme-switcher-banner {
+    .theme-era-bar {
         display: none !important;
-    }
-
-    #site-header {
-        top: 0 !important;
     }
 }

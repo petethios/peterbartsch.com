@@ -145,18 +145,22 @@
             text-decoration-color: var(--color-white);
         }
 
-        /* Section spacing — generous whitespace between major blocks */
-        #right > * {
-            margin-bottom: var(--section-gap);
+        /* Section spacing — handled by #main > * rule */
+
+        /* About portrait */
+        .about-portrait {
+            flex: 0 0 200px;
+            width: 200px;
+            height: 200px;
+            overflow: hidden;
+            border: 2px solid rgba(134, 216, 221, 0.3);
         }
 
-        #right > *:last-child {
-            margin-bottom: 0;
-        }
-
-        /* Player section needs less bottom margin since it flows into carousel */
-        #player {
-            margin-bottom: var(--space-xl) !important;
+        .about-portrait img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
         }
 
         .cta-section {
@@ -291,7 +295,7 @@
             overflow-x: hidden;
         }
 
-        /* Full-page inset rounded border overlay */
+        /* Full-page inset border overlay — 80s theme only */
         body::before {
             content: "";
             position: fixed;
@@ -299,11 +303,19 @@
             right: 0;
             bottom: 0;
             left: 0;
-            border-radius: var(--border-radius-lg);
+            border-radius: 0;
             border: 10px solid var(--color-black);
             box-shadow: inset 0 0 0 2px var(--color-black), inset 0 0 24px rgba(0, 0, 0, 0.8);
             pointer-events: none;
             z-index: 2;
+        }
+
+        /* Hide border overlay on non-80s themes */
+        html[data-theme="90s"] body::before,
+        html[data-theme="2000s"] body::before,
+        html[data-theme="2010s"] body::before,
+        html[data-theme="2026"] body::before {
+            display: none !important;
         }
 
         /* Typography */
@@ -371,6 +383,78 @@
             padding-bottom: calc(16px + constant(safe-area-inset-bottom));
         }
 
+        /* Theme Era Selector Bar */
+        .theme-era-bar {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            padding: 6px 16px;
+            background: rgba(255, 255, 255, 0.05);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+        }
+
+        .theme-era-label {
+            font-family: var(--font-display);
+            font-size: 10px;
+            letter-spacing: 2px;
+            color: var(--color-text-subtle);
+            text-transform: uppercase;
+            white-space: nowrap;
+        }
+
+        .theme-era-buttons {
+            display: flex;
+            gap: 2px;
+        }
+
+        .theme-era-btn {
+            font-family: var(--font-display);
+            font-size: 11px;
+            letter-spacing: 1px;
+            color: var(--color-text-muted);
+            background: transparent;
+            border: 1px solid transparent;
+            padding: 4px 10px;
+            cursor: pointer;
+            transition: all var(--transition-fast);
+            white-space: nowrap;
+        }
+
+        .theme-era-btn:hover {
+            color: var(--color-primary);
+            border-color: rgba(134, 216, 221, 0.3);
+        }
+
+        .theme-era-btn.active {
+            color: var(--color-primary);
+            border-color: var(--color-primary);
+            background: rgba(134, 216, 221, 0.1);
+        }
+
+        /* Mobile theme buttons */
+        .mobile-theme-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+            padding: var(--space-sm) var(--space-lg);
+        }
+
+        .mobile-theme-buttons .theme-era-btn {
+            font-size: 13px;
+            padding: 8px 14px;
+            border: 1px solid rgba(255, 255, 255, 0.15);
+        }
+
+        @media (max-width: 600px) {
+            .theme-era-label {
+                display: none;
+            }
+            .theme-era-bar {
+                justify-content: center;
+            }
+        }
+
         /* Extra bottom clearance for iOS Safari bottom toolbar on small screens */
         @supports (-webkit-touch-callout: none) {
             @media (max-width: 600px) {
@@ -416,44 +500,75 @@
 
         #main {
             background: none;
-            display: grid;
-            grid-template-columns: minmax(0, 400px) 1fr;
-            grid-template-rows: auto 1fr;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
             width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
             box-sizing: border-box;
             min-height: 100dvh;
-            padding-bottom: calc(24px + env(safe-area-inset-bottom));
+            padding: var(--space-xl) var(--space-xl) calc(24px + env(safe-area-inset-bottom));
             padding-bottom: calc(24px + constant(safe-area-inset-bottom));
         }
 
-        /* Left Hero (intro section) — top of left column */
-        .left-hero {
-            grid-column: 1;
-            grid-row: 1;
-            padding: 2rem;
-            box-sizing: border-box;
+        /* All direct children of main are full-width within the container */
+        #main > * {
+            width: 100%;
+            margin-bottom: var(--section-gap);
         }
 
-        /* Left Panel Footer (resume + contact) — bottom of left column */
-        #left {
-            grid-column: 1;
-            grid-row: 2;
-            padding: 0 2rem 2rem;
-            box-sizing: border-box;
+        #main > *:last-child {
+            margin-bottom: 0;
         }
 
+        /* Hero Section */
+        .hero-section {
+            padding: var(--space-3xl) 0 var(--space-xl) 0;
+        }
 
+        /* Contact Section */
+        .contact-section {
+            padding: var(--space-xl) 0;
+        }
 
-        /* Right Panel Styles */
-        #right {
-            grid-column: 2;
-            grid-row: 1 / -1;
-            gap: 0;
-            padding: var(--space-xl) 70px var(--space-xl) 70px;
-            min-height: 100%;
-            box-sizing: border-box;
+        .contact-inner {
             display: flex;
-            flex-direction: column;
+            gap: var(--space-xl);
+            align-items: flex-start;
+        }
+
+        .contact-info {
+            flex: 0 0 280px;
+        }
+
+        .contact-info h3 {
+            font-family: var(--font-display);
+            font-size: 18px;
+            margin: 0 0 var(--space-md) 0;
+        }
+
+        .contact-desc {
+            font-family: var(--font-readable);
+            font-size: 15px;
+            color: var(--color-text-muted);
+            line-height: 1.5;
+            margin: 0 0 var(--space-lg) 0;
+        }
+
+        .contact-form {
+            flex: 1;
+        }
+
+        @media (max-width: 768px) {
+            .contact-inner {
+                flex-direction: column;
+            }
+
+            .contact-info {
+                flex: none;
+                width: 100%;
+            }
         }
 
         /* Header Elements */
@@ -772,74 +887,21 @@
         }
 
         @media (max-width: 1100px) {
-            /* Stop centering entire page so mobile intro can appear above */
             body {
                 display: block;
             }
-
 
             #title {
                 font-size: 25px;
             }
 
             #main {
-                display: flex;
-                flex-direction: column;
-                height: fit-content;
-                box-sizing: border-box;
+                padding: var(--space-lg) 1.25rem;
             }
 
-            /* Mobile order: hero intro → right panel → sidebar footer */
-            .left-hero {
-                order: 1;
-                width: 100%;
-                max-width: 100%;
-                padding: 1.25rem;
-            }
-
-            #right {
-                order: 2;
-                padding-left: 1.25rem;
-                padding-right: 1.25rem;
-                margin-top: 0;
-            }
-
-            #right > * {
+            #main > * {
                 margin-bottom: var(--space-2xl);
             }
-
-            #left {
-                order: 3;
-                width: 100%;
-                max-width: 100%;
-                padding: 0 1.25rem 1.25rem;
-            }
-
-            /* Smaller screens keep reasonable padding */
-            @media (max-width: 480px) {
-                .left-hero {
-                    padding-left: 1rem !important;
-                    padding-right: 1rem !important;
-                }
-
-                #right {
-                    padding-left: 1rem !important;
-                    padding-right: 1rem !important;
-                }
-
-                #left {
-                    padding-left: 1rem !important;
-                    padding-right: 1rem !important;
-                }
-            }
-
-            /* Match padding on player and tracklist */
-            #player {
-                padding-left: 0;
-                padding-right: 0;
-                margin-top: 0;
-            }
-
 
             #songlist,
             #tracklist {
@@ -868,35 +930,14 @@
                 padding: 6px 4px;
             }
 
-
-
-
             tr td:first-child {
                 min-width: 75px;
-            }
-
-            #left {
-                width: 100%;
-                max-width: 100%;
-                padding: 1rem;
-                height: auto;
-                overflow-y: visible;
-                margin-bottom: 20px;
-                box-sizing: border-box;
             }
 
             #frame-container {
                 height: auto;
                 min-height: 100vh;
                 overflow: visible;
-            }
-
-            #main {
-                flex-direction: column;
-                height: auto;
-                min-height: auto;
-                overflow: visible;
-                padding-bottom: 20px;
             }
 
             body {
@@ -912,61 +953,17 @@
                 margin-top: 0px;
             }
 
-            /* Center utility sections on mobile */
-            #left {
-                display: flex;
-                flex-direction: column;
-                align-items: flex-start;
-                padding-left: 1.5rem;
-                padding-right: 1rem;
-            }
-
-            #resume-links,
-            #tools-section,
-            #footer {
-                width: 100%;
-                margin: 0;
-                text-align: left;
-            }
-
-            #resume-links p {
-                width: 100%;
-                box-sizing: border-box;
-            }
-
-            #resume-links .button {
-                width: 100%;
-                margin: 20px 6px;
-                justify-content: flex-start;
-            }
-
-            #resume-links .pdf-icon {
-                margin-right: 8px;
-            }
-
-            #tools-section h4 {
-                margin: 12px 0;
-            }
-
-            #tools-section ul {
-                list-style-position: inside;
-                padding-left: 0;
-                margin: 0;
-                text-align: left;
-            }
-
-            #footer h4 {
-                margin: 12px 0;
-                text-align: left;
-            }
-
-            #footer p {
-                text-align: left;
-            }
-
             #contactForm {
                 width: 100% !important;
                 box-sizing: border-box;
+            }
+
+            /* Smaller screens keep reasonable padding */
+            @media (max-width: 480px) {
+                #main {
+                    padding-left: 1rem;
+                    padding-right: 1rem;
+                }
             }
         }
 
@@ -1132,28 +1129,14 @@
             opacity: 1;
         }
 
-        /* On mobile, keep left sidebar hero visible */
-        @media (max-width: 1100px) {
-            #left #banner,
-            #left #desc-section {
-                display: block !important;
-            }
-        }
+        /* Legacy sidebar rules removed — single-column layout */
 
         /* Sticky Header */
         #site-header {
             position: sticky;
             top: 0;
             z-index: var(--z-header);
-            background-color: var(--color-black);
-            /* Worn black plastic effect: subtle highlight + vertical sheen + fine texture */
-            background-image:
-                radial-gradient(120% 50% at 50% 0%, rgba(255, 255, 255, 0.08), rgba(0, 0, 0, 0) 60%),
-                linear-gradient(180deg, rgba(255, 255, 255, 0.06) 0%, rgba(0, 0, 0, 0.0) 40%, rgba(0, 0, 0, 0.15) 100%),
-                url('grid-inverted.png');
-            background-size: 100% 100%, 100% 100%, 40px 40px;
-            background-repeat: no-repeat, no-repeat, repeat;
-            background-blend-mode: screen, normal, multiply;
+            background: var(--color-black);
             border-bottom: 1px solid rgba(255, 255, 255, 0.10);
         }
 
@@ -1519,11 +1502,6 @@
 
         /* Final strongest mobile overrides */
         @media (max-width: 480px) {
-
-            #right {
-                padding-left: 1rem !important;
-                padding-right: 1rem !important;
-            }
 
             #tracklist th,
             #tracklist td {
@@ -2863,9 +2841,10 @@ textarea:focus-visible {
         text-align: left;
     }
 
-    /* Hide video on mobile — portrait already shown in hero */
-    .about-photo {
-        display: none;
+    .about-portrait {
+        width: 120px;
+        height: 120px;
+        flex: 0 0 120px;
     }
 
     .about-bio {
@@ -2881,6 +2860,57 @@ textarea:focus-visible {
     .about-section {
         padding: var(--space-md) 0;
     }
+
+    .hero-section {
+        padding: var(--space-xl) 0 var(--space-lg) 0;
+    }
+}
+
+/* ========================================
+   Theme Era Bar & Buttons (80s Base / Default)
+   Dark green-on-black terminal aesthetic
+   ======================================== */
+
+/* Scanline keyframe for 80s era bar */
+@keyframes eraBarScanline {
+    0% { background-position: 0 0; }
+    100% { background-position: 0 4px; }
+}
+
+.theme-era-bar {
+    background-color: #0a0a0a;
+    border-bottom: 1px solid #003300;
+    background-image: repeating-linear-gradient(
+        0deg,
+        transparent,
+        transparent 2px,
+        rgba(0, 255, 0, 0.03) 2px,
+        rgba(0, 255, 0, 0.03) 4px
+    );
+    animation: eraBarScanline 0.3s linear infinite;
+}
+
+.theme-era-btn {
+    font-family: 'Rombyte', 'Courier New', monospace !important;
+    font-size: 12px;
+    color: #00aa00;
+    background: none;
+    border: none;
+    text-shadow: 0 0 4px rgba(0, 170, 0, 0.4);
+    padding: 4px 12px;
+    cursor: pointer;
+    transition: color 0.15s, text-shadow 0.15s;
+}
+
+.theme-era-btn:hover {
+    color: #00ff00;
+    text-shadow: 0 0 8px rgba(0, 255, 0, 0.6);
+}
+
+.theme-era-btn.active {
+    color: #00ff00;
+    text-shadow: 0 0 12px rgba(0, 255, 0, 0.8), 0 0 24px rgba(0, 255, 0, 0.4);
+    font-weight: bold;
 }
 
 /* ========================================
@@ -2927,22 +2957,11 @@ textarea:focus-visible {
     #frame-container,
     #main {
         display: block !important;
-    }
-
-    #left {
-        display: block !important;
-        width: 100% !important;
         max-width: 100% !important;
         padding: 0 !important;
     }
 
-    #right {
-        display: block !important;
-        padding: 0 !important;
-        gap: 0 !important;
-    }
-
-    #right > * {
+    #main > * {
         margin-bottom: 16pt !important;
     }
 
