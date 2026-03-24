@@ -8,8 +8,8 @@ const portfolioData = [
         company: "Thios",
         role: "Founder & Lead Designer",
         dates: "Aug 2024 - Present",
-        problem: "Can AI compress the timeline from idea to market for a solo founder shipping physical products?",
-        description: "Testing whether experienced generalists can operate across traditional role boundaries with AI partnership—shipping products that traditionally require full teams.",
+        problem: "Between enterprise roles, I tested whether AI could serve as a technical force multiplier — allowing one experienced designer to ship brand, web, 3D, and physical products at startup velocity.",
+        description: "Side project proving technical range and AI-augmented design workflows. Not a startup — a capability demonstration.",
         bullets: [
             "Complete product ecosystem in 18 months: brand, 3 websites, 5 CAD shelter variants, physical prototype, handbook generating revenue",
             "AI as technical co-founder: 70% faster prototyping cycles through conversational development",
@@ -24,7 +24,7 @@ const portfolioData = [
         role: "Senior Lead UX; Digital Customer Experience",
         dates: "Aug 2020 - Jul 2024",
         problem: "Force platform-wide data adoption across 500K+ users (farmers without email to autonomous-tractor operators) without destroying trust—enabling $3.8B subscription revenue.",
-        description: "Embedded with product teams to modernize 20-year-old systems. Proving enterprise design can move fast when you have the right frameworks.",
+        description: "Led design strategy across a $38B enterprise's digital customer experience. Operated as senior IC driving cross-org alignment, design system governance, and adoption at 500K+ user scale.",
         bullets: [
             "Profile completion: 34% → 87% in 6 months through multi-channel forced adoption strategy",
             "Unified navigation framework deployed across 8 product lines (web, mobile, embedded)—single customer view",
@@ -40,7 +40,7 @@ const portfolioData = [
         role: "Lead UX / Manager",
         dates: "Jan 2017 - Jan 2020",
         problem: "Make customers trust real-time tracking when underlying data is uncertain, incomplete, or conflicting. Reconcile competing incentives between drivers, shippers, and brokers.",
-        description: "Employee #28 during hypergrowth ($3M to $100M ARR). Built design function from scratch—founding designer to 10-person global team.",
+        description: "Founding designer through hypergrowth ($3M→$100M ARR). Built and scaled the design org from 1→10 across US and India. Company acquired for $1.2B in 2022.",
         bullets: [
             "'Never hide uncertainty'—design principle that became foundation for enterprise trust",
             "Predictive analytics 6-12 hours ahead of competitors; 41% customer retention increase",

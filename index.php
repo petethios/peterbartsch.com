@@ -8,31 +8,31 @@
     <link rel="icon" type="image/svg+xml" href="pblogo.svg">
     <link rel="apple-touch-icon" href="pblogo.png">
     <meta name="description"
-        content="Enterprise UX & Product Leader. Enabled $3.8B revenue, drove 34%→87% platform adoption across 500K+ users, scaled design org 1→10. Portfolio and case studies.">
+        content="Staff Product Designer. $3.8B revenue enabled at John Deere. Design org scaled 1→10 at FourKites ($1.2B exit). 500K+ users, 40+ teams, 15 years shipping enterprise systems.">
     <meta name="keywords"
-        content="Peter Bartsch, UX leader, product design, user experience, portfolio, resume, product manager">
+        content="Peter Bartsch, staff product designer, enterprise design systems, UX leader, design org leadership, portfolio">
     <meta name="author" content="Peter Bartsch">
     <link rel="canonical" href="https://peterbartsch.com/">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://peterbartsch.com/">
-    <meta property="og:title" content="Peter Bartsch - Product and UX Leader">
+    <meta property="og:title" content="Peter Bartsch — Staff Product Designer">
     <meta property="og:description"
-        content="Enterprise UX & Product Leader. Enabled $3.8B revenue, drove 34%→87% platform adoption across 500K+ users, scaled design org 1→10.">
+        content="Staff Product Designer. $3.8B revenue enabled. 500K+ users shipped to. Design org built 1→10. Enterprise systems that actually get adopted.">
     <meta property="og:site_name" content="Peter Bartsch">
     <meta property="og:image" content="https://peterbartsch.com/og-image.png">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
-    <meta property="og:image:alt" content="Peter Bartsch - Product & UX Leader | $3.8B Revenue Enabled | 500K+ Users">
+    <meta property="og:image:alt" content="Peter Bartsch — Staff Product Designer | $3.8B Revenue Enabled | 500K+ Users">
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Peter Bartsch - Product and UX Leader">
+    <meta name="twitter:title" content="Peter Bartsch — Staff Product Designer">
     <meta name="twitter:description"
-        content="Enterprise UX & Product Leader. Enabled $3.8B revenue, drove 34%→87% platform adoption across 500K+ users, scaled design org 1→10.">
+        content="Staff Product Designer. $3.8B revenue enabled. 500K+ users shipped to. Design org built 1→10. Enterprise systems that actually get adopted.">
     <meta name="twitter:image" content="https://peterbartsch.com/og-image.png">
-    <meta name="twitter:image:alt" content="Peter Bartsch - Product Designer with 15+ years experience">
+    <meta name="twitter:image:alt" content="Peter Bartsch — Staff Product Designer | Enterprise Systems & Design Orgs">
 
     <meta name="theme-color" content="#2f4f50">
     <meta name="theme-color" content="#2f4f50" media="(prefers-color-scheme: light)">
@@ -54,7 +54,7 @@
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-QB3EL923YF"></script>
     <script src="analytics.js"></script>
 
-    <title>Peter Bartsch - Product and UX Leader | Portfolio & Resume</title>
+    <title>Peter Bartsch — Staff Product Designer | Enterprise Systems & Design Orgs</title>
 
     <!-- Font Preloads -->
     <link rel="preload" href="rombyte.ttf" as="font" type="font/ttf" crossorigin>
@@ -84,25 +84,25 @@
       "@context": "https://schema.org",
       "@type": "Person",
       "name": "Peter Bartsch",
-      "jobTitle": "Product and UX Leader",
+      "jobTitle": "Staff Product Designer",
       "url": "https://peterbartsch.com",
       "sameAs": [
         "https://linkedin.com/in/peterbartsch"
       ],
-      "description": "Enterprise UX & Product Leader. Enabled $3.8B revenue, drove 34%→87% platform adoption across 500K+ users, scaled design org 1→10.",
+      "description": "Staff Product Designer. $3.8B revenue enabled at John Deere. Design org scaled 1→10 at FourKites ($1.2B exit). 500K+ users across enterprise systems.",
       "knowsAbout": ["User Experience Design", "Product Management", "Design Systems", "Enterprise Software", "Data Visualization", "Figma", "Prototyping"],
       "email": "peter@peterbartsch.com",
       "hasOccupation": [
         {
           "@type": "Occupation",
-          "name": "Founder & Lead Designer",
+          "name": "Staff Product Designer",
           "occupationLocation": { "@type": "City", "name": "Chicago" },
-          "description": "AI as technical co-founder. Complete product ecosystem in 18 months."
+          "description": "Enterprise design systems, complex adoption problems, design org leadership"
         }
       ],
       "worksFor": {
         "@type": "Organization",
-        "name": "Thios + Co"
+        "name": "Open to opportunities"
       },
       "alumniOf": [
         {
@@ -135,7 +135,7 @@
         class="skip-link">Skip to main content</a>
     <!-- Sticky Header Nav -->
     <header id="site-header" role="banner">
-        <h1 id="page-title" class="visually-hidden">Peter Bartsch — Curriculum Vitae</h1>
+        <h1 id="page-title" class="visually-hidden">Peter Bartsch — Staff Product Designer Portfolio</h1>
         <!-- Theme era selector bar -->
         <div class="theme-era-bar">
             <span class="theme-era-label">Design era</span>
@@ -206,15 +206,15 @@
                 <div class="hero-layout">
                     <div class="hero-text">
                         <h2 id="title" class="phosphor-text">PETER BARTSCH</h2>
-                        <p class="hero-subtitle">Staff Product Designer</p>
+                        <p class="hero-subtitle">STAFF PRODUCT DESIGNER — ENTERPRISE SYSTEMS & DESIGN ORGS</p>
                         <p class="hero-tagline">
-                            I design enterprise systems that 500K+ people actually use — then build the design orgs that scale them.
+                            Your hardest adoption problem is my best work. I've driven 500K users through forced platform migrations, unified 47 product lines into one system, and built the design orgs that ship at that scale.
                         </p>
                         <div class="hero-metrics">
-                            <div class="hero-metric"><span class="hero-metric-value">500K+</span><span class="hero-metric-label">Users Shipped To</span></div>
+                            <div class="hero-metric"><span class="hero-metric-value">500K+</span><span class="hero-metric-label">Users Through Forced Adoption</span></div>
                             <div class="hero-metric"><span class="hero-metric-value">$3.8B</span><span class="hero-metric-label">Revenue Unlocked</span></div>
-                            <div class="hero-metric"><span class="hero-metric-value">40+</span><span class="hero-metric-label">Teams Adopted System</span></div>
-                            <div class="hero-metric"><span class="hero-metric-value">15+</span><span class="hero-metric-label">Years Enterprise UX</span></div>
+                            <div class="hero-metric"><span class="hero-metric-value">40+</span><span class="hero-metric-label">Teams Using My Design System</span></div>
+                            <div class="hero-metric"><span class="hero-metric-value">15+</span><span class="hero-metric-label">Years in Enterprise</span></div>
                         </div>
                     </div>
                     <div class="hero-portrait">
@@ -236,15 +236,18 @@
                         </div>
                     </div>
                     <div class="about-content">
-                        <h2 class="about-heading phosphor-text">ABOUT</h2>
+                        <h2 class="about-heading phosphor-text">WHAT I DO</h2>
                         <p class="about-bio">
-                            I solve the design problems most designers avoid: forced adoption across 500K users, unifying 47 product lines into one system, making enterprise customers trust data they didn't believe. I've taken design orgs from 1 to 10, shipped systems adopted by 40+ teams globally, and consistently turned "this can't be done" constraints into measurable business outcomes — including $3.8B in enabled revenue at John Deere and a $1.2B exit at FourKites.
+                            I take the design problems that stall enterprises — forced adoption, platform fragmentation, trust in uncertain data — and turn them into measurable outcomes. At John Deere, that meant $3.8B in enabled revenue and a design system used by 40+ teams. At FourKites, it meant building the design org from zero and contributing to a $1.2B exit.
+                        </p>
+                        <p class="about-bio">
+                            I operate at Staff/Principal level: setting design direction across product lines, building and scaling teams, and shipping systems complex enough that most designers avoid them.
                         </p>
                         <div class="about-strengths">
-                            <span class="strength-tag">Design Systems at Scale</span>
-                            <span class="strength-tag">Org Building (1→10)</span>
-                            <span class="strength-tag">Adoption & Retention Design</span>
-                            <span class="strength-tag">Complex Systems / 0→1</span>
+                            <span class="strength-tag">Enterprise Design Systems</span>
+                            <span class="strength-tag">Design Org Leadership (1→10)</span>
+                            <span class="strength-tag">Forced Adoption & Retention</span>
+                            <span class="strength-tag">0→1 in Complex Domains</span>
                         </div>
                     </div>
                 </div>
@@ -348,12 +351,12 @@
                                 <div class="grid-overlay"></div>
                             </div>
                             <div class="slide-content">
-                                <p class="slide-label">CAPABILITY DEMO</p>
-                                <h3 class="project-title">0→1: SHIPPING SOLO WITH AI</h3>
+                                <p class="slide-label">SIDE PROJECT — TECHNICAL RANGE</p>
+                                <h3 class="project-title">THIOS: FULL-STACK DESIGN, AI-AUGMENTED</h3>
                                 <div class="project-structure">
-                                    <p class="structure-item"><span class="structure-label">Challenge:</span> Can a senior designer ship an entire product ecosystem — brand, web, physical products — solo?</p>
-                                    <p class="structure-item"><span class="structure-label">Approach:</span> I used AI as a technical co-founder to handle code, CAD, and brand design</p>
-                                    <p class="structure-item"><span class="structure-label">Result:</span> Full product ecosystem in 18 months — 3 sites, 5 product variants, revenue</p>
+                                    <p class="structure-item"><span class="structure-label">Challenge:</span> Between roles, I tested a hypothesis: can an experienced designer use AI to ship brand, web, 3D, and physical products at solo-founder velocity?</p>
+                                    <p class="structure-item"><span class="structure-label">Approach:</span> Used AI as a technical force multiplier — code, CAD, brand assets — to ship a complete product ecosystem</p>
+                                    <p class="structure-item"><span class="structure-label">Result:</span> Brand + 3 websites + 5 product variants + revenue in 18 months. Proof that I build, not just design.</p>
                                 </div>
                                 <a href="case-studies/thios.php" class="project-link brutalist-link">VIEW CASE STUDY →</a>
                                 <div class="portfolio-nav">
@@ -389,9 +392,9 @@
                             <div class="grid-overlay"></div>
                         </div>
                         <div class="configurator-content">
-                            <div class="configurator-badge">Technical Capability</div>
-                            <h3 class="configurator-title">BUILT THIS SOLO — THREE.JS, REACT, AR</h3>
-                            <p class="configurator-desc">Real-time 3D product configurator with AR preview. Proof that design leaders who code ship differently.</p>
+                            <div class="configurator-badge">Technical Depth</div>
+                            <h3 class="configurator-title">I CODE TOO — THREE.JS, REACT, AR</h3>
+                            <p class="configurator-desc">Built a real-time 3D product configurator with AR preview as a side project. Staff designers who can prototype in code close the gap between vision and shipping.</p>
                             <a href="https://thios.co/configurator" target="_blank" rel="noopener noreferrer" class="configurator-cta" data-track="configurator_click">Try the Configurator</a>
                         </div>
                     </div>
@@ -407,22 +410,6 @@
                         </thead>
                         <tbody>
 
-                            <tr class="featured-role">
-                                <td class="year-range">2024-Pres</td>
-                                <td>Founder & Lead Designer</td>
-                                <td><a href="#" id="openModal1">Thios + Co</a></td>
-                            </tr>
-                            <tr class="role-details">
-                                <td></td>
-                                <td colspan="2">
-                                    <ul class="inline-bullets">
-                                        <li><strong>Problem:</strong> Test: Can a senior designer ship brand, web, and physical products solo using AI?</li>
-                                        <li><strong>Result:</strong> Full product ecosystem in 18 months — 3 sites, 5 CAD variants, generating revenue</li>
-                                        <li><strong>Approach:</strong> AI as technical co-founder; 70% faster prototyping cycles</li>
-                                    </ul>
-                                    <a href="case-studies/thios.php" class="view-more">View Case Study →</a>
-                                </td>
-                            </tr>
                             <tr class="featured-role">
                                 <td class="year-range">2020-2024</td>
                                 <td>Senior Lead UX; Digital Customer Experience</td>
@@ -466,6 +453,22 @@
                                 <td>Product Marketing Manager</td>
                                 <td><a href="#" id="openModal6">Nokia (HERE Maps)</a></td>
                             </tr>
+                            <tr>
+                                <td class="year-range">2024-Pres</td>
+                                <td>Designer & Founder (Side Project)</td>
+                                <td><a href="#" id="openModal1">Thios + Co</a></td>
+                            </tr>
+                            <tr class="role-details">
+                                <td></td>
+                                <td colspan="2">
+                                    <ul class="inline-bullets">
+                                        <li><strong>Problem:</strong> Between-roles project: shipped a full product ecosystem solo with AI</li>
+                                        <li><strong>Result:</strong> Brand + 3 websites + 5 product variants + revenue in 18 months</li>
+                                        <li><strong>Approach:</strong> AI as technical force multiplier; side project proving technical range</li>
+                                    </ul>
+                                    <a href="case-studies/thios.php" class="view-more">View Case Study →</a>
+                                </td>
+                            </tr>
                         </tbody>
                     </table>
                 </div>
@@ -475,7 +478,7 @@
                     <div class="contact-inner">
                         <div class="contact-info">
                             <h3 class="phosphor-text">LET'S TALK</h3>
-                            <p class="contact-desc">I'm looking for Staff or Principal IC roles where complex systems need clear design leadership. Let's talk.</p>
+                            <p class="contact-desc">I'm looking for Staff or Principal IC roles in enterprise product design — the kind where adoption is hard, systems are complex, and design needs to operate at org level. Based in Chicago, open to remote.</p>
                             <a href="resume.php" class="sidebar-link">View Resume</a>
                         </div>
                         <form id="contactForm" class="contact-form">

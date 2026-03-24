@@ -223,7 +223,7 @@
         <header class="resume-header">
             <h1 class="resume-name">Peter Bartsch</h1>
             <p class="resume-title">Staff Product Designer</p>
-            <p class="resume-summary">I design enterprise systems that 500K+ people actually use — then build the design orgs that scale them. 15+ years shipping 0→1 products and scaling design systems, from solo founder to employee #28 at a $1.2B-exit startup to senior IC at a $38B enterprise.</p>
+            <p class="resume-summary">Staff Product Designer with 15+ years shipping enterprise systems at scale. Senior IC at a $38B company (John Deere), founding designer at a $1.2B-exit startup (FourKites), and consultant to Fortune 500 clients (AbbVie, OptumRx). I build the systems that get adopted and the teams that sustain them.</p>
             <a href="Peter-Bartsch-Resume.pdf" class="resume-download" download>↓ DOWNLOAD PDF</a>
         </header>
 
@@ -260,19 +260,6 @@
 
             <div class="resume-role">
                 <div class="resume-role-header">
-                    <h3 class="resume-role-company">Thios + Co</h3>
-                    <span class="resume-role-dates">2024 – Present</span>
-                </div>
-                <p class="resume-role-title">Founder & Lead Designer</p>
-                <ul class="resume-role-bullets">
-                    <li>Shipped full product ecosystem solo in 18 months — brand, 3 websites, 5 CAD variants, revenue</li>
-                    <li>Used AI as technical co-founder for code, CAD, and brand work; 70% faster prototyping cycles</li>
-                    <li>Built 3D product configurator (Three.js, React) with AR preview</li>
-                </ul>
-            </div>
-
-            <div class="resume-role">
-                <div class="resume-role-header">
                     <h3 class="resume-role-company">MavenWave Partners</h3>
                     <span class="resume-role-dates">2014 – 2017</span>
                 </div>
@@ -281,6 +268,20 @@
                     <li>Designed 6 internal portals for AbbVie (200K+ users) and rebuilt OptumRx pharmacy platform (1.4B prescriptions/year)</li>
                     <li>Led design for 8 enterprise engagements across financial services, manufacturing, and retail</li>
                     <li>Created reusable workshop frameworks that became standard methodology across the firm</li>
+                </ul>
+            </div>
+
+            <div class="resume-role">
+                <div class="resume-role-header">
+                    <h3 class="resume-role-company">Thios + Co</h3>
+                    <span class="resume-role-dates">2024 – Present</span>
+                </div>
+                <p class="resume-role-title">Designer & Founder (Side Project)</p>
+                <ul class="resume-role-bullets">
+                    <li>Between-roles project testing AI as a design force multiplier</li>
+                    <li>Shipped full product ecosystem solo in 18 months — brand, 3 websites, 5 CAD variants, revenue</li>
+                    <li>Used AI as technical co-founder for code, CAD, and brand work; 70% faster prototyping cycles</li>
+                    <li>Built 3D product configurator (Three.js, React) with AR preview</li>
                 </ul>
             </div>
 
