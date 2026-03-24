@@ -65,8 +65,8 @@
 }
 
 [data-theme="2010s"] body {
-    background: linear-gradient(180deg, #f3eeff 0%, #ffffff 30%, #fff5f5 70%, #ffffff 100%) !important;
-    background-image: linear-gradient(180deg, #f3eeff 0%, #ffffff 30%, #fff5f5 70%, #ffffff 100%) !important;
+    background: linear-gradient(180deg, #ede5ff 0%, #f8f5ff 20%, #ffffff 40%, #fff0f0 60%, #f8f5ff 80%, #ede5ff 100%) !important;
+    background-image: linear-gradient(180deg, #ede5ff 0%, #f8f5ff 20%, #ffffff 40%, #fff0f0 60%, #f8f5ff 80%, #ede5ff 100%) !important;
     background-attachment: fixed !important;
     background-blend-mode: normal !important;
     color: #2d2d2d;
@@ -784,5 +784,13 @@
 
 /* Soft gradient on contact section */
 [data-theme="2010s"] .contact-section {
-    background: linear-gradient(180deg, #ffffff 0%, #f3eeff 100%);
+    background: transparent;
+}
+
+/* Let body gradient show through all sections */
+[data-theme="2010s"] #main,
+[data-theme="2010s"] .about-section,
+[data-theme="2010s"] .company-logos-section,
+[data-theme="2010s"] #site-footer-final {
+    background: transparent !important;
 }
