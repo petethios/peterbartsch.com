@@ -371,16 +371,20 @@
     font-size: 13px;
     font-weight: 500;
     text-decoration: none !important;
-    border-bottom: 1px solid #0066FF !important;
-    padding: 8px 0 8px 0 !important;
+    border: 1px solid #ddd !important;
+    border-radius: 4px !important;
+    padding: 10px 20px !important;
+    display: inline-block !important;
+    width: auto !important;
 }
 
 [data-theme="2026"] .project-link:hover,
 [data-theme="2026"] .brutalist-link:hover {
     color: #ffffff !important;
     background-color: #0066FF !important;
-    padding: 8px 16px !important;
-    margin-left: -16px;
+    border-color: #0066FF !important;
+    padding: 10px 20px !important;
+    margin-left: 0 !important;
 }
 
 [data-theme="2026"] .portfolio-dot {
