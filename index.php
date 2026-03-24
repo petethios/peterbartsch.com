@@ -241,7 +241,7 @@
                             I take the design problems that stall enterprises — forced adoption, platform fragmentation, trust in uncertain data — and turn them into measurable outcomes. At John Deere, that meant $3.8B in enabled revenue and a design system used by 40+ teams. At FourKites, it meant building the design org from zero and contributing to a $1.2B exit.
                         </p>
                         <p class="about-bio">
-                            I operate at Staff/Principal level: setting design direction across product lines, building and scaling teams, and shipping systems complex enough that most designers avoid them.
+                            15 years of enterprise systems at scale: forced adoption across 500K users, design orgs built from zero, and billion-dollar exits. I prototype in production-grade tools and ship end-to-end — strategy through code.
                         </p>
                         <div class="about-strengths">
                             <span class="strength-tag">Enterprise Design Systems</span>
@@ -371,7 +371,7 @@
 
                 <!-- Company Logos -->
                 <section class="company-logos-section scroll-reveal">
-                    <h4 class="company-logos-header">Companies I've shipped at</h4>
+                    <h4 class="company-logos-header">From $3M startups to $38B enterprises</h4>
                     <div class="company-logos-grid scroll-reveal-stagger">
                         <picture><source srcset="img/logos/John-Deere-Logo 1.webp" type="image/webp"><img src="img/logos/John-Deere-Logo 1.png" alt="John Deere" class="company-logo" loading="lazy" width="148" height="92"></picture>
                         <picture><source srcset="img/logos/FourKites_Logo_light.webp" type="image/webp"><img src="img/logos/FourKites_Logo_light.png" alt="FourKites" class="company-logo" loading="lazy" width="277" height="84"></picture>
@@ -393,7 +393,7 @@
                         </div>
                         <div class="configurator-content">
                             <div class="configurator-badge">Technical Depth</div>
-                            <h3 class="configurator-title">I CODE TOO — THREE.JS, REACT, AR</h3>
+                            <h3 class="configurator-title">STRATEGY TO CODE — THREE.JS, REACT, AR</h3>
                             <p class="configurator-desc">Built a real-time 3D product configurator with AR preview as a side project. Staff designers who can prototype in code close the gap between vision and shipping.</p>
                             <a href="https://thios.co/configurator" target="_blank" rel="noopener noreferrer" class="configurator-cta" data-track="configurator_click">Try the Configurator</a>
                         </div>
