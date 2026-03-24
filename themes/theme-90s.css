@@ -315,29 +315,8 @@
     text-decoration: underline !important;
 }
 
-[data-theme="90s"] .portfolio-dot {
-    background-color: #808080 !important;
-    border-radius: 0 !important;
-}
-
-[data-theme="90s"] .portfolio-dot.active {
-    background-color: #ff00ff !important;
-}
-
-[data-theme="90s"] .portfolio-prev,
-[data-theme="90s"] .portfolio-next {
-    background-color: #c0c0c0 !important;
-    color: #000000 !important;
-    border-style: outset !important;
-    border-width: 3px !important;
-    border-color: #ffffff #808080 #808080 #ffffff !important;
-    box-shadow: none !important;
-    font-family: 'Comic Neue', 'Comic Sans MS', cursive !important;
-}
-
-[data-theme="90s"] .portfolio-prev:active,
-[data-theme="90s"] .portfolio-next:active {
-    border-style: inset !important;
+[data-theme="90s"] .case-study-image {
+    border: 3px ridge #808080;
 }
 
 /* ---- Tracklist / Experience Table ---- */

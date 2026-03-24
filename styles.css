@@ -95,9 +95,7 @@
         /* Subtle hover lift for interactive elements */
         .button,
         .button2,
-        .carousel-nav button,
-        .portfolio-prev,
-        .portfolio-next {
+        .carousel-nav button {
             transform: translateY(0);
             transition: transform var(--transition-fast),
                         background-color var(--transition-base),
@@ -107,17 +105,13 @@
 
         .button:hover,
         .button2:hover,
-        .carousel-nav button:hover,
-        .portfolio-prev:hover,
-        .portfolio-next:hover {
+        .carousel-nav button:hover {
             transform: translateY(-2px);
         }
 
         .button:active,
         .button2:active,
-        .carousel-nav button:active,
-        .portfolio-prev:active,
-        .portfolio-next:active {
+        .carousel-nav button:active {
             transform: translateY(0);
         }
 
@@ -1824,34 +1818,22 @@
             text-align: left;
         }
 
-        .portfolio-slides {
-            position: relative;
-            overflow: hidden;
+        /* Case Study Cards */
+        .case-study-card {
+            margin-bottom: var(--space-xl);
         }
 
-        .portfolio-slide {
-            display: none;
-            animation: fadeIn 0.5s ease-in;
-            flex-direction: column;
-            gap: 0;
+        .case-study-card:last-child {
+            margin-bottom: 0;
         }
 
-        .portfolio-slide.active {
-            display: flex;
-        }
-
-        /* Thumbnail — full width, natural aspect ratio */
-        .slide-thumbnail {
-            position: relative;
+        .case-study-image {
             width: 100%;
             max-height: 400px;
-            flex-shrink: 0;
             overflow: hidden;
-            background-color: transparent;
-            display: block;
         }
 
-        .slide-thumbnail img {
+        .case-study-image img {
             width: 100%;
             height: 100%;
             object-fit: cover;
@@ -1859,37 +1841,8 @@
             display: block;
         }
 
-        .slide-thumbnail .grid-overlay {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-image:
-                repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(134, 216, 221, 0.1) 2px, rgba(134, 216, 221, 0.1) 4px),
-                repeating-linear-gradient(90deg, transparent, transparent 2px, rgba(134, 216, 221, 0.1) 2px, rgba(134, 216, 221, 0.1) 4px);
-            pointer-events: none;
-            z-index: 1;
-        }
-
-        /* Slide content */
-        .slide-content {
-            flex: 1;
-            padding: 20px;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            text-align: left;
-        }
-
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-            }
-
-            to {
-                opacity: 1;
-            }
+        .case-study-body {
+            padding: 20px 0;
         }
 
         .project-title {
@@ -1931,85 +1884,17 @@
             box-shadow: var(--shadow-glow);
         }
 
-        /* Portfolio Navigation - LCD Controls */
-        .portfolio-nav {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 15px;
-            margin-top: auto;
-            padding-top: 15px;
-        }
-
-        .portfolio-prev,
-        .portfolio-next {
-            font-family: var(--font-display);
-            font-size: 21px;
-            width: 40px;
-            height: 40px;
-            background-color: var(--color-primary-darker);
-            border: var(--border-width) solid var(--color-primary);
-            color: var(--color-text-primary);
-            cursor: pointer;
-            transition: all var(--transition-base);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 0;
-            line-height: 1;
-            box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.3);
-        }
-
-        .portfolio-prev:hover,
-        .portfolio-next:hover {
-            font-size: 21.5px;
-            background-color: var(--color-primary);
-            color: var(--color-text-primary);
-            border-color: var(--color-white);
-            box-shadow: var(--shadow-glow);
-        }
-
-        .portfolio-prev:active,
-        .portfolio-next:active {
-            box-shadow: inset 0 3px 6px rgba(0, 0, 0, 0.5);
-        }
-
-        /* LCD Dots Indicator */
-        .portfolio-dots {
-            display: flex;
-            gap: var(--space-sm);
-            align-items: center;
-        }
-
-        .portfolio-dot {
-            width: 8px;
-            height: 8px;
-            background-color: rgba(81, 130, 133, 0.5);
-            border: 1px solid var(--color-primary-dark);
-            cursor: pointer;
-            transition: all var(--transition-base);
-        }
-
-        .portfolio-dot.active {
-            background-color: var(--color-primary);
-            box-shadow: 0 0 8px rgba(134, 216, 221, 0.8);
-        }
-
-        .portfolio-dot:hover {
-            background-color: rgba(134, 216, 221, 0.7);
-        }
-
         /* Mobile adjustments for portfolio carousel */
         @media (max-width: 1100px) {
             .portfolio-carousel {
                 padding: 0 0 15px 0;
             }
 
-            .slide-thumbnail {
+            .case-study-image {
                 max-height: 240px;
             }
 
-            .slide-content {
+            .case-study-body {
                 padding: 16px 4px;
             }
 
@@ -2019,13 +1904,6 @@
 
             .project-desc {
                 font-size: 12px;
-            }
-
-            .portfolio-prev,
-            .portfolio-next {
-                width: 35px;
-                height: 35px;
-                font-size: 20px;
             }
         }
 
@@ -2678,35 +2556,11 @@ textarea:focus-visible {
     margin-left: -16px;
 }
 
-/* Flagship case study - larger, more prominent */
-.portfolio-slide-flagship .slide-thumbnail {
-    border: 3px solid var(--color-primary);
-    box-shadow: 0 0 30px rgba(134, 216, 221, 0.2);
-}
-
-.portfolio-slide-flagship .project-title {
-    font-size: 22px;
-}
-
-.portfolio-slide-flagship h4 {
-    color: var(--color-primary);
-    font-size: 12px;
-    letter-spacing: 3px;
-}
-
-/* Terminal-style border frame on carousel thumbnails */
-.slide-thumbnail {
+/* Border frame on case study images */
+.case-study-image {
     position: relative;
     border: 1px solid var(--color-gray-dark);
     transition: border-color 0.3s ease, box-shadow 0.3s ease;
-}
-
-.portfolio-slide.active .slide-thumbnail {
-    border-color: var(--color-primary-dark);
-}
-
-.portfolio-slide-flagship.active .slide-thumbnail {
-    border-color: var(--color-primary);
 }
 
 /* Project title styling update */
@@ -2731,10 +2585,6 @@ textarea:focus-visible {
         font-size: 11px;
         display: block;
         margin-bottom: 2px;
-    }
-
-    .portfolio-slide-flagship .project-title {
-        font-size: 18px;
     }
 
     .brutalist-link {
@@ -2958,10 +2808,6 @@ html:not([data-theme]) .theme-era-btn.active {
     #coverVideo,
     .hover-text,
     .grid-overlay,
-    .portfolio-nav,
-    .portfolio-prev,
-    .portfolio-next,
-    .portfolio-dots,
     .configurator-showcase,
     .ios-toolbar-guard,
     #site-footer-final,
@@ -3007,20 +2853,13 @@ html:not([data-theme]) .theme-era-btn.active {
         font-size: 9pt !important;
     }
 
-    /* Carousel - show all slides stacked */
-    .portfolio-slides {
-        display: block !important;
-    }
-
-    .portfolio-slide {
-        display: flex !important;
-        opacity: 1 !important;
-        position: relative !important;
+    /* Case study cards for print */
+    .case-study-card {
         margin-bottom: 16pt;
         page-break-inside: avoid;
     }
 
-    .slide-thumbnail {
+    .case-study-image {
         max-width: 200pt !important;
         border: 1pt solid #ccc !important;
     }
@@ -3066,7 +2905,4 @@ html:not([data-theme]) .theme-era-btn.active {
         page-break-after: avoid;
     }
 
-    .portfolio-slide {
-        page-break-inside: avoid;
-    }
 }

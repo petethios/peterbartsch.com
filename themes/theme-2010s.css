@@ -344,32 +344,9 @@
     text-decoration: none !important;
 }
 
-[data-theme="2010s"] .portfolio-dot {
-    border-radius: 50% !important;
-    background-color: #ddd !important;
-}
-
-[data-theme="2010s"] .portfolio-dot.active {
-    background-color: #FF6B6B !important;
-}
-
-[data-theme="2010s"] .portfolio-prev,
-[data-theme="2010s"] .portfolio-next {
-    background-color: #f0f0f0 !important;
-    color: #666 !important;
-    border: none !important;
-    border-radius: 50px !important;
-    box-shadow: none !important;
-    font-family: 'Inter', -apple-system, sans-serif !important;
-}
-
-[data-theme="2010s"] .portfolio-prev:hover,
-[data-theme="2010s"] .portfolio-next:hover {
-    background-color: #e0e0e0 !important;
-}
-
-[data-theme="2010s"] .slide-thumbnail img {
+[data-theme="2010s"] .case-study-image {
     border-radius: 12px;
+    overflow: hidden;
 }
 
 /* ---- Tracklist ---- */

@@ -253,121 +253,95 @@
                 </div>
             </section>
 
-            <!-- Portfolio Carousel -->
-            <div id="portfolio-carousel" class="portfolio-carousel">
-                    <div class="portfolio-slides">
-                        <!-- 1. Deere Common UX - Flagship: Forced adoption at scale -->
-                        <div class="portfolio-slide portfolio-slide-flagship active" data-index="0">
-                            <div class="slide-thumbnail">
-                                <picture><source srcset="carousel-thumb-deere-ux.webp" type="image/webp"><img src="carousel-thumb-deere-ux.png" alt="Deere Common UX" width="250" height="250"></picture>
-                                <div class="grid-overlay"></div>
-                            </div>
-                            <div class="slide-content">
-                                <p class="slide-label">FLAGSHIP CASE STUDY</p>
-                                <h3 class="project-title phosphor-text">DEERE: 34%→87% ADOPTION AT SCALE</h3>
-                                <div class="project-structure">
-                                    <p class="structure-item"><span class="structure-label">Challenge:</span> 500K users weren't completing profiles — blocking $3.8B in subscription revenue</p>
-                                    <p class="structure-item"><span class="structure-label">Approach:</span> I designed a multi-channel forced adoption flow that didn't destroy trust</p>
-                                    <p class="structure-item"><span class="structure-label">Result:</span> 34%→87% profile completion in 6 months · $3.8B revenue unlocked</p>
-                                </div>
-                                <a href="case-studies/deere-common-ux.php" class="project-link brutalist-link">VIEW CASE STUDY →</a>
-                                <div class="portfolio-nav">
-                                    <button class="portfolio-prev" aria-label="Previous project">‹</button>
-                                    <div class="portfolio-dots"></div>
-                                    <button class="portfolio-next" aria-label="Next project">›</button>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- 2. Deere Nav - Platform governance -->
-                        <div class="portfolio-slide" data-index="1">
-                            <div class="slide-thumbnail">
-                                <picture><source srcset="carousel-thumb-deere-nav.webp" type="image/webp"><img src="carousel-thumb-deere-nav.png" alt="Deere Consistent Nav" loading="lazy" width="250" height="250"></picture>
-                                <div class="grid-overlay"></div>
-                            </div>
-                            <div class="slide-content">
-                                <p class="slide-label">FEATURED WORK</p>
-                                <h3 class="project-title">DEERE: ONE SYSTEM, 47 PRODUCTS</h3>
-                                <div class="project-structure">
-                                    <p class="structure-item"><span class="structure-label">Challenge:</span> 47 product sites, each with its own navigation and identity</p>
-                                    <p class="structure-item"><span class="structure-label">Approach:</span> I built a shared design system and rolled it out without breaking a single live product</p>
-                                    <p class="structure-item"><span class="structure-label">Result:</span> One consistent experience across all 47 sites · 45% faster dev handoffs</p>
-                                </div>
-                                <a href="case-studies/deere-nav.php" class="project-link brutalist-link">VIEW CASE STUDY →</a>
-                                <div class="portfolio-nav">
-                                    <button class="portfolio-prev" aria-label="Previous project">‹</button>
-                                    <div class="portfolio-dots"></div>
-                                    <button class="portfolio-next" aria-label="Next project">›</button>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- 3. FourKites Tracking - Trust in uncertain data -->
-                        <div class="portfolio-slide" data-index="2">
-                            <div class="slide-thumbnail">
-                                <picture><source srcset="carousel-thumb-fourkites-tracking.webp" type="image/webp"><img src="carousel-thumb-fourkites-tracking.png" alt="FourKites Tracking" loading="lazy" width="250" height="250"></picture>
-                                <div class="grid-overlay"></div>
-                            </div>
-                            <div class="slide-content">
-                                <p class="slide-label">FEATURED WORK</p>
-                                <h3 class="project-title">FOURKITES: DESIGNING FOR UNCERTAINTY</h3>
-                                <div class="project-structure">
-                                    <p class="structure-item"><span class="structure-label">Challenge:</span> Customers didn't trust tracking data — incomplete data was hidden, not explained</p>
-                                    <p class="structure-item"><span class="structure-label">Approach:</span> I introduced confidence levels that showed uncertainty instead of hiding it</p>
-                                    <p class="structure-item"><span class="structure-label">Result:</span> 41% retention increase · 3x customer expansion · contributed to $1.2B exit</p>
-                                </div>
-                                <a href="case-studies/fourkites-tracking.php" class="project-link brutalist-link">VIEW CASE STUDY →</a>
-                                <div class="portfolio-nav">
-                                    <button class="portfolio-prev" aria-label="Previous project">‹</button>
-                                    <div class="portfolio-dots"></div>
-                                    <button class="portfolio-next" aria-label="Next project">›</button>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- 4. FourKites Driver - Incentive alignment -->
-                        <div class="portfolio-slide" data-index="3">
-                            <div class="slide-thumbnail">
-                                <picture><source srcset="carousel-thumb-fourkites-driver.webp" type="image/webp"><img src="carousel-thumb-fourkites-driver.png" alt="FourKites Driver" loading="lazy" width="250" height="250"></picture>
-                                <div class="grid-overlay"></div>
-                            </div>
-                            <div class="slide-content">
-                                <p class="slide-label">FEATURED WORK</p>
-                                <h3 class="project-title">FOURKITES: REALIGNING INCENTIVES</h3>
-                                <div class="project-structure">
-                                    <p class="structure-item"><span class="structure-label">Challenge:</span> Drivers had no reason to share location data — the platform needed them to</p>
-                                    <p class="structure-item"><span class="structure-label">Approach:</span> I designed a rewards system that made data sharing beneficial for both sides</p>
-                                    <p class="structure-item"><span class="structure-label">Result:</span> 32% more tracked shipments · Driver NPS +28</p>
-                                </div>
-                                <a href="case-studies/fourkites-driver.php" class="project-link brutalist-link">VIEW CASE STUDY →</a>
-                                <div class="portfolio-nav">
-                                    <button class="portfolio-prev" aria-label="Previous project">‹</button>
-                                    <div class="portfolio-dots"></div>
-                                    <button class="portfolio-next" aria-label="Next project">›</button>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- 5. Thios - AI as force multiplier -->
-                        <div class="portfolio-slide" data-index="4">
-                            <div class="slide-thumbnail">
-                                <picture><source srcset="carousel-thumb-thios.webp" type="image/webp"><img src="carousel-thumb-thios.png" alt="Thios Project" loading="lazy" width="250" height="250"></picture>
-                                <div class="grid-overlay"></div>
-                            </div>
-                            <div class="slide-content">
-                                <p class="slide-label">SIDE PROJECT — TECHNICAL RANGE</p>
-                                <h3 class="project-title">THIOS: FULL-STACK DESIGN, AI-AUGMENTED</h3>
-                                <div class="project-structure">
-                                    <p class="structure-item"><span class="structure-label">Challenge:</span> Between roles, I tested a hypothesis: can an experienced designer use AI to ship brand, web, 3D, and physical products at solo-founder velocity?</p>
-                                    <p class="structure-item"><span class="structure-label">Approach:</span> Used AI as a technical force multiplier — code, CAD, brand assets — to ship a complete product ecosystem</p>
-                                    <p class="structure-item"><span class="structure-label">Result:</span> Brand + 3 websites + 5 product variants + revenue in 18 months. Proof that I build, not just design.</p>
-                                </div>
-                                <a href="case-studies/thios.php" class="project-link brutalist-link">VIEW CASE STUDY →</a>
-                                <div class="portfolio-nav">
-                                    <button class="portfolio-prev" aria-label="Previous project">‹</button>
-                                    <div class="portfolio-dots"></div>
-                                    <button class="portfolio-next" aria-label="Next project">›</button>
-                                </div>
-                            </div>
-                        </div>
+            <!-- Portfolio Case Studies -->
+            <section id="portfolio-carousel" class="portfolio-carousel">
+
+                <!-- 1. Deere Common UX - Flagship: Forced adoption at scale -->
+                <article class="case-study-card">
+                    <div class="case-study-image">
+                        <picture><source srcset="carousel-thumb-deere-ux.webp" type="image/webp"><img src="carousel-thumb-deere-ux.png" alt="Deere Common UX" width="250" height="250"></picture>
                     </div>
-                </div>
+                    <div class="case-study-body">
+                        <p class="slide-label">FLAGSHIP CASE STUDY</p>
+                        <h3 class="project-title phosphor-text">DEERE: 34%→87% ADOPTION AT SCALE</h3>
+                        <div class="project-structure">
+                            <p class="structure-item"><span class="structure-label">Challenge:</span> 500K users were actively avoiding profile completion — and every empty field was blocking $3.8B in AI and automation revenue.</p>
+                            <p class="structure-item"><span class="structure-label">Approach:</span> I designed a multi-channel forced adoption flow that didn't destroy trust</p>
+                            <p class="structure-item"><span class="structure-label">Result:</span> 34%→87% profile completion in 6 months · $3.8B revenue unlocked</p>
+                        </div>
+                        <a href="case-studies/deere-common-ux.php" class="project-link brutalist-link">VIEW CASE STUDY →</a>
+                    </div>
+                </article>
+
+                <!-- 2. Deere Nav - Platform governance -->
+                <article class="case-study-card">
+                    <div class="case-study-image">
+                        <picture><source srcset="carousel-thumb-deere-nav.webp" type="image/webp"><img src="carousel-thumb-deere-nav.png" alt="Deere Consistent Nav" loading="lazy" width="250" height="250"></picture>
+                    </div>
+                    <div class="case-study-body">
+                        <p class="slide-label">FEATURED WORK</p>
+                        <h3 class="project-title">DEERE: ONE SYSTEM, 47 PRODUCTS</h3>
+                        <div class="project-structure">
+                            <p class="structure-item"><span class="structure-label">Challenge:</span> 47 product sites, each with its own navigation, dev team, and political owner. Nobody wanted to give up control.</p>
+                            <p class="structure-item"><span class="structure-label">Approach:</span> I built a shared design system and rolled it out without breaking a single live product</p>
+                            <p class="structure-item"><span class="structure-label">Result:</span> One consistent experience across all 47 sites · 45% faster dev handoffs</p>
+                        </div>
+                        <a href="case-studies/deere-nav.php" class="project-link brutalist-link">VIEW CASE STUDY →</a>
+                    </div>
+                </article>
+
+                <!-- 3. FourKites Tracking - Trust in uncertain data -->
+                <article class="case-study-card">
+                    <div class="case-study-image">
+                        <picture><source srcset="carousel-thumb-fourkites-tracking.webp" type="image/webp"><img src="carousel-thumb-fourkites-tracking.png" alt="FourKites Tracking" loading="lazy" width="250" height="250"></picture>
+                    </div>
+                    <div class="case-study-body">
+                        <p class="slide-label">FEATURED WORK</p>
+                        <h3 class="project-title">FOURKITES: DESIGNING FOR UNCERTAINTY</h3>
+                        <div class="project-structure">
+                            <p class="structure-item"><span class="structure-label">Challenge:</span> Enterprise customers were making million-dollar decisions on dashboards they didn't trust — because we hid uncertainty instead of explaining it.</p>
+                            <p class="structure-item"><span class="structure-label">Approach:</span> I introduced confidence levels that showed uncertainty instead of hiding it</p>
+                            <p class="structure-item"><span class="structure-label">Result:</span> 41% retention increase · 3x customer expansion · contributed to $1.2B exit</p>
+                        </div>
+                        <a href="case-studies/fourkites-tracking.php" class="project-link brutalist-link">VIEW CASE STUDY →</a>
+                    </div>
+                </article>
+
+                <!-- 4. FourKites Driver - Incentive alignment -->
+                <article class="case-study-card">
+                    <div class="case-study-image">
+                        <picture><source srcset="carousel-thumb-fourkites-driver.webp" type="image/webp"><img src="carousel-thumb-fourkites-driver.png" alt="FourKites Driver" loading="lazy" width="250" height="250"></picture>
+                    </div>
+                    <div class="case-study-body">
+                        <p class="slide-label">FEATURED WORK</p>
+                        <h3 class="project-title">FOURKITES: REALIGNING INCENTIVES</h3>
+                        <div class="project-structure">
+                            <p class="structure-item"><span class="structure-label">Challenge:</span> Drivers saw location sharing as surveillance. The platform needed their data to survive. Both sides were right.</p>
+                            <p class="structure-item"><span class="structure-label">Approach:</span> I designed a rewards system that made data sharing beneficial for both sides</p>
+                            <p class="structure-item"><span class="structure-label">Result:</span> 32% more tracked shipments · Driver NPS +28</p>
+                        </div>
+                        <a href="case-studies/fourkites-driver.php" class="project-link brutalist-link">VIEW CASE STUDY →</a>
+                    </div>
+                </article>
+
+                <!-- 5. Thios - AI as force multiplier -->
+                <article class="case-study-card">
+                    <div class="case-study-image">
+                        <picture><source srcset="carousel-thumb-thios.webp" type="image/webp"><img src="carousel-thumb-thios.png" alt="Thios Project" loading="lazy" width="250" height="250"></picture>
+                    </div>
+                    <div class="case-study-body">
+                        <p class="slide-label">SIDE PROJECT — TECHNICAL RANGE</p>
+                        <h3 class="project-title">THIOS: FULL-STACK DESIGN, AI-AUGMENTED</h3>
+                        <div class="project-structure">
+                            <p class="structure-item"><span class="structure-label">Challenge:</span> Between roles, I tested a hypothesis: can an experienced designer use AI to ship brand, web, 3D, and physical products at solo-founder velocity?</p>
+                            <p class="structure-item"><span class="structure-label">Approach:</span> Used AI as a technical force multiplier — code, CAD, brand assets — to ship a complete product ecosystem</p>
+                            <p class="structure-item"><span class="structure-label">Result:</span> Brand + 3 websites + 5 product variants + revenue in 18 months. Proof that I build, not just design.</p>
+                        </div>
+                        <a href="case-studies/thios.php" class="project-link brutalist-link">VIEW CASE STUDY →</a>
+                    </div>
+                </article>
+
+            </section>
 
                 <!-- Company Logos -->
                 <section class="company-logos-section scroll-reveal">

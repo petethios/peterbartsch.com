@@ -387,35 +387,9 @@
     margin-left: 0 !important;
 }
 
-[data-theme="2026"] .portfolio-dot {
-    border-radius: 2px !important;
-    background-color: #ddd !important;
-}
-
-[data-theme="2026"] .portfolio-dot.active {
-    background-color: #0066FF !important;
-}
-
-[data-theme="2026"] .portfolio-prev,
-[data-theme="2026"] .portfolio-next {
-    background-color: #ffffff !important;
-    color: #555 !important;
-    border: 1px solid #ddd !important;
-    border-radius: 4px !important;
-    box-shadow: none !important;
-    font-family: 'JetBrains Mono', monospace !important;
-    font-size: 12px !important;
-}
-
-[data-theme="2026"] .portfolio-prev:hover,
-[data-theme="2026"] .portfolio-next:hover {
-    border-color: #0066FF !important;
-    color: #0066FF !important;
-}
-
-[data-theme="2026"] .slide-thumbnail img {
-    border-radius: 4px;
+[data-theme="2026"] .case-study-image {
     border: 1px solid #e5e5e5;
+    border-radius: 4px;
 }
 
 /* ---- Tracklist: clean code-like table ---- */
