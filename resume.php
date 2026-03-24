@@ -276,7 +276,7 @@
                     <h3 class="resume-role-company">Thios + Co</h3>
                     <span class="resume-role-dates">2024 – Present</span>
                 </div>
-                <p class="resume-role-title">Designer & Founder (Side Project)</p>
+                <p class="resume-role-title">Designer & Founder</p>
                 <ul class="resume-role-bullets">
                     <li>Between-roles project testing AI as a design force multiplier</li>
                     <li>Shipped full product ecosystem solo in 18 months — brand, 3 websites, 5 CAD variants, revenue</li>

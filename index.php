@@ -455,7 +455,7 @@
                             </tr>
                             <tr>
                                 <td class="year-range">2024-Pres</td>
-                                <td>Designer & Founder (Side Project)</td>
+                                <td>Designer & Founder</td>
                                 <td><a href="#" id="openModal1">Thios + Co</a></td>
                             </tr>
                             <tr class="role-details">
