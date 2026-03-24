@@ -4,9 +4,9 @@
 # Enable rewrite engine for clean URLs
 RewriteEngine On
 
-# Force HTTPS (uncomment if your server supports it)
-# RewriteCond %{HTTPS} off
-# RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+# Force HTTPS
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
 # Auto-serve WebP when browser supports it and .webp file exists alongside .png
 RewriteCond %{HTTP_ACCEPT} image/webp
@@ -48,16 +48,22 @@ RewriteRule ^scripts - [F,L]
 <IfModule mod_headers.c>
     # Prevent clickjacking
     Header set X-Frame-Options "SAMEORIGIN"
-    
+
     # Prevent MIME type sniffing
     Header set X-Content-Type-Options "nosniff"
-    
+
+    # XSS protection for legacy browsers
+    Header set X-XSS-Protection "1; mode=block"
+
+    # HSTS: force HTTPS for 1 year, include subdomains
+    Header set Strict-Transport-Security "max-age=31536000; includeSubDomains"
+
     # Referrer policy
     Header set Referrer-Policy "strict-origin-when-cross-origin"
-    
-    # Content Security Policy (backup to meta tag)
-    Header set Content-Security-Policy "default-src 'self'; script-src 'self' https://www.googletagmanager.com https://www.google-analytics.com https://www.clarity.ms https://*.clarity.ms; style-src 'self'; img-src 'self' data: https: https://*.clarity.ms https://c.bing.com; font-src 'self'; connect-src 'self' https://www.google-analytics.com https://www.clarity.ms https://*.clarity.ms; frame-ancestors 'self'; base-uri 'self'; form-action 'self' mailto:;"
-    
+
+    # Content Security Policy
+    Header set Content-Security-Policy "default-src 'self'; script-src 'self' https://www.googletagmanager.com https://www.google-analytics.com https://www.clarity.ms https://*.clarity.ms; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https://www.google-analytics.com https://*.clarity.ms https://c.bing.com; font-src 'self' https://fonts.gstatic.com; connect-src 'self' https://www.google-analytics.com https://www.clarity.ms https://*.clarity.ms; frame-ancestors 'self'; base-uri 'self'; form-action 'self' mailto:;"
+
     # Permissions Policy
     Header set Permissions-Policy "geolocation=(), microphone=(), camera=()"
 </IfModule>

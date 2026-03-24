@@ -350,7 +350,7 @@ if (coverVideo) {
 
     // Create dots in ALL containers
     dotContainers.forEach(container => {
-        container.innerHTML = '';
+        container.textContent = '';
         slides.forEach((_, index) => {
             const dot = document.createElement('div');
             dot.classList.add('portfolio-dot');
@@ -602,7 +602,13 @@ if (coverVideo) {
     // --- Screensaver clock setup ---
     var clockEl = document.createElement('div');
     clockEl.id = 'screensaver-clock';
-    clockEl.innerHTML = '<span class="clock-text"></span><span class="clock-tagline">Time to talk with Pete</span>';
+    var clockText = document.createElement('span');
+    clockText.className = 'clock-text';
+    var clockTagline = document.createElement('span');
+    clockTagline.className = 'clock-tagline';
+    clockTagline.textContent = 'Time to talk with Pete';
+    clockEl.appendChild(clockText);
+    clockEl.appendChild(clockTagline);
     document.body.parentNode.appendChild(clockEl); // append to <html> so it's outside body filter
 
     var clockText = clockEl.querySelector('.clock-text');

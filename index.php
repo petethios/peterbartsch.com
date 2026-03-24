@@ -738,6 +738,7 @@
     <div id="modal-container"></div>
 
     <!-- Scripts -->
+    <script src="portfolio-data.js?v=<?php echo filemtime('portfolio-data.js'); ?>"></script>
     <script src="modal-system.js?v=<?php echo filemtime('modal-system.js'); ?>"></script>
     <script src="themes/theme-switcher.js?v=<?php echo filemtime('themes/theme-switcher.js'); ?>"></script>
     <script src="script.js?v=<?php echo filemtime('script.js'); ?>"></script>

@@ -1,1 +1,11 @@
 .DS_Store
+
+# Deployment scripts (contain credentials)
+*.exp
+deploy_main.sh
+
+# Environment files
+.env*
+
+# Backup files
+*.backup.*

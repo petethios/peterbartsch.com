@@ -122,51 +122,71 @@
     }
 
     /**
-     * Render modal HTML from data
+     * Helper: create element with attributes and text
      */
-    function renderModal(item) {
-        const hasCarousel = item.images && item.images.length > 0;
+    function el(tag, attrs, textContent) {
+        var node = document.createElement(tag);
+        if (attrs) {
+            for (var k in attrs) {
+                if (k === 'dataset') {
+                    for (var d in attrs[k]) node.dataset[d] = attrs[k][d];
+                } else {
+                    node.setAttribute(k, attrs[k]);
+                }
+            }
+        }
+        if (textContent != null) node.textContent = textContent;
+        return node;
+    }
 
-        let bulletsHtml = '';
+    /**
+     * Build modal DOM from data (no innerHTML — XSS-safe)
+     */
+    function buildModal(item) {
+        var hasCarousel = item.images && item.images.length > 0;
+
+        var modal = el('div', { id: 'modal-' + item.id, class: 'modal', role: 'dialog', 'aria-modal': 'true', 'aria-labelledby': 'modal-' + item.id + '-title' });
+        var content = el('div', { class: 'modal-content' });
+        modal.appendChild(content);
+
+        var closeBtn = el('span', { class: 'close', 'aria-label': 'Close modal', dataset: { close: '' } });
+        closeBtn.textContent = '\u2297';
+        content.appendChild(closeBtn);
+
+        content.appendChild(el('h2', { id: 'modal-' + item.id + '-title' }, item.company));
+        content.appendChild(el('p', null, item.role));
+        content.appendChild(el('p', null, item.dates));
+        content.appendChild(el('p', null, item.description));
+
         if (item.bullets && item.bullets.length > 0) {
-            bulletsHtml = `
-                <ul>
-                    ${item.bullets.map(b => `<li>${b}</li>`).join('')}
-                </ul>
-            `;
+            var ul = el('ul');
+            item.bullets.forEach(function(b) {
+                ul.appendChild(el('li', null, b));
+            });
+            content.appendChild(ul);
         }
 
-        let carouselHtml = '';
         if (hasCarousel) {
-            carouselHtml = `
-                <div class="carousel" data-carousel>
-                    ${item.images.map((img, i) => `
-                        <img src="${img}" alt="${item.company} image ${i + 1}"
-                             class="${i === 0 ? 'active' : ''}"
-                             loading="lazy">
-                    `).join('')}
-                </div>
-                <div class="carousel-nav">
-                    <button class="prevBtn" data-carousel-prev aria-label="Previous image">BACK</button>
-                    <span class="carousel-counter" data-carousel-counter>1 / ${item.images.length}</span>
-                    <button class="nextBtn" data-carousel-next aria-label="Next image">NEXT</button>
-                </div>
-            `;
+            var carousel = el('div', { class: 'carousel', dataset: { carousel: '' } });
+            item.images.forEach(function(imgSrc, i) {
+                var img = el('img', {
+                    src: imgSrc,
+                    alt: item.company + ' image ' + (i + 1),
+                    class: i === 0 ? 'active' : '',
+                    loading: 'lazy'
+                });
+                carousel.appendChild(img);
+            });
+            content.appendChild(carousel);
+
+            var nav = el('div', { class: 'carousel-nav' });
+            nav.appendChild(el('button', { class: 'prevBtn', 'aria-label': 'Previous image', dataset: { carouselPrev: '' } }, 'BACK'));
+            nav.appendChild(el('span', { class: 'carousel-counter', dataset: { carouselCounter: '' } }, '1 / ' + item.images.length));
+            nav.appendChild(el('button', { class: 'nextBtn', 'aria-label': 'Next image', dataset: { carouselNext: '' } }, 'NEXT'));
+            content.appendChild(nav);
         }
 
-        return `
-            <div id="modal-${item.id}" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-${item.id}-title">
-                <div class="modal-content">
-                    <span class="close" data-close aria-label="Close modal">&CircleTimes;</span>
-                    <h2 id="modal-${item.id}-title">${item.company}</h2>
-                    <p>${item.role}</p>
-                    <p>${item.dates}</p>
-                    <p>${item.description}</p>
-                    ${bulletsHtml}
-                    ${carouselHtml}
-                </div>
-            </div>
-        `;
+        return modal;
     }
 
     /**
@@ -184,12 +204,11 @@
             closeModal(false);
         }
 
-        // Render and insert modal
-        const html = renderModal(item);
-        modalContainer.innerHTML = html;
+        // Build and insert modal (DOM-based, no innerHTML)
+        var modal = buildModal(item);
+        modalContainer.textContent = '';
+        modalContainer.appendChild(modal);
 
-        // Get modal element
-        const modal = modalContainer.querySelector('.modal');
         if (!modal) return;
 
         // Store reference
@@ -303,12 +322,12 @@
 
             setTimeout(() => {
                 modal.style.display = 'none';
-                modalContainer.innerHTML = '';
+                modalContainer.textContent = '';
                 document.body.style.overflow = '';
             }, CONFIG.animationDuration);
         } else {
             modal.style.display = 'none';
-            modalContainer.innerHTML = '';
+            modalContainer.textContent = '';
             document.body.style.overflow = '';
         }
 
