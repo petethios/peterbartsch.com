@@ -502,25 +502,32 @@
 
 /* ---- Company Logos ---- */
 [data-theme="2026"] .company-logos-section {
-    background: none;
+    background: #f8f8f8;
+    border: 1px solid #e5e5e5;
+    border-radius: 6px;
+    padding: 32px 40px !important;
 }
 
 [data-theme="2026"] .company-logos-header {
-    color: #999 !important;
+    color: #555 !important;
     font-family: 'JetBrains Mono', monospace;
-    font-size: 11px;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
+    font-size: 13px;
+    font-weight: 500;
+    text-transform: none;
+    letter-spacing: 0;
+    margin-bottom: 24px !important;
 }
 
 [data-theme="2026"] .company-logo {
-    filter: grayscale(100%) brightness(0.3) !important;
-    opacity: 0.4;
-    transition: opacity 0.2s ease;
+    filter: grayscale(100%) brightness(0.2) !important;
+    opacity: 0.5;
+    transition: all 0.2s ease;
+    height: 36px !important;
 }
 
 [data-theme="2026"] .company-logo:hover {
-    opacity: 0.7;
+    opacity: 0.85;
+    filter: grayscale(0%) brightness(1) !important;
 }
 
 /* ---- Hero Stats ---- */

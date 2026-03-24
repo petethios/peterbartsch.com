@@ -371,7 +371,7 @@
 
                 <!-- Company Logos -->
                 <section class="company-logos-section scroll-reveal">
-                    <h4 class="company-logos-header">Shipped At</h4>
+                    <h4 class="company-logos-header">Companies I've shipped at</h4>
                     <div class="company-logos-grid scroll-reveal-stagger">
                         <picture><source srcset="img/logos/John-Deere-Logo 1.webp" type="image/webp"><img src="img/logos/John-Deere-Logo 1.png" alt="John Deere" class="company-logo" loading="lazy" width="148" height="92"></picture>
                         <picture><source srcset="img/logos/FourKites_Logo_light.webp" type="image/webp"><img src="img/logos/FourKites_Logo_light.png" alt="FourKites" class="company-logo" loading="lazy" width="277" height="84"></picture>
