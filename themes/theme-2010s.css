@@ -838,6 +838,24 @@
     background-clip: text;
 }
 
+[data-theme="2010s"] .hero-proof {
+    color: #94A3B8;
+}
+
+[data-theme="2010s"] .recruiter-summary {
+    border-color: rgba(255, 255, 255, 0.06);
+    background: rgba(255, 255, 255, 0.02);
+    border-radius: 12px;
+}
+
+[data-theme="2010s"] .summary-label {
+    color: #64748B;
+}
+
+[data-theme="2010s"] .summary-value {
+    color: #CBD5E1;
+}
+
 [data-theme="2010s"] .hero-cta-primary {
     background: linear-gradient(135deg, #635BFF 0%, #A855F7 100%);
     color: #ffffff;

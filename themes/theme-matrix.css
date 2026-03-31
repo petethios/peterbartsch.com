@@ -589,6 +589,22 @@
     color: #008020;
 }
 
+[data-theme="matrix"] .hero-proof {
+    color: #00bb30;
+}
+
+[data-theme="matrix"] .recruiter-summary {
+    border-color: rgba(0, 255, 65, 0.2);
+}
+
+[data-theme="matrix"] .summary-label {
+    color: #008020;
+}
+
+[data-theme="matrix"] .summary-value {
+    color: #00ff41;
+}
+
 [data-theme="matrix"] .hero-cta-primary {
     background: transparent;
     border: 1px solid #00ff41;

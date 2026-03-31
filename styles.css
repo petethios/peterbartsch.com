@@ -2920,6 +2920,56 @@ html:not([data-theme]) .theme-era-btn.active {
 }
 
 /* ========================================
+   Hero Proof Line
+   ======================================== */
+.hero-proof {
+    font-family: var(--font-body);
+    font-size: 17px;
+    color: var(--color-text-muted);
+    line-height: 1.6;
+    margin: 12px 0 20px 0;
+}
+
+/* ========================================
+   Recruiter Summary Block
+   ======================================== */
+.recruiter-summary {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px 24px;
+    margin-top: 20px;
+    padding: 16px 20px;
+    border: 1px solid var(--color-gray-dark);
+    font-family: var(--font-readable);
+    font-size: 12px;
+}
+
+.summary-item {
+    display: flex;
+    gap: 8px;
+}
+
+.summary-label {
+    color: var(--color-text-subtle);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    white-space: nowrap;
+    min-width: 60px;
+}
+
+.summary-value {
+    color: var(--color-text-primary);
+    font-weight: 500;
+}
+
+@media (max-width: 600px) {
+    .recruiter-summary {
+        grid-template-columns: 1fr;
+        gap: 6px;
+    }
+}
+
+/* ========================================
    Hero CTA Buttons
    ======================================== */
 .hero-cta-row {

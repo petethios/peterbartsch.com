@@ -209,20 +209,17 @@
                 <div class="hero-layout">
                     <div class="hero-text">
                         <p class="hero-name">PETER BARTSCH</p>
-                        <h2 id="title" class="phosphor-text">I solve the design problems that stall enterprises.</h2>
-                        <p class="hero-subtitle">STAFF PRODUCT DESIGNER</p>
-                        <p class="hero-tagline">
-                            500K users through forced migrations. 47 product lines unified. $3.8B in revenue unlocked. Design orgs built from zero to scale.
-                        </p>
+                        <h2 id="title" class="phosphor-text">Staff Product Designer — Enterprise Platforms & 0→1</h2>
+                        <p class="hero-proof">Led design for $3.8B platform at Deere. Built design org from 1→10 at FourKites ($1B+ valuation). 15 years shipping enterprise systems that actually get adopted.</p>
                         <div class="hero-cta-row">
                             <a href="#contact" class="hero-cta-primary">Let's Talk</a>
                             <a href="#portfolio-carousel" class="hero-cta-secondary">See the Work</a>
                         </div>
-                        <div class="hero-metrics">
-                            <div class="hero-metric"><span class="hero-metric-value">500K+</span><span class="hero-metric-label">Users Through Forced Adoption</span></div>
-                            <div class="hero-metric"><span class="hero-metric-value">$3.8B</span><span class="hero-metric-label">Revenue Unlocked</span></div>
-                            <div class="hero-metric"><span class="hero-metric-value">40+</span><span class="hero-metric-label">Teams Using My Design System</span></div>
-                            <div class="hero-metric"><span class="hero-metric-value">15+</span><span class="hero-metric-label">Years in Enterprise</span></div>
+                        <div class="recruiter-summary">
+                            <div class="summary-item"><span class="summary-label">Level</span><span class="summary-value">Staff / Principal IC</span></div>
+                            <div class="summary-item"><span class="summary-label">Domains</span><span class="summary-value">Enterprise SaaS · Supply Chain · AI</span></div>
+                            <div class="summary-item"><span class="summary-label">Range</span><span class="summary-value">IC + Leadership (built teams 1→10)</span></div>
+                            <div class="summary-item"><span class="summary-label">Scale</span><span class="summary-value">500K users · $3.8B revenue · 40+ teams</span></div>
                         </div>
                     </div>
                     <div class="hero-portrait">
@@ -246,7 +243,7 @@
                     <div class="about-content">
                         <h2 class="about-heading phosphor-text">WHAT I DO</h2>
                         <p class="about-bio">
-                            I take the design problems that stall enterprises — forced adoption, platform fragmentation, trust in uncertain data — and turn them into measurable outcomes. $3.8B in revenue unlocked at Deere. Design org built from zero to $1B+ valuation at FourKites. 15 years shipping end-to-end, strategy through code.
+                            I lead design for the problems that stall enterprises — forced adoption, platform fragmentation, trust in uncertain data. At Deere, I led the design that unlocked $3.8B in revenue across 500K users. At FourKites, I built the design org from 1 to 10 and led product design through $3M→$100M ARR growth. I ship end-to-end: strategy, systems, and code.
                         </p>
                         <div class="about-strengths">
                             <span class="strength-tag">Enterprise Design Systems</span>
@@ -270,8 +267,8 @@
                         <p class="slide-label">FLAGSHIP CASE STUDY</p>
                         <h3 class="project-title phosphor-text">DEERE: 34%→87% ADOPTION AT SCALE</h3>
                         <div class="project-structure">
-                            <p class="structure-item"><span class="structure-label">Challenge:</span> 500K users were actively avoiding profile completion — and every empty field was blocking $3.8B in AI and automation revenue.</p>
-                            <p class="structure-item"><span class="structure-label">Approach:</span> I designed a multi-channel forced adoption flow that didn't destroy trust</p>
+                            <p class="structure-item"><span class="structure-label">Challenge:</span> 500K users were actively avoiding profile completion — every empty field blocked $3.8B in AI and automation revenue.</p>
+                            <p class="structure-item"><span class="structure-label">Approach:</span> Led design of a multi-channel forced adoption flow across 8 product lines without destroying trust</p>
                             <p class="structure-item"><span class="structure-label">Result:</span> 34%→87% profile completion in 6 months · $3.8B revenue unlocked</p>
                         </div>
                         <a href="case-studies/deere-common-ux.php" class="project-link brutalist-link">VIEW CASE STUDY →</a>
@@ -288,7 +285,7 @@
                         <h3 class="project-title">DEERE: ONE SYSTEM, 47 PRODUCTS</h3>
                         <div class="project-structure">
                             <p class="structure-item"><span class="structure-label">Challenge:</span> 47 product sites, each with its own navigation, dev team, and political owner. Nobody wanted to give up control.</p>
-                            <p class="structure-item"><span class="structure-label">Approach:</span> I built a shared design system and rolled it out without breaking a single live product</p>
+                            <p class="structure-item"><span class="structure-label">Approach:</span> Led creation of a shared design system and rolled it out across all 47 sites without breaking a single live product</p>
                             <p class="structure-item"><span class="structure-label">Result:</span> One consistent experience across all 47 sites · 45% faster dev handoffs</p>
                         </div>
                         <a href="case-studies/deere-nav.php" class="project-link brutalist-link">VIEW CASE STUDY →</a>
@@ -305,8 +302,8 @@
                         <h3 class="project-title">FOURKITES: DESIGNING FOR UNCERTAINTY</h3>
                         <div class="project-structure">
                             <p class="structure-item"><span class="structure-label">Challenge:</span> Enterprise customers were making million-dollar decisions on dashboards they didn't trust — because we hid uncertainty instead of explaining it.</p>
-                            <p class="structure-item"><span class="structure-label">Approach:</span> I introduced confidence levels that showed uncertainty instead of hiding it</p>
-                            <p class="structure-item"><span class="structure-label">Result:</span> 41% retention increase · 3x customer expansion · contributed to $1B+ valuation</p>
+                            <p class="structure-item"><span class="structure-label">Approach:</span> Led redesign introducing confidence levels that showed uncertainty instead of hiding it</p>
+                            <p class="structure-item"><span class="structure-label">Result:</span> 41% retention increase · 3x customer expansion · $1B+ valuation</p>
                         </div>
                         <a href="case-studies/fourkites-tracking.php" class="project-link brutalist-link">VIEW CASE STUDY →</a>
                     </div>
@@ -322,7 +319,7 @@
                         <h3 class="project-title">FOURKITES: REALIGNING INCENTIVES</h3>
                         <div class="project-structure">
                             <p class="structure-item"><span class="structure-label">Challenge:</span> Drivers saw location sharing as surveillance. The platform needed their data to survive. Both sides were right.</p>
-                            <p class="structure-item"><span class="structure-label">Approach:</span> I designed a rewards system that made data sharing beneficial for both sides</p>
+                            <p class="structure-item"><span class="structure-label">Approach:</span> Led design of a rewards system that made data sharing beneficial for both sides</p>
                             <p class="structure-item"><span class="structure-label">Result:</span> 32% more tracked shipments · Driver NPS +28</p>
                         </div>
                         <a href="case-studies/fourkites-driver.php" class="project-link brutalist-link">VIEW CASE STUDY →</a>
@@ -335,12 +332,12 @@
                         <picture><source srcset="carousel-thumb-thios.webp" type="image/webp"><img src="carousel-thumb-thios.png" alt="Thios Project" loading="lazy" width="250" height="250"></picture>
                     </div>
                     <div class="case-study-body">
-                        <p class="slide-label">BETWEEN-ROLES VENTURE — TECHNICAL RANGE</p>
-                        <h3 class="project-title">THIOS: SOLO-FOUNDER, AI-AUGMENTED</h3>
+                        <p class="slide-label">BETWEEN ROLES — TECHNICAL RANGE</p>
+                        <h3 class="project-title">THIOS: BRAND TO REVENUE, SOLO</h3>
                         <div class="project-structure">
-                            <p class="structure-item"><span class="structure-label">Challenge:</span> Between roles, I tested a hypothesis: can an experienced designer use AI to ship brand, web, 3D, and physical products at solo-founder velocity?</p>
-                            <p class="structure-item"><span class="structure-label">Approach:</span> Used AI as a technical force multiplier — code, CAD, brand assets — to ship a complete product ecosystem</p>
-                            <p class="structure-item"><span class="structure-label">Result:</span> Brand + 3 websites + 5 product variants + revenue in 18 months. Proof that I build, not just design.</p>
+                            <p class="structure-item"><span class="structure-label">Context:</span> Between enterprise roles, shipped a complete product ecosystem solo — brand, 3 websites, 3D configurator, and 5 physical product variants.</p>
+                            <p class="structure-item"><span class="structure-label">How:</span> Design + code + AI tooling. Built in React, Three.js, and production CSS. Revenue-generating in 18 months.</p>
+                            <p class="structure-item"><span class="structure-label">Why it matters:</span> Demonstrates full-stack design range — from strategy to shipping code in production.</p>
                         </div>
                         <a href="case-studies/thios.php" class="project-link brutalist-link">VIEW CASE STUDY →</a>
                     </div>
@@ -400,7 +397,7 @@
                                     <ul class="inline-bullets">
                                         <li><strong>Problem:</strong> 500K+ users weren't completing profiles — blocking $3.8B in subscription revenue</li>
                                         <li><strong>Result:</strong> 34%→87% completion; unified nav across 8 product lines; design system adopted by 40+ teams</li>
-                                        <li><strong>Approach:</strong> Multi-channel forced adoption + enterprise design system; 45% faster handoffs</li>
+                                        <li><strong>Approach:</strong> Led multi-channel forced adoption + enterprise design system across 40+ teams; 45% faster handoffs</li>
                                     </ul>
                                     <a href="case-studies/deere-common-ux.php" class="view-more">View Case Study →</a>
                                 </td>
@@ -416,7 +413,7 @@
                                     <ul class="inline-bullets">
                                         <li><strong>Problem:</strong> Customers didn't trust dashboards built on incomplete data</li>
                                         <li><strong>Result:</strong> $3M→$100M ARR; 41% retention increase; 3x expansion; company reached $1B+ valuation</li>
-                                        <li><strong>Approach:</strong> Showed confidence levels openly; added predictive ETAs ahead of competitors; team 1→10</li>
+                                        <li><strong>Approach:</strong> Led UX redesign showing confidence levels openly; built predictive ETAs ahead of competitors; grew team 1→10</li>
                                     </ul>
                                     <a href="case-studies/fourkites-tracking.php" class="view-more">View Case Study →</a>
                                 </td>
