@@ -209,7 +209,7 @@
                 <div class="hero-layout">
                     <div class="hero-text">
                         <p class="hero-name">PETER BARTSCH</p>
-                        <h2 id="title" class="phosphor-text">I solve the adoption problems that stall enterprises.</h2>
+                        <h2 id="title" class="phosphor-text">I solve the design problems that stall enterprises.</h2>
                         <p class="hero-subtitle">STAFF PRODUCT DESIGNER</p>
                         <p class="hero-tagline">
                             500K users through forced migrations. 47 product lines unified. $3.8B in revenue unlocked. Design orgs built from zero to scale.
