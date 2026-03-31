@@ -270,7 +270,7 @@
 [data-theme="2010s"] .hero-portrait {
     border: none !important;
     border-radius: 16px;
-    overflow: hidden;
+    overflow: visible;
 }
 
 [data-theme="2010s"] .hero-portrait img {
@@ -278,6 +278,7 @@
     border: none;
     box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
 }
+
 
 [data-theme="2010s"] .hero-metric {
     background: rgba(255, 255, 255, 0.04);
@@ -447,11 +448,16 @@
     border-radius: 12px;
     overflow: hidden;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    margin-bottom: 16px;
 }
 
 [data-theme="2010s"] .case-study-image img {
     border: none;
     border-radius: 12px;
+}
+
+[data-theme="2010s"] .case-study-body {
+    padding: 8px 0 0 0;
 }
 
 /* ---- Tracklist ---- */
