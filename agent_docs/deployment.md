@@ -3,7 +3,7 @@
 ## SSH Configuration
 
 **Host**: dreamhost (configured in `~/.ssh/config`)
-**User**: ***REMOVED***
+**User**: tronicadmin
 **Server**: petebartsch.com
 **Key**: ~/.ssh/id_ed25519
 **Port**: 22

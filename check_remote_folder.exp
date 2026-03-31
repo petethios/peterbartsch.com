@@ -1,0 +1,14 @@
+#!/usr/bin/expect -f
+set timeout 10
+set sftp_host "peterbartsch.com"
+set sftp_user "tronicadmin"
+set sftp_pass {X!!RBeHV}
+
+spawn ssh ${sftp_user}@${sftp_host} "ls -la peterbartsch.com"
+expect {
+    -re ".*assword:" { 
+        send "${sftp_pass}\r"
+        exp_continue
+    }
+}
+expect eof

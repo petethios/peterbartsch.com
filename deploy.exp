@@ -1,0 +1,84 @@
+#!/usr/bin/expect -f
+
+# PeterBartsch.com Deployment Script
+# Targets petebartsch.com (Main Site) as the source of truth
+
+set timeout 600
+set sftp_host "peterbartsch.com"
+set sftp_user "tronicadmin"
+set sftp_pass {X!!RBeHV}
+set remote_dir "petebartsch.com"
+set local_dir "/Users/peterbartsch/Documents/GitHub/peterbartsch.com"
+
+puts "\n🚀 Starting Deployment to petebartsch.com...\n"
+
+spawn sftp ${sftp_user}@${sftp_host}
+expect {
+    -re ".*yes/no.*" { send "yes\r"; exp_continue }
+    -re ".*assword:" { send "${sftp_pass}\r"; exp_continue }
+    "sftp>"
+}
+
+# 1. Restore the redirect on peterbartsch.com
+puts "\n🔄 Restoring redirect on peterbartsch.com..."
+send "put ${local_dir}/redirect_index.html peterbartsch.com/index.html\r"
+expect "sftp>"
+
+# 2. Deploy to petebartsch.com
+puts "\n📦 Deploying core site to petebartsch.com..."
+
+# Upload all PHP files
+puts "📄 Uploading PHP files..."
+send "put ${local_dir}/*.php ${remote_dir}/\r"
+expect "sftp>"
+
+# Upload core CSS/JS
+puts "🎨 Uploading Styles and Scripts..."
+send "put ${local_dir}/styles.css ${remote_dir}/styles.css\r"
+expect "sftp>"
+send "put ${local_dir}/script.js ${remote_dir}/script.js\r"
+expect "sftp>"
+
+# Upload configuration files
+puts "⚙️ Uploading Configs..."
+send "put ${local_dir}/.htaccess ${remote_dir}/.htaccess\r"
+expect "sftp>"
+send "put ${local_dir}/robots.txt ${remote_dir}/robots.txt\r"
+expect "sftp>"
+
+# Upload 3D Experiment folder
+puts "📁 Uploading 3D experiment build..."
+send "put -r ${local_dir}/3d ${remote_dir}/\r"
+expect -timeout 600 "sftp>"
+
+# Upload Images folder
+puts "🖼️ Uploading images folder..."
+send "put -r ${local_dir}/img ${remote_dir}/\r"
+expect -timeout 300 "sftp>"
+
+# Upload asset files
+puts "🎨 Uploading assets..."
+send "put ${local_dir}/pblogo.png ${remote_dir}/\r"
+expect "sftp>"
+send "put ${local_dir}/pblogo.svg ${remote_dir}/\r"
+expect "sftp>"
+send "put ${local_dir}/peterb.png ${remote_dir}/\r"
+expect "sftp>"
+send "put ${local_dir}/pdf.png ${remote_dir}/\r"
+expect "sftp>"
+send "put ${local_dir}/*.ttf ${remote_dir}/\r"
+expect "sftp>"
+send "put ${local_dir}/*.mp4 ${remote_dir}/\r"
+expect "sftp>"
+
+# Upload PDFs
+puts "📄 Uploading PDF documents..."
+send "put ${local_dir}/*.pdf ${remote_dir}/\r"
+expect -timeout 300 "sftp>"
+
+send "quit\r"
+expect eof
+
+puts "\n✅ Deployment and Redirect Restoration complete!\n"
+puts "🌐 Your main site: https://petebartsch.com"
+puts "🌐 Redirecting domain: https://peterbartsch.com\n"

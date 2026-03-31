@@ -231,7 +231,7 @@
                     <div id="player" class="about-photo">
                         <div class="cover-art">
                             <div class="hover-text" id="hoverText">click this</div>
-                            <video id="coverVideo" src="take-ride-square-bw.mp4" loop playsinline>
+                            <video id="coverVideo" src="take-ride-square-bw.mp4" loop playsinline poster="img/ride-poster.jpg" preload="metadata">
                                 Your browser does not support the video tag.
                             </video>
                             <div class="grid-overlay"></div>
