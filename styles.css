@@ -2908,6 +2908,114 @@ html:not([data-theme]) .theme-era-btn.active {
 }
 
 /* ========================================
+   Hero Name (smaller, above headline)
+   ======================================== */
+.hero-name {
+    font-family: var(--font-readable);
+    font-size: 12px;
+    letter-spacing: 0.2em;
+    color: var(--color-text-muted);
+    margin: 0 0 8px 0;
+    text-transform: uppercase;
+}
+
+/* ========================================
+   Hero CTA Buttons
+   ======================================== */
+.hero-cta-row {
+    display: flex;
+    gap: 12px;
+    margin: 20px 0 24px 0;
+    flex-wrap: wrap;
+}
+
+.hero-cta-primary {
+    display: inline-block;
+    font-family: var(--font-display);
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 12px 28px;
+    background-color: var(--color-primary);
+    color: var(--color-black);
+    border: var(--border-width) solid var(--color-primary);
+    text-decoration: none;
+    transition: all var(--transition-base);
+}
+
+.hero-cta-primary:hover {
+    background-color: var(--color-white);
+    color: var(--color-black);
+    box-shadow: var(--shadow-glow);
+    transform: translateY(-2px);
+}
+
+.hero-cta-secondary {
+    display: inline-block;
+    font-family: var(--font-display);
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 12px 28px;
+    background: transparent;
+    color: var(--color-text-primary);
+    border: var(--border-width) solid var(--color-text-muted);
+    text-decoration: none;
+    transition: all var(--transition-base);
+}
+
+.hero-cta-secondary:hover {
+    border-color: var(--color-primary);
+    color: var(--color-primary);
+    transform: translateY(-2px);
+}
+
+/* ========================================
+   Flagship Case Study Card
+   ======================================== */
+.case-study-flagship {
+    border-left: 4px solid var(--color-primary) !important;
+    position: relative;
+}
+
+.case-study-flagship .slide-label {
+    color: var(--color-primary) !important;
+    font-weight: 700;
+}
+
+/* ========================================
+   Experience Table — Featured Rows
+   ======================================== */
+.featured-role td {
+    font-weight: 600;
+}
+
+.featured-role td:first-child {
+    position: relative;
+}
+
+/* ========================================
+   LinkedIn Nav Link
+   ======================================== */
+.nav-linkedin {
+    opacity: 0.7;
+    transition: opacity var(--transition-fast);
+}
+
+.nav-linkedin:hover {
+    opacity: 1;
+}
+
+/* ========================================
+   Mobile: Hide theme bar, show in menu only
+   ======================================== */
+@media (max-width: 600px) {
+    .theme-era-bar {
+        display: none !important;
+    }
+}
+
+/* ========================================
    Pretext Layout Engine — Float Spacers
    ======================================== */
 .pretext-float {

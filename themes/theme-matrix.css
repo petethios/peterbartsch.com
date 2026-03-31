@@ -584,6 +584,41 @@
 [data-theme="matrix"] .about-content > *:nth-child(3) { animation-delay: 0.3s; }
 [data-theme="matrix"] .about-content > *:nth-child(4) { animation-delay: 0.4s; }
 
+/* ---- Hero Name & CTAs ---- */
+[data-theme="matrix"] .hero-name {
+    color: #008020;
+}
+
+[data-theme="matrix"] .hero-cta-primary {
+    background: transparent;
+    border: 1px solid #00ff41;
+    color: #00ff41;
+    border-radius: 0;
+    font-family: 'JetBrains Mono', monospace;
+}
+
+[data-theme="matrix"] .hero-cta-primary:hover {
+    background: rgba(0, 255, 65, 0.1);
+    box-shadow: 0 0 12px rgba(0, 255, 65, 0.3);
+    color: #ffffff;
+}
+
+[data-theme="matrix"] .hero-cta-secondary {
+    border: 1px solid rgba(0, 255, 65, 0.3);
+    color: #00cc33;
+    border-radius: 0;
+    font-family: 'JetBrains Mono', monospace;
+}
+
+[data-theme="matrix"] .hero-cta-secondary:hover {
+    border-color: #00ff41;
+    color: #00ff41;
+}
+
+[data-theme="matrix"] .case-study-flagship {
+    border-left: 4px solid #00ff41 !important;
+}
+
 /* ---- Pretext-specific: flow spacers are invisible ---- */
 [data-theme="matrix"] .pretext-float {
     background: transparent !important;

@@ -54,7 +54,7 @@
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-QB3EL923YF"></script>
     <script src="analytics.js"></script>
 
-    <title>Peter Bartsch — Staff Product Designer | Enterprise Systems & Design Orgs</title>
+    <title>Peter Bartsch — Staff Product Designer | Enterprise Adoption & Design Orgs</title>
 
     <!-- Font Preloads -->
     <link rel="preload" href="rombyte.ttf" as="font" type="font/ttf" crossorigin>
@@ -158,6 +158,7 @@
                     <li><a href="#portfolio-carousel">CASES</a></li>
                     <li><a href="resume.php">RESUME</a></li>
                     <li><a href="#contact">CONTACT</a></li>
+                    <li><a href="https://linkedin.com/in/peterbartsch" target="_blank" rel="noopener noreferrer" class="nav-linkedin">LINKEDIN</a></li>
                 </ul>
             </nav>
             <button class="hamburger" id="hamburgerBtn" aria-label="Open menu" aria-expanded="false"
@@ -207,11 +208,16 @@
             <section id="hero" class="hero-section">
                 <div class="hero-layout">
                     <div class="hero-text">
-                        <h2 id="title" class="phosphor-text">PETER BARTSCH</h2>
-                        <p class="hero-subtitle">STAFF PRODUCT DESIGNER — ENTERPRISE SYSTEMS & DESIGN ORGS</p>
+                        <p class="hero-name">PETER BARTSCH</p>
+                        <h2 id="title" class="phosphor-text">I solve the adoption problems that stall enterprises.</h2>
+                        <p class="hero-subtitle">STAFF PRODUCT DESIGNER</p>
                         <p class="hero-tagline">
-                            Your hardest adoption problem is my best work. I've driven 500K users through forced platform migrations, unified 47 product lines into one system, and built the design orgs that ship at that scale.
+                            500K users through forced migrations. 47 product lines unified. $3.8B in revenue unlocked. Design orgs built from zero to scale.
                         </p>
+                        <div class="hero-cta-row">
+                            <a href="#contact" class="hero-cta-primary">Let's Talk</a>
+                            <a href="#portfolio-carousel" class="hero-cta-secondary">See the Work</a>
+                        </div>
                         <div class="hero-metrics">
                             <div class="hero-metric"><span class="hero-metric-value">500K+</span><span class="hero-metric-label">Users Through Forced Adoption</span></div>
                             <div class="hero-metric"><span class="hero-metric-value">$3.8B</span><span class="hero-metric-label">Revenue Unlocked</span></div>
@@ -240,10 +246,7 @@
                     <div class="about-content">
                         <h2 class="about-heading phosphor-text">WHAT I DO</h2>
                         <p class="about-bio">
-                            I take the design problems that stall enterprises — forced adoption, platform fragmentation, trust in uncertain data — and turn them into measurable outcomes. At John Deere, that meant $3.8B in enabled revenue and a design system used by 40+ teams. At FourKites, it meant building the design org from zero and contributing to a $1B+ valuation.
-                        </p>
-                        <p class="about-bio">
-                            15 years of enterprise systems at scale: forced adoption across 500K users, design orgs built from zero, and billion-dollar exits. I prototype in production-grade tools and ship end-to-end — strategy through code.
+                            I take the design problems that stall enterprises — forced adoption, platform fragmentation, trust in uncertain data — and turn them into measurable outcomes. $3.8B in revenue unlocked at Deere. Design org built from zero to $1B+ valuation at FourKites. 15 years shipping end-to-end, strategy through code.
                         </p>
                         <div class="about-strengths">
                             <span class="strength-tag">Enterprise Design Systems</span>
@@ -259,7 +262,7 @@
             <section id="portfolio-carousel" class="portfolio-carousel">
 
                 <!-- 1. Deere Common UX - Flagship: Forced adoption at scale -->
-                <article class="case-study-card">
+                <article class="case-study-card case-study-flagship">
                     <div class="case-study-image">
                         <picture><source srcset="carousel-thumb-deere-ux.webp" type="image/webp"><img src="carousel-thumb-deere-ux.png" alt="Deere Common UX" width="250" height="250"></picture>
                     </div>
@@ -332,8 +335,8 @@
                         <picture><source srcset="carousel-thumb-thios.webp" type="image/webp"><img src="carousel-thumb-thios.png" alt="Thios Project" loading="lazy" width="250" height="250"></picture>
                     </div>
                     <div class="case-study-body">
-                        <p class="slide-label">SIDE PROJECT — TECHNICAL RANGE</p>
-                        <h3 class="project-title">THIOS: FULL-STACK DESIGN, AI-AUGMENTED</h3>
+                        <p class="slide-label">BETWEEN-ROLES VENTURE — TECHNICAL RANGE</p>
+                        <h3 class="project-title">THIOS: SOLO-FOUNDER, AI-AUGMENTED</h3>
                         <div class="project-structure">
                             <p class="structure-item"><span class="structure-label">Challenge:</span> Between roles, I tested a hypothesis: can an experienced designer use AI to ship brand, web, 3D, and physical products at solo-founder velocity?</p>
                             <p class="structure-item"><span class="structure-label">Approach:</span> Used AI as a technical force multiplier — code, CAD, brand assets — to ship a complete product ecosystem</p>
