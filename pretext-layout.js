@@ -572,7 +572,7 @@
         if (typeof Pretext === 'undefined') return;
 
         layoutHero();
-        layoutAbout();
+        // About section keeps its native flexbox layout (video left, content right)
         layoutCaseStudies();
         layoutContact();
     }
