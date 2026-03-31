@@ -366,16 +366,20 @@
 }
 
 [data-theme="matrix"] .configurator-cta {
-    border: 1px solid #00ff41;
-    color: #00ff41;
-    background: transparent;
-    border-radius: 0;
+    border: 1px solid rgba(0, 255, 65, 0.3) !important;
+    color: #00ff41 !important;
+    background: transparent !important;
+    border-radius: 0 !important;
+    font-family: 'JetBrains Mono', monospace !important;
+    letter-spacing: 0.1em;
 }
 
 [data-theme="matrix"] .configurator-cta:hover {
-    background: rgba(0, 255, 65, 0.15);
-    box-shadow: 0 0 15px rgba(0, 255, 65, 0.4);
-    color: #ffffff;
+    background: rgba(0, 255, 65, 0.1) !important;
+    border-color: #00ff41 !important;
+    box-shadow: 0 0 12px rgba(0, 255, 65, 0.3) !important;
+    color: #ffffff !important;
+    transform: translateY(-2px);
 }
 
 /* ---- Experience Table ---- */

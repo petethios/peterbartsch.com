@@ -570,18 +570,21 @@
 }
 
 [data-theme="2026"] .configurator-cta {
-    background-color: #111 !important;
-    color: #ffffff !important;
-    border: none !important;
-    border-radius: 4px !important;
+    color: #0066FF !important;
+    background: none !important;
     font-family: 'JetBrains Mono', monospace;
     font-size: 13px;
     font-weight: 500;
     text-decoration: none !important;
+    border: 1px solid #ddd !important;
+    border-radius: 4px !important;
+    padding: 10px 20px !important;
 }
 
 [data-theme="2026"] .configurator-cta:hover {
+    color: #ffffff !important;
     background-color: #0066FF !important;
+    border-color: #0066FF !important;
 }
 
 [data-theme="2026"] .configurator-preview img {

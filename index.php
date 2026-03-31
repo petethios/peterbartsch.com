@@ -142,10 +142,10 @@
             <div class="theme-era-buttons" role="radiogroup" aria-label="Switch design era theme">
                 <button class="theme-era-btn" data-theme="80s" aria-label="1980s Retro Terminal">80s</button>
                 <button class="theme-era-btn" data-theme="90s" aria-label="1990s GeoCities">90s</button>
+                <button class="theme-era-btn" data-theme="matrix" aria-label="2000 Matrix Digital Rain">2000</button>
                 <button class="theme-era-btn" data-theme="2000s" aria-label="2000s Web 2.0">00s</button>
                 <button class="theme-era-btn" data-theme="2010s" aria-label="2010s Corporate Memphis">10s</button>
                 <button class="theme-era-btn active" data-theme="2026" aria-label="2026 Modern AI">2026</button>
-                <button class="theme-era-btn" data-theme="matrix" aria-label="Matrix Digital Rain">MX</button>
             </div>
         </div>
         <div class="header-inner">
@@ -191,10 +191,10 @@
             <div class="mobile-theme-buttons">
                 <button class="theme-era-btn" data-theme="80s">80s</button>
                 <button class="theme-era-btn" data-theme="90s">90s</button>
+                <button class="theme-era-btn" data-theme="matrix">2000</button>
                 <button class="theme-era-btn" data-theme="2000s">00s</button>
                 <button class="theme-era-btn" data-theme="2010s">10s</button>
                 <button class="theme-era-btn active" data-theme="2026">2026</button>
-                <button class="theme-era-btn" data-theme="matrix">MX</button>
             </div>
         </nav>
     </header>
