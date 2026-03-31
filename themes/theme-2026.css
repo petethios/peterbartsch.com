@@ -280,6 +280,7 @@
     color: #111 !important;
     font-weight: 700;
     letter-spacing: -0.02em;
+    padding-left: 40px;
 }
 
 [data-theme="2026"] .about-bio {
@@ -774,21 +775,20 @@
 }
 
 /* ---- AI-assisted feel: line numbers on about bio ---- */
-[data-theme="2026"] .about-bio {
+[data-theme="2026"] .about-content {
     counter-reset: bio-line;
+}
+
+[data-theme="2026"] .about-bio {
+    counter-increment: bio-line;
     padding-left: 40px;
     position: relative;
 }
 
-[data-theme="2026"] .about-bio p {
-    counter-increment: bio-line;
-    position: relative;
-}
-
-[data-theme="2026"] .about-bio p::before {
+[data-theme="2026"] .about-bio::before {
     content: counter(bio-line, decimal-leading-zero);
     position: absolute;
-    left: -40px;
+    left: 0;
     color: #ccc;
     font-family: 'JetBrains Mono', monospace;
     font-size: 11px;
