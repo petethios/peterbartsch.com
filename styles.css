@@ -2906,3 +2906,25 @@ html:not([data-theme]) .theme-era-btn.active {
     }
 
 }
+
+/* ========================================
+   Pretext Layout Engine — Float Spacers
+   ======================================== */
+.pretext-float {
+    pointer-events: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Sections with active pretext flow */
+[data-pretext="active"] {
+    overflow: hidden; /* Contain floats */
+}
+
+/* Case study spread indicators */
+.case-study-card[data-spread="left"] .case-study-image {
+    float: left;
+}
+.case-study-card[data-spread="right"] .case-study-image {
+    float: right;
+}

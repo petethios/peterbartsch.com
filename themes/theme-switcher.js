@@ -12,7 +12,8 @@
         '90s': 'theme-90s.css',
         '2000s': 'theme-2000s.css',
         '2010s': 'theme-2010s.css',
-        '2026': 'theme-2026.css'
+        '2026': 'theme-2026.css',
+        'matrix': 'theme-matrix.css'
     };
 
     var THEME_FONTS_MAP = {
@@ -20,12 +21,15 @@
         '90s': ['font-90s'],
         '2000s': [],
         '2010s': ['font-2010s'],
-        '2026': ['font-2026']
+        '2026': ['font-2026'],
+        'matrix': ['font-2026'] // Matrix reuses JetBrains Mono
     };
 
     var currentStylesheet = null;
     var starsAnimFrame = null;
     var starsResizeHandler = null;
+    var matrixAnimFrame = null;
+    var matrixResizeHandler = null;
 
     // Determine base path for theme CSS files
     var scripts = document.getElementsByTagName('script');
@@ -89,6 +93,14 @@
 
         // Handle 90s stars
         handle90sStars(themeId === '90s');
+
+        // Handle Matrix rain
+        handleMatrixRain(themeId === 'matrix');
+
+        // Notify pretext layout engine of theme change
+        if (window.PretextLayout) {
+            window.PretextLayout.applyTheme(themeId);
+        }
 
         // Save
         localStorage.setItem(STORAGE_KEY, themeId);
@@ -192,6 +204,140 @@
             }
 
             starsAnimFrame = requestAnimationFrame(animate);
+        }
+        animate();
+    }
+
+    // ========================================
+    // Matrix Digital Rain Animation
+    // ========================================
+
+    function handleMatrixRain(show) {
+        var canvas = document.getElementById('matrix-canvas');
+        if (!canvas) return;
+
+        if (show) {
+            canvas.style.display = 'block';
+            startMatrixRain(canvas);
+        } else {
+            stopMatrixRain();
+            canvas.style.display = 'none';
+        }
+    }
+
+    function stopMatrixRain() {
+        if (matrixAnimFrame) {
+            cancelAnimationFrame(matrixAnimFrame);
+            matrixAnimFrame = null;
+        }
+        if (matrixResizeHandler) {
+            window.removeEventListener('resize', matrixResizeHandler);
+            matrixResizeHandler = null;
+        }
+    }
+
+    function startMatrixRain(canvas) {
+        var ctx = canvas.getContext('2d');
+        var fontSize = 14;
+        var columns;
+        var drops;
+        var trailLength = 20; // Number of trail characters per column
+        var charGrid; // Store characters for trail effect
+
+        // Katakana + Latin characters for the rain
+        var chars = 'アイウエオカキクケコサシスセソタチツテトナニヌネノハヒフヘホマミムメモヤユヨラリルレロワヲン';
+        chars += 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
+        chars = chars.split('');
+
+        var rows;
+
+        function resize() {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+            columns = Math.floor(canvas.width / fontSize);
+            rows = Math.floor(canvas.height / fontSize) + 1;
+            if (!drops || drops.length !== columns) {
+                var oldDrops = drops || [];
+                drops = [];
+                charGrid = [];
+                for (var i = 0; i < columns; i++) {
+                    drops[i] = oldDrops[i] !== undefined ? oldDrops[i] : Math.floor(Math.random() * -rows);
+                    charGrid[i] = [];
+                    for (var j = 0; j < rows + trailLength; j++) {
+                        charGrid[i][j] = chars[Math.floor(Math.random() * chars.length)];
+                    }
+                }
+            }
+        }
+        resize();
+        matrixResizeHandler = resize;
+        window.addEventListener('resize', matrixResizeHandler);
+
+        var frameCount = 0;
+
+        function animate() {
+            if (canvas.style.display === 'none') return;
+
+            var newWidth = window.innerWidth;
+            var newHeight = window.innerHeight;
+            if (canvas.width !== newWidth || canvas.height !== newHeight) {
+                resize();
+            }
+
+            // Clear canvas fully each frame
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            ctx.font = fontSize + 'px monospace';
+
+            // Only advance drops every 3 frames for slower rain
+            frameCount++;
+            if (frameCount % 3 === 0) {
+                for (var c = 0; c < columns; c++) {
+                    drops[c]++;
+                    // Randomly change a character in the trail
+                    if (Math.random() > 0.9) {
+                        var rr = Math.floor(Math.random() * (rows + trailLength));
+                        charGrid[c][rr] = chars[Math.floor(Math.random() * chars.length)];
+                    }
+                    // Reset drop when off screen
+                    if (drops[c] * fontSize > canvas.height + trailLength * fontSize) {
+                        if (Math.random() > 0.95) {
+                            drops[c] = Math.floor(Math.random() * -trailLength);
+                        }
+                    }
+                }
+            }
+
+            // Draw columns — skip every other column for sparser rain
+            for (var i = 0; i < columns; i += 2) {
+                var headRow = drops[i];
+                if (headRow < 0) continue; // Still waiting to start
+                var x = i * fontSize;
+
+                for (var t = 0; t < trailLength; t++) {
+                    var row = headRow - t;
+                    if (row < 0 || row >= rows + trailLength) continue;
+                    var y = row * fontSize;
+                    if (y < 0 || y > canvas.height) continue;
+
+                    var ch = charGrid[i][row % (rows + trailLength)];
+
+                    if (t === 0) {
+                        // Head: bright white
+                        ctx.fillStyle = 'rgba(255, 255, 255, 0.9)';
+                    } else if (t === 1) {
+                        // Near head: bright green
+                        ctx.fillStyle = 'rgba(0, 255, 65, 0.7)';
+                    } else {
+                        // Trail: fading green
+                        var alpha = Math.max(0, 0.4 - (t / trailLength) * 0.4);
+                        ctx.fillStyle = 'rgba(0, 255, 65, ' + alpha + ')';
+                    }
+
+                    ctx.fillText(ch, x, y);
+                }
+            }
+
+            matrixAnimFrame = requestAnimationFrame(animate);
         }
         animate();
     }

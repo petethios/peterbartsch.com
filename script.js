@@ -580,3 +580,19 @@ if (coverVideo) {
     idleTimer = setTimeout(dimPage, IDLE_TIMEOUT);
 })();
 
+// ========================================
+// Pretext Magazine Layout Init
+// ========================================
+(function () {
+    'use strict';
+    if (typeof window.PretextLayout === 'undefined') return;
+
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', function () {
+            window.PretextLayout.init();
+        });
+    } else {
+        window.PretextLayout.init();
+    }
+})();
+

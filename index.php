@@ -145,6 +145,7 @@
                 <button class="theme-era-btn" data-theme="2000s" aria-label="2000s Web 2.0">00s</button>
                 <button class="theme-era-btn" data-theme="2010s" aria-label="2010s Corporate Memphis">10s</button>
                 <button class="theme-era-btn active" data-theme="2026" aria-label="2026 Modern AI">2026</button>
+                <button class="theme-era-btn" data-theme="matrix" aria-label="Matrix Digital Rain">MX</button>
             </div>
         </div>
         <div class="header-inner">
@@ -193,6 +194,7 @@
                 <button class="theme-era-btn" data-theme="2000s">00s</button>
                 <button class="theme-era-btn" data-theme="2010s">10s</button>
                 <button class="theme-era-btn active" data-theme="2026">2026</button>
+                <button class="theme-era-btn" data-theme="matrix">MX</button>
             </div>
         </nav>
     </header>
@@ -714,7 +716,13 @@
     <!-- Modal Container (dynamically populated) -->
     <div id="modal-container"></div>
 
+    <!-- Matrix theme canvas (hidden until matrix theme active) -->
+    <canvas id="matrix-canvas" aria-hidden="true"></canvas>
+
     <!-- Scripts -->
+    <script src="vendor/pretext.min.js"></script>
+    <script src="pretext-shapes.js?v=<?php echo filemtime('pretext-shapes.js'); ?>"></script>
+    <script src="pretext-layout.js?v=<?php echo filemtime('pretext-layout.js'); ?>"></script>
     <script src="portfolio-data.js?v=<?php echo filemtime('portfolio-data.js'); ?>"></script>
     <script src="modal-system.js?v=<?php echo filemtime('modal-system.js'); ?>"></script>
     <script src="themes/theme-switcher.js?v=<?php echo filemtime('themes/theme-switcher.js'); ?>"></script>
