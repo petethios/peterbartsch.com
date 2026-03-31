@@ -269,7 +269,7 @@
 
 [data-theme="2010s"] .hero-portrait img {
     border-radius: 16px;
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    border: none;
     box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
 }
 
@@ -358,7 +358,7 @@
     border-radius: 16px;
     overflow: hidden;
     box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
-    border: 1px solid rgba(255, 255, 255, 0.06);
+    border: none;
 }
 
 [data-theme="2010s"] .hover-text {
@@ -603,7 +603,7 @@
 
 [data-theme="2010s"] .configurator-preview img {
     border-radius: 12px;
-    border: 1px solid rgba(255, 255, 255, 0.06);
+    border: none;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
 }
 
@@ -698,7 +698,7 @@
 /* ---- Sidebar ---- */
 [data-theme="2010s"] .sidebar-portrait img {
     border-radius: 16px !important;
-    border: 1px solid rgba(255, 255, 255, 0.06);
+    border: none;
 }
 
 [data-theme="2010s"] .sidebar-link {
