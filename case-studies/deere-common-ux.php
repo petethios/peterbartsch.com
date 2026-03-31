@@ -5,15 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>John Deere: Forced Adoption at Scale | Peter Bartsch Case Study</title>
     <meta name="description" content="How I drove 34%→87% profile completion across 500K+ users while enabling $3.8B in subscription revenue—without destroying trust.">
-    <link rel="canonical" href="https://peterbartsch.com/case-studies/deere-common-ux">
+    <link rel="canonical" href="https://petebartsch.com/case-studies/deere-common-ux">
     <link rel="icon" type="image/svg+xml" href="../pblogo.svg">
 
     <!-- Open Graph -->
     <meta property="og:title" content="John Deere: Forced Adoption at Scale | Peter Bartsch">
     <meta property="og:description" content="Driving platform adoption without destroying trust—34% to 87% engagement.">
     <meta property="og:type" content="article">
-    <meta property="og:url" content="https://peterbartsch.com/case-studies/deere-common-ux">
-    <meta property="og:image" content="https://peterbartsch.com/img/deere-01.png">
+    <meta property="og:url" content="https://petebartsch.com/case-studies/deere-common-ux">
+    <meta property="og:image" content="https://petebartsch.com/img/deere-01.png">
 
     <!-- Fonts -->
     <link rel="preload" href="../rombyte.ttf" as="font" type="font/ttf" crossorigin>
@@ -28,13 +28,23 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="John Deere: Forced Adoption at Scale | Peter Bartsch">
     <meta name="twitter:description" content="Driving platform adoption without destroying trust—34% to 87% engagement.">
-    <meta name="twitter:image" content="https://peterbartsch.com/img/deere-01.png">
+    <meta name="twitter:image" content="https://petebartsch.com/img/deere-01.png">
 
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-QB3EL923YF"></script>
     <script>window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag('js', new Date()); gtag('config', 'G-QB3EL923YF');</script>
 
     <!-- Microsoft Clarity -->
     <script type="text/javascript">(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window,document,"clarity","script","uhlenklp4t");</script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "John Deere: Forced Adoption at Scale",
+      "description": "How I drove 34%→87% profile completion across 500K+ users while enabling $3.8B in subscription revenue.",
+      "author": {"@type": "Person", "name": "Peter Bartsch", "url": "https://petebartsch.com"},
+      "url": "https://petebartsch.com/case-studies/deere-common-ux"
+    }
+    </script>
 </head>
 <body>
     <?php include('../themes/theme-banner.php'); ?>

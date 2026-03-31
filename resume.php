@@ -5,15 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resume | Peter Bartsch — Staff Product Designer</title>
     <meta name="description" content="Peter Bartsch — Staff Product Designer. 15+ years designing enterprise systems shipped to 500K+ users. John Deere, FourKites ($1B+ valuation), MavenWave.">
-    <link rel="canonical" href="https://peterbartsch.com/resume">
+    <link rel="canonical" href="https://petebartsch.com/resume">
     <link rel="icon" type="image/svg+xml" href="pblogo.svg">
 
     <!-- Open Graph -->
     <meta property="og:title" content="Resume | Peter Bartsch — Staff Product Designer">
     <meta property="og:description" content="15+ years designing enterprise systems shipped to 500K+ users.">
     <meta property="og:type" content="profile">
-    <meta property="og:url" content="https://peterbartsch.com/resume">
-    <meta property="og:image" content="https://peterbartsch.com/og-image.png">
+    <meta property="og:url" content="https://petebartsch.com/resume">
+    <meta property="og:image" content="https://petebartsch.com/og-image.png">
 
     <!-- Fonts -->
     <link rel="preload" href="rombyte.ttf" as="font" type="font/ttf" crossorigin>

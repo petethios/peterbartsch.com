@@ -12,16 +12,16 @@
     <meta name="keywords"
         content="Peter Bartsch, staff product designer, enterprise design systems, UX leader, design org leadership, portfolio">
     <meta name="author" content="Peter Bartsch">
-    <link rel="canonical" href="https://peterbartsch.com/">
+    <link rel="canonical" href="https://petebartsch.com/">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://peterbartsch.com/">
+    <meta property="og:url" content="https://petebartsch.com/">
     <meta property="og:title" content="Peter Bartsch — Staff Product Designer">
     <meta property="og:description"
         content="Staff Product Designer. $3.8B revenue enabled. 500K+ users shipped to. Design org built 1→10. Enterprise systems that actually get adopted.">
     <meta property="og:site_name" content="Peter Bartsch">
-    <meta property="og:image" content="https://peterbartsch.com/og-image.png">
+    <meta property="og:image" content="https://petebartsch.com/og-image.png">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     <meta property="og:image:alt" content="Peter Bartsch — Staff Product Designer | $3.8B Revenue Enabled | 500K+ Users">
@@ -31,7 +31,7 @@
     <meta name="twitter:title" content="Peter Bartsch — Staff Product Designer">
     <meta name="twitter:description"
         content="Staff Product Designer. $3.8B revenue enabled. 500K+ users shipped to. Design org built 1→10. Enterprise systems that actually get adopted.">
-    <meta name="twitter:image" content="https://peterbartsch.com/og-image.png">
+    <meta name="twitter:image" content="https://petebartsch.com/og-image.png">
     <meta name="twitter:image:alt" content="Peter Bartsch — Staff Product Designer | Enterprise Systems & Design Orgs">
 
     <meta name="theme-color" content="#2f4f50">
@@ -85,7 +85,8 @@
       "@type": "Person",
       "name": "Peter Bartsch",
       "jobTitle": "Staff Product Designer",
-      "url": "https://peterbartsch.com",
+      "url": "https://petebartsch.com",
+      "image": "https://petebartsch.com/peterb.png",
       "sameAs": [
         "https://linkedin.com/in/peterbartsch"
       ],
@@ -123,7 +124,7 @@
       "@context": "https://schema.org",
       "@type": "WebSite",
       "name": "Peter Bartsch Portfolio",
-      "url": "https://peterbartsch.com",
+      "url": "https://petebartsch.com",
       "description": "Portfolio and resume of Peter Bartsch, Product and UX Leader"
     }
     </script>
@@ -131,8 +132,7 @@
 
 <body>
 
-    <a href="#about" class="visually-hidden"
-        class="skip-link">Skip to main content</a>
+    <a href="#main" class="visually-hidden skip-link">Skip to main content</a>
     <!-- Sticky Header Nav -->
     <header id="site-header" role="banner">
         <h1 id="page-title" class="visually-hidden">Peter Bartsch — Staff Product Designer Portfolio</h1>
@@ -223,7 +223,7 @@
                         </div>
                     </div>
                     <div class="hero-portrait">
-                        <picture><source srcset="peterb.webp" type="image/webp"><img src="peterb.png" alt="Peter Bartsch" width="200" height="200" loading="eager" /></picture>
+                        <picture><source srcset="peterb.webp" type="image/webp"><img src="peterb.png" alt="Peter Bartsch, Staff Product Designer" width="200" height="200" loading="eager" fetchpriority="high" /></picture>
                     </div>
                 </div>
             </section>
@@ -349,14 +349,14 @@
                 <section class="company-logos-section scroll-reveal">
                     <h4 class="company-logos-header">From $3M startups to $38B enterprises</h4>
                     <div class="company-logos-grid scroll-reveal-stagger">
-                        <picture><source srcset="img/logos/John-Deere-Logo 1.webp" type="image/webp"><img src="img/logos/John-Deere-Logo 1.png" alt="John Deere" class="company-logo" loading="lazy" width="148" height="92"></picture>
-                        <picture><source srcset="img/logos/FourKites_Logo_light.webp" type="image/webp"><img src="img/logos/FourKites_Logo_light.png" alt="FourKites" class="company-logo" loading="lazy" width="277" height="84"></picture>
-                        <picture><source srcset="img/logos/abbvie_logo-white.webp" type="image/webp"><img src="img/logos/abbvie_logo-white.png" alt="AbbVie" class="company-logo" loading="lazy" width="286" height="146"></picture>
-                        <picture><source srcset="img/logos/Comerica-new-logo.svg.webp" type="image/webp"><img src="img/logos/Comerica-new-logo.svg.png" alt="Comerica" class="company-logo" loading="lazy" width="500" height="162"></picture>
-                        <picture><source srcset="img/logos/maven 1.webp" type="image/webp"><img src="img/logos/maven 1.png" alt="MavenWave" class="company-logo company-logo-sm" loading="lazy" width="321" height="64"></picture>
-                        <picture><source srcset="img/logos/Gogo-Inc-RGB-RedBlue-WEB1000px 1.webp" type="image/webp"><img src="img/logos/Gogo-Inc-RGB-RedBlue-WEB1000px 1.png" alt="Gogo" class="company-logo" loading="lazy" width="160" height="105"></picture>
-                        <img src="img/logos/here-white-200px.webp" alt="HERE Maps" class="company-logo" loading="lazy" width="200" height="203">
-                        <picture><source srcset="img/logos/Thios-and-company-badge.webp" type="image/webp"><img src="img/logos/Thios-and-company-badge.png" alt="Thios" class="company-logo" loading="lazy" width="312" height="70"></picture>
+                        <picture><source srcset="img/logos/John-Deere-Logo 1.webp" type="image/webp"><img loading="lazy" src="img/logos/John-Deere-Logo 1.png" alt="John Deere" class="company-logo" loading="lazy" width="148" height="92"></picture>
+                        <picture><source srcset="img/logos/FourKites_Logo_light.webp" type="image/webp"><img loading="lazy" src="img/logos/FourKites_Logo_light.png" alt="FourKites" class="company-logo" loading="lazy" width="277" height="84"></picture>
+                        <picture><source srcset="img/logos/abbvie_logo-white.webp" type="image/webp"><img loading="lazy" src="img/logos/abbvie_logo-white.png" alt="AbbVie" class="company-logo" loading="lazy" width="286" height="146"></picture>
+                        <picture><source srcset="img/logos/Comerica-new-logo.svg.webp" type="image/webp"><img loading="lazy" src="img/logos/Comerica-new-logo.svg.png" alt="Comerica" class="company-logo" loading="lazy" width="500" height="162"></picture>
+                        <picture><source srcset="img/logos/maven 1.webp" type="image/webp"><img loading="lazy" src="img/logos/maven 1.png" alt="MavenWave" class="company-logo company-logo-sm" loading="lazy" width="321" height="64"></picture>
+                        <picture><source srcset="img/logos/Gogo-Inc-RGB-RedBlue-WEB1000px 1.webp" type="image/webp"><img loading="lazy" src="img/logos/Gogo-Inc-RGB-RedBlue-WEB1000px 1.png" alt="Gogo" class="company-logo" loading="lazy" width="160" height="105"></picture>
+                        <img loading="lazy" src="img/logos/here-white-200px.webp" alt="HERE Maps" class="company-logo" loading="lazy" width="200" height="203">
+                        <picture><source srcset="img/logos/Thios-and-company-badge.webp" type="image/webp"><img loading="lazy" src="img/logos/Thios-and-company-badge.png" alt="Thios" class="company-logo" loading="lazy" width="312" height="70"></picture>
                     </div>
                 </section>
 
@@ -364,7 +364,7 @@
                 <section class="configurator-showcase scroll-reveal">
                     <div class="configurator-showcase-inner">
                         <div class="configurator-preview">
-                            <img src="img/configurator-screenshot.png" alt="Thios 3D Configurator Preview" loading="lazy">
+                            <img loading="lazy" src="img/configurator-screenshot.png" alt="Thios 3D Configurator Preview" loading="lazy">
                             <div class="grid-overlay"></div>
                         </div>
                         <div class="configurator-content">
@@ -499,9 +499,9 @@
                 <a href="case-studies/thios.php" class="modal-case-study-cta">View Full Case Study →</a>
             </div>
             <div class="carousel">
-                <img src="img/thios-01.png" alt="Thios modular shelter system" class="active">
-                <img src="img/thios-02.png" alt="Thios design">
-                <img src="img/thios-03.png" alt="Thios prototype">
+                <img loading="lazy" src="img/thios-01.png" alt="Thios modular shelter system" class="active">
+                <img loading="lazy" src="img/thios-02.png" alt="Thios design">
+                <img loading="lazy" src="img/thios-03.png" alt="Thios prototype">
             </div>
             <div class="carousel-nav">
                 <button class="prevBtn">BACK</button>
@@ -525,9 +525,9 @@
                 <a href="case-studies/deere-nav.php" class="modal-case-study-cta modal-cta-secondary">Platform Unification Case Study →</a>
             </div>
             <div class="carousel">
-                <img src="img/deere-01.png" alt="Deere Operations Center" class="active">
-                <img src="img/deere-02.png" alt="Deere design system">
-                <img src="img/deere-03.png" alt="Deere navigation">
+                <img loading="lazy" src="img/deere-01.png" alt="Deere Operations Center" class="active">
+                <img loading="lazy" src="img/deere-02.png" alt="Deere design system">
+                <img loading="lazy" src="img/deere-03.png" alt="Deere navigation">
             </div>
             <div class="carousel-nav">
                 <button class="prevBtn">BACK</button>
@@ -548,9 +548,9 @@
                 <a href="case-studies/fourkites-driver.php" class="modal-case-study-cta modal-cta-secondary">Incentive Design Case Study →</a>
             </div>
             <div class="carousel">
-                <img src="img/fourkites-01.png" alt="FourKites control tower" class="active">
-                <img src="img/fourkites-02.png" alt="FourKites dashboard">
-                <img src="img/fourkites-03.png" alt="FourKites mobile">
+                <img loading="lazy" src="img/fourkites-01.png" alt="FourKites control tower" class="active">
+                <img loading="lazy" src="img/fourkites-02.png" alt="FourKites dashboard">
+                <img loading="lazy" src="img/fourkites-03.png" alt="FourKites mobile">
             </div>
             <div class="carousel-nav">
                 <button class="prevBtn">BACK</button>
@@ -577,14 +577,14 @@
                     and leading cross-functional design sprints</li>
             </ul>
             <div class="carousel">
-                <img src="img/mavenwave-abbvie-01.png" alt="AbbVie portal design 1" class="active">
-                <img src="img/mavenwave-abbvie-02.png" alt="AbbVie portal design 2">
-                <img src="img/mavenwave-abbvie-03.png" alt="AbbVie portal design 3">
-                <img src="img/mavenwave-abbvie-04.png" alt="AbbVie portal design 4">
-                <img src="img/mavenwave-abbvie-05.png" alt="AbbVie portal design 5">
-                <img src="img/mavenwave-catamaran-rx-01.png" alt="OptumRx pharmacy platform design 1">
-                <img src="img/mavenwave-catamaran-rx-02.png" alt="OptumRx pharmacy platform design 2">
-                <img src="img/mavenwave-comerica-01.png" alt="Comerica banking portal design">
+                <img loading="lazy" src="img/mavenwave-abbvie-01.png" alt="AbbVie portal design 1" class="active">
+                <img loading="lazy" src="img/mavenwave-abbvie-02.png" alt="AbbVie portal design 2">
+                <img loading="lazy" src="img/mavenwave-abbvie-03.png" alt="AbbVie portal design 3">
+                <img loading="lazy" src="img/mavenwave-abbvie-04.png" alt="AbbVie portal design 4">
+                <img loading="lazy" src="img/mavenwave-abbvie-05.png" alt="AbbVie portal design 5">
+                <img loading="lazy" src="img/mavenwave-catamaran-rx-01.png" alt="OptumRx pharmacy platform design 1">
+                <img loading="lazy" src="img/mavenwave-catamaran-rx-02.png" alt="OptumRx pharmacy platform design 2">
+                <img loading="lazy" src="img/mavenwave-comerica-01.png" alt="Comerica banking portal design">
 
 
             </div>
@@ -606,9 +606,9 @@
                 <li>Led UX integration of acquired Trapster app, improving onboarding completion 33%</li>
             </ul>
             <div class="carousel">
-                <img src="img/nokia-here-01.png" alt="Nokia HERE Maps interface design 1" class="active">
-                <img src="img/nokia-here-02.png" alt="Nokia HERE Maps interface design 2">
-                <img src="img/nokia-here-03.png" alt="Nokia HERE Maps interface design 3">
+                <img loading="lazy" src="img/nokia-here-01.png" alt="Nokia HERE Maps interface design 1" class="active">
+                <img loading="lazy" src="img/nokia-here-02.png" alt="Nokia HERE Maps interface design 2">
+                <img loading="lazy" src="img/nokia-here-03.png" alt="Nokia HERE Maps interface design 3">
             </div>
             <div class="carousel-nav">
                 <button class="prevBtn">BACK</button>
@@ -628,14 +628,14 @@
                     recurring revenue</li>
             </ul>
             <div class="carousel">
-                <img src="img/gogo-01.png" alt="Gogo inflight internet product design 1" class="active">
-                <img src="img/gogo-02.png" alt="Gogo inflight internet product design 2">
-                <img src="img/gogo-03.png" alt="Gogo inflight internet product design 3">
-                <img src="img/gogo-04.png" alt="Gogo inflight internet product design 4">
-                <img src="img/gogo-05.png" alt="Gogo inflight internet product design 5">
-                <img src="img/gogo-06.png" alt="Gogo inflight internet product design 6">
-                <img src="img/gogo-07.png" alt="Gogo inflight internet product design 7">
-                <img src="img/gogo-08.png" alt="Gogo inflight internet product design 8">
+                <img loading="lazy" src="img/gogo-01.png" alt="Gogo inflight internet product design 1" class="active">
+                <img loading="lazy" src="img/gogo-02.png" alt="Gogo inflight internet product design 2">
+                <img loading="lazy" src="img/gogo-03.png" alt="Gogo inflight internet product design 3">
+                <img loading="lazy" src="img/gogo-04.png" alt="Gogo inflight internet product design 4">
+                <img loading="lazy" src="img/gogo-05.png" alt="Gogo inflight internet product design 5">
+                <img loading="lazy" src="img/gogo-06.png" alt="Gogo inflight internet product design 6">
+                <img loading="lazy" src="img/gogo-07.png" alt="Gogo inflight internet product design 7">
+                <img loading="lazy" src="img/gogo-08.png" alt="Gogo inflight internet product design 8">
             </div>
             <div class="carousel-nav">
                 <button class="prevBtn">BACK</button>
@@ -658,9 +658,9 @@
                 <li>Donated proceeds for local SF-based women's shelter and STEM educational center in Vallejo, CA</li>
             </ul>
             <div class="carousel">
-                <img src="img/how-weird-01.png" alt="How Weird Street Faire event 1" class="active">
-                <img src="img/how-weird-02.png" alt="How Weird Street Faire event 2">
-                <img src="img/how-weird-03.png" alt="How Weird Street Faire event 3">
+                <img loading="lazy" src="img/how-weird-01.png" alt="How Weird Street Faire event 1" class="active">
+                <img loading="lazy" src="img/how-weird-02.png" alt="How Weird Street Faire event 2">
+                <img loading="lazy" src="img/how-weird-03.png" alt="How Weird Street Faire event 3">
             </div>
             <div class="carousel-nav">
                 <button class="prevBtn">BACK</button>
@@ -682,9 +682,9 @@
                     revenue before acquisition</li>
             </ul>
             <div class="carousel">
-                <img src="img/cognistar-01.png" alt="Cognistar legal education platform 1" class="active">
-                <img src="img/cognistar-02.png" alt="Cognistar legal education platform 2">
-                <img src="img/cognistar-03.png" alt="Cognistar legal education platform 3">
+                <img loading="lazy" src="img/cognistar-01.png" alt="Cognistar legal education platform 1" class="active">
+                <img loading="lazy" src="img/cognistar-02.png" alt="Cognistar legal education platform 2">
+                <img loading="lazy" src="img/cognistar-03.png" alt="Cognistar legal education platform 3">
             </div>
             <div class="carousel-nav">
                 <button class="prevBtn">BACK</button>
@@ -705,7 +705,7 @@
                 <li>Concentration: Architectural Theory</li>
             </ul>
             <div class="carousel">
-                <img src="img/asu-01.png" alt="Arizona State University campus" class="active">
+                <img loading="lazy" src="img/asu-01.png" alt="Arizona State University campus" class="active">
             </div>
             <div class="carousel-nav">
             </div>
@@ -720,13 +720,13 @@
     <canvas id="matrix-canvas" aria-hidden="true"></canvas>
 
     <!-- Scripts -->
-    <script src="vendor/pretext.min.js"></script>
-    <script src="pretext-shapes.js?v=<?php echo filemtime('pretext-shapes.js'); ?>"></script>
-    <script src="pretext-layout.js?v=<?php echo filemtime('pretext-layout.js'); ?>"></script>
-    <script src="portfolio-data.js?v=<?php echo filemtime('portfolio-data.js'); ?>"></script>
-    <script src="modal-system.js?v=<?php echo filemtime('modal-system.js'); ?>"></script>
-    <script src="themes/theme-switcher.js?v=<?php echo filemtime('themes/theme-switcher.js'); ?>"></script>
-    <script src="script.js?v=<?php echo filemtime('script.js'); ?>"></script>
+    <script defer src="vendor/pretext.min.js"></script>
+    <script defer src="pretext-shapes.js?v=<?php echo filemtime('pretext-shapes.js'); ?>"></script>
+    <script defer src="pretext-layout.js?v=<?php echo filemtime('pretext-layout.js'); ?>"></script>
+    <script defer src="portfolio-data.js?v=<?php echo filemtime('portfolio-data.js'); ?>"></script>
+    <script defer src="modal-system.js?v=<?php echo filemtime('modal-system.js'); ?>"></script>
+    <script defer src="themes/theme-switcher.js?v=<?php echo filemtime('themes/theme-switcher.js'); ?>"></script>
+    <script defer src="script.js?v=<?php echo filemtime('script.js'); ?>"></script>
     <footer id="site-footer-final">
         <p>© 2026 Peter Bartsch</p>
     </footer>

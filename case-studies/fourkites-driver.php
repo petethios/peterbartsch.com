@@ -5,14 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FourKites: Incentive Design | Peter Bartsch Case Study</title>
     <meta name="description" content="Reconciling competing driver/shipper incentives—32% more tracked shipments through behavioral design.">
-    <link rel="canonical" href="https://peterbartsch.com/case-studies/fourkites-driver">
+    <link rel="canonical" href="https://petebartsch.com/case-studies/fourkites-driver">
     <link rel="icon" type="image/svg+xml" href="../pblogo.svg">
 
     <meta property="og:title" content="FourKites: Incentive Design | Peter Bartsch">
     <meta property="og:description" content="Reconciling competing driver/shipper incentives—32% more tracked shipments.">
     <meta property="og:type" content="article">
-    <meta property="og:url" content="https://peterbartsch.com/case-studies/fourkites-driver">
-    <meta property="og:image" content="https://peterbartsch.com/og-image.png">
+    <meta property="og:url" content="https://petebartsch.com/case-studies/fourkites-driver">
+    <meta property="og:image" content="https://petebartsch.com/og-image.png">
 
     <link rel="preload" href="../rombyte.ttf" as="font" type="font/ttf" crossorigin>
     <link rel="preload" href="../ari.ttf" as="font" type="font/ttf" crossorigin>
@@ -24,13 +24,23 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="FourKites: Incentive Design | Peter Bartsch">
     <meta name="twitter:description" content="Reconciling competing driver/shipper incentives—32% more tracked shipments.">
-    <meta name="twitter:image" content="https://peterbartsch.com/og-image.png">
+    <meta name="twitter:image" content="https://petebartsch.com/og-image.png">
 
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-QB3EL923YF"></script>
     <script>window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag('js', new Date()); gtag('config', 'G-QB3EL923YF');</script>
 
     <!-- Microsoft Clarity -->
     <script type="text/javascript">(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window,document,"clarity","script","uhlenklp4t");</script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "FourKites: Realigning Incentives",
+      "description": "Designing a rewards system that made data sharing beneficial for both drivers and the platform.",
+      "author": {"@type": "Person", "name": "Peter Bartsch", "url": "https://petebartsch.com"},
+      "url": "https://petebartsch.com/case-studies/fourkites-driver"
+    }
+    </script>
 </head>
 <body>
     <?php include('../themes/theme-banner.php'); ?>

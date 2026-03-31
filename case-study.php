@@ -134,10 +134,10 @@ function getImages($prefix, $count) {
     <meta property="og:title" content="<?php echo htmlspecialchars($caseStudy['company']); ?> - Peter Bartsch Portfolio">
     <meta property="og:description" content="<?php echo htmlspecialchars($caseStudy['description']); ?>">
     <meta property="og:type" content="article">
-    <meta property="og:url" content="https://peterbartsch.com/case-study.php?id=<?php echo htmlspecialchars($slug); ?>">
+    <meta property="og:url" content="https://petebartsch.com/case-study.php?id=<?php echo htmlspecialchars($slug); ?>">
     <?php endif; ?>
 
-    <link rel="canonical" href="https://peterbartsch.com/case-study.php?id=<?php echo htmlspecialchars($slug); ?>">
+    <link rel="canonical" href="https://petebartsch.com/case-study.php?id=<?php echo htmlspecialchars($slug); ?>">
     <link rel="stylesheet" href="styles.css">
     <link rel="preload" href="rombyte.ttf" as="font" type="font/ttf" crossorigin>
     <link rel="preload" href="ari.ttf" as="font" type="font/ttf" crossorigin>

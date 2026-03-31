@@ -12,11 +12,11 @@
     <meta name="keywords"
         content="Peter Bartsch, 3D portfolio, interactive resume, Three.js, experimental design, webGL">
     <meta name="author" content="Peter Bartsch">
-    <link rel="canonical" href="https://peterbartsch.com/3d-experiment.php">
+    <link rel="canonical" href="https://petebartsch.com/3d-experiment.php">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://peterbartsch.com/3d-experiment.php">
+    <meta property="og:url" content="https://petebartsch.com/3d-experiment.php">
     <meta property="og:title" content="Peter Bartsch - 3D Interactive Resume Experiment">
     <meta property="og:description"
         content="An experimental 3D portfolio experience built with Three.js. Explore my work in an immersive 3D environment.">
