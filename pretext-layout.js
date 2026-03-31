@@ -476,23 +476,26 @@
     function applyTextFlow(el, flowResult, containerWidth) {
         if (!flowResult || !flowResult.lines || !flowResult.lines.length) return;
 
-        // Check if any lines have non-zero x offset (i.e., text is actually flowing)
-        var hasFlow = false;
+        // Detect flow type: left inset (x > 0) or right inset (maxWidth < containerWidth)
+        var hasLeftFlow = false;
+        var hasRightFlow = false;
+        var maxRightInset = 0;
+
         for (var i = 0; i < flowResult.lines.length; i++) {
-            if (flowResult.lines[i].x > 0) { hasFlow = true; break; }
+            if (flowResult.lines[i].x > 0) hasLeftFlow = true;
+            var rightInset = containerWidth - flowResult.lines[i].maxWidth - flowResult.lines[i].x;
+            if (rightInset > 5) { // 5px threshold to avoid rounding noise
+                hasRightFlow = true;
+                maxRightInset = Math.max(maxRightInset, rightInset);
+            }
         }
 
-        if (!hasFlow) {
-            // No flow needed — clean up any previous float
+        if (!hasLeftFlow && !hasRightFlow) {
             removeFlowFloat(el);
             return;
         }
 
-        // Create or reuse a float spacer that pushes text away from the exclusion zone
-        // This uses the CSS float + shape-outside technique
-        var floatId = 'pretext-float-' + (el.id || Math.random().toString(36).substr(2, 6));
         var existingFloat = el.querySelector('.pretext-float');
-
         if (!existingFloat) {
             existingFloat = document.createElement('div');
             existingFloat.className = 'pretext-float';
@@ -500,37 +503,63 @@
             el.insertBefore(existingFloat, el.firstChild);
         }
 
-        // Build shape-outside polygon from line constraints
-        var points = [];
         var lineHeight = flowResult.lineHeight;
-        var prevX = 0;
+        var totalHeight = flowResult.lines.length * lineHeight;
 
-        for (var j = 0; j < flowResult.lines.length; j++) {
-            var line = flowResult.lines[j];
-            if (line.x !== prevX) {
-                points.push(line.x + 'px ' + (j * lineHeight) + 'px');
+        if (hasRightFlow && !hasLeftFlow) {
+            // Right-side exclusion: float right with shape-outside
+            var points = [];
+            for (var j = 0; j < flowResult.lines.length; j++) {
+                var line = flowResult.lines[j];
+                var inset = containerWidth - line.maxWidth - line.x;
+                // shape-outside polygon: measured from the float element's box
+                // Float is on the right, so 0 = right edge of float, inset = how far left the shape goes
+                points.push((maxRightInset - inset) + 'px ' + (j * lineHeight) + 'px');
+                points.push((maxRightInset - inset) + 'px ' + ((j + 1) * lineHeight) + 'px');
             }
-            points.push(line.x + 'px ' + ((j + 1) * lineHeight) + 'px');
-            prevX = line.x;
-        }
-        // Close the polygon back to 0
-        points.push('0px ' + (flowResult.lines.length * lineHeight) + 'px');
-        points.push('0px 0px');
+            // Close polygon
+            points.push(maxRightInset + 'px ' + totalHeight + 'px');
+            points.push(maxRightInset + 'px 0px');
 
-        var maxIndent = 0;
-        for (var k = 0; k < flowResult.lines.length; k++) {
-            maxIndent = Math.max(maxIndent, flowResult.lines[k].x);
-        }
+            existingFloat.style.cssText = [
+                'float: right',
+                'width: ' + maxRightInset + 'px',
+                'height: ' + totalHeight + 'px',
+                'shape-outside: polygon(' + points.join(', ') + ')',
+                'pointer-events: none',
+                'margin: 0',
+                'padding: 0'
+            ].join('; ');
+        } else {
+            // Left-side exclusion: float left with shape-outside
+            var points2 = [];
+            var prevX = 0;
+            for (var k = 0; k < flowResult.lines.length; k++) {
+                var line2 = flowResult.lines[k];
+                if (line2.x !== prevX) {
+                    points2.push(line2.x + 'px ' + (k * lineHeight) + 'px');
+                }
+                points2.push(line2.x + 'px ' + ((k + 1) * lineHeight) + 'px');
+                prevX = line2.x;
+            }
+            points2.push('0px ' + totalHeight + 'px');
+            points2.push('0px 0px');
 
-        existingFloat.style.cssText = [
-            'float: left',
-            'width: ' + maxIndent + 'px',
-            'height: ' + (flowResult.lines.length * lineHeight) + 'px',
-            'shape-outside: polygon(' + points.join(', ') + ')',
-            'pointer-events: none',
-            'margin: 0',
-            'padding: 0'
-        ].join('; ');
+            var maxIndent = 0;
+            for (var m = 0; m < flowResult.lines.length; m++) {
+                maxIndent = Math.max(maxIndent, flowResult.lines[m].x);
+            }
+
+            existingFloat.style.cssText = [
+                'float: left',
+                'width: ' + maxIndent + 'px',
+                'height: ' + totalHeight + 'px',
+                'shape-outside: polygon(' + points2.join(', ') + ')',
+                'pointer-events: none',
+                'margin: 0',
+                'padding: 0'
+            ].join('; ');
+        }
     }
 
     function removeFlowFloat(el) {
