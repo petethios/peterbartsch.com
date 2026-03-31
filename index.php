@@ -8,7 +8,7 @@
     <link rel="icon" type="image/svg+xml" href="pblogo.svg">
     <link rel="apple-touch-icon" href="pblogo.png">
     <meta name="description"
-        content="Staff Product Designer. $3.8B revenue enabled at John Deere. Design org scaled 1→10 at FourKites ($1.2B exit). 500K+ users, 40+ teams, 15 years shipping enterprise systems.">
+        content="Staff Product Designer. $3.8B revenue enabled at John Deere. Design org scaled 1→10 at FourKites ($1B+ valuation). 500K+ users, 40+ teams, 15 years shipping enterprise systems.">
     <meta name="keywords"
         content="Peter Bartsch, staff product designer, enterprise design systems, UX leader, design org leadership, portfolio">
     <meta name="author" content="Peter Bartsch">
@@ -89,7 +89,7 @@
       "sameAs": [
         "https://linkedin.com/in/peterbartsch"
       ],
-      "description": "Staff Product Designer. $3.8B revenue enabled at John Deere. Design org scaled 1→10 at FourKites ($1.2B exit). 500K+ users across enterprise systems.",
+      "description": "Staff Product Designer. $3.8B revenue enabled at John Deere. Design org scaled 1→10 at FourKites ($1B+ valuation). 500K+ users across enterprise systems.",
       "knowsAbout": ["User Experience Design", "Product Management", "Design Systems", "Enterprise Software", "Data Visualization", "Figma", "Prototyping"],
       "email": "peter@peterbartsch.com",
       "hasOccupation": [
@@ -240,7 +240,7 @@
                     <div class="about-content">
                         <h2 class="about-heading phosphor-text">WHAT I DO</h2>
                         <p class="about-bio">
-                            I take the design problems that stall enterprises — forced adoption, platform fragmentation, trust in uncertain data — and turn them into measurable outcomes. At John Deere, that meant $3.8B in enabled revenue and a design system used by 40+ teams. At FourKites, it meant building the design org from zero and contributing to a $1.2B exit.
+                            I take the design problems that stall enterprises — forced adoption, platform fragmentation, trust in uncertain data — and turn them into measurable outcomes. At John Deere, that meant $3.8B in enabled revenue and a design system used by 40+ teams. At FourKites, it meant building the design org from zero and contributing to a $1B+ valuation.
                         </p>
                         <p class="about-bio">
                             15 years of enterprise systems at scale: forced adoption across 500K users, design orgs built from zero, and billion-dollar exits. I prototype in production-grade tools and ship end-to-end — strategy through code.
@@ -303,7 +303,7 @@
                         <div class="project-structure">
                             <p class="structure-item"><span class="structure-label">Challenge:</span> Enterprise customers were making million-dollar decisions on dashboards they didn't trust — because we hid uncertainty instead of explaining it.</p>
                             <p class="structure-item"><span class="structure-label">Approach:</span> I introduced confidence levels that showed uncertainty instead of hiding it</p>
-                            <p class="structure-item"><span class="structure-label">Result:</span> 41% retention increase · 3x customer expansion · contributed to $1.2B exit</p>
+                            <p class="structure-item"><span class="structure-label">Result:</span> 41% retention increase · 3x customer expansion · contributed to $1B+ valuation</p>
                         </div>
                         <a href="case-studies/fourkites-tracking.php" class="project-link brutalist-link">VIEW CASE STUDY →</a>
                     </div>
@@ -412,7 +412,7 @@
                                 <td colspan="2">
                                     <ul class="inline-bullets">
                                         <li><strong>Problem:</strong> Customers didn't trust dashboards built on incomplete data</li>
-                                        <li><strong>Result:</strong> $3M→$100M ARR; 41% retention increase; 3x expansion; company acquired for $1.2B</li>
+                                        <li><strong>Result:</strong> $3M→$100M ARR; 41% retention increase; 3x expansion; company reached $1B+ valuation</li>
                                         <li><strong>Approach:</strong> Showed confidence levels openly; added predictive ETAs ahead of competitors; team 1→10</li>
                                     </ul>
                                     <a href="case-studies/fourkites-tracking.php" class="view-more">View Case Study →</a>
