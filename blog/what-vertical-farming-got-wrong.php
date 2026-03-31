@@ -69,6 +69,8 @@
 
             <div class="blog-post-content">
 
+                <img src="../img/thios-07.png" alt="Thios geodesic greenhouse render and founder" loading="eager" style="width:100%; border-radius: 8px; margin-bottom: 24px;">
+
                 <p><em>Context: Thios is my between-roles venture — an open-source modular shelter platform. This post uses the vertical farming collapse to explain the design philosophy behind the platform approach.</em></p>
 
                 <p>The vertical farming industry was a darling of venture capital a decade ago, and now most of the companies are dead.</p>
@@ -116,6 +118,8 @@
                 <p>Meanwhile, high-tech greenhouses — which use many of the same technologies but rely on the sun instead of artificial lights — are flourishing. They work with natural systems instead of trying to replace them entirely.</p>
 
                 <h2>The Thios Approach</h2>
+
+                <img src="../carousel-thumb-thios.png" alt="Physical Thios geodesic shelter prototype" loading="lazy" style="width:100%; border-radius: 8px; margin-bottom: 24px;">
 
                 <p>When I started Thios, I had a choice. The conventional startup playbook says: raise money, build a factory, manufacture a product, scale distribution, capture the market.</p>
 

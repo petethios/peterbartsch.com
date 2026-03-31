@@ -89,6 +89,8 @@
 
             <div class="blog-post-content">
 
+                <img src="../img/configurator-screenshot.png" alt="Thios 3D Configurator interface showing module selection and geodesic structure" loading="eager" style="width:100%; border-radius: 8px; margin-bottom: 24px;">
+
                 <p><em>Context: Thios is my between-roles venture — an open-source modular shelter platform. This post is a technical deep-dive on the 3D configurator I built solo, and what it demonstrates about the collapsing barrier between design and engineering.</em></p>
 
                 <p>Most product configurators are built by teams of 10 engineers using React, Redux, and a year of runway. I built one by myself using Three.js, vanilla JavaScript, and stubbornness — and I am not a software engineer.</p>
@@ -140,6 +142,8 @@
                 <p><strong>Draco compression for models.</strong> The raw GLB files are too large for web. Draco compresses geometry data (vertices, normals, UVs) dramatically. A panel that is 15 MB raw becomes 60 KB with Draco. The tradeoff is decode time, but the WASM-based Draco decoder handles this in under 100ms.</p>
 
                 <h2>The Module System</h2>
+
+                <img src="../img/thios-03.png" alt="Exploded view of geodesic shelter showing 23 module types" loading="lazy" style="width:100%; border-radius: 8px; margin-bottom: 24px;">
 
                 <p>This is the core of the configurator. A Thiosphere is not a single model — it is an assembly of 23 panel types that the user combines.</p>
 
@@ -250,6 +254,8 @@
                     <li><strong>Separate the UI layer.</strong> The main file is 3,000+ lines handling both 3D logic and UI updates.</li>
                     <li><strong>Write tests.</strong> The BOM calculation, hex grid math, and pricing engine are all testable in isolation.</li>
                 </ul>
+
+                <img src="../carousel-thumb-thios.png" alt="Physical prototype of Thios geodesic shelter built from lumber" loading="lazy" style="width:100%; border-radius: 8px; margin-bottom: 24px;">
 
                 <h2>Try It</h2>
 

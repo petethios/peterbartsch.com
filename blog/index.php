@@ -64,6 +64,7 @@
         <div class="blog-cards">
 
             <a href="ux-is-dead-long-live-hx" class="blog-card">
+                <img src="../peterb.png" alt="Peter Bartsch" class="blog-card-img" loading="lazy">
                 <p class="blog-card-date">March 2026</p>
                 <h2 class="blog-card-title">UX Is Dead. Long Live HX.</h2>
                 <p class="blog-card-excerpt">Why designing for Agents means we finally get to design for Humans — not Users. The end of dark patterns, the beginning of honest experiences.</p>
@@ -71,6 +72,7 @@
             </a>
 
             <a href="open-source-3d-configurator" class="blog-card">
+                <img src="../img/configurator-screenshot.png" alt="Thios 3D Configurator" class="blog-card-img" loading="lazy">
                 <p class="blog-card-date">March 2026</p>
                 <h2 class="blog-card-title">I Built an Open-Source 3D Configurator</h2>
                 <p class="blog-card-excerpt">17,000 lines of Three.js, zero framework dependencies, 10 languages. How a product designer shipped a full 3D configurator solo using AI tooling.</p>
@@ -78,6 +80,7 @@
             </a>
 
             <a href="what-vertical-farming-got-wrong" class="blog-card">
+                <img src="../img/thios-07.png" alt="Thios geodesic greenhouse" class="blog-card-img" loading="lazy">
                 <p class="blog-card-date">March 2026</p>
                 <h2 class="blog-card-title">What Vertical Farming Got Wrong</h2>
                 <p class="blog-card-excerpt">The VC-funded vertical farming collapse is a masterclass in why distributed, platform-based approaches beat centralized factory models.</p>

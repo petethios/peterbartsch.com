@@ -74,6 +74,8 @@
             </header>
 
             <div class="blog-post-content">
+                <img src="../peterb.png" alt="Peter Bartsch" loading="eager" style="width: 120px; border-radius: 50%; float: right; margin: 0 0 16px 24px;">
+
                 <p><strong>tl;dr</strong> UX is dead, because we get to design for humans now.</p>
 
                 <p>User Experience (UX) has long suffered from its own misnomer: "User." Which we often mistook for "Human." Humans are not equal to Users in agency. We far exceed the abilities of any User. That's why we use the term. Our tech is novel and immature compared to ourselves. The hardware and software limited and primitive, if evolving fast. We design for the User because we could not design for actual Humans.</p>
