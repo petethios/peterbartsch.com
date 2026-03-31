@@ -285,7 +285,7 @@
                         <h3 class="project-title">DEERE: ONE SYSTEM, 47 PRODUCTS</h3>
                         <div class="project-structure">
                             <p class="structure-item"><span class="structure-label">Challenge:</span> 47 product sites, each with its own navigation, dev team, and political owner. Nobody wanted to give up control.</p>
-                            <p class="structure-item"><span class="structure-label">Approach:</span> Led creation of a shared design system and rolled it out across all 47 sites without breaking a single live product</p>
+                            <p class="structure-item"><span class="structure-label">Approach:</span> Contributed to a shared design system and rolled it out across all 47 sites without breaking a single live product</p>
                             <p class="structure-item"><span class="structure-label">Result:</span> One consistent experience across all 47 sites · 45% faster dev handoffs</p>
                         </div>
                         <a href="case-studies/deere-nav.php" class="project-link brutalist-link">VIEW CASE STUDY →</a>
@@ -397,7 +397,7 @@
                                     <ul class="inline-bullets">
                                         <li><strong>Problem:</strong> 500K+ users weren't completing profiles — blocking $3.8B in subscription revenue</li>
                                         <li><strong>Result:</strong> 34%→87% completion; unified nav across 8 product lines; design system adopted by 40+ teams</li>
-                                        <li><strong>Approach:</strong> Led multi-channel forced adoption + enterprise design system across 40+ teams; 45% faster handoffs</li>
+                                        <li><strong>Approach:</strong> Led multi-channel forced adoption; core contributor to enterprise design system adopted by 40+ teams; 45% faster handoffs</li>
                                     </ul>
                                     <a href="case-studies/deere-common-ux.php" class="view-more">View Case Study →</a>
                                 </td>
