@@ -1,75 +1,68 @@
 /* ========================================
-   2010s Corporate Memphis Theme
-   Flat design, pastel colors, Inter font,
-   pill buttons, tons of whitespace,
-   "every startup looks the same" aesthetic
+   2010s Modern SaaS Theme
+   Stripe/Linear-inspired: bold gradients,
+   card depth, glass morphism, Inter font,
+   rich shadows, premium startup aesthetic
    ======================================== */
 
 /* ---- Custom Properties Override ---- */
 [data-theme="2010s"] {
-    --color-primary: #FF6B6B;
-    --color-primary-dark: #e55a5a;
-    --color-primary-darker: #d14545;
-    --color-accent-green: #95E1D3;
-    --color-accent-green-bg: rgba(149, 225, 211, 0.15);
-    --color-accent-green-hover: #7dd4c3;
+    --color-primary: #635BFF;
+    --color-primary-dark: #4F46E5;
+    --color-primary-darker: #3730A3;
+    --color-accent-green: #10B981;
+    --color-accent-green-bg: rgba(16, 185, 129, 0.1);
+    --color-accent-green-hover: #059669;
     --color-black: #ffffff;
-    --color-white: #2d2d2d;
-    --color-gray-dark: #e8e8e8;
-    --color-gray-mid: #f0f0f0;
-    --color-text-primary: #2d2d2d;
-    --color-text-muted: #666666;
-    --color-text-subtle: #999999;
+    --color-white: #0F172A;
+    --color-gray-dark: #E2E8F0;
+    --color-gray-mid: #F1F5F9;
+    --color-text-primary: #0F172A;
+    --color-text-muted: #475569;
+    --color-text-subtle: #94A3B8;
     --font-display: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
     --font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
     --font-readable: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
     --font-system: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
     --shadow-text: none;
-    --shadow-box: none;
-    --shadow-box-hover: 0 4px 12px rgba(0, 0, 0, 0.08);
-    --shadow-glow: none;
-    --gradient-primary: none;
-    --gradient-dark: none;
-    --glass-bg: #ffffff;
-    --glass-border: #e8e8e8;
+    --shadow-box: 0 1px 3px rgba(0, 0, 0, 0.06), 0 1px 2px rgba(0, 0, 0, 0.04);
+    --shadow-box-hover: 0 10px 40px rgba(99, 91, 255, 0.12), 0 4px 12px rgba(0, 0, 0, 0.06);
+    --shadow-glow: 0 0 40px rgba(99, 91, 255, 0.15);
+    --gradient-primary: linear-gradient(135deg, #635BFF 0%, #A855F7 100%);
+    --gradient-dark: linear-gradient(135deg, #0F172A 0%, #1E293B 100%);
+    --glass-bg: rgba(255, 255, 255, 0.8);
+    --glass-border: rgba(255, 255, 255, 0.2);
     --border-radius: 12px;
-    --border-radius-lg: 24px;
+    --border-radius-lg: 20px;
     --border-width: 0px;
-    --section-gap: 96px;
-    --space-xl: 56px;
-    --transition-fast: 0.15s ease;
+    --section-gap: 80px;
+    --space-xl: 48px;
+    --transition-fast: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
 
     /* Case study page overrides */
-    --cs-page-bg: #ffffff;
-    --cs-border-color: #e8e8e8;
+    --cs-page-bg: #F8FAFC;
+    --cs-border-color: #E2E8F0;
     --cs-title-glow: none;
-    --cs-text-color: #2d2d2d;
-    --cs-muted-color: #666666;
-    --cs-metric-bg: #f8f8f8;
-    --cs-constraints-bg: rgba(255, 107, 107, 0.05);
-    --cs-contact-bg: #f8f8f8;
+    --cs-text-color: #0F172A;
+    --cs-muted-color: #475569;
+    --cs-metric-bg: #ffffff;
+    --cs-constraints-bg: rgba(99, 91, 255, 0.04);
+    --cs-contact-bg: #F8FAFC;
 }
 
-/* Pastel accent palette */
-[data-theme="2010s"] {
-    --memphis-coral: #FF6B6B;
-    --memphis-lavender: #C3B1E1;
-    --memphis-mint: #95E1D3;
-    --memphis-yellow: #FFEAA7;
-    --memphis-peach: #FDCB6E;
-}
-
-/* ---- Background: soft lavender-to-white gradient ---- */
+/* ---- Background: dark gradient with mesh ---- */
 [data-theme="2010s"] html {
-    background-color: #f8f5ff;
+    background-color: #0F172A;
 }
 
 [data-theme="2010s"] body {
-    background: linear-gradient(180deg, #ede5ff 0%, #f8f5ff 20%, #ffffff 40%, #fff0f0 60%, #f8f5ff 80%, #ede5ff 100%) !important;
-    background-image: linear-gradient(180deg, #ede5ff 0%, #f8f5ff 20%, #ffffff 40%, #fff0f0 60%, #f8f5ff 80%, #ede5ff 100%) !important;
+    background: #0F172A !important;
+    background-image:
+        radial-gradient(at 20% 20%, rgba(99, 91, 255, 0.15) 0%, transparent 50%),
+        radial-gradient(at 80% 10%, rgba(168, 85, 247, 0.1) 0%, transparent 40%),
+        radial-gradient(at 50% 80%, rgba(16, 185, 129, 0.08) 0%, transparent 50%) !important;
     background-attachment: fixed !important;
-    background-blend-mode: normal !important;
-    color: #2d2d2d;
+    color: #E2E8F0;
 }
 
 /* ---- Typography ---- */
@@ -83,71 +76,88 @@
 [data-theme="2010s"] td {
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
     text-shadow: none;
-    color: #2d2d2d;
 }
 
 [data-theme="2010s"] #title {
     font-family: 'Inter', -apple-system, sans-serif !important;
-    color: #2d2d2d !important;
+    color: #ffffff !important;
     text-shadow: none !important;
-    font-weight: 700;
-    font-size: 36px;
-}
-
-[data-theme="2010s"] #name a {
-    color: #666666 !important;
-    text-decoration: none;
+    font-weight: 800;
+    font-size: 42px;
+    letter-spacing: -0.03em;
+    background: linear-gradient(135deg, #ffffff 0%, #C4B5FD 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 
 [data-theme="2010s"] .phosphor-text {
     text-shadow: none !important;
 }
 
+[data-theme="2010s"] .hero-subtitle {
+    color: #94A3B8 !important;
+    font-weight: 500;
+    font-size: 14px !important;
+    letter-spacing: 0.1em !important;
+}
+
+[data-theme="2010s"] .hero-tagline {
+    font-size: 20px !important;
+    font-weight: 400 !important;
+    color: #CBD5E1 !important;
+    line-height: 1.7;
+}
+
 /* ---- Links ---- */
 [data-theme="2010s"] a {
-    color: #FF6B6B;
+    color: #818CF8;
     text-decoration: none;
 }
 
 [data-theme="2010s"] a:visited {
-    color: #C3B1E1 !important;
+    color: #A78BFA !important;
 }
 
 [data-theme="2010s"] a:hover {
-    color: #e55a5a !important;
-    text-decoration: underline;
+    color: #C4B5FD !important;
+    text-decoration: none;
 }
 
-/* ---- Header ---- */
+/* ---- Header: glass morphism ---- */
 [data-theme="2010s"] #site-header {
-    background-color: rgba(255, 255, 255, 0.95) !important;
+    background: rgba(15, 23, 42, 0.75) !important;
     background-image: none !important;
-    backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(8px);
-    border-bottom: none !important;
-    box-shadow: 0 1px 8px rgba(195, 177, 225, 0.08);
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06) !important;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.15);
 }
 
-[data-theme="2010s"] .header-nav a {
-    color: #2d2d2d !important;
+[data-theme="2010s"] .header-nav a,
+[data-theme="2010s"] .nav-primary a {
+    color: #94A3B8 !important;
     font-family: 'Inter', -apple-system, sans-serif;
     font-weight: 500;
+    font-size: 13px;
     text-decoration: none;
-    opacity: 0.7;
+    letter-spacing: 0.02em;
+    transition: color 0.2s ease;
 }
 
-[data-theme="2010s"] .header-nav a:hover {
-    opacity: 1;
-    color: #FF6B6B !important;
+[data-theme="2010s"] .header-nav a:hover,
+[data-theme="2010s"] .nav-primary a:hover {
+    color: #ffffff !important;
 }
 
 [data-theme="2010s"] .header-logo img {
-    filter: brightness(0.2) !important;
+    filter: brightness(0) invert(1) !important;
+    opacity: 0.9;
 }
 
 [data-theme="2010s"] .header-logo:hover img {
     animation: none !important;
-    filter: brightness(0) !important;
+    opacity: 1;
 }
 
 [data-theme="2010s"] .header-logo::after {
@@ -156,63 +166,64 @@
 
 /* ---- Hamburger / Mobile Menu ---- */
 [data-theme="2010s"] .hamburger {
-    border-color: #ddd;
-    border-radius: 8px;
+    border-color: rgba(255, 255, 255, 0.15);
+    border-radius: 10px;
 }
 
 [data-theme="2010s"] .hamburger span {
-    background: #2d2d2d;
+    background: #E2E8F0;
 }
 
 [data-theme="2010s"] .hamburger:hover {
-    background-color: #f5f5f5;
-    border-color: #FF6B6B;
+    background-color: rgba(255, 255, 255, 0.06);
+    border-color: rgba(255, 255, 255, 0.2);
 }
 
 [data-theme="2010s"] .mobile-menu {
-    background-color: #ffffff !important;
+    background-color: rgba(15, 23, 42, 0.98) !important;
     background-image: none !important;
-    border-left: 1px solid #eee;
-    box-shadow: -4px 0 20px rgba(0, 0, 0, 0.08);
+    border-left: 1px solid rgba(255, 255, 255, 0.06);
+    backdrop-filter: blur(20px);
+    box-shadow: -8px 0 40px rgba(0, 0, 0, 0.3);
 }
 
 [data-theme="2010s"] .mobile-menu a {
-    color: #2d2d2d !important;
+    color: #CBD5E1 !important;
     font-family: 'Inter', -apple-system, sans-serif;
 }
 
 [data-theme="2010s"] .mobile-menu a:hover {
-    color: #FF6B6B !important;
+    color: #ffffff !important;
 }
 
 [data-theme="2010s"] .mobile-menu li {
-    border-bottom-color: #eee;
+    border-bottom-color: rgba(255, 255, 255, 0.06);
 }
 
 [data-theme="2010s"] .mobile-menu-header {
-    color: #FF6B6B;
-    border-bottom-color: #eee;
+    color: #635BFF;
+    border-bottom-color: rgba(255, 255, 255, 0.06);
 }
 
 [data-theme="2010s"] .mobile-menu-close {
-    border-color: #ddd;
-    border-radius: 8px;
+    border-color: rgba(255, 255, 255, 0.15);
+    border-radius: 10px;
 }
 
 [data-theme="2010s"] .mobile-menu-close::before,
 [data-theme="2010s"] .mobile-menu-close::after {
-    background-color: #666;
+    background-color: #94A3B8;
 }
 
-/* ---- Buttons: pill-shaped, flat ---- */
+/* ---- Buttons: gradient with glow ---- */
 [data-theme="2010s"] .button,
 [data-theme="2010s"] .button2,
 [data-theme="2010s"] .form-submit {
-    background-color: #FF6B6B !important;
+    background: linear-gradient(135deg, #635BFF 0%, #A855F7 100%) !important;
     color: #ffffff !important;
     border: none !important;
-    border-radius: 50px !important;
-    box-shadow: none !important;
+    border-radius: 10px !important;
+    box-shadow: 0 4px 15px rgba(99, 91, 255, 0.25) !important;
     text-shadow: none !important;
     font-family: 'Inter', -apple-system, sans-serif !important;
     font-weight: 600 !important;
@@ -225,75 +236,129 @@
 [data-theme="2010s"] .button:hover,
 [data-theme="2010s"] .button2:hover,
 [data-theme="2010s"] .form-submit:hover {
-    background-color: #e55a5a !important;
-    transform: translateY(-1px);
-    box-shadow: 0 4px 12px rgba(255, 107, 107, 0.3) !important;
+    box-shadow: 0 8px 25px rgba(99, 91, 255, 0.4) !important;
+    transform: translateY(-2px);
 }
 
-/* ---- Brutalist CTA ---- */
-[data-theme="2010s"] .brutalist-cta {
-    background-color: #FF6B6B !important;
-    color: #ffffff !important;
-    border: none !important;
-    border-radius: 50px !important;
-    box-shadow: none !important;
-    text-decoration: none !important;
-    padding: 14px 32px !important;
+/* ---- Hero Section: glass card ---- */
+[data-theme="2010s"] .hero-section {
+    position: relative;
+    background: rgba(255, 255, 255, 0.03) !important;
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: 20px;
+    overflow: visible;
+    backdrop-filter: blur(10px);
+    padding: 40px 32px;
 }
 
-[data-theme="2010s"] .brutalist-cta-prompt {
+[data-theme="2010s"] .hero-section::before {
+    content: '';
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    right: -1px;
+    height: 1px;
+    background: linear-gradient(90deg, transparent 0%, rgba(99, 91, 255, 0.4) 30%, rgba(168, 85, 247, 0.4) 70%, transparent 100%);
+    border-radius: 20px 20px 0 0;
+    z-index: 1;
+}
+
+[data-theme="2010s"] .hero-section::after {
     display: none;
 }
 
-[data-theme="2010s"] .brutalist-cta-text {
-    color: #ffffff !important;
-    text-shadow: none !important;
-    text-transform: none !important;
-    font-weight: 600;
-    letter-spacing: 0;
+[data-theme="2010s"] .hero-portrait img {
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+}
+
+[data-theme="2010s"] .hero-metric {
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: 12px;
+    padding: 12px 16px;
+}
+
+[data-theme="2010s"] .hero-metric-value {
+    color: #C4B5FD !important;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+[data-theme="2010s"] .hero-metric:nth-child(1) .hero-metric-value { color: #818CF8 !important; }
+[data-theme="2010s"] .hero-metric:nth-child(2) .hero-metric-value { color: #A78BFA !important; }
+[data-theme="2010s"] .hero-metric:nth-child(3) .hero-metric-value { color: #34D399 !important; }
+[data-theme="2010s"] .hero-metric:nth-child(4) .hero-metric-value { color: #FBBF24 !important; }
+
+[data-theme="2010s"] .hero-metric-label {
+    color: #64748B !important;
+    font-size: 10px;
+    letter-spacing: 0.08em;
+}
+
+[data-theme="2010s"] .hero-metrics {
+    position: relative;
+    z-index: 1;
 }
 
 /* ---- About Section ---- */
+[data-theme="2010s"] .about-section {
+    position: relative;
+    background: transparent !important;
+}
+
+[data-theme="2010s"] .about-section::before,
+[data-theme="2010s"] .about-section::after {
+    display: none;
+}
+
 [data-theme="2010s"] .about-heading {
-    color: #2d2d2d !important;
+    color: #ffffff !important;
     font-weight: 700;
 }
 
 [data-theme="2010s"] .about-bio {
-    color: #444444;
-    font-size: 17px;
-    line-height: 1.7;
+    color: #CBD5E1;
+    font-size: 16px;
+    line-height: 1.8;
 }
 
 [data-theme="2010s"] .strength-tag {
-    background-color: rgba(255, 107, 107, 0.1) !important;
-    color: #FF6B6B !important;
-    border: none !important;
-    border-radius: 50px !important;
+    background: rgba(99, 91, 255, 0.1) !important;
+    color: #A78BFA !important;
+    border: 1px solid rgba(99, 91, 255, 0.15) !important;
+    border-radius: 8px !important;
     font-family: 'Inter', -apple-system, sans-serif;
     font-weight: 500;
-    padding: 8px 20px;
+    padding: 8px 16px;
+    font-size: 13px;
 }
 
 [data-theme="2010s"] .strength-tag:nth-child(2) {
-    background-color: rgba(195, 177, 225, 0.15) !important;
-    color: #9b86c4 !important;
+    background: rgba(168, 85, 247, 0.1) !important;
+    color: #C084FC !important;
+    border-color: rgba(168, 85, 247, 0.15) !important;
 }
 
 [data-theme="2010s"] .strength-tag:nth-child(3) {
-    background-color: rgba(149, 225, 211, 0.15) !important;
-    color: #5cbeab !important;
+    background: rgba(16, 185, 129, 0.1) !important;
+    color: #34D399 !important;
+    border-color: rgba(16, 185, 129, 0.15) !important;
 }
 
 [data-theme="2010s"] .strength-tag:nth-child(4) {
-    background-color: rgba(253, 203, 110, 0.15) !important;
-    color: #d4a534 !important;
+    background: rgba(251, 191, 36, 0.1) !important;
+    color: #FBBF24 !important;
+    border-color: rgba(251, 191, 36, 0.15) !important;
 }
 
 /* ---- Cover Art ---- */
 [data-theme="2010s"] .cover-art {
     border-radius: 16px;
     overflow: hidden;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.06);
 }
 
 [data-theme="2010s"] .hover-text {
@@ -302,188 +367,198 @@
     border-radius: 8px;
     font-family: 'Inter', -apple-system, sans-serif;
     border: none;
+    backdrop-filter: blur(4px);
 }
 
-/* ---- Portfolio Carousel ---- */
+/* ---- Case Study Cards: elevated glass cards ---- */
 [data-theme="2010s"] .portfolio-carousel {
-    background-color: #fafafa !important;
+    background: transparent !important;
     border: none !important;
-    border-radius: 20px !important;
+    padding: 0 !important;
+}
+
+[data-theme="2010s"] .case-study-card {
+    background: rgba(255, 255, 255, 0.03) !important;
+    border: 1px solid rgba(255, 255, 255, 0.06) !important;
+    border-radius: 16px !important;
     padding: 24px !important;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    backdrop-filter: blur(10px);
+}
+
+[data-theme="2010s"] .case-study-card:hover {
+    border-color: rgba(99, 91, 255, 0.2) !important;
+    box-shadow: 0 8px 40px rgba(99, 91, 255, 0.1);
+    transform: translateY(-2px);
 }
 
 [data-theme="2010s"] .portfolio-carousel .slide-label {
-    color: #999 !important;
+    color: #635BFF !important;
     font-family: 'Inter', -apple-system, sans-serif;
-    font-weight: 500;
-    font-size: 12px;
+    font-weight: 600;
+    font-size: 11px;
     text-transform: uppercase;
     letter-spacing: 2px;
 }
 
 [data-theme="2010s"] .project-title {
-    color: #2d2d2d !important;
+    color: #ffffff !important;
     font-family: 'Inter', -apple-system, sans-serif !important;
     text-shadow: none !important;
     font-weight: 700;
 }
 
 [data-theme="2010s"] .structure-label {
-    color: #FF6B6B !important;
+    color: #818CF8 !important;
     font-weight: 600;
 }
 
 [data-theme="2010s"] .structure-item {
-    color: #444444 !important;
+    color: #CBD5E1 !important;
 }
 
 [data-theme="2010s"] .project-link,
 [data-theme="2010s"] .brutalist-link {
-    color: #FF6B6B !important;
+    color: #818CF8 !important;
     font-weight: 600;
     text-decoration: none !important;
+    border: 1px solid rgba(99, 91, 255, 0.2) !important;
+    border-radius: 8px !important;
+    padding: 10px 20px !important;
+    display: inline-block !important;
+    transition: all 0.2s ease;
+}
+
+[data-theme="2010s"] .project-link:hover,
+[data-theme="2010s"] .brutalist-link:hover {
+    background: rgba(99, 91, 255, 0.1) !important;
+    border-color: rgba(99, 91, 255, 0.4) !important;
+    color: #C4B5FD !important;
 }
 
 [data-theme="2010s"] .case-study-image {
     border-radius: 12px;
     overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+[data-theme="2010s"] .case-study-image img {
+    border-radius: 12px;
 }
 
 /* ---- Tracklist ---- */
 [data-theme="2010s"] #tracklist {
-    border: none;
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: 16px;
+    overflow: hidden;
 }
 
 [data-theme="2010s"] #tracklist th {
-    color: #999 !important;
+    color: #64748B !important;
     font-weight: 500;
-    font-size: 12px !important;
+    font-size: 11px !important;
     text-transform: uppercase;
     letter-spacing: 2px;
-    border-bottom: 2px solid #eee !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06) !important;
+    background: rgba(255, 255, 255, 0.02);
 }
 
 [data-theme="2010s"] #tracklist td {
-    color: #2d2d2d !important;
-    border-bottom: 1px solid #f0f0f0 !important;
+    color: #CBD5E1 !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.04) !important;
     font-family: 'Inter', -apple-system, sans-serif;
 }
 
 [data-theme="2010s"] #tracklist td a {
-    color: #2d2d2d !important;
+    color: #E2E8F0 !important;
     text-shadow: none !important;
     text-decoration: none;
     font-weight: 600;
 }
 
 [data-theme="2010s"] #tracklist td a:hover {
-    color: #FF6B6B !important;
+    color: #818CF8 !important;
     text-shadow: none !important;
 }
 
 [data-theme="2010s"] #tracklist tbody tr:hover {
-    background-color: rgba(255, 107, 107, 0.04) !important;
+    background-color: rgba(99, 91, 255, 0.04) !important;
 }
 
 [data-theme="2010s"] tr.featured-role td:first-child::before {
-    background: linear-gradient(180deg, #FF6B6B 0%, #C3B1E1 100%) !important;
+    background: linear-gradient(180deg, #635BFF 0%, #A855F7 100%) !important;
     border-radius: 4px !important;
 }
 
-[data-theme="2010s"] .role-details {
-    background-color: #fafafa !important;
+[data-theme="2010s"] .featured-role td {
+    color: #ffffff !important;
 }
 
-[data-theme="2010s"] .inline-bullets {
-    color: #444444 !important;
+[data-theme="2010s"] .year-range {
+    color: #64748B !important;
+}
+
+[data-theme="2010s"] .role-details {
+    background-color: rgba(255, 255, 255, 0.02) !important;
+}
+
+[data-theme="2010s"] .inline-bullets,
+[data-theme="2010s"] .inline-bullets li {
+    color: #94A3B8 !important;
     font-family: 'Inter', -apple-system, sans-serif;
 }
 
-[data-theme="2010s"] .inline-bullets li {
-    color: #444444 !important;
-}
-
 [data-theme="2010s"] .view-more {
-    background-color: transparent !important;
-    color: #FF6B6B !important;
-    border: 2px solid #FF6B6B !important;
-    border-radius: 50px !important;
+    background: transparent !important;
+    color: #818CF8 !important;
+    border: 1px solid rgba(99, 91, 255, 0.2) !important;
+    border-radius: 8px !important;
     box-shadow: none !important;
     font-family: 'Inter', -apple-system, sans-serif !important;
     font-weight: 600;
 }
 
+[data-theme="2010s"] .view-more:hover {
+    background: rgba(99, 91, 255, 0.1) !important;
+    border-color: rgba(99, 91, 255, 0.4) !important;
+}
+
 /* ---- Company Logos ---- */
 [data-theme="2010s"] .company-logos-section {
-    background: rgba(255, 255, 255, 0.6) !important;
-    border-radius: 24px;
+    background: rgba(255, 255, 255, 0.03) !important;
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: 16px;
     padding: 40px 48px !important;
-    border: none !important;
 }
 
 [data-theme="2010s"] .company-logos-header {
-    color: #2d2d2d !important;
+    color: #94A3B8 !important;
     font-family: 'Inter', -apple-system, sans-serif;
-    font-weight: 600;
-    font-size: 16px;
-    text-transform: none;
-    letter-spacing: -0.01em;
+    font-weight: 500;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
     margin-bottom: 28px !important;
 }
 
 [data-theme="2010s"] .company-logo {
-    filter: grayscale(100%) brightness(0.2) !important;
-    opacity: 0.4;
+    filter: grayscale(100%) brightness(2) !important;
+    opacity: 0.25;
     transition: all 0.3s ease;
     height: 36px !important;
 }
 
 [data-theme="2010s"] .company-logo:hover {
-    opacity: 1;
+    opacity: 0.8;
     filter: grayscale(0%) brightness(1) !important;
-    transform: scale(1.08);
-}
-
-/* ---- Hero Stats ---- */
-[data-theme="2010s"] .hero-stats {
-    color: #2d2d2d !important;
-    text-shadow: none !important;
-}
-
-/* ---- Metrics ---- */
-[data-theme="2010s"] .metric-card {
-    background: #fafafa !important;
-    border: none !important;
-    border-radius: 20px !important;
-    padding: 32px 24px !important;
-}
-
-[data-theme="2010s"] .metric-card:hover {
-    border-color: transparent !important;
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06) !important;
-}
-
-[data-theme="2010s"] .metric-card:nth-child(1) .metric-value { color: #e5484d !important; }
-[data-theme="2010s"] .metric-card:nth-child(2) .metric-value { color: #8b6fc0 !important; }
-[data-theme="2010s"] .metric-card:nth-child(3) .metric-value { color: #3daf96 !important; }
-[data-theme="2010s"] .metric-card:nth-child(4) .metric-value { color: #d4940e !important; }
-
-[data-theme="2010s"] .metric-value {
-    font-family: 'Inter', -apple-system, sans-serif !important;
-    font-weight: 800 !important;
-    text-shadow: none !important;
-}
-
-[data-theme="2010s"] .metric-label {
-    color: #666 !important;
-    font-weight: 500;
+    transform: scale(1.05);
 }
 
 /* ---- Configurator ---- */
 [data-theme="2010s"] .configurator-showcase {
-    background-color: #fafafa !important;
-    border-radius: 20px !important;
-    border: none;
+    background: rgba(255, 255, 255, 0.03) !important;
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: 16px !important;
 }
 
 [data-theme="2010s"] .configurator-showcase-inner {
@@ -491,38 +566,62 @@
 }
 
 [data-theme="2010s"] .configurator-badge {
-    background-color: #95E1D3 !important;
-    color: #2d2d2d !important;
-    border-radius: 50px !important;
+    background: linear-gradient(135deg, #635BFF, #A855F7) !important;
+    color: #ffffff !important;
+    border-radius: 6px !important;
     font-weight: 600;
+    font-size: 11px;
+    padding: 4px 12px;
+    border: none !important;
 }
 
 [data-theme="2010s"] .configurator-title {
-    color: #2d2d2d !important;
+    color: #ffffff !important;
     font-family: 'Inter', -apple-system, sans-serif !important;
     font-weight: 700;
+    text-shadow: none !important;
 }
 
 [data-theme="2010s"] .configurator-desc {
-    color: #666 !important;
+    color: #94A3B8 !important;
 }
 
 [data-theme="2010s"] .configurator-cta {
-    background-color: #FF6B6B !important;
+    background: linear-gradient(135deg, #635BFF 0%, #A855F7 100%) !important;
     color: #ffffff !important;
     border: none !important;
-    border-radius: 50px !important;
+    border-radius: 10px !important;
     font-weight: 600;
     text-decoration: none !important;
+    box-shadow: 0 4px 15px rgba(99, 91, 255, 0.25);
+}
+
+[data-theme="2010s"] .configurator-cta:hover {
+    box-shadow: 0 8px 25px rgba(99, 91, 255, 0.4) !important;
+    transform: translateY(-2px);
 }
 
 [data-theme="2010s"] .configurator-preview img {
     border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
 }
 
 /* ---- Contact Form ---- */
+[data-theme="2010s"] .contact-section {
+    background: transparent;
+}
+
+[data-theme="2010s"] .contact-info h3 {
+    color: #ffffff !important;
+}
+
+[data-theme="2010s"] .contact-desc {
+    color: #94A3B8 !important;
+}
+
 [data-theme="2010s"] .form-label {
-    color: #999 !important;
+    color: #64748B !important;
     font-family: 'Inter', -apple-system, sans-serif;
     font-weight: 500;
     font-size: 12px;
@@ -532,28 +631,29 @@
 
 [data-theme="2010s"] .form-input,
 [data-theme="2010s"] .form-textarea {
-    background-color: #f5f5f5 !important;
-    color: #2d2d2d !important;
-    border: 2px solid transparent !important;
-    border-radius: 12px !important;
+    background-color: rgba(255, 255, 255, 0.04) !important;
+    color: #E2E8F0 !important;
+    border: 1px solid rgba(255, 255, 255, 0.08) !important;
+    border-radius: 10px !important;
     font-family: 'Inter', -apple-system, sans-serif !important;
     box-shadow: none !important;
 }
 
 [data-theme="2010s"] .form-input:focus,
 [data-theme="2010s"] .form-textarea:focus {
-    background-color: #ffffff !important;
-    border-color: #FF6B6B !important;
-    box-shadow: none !important;
+    background-color: rgba(255, 255, 255, 0.06) !important;
+    border-color: #635BFF !important;
+    box-shadow: 0 0 0 3px rgba(99, 91, 255, 0.15) !important;
 }
 
 /* ---- Modals ---- */
 [data-theme="2010s"] .modal-content {
-    background-color: #ffffff !important;
+    background-color: #1E293B !important;
     background-image: none !important;
-    border: none !important;
-    border-radius: 24px !important;
-    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15) !important;
+    border: 1px solid rgba(255, 255, 255, 0.06) !important;
+    border-radius: 20px !important;
+    box-shadow: 0 25px 80px rgba(0, 0, 0, 0.5) !important;
+    color: #CBD5E1;
 }
 
 [data-theme="2010s"] .modal-content h2,
@@ -561,73 +661,85 @@
 [data-theme="2010s"] .modal-content h4 {
     font-family: 'Inter', -apple-system, sans-serif !important;
     font-weight: 700 !important;
+    color: #ffffff !important;
 }
 
 [data-theme="2010s"] .modal-case-study-cta {
-    background-color: #FF6B6B !important;
+    background: linear-gradient(135deg, #635BFF 0%, #A855F7 100%) !important;
     color: #ffffff !important;
     border: none !important;
-    border-radius: 50px !important;
+    border-radius: 10px !important;
 }
 
 [data-theme="2010s"] .modal-cta-secondary {
-    background-color: #f0f0f0 !important;
-    color: #2d2d2d !important;
+    background: rgba(255, 255, 255, 0.06) !important;
+    color: #CBD5E1 !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    border-radius: 10px !important;
 }
 
 [data-theme="2010s"] .carousel-nav button {
-    background-color: #f0f0f0 !important;
-    color: #666 !important;
-    border: none !important;
-    border-radius: 50px !important;
+    background-color: rgba(255, 255, 255, 0.06) !important;
+    color: #94A3B8 !important;
+    border: 1px solid rgba(255, 255, 255, 0.08) !important;
+    border-radius: 8px !important;
     box-shadow: none !important;
     font-family: 'Inter', -apple-system, sans-serif !important;
 }
 
 [data-theme="2010s"] .close {
-    color: #ccc !important;
+    color: #475569 !important;
 }
 
 [data-theme="2010s"] .close:hover {
-    color: #999 !important;
+    color: #94A3B8 !important;
 }
 
 /* ---- Sidebar ---- */
 [data-theme="2010s"] .sidebar-portrait img {
-    border-radius: 50% !important;
-    border: none;
+    border-radius: 16px !important;
+    border: 1px solid rgba(255, 255, 255, 0.06);
 }
 
 [data-theme="2010s"] .sidebar-link {
-    color: #FF6B6B !important;
+    color: #818CF8 !important;
     text-decoration: none !important;
     font-weight: 600;
+    border: 1px solid rgba(99, 91, 255, 0.2) !important;
+    border-radius: 8px !important;
 }
 
-[data-theme="2010s"] #footer h4 {
-    color: #2d2d2d !important;
-    text-shadow: none;
+[data-theme="2010s"] .sidebar-link:hover {
+    background: rgba(99, 91, 255, 0.1) !important;
 }
 
 /* ---- Footer ---- */
 [data-theme="2010s"] #site-footer-final {
-    background-color: #fafafa;
-    color: #999;
-    border-top: 1px solid #eee;
+    background-color: transparent;
+    color: #475569;
+    border-top: 1px solid rgba(255, 255, 255, 0.04);
 }
 
 [data-theme="2010s"] #site-footer-final p {
-    color: #999 !important;
+    color: #475569 !important;
+}
+
+[data-theme="2010s"] #site-footer-final p::after {
+    content: '  \2014  Shipped with purpose';
+    font-family: 'Inter', -apple-system, sans-serif;
+    color: #334155;
+    font-size: 12px;
 }
 
 /* ---- iOS toolbar guard ---- */
 [data-theme="2010s"] .ios-toolbar-guard {
-    background: #ffffff !important;
+    background: #0F172A !important;
 }
 
 /* ---- Focus states ---- */
 [data-theme="2010s"] :focus-visible {
-    outline: 3px solid #FF6B6B !important;
+    outline: 2px solid #635BFF !important;
+    outline-offset: 2px;
     box-shadow: none !important;
 }
 
@@ -640,140 +752,56 @@
 
 /* ---- Theme Era Bar & Buttons ---- */
 [data-theme="2010s"] .theme-era-bar {
-    background: #ffffff !important;
+    background: rgba(15, 23, 42, 0.9) !important;
     background-image: none !important;
-    border-bottom: none !important;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04) !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.04) !important;
+    box-shadow: none !important;
     animation: none !important;
+    backdrop-filter: blur(10px);
+}
+
+[data-theme="2010s"] .theme-era-label {
+    color: #475569 !important;
 }
 
 [data-theme="2010s"] .theme-era-btn {
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif !important;
     font-size: 13px;
     font-weight: 500;
-    color: #999;
+    color: #64748B;
     background: none;
-    border: none;
-    border-radius: 50px;
-    padding: 6px 16px;
-    transition: all 0.15s ease;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    padding: 6px 14px;
+    transition: all 0.2s ease;
 }
 
 [data-theme="2010s"] .theme-era-btn:hover {
-    color: #2d2d2d;
-    background-color: #f5f5f5;
+    color: #CBD5E1;
+    background-color: rgba(255, 255, 255, 0.04);
+    border-color: rgba(255, 255, 255, 0.06);
 }
 
 [data-theme="2010s"] .theme-era-btn.active {
     color: #ffffff;
-    background-color: #FF6B6B;
-    border-radius: 50px;
+    background: linear-gradient(135deg, #635BFF 0%, #A855F7 100%);
+    border-color: transparent;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(99, 91, 255, 0.3);
 }
 
-/* ---- Large hero tagline for startup illustration vibe ---- */
-[data-theme="2010s"] .hero-tagline {
-    font-size: 24px !important;
-    font-weight: 300 !important;
-    color: #666 !important;
-    line-height: 1.5;
-}
-
-/* ---- "Made with love" footer text ---- */
-[data-theme="2010s"] #site-footer-final p::after {
-    content: '  \2014  Made with \2764\FE0F  and too much coffee';
+/* ---- Screensaver ---- */
+[data-theme="2010s"] .screensaver-clock {
+    color: #E2E8F0;
     font-family: 'Inter', -apple-system, sans-serif;
-    color: #ccc;
-    font-size: 12px;
 }
 
-/* ---- Bold Corporate Memphis blob backgrounds ---- */
-[data-theme="2010s"] .hero-section {
-    position: relative;
-    overflow: hidden;
-    background: linear-gradient(135deg, rgba(195, 177, 225, 0.15) 0%, transparent 50%, rgba(255, 107, 107, 0.1) 100%) !important;
-}
-
-[data-theme="2010s"] .hero-section::before {
-    content: '';
-    position: absolute;
-    top: -80px;
-    right: -40px;
-    width: 500px;
-    height: 500px;
-    border-radius: 50%;
-    background: radial-gradient(circle, rgba(195, 177, 225, 0.25) 0%, rgba(195, 177, 225, 0.08) 50%, transparent 70%);
-    pointer-events: none;
-    z-index: 0;
-}
-
-[data-theme="2010s"] .hero-section::after {
-    content: '';
-    position: absolute;
-    bottom: -80px;
-    left: -40px;
-    width: 450px;
-    height: 450px;
-    border-radius: 50%;
-    background: radial-gradient(circle, rgba(149, 225, 211, 0.2) 0%, rgba(255, 107, 107, 0.08) 50%, transparent 70%);
-    pointer-events: none;
-    z-index: 0;
-}
-
-/* Purple people illustration shapes — classic Corporate Memphis */
-[data-theme="2010s"] .about-section {
-    position: relative;
-}
-
-[data-theme="2010s"] .about-section::before {
-    content: '';
-    position: absolute;
-    top: 40px;
-    right: 5%;
-    width: 120px;
-    height: 180px;
-    border-radius: 60px 60px 40px 40px;
-    background: linear-gradient(180deg, #8B6FC0 0%, #C3B1E1 100%);
-    opacity: 0.12;
-    pointer-events: none;
-    z-index: 0;
-    transform: rotate(-8deg);
-}
-
-[data-theme="2010s"] .about-section::after {
-    content: '';
-    position: absolute;
-    bottom: 60px;
-    left: 3%;
-    width: 80px;
-    height: 130px;
-    border-radius: 40px 40px 30px 30px;
-    background: linear-gradient(180deg, #FF6B6B 0%, #FDCB6E 100%);
-    opacity: 0.1;
-    pointer-events: none;
-    z-index: 0;
-    transform: rotate(12deg);
-}
-
-/* Blob accents on carousel section */
-[data-theme="2010s"] .portfolio-carousel {
-    background: linear-gradient(135deg, #faf8ff 0%, #fff9f9 100%) !important;
-}
-
-/* Purple-tinted metric cards */
-[data-theme="2010s"] .hero-metrics {
-    position: relative;
-    z-index: 1;
-}
-
-/* Soft gradient on contact section */
-[data-theme="2010s"] .contact-section {
-    background: transparent;
-}
-
-/* Let body gradient show through all sections */
-[data-theme="2010s"] #main,
-[data-theme="2010s"] .about-section,
-[data-theme="2010s"] .company-logos-section,
-[data-theme="2010s"] #site-footer-final {
+/* ---- Let dark bg show through transparent sections ---- */
+[data-theme="2010s"] #main {
     background: transparent !important;
+}
+
+/* Hide CRT border */
+[data-theme="2010s"] body::before {
+    display: none !important;
 }
