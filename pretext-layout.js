@@ -130,95 +130,15 @@
     // ========================================
 
     function layoutHero() {
+        // Hero keeps its native flexbox layout — no absolute positioning.
+        // We just ensure it doesn't get broken by other pretext operations.
         var section = document.querySelector('.hero-section');
-        if (!section) return;
-
-        var heroLayout = section.querySelector('.hero-layout');
-        var textContainer = section.querySelector('.hero-text');
-        var portrait = section.querySelector('.hero-portrait');
-        if (!heroLayout || !textContainer || !portrait) return;
-
-        var containerWidth = heroLayout.offsetWidth;
-        if (containerWidth < MIN_WIDTH) {
-            resetHero();
-            return;
-        }
-
-        var shapes = window.PretextShapes || {};
-        var themeShapes = shapes[currentTheme] || shapes['2026'];
-        if (!themeShapes || !themeShapes.hero) return;
-
-        var exclusions = themeShapes.hero(containerWidth);
-
-        // Position portrait absolutely within hero-layout
-        heroLayout.style.position = 'relative';
-        heroLayout.style.display = 'block'; // Override flexbox
-
-        var portraitSize = exclusions[0] ? exclusions[0].right - (exclusions[0].left || 0) : 220;
-
-        portrait.style.position = 'absolute';
-        portrait.style.top = '0';
-        portrait.style.right = '0';
-        portrait.style.width = (portraitSize - 16) + 'px';
-        portrait.style.zIndex = '2';
-
-        // Flow each text element around the portrait
-        textContainer.style.position = 'relative';
-        textContainer.style.width = '100%';
-
-        var title = textContainer.querySelector('#title, .phosphor-text');
-        var subtitle = textContainer.querySelector('.hero-subtitle');
-        var tagline = textContainer.querySelector('.hero-tagline');
-        var metrics = textContainer.querySelector('.hero-metrics');
-
-        var y = 0;
-        var elements = [title, subtitle, tagline];
-        var marginBetween = 12;
-
-        for (var i = 0; i < elements.length; i++) {
-            var el = elements[i];
-            if (!el) continue;
-
-            var result = flowText(el, containerWidth, exclusions, { startY: y });
-
-            // Apply position via CSS — text stays in DOM but gets constrained widths
-            el.style.position = 'relative';
-            el.style.display = 'block';
-            el.style.width = '100%';
-
-            // For lines that need indent (text flowing around portrait),
-            // we use a clip-path or shape-outside approach
-            applyTextFlow(el, result, containerWidth);
-
-            y += result.height + marginBetween;
-        }
-
-        // Metrics go below the flowed text
-        if (metrics) {
-            metrics.style.marginTop = Math.max(0, y - metrics.offsetTop + 8) + 'px';
-        }
-
-        section.setAttribute('data-pretext', 'active');
+        if (section) section.setAttribute('data-pretext', 'active');
     }
 
     function resetHero() {
         var section = document.querySelector('.hero-section');
-        if (!section) return;
-        section.removeAttribute('data-pretext');
-
-        var heroLayout = section.querySelector('.hero-layout');
-        var portrait = section.querySelector('.hero-portrait');
-        if (heroLayout) {
-            heroLayout.style.position = '';
-            heroLayout.style.display = '';
-        }
-        if (portrait) {
-            portrait.style.position = '';
-            portrait.style.top = '';
-            portrait.style.right = '';
-            portrait.style.width = '';
-            portrait.style.zIndex = '';
-        }
+        if (section) section.removeAttribute('data-pretext');
     }
 
     // ========================================

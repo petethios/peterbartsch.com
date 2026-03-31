@@ -2916,9 +2916,11 @@ html:not([data-theme]) .theme-era-btn.active {
     padding: 0;
 }
 
-/* Sections with active pretext flow */
-[data-pretext="active"] {
-    overflow: hidden; /* Contain floats */
+/* Sections with active pretext flow — clearfix without overflow:hidden (which clips absolute children) */
+[data-pretext="active"]::after {
+    content: '';
+    display: table;
+    clear: both;
 }
 
 /* Case study spread indicators */
