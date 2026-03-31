@@ -360,7 +360,11 @@
     border-color: rgba(251, 191, 36, 0.15) !important;
 }
 
-/* ---- Cover Art ---- */
+/* ---- Cover Art / About Photo ---- */
+[data-theme="2010s"] .about-photo {
+    border: none !important;
+}
+
 [data-theme="2010s"] .cover-art {
     border-radius: 16px;
     overflow: hidden;
