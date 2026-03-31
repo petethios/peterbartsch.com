@@ -299,14 +299,6 @@
                 </ul>
             </div>
 
-            <div class="resume-role resume-earlier-section">
-                <h3 class="resume-section-title">Earlier Experience <span class="resume-role-dates">2001 – 2014</span></h3>
-                <ul class="resume-role-bullets">
-                    <li><strong>Nokia HERE Maps</strong> | Product Marketing Manager (2012-2014) - Led UX integration of acquired Trapster app, improving onboarding completion 33%</li>
-                    <li><strong>Gogo Inflight WiFi</strong> | Product Manager (2008-2012) - Launched connectivity across 6 major airlines; developed sponsored flight tracker generating recurring revenue</li>
-                    <li><strong>Cognistar</strong> | Co-Founder (2001-2008) - Built digital production and UX for legal education startup; raised $3M, achieved $2M+ annual revenue before acquisition</li>
-                </ul>
-            </div>
         </section>
 
         <section class="resume-section">
