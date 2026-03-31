@@ -267,6 +267,12 @@
     display: none;
 }
 
+[data-theme="2010s"] .hero-portrait {
+    border: none !important;
+    border-radius: 16px;
+    overflow: hidden;
+}
+
 [data-theme="2010s"] .hero-portrait img {
     border-radius: 16px;
     border: none;
@@ -437,12 +443,14 @@
 }
 
 [data-theme="2010s"] .case-study-image {
+    border: none !important;
     border-radius: 12px;
     overflow: hidden;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
 }
 
 [data-theme="2010s"] .case-study-image img {
+    border: none;
     border-radius: 12px;
 }
 
