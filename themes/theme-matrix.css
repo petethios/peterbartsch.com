@@ -69,7 +69,7 @@
     height: 100vh;
     z-index: 0;
     pointer-events: none;
-    opacity: 0.25;
+    opacity: 0.35;
 }
 
 /* ---- Container ---- */
@@ -191,7 +191,7 @@
 /* ---- Hero Section ---- */
 [data-theme="matrix"] .hero-section {
     border: 1px solid rgba(0, 255, 65, 0.15);
-    background: rgba(0, 5, 0, 0.7);
+    background: rgba(0, 5, 0, 0.4);
     padding: 32px;
 }
 
@@ -247,7 +247,7 @@
 /* ---- About Section ---- */
 [data-theme="matrix"] .about-section {
     border: 1px solid rgba(0, 255, 65, 0.15);
-    background: rgba(0, 5, 0, 0.7);
+    background: rgba(0, 5, 0, 0.4);
     padding: 32px;
 }
 
@@ -277,7 +277,7 @@
 /* ---- Case Study Cards ---- */
 [data-theme="matrix"] .case-study-card {
     border: 1px solid rgba(0, 255, 65, 0.15);
-    background: rgba(0, 5, 0, 0.7);
+    background: rgba(0, 5, 0, 0.4);
     padding: 24px;
     transition: border-color 0.3s, box-shadow 0.3s;
 }
@@ -350,7 +350,7 @@
 /* ---- Configurator Showcase ---- */
 [data-theme="matrix"] .configurator-showcase {
     border: 1px solid rgba(0, 255, 65, 0.15);
-    background: rgba(0, 5, 0, 0.7);
+    background: rgba(0, 5, 0, 0.4);
 }
 
 [data-theme="matrix"] .configurator-preview img {
@@ -428,7 +428,7 @@
 /* ---- Contact Section ---- */
 [data-theme="matrix"] .contact-section {
     border: 1px solid rgba(0, 255, 65, 0.15);
-    background: rgba(0, 5, 0, 0.7);
+    background: rgba(0, 5, 0, 0.4);
     padding: 32px;
 }
 
