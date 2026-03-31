@@ -364,7 +364,7 @@
         /* Font Faces */
         @font-face {
             font-family: 'Rombyte';
-            src: url('rombyte.ttf') format('truetype');
+            src: url('rombyte.woff2') format('woff2'), url('rombyte.ttf') format('truetype');
             font-weight: normal;
             font-style: normal;
             font-display: swap;
@@ -372,7 +372,7 @@
 
         @font-face {
             font-family: 'Ari';
-            src: url('ari.ttf') format('truetype');
+            src: url('ari.woff2') format('woff2'), url('ari.ttf') format('truetype');
             font-weight: normal;
             font-style: normal;
             font-display: swap;

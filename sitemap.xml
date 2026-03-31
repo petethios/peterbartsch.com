@@ -43,6 +43,31 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
+  <!-- Blog -->
+  <url>
+    <loc>https://petebartsch.com/blog</loc>
+    <lastmod>2026-03-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://petebartsch.com/blog/ux-is-dead-long-live-hx</loc>
+    <lastmod>2026-03-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://petebartsch.com/blog/open-source-3d-configurator</loc>
+    <lastmod>2026-03-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://petebartsch.com/blog/what-vertical-farming-got-wrong</loc>
+    <lastmod>2026-03-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
   <!-- PDF Downloads -->
   <url>
     <loc>https://petebartsch.com/Peter-Bartsch-Resume.pdf</loc>

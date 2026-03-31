@@ -25,6 +25,7 @@
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     <meta property="og:image:alt" content="Peter Bartsch — Staff Product Designer | $3.8B Revenue Enabled | 500K+ Users">
+    <meta property="og:locale" content="en_US">
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image">
@@ -57,7 +58,7 @@
     <title>Peter Bartsch — Staff Product Designer | Enterprise Adoption & Design Orgs</title>
 
     <!-- Font Preloads -->
-    <link rel="preload" href="rombyte.ttf" as="font" type="font/ttf" crossorigin>
+    <link rel="preload" href="rombyte.woff2" as="font" type="font/woff2" crossorigin>
 
     <!-- Preconnect to external resources for performance -->
     <!-- Fonts are self-hosted, no preconnect needed -->
@@ -157,6 +158,7 @@
                     <li><a href="#about">ABOUT</a></li>
                     <li><a href="#portfolio-carousel">CASES</a></li>
                     <li><a href="resume.php">RESUME</a></li>
+                    <li><a href="blog/">BLOG</a></li>
                     <li><a href="#contact">CONTACT</a></li>
                     <li><a href="https://linkedin.com/in/peterbartsch" target="_blank" rel="noopener noreferrer" class="nav-linkedin">LINKEDIN</a></li>
                 </ul>
@@ -176,6 +178,7 @@
                 <li><a href="#about">ABOUT</a></li>
                 <li><a href="#portfolio-carousel">CASES</a></li>
                 <li><a href="resume.php">RESUME</a></li>
+                <li><a href="blog/">BLOG</a></li>
                 <li><a href="#contact">CONTACT</a></li>
             </ul>
             <div class="mobile-menu-divider"></div>
@@ -378,7 +381,7 @@
 
                 <!-- Professional Experience -->
                 <div id="songlist">
-                    <table id="tracklist">
+                    <table id="tracklist" aria-label="Professional experience">
                         <thead>
                             <tr class="date-header">
                                 <th colspan="3">PROFESSIONAL EXPERIENCE</th>
@@ -490,7 +493,7 @@
     <!-- Modals -->
     <div id="myModal1" class="modal" role="dialog" aria-modal="true" aria-labelledby="myModal1-title">
         <div class="modal-content modal-compact">
-            <span class="close">&CircleTimes;</span>
+            <button class="close" aria-label="Close modal">&CircleTimes;</button>
             <h2 id="myModal1-title">Thios</h2>
             <p class="modal-role">Founder & Lead Designer</p>
             <p class="modal-dates">Aug 2024 - Present</p>
@@ -504,8 +507,8 @@
                 <img loading="lazy" src="img/thios-03.png" alt="Thios prototype">
             </div>
             <div class="carousel-nav">
-                <button class="prevBtn">BACK</button>
-                <button class="nextBtn">NEXT</button>
+                <button class="prevBtn" aria-label="Previous image">BACK</button>
+                <button class="nextBtn" aria-label="Next image">NEXT</button>
             </div>
         </div>
     </div>
@@ -515,7 +518,7 @@
 
     <div id="myModal2" class="modal" role="dialog" aria-modal="true" aria-labelledby="myModal2-title">
         <div class="modal-content modal-compact">
-            <span class="close">&CircleTimes;</span>
+            <button class="close" aria-label="Close modal">&CircleTimes;</button>
             <h2 id="myModal2-title">John Deere</h2>
             <p class="modal-role">Senior Lead UX; Digital Customer Experience</p>
             <p class="modal-dates">Aug 2020 - Jul 2024</p>
@@ -530,15 +533,15 @@
                 <img loading="lazy" src="img/deere-03.png" alt="Deere navigation">
             </div>
             <div class="carousel-nav">
-                <button class="prevBtn">BACK</button>
-                <button class="nextBtn">NEXT</button>
+                <button class="prevBtn" aria-label="Previous image">BACK</button>
+                <button class="nextBtn" aria-label="Next image">NEXT</button>
             </div>
         </div>
     </div>
 
     <div id="myModal3" class="modal" role="dialog" aria-modal="true" aria-labelledby="myModal3-title">
         <div class="modal-content modal-compact">
-            <span class="close">&CircleTimes;</span>
+            <button class="close" aria-label="Close modal">&CircleTimes;</button>
             <h2 id="myModal3-title">FourKites</h2>
             <p class="modal-role">Lead UX / Manager</p>
             <p class="modal-dates">Jan 2017 - Jan 2020</p>
@@ -553,15 +556,15 @@
                 <img loading="lazy" src="img/fourkites-03.png" alt="FourKites mobile">
             </div>
             <div class="carousel-nav">
-                <button class="prevBtn">BACK</button>
-                <button class="nextBtn">NEXT</button>
+                <button class="prevBtn" aria-label="Previous image">BACK</button>
+                <button class="nextBtn" aria-label="Next image">NEXT</button>
             </div>
         </div>
     </div>
 
     <div id="myModal4" class="modal" role="dialog" aria-modal="true" aria-labelledby="myModal4-title">
         <div class="modal-content">
-            <span class="close">&CircleTimes;</span>
+            <button class="close" aria-label="Close modal">&CircleTimes;</button>
             <h2 id="myModal4-title">MavenWave Partners</h2>
             <p>Senior UX + Agile Lead (Consultant)</p>
             <p>Jan 2014 - Jan 2017</p>
@@ -589,8 +592,8 @@
 
             </div>
             <div class="carousel-nav">
-                <button class="prevBtn">BACK</button>
-                <button class="nextBtn">NEXT</button>
+                <button class="prevBtn" aria-label="Previous image">BACK</button>
+                <button class="nextBtn" aria-label="Next image">NEXT</button>
             </div>
         </div>
     </div>
@@ -598,7 +601,7 @@
 
     <div id="myModal6" class="modal" role="dialog" aria-modal="true" aria-labelledby="myModal6-title">
         <div class="modal-content">
-            <span class="close">&CircleTimes;</span>
+            <button class="close" aria-label="Close modal">&CircleTimes;</button>
             <h2 id="myModal6-title">Nokia / HERE Maps</h2>
             <p>Product Marketing Manager</p>
             <p>August 2012 - January 2014</p>
@@ -611,15 +614,15 @@
                 <img loading="lazy" src="img/nokia-here-03.png" alt="Nokia HERE Maps interface design 3">
             </div>
             <div class="carousel-nav">
-                <button class="prevBtn">BACK</button>
-                <button class="nextBtn">NEXT</button>
+                <button class="prevBtn" aria-label="Previous image">BACK</button>
+                <button class="nextBtn" aria-label="Next image">NEXT</button>
             </div>
         </div>
     </div>
 
     <div id="myModal7" class="modal" role="dialog" aria-modal="true" aria-labelledby="myModal7-title">
         <div class="modal-content">
-            <span class="close">&CircleTimes;</span>
+            <button class="close" aria-label="Close modal">&CircleTimes;</button>
             <h2 id="myModal7-title">Gogo Inflight Internet</h2>
             <p>Product Manager</p>
             <p>April 2008 - August 2012</p>
@@ -638,8 +641,8 @@
                 <img loading="lazy" src="img/gogo-08.png" alt="Gogo inflight internet product design 8">
             </div>
             <div class="carousel-nav">
-                <button class="prevBtn">BACK</button>
-                <button class="nextBtn">NEXT</button>
+                <button class="prevBtn" aria-label="Previous image">BACK</button>
+                <button class="nextBtn" aria-label="Next image">NEXT</button>
             </div>
         </div>
     </div>
@@ -648,7 +651,7 @@
 
     <div id="myModal5" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal5-title">
         <div class="modal-content">
-            <span class="close">&CircleTimes;</span>
+            <button class="close" aria-label="Close modal">&CircleTimes;</button>
             <h2 id="modal5-title">How Weird Street Faire</h2>
             <p>Board Director</p>
             <p>2004 - 2024</p>
@@ -663,8 +666,8 @@
                 <img loading="lazy" src="img/how-weird-03.png" alt="How Weird Street Faire event 3">
             </div>
             <div class="carousel-nav">
-                <button class="prevBtn">BACK</button>
-                <button class="nextBtn">NEXT</button>
+                <button class="prevBtn" aria-label="Previous image">BACK</button>
+                <button class="nextBtn" aria-label="Next image">NEXT</button>
             </div>
         </div>
     </div>
@@ -673,7 +676,7 @@
 
     <div id="myModal9" class="modal" role="dialog" aria-modal="true" aria-labelledby="myModal9-title">
         <div class="modal-content">
-            <span class="close">&CircleTimes;</span>
+            <button class="close" aria-label="Close modal">&CircleTimes;</button>
             <h2 id="myModal9-title">Cognistar</h2>
             <p>Co-Founder</p>
             <p>2001 - 2008</p>
@@ -687,8 +690,8 @@
                 <img loading="lazy" src="img/cognistar-03.png" alt="Cognistar legal education platform 3">
             </div>
             <div class="carousel-nav">
-                <button class="prevBtn">BACK</button>
-                <button class="nextBtn">NEXT</button>
+                <button class="prevBtn" aria-label="Previous image">BACK</button>
+                <button class="nextBtn" aria-label="Next image">NEXT</button>
             </div>
         </div>
     </div>
@@ -696,7 +699,7 @@
 
     <div id="myModal13" class="modal" role="dialog" aria-modal="true" aria-labelledby="myModal13-title">
         <div class="modal-content">
-            <span class="close">&CircleTimes;</span>
+            <button class="close" aria-label="Close modal">&CircleTimes;</button>
             <h2 id="myModal13-title">Arizona State University</h2>
             <p>Bachelor of Arts</p>
             <p>1989 - 1993</p>
