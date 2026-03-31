@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resume | Peter Bartsch — Staff Product Designer</title>
-    <meta name="description" content="Peter Bartsch — Staff Product Designer. 15+ years designing enterprise systems shipped to 500K+ users. John Deere, FourKites ($1.2B exit), MavenWave.">
+    <meta name="description" content="Peter Bartsch — Staff Product Designer. 15+ years designing enterprise systems shipped to 500K+ users. John Deere, FourKites ($1B+ valuation), MavenWave.">
     <link rel="canonical" href="https://peterbartsch.com/resume">
     <link rel="icon" type="image/svg+xml" href="pblogo.svg">
 
@@ -223,7 +223,7 @@
         <header class="resume-header">
             <h1 class="resume-name">Peter Bartsch</h1>
             <p class="resume-title">Staff Product Designer</p>
-            <p class="resume-summary">Staff Product Designer with 15+ years shipping enterprise systems at scale. Senior IC at a $38B company (John Deere), founding designer at a $1.2B-exit startup (FourKites), and consultant to Fortune 500 clients (AbbVie, OptumRx). I build the systems that get adopted and the teams that sustain them.</p>
+            <p class="resume-summary">Staff Product Designer — Enterprise Platforms & 0→1. Led design for $3.8B platform at Deere (500K users). Built design org 1→10 at FourKites through $3M→$100M ARR ($1B+ valuation). 15 years shipping enterprise systems that actually get adopted.</p>
             <a href="Peter-Bartsch-Resume.pdf" class="resume-download" download>↓ DOWNLOAD PDF</a>
         </header>
 
@@ -237,9 +237,9 @@
                 </div>
                 <p class="resume-role-title">Senior Lead UX — Digital Customer Experience</p>
                 <ul class="resume-role-bullets">
-                    <li>Drove profile completion from 34%→87% across 500K+ users, unlocking $3.8B in subscription revenue</li>
-                    <li>Built unified navigation framework deployed across 8 product lines (web, mobile, embedded)</li>
-                    <li>Established enterprise design system adopted by 40+ teams globally — 45% faster design-to-dev handoffs</li>
+                    <li>Led design driving profile completion from 34%→87% across 500K+ users, unlocking $3.8B in subscription revenue</li>
+                    <li>Led unified navigation framework deployed across 8 product lines (web, mobile, embedded)</li>
+                    <li>Core contributor to enterprise design system adopted by 40+ teams globally — 45% faster design-to-dev handoffs</li>
                     <li>Enabled predictive maintenance and dealer-led service experiences at scale</li>
                 </ul>
             </div>
@@ -251,10 +251,10 @@
                 </div>
                 <p class="resume-role-title">Lead UX / Design Manager</p>
                 <ul class="resume-role-bullets">
-                    <li>Employee #28 during hypergrowth ($3M→$100M ARR) — company acquired for $1.2B in 2022</li>
-                    <li>Designed flagship tracking platform serving 30+ Fortune 2000 companies; 41% retention increase</li>
-                    <li>Built predictive analytics 6–12 hours ahead of competitors; 3x customer expansion</li>
-                    <li>Scaled design org from 1→10 designers across US and India</li>
+                    <li>Employee #28 during hypergrowth ($3M→$100M ARR, $1B+ valuation)</li>
+                    <li>Led design of flagship tracking platform serving 30+ Fortune 2000 companies; 41% retention increase, 3x customer expansion</li>
+                    <li>Led predictive analytics dashboards identifying delays 6–12 hours ahead of competitors</li>
+                    <li>Built design org from 1→10 designers across US and India; established component library and design operations</li>
                 </ul>
             </div>
 
@@ -278,10 +278,9 @@
                 </div>
                 <p class="resume-role-title">Designer & Founder</p>
                 <ul class="resume-role-bullets">
-                    <li>Between-roles project testing AI as a design force multiplier</li>
-                    <li>Shipped full product ecosystem solo in 18 months — brand, 3 websites, 5 CAD variants, revenue</li>
-                    <li>Used AI as technical co-founder for code, CAD, and brand work; 70% faster prototyping cycles</li>
-                    <li>Built 3D product configurator (Three.js, React) with AR preview</li>
+                    <li>Between enterprise roles — shipped a complete product ecosystem solo to demonstrate full-stack design range</li>
+                    <li>Brand, 3 websites (React, Three.js), 3D configurator with AR, 5 physical product variants — revenue in 18 months</li>
+                    <li>Design + code + AI tooling; 70% faster prototyping cycles through conversational development</li>
                 </ul>
             </div>
 
