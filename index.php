@@ -454,7 +454,7 @@
                     <div class="contact-inner">
                         <div class="contact-info">
                             <h3 class="phosphor-text">LET'S TALK</h3>
-                            <p class="contact-desc">I'm looking for Staff or Principal IC roles in enterprise product design — the kind where adoption is hard, systems are complex, and design needs to operate at org level. Based in Chicago, open to remote.</p>
+                            <p class="contact-desc">I'm looking for Staff or Principal IC roles in enterprise product design — the kind where adoption is hard, systems are complex, and design needs to operate at org level. Based in Chicago, open to remote or relocation.</p>
                             <a href="resume.php" class="sidebar-link">View Resume</a>
                         </div>
                         <form id="contactForm" class="contact-form">
