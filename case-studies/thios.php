@@ -370,7 +370,7 @@ CRT-2 — "Premium gold" #D4A000 has no entry in tokens.json
                     <li><strong>212 design tokens</strong> in tokens.json (W3C format), spanning primitive / semantic / surface layers with sphere-brand modes.</li>
                     <li><strong>4 production subdomains</strong> kept in CSS-sync via a <code>make check-css-sync</code> deploy gate — no silent rot between thios.co, blog, store, and partners.</li>
                     <li><strong>54 OnShape elements</strong> driven by a single Variable Studio, ready for parametric agent updates from sphere specs in DESIGN.md.</li>
-                    <li><strong>7 drift findings caught</strong> in the first formal token audit (May 2026), including a self-contradiction inside DESIGN.md and a documented brand color absent from tokens.json.</li>
+                    <li><strong>7 drift findings caught</strong> in the first formal token audit (May 2026), including a self-contradiction inside DESIGN.md and a documented brand color absent from tokens.json. <a href="https://github.com/Thios-and-Company/thios.co/tree/main/_agents/bench/audit-skill-bench" target="_blank" rel="noopener">A follow-up bench</a> measured the skill against a one-line prompt across three independent trials each: skill ran 76% recall, one-liner ran 86% &mdash; the skill's win is consistency of output form (severity tiers, Loop-step routing, file:line citations on every finding), not raw recall.</li>
                     <li><strong>1 published skill</strong> (<code>audit-design-token-drift</code>) following the agent-skills anatomy, with 5 more on the roadmap.</li>
                 </ul>
             </section>
@@ -384,6 +384,8 @@ CRT-2 — "Premium gold" #D4A000 has no entry in tokens.json
                     <li><strong><a href="https://github.com/addyosmani/agent-skills" target="_blank" rel="noopener">addyosmani/agent-skills</a></strong> — 20 SKILL.md files standardizing the workflow-as-markdown pattern across Claude Code, Cursor, Gemini, Windsurf, Copilot. Thios's <code>_agents/skills/</code> follows this anatomy and is structured to publish back upstream.</li>
                 </ul>
                 <p>Stack-agnostic markdown rule layers are the convergent answer. The Thios experiment was just early to it.</p>
+
+                <p style="margin-top: 24px; padding: 16px 20px; border-left: 3px solid var(--color-secondary); background: var(--color-light-gray, #f7f7f7);"><strong>Empirical commitment.</strong> Before publishing the &ldquo;skills &gt; prompts&rdquo; claim everyone in this space is waving around, I benchmarked it. The skill I built &mdash; <code>audit-design-token-drift</code> &mdash; lost to a one-line prompt on recall (76% vs 86%) on a frozen four-surface snapshot. Both missed the same value-drift finding (Auxosphere <code>#909090</code> vs the resolved <code>#6c757d</code>) that the <em>vague</em> baseline caught. The skill's actual win is in form: every skill-run audit had Loop-step routing, file:line citations, and a Verification checklist; no other strategy did. The bench data lives at <a href="https://github.com/Thios-and-Company/thios.co/tree/main/_agents/bench/audit-skill-bench" target="_blank" rel="noopener"><code>_agents/bench/audit-skill-bench</code></a> and is set up to be re-run as the skill evolves. I treat &ldquo;skills &gt; prompts&rdquo; as an unverified hypothesis until the mean recall flips back.</p>
             </section>
 
             <section class="case-study-section">
