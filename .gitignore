@@ -9,3 +9,6 @@ deploy_main.sh
 
 # Backup files
 *.backup.*
+
+# Claude Code local config (settings, worktrees, dev-server launch config)
+.claude/

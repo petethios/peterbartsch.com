@@ -297,6 +297,167 @@
     margin-bottom: 0;
 }
 
+/* ========================================
+   Section H3 (used by Thios case study and any future case study with sub-sections)
+   ======================================== */
+.case-study-section h3.cs-h3 {
+    font-family: var(--font-display);
+    font-size: 16px;
+    color: var(--color-text-primary, var(--color-white));
+    margin: 28px 0 12px 0;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+}
+
+/* ========================================
+   Flywheel diagram (Thios hero)
+   Dark stage so the gold + white SVG stays legible on every era theme.
+   ======================================== */
+.flywheel-stage {
+    margin: 40px 0;
+    padding: 28px 20px 16px;
+    background: linear-gradient(180deg, #14181c 0%, #0c0f12 100%);
+    border: 1px solid rgba(232, 175, 0, 0.22);
+    border-radius: 12px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.35), inset 0 1px 0 rgba(255, 255, 255, 0.04);
+    overflow: hidden;
+}
+.flywheel {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    max-width: 720px;
+}
+.flywheel--stacked { display: none; max-width: 360px; }
+@media (max-width: 720px) {
+    .flywheel-stage { padding: 20px 12px 12px; margin: 32px -8px; }
+    .flywheel--radial { display: none; }
+    .flywheel--stacked { display: block; }
+}
+.flywheel text {
+    font-family: var(--font-display, 'Space Mono', monospace);
+}
+.flywheel .fw-node { fill: #1a1a1a; stroke: #E8AF00; stroke-width: 2; }
+.flywheel .fw-node-label { fill: #ffffff; font-weight: 700; font-size: 11px; letter-spacing: 1px; }
+.flywheel .fw-node-sub { fill: #b8b8b8; font-size: 8.5px; letter-spacing: 0.5px; }
+.flywheel .fw-node-sub--accent { fill: #E8AF00; }
+.flywheel .fw-arrow { stroke: #E8AF00; stroke-width: 2; fill: none; }
+.flywheel .fw-edge-label { fill: #cfd5da; font-size: 11px; font-style: italic; letter-spacing: 0.3px; }
+.flywheel .fw-center-label { fill: #ffffff; font-weight: 700; letter-spacing: 1.5px; }
+.flywheel .fw-center-sub { fill: #E8AF00; font-size: 9px; letter-spacing: 1px; }
+.flywheel-caption {
+    font-family: var(--font-body);
+    font-size: 12px;
+    color: #b8b8b8;
+    text-align: center;
+    margin: 12px 0 0;
+    letter-spacing: 0.3px;
+}
+
+/* ========================================
+   Artifact callout — code excerpt with stable dark surface
+   ======================================== */
+.artifact-callout {
+    border: 1px solid rgba(232, 175, 0, 0.4);
+    border-radius: 8px;
+    margin: 24px 0;
+    background: #14181c;
+    color: #ffffff;
+    overflow: hidden;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
+}
+.artifact-callout__label {
+    font-family: var(--font-display, 'Space Mono', monospace);
+    font-size: 11px;
+    color: #E8AF00;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    padding: 10px 18px;
+    border-bottom: 1px solid rgba(232, 175, 0, 0.25);
+    background: rgba(232, 175, 0, 0.06);
+}
+.artifact-callout__body {
+    position: relative;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+.artifact-callout pre {
+    font-family: var(--font-readable, 'Space Mono', 'Courier New', monospace);
+    font-size: 13px;
+    line-height: 1.55;
+    margin: 0;
+    padding: 16px 20px;
+    color: #e8e8e8;
+    white-space: pre;
+    min-width: max-content;
+    tab-size: 4;
+}
+.artifact-callout__body::after {
+    content: '';
+    position: absolute;
+    top: 0; right: 0; bottom: 0; width: 32px;
+    background: linear-gradient(90deg, rgba(20, 24, 28, 0), rgba(20, 24, 28, 0.95));
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+.artifact-callout__body--scrollable::after { opacity: 1; }
+@media (max-width: 720px) {
+    .artifact-callout { margin: 20px 0; }
+    .artifact-callout pre { font-size: 12px; padding: 14px 16px; }
+}
+
+/* ========================================
+   Surface comparison table (Thios)
+   ======================================== */
+.surface-table-wrap {
+    margin: 20px 0;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    border-radius: 6px;
+}
+.surface-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: var(--font-readable, 'Space Mono', monospace);
+    font-size: 14px;
+    line-height: 1.5;
+    color: var(--cs-text-color, rgba(255, 255, 255, 0.92));
+}
+.surface-table th,
+.surface-table td {
+    text-align: left;
+    padding: 12px 14px;
+    border-bottom: 1px solid var(--cs-border-color, rgba(134, 216, 221, 0.2));
+    vertical-align: top;
+}
+.surface-table th {
+    font-family: var(--font-display);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-size: 11px;
+    color: var(--color-primary);
+    border-bottom: 2px solid var(--color-primary);
+    background: var(--cs-metric-bg, rgba(0, 0, 0, 0.3));
+}
+.surface-table td:first-child {
+    font-family: var(--font-display);
+    font-size: 13px;
+    white-space: nowrap;
+}
+.surface-table td a { color: var(--color-primary); text-decoration: none; }
+.surface-table td a:hover { text-decoration: underline; }
+.surface-table tbody tr:hover td {
+    background: var(--cs-metric-bg, rgba(134, 216, 221, 0.04));
+}
+@media (max-width: 720px) {
+    .surface-table { font-size: 13px; }
+    .surface-table th,
+    .surface-table td { padding: 10px 10px; }
+    .surface-table td:first-child { white-space: normal; }
+}
+
 /* Mobile Responsive */
 @media (max-width: 600px) {
     .case-study-page {
