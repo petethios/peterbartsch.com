@@ -31,13 +31,20 @@
     var matrixAnimFrame = null;
     var matrixResizeHandler = null;
 
-    // Determine base path for theme CSS files
+    // Determine base path + cache-bust version from this script's own src.
+    // PHP entry points load this file as `theme-switcher.js?v=<filemtime>`;
+    // we propagate the same `?v=` to every theme CSS load so editing a
+    // theme CSS file (and touching theme-switcher.js to bump its mtime)
+    // busts the browser cache for the theme CSS too.
     var scripts = document.getElementsByTagName('script');
     var basePath = '';
+    var themeCacheBust = '';
     for (var i = 0; i < scripts.length; i++) {
         var src = scripts[i].src || '';
         if (src.indexOf('theme-switcher.js') !== -1) {
             basePath = src.substring(0, src.lastIndexOf('/') + 1);
+            var versionMatch = src.match(/[?&]v=([^&]+)/);
+            themeCacheBust = versionMatch ? versionMatch[1] : '';
             break;
         }
     }
@@ -53,7 +60,7 @@
 
         var link = document.createElement('link');
         link.rel = 'stylesheet';
-        link.href = basePath + cssFile;
+        link.href = basePath + cssFile + (themeCacheBust ? '?v=' + themeCacheBust : '');
         link.id = 'theme-stylesheet';
         document.head.appendChild(link);
         currentStylesheet = link;
