@@ -149,7 +149,7 @@
 }
 
 [data-theme="2026"] .case-study-flagship {
-    border-left: 3px solid #0066FF !important;
+    border-left: none !important;
 }
 
 [data-theme="2026"] #name a {
@@ -437,7 +437,14 @@
     display: inline-flex !important;
     align-items: center;
     gap: 8px;
+    /* Bulletproof sizing: don't depend solely on width: fit-content (Safari has
+       had edge cases with it inside flex/grid parents). flex: none + align-self
+       prevent any parent flex context from stretching us; max-width: max-content
+       caps the box at intrinsic width even if width: fit-content is ignored. */
+    flex: none !important;
+    align-self: flex-start !important;
     width: fit-content !important;
+    max-width: max-content !important;
     transition: all 0.15s ease;
 }
 
