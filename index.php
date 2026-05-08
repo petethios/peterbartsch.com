@@ -148,6 +148,7 @@
                 <button class="theme-era-btn" data-theme="2010s" aria-label="2010s Corporate Memphis">10s</button>
                 <button class="theme-era-btn active" data-theme="2026" aria-label="2026 Modern AI">2026</button>
             </div>
+            <span class="theme-era-tagline">30 years across web eras. Same operator.</span>
         </div>
         <div class="header-inner">
             <a href="#" class="header-logo" aria-label="Home">
@@ -213,14 +214,14 @@
                     <div class="hero-text">
                         <p class="hero-name">PETER BARTSCH</p>
                         <h2 id="title" class="phosphor-text">Staff Product Designer — Enterprise Platforms & 0→1</h2>
-                        <p class="hero-proof">Led design for $3.8B platform at Deere. Built design org from 1→10 at FourKites ($1B+ valuation). 15 years shipping enterprise systems that actually get adopted.</p>
+                        <p class="hero-proof">Led design for $3.8B platform at Deere. Built design org from 1→10 at FourKites ($1B+ valuation). Now founder of Thios — modular structures + agent-native design systems with a published skill and pre-registered bench.</p>
                         <div class="hero-cta-row">
                             <a href="#contact" class="hero-cta-primary">Let's Talk</a>
                             <a href="#portfolio-carousel" class="hero-cta-secondary">See the Work</a>
                         </div>
                         <div class="recruiter-summary">
-                            <div class="summary-item"><span class="summary-label">Level</span><span class="summary-value">Staff / Principal IC</span></div>
-                            <div class="summary-item"><span class="summary-label">Domains</span><span class="summary-value">Enterprise SaaS · Supply Chain · AI</span></div>
+                            <div class="summary-item"><span class="summary-label">Level</span><span class="summary-value">Staff / Principal IC · Founder</span></div>
+                            <div class="summary-item"><span class="summary-label">Domains</span><span class="summary-value">Enterprise SaaS · Supply Chain · Agent-native systems</span></div>
                             <div class="summary-item"><span class="summary-label">Range</span><span class="summary-value">IC + Leadership (built teams 1→10)</span></div>
                             <div class="summary-item"><span class="summary-label">Scale</span><span class="summary-value">500K users · $3.8B revenue · 40+ teams</span></div>
                         </div>

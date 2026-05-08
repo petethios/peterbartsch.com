@@ -152,6 +152,17 @@
     border-left: none !important;
 }
 
+/* Era selector tagline — keep it visible on the 2026 light theme
+   (the base rule is gray on dark; we want gray on light here). */
+[data-theme="2026"] .theme-era-tagline {
+    color: #888 !important;
+    font-family: 'JetBrains Mono', monospace !important;
+    font-size: 11px !important;
+    letter-spacing: 0.05em !important;
+    text-transform: none !important;
+    opacity: 1 !important;
+}
+
 [data-theme="2026"] #name a {
     color: #555 !important;
     font-family: 'JetBrains Mono', monospace;
