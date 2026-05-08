@@ -147,8 +147,14 @@ if (coverVideo) {
 
     if (!hamburgerBtn || !mobileMenu) return;
 
+    // Initialize mobile menu as inert so its contents (including the
+    // duplicate era-switcher buttons) are removed from the a11y tree
+    // and tab order while the drawer is closed.
+    mobileMenu.setAttribute('inert', '');
+
     function closeMenu() {
         mobileMenu.hidden = true;
+        mobileMenu.setAttribute('inert', '');
         hamburgerBtn.setAttribute('aria-expanded', 'false');
         if (backdrop) backdrop.classList.remove('active');
         document.body.style.overflow = '';
@@ -156,6 +162,7 @@ if (coverVideo) {
 
     function openMenu() {
         mobileMenu.hidden = false;
+        mobileMenu.removeAttribute('inert');
         hamburgerBtn.setAttribute('aria-expanded', 'true');
         if (backdrop) backdrop.classList.add('active');
         document.body.style.overflow = 'hidden';

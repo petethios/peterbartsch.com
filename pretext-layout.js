@@ -341,17 +341,25 @@
         info.style.flex = 'none';
 
         var heading = info.querySelector('.phosphor-text');
+        var openTo = info.querySelector('.contact-open-to');
         var desc = info.querySelector('.contact-desc');
         var link = info.querySelector('.sidebar-link');
+        var actions = info.querySelector('.contact-actions');
 
         var y = 0;
         var margin = 12;
-        var els = [heading, desc, link];
+        // Text-flow only the prose elements; .contact-actions is a flex
+        // row of buttons and is laid out as a regular block underneath.
+        var els = [heading, openTo, desc, link];
         for (var i = 0; i < els.length; i++) {
             if (!els[i]) continue;
             var result = flowText(els[i], containerWidth, exclusions, { startY: y });
             applyTextFlow(els[i], result, containerWidth);
             y += result.height + margin;
+        }
+        if (actions) {
+            // Position the button row below the flowed prose, clear of the form column.
+            actions.style.marginTop = margin + 'px';
         }
 
         // Ensure inner is tall enough for the form
@@ -380,6 +388,8 @@
             form.style.zIndex = '';
         }
         if (info) { info.style.width = ''; info.style.flex = ''; }
+        var actions = info && info.querySelector('.contact-actions');
+        if (actions) { actions.style.marginTop = ''; }
     }
 
     // ========================================

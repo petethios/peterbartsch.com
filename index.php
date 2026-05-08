@@ -140,15 +140,15 @@
         <!-- Theme era selector bar -->
         <div class="theme-era-bar">
             <span class="theme-era-label">Design era</span>
-            <div class="theme-era-buttons" role="radiogroup" aria-label="Switch design era theme">
-                <button class="theme-era-btn" data-theme="80s" aria-label="1980s Retro Terminal">80s</button>
-                <button class="theme-era-btn" data-theme="90s" aria-label="1990s GeoCities">90s</button>
-                <button class="theme-era-btn" data-theme="matrix" aria-label="2000 Matrix Digital Rain">2000</button>
-                <button class="theme-era-btn" data-theme="2000s" aria-label="2000s Web 2.0">00s</button>
-                <button class="theme-era-btn" data-theme="2010s" aria-label="2010s Corporate Memphis">10s</button>
-                <button class="theme-era-btn active" data-theme="2026" aria-label="2026 Modern AI">2026</button>
+            <div class="theme-era-buttons" role="group" aria-label="Switch design era theme">
+                <button class="theme-era-btn" data-theme="80s" aria-label="1980s Retro Terminal" aria-pressed="false">80s</button>
+                <button class="theme-era-btn" data-theme="90s" aria-label="1990s GeoCities" aria-pressed="false">90s</button>
+                <button class="theme-era-btn" data-theme="matrix" aria-label="2000 Matrix Digital Rain" aria-pressed="false">2000</button>
+                <button class="theme-era-btn" data-theme="2000s" aria-label="2000s Web 2.0" aria-pressed="false">00s</button>
+                <button class="theme-era-btn" data-theme="2010s" aria-label="2010s Corporate Memphis" aria-pressed="false">10s</button>
+                <button class="theme-era-btn active" data-theme="2026" aria-label="2026 Modern AI" aria-pressed="true">2026</button>
             </div>
-            <span class="theme-era-tagline">30 years across web eras. Same operator.</span>
+            <span class="theme-era-tagline">30 years on the web. 15 in enterprise. Same operator.</span>
         </div>
         <div class="header-inner">
             <a href="#" class="header-logo" aria-label="Home">
@@ -173,7 +173,7 @@
         <div id="mobileMenuBackdrop" class="mobile-menu-backdrop"></div>
 
         <!-- Mobile navigation drawer -->
-        <nav id="mobileMenu" class="mobile-menu" aria-label="Mobile" hidden>
+        <nav id="mobileMenu" class="mobile-menu" aria-label="Mobile" hidden inert>
             <button id="mobileMenuClose" class="mobile-menu-close" aria-label="Close menu"></button>
             <ul class="mobile-nav-primary">
                 <li><a href="#about">ABOUT</a></li>
@@ -193,13 +193,13 @@
             </ul>
             <div class="mobile-menu-divider"></div>
             <div class="mobile-menu-header">Design Era</div>
-            <div class="mobile-theme-buttons">
-                <button class="theme-era-btn" data-theme="80s">80s</button>
-                <button class="theme-era-btn" data-theme="90s">90s</button>
-                <button class="theme-era-btn" data-theme="matrix">2000</button>
-                <button class="theme-era-btn" data-theme="2000s">00s</button>
-                <button class="theme-era-btn" data-theme="2010s">10s</button>
-                <button class="theme-era-btn active" data-theme="2026">2026</button>
+            <div class="mobile-theme-buttons" role="group" aria-label="Switch design era theme">
+                <button class="theme-era-btn" data-theme="80s" aria-label="1980s Retro Terminal" aria-pressed="false">80s</button>
+                <button class="theme-era-btn" data-theme="90s" aria-label="1990s GeoCities" aria-pressed="false">90s</button>
+                <button class="theme-era-btn" data-theme="matrix" aria-label="2000 Matrix Digital Rain" aria-pressed="false">2000</button>
+                <button class="theme-era-btn" data-theme="2000s" aria-label="2000s Web 2.0" aria-pressed="false">00s</button>
+                <button class="theme-era-btn" data-theme="2010s" aria-label="2010s Corporate Memphis" aria-pressed="false">10s</button>
+                <button class="theme-era-btn active" data-theme="2026" aria-label="2026 Modern AI" aria-pressed="true">2026</button>
             </div>
         </nav>
     </header>
@@ -378,14 +378,14 @@
                 <section class="company-logos-section scroll-reveal">
                     <h4 class="company-logos-header">From $3M startups to $38B enterprises</h4>
                     <div class="company-logos-grid scroll-reveal-stagger">
-                        <picture><source srcset="img/logos/John-Deere-Logo 1.webp" type="image/webp"><img loading="lazy" src="img/logos/John-Deere-Logo 1.png" alt="John Deere" class="company-logo" loading="lazy" width="148" height="92"></picture>
-                        <picture><source srcset="img/logos/FourKites_Logo_light.webp" type="image/webp"><img loading="lazy" src="img/logos/FourKites_Logo_light.png" alt="FourKites" class="company-logo" loading="lazy" width="277" height="84"></picture>
-                        <picture><source srcset="img/logos/abbvie_logo-white.webp" type="image/webp"><img loading="lazy" src="img/logos/abbvie_logo-white.png" alt="AbbVie" class="company-logo" loading="lazy" width="286" height="146"></picture>
-                        <picture><source srcset="img/logos/Comerica-new-logo.svg.webp" type="image/webp"><img loading="lazy" src="img/logos/Comerica-new-logo.svg.png" alt="Comerica" class="company-logo" loading="lazy" width="500" height="162"></picture>
-                        <picture><source srcset="img/logos/maven 1.webp" type="image/webp"><img loading="lazy" src="img/logos/maven 1.png" alt="MavenWave" class="company-logo company-logo-sm" loading="lazy" width="321" height="64"></picture>
-                        <picture><source srcset="img/logos/Gogo-Inc-RGB-RedBlue-WEB1000px 1.webp" type="image/webp"><img loading="lazy" src="img/logos/Gogo-Inc-RGB-RedBlue-WEB1000px 1.png" alt="Gogo" class="company-logo" loading="lazy" width="160" height="105"></picture>
-                        <img loading="lazy" src="img/logos/here-white-200px.webp" alt="HERE Maps" class="company-logo" loading="lazy" width="200" height="203">
-                        <picture><source srcset="img/logos/Thios-and-company-badge.webp" type="image/webp"><img loading="lazy" src="img/logos/Thios-and-company-badge.png" alt="Thios" class="company-logo" loading="lazy" width="312" height="70"></picture>
+                        <picture><source srcset="img/logos/John-Deere-Logo 1.webp" type="image/webp"><img src="img/logos/John-Deere-Logo 1.png" alt="John Deere" class="company-logo" loading="lazy" decoding="async" width="148" height="92"></picture>
+                        <picture><source srcset="img/logos/FourKites_Logo_light.webp" type="image/webp"><img src="img/logos/FourKites_Logo_light.png" alt="FourKites" class="company-logo" loading="lazy" decoding="async" width="277" height="84"></picture>
+                        <picture><source srcset="img/logos/abbvie_logo-white.webp" type="image/webp"><img src="img/logos/abbvie_logo-white.png" alt="AbbVie" class="company-logo" loading="lazy" decoding="async" width="286" height="146"></picture>
+                        <picture><source srcset="img/logos/Comerica-new-logo.svg.webp" type="image/webp"><img src="img/logos/Comerica-new-logo.svg.png" alt="Comerica" class="company-logo" loading="lazy" decoding="async" width="500" height="162"></picture>
+                        <picture><source srcset="img/logos/maven 1.webp" type="image/webp"><img src="img/logos/maven 1.png" alt="MavenWave" class="company-logo company-logo-sm" loading="lazy" decoding="async" width="321" height="64"></picture>
+                        <picture><source srcset="img/logos/Gogo-Inc-RGB-RedBlue-WEB1000px 1.webp" type="image/webp"><img src="img/logos/Gogo-Inc-RGB-RedBlue-WEB1000px 1.png" alt="Gogo" class="company-logo" loading="lazy" decoding="async" width="160" height="105"></picture>
+                        <img src="img/logos/here-white-200px.webp" alt="HERE Maps" class="company-logo" loading="lazy" decoding="async" width="200" height="203">
+                        <picture><source srcset="img/logos/Thios-and-company-badge.webp" type="image/webp"><img src="img/logos/Thios-and-company-badge.png" alt="Thios" class="company-logo" loading="lazy" decoding="async" width="312" height="70"></picture>
                     </div>
                 </section>
 
@@ -393,7 +393,10 @@
                 <section class="configurator-showcase scroll-reveal">
                     <div class="configurator-showcase-inner">
                         <div class="configurator-preview">
-                            <img loading="lazy" src="img/configurator-screenshot.png" alt="Thios 3D Configurator Preview" loading="lazy">
+                            <picture>
+                                <source srcset="img/configurator-screenshot.webp" type="image/webp">
+                                <img src="img/configurator-screenshot.png" alt="Thios 3D Configurator Preview" width="700" height="688" loading="lazy" decoding="async">
+                            </picture>
                             <div class="grid-overlay"></div>
                         </div>
                         <div class="configurator-content">
@@ -483,8 +486,12 @@
                     <div class="contact-inner">
                         <div class="contact-info">
                             <h3 class="phosphor-text">LET'S TALK</h3>
+                            <p class="contact-open-to">// OPEN TO: Staff/Principal IC roles · Design leadership at agent-native shops · Founding-team consulting</p>
                             <p class="contact-desc">I'm looking for Staff or Principal IC roles in enterprise product design — the kind where adoption is hard, systems are complex, and design needs to operate at org level. Based in Chicago, open to remote or relocation.</p>
-                            <a href="resume.php" class="sidebar-link">View Resume</a>
+                            <div class="contact-actions">
+                                <a href="resume.php" class="contact-resume-cta">View Resume →</a>
+                                <a href="Peter-Bartsch-Resume.pdf" class="contact-resume-secondary" download>Download PDF</a>
+                            </div>
                         </div>
                         <form id="contactForm" class="contact-form">
                             <div class="form-group">
