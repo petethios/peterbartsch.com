@@ -217,7 +217,9 @@
                         <p class="hero-proof">Led design for $3.8B platform at Deere. Built design org from 1→10 at FourKites ($1B+ valuation). Now founder of Thios — modular structures + agent-native design systems with a published skill and pre-registered bench.</p>
                         <p class="hero-open-to">// OPEN TO: Staff/Principal IC roles · Design leadership at agent-native shops · Founding-team consulting</p>
                         <div class="hero-cta-row">
-                            <a href="#contact" class="hero-cta-primary">Let's Talk</a>
+                            <!-- Direct mailto for highest-intent inquiries. Higher conversion than a contact form for senior IC reach-outs.
+                                 Easy swap to Cal.com / SavvyCal / etc. — just change href + label. -->
+                            <a href="mailto:peter@peterbartsch.com?subject=Reaching%20out%20from%20petebartsch.com" class="hero-cta-primary">Email me &rarr;</a>
                             <a href="#portfolio-carousel" class="hero-cta-secondary">See the Work</a>
                         </div>
                         <div class="recruiter-summary">
@@ -483,7 +485,10 @@
                     <div class="contact-inner">
                         <div class="contact-info">
                             <h3 class="phosphor-text">LET'S TALK</h3>
-                            <p class="contact-desc">I'm looking for Staff or Principal IC roles in enterprise product design — the kind where adoption is hard, systems are complex, and design needs to operate at org level. Based in Chicago, open to remote or relocation.</p>
+                            <!-- Hero already states what I'm open to. This section just covers the practical
+                                 things a sender needs to know before they hit send. -->
+                            <p class="contact-desc">Chicago-based. Open to remote or relocation. I reply within 1 business day.</p>
+                            <p class="contact-direct">Prefer email? <a href="mailto:peter@peterbartsch.com?subject=Reaching%20out%20from%20petebartsch.com">peter@peterbartsch.com</a></p>
                             <a href="resume.php" class="sidebar-link">View Resume</a>
                         </div>
                         <form id="contactForm" class="contact-form">
