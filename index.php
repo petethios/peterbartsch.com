@@ -247,13 +247,14 @@
                     <div class="about-content">
                         <h2 class="about-heading phosphor-text">WHAT I DO</h2>
                         <p class="about-bio">
-                            I lead design for the problems that stall enterprises — forced adoption, platform fragmentation, trust in uncertain data. At Deere, I led the design that unlocked $3.8B in revenue across 500K users. At FourKites, I built the design org from 1 to 10 and led product design through $3M→$100M ARR growth. I ship end-to-end: strategy, systems, and code.
+                            I lead design for the problems that stall enterprises — forced adoption, platform fragmentation, trust in uncertain data. At Deere, I unlocked $3.8B in revenue across 500K users. At FourKites, I built the design org from 1 to 10 through $3M→$100M ARR. Now I'm founder of <a href="https://thios.co" target="_blank" rel="noopener">Thios</a> — modular structures running on an agent-native design system, with a <a href="https://github.com/Thios-and-Company/thios.co/tree/main/_agents/skills/audit-design-token-drift" target="_blank" rel="noopener">published skill</a> and a <a href="https://thios.co/design-system-bench.html" target="_blank" rel="noopener">pre-registered benchmark</a> measuring whether the agent infrastructure actually works. I ship end-to-end: strategy, systems, code, and the rules agents follow.
                         </p>
                         <div class="about-strengths">
                             <span class="strength-tag">Enterprise Design Systems</span>
                             <span class="strength-tag">Design Org Leadership (1→10)</span>
                             <span class="strength-tag">Forced Adoption & Retention</span>
                             <span class="strength-tag">0→1 in Complex Domains</span>
+                            <span class="strength-tag">Agent-Native Design Systems</span>
                         </div>
                     </div>
                 </div>
