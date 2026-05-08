@@ -163,6 +163,72 @@
     opacity: 1 !important;
 }
 
+/* Hero — Open to line on 2026 (light theme). Code-comment style. */
+[data-theme="2026"] .hero-open-to {
+    color: #666 !important;
+    font-family: 'JetBrains Mono', monospace !important;
+    opacity: 1 !important;
+}
+
+/* Recent / Notable strip on 2026 — white cards with light gray border,
+   blue accent on tag + hover. Mirrors the case-study-card aesthetic. */
+[data-theme="2026"] .recent-label {
+    color: #999 !important;
+    font-family: 'JetBrains Mono', monospace !important;
+}
+[data-theme="2026"] .recent-item {
+    background: #ffffff !important;
+    border: 1px solid #e5e5e5 !important;
+}
+[data-theme="2026"] .recent-item:hover {
+    background: #ffffff !important;
+    border-color: #0066FF !important;
+    box-shadow: 0 4px 12px rgba(0, 102, 255, 0.08);
+}
+[data-theme="2026"] .recent-tag {
+    background: rgba(0, 102, 255, 0.08) !important;
+    color: #0066FF !important;
+    font-family: 'JetBrains Mono', monospace !important;
+}
+[data-theme="2026"] .recent-title {
+    color: #111 !important;
+    font-family: 'JetBrains Mono', monospace !important;
+    text-shadow: none !important;
+}
+[data-theme="2026"] .recent-desc {
+    color: #444 !important;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif !important;
+}
+
+/* Resume — Builder Receipts on 2026 (light theme). */
+[data-theme="2026"] .resume-receipts {
+    background: #f7f9fc !important;
+    border: 1px solid #e5e5e5 !important;
+}
+[data-theme="2026"] .receipts-label {
+    color: #999 !important;
+    font-family: 'JetBrains Mono', monospace !important;
+}
+[data-theme="2026"] .receipts-item {
+    background: #ffffff !important;
+    border: 1px solid #ececec !important;
+}
+[data-theme="2026"] .receipts-num {
+    color: #0066FF !important;
+    font-family: 'JetBrains Mono', monospace !important;
+}
+[data-theme="2026"] .receipts-text {
+    color: #444 !important;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif !important;
+}
+[data-theme="2026"] .receipts-text a {
+    color: #0066FF !important;
+}
+[data-theme="2026"] .receipts-text code {
+    color: #0066FF !important;
+    font-family: 'JetBrains Mono', monospace !important;
+}
+
 [data-theme="2026"] #name a {
     color: #555 !important;
     font-family: 'JetBrains Mono', monospace;

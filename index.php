@@ -215,6 +215,7 @@
                         <p class="hero-name">PETER BARTSCH</p>
                         <h2 id="title" class="phosphor-text">Staff Product Designer — Enterprise Platforms & 0→1</h2>
                         <p class="hero-proof">Led design for $3.8B platform at Deere. Built design org from 1→10 at FourKites ($1B+ valuation). Now founder of Thios — modular structures + agent-native design systems with a published skill and pre-registered bench.</p>
+                        <p class="hero-open-to">// OPEN TO: Staff/Principal IC roles · Design leadership at agent-native shops · Founding-team consulting</p>
                         <div class="hero-cta-row">
                             <a href="#contact" class="hero-cta-primary">Let's Talk</a>
                             <a href="#portfolio-carousel" class="hero-cta-secondary">See the Work</a>
@@ -257,6 +258,29 @@
                             <span class="strength-tag">Agent-Native Design Systems</span>
                         </div>
                     </div>
+                </div>
+            </section>
+
+            <!-- Recent / Notable — surfaces the empirical layer (skill + bench)
+                 above the case study scroll, where most visitors land. -->
+            <section class="recent-notable" aria-label="Recent and notable work">
+                <p class="recent-label">// RECENT / NOTABLE</p>
+                <div class="recent-grid">
+                    <a href="https://thios.co/design-system-bench.html" class="recent-item" target="_blank" rel="noopener">
+                        <span class="recent-tag">Benchmarked</span>
+                        <span class="recent-title">Skills &gt; prompts? I tested it.</span>
+                        <span class="recent-desc">Pre-registered Caveman-style bench. The lean skill (D) beat the full skill (A) on recall — removing rhetorical sections improved performance.</span>
+                    </a>
+                    <a href="https://github.com/Thios-and-Company/thios.co/tree/main/_agents/skills/audit-design-token-drift" class="recent-item" target="_blank" rel="noopener">
+                        <span class="recent-tag">Published</span>
+                        <span class="recent-title">audit-design-token-drift</span>
+                        <span class="recent-desc">A Claude Skill that diffs design tokens across four canonical Thios surfaces. First in the Thios skill stack; the pattern other vanilla design systems can fork.</span>
+                    </a>
+                    <a href="case-studies/thios.php" class="recent-item">
+                        <span class="recent-tag">Case study</span>
+                        <span class="recent-title">Thios — Design Systems on Agent Rails</span>
+                        <span class="recent-desc">Modular structures + 5-surface design system + agent-native infrastructure. "Skills &gt; prompts" is a benchmarked claim, not a slogan.</span>
+                    </a>
                 </div>
             </section>
 

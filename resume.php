@@ -234,10 +234,22 @@
 
         <header class="resume-header">
             <h1 class="resume-name">Peter Bartsch</h1>
-            <p class="resume-title">Staff Product Designer</p>
-            <p class="resume-summary">Staff Product Designer — Enterprise Platforms & 0→1. Led design for $3.8B platform at Deere (500K users). Built design org 1→10 at FourKites through $3M→$100M ARR ($1B+ valuation). 15 years shipping enterprise systems that actually get adopted.</p>
+            <p class="resume-title">Staff Product Designer · Founder</p>
+            <p class="resume-summary">Led design for $3.8B platform at Deere (500K users). Built design org 1→10 at FourKites through $3M→$100M ARR ($1B+ valuation). Now founder of Thios — modular structures + agent-native design systems with a published Claude Skill and a pre-registered bench measuring whether the agent infrastructure actually works.</p>
             <a href="Peter-Bartsch-Resume.pdf" class="resume-download" download>↓ DOWNLOAD PDF</a>
         </header>
+
+        <!-- Builder Receipts — concrete artifacts a recruiter can verify in 60 seconds. -->
+        <div class="resume-receipts" aria-label="Builder receipts">
+            <p class="receipts-label">// BUILDER RECEIPTS</p>
+            <div class="receipts-grid">
+                <div class="receipts-item"><span class="receipts-num">30</span><span class="receipts-text">Years across web eras &mdash; from CSS hacks to agent-native systems</span></div>
+                <div class="receipts-item"><span class="receipts-num">$4B+</span><span class="receipts-text">Combined business impact &mdash; Deere ($3.8B) + FourKites ($1B+ valuation)</span></div>
+                <div class="receipts-item"><span class="receipts-num">1</span><span class="receipts-text">Founded company &mdash; <a href="https://thios.co" target="_blank" rel="noopener">Thios</a>, modular structures, 6 sub-brands</span></div>
+                <div class="receipts-item"><span class="receipts-num">1</span><span class="receipts-text">Published Claude Skill &mdash; <code>audit-design-token-drift</code></span></div>
+                <div class="receipts-item"><span class="receipts-num">1</span><span class="receipts-text">Pre-registered empirical bench &mdash; <a href="https://thios.co/design-system-bench.html" target="_blank" rel="noopener">design-system-bench</a></span></div>
+            </div>
+        </div>
 
         <section class="resume-section">
             <h2 class="resume-section-title">Professional Experience</h2>
