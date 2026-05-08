@@ -263,26 +263,22 @@
             </figure>
 
             <section class="case-study-section">
-                <h2>The Strategic Hypothesis</h2>
-                <p><strong>By 2026 the bottleneck in design isn't drawing — it's keeping intent, spec, code, and tokens consistent.</strong> Most design systems rot quietly: a hex value drifts, a component ships without an entry in the docs, a Figma variable disagrees with a CSS custom property. By the time anyone notices, dozens of components reference the wrong value.</p>
-                <p>What if the designer's deliverable was the <em>rules</em>, and agents were the IC enforcing them across surfaces? I built Thios to test that — and the design system became the proving ground.</p>
-            </section>
-
-            <section class="case-study-section case-study-constraints">
-                <h2>Why This Was Hard</h2>
-                <p>Solo founder, vanilla stack, real product. Constraints that ruled out most off-the-shelf solutions:</p>
-                <ul>
-                    <li><strong>No frameworks:</strong> Vanilla PHP, vanilla CSS, vanilla JS. No npm, no React, no build tools. Most modern design-system tooling assumes the opposite.</li>
-                    <li><strong>Multi-surface:</strong> Four production subdomains (thios.co · blog · store · partners), plus a Figma file, plus an OnShape parametric model that drives physical product.</li>
-                    <li><strong>Six sub-brands:</strong> Thiosphere, Saunosphere, Agrosphere, Ergosphere, Immosphere, Auxosphere — each with its own accent color and product surface.</li>
-                    <li><strong>One designer:</strong> Manual drift detection at this surface count is infeasible. The system has to police itself.</li>
-                </ul>
-                <p style="margin-top: 16px; margin-bottom: 0;"><strong>If "AI-augmented design" only meant a faster Figma cursor, this wouldn't have shipped.</strong></p>
+                <h2>What Thios Is</h2>
+                <p>Open-source modular structures &mdash; saunas, greenhouses, offices &mdash; from geodesic geometry. Six sub-brands. Four production subdomains. One Figma file. One OnShape document. <strong>One designer.</strong></p>
+                <p>By 2026 the bottleneck in design isn't drawing &mdash; it's keeping intent, spec, code, and tokens consistent across that surface count. What if the designer's deliverable was the <em>rules</em>, and agents were the IC enforcing them? The case study below is the answer.</p>
+                <div class="case-study-gallery">
+                    <img src="../img/thios-02.png" alt="Thios brand identity" loading="lazy">
+                    <img src="../img/thios-03.png" alt="Thios website" loading="lazy">
+                    <img src="../img/thios-04.png" alt="Thios CAD model" loading="lazy">
+                    <img src="../img/thios-05.png" alt="Thios shelter variant" loading="lazy">
+                    <img src="../img/thios-06.png" alt="Thios physical prototype" loading="lazy">
+                    <img src="../img/thios-07.png" alt="Thios configurator" loading="lazy">
+                </div>
             </section>
 
             <section class="case-study-section">
                 <h2>The Five-Surface Problem</h2>
-                <p>Every design decision lives in five places. Without infrastructure, they drift. Each surface is real, in production, and agent-readable today:</p>
+                <p>Most design systems rot quietly: a hex drifts, a Figma variable disagrees with a CSS custom property, a component ships without an entry in the docs. By the time anyone notices, dozens of components reference the wrong value. Thios's design decisions live in five places, all readable by agents, all mutually diffable, all referenced from one canonical rule layer:</p>
 
                 <div class="surface-table-wrap">
                     <table class="surface-table" aria-label="Five canonical design system surfaces">
@@ -299,23 +295,12 @@
                     </table>
                 </div>
 
-                <p>Two more pages live alongside design-system.html and exist to document the system itself: <a href="https://thios.co/design-system-loop.html" target="_blank" rel="noopener">design-system-loop.html</a> (the six-step Virtuous Loop with Claude routine callouts) and <a href="https://thios.co/design-system-architecture.html" target="_blank" rel="noopener">design-system-architecture.html</a> (the five-station flow). They're documentation, not surfaces — but they make the system legible to outside agents and to the next person who joins.</p>
             </section>
 
             <section class="case-study-section">
                 <h2>The Agent Stack</h2>
-                <p>Each surface has an agent role. Below is what's running today.</p>
-
-                <h3 class="cs-h3">1. DESIGN.md as the canonical rule layer</h3>
-                <p>A single markdown file — diffable, version-controlled, agent-native. Section 9 is explicitly labeled "Agent Prompt Guide" and is the first thing any agent reads when generating UI for Thios. Color palette, typography rules, sphere brand colors, and even a Do/Don't list. Agents read it on every task.</p>
-                <p>This pattern is now converging across the field — Anthropic is publishing Skill formats, Figma's <a href="https://developers.figma.com/docs/code/bring-your-design-system-package/" target="_blank" rel="noopener">Bring your design system package</a> feature accepts a <code>Guidelines.md</code> for AI-generated apps, and <a href="https://github.com/addyosmani/agent-skills" target="_blank" rel="noopener">addyosmani/agent-skills</a> standardizes a SKILL.md anatomy. DESIGN.md has been live and load-bearing on Thios since 2025.</p>
-
-                <h3 class="cs-h3">2. tokens.json — the bridge to Figma</h3>
-                <p>W3C Design Tokens format with three layers (primitive → semantic → surface) so primitive palette decisions are decoupled from role-named usage. Configurator dark mode is its own surface layer; sphere brand colors are first-class semantic tokens with mode variants per product.</p>
-                <p>The metadata block tracks brand decisions with dates ("Brand gold is #E8AF00 — decided 2026-04-20") and a <code>cssSyncRequired</code> queue that pre-deploy gates can fail on. Tokens Studio reads it directly into Figma Variables; nothing is retyped by hand.</p>
-
-                <h3 class="cs-h3">3. The audit skill — drift detection as infrastructure</h3>
-                <p>The first formal Thios skill, <code>audit-design-token-drift</code>, follows the agent-skills anatomy: frontmatter, when-to-use, core process, rationalizations table, red flags, verification checklist. It diffs all four upstream surfaces and outputs a dated audit file under <code>_agents/</code>. The agent's job is to catch drift; the human's job is to decide what to fix.</p>
+                <p><strong>DESIGN.md is the spine</strong> &mdash; agent-native markdown; Section 9 is explicitly an &ldquo;Agent Prompt Guide,&rdquo; the first thing any agent reads when generating UI. <strong>tokens.json is the bridge</strong> &mdash; W3C Design Tokens, three layers (primitive / semantic / surface), imported into Figma Variables via Tokens Studio. <strong>main.css is the running code</strong> (18,000+ lines, kept in sync across four subdomains by a deploy gate). <strong>design-system.html is the live spec</strong> (109 KB, every component with working examples). <strong>OnShape is the parametric source</strong> for sphere geometry &mdash; 54 elements driven by one Variable Studio, the same shape as tokens.json flowing into Figma, but for physical product.</p>
+                <p>The first formal Thios skill, <code>audit-design-token-drift</code>, diffs all four upstream surfaces and outputs a dated audit. The agent catches drift; the human decides what to fix:</p>
 
                 <figure class="artifact-callout" aria-labelledby="artifact-label-1">
                     <figcaption id="artifact-label-1" class="artifact-callout__label">Excerpt · Design Token Audit · May 2026 · first run, baseline</figcaption>
@@ -341,14 +326,7 @@ CRT-2 — "Premium gold" #D4A000 has no entry in tokens.json
                     </div>
                 </figure>
 
-                <p>This is the first formal token-drift audit; it's the baseline for the trend line. Next month's run will show whether the system tightens.</p>
-
-                <h3 class="cs-h3">4. design-system.html — the live spec</h3>
-                <p>A 109 KB self-contained HTML page at <a href="https://thios.co/design-system.html" target="_blank" rel="noopener">thios.co/design-system.html</a>. Every token, every component, every pattern with working examples. It's the live answer to "what does our <code>.btn-primary</code> look like? what variants of <code>.alert</code> exist?" — and it's the surface the audit skill diffs main.css against.</p>
-
-                <h3 class="cs-h3">5. OnShape API — parametric CAD on agent rails</h3>
-                <p>The Thiosphere CAD document holds 54 elements: 26 part studios (hex panels, pent panels, edge rails, foundation), 11 assemblies, 9 BOMs, and one Variable Studio that drives every dimension. Sphere parameters in DESIGN.md (panel size, stud length, foundation height) flow into the Variable Studio via the OnShape API — the same shape as tokens.json flowing into Figma Variables, but for physical product.</p>
-                <p>Cross-sphere parts are named with a strict convention (<code>Thiosphere SDK – ...</code>, <code>Saunosphere – ...</code>) so a future CAD-hygiene agent can enforce the same brand discipline on geometry that the token-drift skill enforces on color.</p>
+                <p>First formal audit; the baseline for the trend line.</p>
             </section>
 
             <section class="case-study-section">
@@ -358,19 +336,11 @@ CRT-2 — "Premium gold" #D4A000 has no entry in tokens.json
             </section>
 
             <section class="case-study-section">
-                <h2>The Designer's New Role</h2>
-                <p>My deliverables stopped being screens and started being rules. The agents are the IC; I'm the design lead reviewing their PRs. At FourKites I scaled a design org from 1 to 10. On Thios I'm scaling from 1 to ∞ — same shape, different leverage. The skill catalog is the new portfolio of patterns; each skill compounds because every agent that runs it gets better at the task than the last one.</p>
-                <p><strong>The interesting career question for senior designers in 2026 isn't "can you use AI?" — it's "have you written infrastructure agents follow?"</strong></p>
-            </section>
-
-            <section class="case-study-section">
                 <h2>Results</h2>
                 <ul>
-                    <li><strong>Five surfaces in sync today</strong> — DESIGN.md, tokens.json, main.css, design-system.html, OnShape — all readable by agents, all mutually diffable, all referenced from a single canonical rule layer.</li>
-                    <li><strong>212 design tokens</strong> in tokens.json (W3C format), spanning primitive / semantic / surface layers with sphere-brand modes.</li>
-                    <li><strong>4 production subdomains</strong> kept in CSS-sync via a <code>make check-css-sync</code> deploy gate — no silent rot between thios.co, blog, store, and partners.</li>
-                    <li><strong>54 OnShape elements</strong> driven by a single Variable Studio, ready for parametric agent updates from sphere specs in DESIGN.md.</li>
-                    <li><strong>7 drift findings caught</strong> in the first formal token audit (May 2026), including a self-contradiction inside DESIGN.md and a documented brand color absent from tokens.json. <a href="https://thios.co/design-system-bench.html" target="_blank" rel="noopener">A follow-up bench</a> measured the skill against a one-line prompt across three independent trials each: skill ran 76% recall, one-liner ran 86% &mdash; the skill's win is consistency of output form (severity tiers, Loop-step routing, file:line citations on every finding), not raw recall.</li>
+                    <li><strong>Five surfaces in sync today</strong> &mdash; all readable by agents, all mutually diffable, all referenced from a single canonical rule layer.</li>
+                    <li><strong>4 production subdomains</strong> kept in CSS-sync via a <code>make check-css-sync</code> deploy gate &mdash; no silent rot between thios.co, blog, store, and partners.</li>
+                    <li><strong>7 drift findings caught</strong> in the first formal token audit (May 2026), including a self-contradiction inside DESIGN.md and a documented brand color absent from tokens.json.</li>
                     <li><strong>1 published skill</strong> (<code>audit-design-token-drift</code>) following the agent-skills anatomy, with 5 more on the roadmap.</li>
                 </ul>
             </section>
@@ -399,22 +369,7 @@ CRT-2 — "Premium gold" #D4A000 has no entry in tokens.json
             </section>
 
             <section class="case-study-section">
-                <h2>What This Proves</h2>
-                <p>The next generation of design leadership won't measure output in screens shipped — it'll measure the leverage of the system the team operates inside. A designer-of-one running on agent rails should be able to ship at the same quality bar as a team of ten, because the system enforces the bar and the agents catch the lapses.</p>
-                <p><strong>The work isn't using AI. The work is writing the rules AI follows.</strong></p>
-            </section>
-
-            <section class="case-study-section">
-                <h2>Physical product range</h2>
-                <p>The agent infrastructure runs on a real product. Thios builds open-source modular structures — saunas, greenhouses, offices — from geodesic geometry. Brand identity, three websites, five shelter variants, a 3D configurator (React + Three.js), and a revenue-generating handbook. The flywheel above is what kept all of it consistent.</p>
-                <div class="case-study-gallery">
-                    <img src="../img/thios-02.png" alt="Thios brand identity" loading="lazy">
-                    <img src="../img/thios-03.png" alt="Thios website" loading="lazy">
-                    <img src="../img/thios-04.png" alt="Thios CAD model" loading="lazy">
-                    <img src="../img/thios-05.png" alt="Thios shelter variant" loading="lazy">
-                    <img src="../img/thios-06.png" alt="Thios physical prototype" loading="lazy">
-                    <img src="../img/thios-07.png" alt="Thios configurator" loading="lazy">
-                </div>
+                <p style="font-size: 1.15em; line-height: 1.6; padding: 24px 0; border-top: 1px solid var(--color-light-gray, #eee); margin-top: 16px;">The interesting career question for senior designers in 2026 isn't <em>&ldquo;can you use AI?&rdquo;</em> &mdash; it's <strong>&ldquo;have you written infrastructure agents follow?&rdquo;</strong> The work isn't using AI. The work is writing the rules AI follows.</p>
             </section>
 
             <div class="case-study-cta">
