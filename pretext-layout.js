@@ -264,7 +264,10 @@
             // Body text flows around the image
             body.style.width = '100%';
 
-            var textEls = body.querySelectorAll('.slide-label, .project-title, .structure-item, .project-link');
+            // .project-link intentionally excluded — it's a CTA button (inline-flex,
+            // sized to content), not flowing body text. Including it caused pretext
+            // to inject a 274px-wide float div inside the button, bloating its width.
+            var textEls = body.querySelectorAll('.slide-label, .project-title, .structure-item');
             var y = 0;
             var margin = 10;
 
