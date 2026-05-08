@@ -427,10 +427,18 @@
     background-color: #0066FF !important;
     font-family: 'JetBrains Mono', monospace;
     font-size: 12px;
-    font-weight: 600;
+    /* Bumped 600 → 700 so Safari macOS (which forces grayscale anti-aliasing
+       and renders white-on-blue thinner than Chrome's subpixel rendering)
+       still shows visible weight. Chrome will look slightly bolder too — fine
+       for a CTA. */
+    font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.08em;
     text-decoration: none !important;
+    /* Force Safari to try subpixel anti-aliasing instead of macOS's grayscale
+       default. On Mojave+ this may still map to grayscale (Apple removed
+       subpixel system-wide), but it bumps weight where it can. */
+    -webkit-font-smoothing: subpixel-antialiased;
     border: 1px solid #0066FF !important;
     border-radius: 4px !important;
     padding: 12px 22px !important;
