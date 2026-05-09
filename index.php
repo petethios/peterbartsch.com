@@ -159,7 +159,7 @@
                     <li><a href="#about">ABOUT</a></li>
                     <li><a href="#portfolio-carousel">CASES</a></li>
                     <li><a href="resume.php">RESUME</a></li>
-                    <li><a href="blog/">BLOG</a></li>
+                    <li><a href="blog/">WRITING</a></li>
                     <li><a href="#contact">CONTACT</a></li>
                     <li><a href="https://linkedin.com/in/peterbartsch" target="_blank" rel="noopener noreferrer" class="nav-linkedin">LINKEDIN</a></li>
                 </ul>
@@ -179,7 +179,7 @@
                 <li><a href="#about">ABOUT</a></li>
                 <li><a href="#portfolio-carousel">CASES</a></li>
                 <li><a href="resume.php">RESUME</a></li>
-                <li><a href="blog/">BLOG</a></li>
+                <li><a href="blog/">WRITING</a></li>
                 <li><a href="#contact">CONTACT</a></li>
             </ul>
             <div class="mobile-menu-divider"></div>
@@ -214,7 +214,7 @@
                     <div class="hero-text">
                         <p class="hero-name">PETER BARTSCH</p>
                         <h2 id="title" class="phosphor-text">Staff Product Designer — Enterprise Platforms & 0→1</h2>
-                        <p class="hero-proof">Led design for $3.8B platform at Deere. Built design org from 1→10 at FourKites ($1B+ valuation). Now founder of Thios — modular structures + agent-native design systems with a published skill and pre-registered bench.</p>
+                        <p class="hero-proof">Few designers ship $3.8B enterprise platforms <em>and</em> invent modular shelters running on their own agent-native design system. I do both — at scale (FourKites design org 1→10, Deere across 40+ teams) and from scratch (founder of <a href="https://thios.co" target="_blank" rel="noopener">Thios</a>).</p>
                         <p class="hero-open-to">// OPEN TO: Staff/Principal IC roles · Design leadership at agent-native shops · Founding-team consulting</p>
                         <div class="hero-cta-row">
                             <!-- Direct mailto for highest-intent inquiries. Higher conversion than a contact form for senior IC reach-outs.
@@ -228,6 +228,18 @@
                             <div class="summary-item"><span class="summary-label">Range</span><span class="summary-value">IC + Leadership (built teams 1→10)</span></div>
                             <div class="summary-item"><span class="summary-label">Scale</span><span class="summary-value">500K users · $3.8B revenue · 40+ teams</span></div>
                         </div>
+                        <!-- Receipts tile: empirical proof anchored as its own block below the
+                             recruiter summary. Differentiates this portfolio from every other
+                             senior-IC site — "I tested my own work" is rare in the discipline. -->
+                        <aside class="hero-receipts" aria-label="Empirical receipts">
+                            <p class="receipts-label">// RECEIPTS</p>
+                            <p class="receipts-claim">Pre-registered <a href="https://thios.co/design-system-bench.html" target="_blank" rel="noopener">benchmark</a> on my own agent-native design system. The lean Claude Skill beat the verbose one on recall — removing rhetorical sections improved performance.</p>
+                            <p class="receipts-links">
+                                <a href="https://github.com/Thios-and-Company/thios.co/tree/main/_agents/skills/audit-design-token-drift" target="_blank" rel="noopener">View skill source &rarr;</a>
+                                <span class="receipts-sep">·</span>
+                                <a href="https://thios.co/design-system-bench.html" target="_blank" rel="noopener">View bench &rarr;</a>
+                            </p>
+                        </aside>
                     </div>
                     <div class="hero-portrait">
                         <picture><source srcset="peterb.webp" type="image/webp"><img src="peterb.png" alt="Peter Bartsch, Staff Product Designer" width="200" height="200" loading="eager" fetchpriority="high" /></picture>
@@ -268,10 +280,10 @@
             <section class="recent-notable" aria-label="Recent and notable work">
                 <p class="recent-label">// RECENT / NOTABLE</p>
                 <div class="recent-grid">
-                    <a href="https://thios.co/design-system-bench.html" class="recent-item" target="_blank" rel="noopener">
-                        <span class="recent-tag">Benchmarked</span>
-                        <span class="recent-title">Skills &gt; prompts? I tested it.</span>
-                        <span class="recent-desc">Pre-registered Caveman-style bench. The lean skill (D) beat the full skill (A) on recall — removing rhetorical sections improved performance.</span>
+                    <a href="blog/ux-is-dead-long-live-hx" class="recent-item">
+                        <span class="recent-tag">Writing</span>
+                        <span class="recent-title">UX Is Dead. Long Live HX.</span>
+                        <span class="recent-desc">Designing for agents means we finally get to design for humans — not users. The end of dark patterns, the beginning of honest experiences.</span>
                     </a>
                     <a href="https://github.com/Thios-and-Company/thios.co/tree/main/_agents/skills/audit-design-token-drift" class="recent-item" target="_blank" rel="noopener">
                         <span class="recent-tag">Published</span>
@@ -295,7 +307,7 @@
                         <picture><source srcset="carousel-thumb-deere-ux.webp" type="image/webp"><img src="carousel-thumb-deere-ux.png" alt="Deere Common UX" width="250" height="250"></picture>
                     </div>
                     <div class="case-study-body">
-                        <p class="slide-label">FLAGSHIP CASE STUDY</p>
+                        <p class="slide-label">FLAGSHIP · FORCED ADOPTION</p>
                         <h3 class="project-title phosphor-text">DEERE: 34%→87% ADOPTION AT SCALE</h3>
                         <div class="project-structure">
                             <p class="structure-item"><span class="structure-label">Challenge:</span> 500K users were actively avoiding profile completion — every empty field blocked $3.8B in AI and automation revenue.</p>
@@ -312,7 +324,7 @@
                         <picture><source srcset="carousel-thumb-deere-nav.webp" type="image/webp"><img src="carousel-thumb-deere-nav.png" alt="Deere Consistent Nav" loading="lazy" width="250" height="250"></picture>
                     </div>
                     <div class="case-study-body">
-                        <p class="slide-label">FEATURED WORK</p>
+                        <p class="slide-label">ENTERPRISE GOVERNANCE</p>
                         <h3 class="project-title">DEERE: ONE SYSTEM, 47 PRODUCTS</h3>
                         <div class="project-structure">
                             <p class="structure-item"><span class="structure-label">Challenge:</span> 47 product sites, each with its own navigation, dev team, and political owner. Nobody wanted to give up control.</p>
@@ -329,7 +341,7 @@
                         <picture><source srcset="carousel-thumb-fourkites-tracking.webp" type="image/webp"><img src="carousel-thumb-fourkites-tracking.png" alt="FourKites Tracking" loading="lazy" width="250" height="250"></picture>
                     </div>
                     <div class="case-study-body">
-                        <p class="slide-label">FEATURED WORK</p>
+                        <p class="slide-label">DATA TRUST</p>
                         <h3 class="project-title">FOURKITES: DESIGNING FOR UNCERTAINTY</h3>
                         <div class="project-structure">
                             <p class="structure-item"><span class="structure-label">Challenge:</span> Enterprise customers were making million-dollar decisions on dashboards they didn't trust — because we hid uncertainty instead of explaining it.</p>
@@ -346,7 +358,7 @@
                         <picture><source srcset="carousel-thumb-fourkites-driver.webp" type="image/webp"><img src="carousel-thumb-fourkites-driver.png" alt="FourKites Driver" loading="lazy" width="250" height="250"></picture>
                     </div>
                     <div class="case-study-body">
-                        <p class="slide-label">FEATURED WORK</p>
+                        <p class="slide-label">INCENTIVE DESIGN</p>
                         <h3 class="project-title">FOURKITES: REALIGNING INCENTIVES</h3>
                         <div class="project-structure">
                             <p class="structure-item"><span class="structure-label">Challenge:</span> Drivers saw location sharing as surveillance. The platform needed their data to survive. Both sides were right.</p>
@@ -363,7 +375,7 @@
                         <picture><source srcset="carousel-thumb-thios.webp" type="image/webp"><img src="carousel-thumb-thios.png" alt="Thios Project" loading="lazy" width="250" height="250"></picture>
                     </div>
                     <div class="case-study-body">
-                        <p class="slide-label">BETWEEN ROLES — TECHNICAL RANGE</p>
+                        <p class="slide-label">FOUNDER · 0→1 · AGENT-NATIVE</p>
                         <h3 class="project-title">THIOS: BRAND TO REVENUE, SOLO</h3>
                         <div class="project-structure">
                             <p class="structure-item"><span class="structure-label">Context:</span> Between enterprise roles, shipped a complete product ecosystem solo — brand, 3 websites, 3D configurator, and 5 physical product variants.</p>

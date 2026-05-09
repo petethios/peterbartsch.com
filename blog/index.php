@@ -57,8 +57,8 @@
 
     <main class="blog-listing">
         <header class="blog-listing-header">
-            <h1 class="blog-listing-title">Blog</h1>
-            <p class="blog-listing-subtitle">On enterprise design, AI workflows, and building things that ship.</p>
+            <h1 class="blog-listing-title">Writing</h1>
+            <p class="blog-listing-subtitle">Notes on enterprise design, AI workflows, and building things that ship. Sparse but considered.</p>
         </header>
 
         <div class="blog-cards">
