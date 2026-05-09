@@ -129,6 +129,43 @@
     color: #ffffff;
 }
 
+/* Contact resume CTAs — mirror hero CTA treatment so they read as
+   primary/secondary buttons rather than plain links in 2026 theme. */
+[data-theme="2026"] .contact-resume-cta {
+    background-color: #0066FF;
+    color: #ffffff !important;
+    border: none;
+    border-radius: 4px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 13px;
+    text-decoration: none;
+}
+[data-theme="2026"] .contact-resume-cta:visited {
+    color: #ffffff !important;
+}
+[data-theme="2026"] .contact-resume-cta:hover {
+    background-color: #0052cc;
+    color: #ffffff !important;
+    text-decoration: none;
+}
+[data-theme="2026"] .contact-resume-secondary {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    color: #0066FF !important;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 13px;
+    text-decoration: none;
+}
+[data-theme="2026"] .contact-resume-secondary:visited {
+    color: #0066FF !important;
+}
+[data-theme="2026"] .contact-resume-secondary:hover {
+    background-color: #0066FF;
+    border-color: #0066FF;
+    color: #ffffff !important;
+    text-decoration: none;
+}
+
 [data-theme="2026"] .hero-proof {
     color: #444;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;

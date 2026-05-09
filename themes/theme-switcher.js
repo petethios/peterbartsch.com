@@ -112,14 +112,12 @@
         // Save
         localStorage.setItem(STORAGE_KEY, themeId);
 
-        // Update all theme era buttons
+        // Update all theme era buttons (visual + a11y state)
         var btns = document.querySelectorAll('.theme-era-btn');
         for (var b = 0; b < btns.length; b++) {
-            if (btns[b].getAttribute('data-theme') === themeId) {
-                btns[b].classList.add('active');
-            } else {
-                btns[b].classList.remove('active');
-            }
+            var isActive = btns[b].getAttribute('data-theme') === themeId;
+            btns[b].classList.toggle('active', isActive);
+            btns[b].setAttribute('aria-pressed', isActive ? 'true' : 'false');
         }
 
         // Analytics
