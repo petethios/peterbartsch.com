@@ -637,12 +637,19 @@
 
         .contact-inner {
             display: flex;
-            gap: var(--space-xl);
-            align-items: flex-start;
+            flex-direction: column;
+            align-items: stretch;
+            gap: var(--space-lg);
+            max-width: 720px;
+            margin: 0 auto;
         }
 
         .contact-info {
-            flex: 0 0 280px;
+            width: 100%;
+        }
+
+        .contact-form {
+            width: 100%;
         }
 
         .contact-info h3 {
@@ -674,7 +681,9 @@
 
         /* Recruiter scan-line — duplicates the hero "// OPEN TO:"
            so visitors who deep-link straight to #contact still see
-           role/availability without scrolling back up. */
+           role/availability without scrolling back up.
+           Speculative — not currently used by any HTML; preserved from the
+           keen-tu merge for a future contact-section refactor. */
         .contact-open-to {
             font-family: 'SF Mono', Menlo, monospace;
             font-size: 12px;
@@ -733,18 +742,9 @@
             transform: translateY(-2px);
         }
 
-        .contact-form {
-            flex: 1;
-        }
-
         @media (max-width: 768px) {
             .contact-inner {
-                flex-direction: column;
-            }
-
-            .contact-info {
-                flex: none;
-                width: 100%;
+                gap: var(--space-md);
             }
         }
 
@@ -1156,8 +1156,6 @@
 
 
         #player {
-            width: 100%;
-            height: 100%;
             position: relative;
         }
 
@@ -2738,16 +2736,17 @@ textarea:focus-visible {
 
 .about-inner {
     display: flex;
-    gap: var(--space-xl);
-    align-items: flex-start;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-lg);
+    max-width: 720px;
+    margin: 0 auto;
 }
 
 .about-photo {
-    flex: 0 0 250px;
-    width: 250px;
-    height: 250px;
-    min-width: 250px;
-    max-width: 250px;
+    flex: 0 0 auto;
+    width: 320px;
+    height: 320px;
     overflow: hidden;
     border: 2px solid rgba(134, 216, 221, 0.3);
     position: relative;
@@ -2761,7 +2760,7 @@ textarea:focus-visible {
 }
 
 .about-content {
-    flex: 1;
+    width: 100%;
 }
 
 .about-heading {
@@ -2801,9 +2800,12 @@ textarea:focus-visible {
 
 @media (max-width: 768px) {
     .about-inner {
-        flex-direction: column;
-        align-items: flex-start;
-        text-align: left;
+        gap: var(--space-md);
+    }
+
+    .about-photo {
+        width: 240px;
+        height: 240px;
     }
 
     .about-bio {

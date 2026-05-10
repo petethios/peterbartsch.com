@@ -534,9 +534,9 @@
         if (typeof Pretext === 'undefined') return;
 
         layoutHero();
-        // About section keeps its native flexbox layout (video left, content right)
+        // About + Contact sections keep their native flexbox single-column layout —
+        // Pretext absolute positioning would re-introduce the right-rail floats.
         layoutCaseStudies();
-        layoutContact();
     }
 
     function reflow() {
