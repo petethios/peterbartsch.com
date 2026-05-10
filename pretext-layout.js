@@ -142,88 +142,6 @@
     }
 
     // ========================================
-    // Section: About
-    // ========================================
-
-    function layoutAbout() {
-        var section = document.querySelector('.about-section');
-        if (!section) return;
-
-        var inner = section.querySelector('.about-inner');
-        var photo = section.querySelector('.about-photo');
-        var content = section.querySelector('.about-content');
-        if (!inner || !photo || !content) return;
-
-        var containerWidth = inner.offsetWidth;
-        if (containerWidth < MIN_WIDTH) {
-            resetAbout();
-            return;
-        }
-
-        var shapes = window.PretextShapes || {};
-        var themeShapes = shapes[currentTheme] || shapes['2026'];
-        if (!themeShapes || !themeShapes.about) return;
-
-        var exclusions = themeShapes.about(containerWidth);
-
-        // Switch to block layout — photo becomes absolute inset
-        inner.style.display = 'block';
-        inner.style.position = 'relative';
-
-        photo.style.position = 'absolute';
-        photo.style.top = '0';
-        photo.style.left = '0';
-        photo.style.zIndex = '2';
-        photo.style.width = (exclusions[0] ? exclusions[0].left : 250) + 'px';
-
-        // Content fills full width, text flows around photo
-        content.style.width = '100%';
-        content.style.flex = 'none';
-
-        var heading = content.querySelector('.about-heading');
-        var bios = content.querySelectorAll('.about-bio');
-        var strengths = content.querySelector('.about-strengths');
-
-        var y = 0;
-        var marginBetween = 16;
-
-        // Heading
-        if (heading) {
-            var headingResult = flowText(heading, containerWidth, exclusions, { startY: y });
-            applyTextFlow(heading, headingResult, containerWidth);
-            y += headingResult.height + marginBetween;
-        }
-
-        // Bio paragraphs
-        for (var i = 0; i < bios.length; i++) {
-            var bioResult = flowText(bios[i], containerWidth, exclusions, { startY: y });
-            applyTextFlow(bios[i], bioResult, containerWidth);
-            y += bioResult.height + marginBetween;
-        }
-
-        section.setAttribute('data-pretext', 'active');
-    }
-
-    function resetAbout() {
-        var section = document.querySelector('.about-section');
-        if (!section) return;
-        section.removeAttribute('data-pretext');
-
-        var inner = section.querySelector('.about-inner');
-        var photo = section.querySelector('.about-photo');
-        var content = section.querySelector('.about-content');
-        if (inner) { inner.style.display = ''; inner.style.position = ''; }
-        if (photo) {
-            photo.style.position = '';
-            photo.style.top = '';
-            photo.style.left = '';
-            photo.style.width = '';
-            photo.style.zIndex = '';
-        }
-        if (content) { content.style.width = ''; content.style.flex = ''; }
-    }
-
-    // ========================================
     // Section: Case Studies
     // ========================================
 
@@ -299,97 +217,6 @@
             image.style.zIndex = '';
         }
         if (body) { body.style.width = ''; }
-    }
-
-    // ========================================
-    // Section: Contact
-    // ========================================
-
-    function layoutContact() {
-        var section = document.querySelector('.contact-section');
-        if (!section) return;
-
-        var inner = section.querySelector('.contact-inner');
-        var info = section.querySelector('.contact-info');
-        var form = section.querySelector('.contact-form');
-        if (!inner || !info || !form) return;
-
-        var containerWidth = inner.offsetWidth;
-        if (containerWidth < MIN_WIDTH) {
-            resetContact();
-            return;
-        }
-
-        var shapes = window.PretextShapes || {};
-        var themeShapes = shapes[currentTheme] || shapes['2026'];
-        if (!themeShapes || !themeShapes.contact) return;
-
-        var exclusions = themeShapes.contact(containerWidth);
-
-        // Form becomes absolute inset on right
-        inner.style.display = 'block';
-        inner.style.position = 'relative';
-
-        form.style.position = 'absolute';
-        form.style.top = '0';
-        form.style.right = '0';
-        form.style.width = (exclusions[0] ? exclusions[0].right - 16 : 300) + 'px';
-        form.style.zIndex = '2';
-
-        // Info text flows around the form
-        info.style.width = '100%';
-        info.style.flex = 'none';
-
-        var heading = info.querySelector('.phosphor-text');
-        var openTo = info.querySelector('.contact-open-to');
-        var desc = info.querySelector('.contact-desc');
-        var link = info.querySelector('.sidebar-link');
-        var actions = info.querySelector('.contact-actions');
-
-        var y = 0;
-        var margin = 12;
-        // Text-flow only the prose elements; .contact-actions is a flex
-        // row of buttons and is laid out as a regular block underneath.
-        var els = [heading, openTo, desc, link];
-        for (var i = 0; i < els.length; i++) {
-            if (!els[i]) continue;
-            var result = flowText(els[i], containerWidth, exclusions, { startY: y });
-            applyTextFlow(els[i], result, containerWidth);
-            y += result.height + margin;
-        }
-        if (actions) {
-            // Position the button row below the flowed prose, clear of the form column.
-            actions.style.marginTop = margin + 'px';
-        }
-
-        // Ensure inner is tall enough for the form
-        var formHeight = form.offsetHeight;
-        if (y < formHeight) {
-            inner.style.minHeight = formHeight + 'px';
-        }
-
-        section.setAttribute('data-pretext', 'active');
-    }
-
-    function resetContact() {
-        var section = document.querySelector('.contact-section');
-        if (!section) return;
-        section.removeAttribute('data-pretext');
-
-        var inner = section.querySelector('.contact-inner');
-        var form = section.querySelector('.contact-form');
-        var info = section.querySelector('.contact-info');
-        if (inner) { inner.style.display = ''; inner.style.position = ''; inner.style.minHeight = ''; }
-        if (form) {
-            form.style.position = '';
-            form.style.top = '';
-            form.style.right = '';
-            form.style.width = '';
-            form.style.zIndex = '';
-        }
-        if (info) { info.style.width = ''; info.style.flex = ''; }
-        var actions = info && info.querySelector('.contact-actions');
-        if (actions) { actions.style.marginTop = ''; }
     }
 
     // ========================================
@@ -506,8 +333,6 @@
 
     function resetAll() {
         resetHero();
-        resetAbout();
-        resetContact();
 
         var cards = document.querySelectorAll('.case-study-card');
         for (var i = 0; i < cards.length; i++) {
@@ -534,8 +359,6 @@
         if (typeof Pretext === 'undefined') return;
 
         layoutHero();
-        // About + Contact sections keep their native flexbox single-column layout —
-        // Pretext absolute positioning would re-introduce the right-rail floats.
         layoutCaseStudies();
     }
 
