@@ -53,15 +53,9 @@
             hero: function (w) {
                 return [portraitShape(w, 0, { size: 200, padding: 20, side: 'right' })];
             },
-            about: function (w) {
-                return [insetShape(w, 0, { width: 250, height: 250, padding: 24, side: 'left', topOffset: 0 })];
-            },
             caseStudy: function (w, h, index) {
                 var side = index % 2 === 0 ? 'left' : 'right';
                 return [insetShape(w, 0, { width: 250, height: 250, padding: 20, side: side })];
-            },
-            contact: function (w) {
-                return [insetShape(w, 0, { width: 300, height: 400, padding: 20, side: 'right' })];
             }
         },
 
@@ -73,15 +67,9 @@
                     portraitShape(w, 0, { size: 200, padding: 24, side: 'right' }),
                 ];
             },
-            about: function (w) {
-                return [insetShape(w, 0, { width: 260, height: 260, padding: 30, side: 'left', topOffset: 0 })];
-            },
             caseStudy: function (w, h, index) {
                 var side = index % 2 === 0 ? 'left' : 'right';
                 return [insetShape(w, 0, { width: 250, height: 250, padding: 28, side: side })];
-            },
-            contact: function (w) {
-                return [insetShape(w, 0, { width: 300, height: 400, padding: 24, side: 'right' })];
             }
         },
 
@@ -90,15 +78,9 @@
             hero: function (w) {
                 return [portraitShape(w, 0, { size: 220, padding: 28, side: 'right' })];
             },
-            about: function (w) {
-                return [insetShape(w, 0, { width: 270, height: 270, padding: 32, side: 'left', topOffset: 0 })];
-            },
             caseStudy: function (w, h, index) {
                 var side = index % 2 === 0 ? 'left' : 'right';
                 return [insetShape(w, 0, { width: 260, height: 260, padding: 30, side: side })];
-            },
-            contact: function (w) {
-                return [insetShape(w, 0, { width: 300, height: 420, padding: 28, side: 'right' })];
             }
         },
 
@@ -108,15 +90,9 @@
                 // Circular portrait exclusion (larger padding for blob feel)
                 return [portraitShape(w, 0, { size: 220, padding: 32, side: 'right' })];
             },
-            about: function (w) {
-                return [insetShape(w, 0, { width: 270, height: 270, padding: 36, side: 'left', topOffset: 0 })];
-            },
             caseStudy: function (w, h, index) {
                 var side = index % 2 === 0 ? 'left' : 'right';
                 return [insetShape(w, 0, { width: 260, height: 260, padding: 32, side: side })];
-            },
-            contact: function (w) {
-                return [insetShape(w, 0, { width: 300, height: 400, padding: 32, side: 'right' })];
             }
         },
 
@@ -125,15 +101,9 @@
             hero: function (w) {
                 return [portraitShape(w, 0, { size: 200, padding: 24, side: 'right' })];
             },
-            about: function (w) {
-                return [insetShape(w, 0, { width: 250, height: 250, padding: 24, side: 'left', topOffset: 0 })];
-            },
             caseStudy: function (w, h, index) {
                 var side = index % 2 === 0 ? 'left' : 'right';
                 return [insetShape(w, 0, { width: 250, height: 250, padding: 24, side: side })];
-            },
-            contact: function (w) {
-                return [insetShape(w, 0, { width: 300, height: 400, padding: 24, side: 'right' })];
             }
         },
 
@@ -142,15 +112,9 @@
             hero: function (w) {
                 return [portraitShape(w, 0, { size: 200, padding: 20, side: 'right' })];
             },
-            about: function (w) {
-                return [insetShape(w, 0, { width: 250, height: 250, padding: 24, side: 'left', topOffset: 0 })];
-            },
             caseStudy: function (w, h, index) {
                 var side = index % 2 === 0 ? 'left' : 'right';
                 return [insetShape(w, 0, { width: 250, height: 250, padding: 20, side: side })];
-            },
-            contact: function (w) {
-                return [insetShape(w, 0, { width: 300, height: 400, padding: 20, side: 'right' })];
             }
         }
     };
