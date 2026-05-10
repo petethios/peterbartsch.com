@@ -211,6 +211,9 @@
             <!-- Hero Section -->
             <section id="hero" class="hero-section">
                 <div class="hero-layout">
+                    <div class="hero-portrait">
+                        <picture><source srcset="peterb.webp" type="image/webp"><img src="peterb.png" alt="Peter Bartsch, Staff Product Designer" width="320" height="320" loading="eager" fetchpriority="high" /></picture>
+                    </div>
                     <div class="hero-text">
                         <p class="hero-name">PETER BARTSCH</p>
                         <h2 id="title" class="phosphor-text">Staff Product Designer — Enterprise Platforms & 0→1</h2>
@@ -235,14 +238,11 @@
                             <p class="receipts-label">// RECEIPTS</p>
                             <p class="receipts-claim">Pre-registered <a href="https://thios.co/design-system-bench.html" target="_blank" rel="noopener">benchmark</a> on my own agent-native design system. The lean Claude Skill beat the verbose one on recall — removing rhetorical sections improved performance.</p>
                             <p class="receipts-links">
-                                <a href="https://github.com/Thios-and-Company/thios.co/tree/main/_agents/skills/audit-design-token-drift" target="_blank" rel="noopener">View skill source &rarr;</a>
+                                <a href="https://github.com/Thios-and-Company/audit-design-token-drift" target="_blank" rel="noopener">View skill source &rarr;</a>
                                 <span class="receipts-sep">·</span>
                                 <a href="https://thios.co/design-system-bench.html" target="_blank" rel="noopener">View bench &rarr;</a>
                             </p>
                         </aside>
-                    </div>
-                    <div class="hero-portrait">
-                        <picture><source srcset="peterb.webp" type="image/webp"><img src="peterb.png" alt="Peter Bartsch, Staff Product Designer" width="200" height="200" loading="eager" fetchpriority="high" /></picture>
                     </div>
                 </div>
             </section>
@@ -262,7 +262,7 @@
                     <div class="about-content">
                         <h2 class="about-heading phosphor-text">WHAT I DO</h2>
                         <p class="about-bio">
-                            I lead design for the problems that stall enterprises — forced adoption, platform fragmentation, trust in uncertain data. At Deere, I unlocked $3.8B in revenue across 500K users. At FourKites, I built the design org from 1 to 10 through $3M→$100M ARR. Now I'm founder of <a href="https://thios.co" target="_blank" rel="noopener">Thios</a> — modular structures running on an agent-native design system, with a <a href="https://github.com/Thios-and-Company/thios.co/tree/main/_agents/skills/audit-design-token-drift" target="_blank" rel="noopener">published skill</a> and a <a href="https://thios.co/design-system-bench.html" target="_blank" rel="noopener">pre-registered benchmark</a> measuring whether the agent infrastructure actually works. I ship end-to-end: strategy, systems, code, and the rules agents follow.
+                            I lead design for the problems that stall enterprises — forced adoption, platform fragmentation, trust in uncertain data. At Deere, I unlocked $3.8B in revenue across 500K users. At FourKites, I built the design org from 1 to 10 through $3M→$100M ARR. Now I'm founder of <a href="https://thios.co" target="_blank" rel="noopener">Thios</a> — modular structures running on an agent-native design system, with a <a href="https://github.com/Thios-and-Company/audit-design-token-drift" target="_blank" rel="noopener">published skill</a> and a <a href="https://thios.co/design-system-bench.html" target="_blank" rel="noopener">pre-registered benchmark</a> measuring whether the agent infrastructure actually works. I ship end-to-end: strategy, systems, code, and the rules agents follow.
                         </p>
                         <div class="about-strengths">
                             <span class="strength-tag">Enterprise Design Systems</span>
@@ -285,7 +285,7 @@
                         <span class="recent-title">UX Is Dead. Long Live HX.</span>
                         <span class="recent-desc">Designing for agents means we finally get to design for humans — not users. The end of dark patterns, the beginning of honest experiences.</span>
                     </a>
-                    <a href="https://github.com/Thios-and-Company/thios.co/tree/main/_agents/skills/audit-design-token-drift" class="recent-item" target="_blank" rel="noopener">
+                    <a href="https://github.com/Thios-and-Company/audit-design-token-drift" class="recent-item" target="_blank" rel="noopener">
                         <span class="recent-tag">Published</span>
                         <span class="recent-title">audit-design-token-drift</span>
                         <span class="recent-desc">A Claude Skill that diffs design tokens across four canonical Thios surfaces. First in the Thios skill stack; the pattern other vanilla design systems can fork.</span>
