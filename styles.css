@@ -679,69 +679,6 @@
         }
         .contact-direct a:hover { border-bottom-style: solid; }
 
-        /* Recruiter scan-line — duplicates the hero "// OPEN TO:"
-           so visitors who deep-link straight to #contact still see
-           role/availability without scrolling back up.
-           Speculative — not currently used by any HTML; preserved from the
-           keen-tu merge for a future contact-section refactor. */
-        .contact-open-to {
-            font-family: 'SF Mono', Menlo, monospace;
-            font-size: 12px;
-            letter-spacing: 0.04em;
-            color: var(--color-text-muted);
-            margin: 0 0 var(--space-md) 0;
-            line-height: 1.5;
-            opacity: 0.85;
-        }
-
-        .contact-actions {
-            display: flex;
-            gap: 12px;
-            flex-wrap: wrap;
-            margin-top: var(--space-md);
-        }
-
-        .contact-resume-cta {
-            display: inline-block;
-            font-family: var(--font-display);
-            font-size: 13px;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            padding: 10px 22px;
-            background-color: var(--color-primary);
-            color: var(--color-black);
-            border: var(--border-width) solid var(--color-primary);
-            text-decoration: none;
-            transition: all var(--transition-base);
-        }
-
-        .contact-resume-cta:hover {
-            background-color: var(--color-white);
-            color: var(--color-black);
-            box-shadow: var(--shadow-glow);
-            transform: translateY(-2px);
-        }
-
-        .contact-resume-secondary {
-            display: inline-block;
-            font-family: var(--font-display);
-            font-size: 13px;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            padding: 10px 22px;
-            background: transparent;
-            color: var(--color-text-primary);
-            border: var(--border-width) solid var(--color-text-muted);
-            text-decoration: none;
-            transition: all var(--transition-base);
-        }
-
-        .contact-resume-secondary:hover {
-            border-color: var(--color-primary);
-            color: var(--color-primary);
-            transform: translateY(-2px);
-        }
-
         @media (max-width: 768px) {
             .contact-inner {
                 gap: var(--space-md);
