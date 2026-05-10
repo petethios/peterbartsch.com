@@ -212,7 +212,7 @@
             <section id="hero" class="hero-section">
                 <div class="hero-layout">
                     <div class="hero-portrait">
-                        <picture><source srcset="peterb.webp" type="image/webp"><img src="peterb.png" alt="Peter Bartsch, Staff Product Designer" width="320" height="320" loading="eager" fetchpriority="high" /></picture>
+                        <picture><source srcset="peterb.webp" type="image/webp"><img src="peterb.png" alt="Peter Bartsch, Staff Product Designer" width="720" height="240" loading="eager" fetchpriority="high" /></picture>
                     </div>
                     <div class="hero-text">
                         <p class="hero-name">PETER BARTSCH</p>
