@@ -260,12 +260,14 @@
                     <span class="resume-role-dates">Aug 2024 – Present</span>
                 </div>
                 <p class="resume-role-title">Founder & Lead Designer</p>
-                <p class="resume-role-summary">Between enterprise roles — shipped a complete product ecosystem solo using AI tooling to demonstrate full-stack design range.</p>
+                <p class="resume-role-summary">Open-source modular structures (saunas, greenhouses, offices) running on a 5-surface design system where I'm the only designer and agents are the team. Shipped a complete product ecosystem solo in 18 months and built the agent-native infrastructure that operates it.</p>
                 <ul class="resume-role-bullets">
-                    <li>Created complete product ecosystem solo in 18 months: brand identity inspired by early 2000s open-source culture, 3 websites (thios.co, blog, store), 5 shelter variants with CAD models, physical prototype, and handbook generating first revenue</li>
-                    <li>Applied full career toolkit simultaneously—product strategy, marketing, and design execution using GitHub Copilot → Cursor → Anti Gravity progression; proving experienced generalists can operate across traditional role boundaries with AI partnership</li>
-                    <li>Established AI-augmented workflows: Obsidian MD + AI for project management and research synthesis; Figma Make for design-to-code; compressed prototyping cycles 70% through conversational development in Cursor and Anti-Gravity & Claude Code</li>
-                    <li>Outcomes: Validated AI as practical force multiplier for startups; demonstrating how to maintain product quality while working at solo-founder velocity; any prototype is possible</li>
+                    <li>Created complete product ecosystem solo in 18 months: brand identity, 3 websites (thios.co, blog, store), 5 shelter variants with CAD models, physical prototype, and handbook generating first revenue</li>
+                    <li>Built the first agent-native design system: 5 canonical surfaces (DESIGN.md, tokens.json, main.css, design-system.html, OnShape parametric model) all readable by agents, mutually diffable, anchored to one rule layer. 212 design tokens in W3C format spanning primitive / semantic / surface layers</li>
+                    <li>Published the first Thios Claude Skill (<a href="https://github.com/Thios-and-Company/audit-design-token-drift" target="_blank" rel="noopener"><code>audit-design-token-drift</code></a>): catches drift across all four upstream surfaces, produces dated audit files with file:line citations and Loop-step routing. Shipped following the addyosmani/agent-skills anatomy</li>
+                    <li>Pre-registered an empirical benchmark (<a href="https://thios.co/design-system-bench.html" target="_blank" rel="noopener">design-system-bench</a>) measuring whether the skill actually outperforms a one-line prompt. Honest result published: the lean skill (D) beat the full skill (A) on recall — removing rhetorical sections improved performance. Empirical commitment, not slogan</li>
+                    <li>AI-augmented workflows: Obsidian MD + AI for research synthesis, Figma Make for design-to-code, Cursor + Anti-Gravity + Claude Code for conversational development. Compressed prototyping cycles 70%</li>
+                    <li>Outcomes: Demonstrated experienced generalists can operate across traditional role boundaries with AI partnership; built an evidence layer most portfolios skip; the design system itself is the product</li>
                 </ul>
             </div>
 
