@@ -50,7 +50,7 @@
 }
 
 /* ---- Background ---- */
-[data-theme="2026"] html {
+html[data-theme="2026"] {
     background-color: #fafafa;
 }
 

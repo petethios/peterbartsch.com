@@ -48,7 +48,7 @@
 }
 
 /* ---- Background ---- */
-[data-theme="2000s"] html {
+html[data-theme="2000s"] {
     background-color: #e8eef2;
 }
 

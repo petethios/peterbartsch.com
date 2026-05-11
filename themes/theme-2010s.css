@@ -51,7 +51,7 @@
 }
 
 /* ---- Background: dark gradient with mesh ---- */
-[data-theme="2010s"] html {
+html[data-theme="2010s"] {
     background-color: #0F172A;
 }
 
