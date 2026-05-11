@@ -48,7 +48,7 @@
 }
 
 /* ---- Background ---- */
-[data-theme="90s"] html {
+html[data-theme="90s"] {
     background-color: #000000;
 }
 
