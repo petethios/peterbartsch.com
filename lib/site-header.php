@@ -1,7 +1,16 @@
 <?php
-// Shared site header — mirrors the homepage exactly, using absolute paths
-// (`/foo`) so the same file renders identically from any directory depth.
-// Include with:  <?php include $_SERVER['DOCUMENT_ROOT'] . '/lib/site-header.php'; ?>
+/**
+ * Shared site header — mirrors the homepage exactly, using absolute paths
+ * (`/foo`) so the same file renders identically from any directory depth.
+ *
+ * Include with:
+ *   <?php include __DIR__ . '/../lib/site-header.php'; ?\>     // one level deep
+ *   <?php include __DIR__ . '/lib/site-header.php'; ?\>        // project root
+ *
+ * (The closing PHP tag in the example above is escaped — a literal `?` then `>`
+ * inside a single-line `//` comment terminates the PHP block early and leaks
+ * the file's actual closing tag into the rendered HTML.)
+ */
 ?>
 <a href="#main" class="visually-hidden skip-link">Skip to main content</a>
 <!-- Sticky Header Nav (shared include — keep in sync with homepage) -->
