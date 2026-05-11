@@ -137,19 +137,6 @@
     <!-- Sticky Header Nav -->
     <header id="site-header" role="banner">
         <h1 id="page-title" class="visually-hidden">Peter Bartsch — Staff Product Designer Portfolio</h1>
-        <!-- Theme era selector bar -->
-        <div class="theme-era-bar">
-            <span class="theme-era-label">Design era</span>
-            <div class="theme-era-buttons" role="group" aria-label="Switch design era theme">
-                <button class="theme-era-btn" data-theme="80s" aria-label="1980s Retro Terminal" aria-pressed="false">80s</button>
-                <button class="theme-era-btn" data-theme="90s" aria-label="1990s GeoCities" aria-pressed="false">90s</button>
-                <button class="theme-era-btn" data-theme="matrix" aria-label="2000 Matrix Digital Rain" aria-pressed="false">2000</button>
-                <button class="theme-era-btn" data-theme="2000s" aria-label="2000s Web 2.0" aria-pressed="false">00s</button>
-                <button class="theme-era-btn" data-theme="2010s" aria-label="2010s Corporate Memphis" aria-pressed="false">10s</button>
-                <button class="theme-era-btn active" data-theme="2026" aria-label="2026 Modern AI" aria-pressed="true">2026</button>
-            </div>
-            <span class="theme-era-tagline">30 years on the web. 15 in enterprise. Same operator.</span>
-        </div>
         <div class="header-inner">
             <a href="#" class="header-logo" aria-label="Home">
                 <img src="pblogo.svg" alt="PB logo" height="40" />
@@ -164,6 +151,15 @@
                     <li><a href="https://linkedin.com/in/peterbartsch" target="_blank" rel="noopener noreferrer" class="nav-linkedin">LINKEDIN</a></li>
                 </ul>
             </nav>
+            <!-- Compact era pill-group — discoverable but doesn't dominate above-the-fold -->
+            <div class="theme-era-buttons theme-era-buttons-nav" role="group" aria-label="Switch design era theme" title="30 years on the web. 15 in enterprise. Same operator.">
+                <button class="theme-era-btn" data-theme="80s" aria-label="1980s Retro Terminal" aria-pressed="false">80s</button>
+                <button class="theme-era-btn" data-theme="90s" aria-label="1990s GeoCities" aria-pressed="false">90s</button>
+                <button class="theme-era-btn" data-theme="matrix" aria-label="2000 Matrix Digital Rain" aria-pressed="false">2000</button>
+                <button class="theme-era-btn" data-theme="2000s" aria-label="2000s Web 2.0" aria-pressed="false">00s</button>
+                <button class="theme-era-btn" data-theme="2010s" aria-label="2010s Corporate Memphis" aria-pressed="false">10s</button>
+                <button class="theme-era-btn active" data-theme="2026" aria-label="2026 Modern AI" aria-pressed="true">2026</button>
+            </div>
             <button class="hamburger" id="hamburgerBtn" aria-label="Open menu" aria-expanded="false"
                 aria-controls="mobileMenu">
                 <span></span><span></span><span></span>
@@ -212,9 +208,10 @@
             <section id="hero" class="hero-section">
                 <div class="hero-layout">
                     <div class="hero-portrait">
-                        <picture><source srcset="peterb.webp" type="image/webp"><img src="peterb.png" alt="Peter Bartsch, Staff Product Designer" width="720" height="240" loading="eager" fetchpriority="high" /></picture>
+                        <picture><source srcset="peterb-hero.webp" type="image/webp"><img src="peterb-hero.png" alt="Peter Bartsch, Staff Product Designer" width="720" height="343" loading="eager" fetchpriority="high" /></picture>
                     </div>
                     <div class="hero-text">
+                        <p class="hero-kicker">30 years on the web. 15 in enterprise. Same operator.</p>
                         <p class="hero-name">PETER BARTSCH</p>
                         <h2 id="title" class="phosphor-text">Staff Product Designer — Enterprise Platforms & 0→1</h2>
                         <p class="hero-proof">Few designers ship $3.8B enterprise platforms <em>and</em> invent modular shelters running on their own agent-native design system. I do both — at scale (FourKites design org 1→10, Deere across 40+ teams) and from scratch (founder of <a href="https://thios.co" target="_blank" rel="noopener">Thios</a>).</p>
