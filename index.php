@@ -146,7 +146,6 @@
                     <li><a href="#about">ABOUT</a></li>
                     <li><a href="#portfolio-carousel">CASES</a></li>
                     <li><a href="resume.php">RESUME</a></li>
-                    <li><a href="blog/">WRITING</a></li>
                     <li><a href="#contact">CONTACT</a></li>
                     <li><a href="https://linkedin.com/in/peterbartsch" target="_blank" rel="noopener noreferrer" class="nav-linkedin">LINKEDIN</a></li>
                 </ul>
@@ -175,7 +174,6 @@
                 <li><a href="#about">ABOUT</a></li>
                 <li><a href="#portfolio-carousel">CASES</a></li>
                 <li><a href="resume.php">RESUME</a></li>
-                <li><a href="blog/">WRITING</a></li>
                 <li><a href="#contact">CONTACT</a></li>
             </ul>
             <div class="mobile-menu-divider"></div>
@@ -277,10 +275,10 @@
             <section class="recent-notable" aria-label="Recent and notable work">
                 <p class="recent-label">// RECENT / NOTABLE</p>
                 <div class="recent-grid">
-                    <a href="blog/ux-is-dead-long-live-hx" class="recent-item">
-                        <span class="recent-tag">Writing</span>
-                        <span class="recent-title">UX Is Dead. Long Live HX.</span>
-                        <span class="recent-desc">Designing for agents means we finally get to design for humans — not users. The end of dark patterns, the beginning of honest experiences.</span>
+                    <a href="https://thios.co/design-system-bench.html" class="recent-item" target="_blank" rel="noopener">
+                        <span class="recent-tag">Benchmarked</span>
+                        <span class="recent-title">Skills &gt; prompts? I tested it.</span>
+                        <span class="recent-desc">Pre-registered Caveman-style bench. The lean skill (D) beat the full skill (A) on recall — removing rhetorical sections improved performance.</span>
                     </a>
                     <a href="https://github.com/Thios-and-Company/audit-design-token-drift" class="recent-item" target="_blank" rel="noopener">
                         <span class="recent-tag">Published</span>

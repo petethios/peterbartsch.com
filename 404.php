@@ -48,16 +48,13 @@
     </style>
 </head>
 <body>
-    <header id="site-header" role="banner">
-        <div class="header-inner">
-            <a href="/" class="header-logo" aria-label="Home"><img src="/pblogo.svg" alt="PB logo" height="40" /></a>
-        </div>
-    </header>
+    <?php include __DIR__ . '/lib/site-header.php'; ?>
     <main class="error-page">
         <h1 class="error-code">404</h1>
         <p class="error-message">This page doesn't exist. Maybe it used to.</p>
         <a href="/" class="error-link">← BACK TO PORTFOLIO</a>
     </main>
     <script src="/themes/theme-switcher.js"></script>
+    <script defer src="/script.js"></script>
 </body>
 </html>

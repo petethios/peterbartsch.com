@@ -46,17 +46,7 @@
     </script>
 </head>
 <body>
-    <?php include('../themes/theme-banner.php'); ?>
-    <header id="site-header" role="banner">
-        <div class="header-inner">
-            <a href="../" class="header-logo" aria-label="Home">
-                <img src="../pblogo.svg" alt="PB logo" height="40" />
-            </a>
-            <nav aria-label="Breadcrumb" style="display: flex; gap: 16px;">
-                <a href="../" style="color: var(--color-text-primary); text-decoration: none; font-family: var(--font-body); font-size: 14px;">← Back to Portfolio</a>
-            </nav>
-        </div>
-    </header>
+    <?php include __DIR__ . '/../lib/site-header.php'; ?>
 
     <main class="case-study-page">
         <article>
@@ -415,5 +405,6 @@ CRT-2 — "Premium gold" #D4A000 has no entry in tokens.json
         });
     </script>
     <script src="../themes/theme-switcher.js"></script>
+    <script defer src="/script.js"></script>
 </body>
 </html>
