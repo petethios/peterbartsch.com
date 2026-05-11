@@ -3033,6 +3033,10 @@ html:not([data-theme]) .theme-era-btn.active {
 
 /* ========================================
    Recruiter Summary Block
+   SCALE spans the full top row with bolder treatment so the most
+   recruiter-magnetic numbers (500K · $3.8B · 40+ teams) catch the eye
+   first. Other three cells (LEVEL / DOMAINS / RANGE) sit below in a
+   2-col grid as supporting context.
    ======================================== */
 .recruiter-summary {
     display: grid;
@@ -3048,6 +3052,17 @@ html:not([data-theme]) .theme-era-btn.active {
 .summary-item {
     display: flex;
     gap: 8px;
+}
+
+.summary-item-scale {
+    grid-column: 1 / -1;
+    font-size: 13px;
+    padding-bottom: 10px;
+    margin-bottom: 4px;
+    border-bottom: 1px solid var(--color-gray-dark);
+}
+.summary-item-scale .summary-value {
+    font-weight: 700;
 }
 
 .summary-label {
