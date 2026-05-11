@@ -214,7 +214,7 @@
                         <p class="hero-kicker">30 years on the web. 15 in enterprise. Same operator.</p>
                         <p class="hero-name">PETER BARTSCH</p>
                         <h2 id="title" class="phosphor-text">Staff Product Designer — Enterprise Platforms & 0→1</h2>
-                        <p class="hero-proof">Few designers ship $3.8B enterprise platforms <em>and</em> invent modular shelters running on their own agent-native design system. I do both — at scale (FourKites design org 1→10, Deere across 40+ teams) and from scratch (founder of <a href="https://thios.co" target="_blank" rel="noopener">Thios</a>).</p>
+                        <p class="hero-proof">Few designers ship $3.8B enterprise platforms <em>and</em> invent modular shelters running on their own agent-native design system. I do both.</p>
                         <p class="hero-open-to">// OPEN TO: Staff/Principal IC roles · Design leadership at agent-native shops · Founding-team consulting</p>
                         <div class="hero-cta-row">
                             <!-- Direct mailto for highest-intent inquiries. Higher conversion than a contact form for senior IC reach-outs.
@@ -223,10 +223,10 @@
                             <a href="#portfolio-carousel" class="hero-cta-secondary">See the Work</a>
                         </div>
                         <div class="recruiter-summary">
+                            <div class="summary-item summary-item-scale"><span class="summary-label">Scale</span><span class="summary-value">500K users · $3.8B revenue · 40+ teams</span></div>
                             <div class="summary-item"><span class="summary-label">Level</span><span class="summary-value">Staff / Principal IC · Founder</span></div>
                             <div class="summary-item"><span class="summary-label">Domains</span><span class="summary-value">Enterprise SaaS · Supply Chain · Agent-native systems</span></div>
                             <div class="summary-item"><span class="summary-label">Range</span><span class="summary-value">IC + Leadership (built teams 1→10)</span></div>
-                            <div class="summary-item"><span class="summary-label">Scale</span><span class="summary-value">500K users · $3.8B revenue · 40+ teams</span></div>
                         </div>
                         <!-- Receipts tile: empirical proof anchored as its own block below the
                              recruiter summary. Differentiates this portfolio from every other
