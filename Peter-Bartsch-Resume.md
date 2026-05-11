@@ -1,16 +1,13 @@
-Staff Product Designer · Founder. Led design for $3.8B platform at Deere (500K users). Built design org 1→10 at FourKites through $3M→$100M ARR ($1B+ valuation). Now founder of Thios — modular structures + agent-native design systems with a published Claude Skill and a pre-registered bench measuring whether the agent infrastructure actually works.
+Staff Product Designer · Founder. Led design for $3.8B platform at Deere (500K users). Built design org 1→10 at FourKites through $3M→$100M ARR ($1B+ valuation). Now founder of Thios — modular structures + agent-native design systems.
 
 PROFESSIONAL EXPERIENCE
 
 **THIOS | Founder & Lead Designer** | Aug 2024 \- Present   
-Open-source modular structures (saunas, greenhouses, offices) running on a 5-surface design system where I'm the only designer and agents are the team. Shipped a complete product ecosystem solo in 18 months and built the agent-native infrastructure that operates it.
+Open-source modular structures (saunas, greenhouses, offices) running on a 5-surface design system where I'm the only designer and agents are the team.
 
-* **Created complete product ecosystem solo in 18 months**: brand identity, 3 websites (thios.co, blog, store), 5 shelter variants with CAD models, physical prototype, and handbook generating first revenue
-* **Built the first agent-native design system**: 5 canonical surfaces (DESIGN.md, tokens.json, main.css, design-system.html, OnShape parametric model) all readable by agents, mutually diffable, anchored to one rule layer. 212 design tokens in W3C format spanning primitive / semantic / surface layers
-* **Published the first Thios Claude Skill** (`audit-design-token-drift`): catches drift across all four upstream surfaces, produces dated audit files with file:line citations and Loop-step routing. Shipped following the addyosmani/agent-skills anatomy
-* **Pre-registered an empirical benchmark** (audit-skill-bench, see thios.co/design-system-bench.html) measuring whether the skill actually outperforms a one-line prompt. Honest result published: the lean skill (D) beat the full skill (A) on recall — removing rhetorical sections improved performance. Empirical commitment, not slogan
-* **AI-augmented workflows**: Obsidian MD + AI for research synthesis, Figma Make for design-to-code, Cursor + Anti-Gravity + Claude Code for conversational development. Compressed prototyping cycles 70%
-* **Outcomes**: Demonstrated experienced generalists can operate across traditional role boundaries with AI partnership; built an evidence layer most portfolios skip; the design system itself is the product
+* **Shipped a complete product ecosystem solo in 18 months**: brand, 3 websites, 5 shelter variants with CAD models, physical prototype, first revenue
+* **Built a 5-surface agent-native design system and published its first Claude Skill** (`audit-design-token-drift`) — catches design-token drift across all canonical surfaces with file:line citations
+* **Pre-registered an empirical benchmark on the skill** — published the honest result: the lean variant beat the verbose one on recall
 
 **FOURKITES | Lead UX / Manager** | Jan 2017 \- Jan 2020  
 Employee \#28 during hypergrowth, $3M to $100M ARR ($1B+ valuation). Built design function from scratch—founding designer to 10-person global team.
