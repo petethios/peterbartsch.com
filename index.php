@@ -325,12 +325,12 @@
                         <picture><source srcset="carousel-thumb-deere-nav.webp" type="image/webp"><img src="carousel-thumb-deere-nav.png" alt="Deere Consistent Nav" loading="lazy" width="250" height="250"></picture>
                     </div>
                     <div class="case-study-body">
-                        <p class="slide-label">ENTERPRISE GOVERNANCE</p>
-                        <h3 class="project-title">DEERE: ONE SYSTEM, 47 PRODUCTS</h3>
+                        <p class="slide-label">PLATFORM UNIFICATION</p>
+                        <h3 class="project-title">DEERE: ONE NAV ACROSS 47 PROPERTIES</h3>
                         <div class="project-structure">
-                            <p class="structure-item"><span class="structure-label">Challenge:</span> 47 product sites, each with its own navigation, dev team, and political owner. Nobody wanted to give up control.</p>
-                            <p class="structure-item"><span class="structure-label">Approach:</span> Contributed to a shared design system and rolled it out across all 47 sites without breaking a single live product</p>
-                            <p class="structure-item"><span class="structure-label">Result:</span> One consistent experience across all 47 sites · 45% faster dev handoffs</p>
+                            <p class="structure-item"><span class="structure-label">Challenge:</span> 47 acquired digital properties, each with its own navigation, dev team, and political owner. Customers had to relearn the journey every time they crossed a property line.</p>
+                            <p class="structure-item"><span class="structure-label">Approach:</span> Designed a common navigation for every digital touchpoint and rolled it across all 47 properties with zero downtime.</p>
+                            <p class="structure-item"><span class="structure-label">Result:</span> One nav, 47 properties · 0 downtime · 40+ teams aligned · 45% faster dev handoffs</p>
                         </div>
                         <a href="case-studies/deere-nav.php" class="project-link brutalist-link">VIEW CASE STUDY →</a>
                     </div>
