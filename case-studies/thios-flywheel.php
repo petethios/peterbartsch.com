@@ -12,7 +12,7 @@
     <meta property="og:description" content="One CAD file drives the BoM, the configurator's 3D, and a maker flywheel that scales without building factories.">
     <meta property="og:type" content="article">
     <meta property="og:url" content="https://petebartsch.com/case-studies/thios-flywheel">
-    <meta property="og:image" content="https://petebartsch.com/img/og-thios-agent-rails.png">
+    <meta property="og:image" content="https://petebartsch.com/img/thios-flywheel-configurator.png">
 
     <link rel="preload" href="../rombyte.ttf" as="font" type="font/ttf" crossorigin>
     <link rel="preload" href="../ari.ttf" as="font" type="font/ttf" crossorigin>
@@ -26,7 +26,7 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Thios: The Open-Hardware Flywheel | Peter Bartsch">
     <meta name="twitter:description" content="One CAD file drives the BoM, the configurator's 3D, and a maker flywheel that scales without building factories.">
-    <meta name="twitter:image" content="https://petebartsch.com/img/og-thios-agent-rails.png">
+    <meta name="twitter:image" content="https://petebartsch.com/img/thios-flywheel-configurator.png">
 
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-QB3EL923YF"></script>
     <script>window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag('js', new Date()); gtag('config', 'G-QB3EL923YF');</script>
@@ -343,7 +343,7 @@
                 <p>Interested in open-hardware product strategy, configurator-driven sales, or capital-light distribution for physical products?</p>
                 <div class="case-study-contact-links">
                     <a href="mailto:peter@peterbartsch.com">Email Me</a>
-                    <a href="https://www.linkedin.com/in/petermbartsch/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                    <a href="https://www.linkedin.com/in/peterbartsch/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
                     <a href="../" class="secondary">&larr; Back to Portfolio</a>
                 </div>
             </section>

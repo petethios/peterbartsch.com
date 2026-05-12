@@ -142,7 +142,7 @@
                 <p>Interested in discussing enterprise design challenges or exploring opportunities?</p>
                 <div class="case-study-contact-links">
                     <a href="mailto:peter@peterbartsch.com">Email Me</a>
-                    <a href="https://www.linkedin.com/in/petermbartsch/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                    <a href="https://www.linkedin.com/in/peterbartsch/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
                     <a href="../" class="secondary">← Back to Portfolio</a>
                 </div>
             </section>
