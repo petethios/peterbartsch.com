@@ -44,6 +44,13 @@ RewriteRule ^scripts - [F,L]
     Require all denied
 </FilesMatch>
 
+# Whitelist: the resume in markdown is a downloadable artifact, served from
+# the dropdown on /resume. <Files> evaluates after <FilesMatch> so this wins
+# for this specific file while CLAUDE.md / future *.md stay blocked.
+<Files "Peter-Bartsch-Resume.md">
+    Require all granted
+</Files>
+
 # Security Headers
 <IfModule mod_headers.c>
     # Prevent clickjacking
