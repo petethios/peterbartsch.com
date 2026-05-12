@@ -129,7 +129,15 @@ html[data-theme="2026"] {
     box-shadow: 0 2px 8px rgba(0, 102, 255, 0.18);
 }
 
-[data-theme="2026"] .resume-download:hover {
+/* Beat the global [data-theme="2026"] a:visited (specificity 0,2,1):
+   .resume-download:visited gets (0,3,0) and source-order wins anyway.
+   Without this the text turns dark blue after first download click. */
+[data-theme="2026"] .resume-download:visited {
+    color: #ffffff !important;
+}
+
+[data-theme="2026"] .resume-download:hover,
+[data-theme="2026"] .resume-download:visited:hover {
     background-color: #0052cc !important;
     color: #ffffff !important;
     box-shadow: 0 4px 14px rgba(0, 102, 255, 0.28);
