@@ -380,7 +380,7 @@ CRT-2 — "Premium gold" #D4A000 has no entry in tokens.json
 
             <nav class="case-study-nav" aria-label="Case study navigation">
                 <a href="fourkites-driver.php">← Previous: Incentive Design</a>
-                <a href="deere-common-ux.php">Next: Forced Adoption →</a>
+                <a href="thios-flywheel.php">Next: Open-Hardware Flywheel →</a>
             </nav>
         </article>
     </main>

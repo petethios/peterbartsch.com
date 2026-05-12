@@ -156,7 +156,7 @@
             </section>
 
             <nav class="case-study-nav" aria-label="Case study navigation">
-                <a href="thios.php">← Previous: Thios</a>
+                <a href="thios-flywheel.php">← Previous: Open-Hardware Flywheel</a>
                 <a href="deere-nav.php">Next: Platform Unification →</a>
             </nav>
         </article>
