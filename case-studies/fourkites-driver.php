@@ -12,7 +12,7 @@
     <meta property="og:description" content="Reconciling competing driver/shipper incentives—32% more tracked shipments.">
     <meta property="og:type" content="article">
     <meta property="og:url" content="https://petebartsch.com/case-studies/fourkites-driver">
-    <meta property="og:image" content="https://petebartsch.com/og-image.png">
+    <meta property="og:image" content="https://petebartsch.com/img/fourkites-05.png">
 
     <link rel="preload" href="../rombyte.ttf" as="font" type="font/ttf" crossorigin>
     <link rel="preload" href="../ari.ttf" as="font" type="font/ttf" crossorigin>
@@ -24,7 +24,7 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="FourKites: Incentive Design | Peter Bartsch">
     <meta name="twitter:description" content="Reconciling competing driver/shipper incentives—32% more tracked shipments.">
-    <meta name="twitter:image" content="https://petebartsch.com/og-image.png">
+    <meta name="twitter:image" content="https://petebartsch.com/img/fourkites-05.png">
 
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-QB3EL923YF"></script>
     <script>window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag('js', new Date()); gtag('config', 'G-QB3EL923YF');</script>
