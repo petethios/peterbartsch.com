@@ -2679,11 +2679,12 @@ textarea:focus-visible {
 
 .about-inner {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
-    gap: var(--space-lg);
-    max-width: 720px;
+    gap: var(--space-xl);
+    max-width: 1080px;
     margin: 0 auto;
+    padding: 0 var(--space-md);
 }
 
 .about-photo {
@@ -2743,7 +2744,10 @@ textarea:focus-visible {
 
 @media (max-width: 768px) {
     .about-inner {
+        flex-direction: column;
+        align-items: center;
         gap: var(--space-md);
+        padding: 0;
     }
 
     .about-photo {
