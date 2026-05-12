@@ -247,14 +247,16 @@
                         <p class="about-bio">
                             I lead design for the problems that stall enterprises — forced adoption, platform fragmentation, trust in uncertain data. At Deere, I unlocked $3.8B in revenue across 500K users. At FourKites, I built the design org from 1 to 10 through $3M→$100M ARR. Now I'm founder of <a href="https://thios.co" target="_blank" rel="noopener">Thios</a> — <a href="case-studies/thios-flywheel.php">open-hardware modular structures</a> where one parametric CAD file drives the bill of materials, the <a href="https://thios.co/configurator/" target="_blank" rel="noopener">configurator's 3D</a>, and a share-alike maker feedback loop. I ship end-to-end: strategy, brand, <a href="case-studies/thios.php">design system</a>, code, CAD, and the distribution model that scales without factories.
                         </p>
-                        <div class="about-strengths">
-                            <span class="strength-tag">Enterprise Design Systems</span>
-                            <span class="strength-tag">Design Org Leadership (1→10)</span>
-                            <span class="strength-tag">Forced Adoption & Retention</span>
-                            <span class="strength-tag">0→1 in Complex Domains</span>
-                            <span class="strength-tag">Open-Hardware Product Systems</span>
-                        </div>
                     </div>
+                </div>
+                <!-- Strength tags get their own full-width row below the photo+bio,
+                     so they don't get squished one-per-line in the right column. -->
+                <div class="about-strengths">
+                    <span class="strength-tag">Enterprise Design Systems</span>
+                    <span class="strength-tag">Design Org Leadership (1→10)</span>
+                    <span class="strength-tag">Forced Adoption & Retention</span>
+                    <span class="strength-tag">0→1 in Complex Domains</span>
+                    <span class="strength-tag">Open-Hardware Product Systems</span>
                 </div>
             </section>
 
