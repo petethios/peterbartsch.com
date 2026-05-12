@@ -67,24 +67,29 @@
             margin: 0;
         }
 
+        /* Primary CTA. 2026 theme overrides to filled blue —
+           see themes/theme-2026.css. */
         .resume-download {
             display: inline-flex;
             align-items: center;
             gap: 8px;
-            margin-top: 16px;
+            margin-top: 24px;
             font-family: var(--font-display);
-            font-size: 12px;
+            font-size: 14px;
             letter-spacing: 1px;
-            color: var(--color-primary);
+            text-transform: uppercase;
+            color: var(--color-black, #000);
+            background-color: var(--color-primary);
             text-decoration: none;
-            border: 1px solid rgba(134, 216, 221, 0.3);
-            padding: 8px 16px;
+            border: 1px solid var(--color-primary);
+            padding: 12px 28px;
             transition: all 0.2s;
         }
 
         .resume-download:hover {
-            border-color: var(--color-primary);
-            background: rgba(134, 216, 221, 0.05);
+            background-color: var(--color-white, #fff);
+            color: var(--color-black, #000);
+            transform: translateY(-2px);
         }
 
         .resume-section {
