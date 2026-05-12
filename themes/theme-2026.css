@@ -448,11 +448,14 @@ html[data-theme="2026"] {
 }
 
 /* ---- About Section ---- */
+/* Sized between the small grey //-labels (11px, --color-text-subtle)
+   and a full H2 (30px). Distinct from both so it reads as its own
+   tier — a code-comment heading, not a section label. */
 [data-theme="2026"] .about-heading {
     color: #111 !important;
     font-weight: 700;
-    font-size: 30px;
-    letter-spacing: -0.02em;
+    font-size: 20px;
+    letter-spacing: -0.01em;
     text-align: left;
     margin-bottom: var(--space-md);
 }
