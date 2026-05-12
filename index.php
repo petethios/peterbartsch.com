@@ -263,29 +263,6 @@
                 </div>
             </section>
 
-            <!-- Recent / Notable — top-of-list features: the two Thios case studies
-                 lead, with FourKites flagship rounding out the row. -->
-            <section class="recent-notable" aria-label="Recent and notable work">
-                <p class="recent-label">// RECENT / NOTABLE</p>
-                <div class="recent-grid">
-                    <a href="case-studies/thios-flywheel.php" class="recent-item">
-                        <span class="recent-tag">Case study · Founder</span>
-                        <span class="recent-title">Thios — Open-Hardware Flywheel</span>
-                        <span class="recent-desc">One OnShape CAD file drives the BoM, the configurator's 3D, and a share-alike maker feedback loop. Capital-light distribution for a solo founder — 0 factories built.</span>
-                    </a>
-                    <a href="case-studies/thios.php" class="recent-item">
-                        <span class="recent-tag">Case study · Founder</span>
-                        <span class="recent-title">Thios — 5-Surface Design System</span>
-                        <span class="recent-desc">DESIGN.md ↔ tokens.json ↔ main.css ↔ design-system.html ↔ OnShape kept aligned by agent-driven audits. 6 sub-brands, 4 production sites, 1 designer — no drift.</span>
-                    </a>
-                    <a href="case-studies/fourkites-tracking.php" class="recent-item">
-                        <span class="recent-tag">Case study · Enterprise</span>
-                        <span class="recent-title">FourKites — Designing for Uncertainty</span>
-                        <span class="recent-desc">Confidence-level UI for mission-critical supply-chain dashboards. Built the design org 1→10 through $3M→$100M ARR. 41% retention lift, 3× expansion, $1B+ valuation.</span>
-                    </a>
-                </div>
-            </section>
-
             <!-- Portfolio Case Studies — Thios case studies lead (founder-operator
                  receipts), Deere/FourKites follow (enterprise scale receipts). -->
             <section id="portfolio-carousel" class="portfolio-carousel">
