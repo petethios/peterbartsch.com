@@ -2729,6 +2729,10 @@ textarea:focus-visible {
     display: flex;
     flex-wrap: wrap;
     gap: var(--space-sm);
+    max-width: 1080px;
+    margin: var(--space-lg) auto 0;
+    padding: 0 var(--space-md);
+    justify-content: center;
 }
 
 .strength-tag {
