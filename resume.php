@@ -140,6 +140,19 @@
             margin: 0;
         }
 
+        /* Small inline URL next to the company name (Thios → thios.co).
+           Lighter weight + smaller so it reads as ancillary, not co-equal. */
+        .resume-role-url {
+            font-family: 'SF Mono', Menlo, monospace;
+            font-size: 12px;
+            font-weight: 400;
+            color: var(--color-primary);
+            text-decoration: none;
+            margin-left: 8px;
+            opacity: 0.85;
+        }
+        .resume-role-url:hover { opacity: 1; text-decoration: underline; }
+
         .resume-role-dates {
             font-family: var(--font-display);
             font-size: 12px;
@@ -247,7 +260,7 @@
         <header class="resume-header">
             <h1 class="resume-name">Peter Bartsch</h1>
             <p class="resume-title">Staff Product Designer · Founder</p>
-            <p class="resume-summary">Led design for $3.8B platform at Deere (500K users). Built design org 1→10 at FourKites through $3M→$100M ARR ($1B+ valuation). Now founder of Thios — open-hardware modular structures with a CAD-driven configurator and a 5-surface design system.</p>
+            <p class="resume-summary">Led design for $3.8B platform at Deere (500K users). Built design org 1→10 at FourKites through $3M→$100M ARR ($1B+ valuation). Now founder of Thios (<a href="https://thios.co" target="_blank" rel="noopener">thios.co</a>) — open-hardware modular structures with a CAD-driven configurator and a 5-surface design system.</p>
             <a href="Peter-Bartsch-Resume.pdf" class="resume-download" download>↓ DOWNLOAD PDF</a>
         </header>
 
@@ -268,14 +281,14 @@
 
             <div class="resume-role">
                 <div class="resume-role-header">
-                    <h3 class="resume-role-company">Thios</h3>
+                    <h3 class="resume-role-company">Thios <a href="https://thios.co" target="_blank" rel="noopener" class="resume-role-url">thios.co</a></h3>
                     <span class="resume-role-dates">Aug 2024 – Present</span>
                 </div>
                 <p class="resume-role-title">Founder & Lead Designer</p>
                 <p class="resume-role-summary">Open-source modular structures (saunas, greenhouses, offices) running on a 5-surface design system where I'm the only designer and agents are the team.</p>
                 <ul class="resume-role-bullets">
                     <li>Shipped a complete product ecosystem solo in 18 months: brand, 3 websites, 6 sphere variants with CAD models, physical prototype, first revenue</li>
-                    <li>One parametric OnShape CAD file drives the bill of materials and the <a href="https://thios.co/configurator/" target="_blank" rel="noopener">3D configurator</a> &mdash; customers see actual geometry, not marketing renders</li>
+                    <li>One parametric OnShape CAD file drives the bill of materials and the <a href="https://thios.co/configurator/" target="_blank" rel="noopener">3D configurator at thios.co/configurator</a> &mdash; customers see actual geometry, not marketing renders</li>
                     <li>Open-hardware distribution under CERN-OHL-S v2: license + builder tools route demand to local makers; share-alike modifications loop back into the CAD &mdash; capital-light scale without factories</li>
                 </ul>
             </div>
