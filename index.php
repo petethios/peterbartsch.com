@@ -226,19 +226,6 @@
                             <div class="summary-item"><span class="summary-label">Domains</span><span class="summary-value">Enterprise SaaS · Supply Chain · Agent-native systems</span></div>
                             <div class="summary-item"><span class="summary-label">Range</span><span class="summary-value">IC + Leadership (built teams 1→10)</span></div>
                         </div>
-                        <!-- Receipts tile: founder-operator proof anchored below the recruiter
-                             summary. The point: I built the product, the brand, the design
-                             system, the configurator, and the open-hardware distribution
-                             model that makes it scale without factories. -->
-                        <aside class="hero-receipts" aria-label="Founder-operator receipts">
-                            <p class="receipts-label">// RECEIPTS</p>
-                            <p class="receipts-claim">Founder of <a href="https://thios.co" target="_blank" rel="noopener">Thios</a> &mdash; open-hardware modular structures. One OnShape CAD file drives the bill of materials, the configurator's 3D, and a CERN-OHL-S share-alike feedback loop. Same operator who scaled FourKites design 1&rarr;10.</p>
-                            <p class="receipts-links">
-                                <a href="case-studies/thios-flywheel.php">Open-hardware flywheel &rarr;</a>
-                                <span class="receipts-sep">&middot;</span>
-                                <a href="case-studies/thios.php">5-surface design system &rarr;</a>
-                            </p>
-                        </aside>
                     </div>
                 </div>
             </section>
