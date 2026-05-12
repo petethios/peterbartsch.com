@@ -55,7 +55,7 @@
                     <a href="../">Portfolio</a> / <a href="../#right">Case Studies</a> / Thios
                 </nav>
                 <h1 class="case-study-title">THIOS: DESIGN SYSTEMS ON AGENT RAILS</h1>
-                <p class="case-study-subtitle">5 surfaces kept aligned by agents · 212 design tokens · 7 drift findings caught in the May audit · 1 designer</p>
+                <p class="case-study-subtitle">5 surfaces kept aligned by agents · 212 design tokens · 6 sub-brands · 4 production sites · 1 designer</p>
                 <div class="case-study-meta">
                     <div class="case-study-meta-item">
                         <span class="case-study-meta-label">Role</span>
@@ -137,7 +137,7 @@
                          Each label names the agent process running on that arrow. -->
                     <g class="fw-edge-label">
                         <text x="160" y="60" text-anchor="middle">MCP audit · next surface</text>
-                        <text x="498" y="60" text-anchor="middle">audit-design-token-drift</text>
+                        <text x="498" y="60" text-anchor="middle">token-drift audit</text>
                         <text x="612" y="305" text-anchor="end">cssSyncRequired</text>
                         <text x="320" y="567" text-anchor="middle">design-system-loop.html</text>
                         <text x="28" y="305" text-anchor="start">parametric agent</text>
@@ -288,41 +288,15 @@
             </section>
 
             <section class="case-study-section">
-                <h2>The Agent Stack</h2>
+                <h2>How the Surfaces Stay Aligned</h2>
                 <p><strong>DESIGN.md is the spine</strong> &mdash; agent-native markdown; Section 9 is explicitly an &ldquo;Agent Prompt Guide,&rdquo; the first thing any agent reads when generating UI. <strong>tokens.json is the bridge</strong> &mdash; W3C Design Tokens, three layers (primitive / semantic / surface), imported into Figma Variables via Tokens Studio. <strong>main.css is the running code</strong> (18,000+ lines, kept in sync across four subdomains by a deploy gate). <strong>design-system.html is the live spec</strong> (109 KB, every component with working examples). <strong>OnShape is the parametric source</strong> for sphere geometry &mdash; 54 elements driven by one Variable Studio, the same shape as tokens.json flowing into Figma, but for physical product.</p>
-                <p>The first formal Thios skill, <code>audit-design-token-drift</code>, diffs all four upstream surfaces and outputs a dated audit. The agent catches drift; the human decides what to fix:</p>
-
-                <figure class="artifact-callout" aria-labelledby="artifact-label-1">
-                    <figcaption id="artifact-label-1" class="artifact-callout__label">Excerpt · Design Token Audit · May 2026 · first run, baseline</figcaption>
-                    <div class="artifact-callout__body">
-<pre>## Summary
-
-Total drift findings: 7
-- Critical: 2  (rules-layer disagreement)
-- High:     1  (DESIGN.md ↔ tokens.json mismatch)
-- Medium:   3  (main.css ↔ design-system.html gap)
-- Low:      1  (orphan token)
-
-CRT-1 — DESIGN.md self-contradiction on canonical brand gold
-  Section 2, line 35:  #E8AF00 (canonical, dated 2026-04-20)
-  Section 9, line 440: Gold (#F0B800)
-  → The agent guide teaches the wrong gold. Production code is fine.
-    Fix: align Section 9 to #E8AF00. Loop step: 6 (Document).
-
-CRT-2 — "Premium gold" #D4A000 has no entry in tokens.json
-  Documented in DESIGN.md Section 2; used by .hero-cta-primary.
-  → Add primitive.color.gold.600 + semantic.brand.secondaryPremium.
-    Loop step: 3 (Tokenize).</pre>
-                    </div>
-                </figure>
-
-                <p>First formal audit; the baseline for the trend line.</p>
+                <p>Each surface gets diffed against the spine on demand. Agents catch drift; the human decides what to fix. The complete loop is documented at <a href="https://thios.co/design-system-loop.html" target="_blank" rel="noopener">thios.co/design-system-loop.html</a>.</p>
             </section>
 
             <section class="case-study-section">
                 <h2>Sphere Branding — Proof the System Scales</h2>
-                <p>Six sub-brands currently share the system: <strong>Thiosphere</strong> (brown <code>#96643F</code>), <strong>Saunosphere</strong> (red <code>#E25141</code>), <strong>Agrosphere</strong> (teal — same as primary, intentionally), <strong>Ergosphere</strong> (blue <code>#1D63BE</code>), <strong>Immosphere</strong> (purple <code>#4D04AC</code>), <strong>Auxosphere</strong> (gray). Each is a first-class semantic token with mode variants in Figma — one component template, six brand surfaces.</p>
-                <p>The May audit found a real drift here: Auxosphere reads <code>#909090</code> in DESIGN.md but resolves to <code>#6c757d</code> in tokens.json. That's the kind of bug a single-surface workflow ships silently. Six sub-brands plus four production sites is exactly where manual drift detection breaks.</p>
+                <p>Six sub-brands currently share the system: <strong>Thiosphere</strong> (brown <code>#96643F</code>), <strong>Saunosphere</strong> (red <code>#E25141</code>), <strong>Agrosphere</strong> (teal &mdash; same as primary, intentionally), <strong>Ergosphere</strong> (blue <code>#1D63BE</code>), <strong>Immosphere</strong> (purple <code>#4D04AC</code>), <strong>Auxosphere</strong> (gray). Each is a first-class semantic token with mode variants in Figma &mdash; one component template, six brand surfaces.</p>
+                <p>The kind of bug a single-surface workflow ships silently: Auxosphere reads <code>#909090</code> in DESIGN.md but resolves to <code>#6c757d</code> after the primitive&rarr;semantic indirection in tokens.json. Six sub-brands plus four production sites is exactly where manual drift detection breaks.</p>
             </section>
 
             <section class="case-study-section">
@@ -330,31 +304,18 @@ CRT-2 — "Premium gold" #D4A000 has no entry in tokens.json
                 <ul>
                     <li><strong>Five surfaces in sync today</strong> &mdash; all readable by agents, all mutually diffable, all referenced from a single canonical rule layer.</li>
                     <li><strong>4 production subdomains</strong> kept in CSS-sync via a <code>make check-css-sync</code> deploy gate &mdash; no silent rot between thios.co, blog, store, and partners.</li>
-                    <li><strong>7 drift findings caught</strong> in the first formal token audit (May 2026), including a self-contradiction inside DESIGN.md and a documented brand color absent from tokens.json.</li>
-                    <li><strong>1 published skill</strong> (<code>audit-design-token-drift</code>) following the agent-skills anatomy, with 5 more on the roadmap.</li>
+                    <li><strong>6 sub-brands</strong> generated from one component template via Figma mode variants &mdash; one design, six brand surfaces.</li>
+                    <li><strong>212 design tokens, three layers</strong> (primitive / semantic / surface) &mdash; the same shape as tokens.json flowing into Figma also flows into OnShape&rsquo;s Variable Studio for physical product.</li>
                 </ul>
-            </section>
-
-            <section class="case-study-section">
-                <h2>Industry Context</h2>
-                <p>This isn't operating in isolation. Three converging signals say markdown-as-instruction-layer is the shape design systems are settling on for the agent era:</p>
-                <ul>
-                    <li><strong>Anthropic's Skill format</strong> — prompted markdown skills with frontmatter and verification, shipped in Claude Code.</li>
-                    <li><strong>Figma's <a href="https://developers.figma.com/docs/code/bring-your-design-system-package/" target="_blank" rel="noopener">Bring your design system package</a></strong> — accepts an npm-published React design system plus a <code>Guidelines.md</code>, then uses both to generate apps in Figma Make. Validates the pattern; locked to React/Vite/npm. Thios's vanilla stack is incompatible by design — but DESIGN.md is the same shape as Guidelines.md, shipping a year ahead and stack-agnostic.</li>
-                    <li><strong><a href="https://github.com/addyosmani/agent-skills" target="_blank" rel="noopener">addyosmani/agent-skills</a></strong> — 20 SKILL.md files standardizing the workflow-as-markdown pattern across Claude Code, Cursor, Gemini, Windsurf, Copilot. Thios's <code>_agents/skills/</code> follows this anatomy and is structured to publish back upstream.</li>
-                </ul>
-                <p>Stack-agnostic markdown rule layers are the convergent answer. The Thios experiment was just early to it.</p>
-
-                <p style="margin-top: 24px; padding: 16px 20px; border-left: 3px solid var(--color-secondary); background: var(--color-light-gray, #f7f7f7);"><strong>Empirical commitment.</strong> Before publishing the &ldquo;skills &gt; prompts&rdquo; claim everyone in this space is waving around, I benchmarked it. The skill I built &mdash; <code>audit-design-token-drift</code> &mdash; lost to a one-line prompt on recall (76% vs 86%) on a frozen four-surface snapshot. Both missed the same value-drift finding (Auxosphere <code>#909090</code> vs the resolved <code>#6c757d</code>) that the <em>vague</em> baseline caught. The skill's actual win is in form: every skill-run audit had Loop-step routing, file:line citations, and a Verification checklist; no other strategy did. The full results &mdash; per-finding heatmap, per-strategy table, applied decision rules &mdash; live alongside the design-system pages at <a href="https://thios.co/design-system-bench.html" target="_blank" rel="noopener"><code>thios.co/design-system-bench.html</code></a>, with the harness and raw outputs in <code>_agents/bench/audit-skill-bench/</code>. I treat &ldquo;skills &gt; prompts&rdquo; as an unverified hypothesis until the mean recall flips back.</p>
             </section>
 
             <section class="case-study-section">
                 <h2>Next Surfaces (Roadmap)</h2>
-                <p>Three surfaces are designed but not yet running. Each will be added to the audit skill before it goes live so drift detection scales with the system.</p>
+                <p>Three surfaces are designed but not yet running. Each will be wired into the diff layer before it goes live so drift detection scales with the system.</p>
                 <ul>
-                    <li><strong>Cron-driven audits</strong> — <code>audit-design-token-drift</code> runs on demand today. Wiring it to a weekly schedule turns drift detection from a willpower problem into infrastructure. Next month's audit-vs-this-month delta becomes the trend line.</li>
-                    <li><strong>Figma MCP</strong> — Tokens Studio + html.to.design plugins documented in design-system-loop.html step 2; once Figma Dev Mode MCP is enabled on the Thios-logo file, agents will read and write Figma Variables the same way they audit DESIGN.md today.</li>
-                    <li><strong>CAD hygiene agent</strong> — feature naming conventions, mate health, build-correctness checks on the OnShape document. Same diff-then-fix shape as the token audit, applied to physical geometry. The 54-element inventory is the baseline.</li>
+                    <li><strong>Scheduled drift checks</strong> &mdash; the diff runs on demand today. Wiring it to a weekly schedule turns drift detection from a willpower problem into infrastructure. Month-over-month delta becomes the trend line.</li>
+                    <li><strong>Figma MCP</strong> &mdash; Tokens Studio + html.to.design plugins documented in design-system-loop.html step 2; once Figma Dev Mode MCP is enabled on the Thios-logo file, agents will read and write Figma Variables the same way they reason about DESIGN.md today.</li>
+                    <li><strong>CAD hygiene agent</strong> &mdash; feature naming conventions, mate health, build-correctness checks on the OnShape document. Same diff-then-fix shape, applied to physical geometry. The 54-element inventory is the baseline.</li>
                 </ul>
             </section>
 
