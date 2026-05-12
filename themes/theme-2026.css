@@ -115,6 +115,27 @@ html[data-theme="2026"] {
     color: #ffffff;
 }
 
+/* Resume download — primary CTA on the resume page, mirrors hero-cta-primary
+   so it reads as the clear next action above the experience scroll. */
+[data-theme="2026"] .resume-download {
+    background-color: #0066FF !important;
+    color: #ffffff !important;
+    border: none !important;
+    border-radius: 4px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 14px 32px;
+    box-shadow: 0 2px 8px rgba(0, 102, 255, 0.18);
+}
+
+[data-theme="2026"] .resume-download:hover {
+    background-color: #0052cc !important;
+    color: #ffffff !important;
+    box-shadow: 0 4px 14px rgba(0, 102, 255, 0.28);
+    transform: translateY(-2px);
+}
+
 [data-theme="2026"] .hero-cta-secondary {
     border: 1px solid #ddd;
     border-radius: 4px;
