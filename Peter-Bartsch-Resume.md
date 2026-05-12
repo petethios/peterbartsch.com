@@ -1,12 +1,12 @@
-Staff Product Designer · Founder. Led design for $3.8B platform at Deere (500K users). Built design org 1→10 at FourKites through $3M→$100M ARR ($1B+ valuation). Now founder of Thios — open-hardware modular structures with a CAD-driven configurator and a 5-surface design system.
+Staff Product Designer · Founder. Led design for $3.8B platform at Deere (500K users). Built design org 1→10 at FourKites through $3M→$100M ARR ($1B+ valuation). Now founder of Thios ([thios.co](https://thios.co)) — open-hardware modular structures with a CAD-driven configurator and a 5-surface design system.
 
 PROFESSIONAL EXPERIENCE
 
-**THIOS | Founder & Lead Designer** | Aug 2024 \- Present   
+**THIOS** ([thios.co](https://thios.co)) **| Founder & Lead Designer** | Aug 2024 \- Present   
 Open-source modular structures (saunas, greenhouses, offices) running on a 5-surface design system where I'm the only designer and agents are the team.
 
 * **Shipped a complete product ecosystem solo in 18 months**: brand, 3 websites, 6 sphere variants with CAD models, physical prototype, first revenue
-* **One parametric OnShape CAD file drives the bill of materials and the 3D configurator** — customers see actual geometry, not marketing renders
+* **One parametric OnShape CAD file drives the bill of materials and the [3D configurator at thios.co/configurator](https://thios.co/configurator/)** — customers see actual geometry, not marketing renders
 * **Open-hardware distribution under CERN-OHL-S v2**: license + builder tools route demand to local makers; share-alike modifications loop back into the CAD — capital-light scale without factories
 
 **JOHN DEERE | Senior Lead UX; Digital Customer Experience** | Aug 2020 \- Jul 2024   
