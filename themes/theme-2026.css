@@ -451,7 +451,10 @@ html[data-theme="2026"] {
 [data-theme="2026"] .about-heading {
     color: #111 !important;
     font-weight: 700;
+    font-size: 30px;
     letter-spacing: -0.02em;
+    text-align: left;
+    margin-bottom: var(--space-md);
 }
 
 [data-theme="2026"] .about-bio {
