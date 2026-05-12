@@ -355,6 +355,45 @@
     letter-spacing: 0.3px;
 }
 
+/* Wide content image with caption (e.g., configurator screenshot
+   in the flywheel case study). Pairs with .case-study-figure-caption. */
+.case-study-figure {
+    margin: 32px 0;
+}
+
+.case-study-figure picture {
+    display: block;
+}
+
+.case-study-figure img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border: 1px solid var(--cs-border-color, rgba(134, 216, 221, 0.2));
+    border-radius: 4px;
+}
+
+.case-study-figure-caption {
+    font-family: var(--font-body);
+    font-size: 13px;
+    color: #b8b8b8;
+    text-align: center;
+    margin: 12px 0 0;
+    line-height: 1.5;
+    letter-spacing: 0.2px;
+}
+
+.case-study-figure-caption a {
+    color: inherit;
+    text-decoration: underline;
+    text-decoration-color: rgba(184, 184, 184, 0.4);
+}
+
+.case-study-figure-caption a:hover {
+    color: var(--color-primary);
+    text-decoration-color: var(--color-primary);
+}
+
 /* ========================================
    Artifact callout — code excerpt with stable dark surface
    ======================================== */

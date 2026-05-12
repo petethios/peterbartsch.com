@@ -248,6 +248,23 @@
                 </figcaption>
             </figure>
 
+            <!-- Concrete view of the configurator node — same frame surfaces
+                 three flywheel mechanics at once (CAD-derived 3D, customer
+                 module picker with pricing, and the Get Local Quotes + Get
+                 the Handbook handoffs that route demand to local makers). -->
+            <figure class="case-study-figure" aria-labelledby="configurator-caption">
+                <picture>
+                    <source srcset="../img/thios-flywheel-configurator.webp" type="image/webp">
+                    <img src="../img/thios-flywheel-configurator.png"
+                         alt="Thios configurator: a 22-module geodesic dome priced at $4,390, with module picker on the left and Get Local Quotes / Get the Handbook handoffs along the bottom"
+                         loading="lazy"
+                         width="1600" height="1141">
+                </picture>
+                <figcaption id="configurator-caption" class="case-study-figure-caption">
+                    The configurator (<a href="https://thios.co/configurator/" target="_blank" rel="noopener">thios.co/configurator/</a>) &mdash; the CAD's customer face. 22 modules, ~$4,390 build configured live; one click hands off to a local maker via <strong>Get Local Quotes</strong>. Three of the five flywheel nodes visible in a single frame.
+                </figcaption>
+            </figure>
+
             <section class="case-study-section">
                 <h2>The Insight</h2>
                 <p>Traditional product companies scale by building factories. A solo founder can't build factories. So the question I had to answer in 2024 was: <strong>can a one-person physical-product company scale without manufacturing capital?</strong></p>
