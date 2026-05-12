@@ -9,11 +9,23 @@
     <link rel="icon" type="image/svg+xml" href="pblogo.svg">
 
     <!-- Open Graph -->
-    <meta property="og:title" content="Resume | Peter Bartsch — Staff Product Designer">
-    <meta property="og:description" content="15+ years designing enterprise systems shipped to 500K+ users.">
     <meta property="og:type" content="profile">
     <meta property="og:url" content="https://petebartsch.com/resume">
+    <meta property="og:title" content="Resume | Peter Bartsch — Staff Product Designer · Founder">
+    <meta property="og:description" content="$3.8B revenue enabled at Deere. Design org 1→10 at FourKites ($3M→$100M ARR). Now founder of Thios — open-hardware modular structures.">
+    <meta property="og:site_name" content="Peter Bartsch">
     <meta property="og:image" content="https://petebartsch.com/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Peter Bartsch — Staff Product Designer · Founder">
+    <meta property="og:locale" content="en_US">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Resume | Peter Bartsch — Staff Product Designer · Founder">
+    <meta name="twitter:description" content="$3.8B revenue enabled at Deere. Design org 1→10 at FourKites ($3M→$100M ARR). Now founder of Thios — open-hardware modular structures.">
+    <meta name="twitter:image" content="https://petebartsch.com/og-image.png">
+    <meta name="twitter:image:alt" content="Peter Bartsch — Staff Product Designer · Founder">
 
     <!-- Fonts -->
     <link rel="preload" href="rombyte.ttf" as="font" type="font/ttf" crossorigin>
@@ -235,7 +247,7 @@
         <header class="resume-header">
             <h1 class="resume-name">Peter Bartsch</h1>
             <p class="resume-title">Staff Product Designer · Founder</p>
-            <p class="resume-summary">Led design for $3.8B platform at Deere (500K users). Built design org 1→10 at FourKites through $3M→$100M ARR ($1B+ valuation). Now founder of Thios — modular structures + agent-native design systems.</p>
+            <p class="resume-summary">Led design for $3.8B platform at Deere (500K users). Built design org 1→10 at FourKites through $3M→$100M ARR ($1B+ valuation). Now founder of Thios — open-hardware modular structures with a CAD-driven configurator and a 5-surface design system.</p>
             <a href="Peter-Bartsch-Resume.pdf" class="resume-download" download>↓ DOWNLOAD PDF</a>
         </header>
 
@@ -246,8 +258,8 @@
                 <div class="receipts-item"><span class="receipts-num">30</span><span class="receipts-text">Years across web eras &mdash; from CSS hacks to agent-native systems</span></div>
                 <div class="receipts-item"><span class="receipts-num">$4B+</span><span class="receipts-text">Combined business impact &mdash; Deere ($3.8B) + FourKites ($1B+ valuation)</span></div>
                 <div class="receipts-item"><span class="receipts-num">1</span><span class="receipts-text">Founded company &mdash; <a href="https://thios.co" target="_blank" rel="noopener">Thios</a>, modular structures, 6 sub-brands</span></div>
-                <div class="receipts-item"><span class="receipts-num">1</span><span class="receipts-text">Published Claude Skill &mdash; <code>audit-design-token-drift</code></span></div>
-                <div class="receipts-item"><span class="receipts-num">1</span><span class="receipts-text">Pre-registered empirical bench &mdash; <a href="https://thios.co/design-system-bench.html" target="_blank" rel="noopener">design-system-bench</a></span></div>
+                <div class="receipts-item"><span class="receipts-num">6</span><span class="receipts-text">Thios sphere variants from one parametric CAD &mdash; <a href="https://thios.co/configurator/" target="_blank" rel="noopener">3D configurator</a></span></div>
+                <div class="receipts-item"><span class="receipts-num">OHL-S</span><span class="receipts-text">CERN strong-reciprocal open-hardware license routing demand to local makers</span></div>
             </div>
         </div>
 
@@ -262,23 +274,9 @@
                 <p class="resume-role-title">Founder & Lead Designer</p>
                 <p class="resume-role-summary">Open-source modular structures (saunas, greenhouses, offices) running on a 5-surface design system where I'm the only designer and agents are the team.</p>
                 <ul class="resume-role-bullets">
-                    <li>Shipped a complete product ecosystem solo in 18 months: brand, 3 websites, 5 shelter variants with CAD models, physical prototype, first revenue</li>
-                    <li>Built a 5-surface agent-native design system and published its first Claude Skill (<a href="https://github.com/Thios-and-Company/audit-design-token-drift" target="_blank" rel="noopener"><code>audit-design-token-drift</code></a>) — catches design-token drift across all canonical surfaces with file:line citations</li>
-                    <li>Pre-registered an empirical benchmark on the skill (<a href="https://thios.co/design-system-bench.html" target="_blank" rel="noopener">design-system-bench</a>) — published the honest result: the lean variant beat the verbose one on recall</li>
-                </ul>
-            </div>
-
-            <div class="resume-role">
-                <div class="resume-role-header">
-                    <h3 class="resume-role-company">FourKites</h3>
-                    <span class="resume-role-dates">Jan 2017 – Jan 2020</span>
-                </div>
-                <p class="resume-role-title">Lead UX / Manager</p>
-                <p class="resume-role-summary">Employee #28 during hypergrowth ($3M to $100M ARR). Built design function from scratch—founding designer to 10-person global team.</p>
-                <ul class="resume-role-bullets">
-                    <li>Designed flagship products from 0→1: Real-time supply chain control tower and related mobile apps processing 10M+ daily tracking events for 30+ Fortune 2000 companies (Anheuser-Busch, Georgia-Pacific, Tyson); products became primary driver of 3x customer expansion</li>
-                    <li>Led bespoke predictive analytics dashboard products identifying shipment delays 6-12 hours earlier than competitors; increased customer retention 41% and expanded average contract value $120K annually</li>
-                    <li>Scaled design org: Hired and managed team across Chicago and Chennai; established component library, design operations, and hiring framework—reduced design inconsistencies 65% while maintaining startup velocity</li>
+                    <li>Shipped a complete product ecosystem solo in 18 months: brand, 3 websites, 6 sphere variants with CAD models, physical prototype, first revenue</li>
+                    <li>One parametric OnShape CAD file drives the bill of materials and the <a href="https://thios.co/configurator/" target="_blank" rel="noopener">3D configurator</a> &mdash; customers see actual geometry, not marketing renders</li>
+                    <li>Open-hardware distribution under CERN-OHL-S v2: license + builder tools route demand to local makers; share-alike modifications loop back into the CAD &mdash; capital-light scale without factories</li>
                 </ul>
             </div>
 
@@ -293,6 +291,20 @@
                     <li>Redesigned license management system serving 500K+ users across 12 languages—increased authenticated engagement 34%, reduced support tickets 16%, enabled $3.8B in subscription revenue from Automation and AI services</li>
                     <li>Built unified account and navigation framework deployed across 8 product lines (web, mobile, embedded)—consolidated fragmented experiences into single customer view, improved dealer support efficiency 28%</li>
                     <li>Core contributor to enterprise design system in Figma spanning 6 brands and 40+ product teams globally—reduced design-to-development handoff time 45% through standardized components that actually shipped</li>
+                </ul>
+            </div>
+
+            <div class="resume-role">
+                <div class="resume-role-header">
+                    <h3 class="resume-role-company">FourKites</h3>
+                    <span class="resume-role-dates">Jan 2017 – Jan 2020</span>
+                </div>
+                <p class="resume-role-title">Lead UX / Manager</p>
+                <p class="resume-role-summary">Employee #28 during hypergrowth, $3M to $100M ARR ($1B+ valuation). Built design function from scratch—founding designer to 10-person global team.</p>
+                <ul class="resume-role-bullets">
+                    <li>Designed flagship products from 0→1: Real-time supply chain control tower and related mobile apps processing 10M+ daily tracking events for 30+ Fortune 2000 companies (Anheuser-Busch, Georgia-Pacific, Tyson); products became primary driver of 3x customer expansion</li>
+                    <li>Led bespoke predictive analytics dashboard products identifying shipment delays 6-12 hours earlier than competitors; increased customer retention 41% and expanded average contract value $120K annually</li>
+                    <li>Scaled design org: Hired and managed team across Chicago and Chennai; established component library, design operations, and hiring framework—reduced design inconsistencies 65% while maintaining startup velocity</li>
                 </ul>
             </div>
 
