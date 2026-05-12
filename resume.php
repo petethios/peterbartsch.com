@@ -79,13 +79,23 @@
             margin: 0;
         }
 
-        /* Primary CTA. 2026 theme overrides to filled blue —
-           see themes/theme-2026.css. */
+        /* Primary CTA dropdown. <details> wraps a <summary> styled as the
+           button; the menu is .resume-download-list absolute-positioned below.
+           2026 theme overrides to filled blue — see themes/theme-2026.css. */
+        .resume-download-menu {
+            position: relative;
+            display: inline-block;
+            margin-top: 24px;
+        }
+        /* Kill the native disclosure triangle so the chevron is the only marker. */
+        .resume-download-menu > summary { list-style: none; cursor: pointer; }
+        .resume-download-menu > summary::-webkit-details-marker { display: none; }
+        .resume-download-menu > summary::marker { content: ""; }
+
         .resume-download {
             display: inline-flex;
             align-items: center;
-            gap: 8px;
-            margin-top: 24px;
+            gap: 10px;
             font-family: var(--font-display);
             font-size: 14px;
             letter-spacing: 1px;
@@ -96,6 +106,7 @@
             border: 1px solid var(--color-primary);
             padding: 12px 28px;
             transition: all 0.2s;
+            user-select: none;
         }
 
         .resume-download:hover {
@@ -103,6 +114,74 @@
             color: var(--color-black, #000);
             transform: translateY(-2px);
         }
+
+        .resume-download-chevron {
+            display: inline-block;
+            font-size: 12px;
+            transition: transform 0.2s ease;
+        }
+        details[open] > .resume-download .resume-download-chevron {
+            transform: rotate(180deg);
+        }
+
+        .resume-download-list {
+            position: absolute;
+            top: calc(100% + 6px);
+            left: 0;
+            min-width: 280px;
+            margin: 0;
+            padding: 6px;
+            list-style: none;
+            background: #ffffff;
+            border: 1px solid rgba(0, 0, 0, 0.08);
+            border-radius: 6px;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+            z-index: 50;
+        }
+
+        .resume-download-list li { margin: 0; }
+        .resume-download-list a {
+            display: flex;
+            align-items: baseline;
+            justify-content: flex-start;
+            gap: 14px;
+            padding: 9px 12px;
+            text-decoration: none;
+            color: #111;
+            border-radius: 4px;
+            transition: background-color 0.12s;
+        }
+        .resume-download-list a:hover,
+        .resume-download-list a:focus {
+            background-color: #f5f7fa;
+            outline: none;
+        }
+
+        .resume-download-ext {
+            font-family: 'JetBrains Mono', 'SF Mono', Menlo, monospace;
+            font-size: 13px;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+            color: #111;
+            min-width: 48px;
+        }
+        .resume-download-desc {
+            font-family: var(--font-body, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif);
+            font-size: 12px;
+            color: #666;
+        }
+
+        /* Featured (PDF) row: subtle blue tint + thin left accent, no extra weight. */
+        .resume-download-list__featured a {
+            background-color: rgba(0, 102, 255, 0.06);
+            box-shadow: inset 3px 0 0 #0066FF;
+            padding-left: 14px;
+        }
+        .resume-download-list__featured a:hover,
+        .resume-download-list__featured a:focus {
+            background-color: rgba(0, 102, 255, 0.10);
+        }
+        .resume-download-list__featured .resume-download-ext { color: #0066FF; }
 
         .resume-section {
             margin-top: 40px;
@@ -237,7 +316,7 @@
 
         /* Print styles */
         @media print {
-            .resume-download, #site-header, .theme-era-bar { display: none !important; }
+            .resume-download-menu, .resume-download, #site-header, .theme-era-bar { display: none !important; }
             .resume-page { padding: 0; max-width: 100%; }
             .resume-name { font-size: 24px; }
             .resume-role-bullets li { font-size: 12px; }
@@ -261,7 +340,30 @@
             <h1 class="resume-name">Peter Bartsch</h1>
             <p class="resume-title">Staff Product Designer · Founder</p>
             <p class="resume-summary">Led design for $3.8B platform at Deere (500K users). Built design org 1→10 at FourKites through $3M→$100M ARR ($1B+ valuation). Now founder of Thios (<a href="https://thios.co" target="_blank" rel="noopener">thios.co</a>) — open-hardware modular structures with a CAD-driven configurator and a 5-surface design system.</p>
-            <a href="Peter-Bartsch-Resume.pdf" class="resume-download" download>↓ DOWNLOAD PDF</a>
+            <!-- Download dropdown — PDF featured at top; all 7 formats available.
+                 Uses <details>/<summary> so the menu open/close is browser-native
+                 (no JS needed for that). A tiny script at the bottom closes it
+                 after a click so it doesn't linger after the file starts saving. -->
+            <details class="resume-download-menu">
+                <summary class="resume-download" aria-label="Download resume">
+                    <span class="resume-download-label">↓ DOWNLOAD RESUME</span>
+                    <span class="resume-download-chevron" aria-hidden="true">▾</span>
+                </summary>
+                <ul class="resume-download-list" role="menu">
+                    <li class="resume-download-list__featured" role="none">
+                        <a href="Peter-Bartsch-Resume.pdf" download role="menuitem">
+                            <span class="resume-download-ext">PDF</span>
+                            <span class="resume-download-desc">Recommended &middot; the standard</span>
+                        </a>
+                    </li>
+                    <li role="none"><a href="Peter-Bartsch-Resume.docx" download role="menuitem"><span class="resume-download-ext">DOCX</span><span class="resume-download-desc">Word &middot; ATS-friendly</span></a></li>
+                    <li role="none"><a href="Peter-Bartsch-Resume.rtf"  download role="menuitem"><span class="resume-download-ext">RTF</span><span class="resume-download-desc">Rich Text Format</span></a></li>
+                    <li role="none"><a href="Peter-Bartsch-Resume.odt"  download role="menuitem"><span class="resume-download-ext">ODT</span><span class="resume-download-desc">OpenDocument &middot; LibreOffice</span></a></li>
+                    <li role="none"><a href="Peter-Bartsch-Resume.txt"  download role="menuitem"><span class="resume-download-ext">TXT</span><span class="resume-download-desc">Plain text &middot; accessibility</span></a></li>
+                    <li role="none"><a href="Peter-Bartsch-Resume.md"   download role="menuitem"><span class="resume-download-ext">MD</span><span class="resume-download-desc">Markdown &middot; developer-friendly</span></a></li>
+                    <li role="none"><a href="Peter-Bartsch-Resume.epub" download role="menuitem"><span class="resume-download-ext">EPUB</span><span class="resume-download-desc">eBook reader</span></a></li>
+                </ul>
+            </details>
         </header>
 
         <!-- Builder Receipts — concrete artifacts a recruiter can verify in 60 seconds. -->
@@ -365,6 +467,20 @@
 
     </main>
 
+    <script>
+        // Close the resume download dropdown after a format is picked,
+        // and let users dismiss it by clicking outside.
+        (function () {
+            var menu = document.querySelector('.resume-download-menu');
+            if (!menu) return;
+            menu.querySelectorAll('.resume-download-list a').forEach(function (a) {
+                a.addEventListener('click', function () { menu.open = false; });
+            });
+            document.addEventListener('click', function (e) {
+                if (menu.open && !menu.contains(e.target)) menu.open = false;
+            });
+        })();
+    </script>
     <script src="themes/theme-switcher.js"></script>
     <script defer src="/script.js"></script>
 </body>
