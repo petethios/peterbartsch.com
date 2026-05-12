@@ -12,7 +12,7 @@
     <meta property="og:description" content="Unified navigation across 47 sites with zero-downtime migration.">
     <meta property="og:type" content="article">
     <meta property="og:url" content="https://petebartsch.com/case-studies/deere-nav">
-    <meta property="og:image" content="https://petebartsch.com/og-image.png">
+    <meta property="og:image" content="https://petebartsch.com/img/deere-03.png">
 
     <link rel="preload" href="../rombyte.ttf" as="font" type="font/ttf" crossorigin>
     <link rel="preload" href="../ari.ttf" as="font" type="font/ttf" crossorigin>
@@ -24,7 +24,7 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="John Deere: Platform Unification | Peter Bartsch">
     <meta name="twitter:description" content="Unified navigation across 47 sites with zero-downtime migration.">
-    <meta name="twitter:image" content="https://petebartsch.com/og-image.png">
+    <meta name="twitter:image" content="https://petebartsch.com/img/deere-03.png">
 
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-QB3EL923YF"></script>
     <script>window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag('js', new Date()); gtag('config', 'G-QB3EL923YF');</script>
