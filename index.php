@@ -226,18 +226,6 @@
                             <div class="summary-item"><span class="summary-label">Domains</span><span class="summary-value">Enterprise SaaS · Supply Chain · Agent-native systems</span></div>
                             <div class="summary-item"><span class="summary-label">Range</span><span class="summary-value">IC + Leadership (built teams 1→10)</span></div>
                         </div>
-                        <!-- Receipts tile: empirical proof anchored as its own block below the
-                             recruiter summary. Differentiates this portfolio from every other
-                             senior-IC site — "I tested my own work" is rare in the discipline. -->
-                        <aside class="hero-receipts" aria-label="Empirical receipts">
-                            <p class="receipts-label">// RECEIPTS</p>
-                            <p class="receipts-claim">Pre-registered <a href="https://thios.co/design-system-bench.html" target="_blank" rel="noopener">benchmark</a> on my own agent-native design system. The lean Claude Skill beat the verbose one on recall — removing rhetorical sections improved performance.</p>
-                            <p class="receipts-links">
-                                <a href="https://github.com/Thios-and-Company/audit-design-token-drift" target="_blank" rel="noopener">View skill source &rarr;</a>
-                                <span class="receipts-sep">·</span>
-                                <a href="https://thios.co/design-system-bench.html" target="_blank" rel="noopener">View bench &rarr;</a>
-                            </p>
-                        </aside>
                     </div>
                 </div>
             </section>
@@ -257,53 +245,88 @@
                     <div class="about-content">
                         <h2 class="about-heading phosphor-text">WHAT I DO</h2>
                         <p class="about-bio">
-                            I lead design for the problems that stall enterprises — forced adoption, platform fragmentation, trust in uncertain data. At Deere, I unlocked $3.8B in revenue across 500K users. At FourKites, I built the design org from 1 to 10 through $3M→$100M ARR. Now I'm founder of <a href="https://thios.co" target="_blank" rel="noopener">Thios</a> — modular structures running on an agent-native design system, with a <a href="https://github.com/Thios-and-Company/audit-design-token-drift" target="_blank" rel="noopener">published skill</a> and a <a href="https://thios.co/design-system-bench.html" target="_blank" rel="noopener">pre-registered benchmark</a> measuring whether the agent infrastructure actually works. I ship end-to-end: strategy, systems, code, and the rules agents follow.
+                            I lead design for the problems that stall enterprises — forced adoption, platform fragmentation, trust in uncertain data. At Deere, I unlocked $3.8B in revenue across 500K users. At FourKites, I built the design org from 1 to 10 through $3M→$100M ARR. Now I'm founder of <a href="https://thios.co" target="_blank" rel="noopener">Thios</a> — <a href="case-studies/thios-flywheel.php">open-hardware modular structures</a> where one parametric CAD file drives the bill of materials, the <a href="https://thios.co/configurator/" target="_blank" rel="noopener">configurator's 3D</a>, and a share-alike maker feedback loop. I ship end-to-end: strategy, brand, <a href="case-studies/thios.php">design system</a>, code, CAD, and the distribution model that scales without factories.
                         </p>
                         <div class="about-strengths">
                             <span class="strength-tag">Enterprise Design Systems</span>
                             <span class="strength-tag">Design Org Leadership (1→10)</span>
                             <span class="strength-tag">Forced Adoption & Retention</span>
                             <span class="strength-tag">0→1 in Complex Domains</span>
-                            <span class="strength-tag">Agent-Native Design Systems</span>
+                            <span class="strength-tag">Open-Hardware Product Systems</span>
                         </div>
                     </div>
                 </div>
             </section>
 
-            <!-- Recent / Notable — surfaces the empirical layer (skill + bench)
-                 above the case study scroll, where most visitors land. -->
+            <!-- Recent / Notable — top-of-list features: the two Thios case studies
+                 lead, with FourKites flagship rounding out the row. -->
             <section class="recent-notable" aria-label="Recent and notable work">
                 <p class="recent-label">// RECENT / NOTABLE</p>
                 <div class="recent-grid">
-                    <a href="https://thios.co/design-system-bench.html" class="recent-item" target="_blank" rel="noopener">
-                        <span class="recent-tag">Benchmarked</span>
-                        <span class="recent-title">Skills &gt; prompts? I tested it.</span>
-                        <span class="recent-desc">Pre-registered Caveman-style bench. The lean skill (D) beat the full skill (A) on recall — removing rhetorical sections improved performance.</span>
-                    </a>
-                    <a href="https://github.com/Thios-and-Company/audit-design-token-drift" class="recent-item" target="_blank" rel="noopener">
-                        <span class="recent-tag">Published</span>
-                        <span class="recent-title">audit-design-token-drift</span>
-                        <span class="recent-desc">A Claude Skill that diffs design tokens across four canonical Thios surfaces. First in the Thios skill stack; the pattern other vanilla design systems can fork.</span>
+                    <a href="case-studies/thios-flywheel.php" class="recent-item">
+                        <span class="recent-tag">Case study · Founder</span>
+                        <span class="recent-title">Thios — Open-Hardware Flywheel</span>
+                        <span class="recent-desc">One OnShape CAD file drives the BoM, the configurator's 3D, and a share-alike maker feedback loop. Capital-light distribution for a solo founder — 0 factories built.</span>
                     </a>
                     <a href="case-studies/thios.php" class="recent-item">
-                        <span class="recent-tag">Case study</span>
-                        <span class="recent-title">Thios — Design Systems on Agent Rails</span>
-                        <span class="recent-desc">Modular structures + 5-surface design system + agent-native infrastructure. "Skills &gt; prompts" is a benchmarked claim, not a slogan.</span>
+                        <span class="recent-tag">Case study · Founder</span>
+                        <span class="recent-title">Thios — 5-Surface Design System</span>
+                        <span class="recent-desc">DESIGN.md ↔ tokens.json ↔ main.css ↔ design-system.html ↔ OnShape kept aligned by agent-driven audits. 6 sub-brands, 4 production sites, 1 designer — no drift.</span>
+                    </a>
+                    <a href="case-studies/fourkites-tracking.php" class="recent-item">
+                        <span class="recent-tag">Case study · Enterprise</span>
+                        <span class="recent-title">FourKites — Designing for Uncertainty</span>
+                        <span class="recent-desc">Confidence-level UI for mission-critical supply-chain dashboards. Built the design org 1→10 through $3M→$100M ARR. 41% retention lift, 3× expansion, $1B+ valuation.</span>
                     </a>
                 </div>
             </section>
 
-            <!-- Portfolio Case Studies -->
+            <!-- Portfolio Case Studies — Thios case studies lead (founder-operator
+                 receipts), Deere/FourKites follow (enterprise scale receipts). -->
             <section id="portfolio-carousel" class="portfolio-carousel">
 
-                <!-- 1. Deere Common UX - Flagship: Forced adoption at scale -->
+                <!-- 1. Thios — Design System on Agent Rails (FLAGSHIP) -->
                 <article class="case-study-card case-study-flagship">
                     <div class="case-study-image">
-                        <picture><source srcset="carousel-thumb-deere-ux.webp" type="image/webp"><img src="carousel-thumb-deere-ux.png" alt="Deere Common UX" width="250" height="250"></picture>
+                        <picture><source srcset="carousel-thumb-thios.webp" type="image/webp"><img src="carousel-thumb-thios.png" alt="Thios 5-surface design system" width="250" height="250"></picture>
                     </div>
                     <div class="case-study-body">
-                        <p class="slide-label">FLAGSHIP · FORCED ADOPTION</p>
-                        <h3 class="project-title phosphor-text">DEERE: 34%→87% ADOPTION AT SCALE</h3>
+                        <p class="slide-label">FLAGSHIP · FOUNDER · 5-SURFACE SYSTEM</p>
+                        <h3 class="project-title phosphor-text">THIOS: ONE SOURCE OF TRUTH, FIVE SURFACES</h3>
+                        <div class="project-structure">
+                            <p class="structure-item"><span class="structure-label">Challenge:</span> 6 sub-brands across 4 production sites plus an OnShape CAD source. Drift is the default, not a possibility.</p>
+                            <p class="structure-item"><span class="structure-label">Approach:</span> Five canonical surfaces (DESIGN.md ↔ tokens.json ↔ main.css ↔ design-system.html ↔ OnShape) kept aligned by agent-driven audits.</p>
+                            <p class="structure-item"><span class="structure-label">Result:</span> 5 surfaces in sync · 212 design tokens · 7 drift findings caught in May audit · 1 designer</p>
+                        </div>
+                        <a href="case-studies/thios.php" class="project-link brutalist-link">VIEW CASE STUDY →</a>
+                    </div>
+                </article>
+
+                <!-- 2. Thios — Open-Hardware Flywheel -->
+                <article class="case-study-card">
+                    <div class="case-study-image">
+                        <picture><source srcset="carousel-thumb-thios.webp" type="image/webp"><img src="carousel-thumb-thios.png" alt="Thios open-hardware flywheel" loading="lazy" width="250" height="250"></picture>
+                    </div>
+                    <div class="case-study-body">
+                        <p class="slide-label">FOUNDER · OPEN HARDWARE · FLYWHEEL</p>
+                        <h3 class="project-title">THIOS: THE CAD IS THE PRODUCT</h3>
+                        <div class="project-structure">
+                            <p class="structure-item"><span class="structure-label">Challenge:</span> Traditional manufacturing scales by building factories. A solo founder cannot.</p>
+                            <p class="structure-item"><span class="structure-label">Approach:</span> One OnShape file drives BoM + the configurator's 3D. CERN-OHL-S license + builder tools route demand to local makers; their builds + share-alike modifications flow back into the CAD.</p>
+                            <p class="structure-item"><span class="structure-label">Result:</span> Configurator + license + First Builders program live · 6 sphere variants · 0 factories built</p>
+                        </div>
+                        <a href="case-studies/thios-flywheel.php" class="project-link brutalist-link">VIEW CASE STUDY →</a>
+                    </div>
+                </article>
+
+                <!-- 3. Deere Common UX — Forced adoption at scale -->
+                <article class="case-study-card">
+                    <div class="case-study-image">
+                        <picture><source srcset="carousel-thumb-deere-ux.webp" type="image/webp"><img src="carousel-thumb-deere-ux.png" alt="Deere Common UX" loading="lazy" width="250" height="250"></picture>
+                    </div>
+                    <div class="case-study-body">
+                        <p class="slide-label">ENTERPRISE · FORCED ADOPTION</p>
+                        <h3 class="project-title">DEERE: 34%→87% ADOPTION AT SCALE</h3>
                         <div class="project-structure">
                             <p class="structure-item"><span class="structure-label">Challenge:</span> 500K users were actively avoiding profile completion — every empty field blocked $3.8B in AI and automation revenue.</p>
                             <p class="structure-item"><span class="structure-label">Approach:</span> Led design of a multi-channel forced adoption flow across 8 product lines without destroying trust</p>
@@ -313,7 +336,7 @@
                     </div>
                 </article>
 
-                <!-- 2. Deere Nav - Platform governance -->
+                <!-- 4. Deere Nav — Platform governance -->
                 <article class="case-study-card">
                     <div class="case-study-image">
                         <picture><source srcset="carousel-thumb-deere-nav.webp" type="image/webp"><img src="carousel-thumb-deere-nav.png" alt="Deere Consistent Nav" loading="lazy" width="250" height="250"></picture>
@@ -330,7 +353,7 @@
                     </div>
                 </article>
 
-                <!-- 3. FourKites Tracking - Trust in uncertain data -->
+                <!-- 5. FourKites Tracking — Trust in uncertain data -->
                 <article class="case-study-card">
                     <div class="case-study-image">
                         <picture><source srcset="carousel-thumb-fourkites-tracking.webp" type="image/webp"><img src="carousel-thumb-fourkites-tracking.png" alt="FourKites Tracking" loading="lazy" width="250" height="250"></picture>
@@ -347,7 +370,7 @@
                     </div>
                 </article>
 
-                <!-- 4. FourKites Driver - Incentive alignment -->
+                <!-- 6. FourKites Driver — Incentive alignment -->
                 <article class="case-study-card">
                     <div class="case-study-image">
                         <picture><source srcset="carousel-thumb-fourkites-driver.webp" type="image/webp"><img src="carousel-thumb-fourkites-driver.png" alt="FourKites Driver" loading="lazy" width="250" height="250"></picture>
@@ -361,23 +384,6 @@
                             <p class="structure-item"><span class="structure-label">Result:</span> 32% more tracked shipments · Driver NPS +28</p>
                         </div>
                         <a href="case-studies/fourkites-driver.php" class="project-link brutalist-link">VIEW CASE STUDY →</a>
-                    </div>
-                </article>
-
-                <!-- 5. Thios - AI as force multiplier -->
-                <article class="case-study-card">
-                    <div class="case-study-image">
-                        <picture><source srcset="carousel-thumb-thios.webp" type="image/webp"><img src="carousel-thumb-thios.png" alt="Thios Project" loading="lazy" width="250" height="250"></picture>
-                    </div>
-                    <div class="case-study-body">
-                        <p class="slide-label">FOUNDER · 0→1 · AGENT-NATIVE</p>
-                        <h3 class="project-title">THIOS: BRAND TO REVENUE, SOLO</h3>
-                        <div class="project-structure">
-                            <p class="structure-item"><span class="structure-label">Context:</span> Between enterprise roles, shipped a complete product ecosystem solo — brand, 3 websites, 3D configurator, and 5 physical product variants.</p>
-                            <p class="structure-item"><span class="structure-label">How:</span> Design + code + AI tooling. Built in React, Three.js, and production CSS. Revenue-generating in 18 months.</p>
-                            <p class="structure-item"><span class="structure-label">Why it matters:</span> Demonstrates full-stack design range — from strategy to shipping code in production.</p>
-                        </div>
-                        <a href="case-studies/thios.php" class="project-link brutalist-link">VIEW CASE STUDY →</a>
                     </div>
                 </article>
 
