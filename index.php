@@ -8,7 +8,7 @@
     <link rel="icon" type="image/svg+xml" href="pblogo.svg">
     <link rel="apple-touch-icon" href="pblogo.png">
     <meta name="description"
-        content="Staff Product Designer. $3.8B revenue enabled at John Deere. Design org scaled 1→10 at FourKites ($1B+ valuation). 500K+ users, 40+ teams, 15 years shipping enterprise systems.">
+        content="Staff Product Designer · UX systems thinker. $3.8B platform at Deere (500K users) across web, mobile, embedded. Design org 1→10 at FourKites scaling IoT asset-tracking ($1B+ valuation). Now founder of Thios — AI-native workflow shipping a CAD-driven configurator and dev-grade design system.">
     <meta name="keywords"
         content="Peter Bartsch, staff product designer, enterprise design systems, UX leader, design org leadership, portfolio">
     <meta name="author" content="Peter Bartsch">
@@ -17,23 +17,23 @@
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://petebartsch.com/">
-    <meta property="og:title" content="Peter Bartsch — Staff Product Designer">
+    <meta property="og:title" content="Peter Bartsch — Staff Product Designer · UX systems thinker">
     <meta property="og:description"
-        content="Staff Product Designer. $3.8B revenue enabled. 500K+ users shipped to. Design org built 1→10. Enterprise systems that actually get adopted.">
+        content="$3.8B platform at Deere across web, mobile, embedded. Design org 1→10 at FourKites scaling IoT asset-tracking ($1B+ valuation). Now founder of Thios — AI-native workflow, CAD-driven configurator, dev-grade design system.">
     <meta property="og:site_name" content="Peter Bartsch">
     <meta property="og:image" content="https://petebartsch.com/og-image.png">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
-    <meta property="og:image:alt" content="Peter Bartsch — Staff Product Designer | $3.8B Revenue Enabled | 500K+ Users">
+    <meta property="og:image:alt" content="Peter Bartsch — Staff Product Designer · UX systems thinker">
     <meta property="og:locale" content="en_US">
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Peter Bartsch — Staff Product Designer">
+    <meta name="twitter:title" content="Peter Bartsch — Staff Product Designer · UX systems thinker">
     <meta name="twitter:description"
-        content="Staff Product Designer. $3.8B revenue enabled. 500K+ users shipped to. Design org built 1→10. Enterprise systems that actually get adopted.">
+        content="$3.8B platform at Deere across web, mobile, embedded. Design org 1→10 at FourKites scaling IoT asset-tracking ($1B+ valuation). Now founder of Thios — AI-native workflow, CAD-driven configurator, dev-grade design system.">
     <meta name="twitter:image" content="https://petebartsch.com/og-image.png">
-    <meta name="twitter:image:alt" content="Peter Bartsch — Staff Product Designer | Enterprise Systems & Design Orgs">
+    <meta name="twitter:image:alt" content="Peter Bartsch — Staff Product Designer · UX systems thinker">
 
     <meta name="theme-color" content="#2f4f50">
     <meta name="theme-color" content="#2f4f50" media="(prefers-color-scheme: light)">
@@ -55,7 +55,7 @@
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-QB3EL923YF"></script>
     <script src="analytics.js"></script>
 
-    <title>Peter Bartsch — Staff Product Designer | Enterprise Adoption & Design Orgs</title>
+    <title>Peter Bartsch — Staff Product Designer · UX systems thinker</title>
 
     <!-- Font Preloads -->
     <link rel="preload" href="rombyte.woff2" as="font" type="font/woff2" crossorigin>
@@ -212,9 +212,9 @@
                     <div class="hero-text">
                         <p class="hero-kicker">30 years on the web. 15 in enterprise. Same operator.</p>
                         <p class="hero-name">PETER BARTSCH</p>
-                        <h2 id="title" class="phosphor-text">Staff Product Designer — Enterprise Platforms & 0→1</h2>
-                        <p class="hero-proof">Few designers ship $3.8B enterprise platforms <em>and</em> invent modular shelters running on their own agent-native design system. I do both.</p>
-                        <p class="hero-open-to">// OPEN TO: Staff/Principal IC roles · Design leadership at agent-native shops · Founding-team consulting</p>
+                        <h2 id="title" class="phosphor-text">Staff Product Designer · UX systems thinker</h2>
+                        <p class="hero-proof">Few designers ship $3.8B enterprise platforms <em>and</em> run an AI-native workflow producing a dev-grade design system with its own published Claude Skill. I do both.</p>
+                        <p class="hero-open-to">// OPEN TO: Staff/Principal IC roles · UX leadership at AI-native shops · Founding-team consulting</p>
                         <div class="hero-cta-row">
                             <!-- Direct mailto for highest-intent inquiries. Higher conversion than a contact form for senior IC reach-outs.
                                  Easy swap to Cal.com / SavvyCal / etc. — just change href + label. -->
@@ -224,7 +224,7 @@
                         <div class="recruiter-summary">
                             <div class="summary-item summary-item-scale"><span class="summary-label">Scale</span><span class="summary-value">500K users · $3.8B revenue · 40+ teams</span></div>
                             <div class="summary-item"><span class="summary-label">Level</span><span class="summary-value">Staff / Principal IC · Founder</span></div>
-                            <div class="summary-item"><span class="summary-label">Domains</span><span class="summary-value">Enterprise SaaS · Supply Chain · Agent-native systems</span></div>
+                            <div class="summary-item"><span class="summary-label">Domains</span><span class="summary-value">Enterprise SaaS · IoT / Supply Chain · AI-native design systems</span></div>
                             <div class="summary-item"><span class="summary-label">Range</span><span class="summary-value">IC + Leadership (built teams 1→10)</span></div>
                         </div>
                     </div>
@@ -249,7 +249,7 @@
                     </div>
                     <div class="about-content">
                         <p class="about-bio">
-                            I lead design for the problems that stall enterprises — forced adoption, platform fragmentation, trust in uncertain data. At Deere, I unlocked $3.8B in revenue across 500K users. At FourKites, I built the design org from 1 to 10 through $3M→$100M ARR. Now I'm founder of <a href="https://thios.co" target="_blank" rel="noopener">Thios</a> — <a href="case-studies/thios-flywheel.php">open-hardware modular structures</a> where one parametric CAD file drives the bill of materials, the <a href="https://thios.co/configurator/" target="_blank" rel="noopener">3D configurator</a>, and a share-alike maker feedback loop. I ship end-to-end: strategy, brand, <a href="case-studies/thios.php">design system</a>, code, CAD, and the distribution model that scales without factories.
+                            I lead design for the problems that stall enterprises — forced adoption, platform fragmentation, trust in uncertain data. At Deere, I unlocked $3.8B across 500K users on web, mobile, and embedded equipment systems. At FourKites, I built the design org from 1 to 10 scaling a real-time IoT asset-tracking platform ($3M→$100M ARR, $1B+ valuation). Now I'm founder of <a href="https://thios.co" target="_blank" rel="noopener">Thios</a> — running an AI-native workflow (Claude, Cursor, Figma Make) to ship a <a href="https://thios.co/configurator/" target="_blank" rel="noopener">CAD-driven 3D configurator</a>, a <a href="case-studies/thios.php">dev-grade design system</a> with its own <a href="https://github.com/Thios-and-Company/audit-design-token-drift" target="_blank" rel="noopener">published Claude Skill</a>, and <a href="case-studies/thios-flywheel.php">physical hardware</a>. I own systems thinking, journey mapping, state coverage, and edge cases; agents implement.
                         </p>
                     </div>
                 </div>
@@ -260,7 +260,7 @@
                     <span class="strength-tag">Design Org Leadership (1→10)</span>
                     <span class="strength-tag">Forced Adoption & Retention</span>
                     <span class="strength-tag">0→1 in Complex Domains</span>
-                    <span class="strength-tag">Open-Hardware Product Systems</span>
+                    <span class="strength-tag">AI-Native Workflow</span>
                 </div>
             </section>
 
