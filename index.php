@@ -288,7 +288,7 @@
                 <!-- 2. Thios — Open-Hardware Flywheel -->
                 <article class="case-study-card">
                     <div class="case-study-image">
-                        <picture><source srcset="carousel-thumb-thios.webp" type="image/webp"><img src="carousel-thumb-thios.png" alt="Thios open-hardware flywheel" loading="lazy" width="250" height="250"></picture>
+                        <picture><source srcset="carousel-thumb-thios-flywheel.webp" type="image/webp"><img src="carousel-thumb-thios-flywheel.png" alt="Thios open-hardware flywheel — 3D configurator with module picker and Get Local Quotes handoff" loading="lazy" width="250" height="250"></picture>
                     </div>
                     <div class="case-study-body">
                         <p class="slide-label">FOUNDER · OPEN HARDWARE · FLYWHEEL</p>
