@@ -4,28 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resume | Peter Bartsch — Staff Product Designer</title>
-    <meta name="description" content="Peter Bartsch — Staff Product Designer. 15+ years designing enterprise systems shipped to 500K+ users. John Deere, FourKites ($1B+ valuation), MavenWave.">
+    <meta name="description" content="Peter Bartsch — Staff Product Designer · UX systems thinker. Led UX for $3.8B platform at Deere (500K users). Built design org 1→10 at FourKites ($1B+ valuation). Now founder of Thios — AI-native workflow shipping a CAD-driven configurator and dev-grade design system.">
     <link rel="canonical" href="https://petebartsch.com/resume">
     <link rel="icon" type="image/svg+xml" href="pblogo.svg">
 
     <!-- Open Graph -->
     <meta property="og:type" content="profile">
     <meta property="og:url" content="https://petebartsch.com/resume">
-    <meta property="og:title" content="Resume | Peter Bartsch — Staff Product Designer · Founder">
-    <meta property="og:description" content="$3.8B revenue enabled at Deere. Design org 1→10 at FourKites ($3M→$100M ARR). Now founder of Thios — open-hardware modular structures.">
+    <meta property="og:title" content="Resume | Peter Bartsch — Staff Product Designer · UX systems thinker">
+    <meta property="og:description" content="UX systems thinker. $3.8B platform at Deere across web, mobile, embedded. Design org 1→10 at FourKites scaling IoT asset-tracking ($1B+ valuation). Now founder of Thios — AI-native workflow, CAD-driven configurator, dev-grade design system.">
     <meta property="og:site_name" content="Peter Bartsch">
     <meta property="og:image" content="https://petebartsch.com/og-image.png">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
-    <meta property="og:image:alt" content="Peter Bartsch — Staff Product Designer · Founder">
+    <meta property="og:image:alt" content="Peter Bartsch — Staff Product Designer · UX systems thinker">
     <meta property="og:locale" content="en_US">
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Resume | Peter Bartsch — Staff Product Designer · Founder">
-    <meta name="twitter:description" content="$3.8B revenue enabled at Deere. Design org 1→10 at FourKites ($3M→$100M ARR). Now founder of Thios — open-hardware modular structures.">
+    <meta name="twitter:title" content="Resume | Peter Bartsch — Staff Product Designer · UX systems thinker">
+    <meta name="twitter:description" content="UX systems thinker. $3.8B platform at Deere across web, mobile, embedded. Design org 1→10 at FourKites scaling IoT asset-tracking ($1B+ valuation). Now founder of Thios — AI-native workflow, CAD-driven configurator, dev-grade design system.">
     <meta name="twitter:image" content="https://petebartsch.com/og-image.png">
-    <meta name="twitter:image:alt" content="Peter Bartsch — Staff Product Designer · Founder">
+    <meta name="twitter:image:alt" content="Peter Bartsch — Staff Product Designer · UX systems thinker">
 
     <!-- Fonts -->
     <link rel="preload" href="rombyte.ttf" as="font" type="font/ttf" crossorigin>
@@ -338,8 +338,8 @@
 
         <header class="resume-header">
             <h1 class="resume-name">Peter Bartsch</h1>
-            <p class="resume-title">Staff Product Designer · Founder</p>
-            <p class="resume-summary">Led design for $3.8B platform at Deere (500K users). Built design org 1→10 at FourKites through $3M→$100M ARR ($1B+ valuation). Now founder of Thios (<a href="https://thios.co" target="_blank" rel="noopener">thios.co</a>) — open-hardware modular structures with a CAD-driven configurator and a 5-surface design system.</p>
+            <p class="resume-title">Staff Product Designer · UX systems thinker</p>
+            <p class="resume-summary">Led UX for a $3.8B subscription platform at Deere across web, mobile, and embedded equipment systems (500K users, 12 languages). Built design org 1→10 at FourKites scaling a real-time IoT asset-tracking platform processing 10M+ daily events ($3M→$100M ARR, $1B+ valuation). Now founder of Thios (<a href="https://thios.co" target="_blank" rel="noopener">thios.co</a>) — running an AI-native workflow (Claude, Cursor, Figma Make) to ship a CAD-driven configurator, dev-grade design system with its own Claude Skill, and physical hardware.</p>
             <!-- Download dropdown — PDF featured at top; all 7 formats available.
                  Uses <details>/<summary> so the menu open/close is browser-native
                  (no JS needed for that). A tiny script at the bottom closes it
@@ -374,7 +374,7 @@
                 <div class="receipts-item"><span class="receipts-num">$4B+</span><span class="receipts-text">Combined business impact &mdash; Deere ($3.8B) + FourKites ($1B+ valuation)</span></div>
                 <div class="receipts-item"><span class="receipts-num">1</span><span class="receipts-text">Founded company &mdash; <a href="https://thios.co" target="_blank" rel="noopener">Thios</a>, modular structures, 6 sub-brands</span></div>
                 <div class="receipts-item"><span class="receipts-num">6</span><span class="receipts-text">Thios sphere variants from one parametric CAD &mdash; <a href="https://thios.co/configurator/" target="_blank" rel="noopener">3D configurator</a></span></div>
-                <div class="receipts-item"><span class="receipts-num">OHL-S</span><span class="receipts-text">CERN strong-reciprocal open-hardware license routing demand to local makers</span></div>
+                <div class="receipts-item"><span class="receipts-num">1</span><span class="receipts-text">Published Claude Skill &mdash; <a href="https://github.com/Thios-and-Company/audit-design-token-drift" target="_blank" rel="noopener"><code>audit-design-token-drift</code></a></span></div>
             </div>
         </div>
 
@@ -387,11 +387,12 @@
                     <span class="resume-role-dates">Aug 2024 – Present</span>
                 </div>
                 <p class="resume-role-title">Founder & Lead Designer</p>
-                <p class="resume-role-summary">Open-source modular structures (saunas, greenhouses, offices) running on a 5-surface design system where I'm the only designer and agents are the team.</p>
+                <p class="resume-role-summary">Open-source modular structures running on a 5-surface design system where I'm the only designer and agents are the engineering team, every surface (dashboard/configurator, docs, marketing, mobile, CAD) ships from one source of truth.</p>
                 <ul class="resume-role-bullets">
-                    <li>Shipped a complete product ecosystem solo in 18 months: brand, 3 websites, 6 sphere variants with CAD models, physical prototype, first revenue</li>
-                    <li>One parametric OnShape CAD file drives the bill of materials and the <a href="https://thios.co/configurator/" target="_blank" rel="noopener">3D configurator at thios.co/configurator</a> &mdash; customers see actual geometry, not marketing renders</li>
-                    <li>Open-hardware distribution under CERN-OHL-S v2: license + builder tools route demand to local makers; share-alike modifications loop back into the CAD &mdash; capital-light scale without factories</li>
+                    <li><strong>Shipped a complete product ecosystem solo in 18 months</strong> across every surface &mdash; dashboard/configurator, docs, marketing sites, mobile, and physical hardware (6 sphere variants with CAD models, prototype, first revenue)</li>
+                    <li><strong>Designed and built parametric OnShape CAD as the single source of truth</strong> driving BOM and the <a href="https://thios.co/configurator/" target="_blank" rel="noopener">3D configurator at thios.co/configurator</a> &mdash; customers manipulate real geometry with full configuration state (valid/invalid combinations, loading, error, empty, BOM hand-off), not marketing renders</li>
+                    <li><strong>Built a 5-surface, dev-grade design system</strong>, published its first Claude Skill (<a href="https://github.com/Thios-and-Company/audit-design-token-drift" target="_blank" rel="noopener"><code>audit-design-token-drift</code></a>) that catches design-token drift across canonical surfaces with file:line citations. Design system as dev tooling, not a Figma library nobody opens &mdash; <a href="https://www.thios.co/design-system-architecture.html" target="_blank" rel="noopener">thios.co/design-system-architecture</a></li>
+                    <li><strong>Operate an end-to-end AI-native workflow</strong> (Claude, Cursor, Figma Make, Adobe Firefly, Obsidian) from research and IA through dev-ready handoff &mdash; agents implement while I own systems thinking, journey mapping, state coverage, and edge cases</li>
                 </ul>
             </div>
 
@@ -401,11 +402,11 @@
                     <span class="resume-role-dates">Aug 2020 – Jul 2024</span>
                 </div>
                 <p class="resume-role-title">Senior Lead UX; Digital Customer Experience</p>
-                <p class="resume-role-summary">Embedded with product teams to modernize 20-year-old systems and drive subscription revenue. Proving enterprise design can move fast when you have the right frameworks.</p>
+                <p class="resume-role-summary">Embedded with product teams to modernize 20-year-old systems and drive subscription revenue across connected agricultural equipment. Proving enterprise design can move fast with the right frameworks.</p>
                 <ul class="resume-role-bullets">
-                    <li>Redesigned license management system serving 500K+ users across 12 languages—increased authenticated engagement 34%, reduced support tickets 16%, enabled $3.8B in subscription revenue from Automation and AI services</li>
-                    <li>Built unified account and navigation framework deployed across 8 product lines (web, mobile, embedded)—consolidated fragmented experiences into single customer view, improved dealer support efficiency 28%</li>
-                    <li>Core contributor to enterprise design system in Figma spanning 6 brands and 40+ product teams globally—reduced design-to-development handoff time 45% through standardized components that actually shipped</li>
+                    <li><strong>Redesigned the license management system</strong> for connected ag equipment (Automation/AI services) serving 500K+ users across 12 languages &mdash; mapped flows, license states, and edge cases (expired/renewed/transferred/dealer-managed); +34% authenticated engagement, &ndash;16% support tickets, enabled $3.8B in subscription revenue</li>
+                    <li><strong>Built a unified account and navigation framework</strong> deployed across 8 product lines spanning web, mobile, and embedded equipment systems &mdash; consolidated fragmented experiences into a single customer view; +28% dealer support efficiency</li>
+                    <li><strong>Core contributor to the enterprise design system in Figma</strong> spanning 6 brands and 40+ product teams globally &mdash; produced dev-ready handoffs (tokens, prop specs, full state coverage) that reduced design-to-development time 45% on components that actually shipped</li>
                 </ul>
             </div>
 
@@ -415,11 +416,11 @@
                     <span class="resume-role-dates">Jan 2017 – Jan 2020</span>
                 </div>
                 <p class="resume-role-title">Lead UX / Manager</p>
-                <p class="resume-role-summary">Employee #28 during hypergrowth, $3M to $100M ARR ($1B+ valuation). Built design function from scratch—founding designer to 10-person global team.</p>
+                <p class="resume-role-summary">Employee #28 during hypergrowth, $3M → $100M ARR ($1B+ valuation). Built the design function from scratch &mdash; founding designer to a 10-person global team.</p>
                 <ul class="resume-role-bullets">
-                    <li>Designed flagship products from 0→1: Real-time supply chain control tower and related mobile apps processing 10M+ daily tracking events for 30+ Fortune 2000 companies (Anheuser-Busch, Georgia-Pacific, Tyson); products became primary driver of 3x customer expansion</li>
-                    <li>Led bespoke predictive analytics dashboard products identifying shipment delays 6-12 hours earlier than competitors; increased customer retention 41% and expanded average contract value $120K annually</li>
-                    <li>Scaled design org: Hired and managed team across Chicago and Chennai; established component library, design operations, and hiring framework—reduced design inconsistencies 65% while maintaining startup velocity</li>
+                    <li><strong>Designed flagship IoT asset-tracking platform 0→1</strong> &mdash; real-time supply chain control tower (web) and mobile apps processing 10M+ daily GPS/telematics events for 30+ Fortune 2000 customers (Anheuser-Busch, Georgia-Pacific, Tyson); high-density dashboards with map, list, and timeline views became the primary driver of 3x customer expansion</li>
+                    <li><strong>Led predictive analytics dashboards</strong> (data viz, anomaly states, alerting workflows) that identified shipment delays 6&ndash;12 hours earlier than competitors; +41% retention, +$120K avg ACV</li>
+                    <li><strong>Scaled the design org across Chicago and Chennai</strong> embedded in engineering sprint cadence; established component library, design ops, and hiring framework &mdash; &ndash;65% design inconsistencies while maintaining startup velocity</li>
                 </ul>
             </div>
 
@@ -429,11 +430,39 @@
                     <span class="resume-role-dates">Jan 2014 – Jan 2017</span>
                 </div>
                 <p class="resume-role-title">Senior UX + Agile Lead (Consultant)</p>
-                <p class="resume-role-summary">Led digital product design for Fortune 500 healthcare and pharmaceutical clients. Fast iteration in slow-moving industries.</p>
+                <p class="resume-role-summary">Led digital product design for Fortune 500 healthcare and pharma clients. Fast iteration in slow-moving industries.</p>
                 <ul class="resume-role-bullets">
-                    <li>Designed 6 internal portals for AbbVie supporting 200K+ users across clinical trials and patient support programs—improved medication adherence tracking, reduced hospital readmissions 12%</li>
-                    <li>Rebuilt OptumRx pharmacy formulary platform processing 1.4B prescriptions annually—created company's first patient-facing product, reduced fulfillment errors 15% through improved drug interaction warnings</li>
-                    <li>Established Lean UX and Agile practices across client engagements while mentoring junior designers and leading cross-functional design sprints</li>
+                    <li><strong>Designed 6 internal portals for AbbVie</strong> supporting 200K+ users across clinical trials and patient support programs &mdash; improved medication adherence tracking, &ndash;12% hospital readmissions</li>
+                    <li>Rebuilt OptumRx pharmacy formulary platform processing 1.4B prescriptions annually &mdash; created the company's first patient-facing product; &ndash;15% fulfillment errors via improved drug-interaction warnings</li>
+                    <li><strong>Established Lean UX</strong> and Agile/sprint-cadence practices across client engagements while mentoring junior designers and leading cross-functional design sprints</li>
+                </ul>
+            </div>
+
+            <div class="resume-role">
+                <div class="resume-role-header">
+                    <h3 class="resume-role-company">Nokia / HERE Maps</h3>
+                    <span class="resume-role-dates">Aug 2012 &ndash; Jan 2014</span>
+                </div>
+                <p class="resume-role-title">Product Marketing Manager, HERE Traffic</p>
+                <p class="resume-role-summary">Product work across real-time vehicle-telematics data products and an open-source distributed computing project (DEMPSY, a Hadoop alternative).</p>
+                <ul class="resume-role-bullets">
+                    <li><strong>Designed GPS probe visualizations</strong> and a probe viewer app for real-time connected-vehicle telematics analysis</li>
+                    <li><strong>Wireframed and led project delivery for HERE Real-Time Traffic and Trapster app</strong> integrations across connected-vehicle data products</li>
+                    <li><strong>Owned go-to-market for DEMPSY,</strong> an open-source distributed computing platform &mdash; early exposure to designing for developer audiences</li>
+                </ul>
+            </div>
+
+            <div class="resume-role">
+                <div class="resume-role-header">
+                    <h3 class="resume-role-company">Gogo Inflight Internet</h3>
+                    <span class="resume-role-dates">Apr 2008 &ndash; Aug 2012</span>
+                </div>
+                <p class="resume-role-title">Product Manager &mdash; Signature Services</p>
+                <p class="resume-role-summary">Aerospace connectivity: launched in-flight internet across major US airlines &mdash; onboard hardware + Air-to-Ground RF network. $700M go-to-market.</p>
+                <ul class="resume-role-bullets">
+                    <li><strong>Owned airborne products and onboard hardware UX</strong> for major US airlines, including initial rollout testing across fleets</li>
+                    <li><strong>Authored FAA-approved documentation</strong> for business and commercial fleet Air-to-Ground (ATG) RF connectivity systems</li>
+                    <li><strong>Designed an in-flight flight tracker 0→1</strong> (real-time positional data + passenger UX) that drove successful sponsorship deals</li>
                 </ul>
             </div>
 
@@ -442,16 +471,20 @@
         <section class="resume-section">
             <h2 class="resume-section-title">Skills</h2>
             <div class="resume-skills-category">
-                <h3 class="resume-skills-heading">Design Leadership</h3>
-                <p class="resume-skills-list">Enterprise Design Systems • Cross-functional Team Building • Design Operations • Information Architecture • Data Visualization • Accessibility (WCAG 2.1)</p>
+                <h3 class="resume-skills-heading">UX Systems</h3>
+                <p class="resume-skills-list">User flows &middot; journey mapping &middot; IA &middot; interaction design &middot; state management &middot; edge-case coverage (idle/loading/success/error/empty) &middot; information density &middot; dashboards &middot; enterprise design systems &middot; design tokens &middot; accessibility (WCAG 2.1)</p>
             </div>
             <div class="resume-skills-category">
-                <h3 class="resume-skills-heading">Research & Strategy</h3>
-                <p class="resume-skills-list">User Research • Usability Testing • Journey Mapping • Design Sprints • Lean UX • Agile/Scrum</p>
+                <h3 class="resume-skills-heading">Research & Methods</h3>
+                <p class="resume-skills-list">User interviews &middot; usability testing &middot; design sprints &middot; Lean UX &middot; Agile/Scrum sprint cadence &middot; PRD/RFC participation</p>
+            </div>
+            <div class="resume-skills-category">
+                <h3 class="resume-skills-heading">AI-Native Workflow</h3>
+                <p class="resume-skills-list">Claude (incl. authoring custom Claude Skills) &middot; Cursor &middot; Figma Make &middot; Adobe Firefly &middot; Midjourney &middot; Obsidian as knowledge base</p>
             </div>
             <div class="resume-skills-category">
                 <h3 class="resume-skills-heading">Tools</h3>
-                <p class="resume-skills-list">Figma • Adobe Creative Suite • CAD/3D (OnShape) • HTML/CSS • AI Tools (Claude, Cursor) • Prototyping • AI-Augmented Workflows • AI-Integrated Design • Blender 3D</p>
+                <p class="resume-skills-list">Figma &middot; OnShape CAD &middot; Blender 3D &middot; HTML/CSS &middot; Adobe Creative Suite</p>
             </div>
         </section>
 
@@ -462,7 +495,7 @@
 
         <section class="resume-section">
             <h2 class="resume-section-title">Community</h2>
-            <p class="resume-education-item"><strong>Board Director</strong> | How Weird Street Faire 501(c)(3) SF street fair with successful 20 year run (2004 - 2024)</p>
+            <p class="resume-education-item"><strong>Member, Board of Directors</strong> | How Weird Street Faire 501(c)(3) San Francisco Street Fair 2000 &ndash; 2024</p>
         </section>
 
     </main>
