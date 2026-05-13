@@ -8,7 +8,7 @@
     <link rel="icon" type="image/svg+xml" href="pblogo.svg">
     <link rel="apple-touch-icon" href="pblogo.png">
     <meta name="description"
-        content="Staff Product Designer · UX systems thinker. $3.8B platform at Deere (500K users) across web, mobile, embedded. Design org 1→10 at FourKites scaling IoT asset-tracking ($1B+ valuation). Now founder of Thios — AI-native workflow shipping a CAD-driven configurator and dev-grade design system.">
+        content="Staff Product Designer — design systems · AI-native workflow. $3.8B platform at Deere (500K users) across web, mobile, embedded. Design org 1→10 at FourKites scaling IoT asset-tracking ($1B+ valuation). Now founder of Thios — AI-native workflow shipping a CAD-driven configurator and dev-grade design system.">
     <meta name="keywords"
         content="Peter Bartsch, staff product designer, enterprise design systems, UX leader, design org leadership, portfolio">
     <meta name="author" content="Peter Bartsch">
@@ -17,23 +17,23 @@
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://petebartsch.com/">
-    <meta property="og:title" content="Peter Bartsch — Staff Product Designer · UX systems thinker">
+    <meta property="og:title" content="Peter Bartsch — Staff Product Designer — design systems · AI-native workflow">
     <meta property="og:description"
         content="$3.8B platform at Deere across web, mobile, embedded. Design org 1→10 at FourKites scaling IoT asset-tracking ($1B+ valuation). Now founder of Thios — AI-native workflow, CAD-driven configurator, dev-grade design system.">
     <meta property="og:site_name" content="Peter Bartsch">
     <meta property="og:image" content="https://petebartsch.com/og-image.png">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
-    <meta property="og:image:alt" content="Peter Bartsch — Staff Product Designer · UX systems thinker">
+    <meta property="og:image:alt" content="Peter Bartsch — Staff Product Designer — design systems · AI-native workflow">
     <meta property="og:locale" content="en_US">
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Peter Bartsch — Staff Product Designer · UX systems thinker">
+    <meta name="twitter:title" content="Peter Bartsch — Staff Product Designer — design systems · AI-native workflow">
     <meta name="twitter:description"
         content="$3.8B platform at Deere across web, mobile, embedded. Design org 1→10 at FourKites scaling IoT asset-tracking ($1B+ valuation). Now founder of Thios — AI-native workflow, CAD-driven configurator, dev-grade design system.">
     <meta name="twitter:image" content="https://petebartsch.com/og-image.png">
-    <meta name="twitter:image:alt" content="Peter Bartsch — Staff Product Designer · UX systems thinker">
+    <meta name="twitter:image:alt" content="Peter Bartsch — Staff Product Designer — design systems · AI-native workflow">
 
     <meta name="theme-color" content="#2f4f50">
     <meta name="theme-color" content="#2f4f50" media="(prefers-color-scheme: light)">
@@ -55,7 +55,7 @@
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-QB3EL923YF"></script>
     <script src="analytics.js"></script>
 
-    <title>Peter Bartsch — Staff Product Designer · UX systems thinker</title>
+    <title>Peter Bartsch — Staff Product Designer — design systems · AI-native workflow</title>
 
     <!-- Font Preloads -->
     <link rel="preload" href="rombyte.woff2" as="font" type="font/woff2" crossorigin>
@@ -212,7 +212,7 @@
                     <div class="hero-text">
                         <p class="hero-kicker">30 years on the web. 15 in enterprise. Same operator.</p>
                         <p class="hero-name">PETER BARTSCH</p>
-                        <h2 id="title" class="phosphor-text">Staff Product Designer · UX systems thinker</h2>
+                        <h2 id="title" class="phosphor-text">Staff Product Designer — design systems · AI-native workflow</h2>
                         <p class="hero-proof">Few designers ship $3.8B enterprise platforms <em>and</em> run an AI-native workflow producing a dev-grade design system with its own published Claude Skill. I do both.</p>
                         <p class="hero-open-to">// OPEN TO: Staff/Principal IC roles · UX leadership at AI-native shops · Founding-team consulting</p>
                         <div class="hero-cta-row">
@@ -450,7 +450,7 @@
                             </tr>
                             <tr>
                                 <td class="year-range">2014-2017</td>
-                                <td>Senior UX + Agile Lead (Consultant)</td>
+                                <td>Senior UX + Agile Lead</td>
                                 <td><a href="#" id="openModal4">MavenWave Partners</a></td>
                             </tr>
 
@@ -469,7 +469,7 @@
                                 <td colspan="2">
                                     <ul class="inline-bullets">
                                         <li><strong>Problem:</strong> Between-roles project: shipped a full product ecosystem solo with AI</li>
-                                        <li><strong>Result:</strong> Brand + 3 websites + 5 product variants + revenue in 18 months</li>
+                                        <li><strong>Result:</strong> Brand + 3 websites + 6 sphere variants + revenue in 21 months</li>
                                         <li><strong>Approach:</strong> AI as technical force multiplier; side project proving technical range</li>
                                     </ul>
                                     <a href="case-studies/thios.php" class="view-more">View Case Study →</a>
@@ -527,7 +527,7 @@
             <h2 id="myModal1-title">Thios</h2>
             <p class="modal-role">Founder & Lead Designer</p>
             <p class="modal-dates">Aug 2024 - Present</p>
-            <p class="modal-summary">AI as technical co-founder • Complete product ecosystem in 18 months • Idea to revenue solo</p>
+            <p class="modal-summary">AI as technical co-founder • Complete product ecosystem in 21 months • Idea to revenue solo</p>
             <div class="modal-cta-container">
                 <a href="case-studies/thios.php" class="modal-case-study-cta">View Full Case Study →</a>
             </div>
@@ -596,7 +596,7 @@
         <div class="modal-content">
             <button class="close" aria-label="Close modal">&CircleTimes;</button>
             <h2 id="myModal4-title">MavenWave Partners</h2>
-            <p>Senior UX + Agile Lead (Consultant)</p>
+            <p>Senior UX + Agile Lead</p>
             <p>Jan 2014 - Jan 2017</p>
             <p>Led digital product design for Fortune 500 healthcare and pharmaceutical clients. Fast iteration in
                 slow-moving industries.</p>

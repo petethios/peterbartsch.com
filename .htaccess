@@ -8,6 +8,11 @@ RewriteEngine On
 RewriteCond %{HTTPS} off
 RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
+# Legacy: case-study.php was an unlinked single-template page that predated
+# the case-studies/*.php directory. Redirect any direct hits (bookmarks,
+# stale search results) to the carousel section on the home page.
+RewriteRule ^case-study\.php$ /#portfolio-carousel [R=301,L]
+
 # Auto-serve WebP when browser supports it and .webp file exists alongside .png
 RewriteCond %{HTTP_ACCEPT} image/webp
 RewriteCond %{REQUEST_FILENAME} (.+)\.png$

@@ -234,7 +234,7 @@
 
                 <p>What made this work was not AI writing code. It was a designer with 15 years of product experience knowing exactly what to build. The hard part of software has never been typing the code. It is knowing what the code should do, for whom, and why. That is design.</p>
 
-                <p>The entire Thios platform — three websites, a 3D configurator, a store with Stripe integration, a blog, a partner portal, APIs, databases, 10-language i18n — was built by one person in 18 months. Not because I learned to be a developer. Because the barrier between "knowing what to build" and "building it" collapsed.</p>
+                <p>The entire Thios platform — three websites, a 3D configurator, a store with Stripe integration, a blog, a partner portal, APIs, databases, 10-language i18n — was built by one person in 21 months. Not because I learned to be a developer. Because the barrier between "knowing what to build" and "building it" collapsed.</p>
 
                 <p><strong>If you are a designer reading this and thinking you could never build something like this: you are wrong. You already have the hardest skill. You know how to think about users, define problems, and make decisions under ambiguity. The code is the easy part now.</strong></p>
 
