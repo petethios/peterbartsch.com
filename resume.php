@@ -370,7 +370,7 @@
         <div class="resume-receipts" aria-label="Builder receipts">
             <p class="receipts-label">// BUILDER RECEIPTS</p>
             <div class="receipts-grid">
-                <div class="receipts-item"><span class="receipts-num">30</span><span class="receipts-text">Years across web eras &mdash; from CSS hacks to agent-native systems</span></div>
+                <div class="receipts-item"><span class="receipts-num">500K+</span><span class="receipts-text">Users on Deere's $3.8B subscription platform &mdash; web, mobile, embedded</span></div>
                 <div class="receipts-item"><span class="receipts-num">$4B+</span><span class="receipts-text">Combined business impact &mdash; Deere ($3.8B) + FourKites ($1B+ valuation)</span></div>
                 <div class="receipts-item"><span class="receipts-num">1</span><span class="receipts-text">Founded company &mdash; <a href="https://thios.co" target="_blank" rel="noopener">Thios</a>, modular structures, 6 sub-brands</span></div>
                 <div class="receipts-item"><span class="receipts-num">6</span><span class="receipts-text">Thios sphere variants from one parametric CAD &mdash; <a href="https://thios.co/configurator/" target="_blank" rel="noopener">3D configurator</a></span></div>

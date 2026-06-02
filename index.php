@@ -151,7 +151,7 @@
                 </ul>
             </nav>
             <!-- Compact era pill-group — discoverable but doesn't dominate above-the-fold -->
-            <div class="theme-era-buttons theme-era-buttons-nav" role="group" aria-label="Switch design era theme" title="30 years on the web. 15 in enterprise. Same operator.">
+            <div class="theme-era-buttons theme-era-buttons-nav" role="group" aria-label="Switch design era theme" title="CSS hacks to Claude Skills. Same operator.">
                 <button class="theme-era-btn" data-theme="80s" aria-label="1980s Retro Terminal" aria-pressed="false">80s</button>
                 <button class="theme-era-btn" data-theme="90s" aria-label="1990s GeoCities" aria-pressed="false">90s</button>
                 <button class="theme-era-btn" data-theme="matrix" aria-label="2000 Matrix Digital Rain" aria-pressed="false">2000</button>
@@ -210,7 +210,7 @@
                         <picture><source srcset="peterb-hero.webp" type="image/webp"><img src="peterb-hero.png" alt="Peter Bartsch, Staff Product Designer" width="720" height="343" loading="eager" fetchpriority="high" /></picture>
                     </div>
                     <div class="hero-text">
-                        <p class="hero-kicker">30 years on the web. 15 in enterprise. Same operator.</p>
+                        <p class="hero-kicker">CSS hacks to Claude Skills. Same operator.</p>
                         <p class="hero-name">PETER BARTSCH</p>
                         <h2 id="title" class="phosphor-text">Staff Product Designer — design systems · AI-native workflow</h2>
                         <p class="hero-proof">Few designers ship $3.8B enterprise platforms <em>and</em> run an AI-native workflow producing a dev-grade design system with its own published Claude Skill. I do both.</p>
