@@ -18,8 +18,8 @@
     <link rel="preload" href="../ari.ttf" as="font" type="font/ttf" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="../styles.css">
-    <link rel="stylesheet" href="case-study.css">
+    <link rel="stylesheet" href="../styles.css?v=<?php echo filemtime(__DIR__ . '/../styles.css'); ?>">
+    <link rel="stylesheet" href="case-study.css?v=<?php echo filemtime(__DIR__ . '/case-study.css'); ?>">
     <?php $themeBasePath = '../'; include('../themes/theme-head.php'); ?>
 
     <!-- Twitter Card -->
@@ -29,10 +29,8 @@
     <meta name="twitter:image" content="https://petebartsch.com/img/og-thios-agent-rails.png">
 
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-QB3EL923YF"></script>
-    <script>window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag('js', new Date()); gtag('config', 'G-QB3EL923YF');</script>
+    <script src="/analytics.js"></script>
 
-    <!-- Microsoft Clarity -->
-    <script type="text/javascript">(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window,document,"clarity","script","uhlenklp4t");</script>
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -154,11 +152,11 @@
 
                     <!-- Five surface nodes (clockwise from top) -->
                     <g text-anchor="middle">
-                        <!-- 1. Figma (top) — aspirational, dashed border -->
-                        <circle cx="320" cy="90" r="58" class="fw-node" stroke-dasharray="4 4"/>
+                        <!-- 1. Figma (top) — live surface as of June 2026 -->
+                        <circle cx="320" cy="90" r="58" class="fw-node"/>
                         <text class="fw-node-label" x="320" y="84">FIGMA</text>
                         <text class="fw-node-sub" x="320" y="100">visual source</text>
-                        <text class="fw-node-sub fw-node-sub--accent" x="320" y="113">via Tokens Studio</text>
+                        <text class="fw-node-sub fw-node-sub--accent" x="320" y="113">live · in sync</text>
 
                         <!-- 2. tokens.json (upper right) -->
                         <circle cx="540" cy="225" r="58" class="fw-node"/>
@@ -194,11 +192,11 @@
                         </marker>
                     </defs>
 
-                    <!-- Figma (top, aspirational) -->
+                    <!-- Figma (top) — live surface as of June 2026 -->
                     <g text-anchor="middle">
-                        <circle cx="160" cy="50" r="44" class="fw-node" stroke-dasharray="4 4"/>
+                        <circle cx="160" cy="50" r="44" class="fw-node"/>
                         <text class="fw-node-label" x="160" y="46">FIGMA</text>
-                        <text class="fw-node-sub fw-node-sub--accent" x="160" y="62">via Tokens Studio</text>
+                        <text class="fw-node-sub fw-node-sub--accent" x="160" y="62">live · in sync</text>
                     </g>
                     <line x1="160" y1="100" x2="160" y2="135" class="fw-arrow" marker-end="url(#fwArrowSm)"/>
 
@@ -276,7 +274,7 @@
                             <tr><th>Surface</th><th>Role</th><th>Today</th></tr>
                         </thead>
                         <tbody>
-                            <tr><td><a href="https://github.com/peterbartsch/thios.co" target="_blank" rel="noopener">DESIGN.md</a></td><td>Canonical rules. Section 9 is an explicit "Agent Prompt Guide."</td><td>484 lines · ~65 named tokens · 6 sphere brands</td></tr>
+                            <tr><td>DESIGN.md</td><td>Canonical rules. Section 9 is an explicit "Agent Prompt Guide."</td><td>484 lines · ~65 named tokens · 6 sphere brands</td></tr>
                             <tr><td>tokens.json</td><td>The bridge. W3C Design Tokens format, three-layer (primitive → semantic → surface).</td><td>212 tokens · designed for Tokens Studio import to Figma</td></tr>
                             <tr><td>main.css</td><td>Running production code.</td><td>18,000+ lines · 254 KB minified · synced across 4 subdomains</td></tr>
                             <tr><td><a href="https://thios.co/design-system.html" target="_blank" rel="noopener">design-system.html</a></td><td>Live, self-contained demo of every component.</td><td>109 KB · all components with working examples</td></tr>
@@ -289,14 +287,14 @@
 
             <section class="case-study-section">
                 <h2>How the Surfaces Stay Aligned</h2>
-                <p><strong>DESIGN.md is the spine</strong> &mdash; agent-native markdown; Section 9 is explicitly an &ldquo;Agent Prompt Guide,&rdquo; the first thing any agent reads when generating UI. <strong>tokens.json is the bridge</strong> &mdash; W3C Design Tokens, three layers (primitive / semantic / surface), imported into Figma Variables via Tokens Studio. <strong>main.css is the running code</strong> (18,000+ lines, kept in sync across four subdomains by a deploy gate). <strong>design-system.html is the live spec</strong> (109 KB, every component with working examples). <strong>OnShape is the parametric source</strong> for sphere geometry &mdash; 54 elements driven by one Variable Studio, the same shape as tokens.json flowing into Figma, but for physical product.</p>
-                <p>Each surface gets diffed against the spine on demand. Agents catch drift; the human decides what to fix. The complete loop is documented at <a href="https://thios.co/design-system-loop.html" target="_blank" rel="noopener">thios.co/design-system-loop.html</a>.</p>
+                <p><strong>DESIGN.md is the spine</strong> &mdash; agent-native markdown; Section 9 is explicitly an &ldquo;Agent Prompt Guide,&rdquo; the first thing any agent reads when generating UI. <strong>tokens.json is the bridge</strong> &mdash; W3C Design Tokens, three layers (primitive / semantic / surface), and now mirrored in a <strong>live Figma Variables surface</strong> (Plus UI re-themed to Thios — primary, gold, status, type, and all six sphere brand tokens audited in sync against tokens.json, June 2026). <strong>main.css is the running code</strong> (18,000+ lines, kept in sync across four subdomains by a deploy gate). <strong>design-system.html is the live spec</strong> (109 KB, every component with working examples). <strong>OnShape is the parametric source</strong> for sphere geometry &mdash; 54 elements driven by one Variable Studio, the same shape as tokens.json flowing into Figma, but for physical product.</p>
+                <p>Each surface gets diffed against the spine on demand. Agents catch drift; the human decides what to fix &mdash; the drift-detection logic is published as an open-source Claude Skill, <a href="https://github.com/peterbartsch/AgentDrift/blob/main/skills/audit-design-token-drift/SKILL.md" target="_blank" rel="noopener"><code>audit-design-token-drift</code></a>. The complete loop is documented at <a href="https://thios.co/design-system-loop.html" target="_blank" rel="noopener">thios.co/design-system-loop.html</a>.</p>
             </section>
 
             <section class="case-study-section">
                 <h2>Sphere Branding — Proof the System Scales</h2>
-                <p>Six sub-brands currently share the system: <strong>Thiosphere</strong> (brown <code>#96643F</code>), <strong>Saunosphere</strong> (red <code>#E25141</code>), <strong>Agrosphere</strong> (teal &mdash; same as primary, intentionally), <strong>Ergosphere</strong> (blue <code>#1D63BE</code>), <strong>Immosphere</strong> (purple <code>#4D04AC</code>), <strong>Auxosphere</strong> (gray). Each is a first-class semantic token with mode variants in Figma &mdash; one component template, six brand surfaces.</p>
-                <p>The kind of bug a single-surface workflow ships silently: Auxosphere reads <code>#909090</code> in DESIGN.md but resolves to <code>#6c757d</code> after the primitive&rarr;semantic indirection in tokens.json. Six sub-brands plus four production sites is exactly where manual drift detection breaks.</p>
+                <p>Six sub-brands currently share the system: <strong>Thiosphere</strong> (brown <code>#96643F</code>), <strong>Saunosphere</strong> (red <code>#E25141</code>), <strong>Agrosphere</strong> (teal &mdash; same as primary, intentionally), <strong>Ergosphere</strong> (blue <code>#1D63BE</code>), <strong>Immosphere</strong> (purple <code>#4D04AC</code>), <strong>Auxosphere</strong> (gray). Each is a first-class token, mirrored one-for-one in Figma Variables &mdash; six sphere brand accents, all audited in sync with tokens.json.</p>
+                <p>The kind of bug a single-surface workflow ships silently: Auxosphere <em>read</em> <code>#909090</code> in DESIGN.md while resolving to <code>#6c757d</code> in tokens.json &mdash; caught by the audit, now aligned. Six sub-brands plus four production sites is exactly where manual drift detection breaks.</p>
             </section>
 
             <section class="case-study-section">
@@ -311,10 +309,9 @@
 
             <section class="case-study-section">
                 <h2>Next Surfaces (Roadmap)</h2>
-                <p>Three surfaces are designed but not yet running. Each will be wired into the diff layer before it goes live so drift detection scales with the system.</p>
+                <p>Two surfaces are designed but not yet running. Each will be wired into the diff layer before it goes live so drift detection scales with the system. <em>(Figma graduated off this list in June 2026 &mdash; it's now a live, audited surface.)</em></p>
                 <ul>
                     <li><strong>Scheduled drift checks</strong> &mdash; the diff runs on demand today. Wiring it to a weekly schedule turns drift detection from a willpower problem into infrastructure. Month-over-month delta becomes the trend line.</li>
-                    <li><strong>Figma MCP</strong> &mdash; Tokens Studio + html.to.design plugins documented in design-system-loop.html step 2; once Figma Dev Mode MCP is enabled on the Thios-logo file, agents will read and write Figma Variables the same way they reason about DESIGN.md today.</li>
                     <li><strong>CAD hygiene agent</strong> &mdash; feature naming conventions, mate health, build-correctness checks on the OnShape document. Same diff-then-fix shape, applied to physical geometry. The 54-element inventory is the baseline.</li>
                 </ul>
             </section>
@@ -340,31 +337,13 @@
             </section>
 
             <nav class="case-study-nav" aria-label="Case study navigation">
-                <a href="fourkites-driver.php">← Previous: Incentive Design</a>
+                <a href="here-traffic.php">← Previous: HERE — Real-Time Traffic</a>
                 <a href="thios-flywheel.php">Next: Open-Hardware Flywheel →</a>
             </nav>
         </article>
     </main>
 
-    <script>
-        if (typeof gtag === 'function') {
-            gtag('event', 'case_study_view', {
-                'event_category': 'engagement',
-                'event_label': 'thios_v2_agent_rails'
-            });
-        }
-        // Scroll-fade indicator on the artifact callout: shown only when content actually overflows.
-        document.querySelectorAll('.artifact-callout__body').forEach(function(el) {
-            var update = function() {
-                var atEnd = el.scrollLeft + el.clientWidth >= el.scrollWidth - 2;
-                var overflows = el.scrollWidth > el.clientWidth + 1;
-                el.classList.toggle('artifact-callout__body--scrollable', overflows && !atEnd);
-            };
-            update();
-            el.addEventListener('scroll', update, { passive: true });
-            window.addEventListener('resize', update);
-        });
-    </script>
+    <script src="/case-studies/case-study-page.js"></script>
     <script src="../themes/theme-switcher.js"></script>
     <script defer src="/script.js"></script>
 </body>

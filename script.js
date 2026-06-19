@@ -227,27 +227,25 @@ if (coverVideo) {
     });
 })();
 
-// Contact form: compose mailto without exposing address in HTML (pure JS, no TS types)
+// Contact form: posts to contact-handler.php and reflects state inline.
+// (Replaced the old mailto: composer, which silently dead-ended on machines
+// with no configured mail client.)
 (function () {
     const form = document.getElementById('contactForm');
-    const target = document.getElementById('cf-target');
-    if (!form || !target) return;
+    if (!form) return;
+
+    const statusEl = document.getElementById('cf-status');
+    const submitBtn = form.querySelector('.form-submit');
+    const fallbackAddr = 'peter@peterbartsch.com';
 
     // Rate limiting: prevent rapid submissions
     let lastSubmitTime = 0;
     const MIN_SUBMIT_INTERVAL = 5000; // 5 seconds between submissions
 
-    // Input sanitization: remove/escape dangerous characters and limit length
-    function sanitizeInput(str, maxLength) {
-        if (typeof str !== 'string') return '';
-        let sanitized = str.trim()
-            .replace(/[<>\"']/g, '') // Remove potential HTML/script injection chars
-            .replace(/[\r\n\t]/g, ' ') // Normalize whitespace
-            .replace(/\s+/g, ' '); // Collapse multiple spaces
-        if (maxLength && sanitized.length > maxLength) {
-            sanitized = sanitized.substring(0, maxLength);
-        }
-        return sanitized;
+    function setStatus(kind, html) {
+        if (!statusEl) return;
+        statusEl.className = 'form-status' + (kind ? ' form-status--' + kind : '');
+        statusEl.innerHTML = html || '';
     }
 
     function validateEmail(email) {
@@ -255,55 +253,79 @@ if (coverVideo) {
         return emailRegex.test(email);
     }
 
-    function rev(s) { return s.split('').reverse().join(''); }
-    const user = rev(target.getAttribute('data-user-rev') || '');
-    const domain = rev(target.getAttribute('data-domain-rev') || '');
-    const addr = user + '@' + domain; // peter@peterbartsch.com
-
     form.addEventListener('submit', function (e) {
         e.preventDefault();
 
         // Rate limiting check
         const now = Date.now();
         if (now - lastSubmitTime < MIN_SUBMIT_INTERVAL) {
-            alert('Please wait a moment before submitting again.');
+            setStatus('error', 'Please wait a moment before submitting again.');
             return;
         }
-        lastSubmitTime = now;
 
         const nameEl = document.getElementById('cf-name');
         const emailEl = document.getElementById('cf-email');
         const msgEl = document.getElementById('cf-message');
 
-        // Sanitize and validate inputs
-        let name = nameEl && 'value' in nameEl ? sanitizeInput(nameEl.value, 100) : '';
-        let from = emailEl && 'value' in emailEl ? sanitizeInput(emailEl.value, 254) : '';
-        let msg = msgEl && 'value' in msgEl ? sanitizeInput(msgEl.value, 5000) : '';
+        const name = nameEl && 'value' in nameEl ? nameEl.value.trim() : '';
+        const from = emailEl && 'value' in emailEl ? emailEl.value.trim() : '';
+        const msg = msgEl && 'value' in msgEl ? msgEl.value.trim() : '';
 
-        // Validation
         if (!name || name.length < 2) {
-            alert('Please enter a valid name (at least 2 characters).');
+            setStatus('error', 'Please enter a valid name (at least 2 characters).');
             if (nameEl) nameEl.focus();
             return;
         }
 
         if (!from || !validateEmail(from)) {
-            alert('Please enter a valid email address.');
+            setStatus('error', 'Please enter a valid email address.');
             if (emailEl) emailEl.focus();
             return;
         }
 
         if (!msg || msg.length < 10) {
-            alert('Please enter a message (at least 10 characters).');
+            setStatus('error', 'Please enter a message (at least 10 characters).');
             if (msgEl) msgEl.focus();
             return;
         }
 
-        // Encode for mailto
-        const subject = encodeURIComponent(`Message from ${name}`);
-        const body = encodeURIComponent(`From: ${name} <${from}>\n\n${msg}`);
-        const mailto = `mailto:${addr}?subject=${subject}&body=${body}`;
-        window.location.href = mailto;
+        lastSubmitTime = now;
+        if (submitBtn) { submitBtn.disabled = true; submitBtn.textContent = 'SENDING…'; }
+        setStatus('', '');
+
+        fetch('/contact-handler.php', { method: 'POST', body: new FormData(form) })
+            .then(function (res) { return res.json(); })
+            .then(function (json) {
+                if (!json || !json.ok) throw new Error('send-failed');
+                form.reset();
+                setStatus('success', 'Message sent — I\'ll reply within 1 business day.');
+                if (typeof gtag === 'function') {
+                    gtag('event', 'contact_form_submit', {
+                        'event_category': 'conversion',
+                        'event_label': 'contact_form'
+                    });
+                }
+            })
+            .catch(function () {
+                setStatus('error', 'Something broke — email me directly at <a href="mailto:' + fallbackAddr + '">' + fallbackAddr + '</a>.');
+            })
+            .finally(function () {
+                if (submitBtn) { submitBtn.disabled = false; submitBtn.textContent = 'SEND MESSAGE'; }
+            });
+    });
+})();
+
+// Resume download dropdown (/resume): close after a format is picked, and let
+// users dismiss it by clicking outside. Lives here rather than inline on
+// resume.php because the CSP (script-src 'self') blocks inline scripts.
+(function () {
+    const menu = document.querySelector('.resume-download-menu');
+    if (!menu) return;
+    menu.querySelectorAll('.resume-download-list a').forEach(function (a) {
+        a.addEventListener('click', function () { menu.open = false; });
+    });
+    document.addEventListener('click', function (e) {
+        if (menu.open && !menu.contains(e.target)) menu.open = false;
     });
 })();
 
@@ -441,16 +463,8 @@ if (coverVideo) {
         }
     });
 
-    // Track contact form submissions
-    const contactForm = document.getElementById('contactForm');
-    if (contactForm) {
-        contactForm.addEventListener('submit', function() {
-            trackEvent('contact_form_submit', {
-                'event_category': 'conversion',
-                'event_label': 'contact_form'
-            });
-        });
-    }
+    // (Contact form submissions are tracked in the form handler above, on
+    // confirmed success rather than on every submit attempt.)
 
     // Track configurator CTA click
     document.querySelectorAll('[data-track="configurator_click"]').forEach(el => {

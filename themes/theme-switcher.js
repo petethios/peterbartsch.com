@@ -50,6 +50,10 @@
     }
 
     function loadThemeCSS(themeId) {
+        // Drop any existing theme stylesheet (including the static default link the
+        // page ships with to avoid a flash of the base theme on first paint).
+        var existing = document.getElementById('theme-stylesheet');
+        if (existing) existing.remove();
         if (currentStylesheet) {
             currentStylesheet.remove();
             currentStylesheet = null;

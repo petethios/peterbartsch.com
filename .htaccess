@@ -8,6 +8,16 @@ RewriteEngine On
 RewriteCond %{HTTPS} off
 RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
+# Branded short links for campaign tracking (UTM-tagged). 302 (temporary) so the
+# campaign params can be tweaked later without browsers caching a permanent redirect.
+# Share these; GA reads the UTMs on the landing page after the redirect.
+RewriteRule ^go/li/?$   /?utm_source=linkedin&utm_medium=social&utm_campaign=job-search-2026&utm_content=profile [R=302,L]
+RewriteRule ^go/post/?$ /?utm_source=linkedin&utm_medium=social&utm_campaign=job-search-2026&utm_content=post [R=302,L]
+RewriteRule ^go/gh/?$   /?utm_source=github&utm_medium=referral&utm_campaign=job-search-2026 [R=302,L]
+RewriteRule ^go/cv/?$   /?utm_source=resume&utm_medium=pdf&utm_campaign=job-search-2026 [R=302,L]
+RewriteRule ^go/hi/?$   /?utm_source=signature&utm_medium=email&utm_campaign=job-search-2026 [R=302,L]
+RewriteRule ^go/card/?$ /?utm_source=business-card&utm_medium=qr&utm_campaign=job-search-2026 [R=302,L]
+
 # Legacy: case-study.php was an unlinked single-template page that predated
 # the case-studies/*.php directory. Redirect any direct hits (bookmarks,
 # stale search results) to the carousel section on the home page.

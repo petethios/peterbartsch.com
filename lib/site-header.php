@@ -23,13 +23,14 @@
             <ul class="nav-primary">
                 <li><a href="/#about">ABOUT</a></li>
                 <li><a href="/#portfolio-carousel">CASES</a></li>
+                <li><a href="/blog/">WRITING</a></li>
                 <li><a href="/resume.php">RESUME</a></li>
                 <li><a href="/#contact">CONTACT</a></li>
                 <li><a href="https://linkedin.com/in/peterbartsch" target="_blank" rel="noopener noreferrer" class="nav-linkedin">LINKEDIN</a></li>
             </ul>
         </nav>
         <!-- Compact era pill-group — discoverable but doesn't dominate above-the-fold -->
-        <div class="theme-era-buttons theme-era-buttons-nav" role="group" aria-label="Switch design era theme" title="30 years on the web. 15 in enterprise. Same operator.">
+        <div class="theme-era-buttons theme-era-buttons-nav" role="group" aria-label="Switch design era theme" title="Every era of the web. Built for enterprise. Same operator.">
             <button class="theme-era-btn" data-theme="80s" aria-label="1980s Retro Terminal" aria-pressed="false">80s</button>
             <button class="theme-era-btn" data-theme="90s" aria-label="1990s GeoCities" aria-pressed="false">90s</button>
             <button class="theme-era-btn" data-theme="matrix" aria-label="2000 Matrix Digital Rain" aria-pressed="false">2000</button>
@@ -51,6 +52,7 @@
         <ul class="mobile-nav-primary">
             <li><a href="/#about">ABOUT</a></li>
             <li><a href="/#portfolio-carousel">CASES</a></li>
+            <li><a href="/blog/">WRITING</a></li>
             <li><a href="/resume.php">RESUME</a></li>
             <li><a href="/#contact">CONTACT</a></li>
         </ul>

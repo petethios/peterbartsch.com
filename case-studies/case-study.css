@@ -503,6 +503,14 @@
         padding: 24px 16px 60px;
     }
 
+    /* Constraints callout bleeds to the page edge — match the 16px mobile
+       padding so the accent border stays on-screen instead of being clipped
+       8px off each side (page padding here is 16px, not the desktop 24px). */
+    .case-study-constraints {
+        margin-left: -16px;
+        margin-right: -16px;
+    }
+
     .case-study-title {
         font-size: 28px;
     }

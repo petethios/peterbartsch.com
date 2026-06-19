@@ -18,8 +18,8 @@
     <link rel="preload" href="../ari.ttf" as="font" type="font/ttf" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="../styles.css">
-    <link rel="stylesheet" href="case-study.css">
+    <link rel="stylesheet" href="../styles.css?v=<?php echo filemtime(__DIR__ . '/../styles.css'); ?>">
+    <link rel="stylesheet" href="case-study.css?v=<?php echo filemtime(__DIR__ . '/case-study.css'); ?>">
     <?php $themeBasePath = '../'; include('../themes/theme-head.php'); ?>
 
     <!-- Twitter Card -->
@@ -29,10 +29,8 @@
     <meta name="twitter:image" content="https://petebartsch.com/img/thios-flywheel-configurator.png">
 
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-QB3EL923YF"></script>
-    <script>window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag('js', new Date()); gtag('config', 'G-QB3EL923YF');</script>
+    <script src="/analytics.js"></script>
 
-    <!-- Microsoft Clarity -->
-    <script type="text/javascript">(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window,document,"clarity","script","uhlenklp4t");</script>
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -355,14 +353,7 @@
         </article>
     </main>
 
-    <script>
-        if (typeof gtag === 'function') {
-            gtag('event', 'case_study_view', {
-                'event_category': 'engagement',
-                'event_label': 'thios_flywheel'
-            });
-        }
-    </script>
+    <script src="/case-studies/case-study-page.js"></script>
     <script src="../themes/theme-switcher.js"></script>
     <script defer src="/script.js"></script>
 </body>

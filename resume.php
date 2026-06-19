@@ -37,10 +37,8 @@
     <?php $themeBasePath = './'; include('themes/theme-head.php'); ?>
 
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-QB3EL923YF"></script>
-    <script>window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag('js', new Date()); gtag('config', 'G-QB3EL923YF');</script>
+    <script src="/analytics.js"></script>
 
-    <!-- Microsoft Clarity -->
-    <script type="text/javascript">(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window,document,"clarity","script","uhlenklp4t");</script>
 
     <style>
         /* Resume-specific styles */
@@ -374,7 +372,7 @@
                 <div class="receipts-item"><span class="receipts-num">$4B+</span><span class="receipts-text">Combined business impact &mdash; Deere ($3.8B) + FourKites ($1B+ valuation)</span></div>
                 <div class="receipts-item"><span class="receipts-num">1</span><span class="receipts-text">Founded company &mdash; <a href="https://thios.co" target="_blank" rel="noopener">Thios</a>, modular structures, 6 sub-brands</span></div>
                 <div class="receipts-item"><span class="receipts-num">6</span><span class="receipts-text">Thios sphere variants from one parametric CAD &mdash; <a href="https://thios.co/configurator/" target="_blank" rel="noopener">3D configurator</a></span></div>
-                <div class="receipts-item"><span class="receipts-num">1</span><span class="receipts-text">Published Claude Skill &mdash; <a href="https://github.com/Thios-and-Company/audit-design-token-drift" target="_blank" rel="noopener"><code>audit-design-token-drift</code></a></span></div>
+                <div class="receipts-item"><span class="receipts-num">1</span><span class="receipts-text">Published Claude Skill &mdash; <a href="https://github.com/peterbartsch/AgentDrift/blob/main/skills/audit-design-token-drift/SKILL.md" target="_blank" rel="noopener"><code>audit-design-token-drift</code></a></span></div>
             </div>
         </div>
 
@@ -391,7 +389,7 @@
                 <ul class="resume-role-bullets">
                     <li><strong>Shipped a complete product ecosystem solo in 21 months</strong> &mdash; 6 sphere variants with CAD models, prototype, first revenue across every surface.</li>
                     <li><strong>Designed and built parametric OnShape CAD as the single source of truth</strong> driving BOM and the <a href="https://thios.co/configurator/" target="_blank" rel="noopener">3D configurator at thios.co/configurator</a> &mdash; customers manipulate real geometry with full configuration state (valid/invalid combinations, loading, error, empty, BOM hand-off), not marketing renders</li>
-                    <li><strong>Built a 5-surface, dev-grade design system</strong>, published its first Claude Skill (<a href="https://github.com/Thios-and-Company/audit-design-token-drift" target="_blank" rel="noopener"><code>audit-design-token-drift</code></a>) that catches design-token drift across canonical surfaces with file:line citations. Design system as dev tooling, not a Figma library nobody opens &mdash; <a href="https://www.thios.co/design-system-architecture.html" target="_blank" rel="noopener">thios.co/design-system-architecture</a></li>
+                    <li><strong>Built a 5-surface, dev-grade design system</strong>, published its first Claude Skill (<a href="https://github.com/peterbartsch/AgentDrift/blob/main/skills/audit-design-token-drift/SKILL.md" target="_blank" rel="noopener"><code>audit-design-token-drift</code></a>) that catches design-token drift across canonical surfaces with file:line citations. Design system as dev tooling, not a Figma library nobody opens &mdash; <a href="https://www.thios.co/design-system-architecture.html" target="_blank" rel="noopener">thios.co/design-system-architecture</a></li>
                 </ul>
             </div>
 
@@ -405,7 +403,7 @@
                 <ul class="resume-role-bullets">
                     <li><strong>Redesigned the license management system</strong> for connected ag equipment (Automation/AI services) serving 500K+ users across 12 languages &mdash; mapped flows, license states, and edge cases (expired/renewed/transferred/dealer-managed); +34% monthly active authenticated users, &ndash;16% support tickets, enabled $3.8B in subscription revenue</li>
                     <li><strong>Built a unified account and navigation framework</strong> deployed across 8 product lines spanning web, mobile, and embedded equipment systems &mdash; consolidated fragmented experiences into a single customer view; +28% first-contact resolution on dealer support</li>
-                    <li><strong>Core contributor to the enterprise design system in Figma</strong> spanning 6 brands and 40+ product teams globally &mdash; produced dev-ready handoffs (tokens, prop specs, full state coverage) that reduced design-to-development time 45% on components that actually shipped</li>
+                    <li><strong>Contributor to the enterprise design system in Figma</strong> spanning 6 brands and 40+ product teams globally &mdash; produced dev-ready handoffs (tokens, prop specs, full state coverage) that reduced design-to-development time 45% on components that actually shipped</li>
                 </ul>
             </div>
 
@@ -499,20 +497,6 @@
 
     </main>
 
-    <script>
-        // Close the resume download dropdown after a format is picked,
-        // and let users dismiss it by clicking outside.
-        (function () {
-            var menu = document.querySelector('.resume-download-menu');
-            if (!menu) return;
-            menu.querySelectorAll('.resume-download-list a').forEach(function (a) {
-                a.addEventListener('click', function () { menu.open = false; });
-            });
-            document.addEventListener('click', function (e) {
-                if (menu.open && !menu.contains(e.target)) menu.open = false;
-            });
-        })();
-    </script>
     <script src="themes/theme-switcher.js"></script>
     <script defer src="/script.js"></script>
 </body>

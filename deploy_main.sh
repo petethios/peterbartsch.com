@@ -6,7 +6,7 @@ HOST="peterbartsch.com"
 REMOTE_DIR="petebartsch.com"  # Note: peterbartsch.com redirects to petebartsch.com
 SSH_OPTS="-o IdentitiesOnly=yes -o PreferredAuthentications=publickey,password"
 
-# Files to deploy
+# Root-level files to deploy
 FILES=(
     "index.php"
     "styles.css"
@@ -14,24 +14,32 @@ FILES=(
     "robots.txt"
     "sitemap.xml"
     "og-image.png"
+    "theme-init.js"
 )
 
 echo "Deploying to $HOST:$REMOTE_DIR..."
 
-# Check if required files exist
+# Collect the root-level files that actually exist
+EXISTING=()
 for file in "${FILES[@]}"; do
-    if [ ! -f "$file" ]; then
+    if [ -f "$file" ]; then
+        EXISTING+=("$file")
+    else
         echo "Warning: $file not found, skipping..."
     fi
 done
 
-# Upload all main files in one scp call
+# Upload all root-level files in one scp call
 echo "Uploading main files..."
-scp $SSH_OPTS index.php styles.css script.js sitemap.xml "$USER@$HOST:$REMOTE_DIR/"
+scp $SSH_OPTS "${EXISTING[@]}" "$USER@$HOST:$REMOTE_DIR/"
 
 # Create remote directories
 echo "Creating remote directories..."
-ssh $SSH_OPTS "$USER@$HOST" "mkdir -p $REMOTE_DIR/img/logos $REMOTE_DIR/case-studies"
+ssh $SSH_OPTS "$USER@$HOST" "mkdir -p $REMOTE_DIR/img/logos $REMOTE_DIR/case-studies $REMOTE_DIR/themes"
+
+# Upload the theme system (era CSS, switcher JS/CSS, head + banner includes)
+echo "Uploading themes..."
+scp $SSH_OPTS themes/*.css themes/*.js themes/*.php "$USER@$HOST:$REMOTE_DIR/themes/"
 
 # Upload configurator screenshot
 echo "Uploading configurator screenshot..."

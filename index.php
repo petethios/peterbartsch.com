@@ -70,6 +70,7 @@
 
     <link rel="stylesheet" href="styles.css?v=<?php echo filemtime('styles.css'); ?>">
     <link rel="stylesheet" href="themes/theme-switcher.css?v=<?php echo filemtime('themes/theme-switcher.css'); ?>">
+    <link id="theme-stylesheet" rel="stylesheet" href="themes/theme-2026.css?v=<?php echo filemtime('themes/theme-2026.css'); ?>">
 
     <!-- Theme fonts (lazy-loaded: media="print" until activated by JS) — self-hosted -->
     <link id="font-90s" rel="stylesheet" href="fonts/comic-neue.css" media="print">
@@ -145,13 +146,15 @@
                 <ul class="nav-primary">
                     <li><a href="#about">ABOUT</a></li>
                     <li><a href="#portfolio-carousel">CASES</a></li>
+                    <li><a href="blog/">WRITING</a></li>
                     <li><a href="resume.php">RESUME</a></li>
+                    <li><a href="#other-pixels">PIXELS</a></li>
                     <li><a href="#contact">CONTACT</a></li>
                     <li><a href="https://linkedin.com/in/peterbartsch" target="_blank" rel="noopener noreferrer" class="nav-linkedin">LINKEDIN</a></li>
                 </ul>
             </nav>
             <!-- Compact era pill-group — discoverable but doesn't dominate above-the-fold -->
-            <div class="theme-era-buttons theme-era-buttons-nav" role="group" aria-label="Switch design era theme" title="30 years on the web. 15 in enterprise. Same operator.">
+            <div class="theme-era-buttons theme-era-buttons-nav" role="group" aria-label="Switch design era theme" title="Every era of the web. Built for enterprise. Same operator.">
                 <button class="theme-era-btn" data-theme="80s" aria-label="1980s Retro Terminal" aria-pressed="false">80s</button>
                 <button class="theme-era-btn" data-theme="90s" aria-label="1990s GeoCities" aria-pressed="false">90s</button>
                 <button class="theme-era-btn" data-theme="matrix" aria-label="2000 Matrix Digital Rain" aria-pressed="false">2000</button>
@@ -173,7 +176,9 @@
             <ul class="mobile-nav-primary">
                 <li><a href="#about">ABOUT</a></li>
                 <li><a href="#portfolio-carousel">CASES</a></li>
+                <li><a href="blog/">WRITING</a></li>
                 <li><a href="resume.php">RESUME</a></li>
+                <li><a href="#other-pixels">PIXELS</a></li>
                 <li><a href="#contact">CONTACT</a></li>
             </ul>
             <div class="mobile-menu-divider"></div>
@@ -183,8 +188,11 @@
                 <li><a href="case-studies/thios-flywheel.php">Thios: Open-Hardware Flywheel</a></li>
                 <li><a href="case-studies/deere-common-ux.php">Deere: Forced Adoption</a></li>
                 <li><a href="case-studies/deere-nav.php">Deere: Platform Unification</a></li>
+                <li><a href="case-studies/deere-mobile.php">Deere: Mobile</a></li>
                 <li><a href="case-studies/fourkites-tracking.php">FourKites: Data Trust</a></li>
                 <li><a href="case-studies/fourkites-driver.php">FourKites: Incentive Design</a></li>
+                <li><a href="case-studies/fourkites-mobile.php">FourKites: Mobile</a></li>
+                <li><a href="case-studies/here-traffic.php">HERE: Real-Time Traffic</a></li>
             </ul>
             <div class="mobile-menu-divider"></div>
             <div class="mobile-menu-header">Design Era</div>
@@ -210,7 +218,7 @@
                         <picture><source srcset="peterb-hero.webp" type="image/webp"><img src="peterb-hero.png" alt="Peter Bartsch, Staff Product Designer" width="720" height="343" loading="eager" fetchpriority="high" /></picture>
                     </div>
                     <div class="hero-text">
-                        <p class="hero-kicker">30 years on the web. 15 in enterprise. Same operator.</p>
+                        <p class="hero-kicker">Every era of the web. Built for enterprise. Same operator.</p>
                         <p class="hero-name">PETER BARTSCH</p>
                         <h2 id="title" class="phosphor-text">Staff Product Designer — design systems · AI-native workflow</h2>
                         <p class="hero-proof">Few designers ship $3.8B enterprise platforms <em>and</em> run an AI-native workflow producing a dev-grade design system with its own published Claude Skill. I do both.</p>
@@ -249,7 +257,7 @@
                     </div>
                     <div class="about-content">
                         <p class="about-bio">
-                            I lead design for the problems that stall enterprises — forced adoption, platform fragmentation, trust in uncertain data. At Deere, I unlocked $3.8B across 500K users on web, mobile, and embedded equipment systems. At FourKites, I built the design org from 1 to 10 scaling a real-time IoT asset-tracking platform ($3M→$100M ARR, $1B+ valuation). Now I'm founder of <a href="https://thios.co" target="_blank" rel="noopener">Thios</a> — running an AI-native workflow (Claude, Cursor, Figma Make) to ship a <a href="https://thios.co/configurator/" target="_blank" rel="noopener">CAD-driven 3D configurator</a>, a <a href="case-studies/thios.php">dev-grade design system</a> with its own <a href="https://github.com/Thios-and-Company/audit-design-token-drift" target="_blank" rel="noopener">published Claude Skill</a>, and <a href="case-studies/thios-flywheel.php">physical hardware</a>. I own systems thinking, journey mapping, state coverage, and edge cases; agents implement.
+                            I lead design for the problems that stall enterprises — forced adoption, platform fragmentation, trust in uncertain data. At Deere, I unlocked $3.8B across 500K users on web, mobile, and embedded equipment systems. At FourKites, I built the design org from 1 to 10 scaling a real-time IoT asset-tracking platform ($3M→$100M ARR, $1B+ valuation). Now I'm founder of <a href="https://thios.co" target="_blank" rel="noopener">Thios</a> — running an AI-native workflow (Claude, Cursor, Figma Make) to ship a <a href="https://thios.co/configurator/" target="_blank" rel="noopener">CAD-driven 3D configurator</a>, a <a href="case-studies/thios.php">dev-grade design system</a> with its own <a href="https://github.com/peterbartsch/AgentDrift/blob/main/skills/audit-design-token-drift/SKILL.md" target="_blank" rel="noopener">published Claude Skill</a>, and <a href="case-studies/thios-flywheel.php">physical hardware</a>. I own systems thinking, journey mapping, state coverage, and edge cases; agents implement.
                         </p>
                     </div>
                 </div>
@@ -336,6 +344,22 @@
                     </div>
                 </article>
 
+                <article class="case-study-card">
+                    <div class="case-study-image">
+                        <img src="carousel-thumb-deere-mobile.png" alt="John Deere Mobile" loading="lazy" width="250" height="250">
+                    </div>
+                    <div class="case-study-body">
+                        <p class="slide-label">MOBILE · ENTERPRISE AT FIELD SCALE</p>
+                        <h3 class="project-title">DEERE: RUNNING THE FARM FROM A PHONE</h3>
+                        <div class="project-structure">
+                            <p class="structure-item"><span class="structure-label">Challenge:</span> A farmer runs their business from the cab, but Deere's software grew up on the desktop — five or six apps, each its own login and navigation, miserable in a field with gloves and one bar of signal.</p>
+                            <p class="structure-item"><span class="structure-label">Approach:</span> Designed the shared mobile account, sign-in, and navigation system across 8 product lines — one account, one way to navigate, built for gloves, sun, and dead zones.</p>
+                            <p class="structure-item"><span class="structure-label">Result:</span> One system across 8 apps · 500K users · +34% active authenticated users · −16% support tickets</p>
+                        </div>
+                        <a href="case-studies/deere-mobile.php" class="project-link brutalist-link">VIEW CASE STUDY →</a>
+                    </div>
+                </article>
+
                 <!-- 5. FourKites Tracking — Trust in uncertain data -->
                 <article class="case-study-card">
                     <div class="case-study-image">
@@ -367,6 +391,38 @@
                             <p class="structure-item"><span class="structure-label">Result:</span> 32% more tracked shipments · Driver NPS +28</p>
                         </div>
                         <a href="case-studies/fourkites-driver.php" class="project-link brutalist-link">VIEW CASE STUDY →</a>
+                    </div>
+                </article>
+
+                <article class="case-study-card">
+                    <div class="case-study-image">
+                        <img src="carousel-thumb-fourkites-mobile.png" alt="FourKites Mobile" loading="lazy" width="250" height="250">
+                    </div>
+                    <div class="case-study-body">
+                        <p class="slide-label">MOBILE · SUBTRACT vs COMPRESS</p>
+                        <h3 class="project-title">FOURKITES: TWO OPPOSITE MOBILE PROBLEMS</h3>
+                        <div class="project-structure">
+                            <p class="structure-item"><span class="structure-label">Challenge:</span> One real-time system, two users — a driver who needs almost nothing on screen, a yard manager who needs everything.</p>
+                            <p class="structure-item"><span class="structure-label">Approach:</span> Designed the driver app by subtraction and the yard-manager view by compression — opposite disciplines, one platform</p>
+                            <p class="structure-item"><span class="structure-label">Result:</span> Mobile fit to the user's hands and moment · primary driver of 3× expansion</p>
+                        </div>
+                        <a href="case-studies/fourkites-mobile.php" class="project-link brutalist-link">VIEW CASE STUDY →</a>
+                    </div>
+                </article>
+
+                <article class="case-study-card">
+                    <div class="case-study-image">
+                        <img src="carousel-thumb-here-traffic.png" alt="HERE real-time traffic wall" loading="lazy" width="250" height="250">
+                    </div>
+                    <div class="case-study-body">
+                        <p class="slide-label">RANGE · 2012–2014 · REAL-TIME DATA VIZ</p>
+                        <h3 class="project-title">HERE: REAL-TIME TRAFFIC, BEFORE LIVE TRAFFIC</h3>
+                        <div class="project-structure">
+                            <p class="structure-item"><span class="structure-label">Challenge:</span> HERE had a firehose of GPS probe data — but it was invisible to the automakers buying it on the convention floor.</p>
+                            <p class="structure-item"><span class="structure-label">Approach:</span> A convention demo — a wall of screens growing 3 → 6 → 9 — running a near-real-time traffic feed on DEMPSY.</p>
+                            <p class="structure-item"><span class="structure-label">Result:</span> Made an abstract data advantage undeniable. Early to live traffic — before Google/Android made it default.</p>
+                        </div>
+                        <a href="case-studies/here-traffic.php" class="project-link brutalist-link">VIEW CASE STUDY →</a>
                     </div>
                 </article>
 
@@ -479,6 +535,39 @@
                     </table>
                 </div>
 
+                <!-- Other Pixels — secondary shelf of side projects / experiments.
+                     To add more later, append an entry to the $otherPixels array below. -->
+                <section id="other-pixels" class="other-pixels-section scroll-reveal">
+                    <h3 class="other-pixels-heading phosphor-text">OTHER PIXELS</h3>
+                    <p class="other-pixels-note">// side projects &amp; experiments &mdash; more landing here over time</p>
+                    <ul class="other-pixels-grid">
+                        <?php
+                        $otherPixels = [
+                            [
+                                'name'  => 'Kandelbrots',
+                                'desc'  => 'A zoomable, board-based canvas for arranging ideas and tasks.',
+                                'url'   => 'https://kandelbrots.com',
+                                'label' => 'kandelbrots.com',
+                            ],
+                            [
+                                'name'  => 'MyBoards',
+                                'desc'  => 'Customize surf, skate &amp; snowboards in 3D before you build or buy.',
+                                'url'   => 'https://myboards.org',
+                                'label' => 'myboards.org',
+                            ],
+                        ];
+                        foreach ($otherPixels as $px): ?>
+                            <li class="other-pixel-card">
+                                <a href="<?php echo htmlspecialchars($px['url']); ?>" target="_blank" rel="noopener noreferrer" data-track="other_pixel">
+                                    <span class="other-pixel-name"><?php echo $px['name']; ?><span class="other-pixel-arrow" aria-hidden="true">&nearr;</span></span>
+                                    <span class="other-pixel-desc"><?php echo $px['desc']; ?></span>
+                                    <span class="other-pixel-domain"><?php echo $px['label']; ?></span>
+                                </a>
+                            </li>
+                        <?php endforeach; ?>
+                    </ul>
+                </section>
+
                 <!-- Contact Section -->
                 <section id="contact" class="contact-section">
                     <div class="contact-inner">
@@ -505,9 +594,13 @@
                                 <textarea id="cf-message" name="message" rows="5" required maxlength="5000"
                                     class="form-textarea"></textarea>
                             </div>
+                            <!-- Honeypot: invisible to humans; the handler drops submissions that fill it. -->
+                            <div class="visually-hidden" aria-hidden="true">
+                                <label for="cf-website">WEBSITE</label>
+                                <input id="cf-website" name="website" type="text" tabindex="-1" autocomplete="off" />
+                            </div>
                             <button type="submit" class="button button2 form-submit">SEND MESSAGE</button>
-                            <!-- Obfuscated email holder (reversed strings) -->
-                            <span id="cf-target" data-user-rev="retep" data-domain-rev="moc.hcstrabretep"></span>
+                            <p id="cf-status" class="form-status" role="status" aria-live="polite"></p>
                             <noscript>email me: peter at peterbartsch dot com</noscript>
                         </form>
                     </div>

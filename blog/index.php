@@ -31,7 +31,7 @@
     <?php $themeBasePath = '../'; include('../themes/theme-head.php'); ?>
 
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-QB3EL923YF"></script>
-    <script>window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag('js', new Date()); gtag('config', 'G-QB3EL923YF');</script>
+    <script src="/analytics.js"></script>
 
     <script type="application/ld+json">
     {
