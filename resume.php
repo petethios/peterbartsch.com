@@ -337,7 +337,7 @@
         <header class="resume-header">
             <h1 class="resume-name">Peter Bartsch</h1>
             <p class="resume-title">Staff Product Designer — design systems · AI-native workflow</p>
-            <p class="resume-summary">Led UX for a $3.8B subscription platform at Deere across web, mobile, and embedded equipment systems (500K users, 12 languages). Built design org 1→10 at FourKites scaling a real-time IoT asset-tracking platform processing 10M+ daily events ($3M→$100M ARR, $1B+ valuation). Now founder of Thios (<a href="https://thios.co" target="_blank" rel="noopener">thios.co</a>) — running an AI-native workflow (Claude, Cursor, Figma Make) to ship a CAD-driven configurator, dev-grade design system with its own Claude Skill, and physical hardware.</p>
+            <p class="resume-summary">Led UX for a $3.8B subscription platform at Deere across web, mobile, and embedded equipment systems (500K users, 12 languages). Built design org 1→10 at FourKites scaling a real-time IoT asset-tracking platform processing 10M+ daily events ($3M→$100M ARR, $1B+ valuation). Now founder of Thios (<a href="https://thios.co" target="_blank" rel="noopener">thios.co</a>) — running an AI-native workflow (Claude, Cursor, Figma Make) to ship a CAD-driven configurator, a dev-grade design system with its own Claude Skill, and physical hardware.</p>
             <!-- Download dropdown — PDF featured at top; all 7 formats available.
                  Uses <details>/<summary> so the menu open/close is browser-native
                  (no JS needed for that). A tiny script at the bottom closes it
@@ -368,7 +368,7 @@
         <div class="resume-receipts" aria-label="Builder receipts">
             <p class="receipts-label">// BUILDER RECEIPTS</p>
             <div class="receipts-grid">
-                <div class="receipts-item"><span class="receipts-num">30</span><span class="receipts-text">Years across web eras &mdash; from CSS hacks to agent-native systems</span></div>
+                <div class="receipts-item"><span class="receipts-num">6</span><span class="receipts-text">Web eras, one operator &mdash; CSS hacks to agent-native systems</span></div>
                 <div class="receipts-item"><span class="receipts-num">$4B+</span><span class="receipts-text">Combined business impact &mdash; Deere ($3.8B) + FourKites ($1B+ valuation)</span></div>
                 <div class="receipts-item"><span class="receipts-num">1</span><span class="receipts-text">Founded company &mdash; <a href="https://thios.co" target="_blank" rel="noopener">Thios</a>, modular structures, 6 sub-brands</span></div>
                 <div class="receipts-item"><span class="receipts-num">6</span><span class="receipts-text">Thios sphere variants from one parametric CAD &mdash; <a href="https://thios.co/configurator/" target="_blank" rel="noopener">3D configurator</a></span></div>
@@ -385,11 +385,11 @@
                     <span class="resume-role-dates">Aug 2024 – Present</span>
                 </div>
                 <p class="resume-role-title">Founder & Lead Designer</p>
-                <p class="resume-role-summary">Open-source modular structures running on a 5-surface design system where I'm the only designer and agents are the engineering team, every surface (DESIGN.md &harr; tokens.json &harr; main.css &harr; design-system.html &harr; OnShape) ships from one source of truth.</p>
+                <p class="resume-role-summary">Open-source modular structures running on a 6-surface design system where I'm the only designer and agents are the engineering team, every surface (DESIGN.md &harr; tokens.json &harr; main.css &harr; design-system.html &harr; OnShape &harr; Figma) ships from one source of truth.</p>
                 <ul class="resume-role-bullets">
-                    <li><strong>Shipped a complete product ecosystem solo in 21 months</strong> &mdash; 6 sphere variants with CAD models, prototype, first revenue across every surface.</li>
+                    <li><strong>Shipped a complete product ecosystem solo in nearly 2 years</strong> &mdash; 6 sphere variants with CAD models, prototype, first revenue across every surface.</li>
                     <li><strong>Designed and built parametric OnShape CAD as the single source of truth</strong> driving BOM and the <a href="https://thios.co/configurator/" target="_blank" rel="noopener">3D configurator at thios.co/configurator</a> &mdash; customers manipulate real geometry with full configuration state (valid/invalid combinations, loading, error, empty, BOM hand-off), not marketing renders</li>
-                    <li><strong>Built a 5-surface, dev-grade design system</strong>, published its first Claude Skill (<a href="https://github.com/peterbartsch/AgentDrift/blob/main/skills/audit-design-token-drift/SKILL.md" target="_blank" rel="noopener"><code>audit-design-token-drift</code></a>) that catches design-token drift across canonical surfaces with file:line citations. Design system as dev tooling, not a Figma library nobody opens &mdash; <a href="https://www.thios.co/design-system-architecture.html" target="_blank" rel="noopener">thios.co/design-system-architecture</a></li>
+                    <li><strong>Built a 6-surface, dev-grade design system</strong>, published its first Claude Skill (<a href="https://github.com/peterbartsch/AgentDrift/blob/main/skills/audit-design-token-drift/SKILL.md" target="_blank" rel="noopener"><code>audit-design-token-drift</code></a>) that catches design-token drift across canonical surfaces with file:line citations. Design system as dev tooling, not a Figma library nobody opens &mdash; <a href="https://www.thios.co/design-system-architecture.html" target="_blank" rel="noopener">thios.co/design-system-architecture</a></li>
                 </ul>
             </div>
 
@@ -417,7 +417,7 @@
                 <ul class="resume-role-bullets">
                     <li><strong>Designed flagship IoT asset-tracking platform 0→1</strong> &mdash; real-time supply chain control tower (web) and mobile apps processing 10M+ daily GPS/telematics events for 30+ Fortune 2000 customers (Anheuser-Busch, Georgia-Pacific, Tyson); high-density dashboards with map, list, and timeline views became the primary driver of 3x customer expansion</li>
                     <li><strong>Led predictive analytics dashboards</strong> (data viz, anomaly states, alerting workflows) that identified shipment delays 6&ndash;12 hours earlier than competitors; +41% retention, +$120K avg ACV</li>
-                    <li><strong>Scaled the design org across Chicago and Chennai</strong> embedded in engineering sprint cadence; established component library, design ops, and hiring framework &mdash; &ndash;65% one-off component variants while maintaining startup velocity</li>
+                    <li><strong>Scaled the design org across Chicago and Chennai</strong> embedded in engineering sprint cadence; established component library, design ops, and hiring framework; &ndash;65% one-off component variants while maintaining startup velocity</li>
                 </ul>
             </div>
 

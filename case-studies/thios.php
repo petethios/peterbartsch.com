@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Thios: Design Systems on Agent Rails | Peter Bartsch Case Study</title>
-    <meta name="description" content="Five surfaces, one source of truth. How DESIGN.md, tokens.json, main.css, design-system.html, and the OnShape API stay aligned via agent-driven audits — for a company of one.">
+    <meta name="description" content="Six surfaces, one source of truth. How DESIGN.md, tokens.json, main.css, design-system.html, and the OnShape API stay aligned via agent-driven audits — for a company of one.">
     <link rel="canonical" href="https://petebartsch.com/case-studies/thios">
     <link rel="icon" type="image/svg+xml" href="../pblogo.svg">
 
     <meta property="og:title" content="Thios: Design Systems on Agent Rails | Peter Bartsch">
-    <meta property="og:description" content="Five surfaces, one source of truth. Agent-driven design-system infrastructure for a company of one.">
+    <meta property="og:description" content="Six surfaces, one source of truth. Agent-driven design-system infrastructure for a company of one.">
     <meta property="og:type" content="article">
     <meta property="og:url" content="https://petebartsch.com/case-studies/thios">
     <meta property="og:image" content="https://petebartsch.com/img/og-thios-agent-rails.png">
@@ -25,7 +25,7 @@
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Thios: Design Systems on Agent Rails | Peter Bartsch">
-    <meta name="twitter:description" content="Five surfaces, one source of truth. Agent-driven design-system infrastructure for a company of one.">
+    <meta name="twitter:description" content="Six surfaces, one source of truth. Agent-driven design-system infrastructure for a company of one.">
     <meta name="twitter:image" content="https://petebartsch.com/img/og-thios-agent-rails.png">
 
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-QB3EL923YF"></script>
@@ -36,7 +36,7 @@
       "@context": "https://schema.org",
       "@type": "Article",
       "headline": "Thios: Design Systems on Agent Rails",
-      "description": "Five surfaces, one source of truth. DESIGN.md, tokens.json, main.css, design-system.html, and the OnShape API kept aligned via agent-driven audits.",
+      "description": "Six surfaces, one source of truth. DESIGN.md, tokens.json, main.css, design-system.html, and the OnShape API kept aligned via agent-driven audits.",
       "author": {"@type": "Person", "name": "Peter Bartsch", "url": "https://petebartsch.com"},
       "url": "https://petebartsch.com/case-studies/thios",
       "datePublished": "2026-05-05"
@@ -53,7 +53,7 @@
                     <a href="../">Portfolio</a> / <a href="../#right">Case Studies</a> / Thios
                 </nav>
                 <h1 class="case-study-title">THIOS: DESIGN SYSTEMS ON AGENT RAILS</h1>
-                <p class="case-study-subtitle">5 surfaces kept aligned by agents · 212 design tokens · 6 sub-brands · 4 production sites · 1 designer</p>
+                <p class="case-study-subtitle">6 surfaces kept aligned by agents · 212 design tokens · 6 sub-brands · 4 production sites · 1 designer</p>
                 <div class="case-study-meta">
                     <div class="case-study-meta-item">
                         <span class="case-study-meta-label">Role</span>
@@ -72,7 +72,7 @@
 
             <div class="case-study-metrics">
                 <div class="case-study-metric">
-                    <p class="case-study-metric-value">5</p>
+                    <p class="case-study-metric-value">6</p>
                     <p class="case-study-metric-label">Surfaces in sync</p>
                 </div>
                 <div class="case-study-metric">
@@ -100,7 +100,7 @@
             <!-- Flywheel diagram (hero) — dark stage so node colors stay legible across all era themes -->
             <figure class="flywheel-stage" aria-labelledby="flywheel-caption">
                 <!-- Desktop / tablet: radial layout -->
-                <svg class="flywheel flywheel--radial" viewBox="0 0 640 580" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Five-surface design system flywheel with DESIGN.md at the center">
+                <svg class="flywheel flywheel--radial" viewBox="0 0 640 580" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Six-surface design system flywheel with DESIGN.md at the center">
                     <defs>
                         <marker id="fwArrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
                             <path d="M 0 0 L 10 5 L 0 10 z" fill="#E8AF00"/>
@@ -150,7 +150,7 @@
                         <text class="fw-center-sub" x="320" y="316" font-size="8.5">~65 tokens · agent-readable</text>
                     </g>
 
-                    <!-- Five surface nodes (clockwise from top) -->
+                    <!-- Five orbiting surface nodes (clockwise from top); DESIGN.md spine at center = the 6th -->
                     <g text-anchor="middle">
                         <!-- 1. Figma (top) — live surface as of June 2026 -->
                         <circle cx="320" cy="90" r="58" class="fw-node"/>
@@ -185,7 +185,7 @@
                 </svg>
 
                 <!-- Mobile: stacked vertical layout, no rotated labels -->
-                <svg class="flywheel flywheel--stacked" viewBox="0 0 320 760" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Five-surface design system flywheel, stacked layout">
+                <svg class="flywheel flywheel--stacked" viewBox="0 0 320 760" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Six-surface design system flywheel, stacked layout">
                     <defs>
                         <marker id="fwArrowSm" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
                             <path d="M 0 0 L 10 5 L 0 10 z" fill="#E8AF00"/>
@@ -246,7 +246,7 @@
                 </svg>
 
                 <figcaption id="flywheel-caption" class="flywheel-caption">
-                    DESIGN.md is the spine. Five surfaces orbit it. Agents enforce the spokes.
+                    DESIGN.md is the spine. Five surfaces orbit it &mdash; six in sync. Agents enforce the spokes.
                 </figcaption>
             </figure>
 
@@ -265,11 +265,11 @@
             </section>
 
             <section class="case-study-section">
-                <h2>The Five-Surface Problem</h2>
-                <p>Most design systems rot quietly: a hex drifts, a Figma variable disagrees with a CSS custom property, a component ships without an entry in the docs. By the time anyone notices, dozens of components reference the wrong value. Thios's design decisions live in five places, all readable by agents, all mutually diffable, all referenced from one canonical rule layer:</p>
+                <h2>The Six-Surface Problem</h2>
+                <p>Most design systems rot quietly: a hex drifts, a Figma variable disagrees with a CSS custom property, a component ships without an entry in the docs. By the time anyone notices, dozens of components reference the wrong value. Thios's design decisions live in six places, all readable by agents, all mutually diffable, all referenced from one canonical rule layer:</p>
 
                 <div class="surface-table-wrap">
-                    <table class="surface-table" aria-label="Five canonical design system surfaces">
+                    <table class="surface-table" aria-label="Six canonical design system surfaces">
                         <thead>
                             <tr><th>Surface</th><th>Role</th><th>Today</th></tr>
                         </thead>
@@ -279,6 +279,7 @@
                             <tr><td>main.css</td><td>Running production code.</td><td>18,000+ lines · 254 KB minified · synced across 4 subdomains</td></tr>
                             <tr><td><a href="https://thios.co/design-system.html" target="_blank" rel="noopener">design-system.html</a></td><td>Live, self-contained demo of every component.</td><td>109 KB · all components with working examples</td></tr>
                             <tr><td><a href="https://cad.onshape.com/documents/ab17885c88d65d0d65156850" target="_blank" rel="noopener">OnShape document</a></td><td>Parametric CAD source. Sphere geometry driven by Variable Studio 1.</td><td>54 elements · 26 part studios · 11 assemblies · 1 Variable Studio</td></tr>
+                            <tr><td>Figma</td><td>Visual design surface. Plus UI re-themed to Thios; Variables mirror tokens.json.</td><td>Brand / status / type + 6 sphere tokens audited in sync, June 2026</td></tr>
                         </tbody>
                     </table>
                 </div>
@@ -300,7 +301,7 @@
             <section class="case-study-section">
                 <h2>Results</h2>
                 <ul>
-                    <li><strong>Five surfaces in sync today</strong> &mdash; all readable by agents, all mutually diffable, all referenced from a single canonical rule layer.</li>
+                    <li><strong>Six surfaces in sync today</strong> &mdash; all readable by agents, all mutually diffable, all referenced from a single canonical rule layer.</li>
                     <li><strong>4 production subdomains</strong> kept in CSS-sync via a <code>make check-css-sync</code> deploy gate &mdash; no silent rot between thios.co, blog, store, and partners.</li>
                     <li><strong>6 sub-brands</strong> generated from one component template via Figma mode variants &mdash; one design, six brand surfaces.</li>
                     <li><strong>212 design tokens, three layers</strong> (primitive / semantic / surface) &mdash; the same shape as tokens.json flowing into Figma also flows into OnShape&rsquo;s Variable Studio for physical product.</li>

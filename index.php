@@ -8,32 +8,32 @@
     <link rel="icon" type="image/svg+xml" href="pblogo.svg">
     <link rel="apple-touch-icon" href="pblogo.png">
     <meta name="description"
-        content="Staff Product Designer — design systems · AI-native workflow. $3.8B platform at Deere (500K users) across web, mobile, embedded. Design org 1→10 at FourKites scaling IoT asset-tracking ($1B+ valuation). Now founder of Thios — AI-native workflow shipping a CAD-driven configurator and dev-grade design system.">
+        content="Staff Product Designer. I make complex enterprise systems usable — and get them adopted — at scale: $3.8B platform at Deere (500K users, web/mobile/embedded), design org built 1→10 at FourKites ($1B+ valuation). Now founder of Thios, where I design the systems and build them.">
     <meta name="keywords"
-        content="Peter Bartsch, staff product designer, enterprise design systems, UX leader, design org leadership, portfolio">
+        content="Peter Bartsch, staff product designer, principal product designer, enterprise design systems, design org leadership, AI-native design systems, portfolio">
     <meta name="author" content="Peter Bartsch">
     <link rel="canonical" href="https://petebartsch.com/">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://petebartsch.com/">
-    <meta property="og:title" content="Peter Bartsch — Staff Product Designer — design systems · AI-native workflow">
+    <meta property="og:title" content="Peter Bartsch — Staff Product Designer">
     <meta property="og:description"
-        content="$3.8B platform at Deere across web, mobile, embedded. Design org 1→10 at FourKites scaling IoT asset-tracking ($1B+ valuation). Now founder of Thios — AI-native workflow, CAD-driven configurator, dev-grade design system.">
+        content="I make complex enterprise systems usable — and get them adopted — at scale. $3.8B platform at Deere (500K users). Design org built 1→10 at FourKites ($1B+ valuation). Now founder of Thios — I design the systems and build them.">
     <meta property="og:site_name" content="Peter Bartsch">
     <meta property="og:image" content="https://petebartsch.com/og-image.png">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
-    <meta property="og:image:alt" content="Peter Bartsch — Staff Product Designer — design systems · AI-native workflow">
+    <meta property="og:image:alt" content="Peter Bartsch — Staff Product Designer">
     <meta property="og:locale" content="en_US">
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Peter Bartsch — Staff Product Designer — design systems · AI-native workflow">
+    <meta name="twitter:title" content="Peter Bartsch — Staff Product Designer">
     <meta name="twitter:description"
         content="$3.8B platform at Deere across web, mobile, embedded. Design org 1→10 at FourKites scaling IoT asset-tracking ($1B+ valuation). Now founder of Thios — AI-native workflow, CAD-driven configurator, dev-grade design system.">
     <meta name="twitter:image" content="https://petebartsch.com/og-image.png">
-    <meta name="twitter:image:alt" content="Peter Bartsch — Staff Product Designer — design systems · AI-native workflow">
+    <meta name="twitter:image:alt" content="Peter Bartsch — Staff Product Designer">
 
     <meta name="theme-color" content="#2f4f50">
     <meta name="theme-color" content="#2f4f50" media="(prefers-color-scheme: light)">
@@ -55,7 +55,7 @@
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-QB3EL923YF"></script>
     <script src="analytics.js"></script>
 
-    <title>Peter Bartsch — Staff Product Designer — design systems · AI-native workflow</title>
+    <title>Peter Bartsch — Staff Product Designer</title>
 
     <!-- Font Preloads -->
     <link rel="preload" href="rombyte.woff2" as="font" type="font/woff2" crossorigin>
@@ -184,7 +184,7 @@
             <div class="mobile-menu-divider"></div>
             <div class="mobile-menu-header">Case Studies</div>
             <ul>
-                <li><a href="case-studies/thios.php">Thios: 5-Surface Design System</a></li>
+                <li><a href="case-studies/thios.php">Thios: 6-Surface Design System</a></li>
                 <li><a href="case-studies/thios-flywheel.php">Thios: Open-Hardware Flywheel</a></li>
                 <li><a href="case-studies/deere-common-ux.php">Deere: Forced Adoption</a></li>
                 <li><a href="case-studies/deere-nav.php">Deere: Platform Unification</a></li>
@@ -218,11 +218,11 @@
                         <picture><source srcset="peterb-hero.webp" type="image/webp"><img src="peterb-hero.png" alt="Peter Bartsch, Staff Product Designer" width="720" height="343" loading="eager" fetchpriority="high" /></picture>
                     </div>
                     <div class="hero-text">
-                        <p class="hero-kicker">Every era of the web. Built for enterprise. Same operator.</p>
+                        <p class="hero-kicker">Staff Product Designer</p>
                         <p class="hero-name">PETER BARTSCH</p>
-                        <h2 id="title" class="phosphor-text">Staff Product Designer — design systems · AI-native workflow</h2>
-                        <p class="hero-proof">Few designers ship $3.8B enterprise platforms <em>and</em> run an AI-native workflow producing a dev-grade design system with its own published Claude Skill. I do both.</p>
-                        <p class="hero-open-to">// OPEN TO: Staff/Principal IC roles · UX leadership at AI-native shops · Founding-team consulting</p>
+                        <h2 id="title" class="phosphor-text">I make complex systems usable &mdash; and get them adopted &mdash; at scale.</h2>
+                        <p class="hero-proof">Across connected vehicles, aviation, logistics, agriculture, and open hardware, I turn enterprise complexity into products people <em>actually adopt</em> &mdash; and I build, not just design.</p>
+                        <p class="hero-open-to">// OPEN TO: Staff / Principal product design &mdash; hands-on by preference, proven to lead and grow teams when the role calls for it. Thios is proof I build, not a path I'm taking instead of the work.</p>
                         <div class="hero-cta-row">
                             <!-- Direct mailto for highest-intent inquiries. Higher conversion than a contact form for senior IC reach-outs.
                                  Easy swap to Cal.com / SavvyCal / etc. — just change href + label. -->
@@ -231,9 +231,9 @@
                         </div>
                         <div class="recruiter-summary">
                             <div class="summary-item summary-item-scale"><span class="summary-label">Scale</span><span class="summary-value">500K users · $3.8B revenue · 40+ teams</span></div>
-                            <div class="summary-item"><span class="summary-label">Level</span><span class="summary-value">Staff / Principal IC · Founder</span></div>
+                            <div class="summary-item"><span class="summary-label">Level</span><span class="summary-value">Staff IC</span></div>
                             <div class="summary-item"><span class="summary-label">Domains</span><span class="summary-value">Enterprise SaaS · IoT / Supply Chain · AI-native design systems</span></div>
-                            <div class="summary-item"><span class="summary-label">Range</span><span class="summary-value">IC + Leadership (built teams 1→10)</span></div>
+                            <div class="summary-item"><span class="summary-label">Range</span><span class="summary-value">IC depth + built &amp; led teams 1→10</span></div>
                         </div>
                     </div>
                 </div>
@@ -257,7 +257,7 @@
                     </div>
                     <div class="about-content">
                         <p class="about-bio">
-                            I lead design for the problems that stall enterprises — forced adoption, platform fragmentation, trust in uncertain data. At Deere, I unlocked $3.8B across 500K users on web, mobile, and embedded equipment systems. At FourKites, I built the design org from 1 to 10 scaling a real-time IoT asset-tracking platform ($3M→$100M ARR, $1B+ valuation). Now I'm founder of <a href="https://thios.co" target="_blank" rel="noopener">Thios</a> — running an AI-native workflow (Claude, Cursor, Figma Make) to ship a <a href="https://thios.co/configurator/" target="_blank" rel="noopener">CAD-driven 3D configurator</a>, a <a href="case-studies/thios.php">dev-grade design system</a> with its own <a href="https://github.com/peterbartsch/AgentDrift/blob/main/skills/audit-design-token-drift/SKILL.md" target="_blank" rel="noopener">published Claude Skill</a>, and <a href="case-studies/thios-flywheel.php">physical hardware</a>. I own systems thinking, journey mapping, state coverage, and edge cases; agents implement.
+                            I make complex enterprise systems usable &mdash; and get them adopted &mdash; at scale. The work I take on is the kind that stalls organizations: forced adoption, platform fragmentation, trust in uncertain data. At Deere, that unlocked $3.8B across 500K users on web, mobile, and embedded equipment. At FourKites, I built the design org from 1 to 10 while scaling a real-time IoT platform from $3M to $100M ARR ($1B+ valuation). As founder of <a href="https://thios.co" target="_blank" rel="noopener">Thios</a>, I now design the systems <em>and build them</em> &mdash; a <a href="https://thios.co/configurator/" target="_blank" rel="noopener">CAD-driven 3D configurator</a>, a <a href="case-studies/thios.php">dev-grade design system</a> with its own <a href="https://github.com/peterbartsch/AgentDrift/blob/main/skills/audit-design-token-drift/SKILL.md" target="_blank" rel="noopener">open-source Claude Skill</a>, and real <a href="case-studies/thios-flywheel.php">physical hardware</a>. Hands-on by preference &mdash; with the range to lead and grow teams when the work calls for it.
                         </p>
                     </div>
                 </div>
@@ -279,15 +279,15 @@
                 <!-- 1. Thios — Design System on Agent Rails (FLAGSHIP) -->
                 <article class="case-study-card case-study-flagship">
                     <div class="case-study-image">
-                        <picture><source srcset="carousel-thumb-thios.webp" type="image/webp"><img src="carousel-thumb-thios.png" alt="Thios 5-surface design system" width="250" height="250"></picture>
+                        <picture><source srcset="carousel-thumb-thios.webp" type="image/webp"><img src="carousel-thumb-thios.png" alt="Thios 6-surface design system" width="250" height="250"></picture>
                     </div>
                     <div class="case-study-body">
-                        <p class="slide-label">FLAGSHIP · FOUNDER · 5-SURFACE SYSTEM</p>
-                        <h3 class="project-title phosphor-text">THIOS: ONE SOURCE OF TRUTH, FIVE SURFACES</h3>
+                        <p class="slide-label">FLAGSHIP · FOUNDER · 6-SURFACE SYSTEM</p>
+                        <h3 class="project-title phosphor-text">THIOS: ONE SOURCE OF TRUTH, SIX SURFACES</h3>
                         <div class="project-structure">
                             <p class="structure-item"><span class="structure-label">Challenge:</span> 6 sub-brands across 4 production sites plus an OnShape CAD source. Drift is the default, not a possibility.</p>
                             <p class="structure-item"><span class="structure-label">Approach:</span> Five canonical surfaces (DESIGN.md ↔ tokens.json ↔ main.css ↔ design-system.html ↔ OnShape) kept aligned by agent-driven audits.</p>
-                            <p class="structure-item"><span class="structure-label">Result:</span> 5 surfaces in sync · 212 design tokens · 7 drift findings caught in May audit · 1 designer</p>
+                            <p class="structure-item"><span class="structure-label">Result:</span> 6 surfaces in sync · 212 design tokens · 7 drift findings caught in May audit · 1 designer</p>
                         </div>
                         <a href="case-studies/thios.php" class="project-link brutalist-link">VIEW CASE STUDY →</a>
                     </div>
