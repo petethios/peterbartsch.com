@@ -216,7 +216,6 @@
             <section id="hero" class="hero-section">
                 <div class="hero-layout">
                     <div class="hero-text">
-                        <p class="hero-kicker">Staff / Principal Product Designer</p>
                         <p class="hero-name">PETER BARTSCH</p>
                         <h2 id="title" class="phosphor-text">I make complex systems usable &mdash; and get them adopted &mdash; at scale.</h2>
                         <p class="hero-moat">I solve the adoption problems that stall organizations: <strong>forced adoption, platform fragmentation, trust in uncertain data.</strong></p>
