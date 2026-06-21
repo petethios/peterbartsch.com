@@ -193,6 +193,7 @@
                 <li><a href="case-studies/fourkites-driver.php">FourKites: Incentive Design</a></li>
                 <li><a href="case-studies/fourkites-mobile.php">FourKites: Mobile</a></li>
                 <li><a href="case-studies/here-traffic.php">HERE: Real-Time Traffic</a></li>
+                <li><a href="case-studies/gogo-flight-tracker.php">Gogo: Flight Tracker</a></li>
             </ul>
             <div class="mobile-menu-divider"></div>
             <div class="mobile-menu-header">Design Era</div>
@@ -343,6 +344,7 @@
                     <li><a href="case-studies/fourkites-mobile.php"><span class="mw-title">FourKites: Two Opposite Mobile Problems</span> <span class="mw-desc">Mobile — subtract vs compress</span></a></li>
                     <li><a href="case-studies/thios-flywheel.php"><span class="mw-title">Thios: The CAD Is the Product</span> <span class="mw-desc">Open hardware — the manufacturing flywheel</span></a></li>
                     <li><a href="case-studies/here-traffic.php"><span class="mw-title">HERE: Real-Time Traffic, Before Live Traffic</span> <span class="mw-desc">Range — 2012–2014 real-time data viz</span></a></li>
+                    <li><a href="case-studies/gogo-flight-tracker.php"><span class="mw-title">Gogo: Are We There Yet?</span> <span class="mw-desc">In-flight tracker 0→1 — a local feed that worked when the Wi-Fi didn't</span></a></li>
                 </ul>
             </section>
 
