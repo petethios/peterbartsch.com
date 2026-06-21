@@ -1,6 +1,6 @@
 ﻿PETER BARTSCH
 (847) 636-2708   |   peter@peterbartsch.com   |   portfolio: petebartsch.com  |  http://linkedin.com/in/peterbartsch
-Staff Product Designer — design systems · AI-native workflow. Led UX for a $3.8B subscription platform at Deere across web, mobile, and embedded equipment systems (500K users, 12 languages). Built design org 1→10 at FourKites scaling a real-time IoT asset-tracking platform processing 10M+ daily events ($3M→$100M ARR, $1B+ valuation). Now founder of Thios — running an AI-native workflow (Claude, Cursor, Figma Make) to ship a CAD-driven configurator, a dev-grade design system with its own Claude Skill, and physical hardware.
+Staff / Principal Product Designer — design systems · AI-native workflow. Led UX for a $3.8B subscription platform at Deere across web, mobile, and embedded equipment systems (500K users, 12 languages). Built design org 1→10 at FourKites scaling a real-time IoT asset-tracking platform processing 10M+ daily events ($3M→$100M ARR, $1B+ valuation). Now founder of Thios — running an AI-native workflow (Claude, Cursor, Figma Make) to ship a CAD-driven configurator, a dev-grade design system with its own Claude Skill, and physical hardware.
 PROFESSIONAL EXPERIENCE
 THIOS (thios.co) | Founder & Lead Designer | Aug 2024 - Present
 Open-source modular structures running on a 6-surface design system where I'm the only designer and agents are the engineering team, every surface (DESIGN.md ↔ tokens.json ↔ main.css ↔ design-system.html ↔ OnShape ↔ Figma) ships from one source of truth.

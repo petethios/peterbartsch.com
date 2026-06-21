@@ -8,7 +8,7 @@
     <link rel="icon" type="image/svg+xml" href="pblogo.svg">
     <link rel="apple-touch-icon" href="pblogo.png">
     <meta name="description"
-        content="Staff Product Designer. I make complex enterprise systems usable — and get them adopted — at scale: $3.8B platform at Deere (500K users, web/mobile/embedded), design org built 1→10 at FourKites ($1B+ valuation). Now founder of Thios, where I design the systems and build them.">
+        content="Staff / Principal Product Designer. I make complex enterprise systems usable — and get them adopted — at scale: $3.8B platform at Deere (500K users, web/mobile/embedded), design org built 1→10 at FourKites ($1B+ valuation). Now founder of Thios, where I design the systems and build them.">
     <meta name="keywords"
         content="Peter Bartsch, staff product designer, principal product designer, enterprise design systems, design org leadership, AI-native design systems, portfolio">
     <meta name="author" content="Peter Bartsch">
@@ -17,23 +17,23 @@
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://petebartsch.com/">
-    <meta property="og:title" content="Peter Bartsch — Staff Product Designer">
+    <meta property="og:title" content="Peter Bartsch — Staff / Principal Product Designer">
     <meta property="og:description"
         content="I make complex enterprise systems usable — and get them adopted — at scale. $3.8B platform at Deere (500K users). Design org built 1→10 at FourKites ($1B+ valuation). Now founder of Thios — I design the systems and build them.">
     <meta property="og:site_name" content="Peter Bartsch">
     <meta property="og:image" content="https://petebartsch.com/og-image.png">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
-    <meta property="og:image:alt" content="Peter Bartsch — Staff Product Designer">
+    <meta property="og:image:alt" content="Peter Bartsch — Staff / Principal Product Designer">
     <meta property="og:locale" content="en_US">
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Peter Bartsch — Staff Product Designer">
+    <meta name="twitter:title" content="Peter Bartsch — Staff / Principal Product Designer">
     <meta name="twitter:description"
         content="$3.8B platform at Deere across web, mobile, embedded. Design org 1→10 at FourKites scaling IoT asset-tracking ($1B+ valuation). Now founder of Thios — AI-native workflow, CAD-driven configurator, dev-grade design system.">
     <meta name="twitter:image" content="https://petebartsch.com/og-image.png">
-    <meta name="twitter:image:alt" content="Peter Bartsch — Staff Product Designer">
+    <meta name="twitter:image:alt" content="Peter Bartsch — Staff / Principal Product Designer">
 
     <meta name="theme-color" content="#2f4f50">
     <meta name="theme-color" content="#2f4f50" media="(prefers-color-scheme: light)">
@@ -55,7 +55,7 @@
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-QB3EL923YF"></script>
     <script src="analytics.js"></script>
 
-    <title>Peter Bartsch — Staff Product Designer</title>
+    <title>Peter Bartsch — Staff / Principal Product Designer</title>
 
     <!-- Font Preloads -->
     <link rel="preload" href="rombyte.woff2" as="font" type="font/woff2" crossorigin>
@@ -86,19 +86,19 @@
       "@context": "https://schema.org",
       "@type": "Person",
       "name": "Peter Bartsch",
-      "jobTitle": "Staff Product Designer",
+      "jobTitle": "Staff / Principal Product Designer",
       "url": "https://petebartsch.com",
       "image": "https://petebartsch.com/peterb.png",
       "sameAs": [
         "https://linkedin.com/in/peterbartsch"
       ],
-      "description": "Staff Product Designer. $3.8B revenue enabled at John Deere. Design org scaled 1→10 at FourKites ($1B+ valuation). 500K+ users across enterprise systems.",
+      "description": "Staff / Principal Product Designer. $3.8B revenue enabled at John Deere. Design org scaled 1→10 at FourKites ($1B+ valuation). 500K+ users across enterprise systems.",
       "knowsAbout": ["User Experience Design", "Product Management", "Design Systems", "Enterprise Software", "Data Visualization", "Figma", "Prototyping"],
       "email": "peter@peterbartsch.com",
       "hasOccupation": [
         {
           "@type": "Occupation",
-          "name": "Staff Product Designer",
+          "name": "Staff / Principal Product Designer",
           "occupationLocation": { "@type": "City", "name": "Chicago" },
           "description": "Enterprise design systems, complex adoption problems, design org leadership"
         }
@@ -137,7 +137,7 @@
     <a href="#main" class="visually-hidden skip-link">Skip to main content</a>
     <!-- Sticky Header Nav -->
     <header id="site-header" role="banner">
-        <h1 id="page-title" class="visually-hidden">Peter Bartsch — Staff Product Designer Portfolio</h1>
+        <h1 id="page-title" class="visually-hidden">Peter Bartsch — Staff / Principal Product Designer Portfolio</h1>
         <div class="header-inner">
             <a href="#" class="header-logo" aria-label="Home">
                 <img src="pblogo.svg" alt="PB logo" height="40" />
@@ -215,14 +215,14 @@
             <section id="hero" class="hero-section">
                 <div class="hero-layout">
                     <div class="hero-portrait">
-                        <picture><source srcset="peterb-hero.webp" type="image/webp"><img src="peterb-hero.png" alt="Peter Bartsch, Staff Product Designer" width="720" height="343" loading="eager" fetchpriority="high" /></picture>
+                        <picture><source srcset="peterb-hero.webp" type="image/webp"><img src="peterb-hero.png" alt="Peter Bartsch, Staff / Principal Product Designer" width="720" height="343" loading="eager" fetchpriority="high" /></picture>
                     </div>
                     <div class="hero-text">
-                        <p class="hero-kicker">Staff Product Designer</p>
+                        <p class="hero-kicker">Staff / Principal Product Designer</p>
                         <p class="hero-name">PETER BARTSCH</p>
                         <h2 id="title" class="phosphor-text">I make complex systems usable &mdash; and get them adopted &mdash; at scale.</h2>
-                        <p class="hero-proof">Across connected vehicles, aviation, logistics, agriculture, and open hardware, I turn enterprise complexity into products people <em>actually adopt</em> &mdash; and I build, not just design.</p>
-                        <p class="hero-open-to">// OPEN TO: the right team, product, and market &mdash; title comes second. Staff, Principal, or leadership all work. I've led teams 1→10 and run my own company; whatever the role, I stay hands-on &mdash; more than ever, now that AI extends what one operator can ship.</p>
+                        <p class="hero-proof">Across connected vehicles, aviation, logistics, agriculture, and open hardware, I turn enterprise complexity into products people <em>actually adopt</em> &mdash; and I build, not just design. The hard part is rarely the UI: it's forced adoption, platform fragmentation, and trust in uncertain data.</p>
+                        <p class="hero-open-to">// OPEN TO: Staff, Principal, or hands-on leadership &mdash; I optimize for the team and the work, not the title.</p>
                         <div class="hero-cta-row">
                             <!-- Direct mailto for highest-intent inquiries. Higher conversion than a contact form for senior IC reach-outs.
                                  Easy swap to Cal.com / SavvyCal / etc. — just change href + label. -->
@@ -259,6 +259,8 @@
                         <p class="about-bio">
                             I make complex enterprise systems usable &mdash; and get them adopted &mdash; at scale. The work I take on is the kind that stalls organizations: forced adoption, platform fragmentation, trust in uncertain data. At Deere, that unlocked $3.8B across 500K users on web, mobile, and embedded equipment. At FourKites, I built the design org from 1 to 10 while scaling a real-time IoT platform from $3M to $100M ARR ($1B+ valuation). As founder of <a href="https://thios.co" target="_blank" rel="noopener">Thios</a>, I now design the systems <em>and build them</em> &mdash; a <a href="https://thios.co/configurator/" target="_blank" rel="noopener">CAD-driven 3D configurator</a>, a <a href="case-studies/thios.php">dev-grade design system</a> with its own <a href="https://github.com/peterbartsch/AgentDrift/blob/main/skills/audit-design-token-drift/SKILL.md" target="_blank" rel="noopener">open-source Claude Skill</a>, and real <a href="case-studies/thios-flywheel.php">physical hardware</a>. Hands-on by preference &mdash; with the range to lead and grow teams when the work calls for it.
                         </p>
+                        <p class="about-subhead">// HOW I THINK</p>
+                        <p class="about-bio">Most organizations think they have a UX problem when they actually have a trust problem, an incentives problem, or an alignment problem. Adoption is where those collide &mdash; you can ship a beautiful flow and still watch people route around it. I look for the leverage point where product, business, and user needs intersect, and design from there. AI just means one operator can now build all the way to that point, not just spec it.</p>
                     </div>
                 </div>
                 <!-- Strength tags get their own full-width row below the photo+bio,
@@ -286,7 +288,7 @@
                         <h3 class="project-title phosphor-text">THIOS: ONE SOURCE OF TRUTH, SIX SURFACES</h3>
                         <div class="project-structure">
                             <p class="structure-item"><span class="structure-label">Challenge:</span> 6 sub-brands across 4 production sites plus an OnShape CAD source. Drift is the default, not a possibility.</p>
-                            <p class="structure-item"><span class="structure-label">Approach:</span> Five canonical surfaces (DESIGN.md ↔ tokens.json ↔ main.css ↔ design-system.html ↔ OnShape) kept aligned by agent-driven audits.</p>
+                            <p class="structure-item"><span class="structure-label">Approach:</span> Six canonical surfaces (DESIGN.md ↔ tokens.json ↔ main.css ↔ design-system.html ↔ OnShape ↔ Figma) kept aligned by agent-driven audits.</p>
                             <p class="structure-item"><span class="structure-label">Result:</span> 6 surfaces in sync · 212 design tokens · 7 drift findings caught in May audit · 1 designer</p>
                         </div>
                         <a href="case-studies/thios.php" class="project-link brutalist-link">VIEW CASE STUDY →</a>
@@ -524,9 +526,9 @@
                                 <td></td>
                                 <td colspan="2">
                                     <ul class="inline-bullets">
-                                        <li><strong>Problem:</strong> Between-roles project: shipped a full product ecosystem solo with AI</li>
-                                        <li><strong>Result:</strong> Brand + 3 websites + 6 sphere variants + revenue in 21 months</li>
-                                        <li><strong>Approach:</strong> AI as technical force multiplier; side project proving technical range</li>
+                                        <li><strong>Problem:</strong> Between roles: build an entire product company solo &mdash; brand, web, configurator, design system, hardware</li>
+                                        <li><strong>Result:</strong> Brand + 3 websites + 6 sphere variants + first revenue, in under two years</li>
+                                        <li><strong>Approach:</strong> AI as the build mechanism (design, code, CAD); proof of end-to-end technical range</li>
                                     </ul>
                                     <a href="case-studies/thios.php" class="view-more">View Case Study →</a>
                                 </td>

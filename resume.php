@@ -3,29 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resume | Peter Bartsch — Staff Product Designer</title>
-    <meta name="description" content="Peter Bartsch — Staff Product Designer — design systems · AI-native workflow. Led UX for $3.8B platform at Deere (500K users). Built design org 1→10 at FourKites ($1B+ valuation). Now founder of Thios — AI-native workflow shipping a CAD-driven configurator and dev-grade design system.">
+    <title>Resume | Peter Bartsch — Staff / Principal Product Designer</title>
+    <meta name="description" content="Peter Bartsch — Staff / Principal Product Designer — design systems · AI-native workflow. Led UX for $3.8B platform at Deere (500K users). Built design org 1→10 at FourKites ($1B+ valuation). Now founder of Thios — AI-native workflow shipping a CAD-driven configurator and dev-grade design system.">
     <link rel="canonical" href="https://petebartsch.com/resume">
     <link rel="icon" type="image/svg+xml" href="pblogo.svg">
 
     <!-- Open Graph -->
     <meta property="og:type" content="profile">
     <meta property="og:url" content="https://petebartsch.com/resume">
-    <meta property="og:title" content="Resume | Peter Bartsch — Staff Product Designer — design systems · AI-native workflow">
+    <meta property="og:title" content="Resume | Peter Bartsch — Staff / Principal Product Designer — design systems · AI-native workflow">
     <meta property="og:description" content="Design systems · AI-native workflow. $3.8B platform at Deere across web, mobile, embedded. Design org 1→10 at FourKites scaling IoT asset-tracking ($1B+ valuation). Now founder of Thios — AI-native workflow, CAD-driven configurator, dev-grade design system.">
     <meta property="og:site_name" content="Peter Bartsch">
     <meta property="og:image" content="https://petebartsch.com/og-image.png">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
-    <meta property="og:image:alt" content="Peter Bartsch — Staff Product Designer — design systems · AI-native workflow">
+    <meta property="og:image:alt" content="Peter Bartsch — Staff / Principal Product Designer — design systems · AI-native workflow">
     <meta property="og:locale" content="en_US">
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Resume | Peter Bartsch — Staff Product Designer — design systems · AI-native workflow">
+    <meta name="twitter:title" content="Resume | Peter Bartsch — Staff / Principal Product Designer — design systems · AI-native workflow">
     <meta name="twitter:description" content="Design systems · AI-native workflow. $3.8B platform at Deere across web, mobile, embedded. Design org 1→10 at FourKites scaling IoT asset-tracking ($1B+ valuation). Now founder of Thios — AI-native workflow, CAD-driven configurator, dev-grade design system.">
     <meta name="twitter:image" content="https://petebartsch.com/og-image.png">
-    <meta name="twitter:image:alt" content="Peter Bartsch — Staff Product Designer — design systems · AI-native workflow">
+    <meta name="twitter:image:alt" content="Peter Bartsch — Staff / Principal Product Designer — design systems · AI-native workflow">
 
     <!-- Fonts -->
     <link rel="preload" href="rombyte.ttf" as="font" type="font/ttf" crossorigin>
@@ -336,7 +336,7 @@
 
         <header class="resume-header">
             <h1 class="resume-name">Peter Bartsch</h1>
-            <p class="resume-title">Staff Product Designer — design systems · AI-native workflow</p>
+            <p class="resume-title">Staff / Principal Product Designer — design systems · AI-native workflow</p>
             <p class="resume-summary">Led UX for a $3.8B subscription platform at Deere across web, mobile, and embedded equipment systems (500K users, 12 languages). Built design org 1→10 at FourKites scaling a real-time IoT asset-tracking platform processing 10M+ daily events ($3M→$100M ARR, $1B+ valuation). Now founder of Thios (<a href="https://thios.co" target="_blank" rel="noopener">thios.co</a>) — running an AI-native workflow (Claude, Cursor, Figma Make) to ship a CAD-driven configurator, a dev-grade design system with its own Claude Skill, and physical hardware.</p>
             <!-- Download dropdown — PDF featured at top; all 7 formats available.
                  Uses <details>/<summary> so the menu open/close is browser-native
