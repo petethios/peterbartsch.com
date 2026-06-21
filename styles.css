@@ -2708,7 +2708,7 @@ textarea:focus-visible {
    About Section
    ======================================== */
 .about-section {
-    padding: var(--space-xl) 0 var(--space-md) 0;
+    padding: 0 0 var(--space-md) 0;
 }
 
 .about-inner {
@@ -2743,9 +2743,9 @@ textarea:focus-visible {
 
 .about-heading {
     font-family: var(--font-display);
-    font-size: 14px;
+    font-size: 22px !important;   /* beat the per-theme .about-heading size override (theme loads after) */
     color: var(--color-primary);
-    letter-spacing: 3px;
+    letter-spacing: 2px;
     margin: 0 auto var(--space-md);
     text-transform: uppercase;
     max-width: 1080px;
@@ -3718,3 +3718,40 @@ html:not([data-theme]) .theme-era-btn.active {
 }
 .about-think .about-subhead { margin-top: 0; }
 .about-think .about-bio { margin-bottom: 0; }
+
+
+/* ============================================================
+   CASE STUDIES area (round-5): // CASE STUDIES header, numbered +
+   divided featured cards (read as 3 distinct studies), and a
+   connected "// MORE CASE STUDIES" continuation.
+   ============================================================ */
+.case-num {
+    display: block;
+    font-family: var(--font-display);
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--color-primary);
+    letter-spacing: 3px;
+    margin: 0 0 6px 0;
+}
+/* Divider + spacing between the 3 featured cards so each reads as its own study */
+#portfolio-carousel .case-study-card { margin-bottom: 0 !important; }
+#portfolio-carousel .case-study-card + .case-study-card {
+    border-top: 1px solid var(--color-gray-dark);
+    padding-top: var(--space-lg);
+    margin-top: var(--space-lg) !important;
+}
+/* Pull the "More case studies" list close so it reads as a continuation, not a separate section */
+#portfolio-carousel { margin-bottom: var(--space-lg) !important; }
+.more-work-section { padding-top: 0; }
+.more-work-heading {
+    font-family: var(--font-display);
+    font-size: 15px;
+    color: var(--color-primary);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    max-width: 1120px;
+    margin: 0 auto var(--space-sm);
+    padding: 0 var(--space-md);
+    text-align: left;
+}

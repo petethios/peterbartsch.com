@@ -279,6 +279,8 @@
                  receipts), Deere/FourKites follow (enterprise scale receipts). -->
             <section id="portfolio-carousel" class="portfolio-carousel">
 
+                <h2 class="about-heading phosphor-text">// CASE STUDIES</h2>
+
                 <!-- Featured 3 — the unforgettable cases: Deere (heaviest) -> FourKites -> Thios -->
 
                 <!-- 1. Deere Common UX — Forced adoption at scale (FLAGSHIP) -->
@@ -287,6 +289,7 @@
                         <picture><source srcset="carousel-thumb-deere-ux.webp" type="image/webp"><img src="carousel-thumb-deere-ux.png" alt="Deere Common UX" width="250" height="250"></picture>
                     </div>
                     <div class="case-study-body">
+                        <span class="case-num">01</span>
                         <p class="slide-label">ENTERPRISE · FORCED ADOPTION</p>
                         <h3 class="project-title phosphor-text">DEERE: 34%→87% ADOPTION AT SCALE</h3>
                         <div class="project-structure">
@@ -304,6 +307,7 @@
                         <picture><source srcset="carousel-thumb-fourkites-tracking.webp" type="image/webp"><img src="carousel-thumb-fourkites-tracking.png" alt="FourKites Tracking" loading="lazy" width="250" height="250"></picture>
                     </div>
                     <div class="case-study-body">
+                        <span class="case-num">02</span>
                         <p class="slide-label">DATA TRUST</p>
                         <h3 class="project-title">FOURKITES: DESIGNING FOR UNCERTAINTY</h3>
                         <div class="project-structure">
@@ -321,6 +325,7 @@
                         <picture><source srcset="carousel-thumb-thios.webp" type="image/webp"><img src="carousel-thumb-thios.png" alt="Thios 6-surface design system" loading="lazy" width="250" height="250"></picture>
                     </div>
                     <div class="case-study-body">
+                        <span class="case-num">03</span>
                         <p class="slide-label">FOUNDER · 6-SURFACE SYSTEM</p>
                         <h3 class="project-title">THIOS: ONE SOURCE OF TRUTH, SIX SURFACES</h3>
                         <div class="project-structure">
@@ -336,7 +341,7 @@
 
             <!-- More work — the rest of the portfolio, de-emphasized as compact links -->
             <section id="more-work" class="more-work-section scroll-reveal">
-                <h2 class="about-heading phosphor-text">// MORE WORK</h2>
+                <h2 class="more-work-heading">// MORE CASE STUDIES</h2>
                 <ul class="more-work-list">
                     <li><a href="case-studies/deere-nav.php"><span class="mw-title">Deere: One Nav Across 47 Properties</span> <span class="mw-desc">Platform unification — 0 downtime, 40+ teams aligned</span></a></li>
                     <li><a href="case-studies/deere-mobile.php"><span class="mw-title">Deere: Running the Farm From a Phone</span> <span class="mw-desc">Enterprise mobile at field scale — gloves, sun, dead zones</span></a></li>
@@ -471,7 +476,7 @@
                             ],
                             [
                                 'name'  => 'MyBoards',
-                                'desc'  => 'Customize surf, skate &amp; snowboards in 3D before you build or buy.',
+                                'desc'  => 'An open reference database of surf, skate &amp; snowboard geometry &mdash; shape, not brand.',
                                 'url'   => 'https://myboards.org',
                                 'label' => 'myboards.org',
                             ],
