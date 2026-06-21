@@ -214,29 +214,28 @@
             <!-- Hero Section -->
             <section id="hero" class="hero-section">
                 <div class="hero-layout">
-                    <div class="hero-portrait">
-                        <picture><source srcset="peterb-hero.webp" type="image/webp"><img src="peterb-hero.png" alt="Peter Bartsch, Staff / Principal Product Designer" width="720" height="343" loading="eager" fetchpriority="high" /></picture>
-                    </div>
                     <div class="hero-text">
                         <p class="hero-kicker">Staff / Principal Product Designer</p>
                         <p class="hero-name">PETER BARTSCH</p>
                         <h2 id="title" class="phosphor-text">I make complex systems usable &mdash; and get them adopted &mdash; at scale.</h2>
-                        <p class="hero-proof">Across connected vehicles, aviation, logistics, agriculture, and open hardware, I turn enterprise complexity into products people <em>actually adopt</em> &mdash; and I build, not just design. The hard part is rarely the UI: it's forced adoption, platform fragmentation, and trust in uncertain data.</p>
-                        <p class="hero-open-to">// OPEN TO: Staff, Principal, or hands-on leadership &mdash; I optimize for the team and the work, not the title.</p>
+                        <p class="hero-moat">I solve the problems that stall organizations: <strong>forced adoption, platform fragmentation, trust in uncertain data.</strong></p>
                         <div class="hero-cta-row">
-                            <!-- Direct mailto for highest-intent inquiries. Higher conversion than a contact form for senior IC reach-outs.
-                                 Easy swap to Cal.com / SavvyCal / etc. — just change href + label. -->
+                            <!-- Direct mailto for highest-intent inquiries. Higher conversion than a contact form for senior IC reach-outs. -->
                             <a href="mailto:peter@peterbartsch.com?subject=Reaching%20out%20from%20petebartsch.com" class="hero-cta-primary">Email me &rarr;</a>
                             <a href="#portfolio-carousel" class="hero-cta-secondary">See the Work</a>
                         </div>
-                        <div class="recruiter-summary">
-                            <div class="summary-item summary-item-scale"><span class="summary-label">Scale</span><span class="summary-value">34%→87% adoption · $3.8B revenue · 500K users</span></div>
-                            <div class="summary-item"><span class="summary-label">Level</span><span class="summary-value">Staff / Principal</span></div>
-                            <div class="summary-item"><span class="summary-label">Domains</span><span class="summary-value">Enterprise SaaS · IoT / Supply Chain · AI-native design systems</span></div>
-                            <div class="summary-item"><span class="summary-label">Range</span><span class="summary-value">IC depth + built &amp; led teams 1→10</span></div>
-                        </div>
+                    </div>
+                    <div class="hero-portrait">
+                        <picture><source srcset="peterb-hero.webp" type="image/webp"><img src="peterb-hero.png" alt="Peter Bartsch, Staff / Principal Product Designer" width="720" height="343" loading="eager" fetchpriority="high" /></picture>
                     </div>
                 </div>
+                <div class="hero-metrics">
+                    <div class="hero-metric"><span class="hero-metric-num">34%&nbsp;&rarr;&nbsp;87%</span><span class="hero-metric-label">Adoption at Deere</span></div>
+                    <div class="hero-metric"><span class="hero-metric-num">$3.8B</span><span class="hero-metric-label">Revenue enabled</span></div>
+                    <div class="hero-metric"><span class="hero-metric-num">500K</span><span class="hero-metric-label">Users reached</span></div>
+                </div>
+                <p class="hero-proof">Connected vehicles, aviation, logistics, agriculture, open hardware &mdash; built &amp; led design teams 1&rarr;10. I build the systems, not just design them.</p>
+                <p class="hero-open-to">// OPEN TO: Staff, Principal, or hands-on leadership &mdash; I optimize for the team and the work, not the title.</p>
             </section>
 
             <!-- About Section -->
