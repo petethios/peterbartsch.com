@@ -244,7 +244,11 @@
                      section width, left-aligned to the left edge of the photo
                      and bio rows below. -->
                 <h2 class="about-heading phosphor-text">// WHAT I DO</h2>
-                <div class="about-inner">
+                <p class="about-bio about-lead">
+                    I make complex enterprise systems usable &mdash; and get them adopted &mdash; at scale. The work I take on is the kind that stalls organizations: forced adoption, platform fragmentation, trust in uncertain data. At Deere, that unlocked $3.8B across 500K users on web, mobile, and embedded equipment. At FourKites, I built the design org from 1 to 10 while scaling a real-time IoT platform from $3M to $100M ARR ($1B+ valuation). As founder of <a href="https://thios.co" target="_blank" rel="noopener">Thios</a>, I now design the systems <em>and build them</em> &mdash; a <a href="https://thios.co/configurator/" target="_blank" rel="noopener">CAD-driven 3D configurator</a>, a <a href="case-studies/thios.php">dev-grade design system</a> with its own <a href="https://github.com/peterbartsch/AgentDrift/blob/main/skills/audit-design-token-drift/SKILL.md" target="_blank" rel="noopener">open-source Claude Skill</a>, and real <a href="case-studies/thios-flywheel.php">physical hardware</a>. Hands-on by preference &mdash; with the range to lead and grow teams when the work calls for it.
+                </p>
+                <!-- // HOW I THINK paired with the video poster as a balanced, centered two-column row -->
+                <div class="about-think-row">
                     <div id="player" class="about-photo">
                         <div class="cover-art">
                             <div class="hover-text" id="hoverText">click this</div>
@@ -254,10 +258,7 @@
                             <div class="grid-overlay"></div>
                         </div>
                     </div>
-                    <div class="about-content">
-                        <p class="about-bio">
-                            I make complex enterprise systems usable &mdash; and get them adopted &mdash; at scale. The work I take on is the kind that stalls organizations: forced adoption, platform fragmentation, trust in uncertain data. At Deere, that unlocked $3.8B across 500K users on web, mobile, and embedded equipment. At FourKites, I built the design org from 1 to 10 while scaling a real-time IoT platform from $3M to $100M ARR ($1B+ valuation). As founder of <a href="https://thios.co" target="_blank" rel="noopener">Thios</a>, I now design the systems <em>and build them</em> &mdash; a <a href="https://thios.co/configurator/" target="_blank" rel="noopener">CAD-driven 3D configurator</a>, a <a href="case-studies/thios.php">dev-grade design system</a> with its own <a href="https://github.com/peterbartsch/AgentDrift/blob/main/skills/audit-design-token-drift/SKILL.md" target="_blank" rel="noopener">open-source Claude Skill</a>, and real <a href="case-studies/thios-flywheel.php">physical hardware</a>. Hands-on by preference &mdash; with the range to lead and grow teams when the work calls for it.
-                        </p>
+                    <div class="about-think">
                         <p class="about-subhead">// HOW I THINK</p>
                         <p class="about-bio">Most organizations think they have a UX problem when they actually have a trust problem, an incentives problem, or an alignment problem. Adoption is where those collide &mdash; you can ship a beautiful flow and still watch people route around it. I look for the leverage point where product, business, and user needs intersect, and design from there. AI just means one operator can now build all the way to that point, not just spec it.</p>
                     </div>

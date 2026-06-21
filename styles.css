@@ -3690,3 +3690,31 @@ html:not([data-theme]) .theme-era-btn.active {
 .mw-desc { font-family: var(--font-body); font-size: 13px; color: var(--color-text-subtle); }
 .more-work-list a:hover .mw-title { color: var(--color-primary); }
 @media (max-width: 600px) { .mw-desc { width: 100%; } }
+
+
+/* ============================================================
+   ABOUT layout (round-4): // WHAT I DO heading + bio span full width;
+   // HOW I THINK pairs with the video poster as a balanced, centered row.
+   ============================================================ */
+.about-lead {
+    max-width: 1080px;
+    margin: 0 auto var(--space-lg);
+    padding: 0 var(--space-md);
+}
+.about-think-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-xl);
+    max-width: 1080px;
+    margin: var(--space-md) auto 0;
+    padding: 0 var(--space-md);
+    flex-wrap: wrap;
+}
+.about-think {
+    flex: 0 1 360px;
+    max-width: 380px;
+}
+.about-think .about-subhead { margin-top: 0; }
+.about-think .about-bio { margin-bottom: 0; }
