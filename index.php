@@ -277,48 +277,16 @@
                  receipts), Deere/FourKites follow (enterprise scale receipts). -->
             <section id="portfolio-carousel" class="portfolio-carousel">
 
-                <!-- 1. Thios — Design System on Agent Rails (FLAGSHIP) -->
+                <!-- Featured 3 — the unforgettable cases: Deere (heaviest) -> FourKites -> Thios -->
+
+                <!-- 1. Deere Common UX — Forced adoption at scale (FLAGSHIP) -->
                 <article class="case-study-card case-study-flagship">
                     <div class="case-study-image">
-                        <picture><source srcset="carousel-thumb-thios.webp" type="image/webp"><img src="carousel-thumb-thios.png" alt="Thios 6-surface design system" width="250" height="250"></picture>
-                    </div>
-                    <div class="case-study-body">
-                        <p class="slide-label">FLAGSHIP · FOUNDER · 6-SURFACE SYSTEM</p>
-                        <h3 class="project-title phosphor-text">THIOS: ONE SOURCE OF TRUTH, SIX SURFACES</h3>
-                        <div class="project-structure">
-                            <p class="structure-item"><span class="structure-label">Challenge:</span> 6 sub-brands across 4 production sites plus an OnShape CAD source. Drift is the default, not a possibility.</p>
-                            <p class="structure-item"><span class="structure-label">Approach:</span> Six canonical surfaces (DESIGN.md ↔ tokens.json ↔ main.css ↔ design-system.html ↔ OnShape ↔ Figma) kept aligned by agent-driven audits.</p>
-                            <p class="structure-item"><span class="structure-label">Result:</span> 6 surfaces in sync · 212 design tokens · 7 drift findings caught in May audit · 1 designer</p>
-                        </div>
-                        <a href="case-studies/thios.php" class="project-link brutalist-link">VIEW CASE STUDY →</a>
-                    </div>
-                </article>
-
-                <!-- 2. Thios — Open-Hardware Flywheel -->
-                <article class="case-study-card">
-                    <div class="case-study-image">
-                        <picture><source srcset="carousel-thumb-thios-flywheel.webp" type="image/webp"><img src="carousel-thumb-thios-flywheel.png" alt="Thios open-hardware flywheel — 3D configurator with module picker and Get Local Quotes handoff" loading="lazy" width="250" height="250"></picture>
-                    </div>
-                    <div class="case-study-body">
-                        <p class="slide-label">FOUNDER · OPEN HARDWARE · FLYWHEEL</p>
-                        <h3 class="project-title">THIOS: THE CAD IS THE PRODUCT</h3>
-                        <div class="project-structure">
-                            <p class="structure-item"><span class="structure-label">Challenge:</span> Traditional manufacturing scales by building factories. A solo founder cannot.</p>
-                            <p class="structure-item"><span class="structure-label">Approach:</span> One OnShape file drives BoM + the configurator's 3D. CERN-OHL-S license + builder tools route demand to local makers; their builds + share-alike modifications flow back into the CAD.</p>
-                            <p class="structure-item"><span class="structure-label">Result:</span> Configurator + license + First Builders program live · 6 sphere variants · 0 factories built</p>
-                        </div>
-                        <a href="case-studies/thios-flywheel.php" class="project-link brutalist-link">VIEW CASE STUDY →</a>
-                    </div>
-                </article>
-
-                <!-- 3. Deere Common UX — Forced adoption at scale -->
-                <article class="case-study-card">
-                    <div class="case-study-image">
-                        <picture><source srcset="carousel-thumb-deere-ux.webp" type="image/webp"><img src="carousel-thumb-deere-ux.png" alt="Deere Common UX" loading="lazy" width="250" height="250"></picture>
+                        <picture><source srcset="carousel-thumb-deere-ux.webp" type="image/webp"><img src="carousel-thumb-deere-ux.png" alt="Deere Common UX" width="250" height="250"></picture>
                     </div>
                     <div class="case-study-body">
                         <p class="slide-label">ENTERPRISE · FORCED ADOPTION</p>
-                        <h3 class="project-title">DEERE: 34%→87% ADOPTION AT SCALE</h3>
+                        <h3 class="project-title phosphor-text">DEERE: 34%→87% ADOPTION AT SCALE</h3>
                         <div class="project-structure">
                             <p class="structure-item"><span class="structure-label">Challenge:</span> 500K users were actively avoiding profile completion — every empty field blocked $3.8B in AI and automation revenue.</p>
                             <p class="structure-item"><span class="structure-label">Approach:</span> Led design of a multi-channel forced adoption flow across 8 product lines without destroying trust</p>
@@ -328,40 +296,7 @@
                     </div>
                 </article>
 
-                <!-- 4. Deere Nav — Platform governance -->
-                <article class="case-study-card">
-                    <div class="case-study-image">
-                        <picture><source srcset="carousel-thumb-deere-nav.webp" type="image/webp"><img src="carousel-thumb-deere-nav.png" alt="Deere Consistent Nav" loading="lazy" width="250" height="250"></picture>
-                    </div>
-                    <div class="case-study-body">
-                        <p class="slide-label">PLATFORM UNIFICATION</p>
-                        <h3 class="project-title">DEERE: ONE NAV ACROSS 47 PROPERTIES</h3>
-                        <div class="project-structure">
-                            <p class="structure-item"><span class="structure-label">Challenge:</span> 47 acquired digital properties, each with its own navigation, dev team, and political owner. Customers had to relearn the journey every time they crossed a property line.</p>
-                            <p class="structure-item"><span class="structure-label">Approach:</span> Designed a common navigation for every digital touchpoint and rolled it across all 47 properties with zero downtime.</p>
-                            <p class="structure-item"><span class="structure-label">Result:</span> One nav, 47 properties · 0 downtime · 40+ teams aligned · 45% faster dev handoffs</p>
-                        </div>
-                        <a href="case-studies/deere-nav.php" class="project-link brutalist-link">VIEW CASE STUDY →</a>
-                    </div>
-                </article>
-
-                <article class="case-study-card">
-                    <div class="case-study-image">
-                        <img src="carousel-thumb-deere-mobile.png" alt="John Deere Mobile" loading="lazy" width="250" height="250">
-                    </div>
-                    <div class="case-study-body">
-                        <p class="slide-label">MOBILE · ENTERPRISE AT FIELD SCALE</p>
-                        <h3 class="project-title">DEERE: RUNNING THE FARM FROM A PHONE</h3>
-                        <div class="project-structure">
-                            <p class="structure-item"><span class="structure-label">Challenge:</span> A farmer runs their business from the cab, but Deere's software grew up on the desktop — five or six apps, each its own login and navigation, miserable in a field with gloves and one bar of signal.</p>
-                            <p class="structure-item"><span class="structure-label">Approach:</span> Designed the shared mobile account, sign-in, and navigation system across 8 product lines — one account, one way to navigate, built for gloves, sun, and dead zones.</p>
-                            <p class="structure-item"><span class="structure-label">Result:</span> One system across 8 apps · 500K users · +34% active authenticated users · −16% support tickets</p>
-                        </div>
-                        <a href="case-studies/deere-mobile.php" class="project-link brutalist-link">VIEW CASE STUDY →</a>
-                    </div>
-                </article>
-
-                <!-- 5. FourKites Tracking — Trust in uncertain data -->
+                <!-- 2. FourKites Tracking — Trust in uncertain data -->
                 <article class="case-study-card">
                     <div class="case-study-image">
                         <picture><source srcset="carousel-thumb-fourkites-tracking.webp" type="image/webp"><img src="carousel-thumb-fourkites-tracking.png" alt="FourKites Tracking" loading="lazy" width="250" height="250"></picture>
@@ -378,55 +313,36 @@
                     </div>
                 </article>
 
-                <!-- 6. FourKites Driver — Incentive alignment -->
+                <!-- 3. Thios — One source of truth, six surfaces -->
                 <article class="case-study-card">
                     <div class="case-study-image">
-                        <picture><source srcset="carousel-thumb-fourkites-driver.webp" type="image/webp"><img src="carousel-thumb-fourkites-driver.png" alt="FourKites Driver" loading="lazy" width="250" height="250"></picture>
+                        <picture><source srcset="carousel-thumb-thios.webp" type="image/webp"><img src="carousel-thumb-thios.png" alt="Thios 6-surface design system" loading="lazy" width="250" height="250"></picture>
                     </div>
                     <div class="case-study-body">
-                        <p class="slide-label">INCENTIVE DESIGN</p>
-                        <h3 class="project-title">FOURKITES: REALIGNING INCENTIVES</h3>
+                        <p class="slide-label">FOUNDER · 6-SURFACE SYSTEM</p>
+                        <h3 class="project-title">THIOS: ONE SOURCE OF TRUTH, SIX SURFACES</h3>
                         <div class="project-structure">
-                            <p class="structure-item"><span class="structure-label">Challenge:</span> Drivers saw location sharing as surveillance. The platform needed their data to survive. Both sides were right.</p>
-                            <p class="structure-item"><span class="structure-label">Approach:</span> Led design of a rewards system that made data sharing beneficial for both sides</p>
-                            <p class="structure-item"><span class="structure-label">Result:</span> 32% more tracked shipments · Driver NPS +28</p>
+                            <p class="structure-item"><span class="structure-label">Challenge:</span> 6 sub-brands across 4 production sites plus an OnShape CAD source. Drift is the default, not a possibility.</p>
+                            <p class="structure-item"><span class="structure-label">Approach:</span> Six canonical surfaces (DESIGN.md ↔ tokens.json ↔ main.css ↔ design-system.html ↔ OnShape ↔ Figma) kept aligned by agent-driven audits.</p>
+                            <p class="structure-item"><span class="structure-label">Result:</span> 6 surfaces in sync · 212 design tokens · 7 drift findings caught in May audit · 1 designer</p>
                         </div>
-                        <a href="case-studies/fourkites-driver.php" class="project-link brutalist-link">VIEW CASE STUDY →</a>
+                        <a href="case-studies/thios.php" class="project-link brutalist-link">VIEW CASE STUDY →</a>
                     </div>
                 </article>
 
-                <article class="case-study-card">
-                    <div class="case-study-image">
-                        <img src="carousel-thumb-fourkites-mobile.png" alt="FourKites Mobile" loading="lazy" width="250" height="250">
-                    </div>
-                    <div class="case-study-body">
-                        <p class="slide-label">MOBILE · SUBTRACT vs COMPRESS</p>
-                        <h3 class="project-title">FOURKITES: TWO OPPOSITE MOBILE PROBLEMS</h3>
-                        <div class="project-structure">
-                            <p class="structure-item"><span class="structure-label">Challenge:</span> One real-time system, two users — a driver who needs almost nothing on screen, a yard manager who needs everything.</p>
-                            <p class="structure-item"><span class="structure-label">Approach:</span> Designed the driver app by subtraction and the yard-manager view by compression — opposite disciplines, one platform</p>
-                            <p class="structure-item"><span class="structure-label">Result:</span> Mobile fit to the user's hands and moment · primary driver of 3× expansion</p>
-                        </div>
-                        <a href="case-studies/fourkites-mobile.php" class="project-link brutalist-link">VIEW CASE STUDY →</a>
-                    </div>
-                </article>
+            </section>
 
-                <article class="case-study-card">
-                    <div class="case-study-image">
-                        <img src="carousel-thumb-here-traffic.png" alt="HERE real-time traffic wall" loading="lazy" width="250" height="250">
-                    </div>
-                    <div class="case-study-body">
-                        <p class="slide-label">RANGE · 2012–2014 · REAL-TIME DATA VIZ</p>
-                        <h3 class="project-title">HERE: REAL-TIME TRAFFIC, BEFORE LIVE TRAFFIC</h3>
-                        <div class="project-structure">
-                            <p class="structure-item"><span class="structure-label">Challenge:</span> HERE had a firehose of GPS probe data — but it was invisible to the automakers buying it on the convention floor.</p>
-                            <p class="structure-item"><span class="structure-label">Approach:</span> A convention demo — a wall of screens growing 3 → 6 → 9 — running a near-real-time traffic feed on DEMPSY.</p>
-                            <p class="structure-item"><span class="structure-label">Result:</span> Made an abstract data advantage undeniable. Early to live traffic — before Google/Android made it default.</p>
-                        </div>
-                        <a href="case-studies/here-traffic.php" class="project-link brutalist-link">VIEW CASE STUDY →</a>
-                    </div>
-                </article>
-
+            <!-- More work — the rest of the portfolio, de-emphasized as compact links -->
+            <section id="more-work" class="more-work-section scroll-reveal">
+                <h2 class="about-heading phosphor-text">// MORE WORK</h2>
+                <ul class="more-work-list">
+                    <li><a href="case-studies/deere-nav.php"><span class="mw-title">Deere: One Nav Across 47 Properties</span> <span class="mw-desc">Platform unification — 0 downtime, 40+ teams aligned</span></a></li>
+                    <li><a href="case-studies/deere-mobile.php"><span class="mw-title">Deere: Running the Farm From a Phone</span> <span class="mw-desc">Enterprise mobile at field scale — gloves, sun, dead zones</span></a></li>
+                    <li><a href="case-studies/fourkites-driver.php"><span class="mw-title">FourKites: Realigning Incentives</span> <span class="mw-desc">Incentive design — +32% tracked shipments, driver NPS +28</span></a></li>
+                    <li><a href="case-studies/fourkites-mobile.php"><span class="mw-title">FourKites: Two Opposite Mobile Problems</span> <span class="mw-desc">Mobile — subtract vs compress</span></a></li>
+                    <li><a href="case-studies/thios-flywheel.php"><span class="mw-title">Thios: The CAD Is the Product</span> <span class="mw-desc">Open hardware — the manufacturing flywheel</span></a></li>
+                    <li><a href="case-studies/here-traffic.php"><span class="mw-title">HERE: Real-Time Traffic, Before Live Traffic</span> <span class="mw-desc">Range — 2012–2014 real-time data viz</span></a></li>
+                </ul>
             </section>
 
                 <!-- Company Logos -->
