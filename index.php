@@ -222,7 +222,7 @@
                         <p class="hero-name">PETER BARTSCH</p>
                         <h2 id="title" class="phosphor-text">I make complex systems usable &mdash; and get them adopted &mdash; at scale.</h2>
                         <p class="hero-proof">Across connected vehicles, aviation, logistics, agriculture, and open hardware, I turn enterprise complexity into products people <em>actually adopt</em> &mdash; and I build, not just design.</p>
-                        <p class="hero-open-to">// OPEN TO: Staff / Principal product design &mdash; hands-on by preference, proven to lead and grow teams when the role calls for it. Thios is proof I build, not a path I'm taking instead of the work.</p>
+                        <p class="hero-open-to">// OPEN TO: the right team, product, and market &mdash; title comes second. Staff, Principal, or leadership all work. I've led teams 1→10 and run my own company; whatever the role, I stay hands-on &mdash; more than ever, now that AI extends what one operator can ship.</p>
                         <div class="hero-cta-row">
                             <!-- Direct mailto for highest-intent inquiries. Higher conversion than a contact form for senior IC reach-outs.
                                  Easy swap to Cal.com / SavvyCal / etc. — just change href + label. -->
@@ -230,8 +230,8 @@
                             <a href="#portfolio-carousel" class="hero-cta-secondary">See the Work</a>
                         </div>
                         <div class="recruiter-summary">
-                            <div class="summary-item summary-item-scale"><span class="summary-label">Scale</span><span class="summary-value">500K users · $3.8B revenue · 40+ teams</span></div>
-                            <div class="summary-item"><span class="summary-label">Level</span><span class="summary-value">Staff IC</span></div>
+                            <div class="summary-item summary-item-scale"><span class="summary-label">Scale</span><span class="summary-value">34%→87% adoption · $3.8B revenue · 500K users</span></div>
+                            <div class="summary-item"><span class="summary-label">Level</span><span class="summary-value">Staff / Principal</span></div>
                             <div class="summary-item"><span class="summary-label">Domains</span><span class="summary-value">Enterprise SaaS · IoT / Supply Chain · AI-native design systems</span></div>
                             <div class="summary-item"><span class="summary-label">Range</span><span class="summary-value">IC depth + built &amp; led teams 1→10</span></div>
                         </div>
