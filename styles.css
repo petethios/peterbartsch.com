@@ -3577,7 +3577,7 @@ html:not([data-theme]) .theme-era-btn.active {
 /* Dominant headline — the positioning, impossible to miss.
    id+class specificity beats any plain #title rule regardless of order. */
 .hero-section #title {
-    font-size: clamp(1.7rem, 4vw, 3.1rem) !important;   /* beat per-theme #title sizes (theme files load after) */
+    font-size: clamp(1.5rem, 3vw, 2.4rem) !important;   /* beat per-theme #title sizes; sized so the headline wraps to 4 lines */
     line-height: 1.04 !important;
     letter-spacing: -0.015em;
     transform: none !important;
