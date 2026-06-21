@@ -459,7 +459,7 @@
                 <ul class="resume-role-bullets">
                     <li><strong>Owned airborne products and onboard hardware UX</strong> for major US airlines, including initial rollout testing across fleets</li>
                     <li><strong>Authored FAA-approved documentation</strong> for business and commercial fleet Air-to-Ground (ATG) RF connectivity systems</li>
-                    <li><strong>Designed an in-flight flight tracker 0→1</strong> (real-time positional data + passenger UX) that drove successful sponsorship deals</li>
+                    <li><strong>Designed an <a href="case-studies/gogo-flight-tracker.php">in-flight flight tracker 0→1</a></strong> (real-time positional data + passenger UX) that drove successful sponsorship deals</li>
                 </ul>
             </div>
 

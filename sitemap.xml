@@ -67,6 +67,12 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
+  <url>
+    <loc>https://petebartsch.com/case-studies/gogo-flight-tracker</loc>
+    <lastmod>2026-06-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
   <!-- Blog -->
   <url>
     <loc>https://petebartsch.com/blog</loc>
