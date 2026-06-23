@@ -12,3 +12,6 @@ deploy_main.sh
 
 # Claude Code local config (settings, worktrees, dev-server launch config)
 .claude/
+
+# Local hand-off folder for the Figma portfolio deck — not part of the live site
+portfolio-deck-assets/
