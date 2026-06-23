@@ -146,6 +146,7 @@
                 <ul class="nav-primary">
                     <li><a href="#about">ABOUT</a></li>
                     <li><a href="#portfolio-carousel">CASES</a></li>
+                    <li><a href="https://www.figma.com/proto/i1SMndpgNnRCEBZceZJ7NK/Peter-Bartsch-CV--Portfolio---Cases-Studies?node-id=494-4567&amp;page-id=488%3A1680&amp;starting-point-node-id=963%3A950&amp;t=MPjZLemqdZcZC1Bm-1" target="_blank" rel="noopener noreferrer">PORTFOLIO</a></li>
                     <li><a href="blog/">WRITING</a></li>
                     <li><a href="resume.php">RESUME</a></li>
                     <li><a href="#other-pixels">PIXELS</a></li>
@@ -176,6 +177,7 @@
             <ul class="mobile-nav-primary">
                 <li><a href="#about">ABOUT</a></li>
                 <li><a href="#portfolio-carousel">CASES</a></li>
+                <li><a href="https://www.figma.com/proto/i1SMndpgNnRCEBZceZJ7NK/Peter-Bartsch-CV--Portfolio---Cases-Studies?node-id=494-4567&amp;page-id=488%3A1680&amp;starting-point-node-id=963%3A950&amp;t=MPjZLemqdZcZC1Bm-1" target="_blank" rel="noopener noreferrer">PORTFOLIO</a></li>
                 <li><a href="blog/">WRITING</a></li>
                 <li><a href="resume.php">RESUME</a></li>
                 <li><a href="#other-pixels">PIXELS</a></li>
