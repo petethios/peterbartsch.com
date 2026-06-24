@@ -144,13 +144,11 @@
             </a>
             <nav class="header-nav header-nav-simplified" aria-label="Primary">
                 <ul class="nav-primary">
-                    <li><a href="#about">ABOUT</a></li>
-                    <li><a href="#portfolio-carousel">CASES</a></li>
-                    <li><a href="blog/">WRITING</a></li>
                     <li><a href="resume.php">RESUME</a></li>
-                    <li><a href="#other-pixels">PIXELS</a></li>
+                    <li><a href="Peter-Bartsch-Portfolio.pdf" target="_blank" rel="noopener">PORTFOLIO</a></li>
+                    <li><a href="#portfolio-carousel">CASE STUDIES</a></li>
+                    <li><a href="blog/">WRITINGS</a></li>
                     <li><a href="#contact">CONTACT</a></li>
-                    <li><a href="https://linkedin.com/in/peterbartsch" target="_blank" rel="noopener noreferrer" class="nav-linkedin">LINKEDIN</a></li>
                 </ul>
             </nav>
             <!-- Compact era pill-group — discoverable but doesn't dominate above-the-fold -->
@@ -174,11 +172,10 @@
         <nav id="mobileMenu" class="mobile-menu" aria-label="Mobile" hidden inert>
             <button id="mobileMenuClose" class="mobile-menu-close" aria-label="Close menu"></button>
             <ul class="mobile-nav-primary">
-                <li><a href="#about">ABOUT</a></li>
-                <li><a href="#portfolio-carousel">CASES</a></li>
-                <li><a href="blog/">WRITING</a></li>
                 <li><a href="resume.php">RESUME</a></li>
-                <li><a href="#other-pixels">PIXELS</a></li>
+                <li><a href="Peter-Bartsch-Portfolio.pdf" target="_blank" rel="noopener">PORTFOLIO</a></li>
+                <li><a href="#portfolio-carousel">CASE STUDIES</a></li>
+                <li><a href="blog/">WRITINGS</a></li>
                 <li><a href="#contact">CONTACT</a></li>
             </ul>
             <div class="mobile-menu-divider"></div>
@@ -223,6 +220,7 @@
                             <!-- Direct mailto for highest-intent inquiries. Higher conversion than a contact form for senior IC reach-outs. -->
                             <a href="mailto:peter@peterbartsch.com?subject=Reaching%20out%20from%20petebartsch.com" class="hero-cta-primary">Email me &rarr;</a>
                             <a href="#portfolio-carousel" class="hero-cta-secondary">See the Work</a>
+                            <a href="Peter-Bartsch-Portfolio.pdf" class="hero-cta-secondary" target="_blank" rel="noopener">Download Portfolio (PDF) &darr;</a>
                         </div>
                     </div>
                     <div class="hero-portrait">
@@ -500,7 +498,7 @@
                             <!-- Hero already states what I'm open to. This section just covers the practical
                                  things a sender needs to know before they hit send. -->
                             <p class="contact-desc">Chicago-based. Open to remote or relocation. I reply within 1 business day.</p>
-                            <p class="contact-direct">Prefer email? <a href="mailto:peter@peterbartsch.com?subject=Reaching%20out%20from%20petebartsch.com">peter@peterbartsch.com</a></p>
+                            <p class="contact-direct">Prefer email? <a href="mailto:peter@peterbartsch.com?subject=Reaching%20out%20from%20petebartsch.com">peter@peterbartsch.com</a> &middot; <a href="https://linkedin.com/in/peterbartsch" target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
                             <a href="resume.php" class="sidebar-link">View Resume</a>
                         </div>
                         <form id="contactForm" class="contact-form">
