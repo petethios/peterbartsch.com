@@ -100,88 +100,69 @@
             <!-- Flywheel diagram (hero) — dark stage so node colors stay legible across all era themes -->
             <figure class="flywheel-stage" aria-labelledby="flywheel-caption">
                 <!-- Desktop / tablet: radial layout -->
-                <svg class="flywheel flywheel--radial" viewBox="0 0 640 580" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Six-surface design system flywheel with DESIGN.md at the center">
-                    <defs>
-                        <marker id="fwArrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
-                            <path d="M 0 0 L 10 5 L 0 10 z" fill="#E8AF00"/>
-                        </marker>
-                        <radialGradient id="fwCenterGlow" cx="50%" cy="50%" r="50%">
-                            <stop offset="0%" stop-color="#E8AF00" stop-opacity="0.22"/>
-                            <stop offset="70%" stop-color="#E8AF00" stop-opacity="0.04"/>
-                            <stop offset="100%" stop-color="#E8AF00" stop-opacity="0"/>
-                        </radialGradient>
-                    </defs>
-
-                    <!-- Decorative outer rings -->
-                    <circle cx="320" cy="290" r="252" fill="none" stroke="#E8AF00" stroke-width="1" stroke-dasharray="2 6" opacity="0.22"/>
-                    <circle cx="320" cy="290" r="232" fill="none" stroke="#E8AF00" stroke-width="1" opacity="0.10"/>
-
-                    <!-- Five forward arrows tracing the clockwise loop:
-                         Figma → Tokens → Main.css → Design-system → OnShape → Figma -->
-                    <g class="fw-arrow" marker-end="url(#fwArrow)">
-                        <!-- Figma → Tokens (diagonal NE) -->
-                        <path d="M 369,120 Q 446,139 491,195"/>
-                        <!-- Tokens → Main.css (vertical down, slight right bow) -->
-                        <path d="M 540,283 Q 558,310 540,337"/>
-                        <!-- Main.css → Design-system (horizontal left, slight bottom bow) -->
-                        <path d="M 482,395 Q 320,425 158,395"/>
-                        <!-- Design-system → OnShape (vertical up, slight left bow) -->
-                        <path d="M 100,337 Q 82,310 100,283"/>
-                        <!-- OnShape → Figma (diagonal NE) -->
-                        <path d="M 149,195 Q 194,139 271,120"/>
-                    </g>
-
-                    <!-- Edge labels: horizontal text in the angular gaps between adjacent nodes.
-                         Each label names the agent process running on that arrow. -->
-                    <g class="fw-edge-label">
-                        <text x="160" y="60" text-anchor="middle">MCP audit · next surface</text>
-                        <text x="498" y="60" text-anchor="middle">token-drift audit</text>
-                        <text x="612" y="305" text-anchor="end">cssSyncRequired</text>
-                        <text x="320" y="567" text-anchor="middle">design-system-loop.html</text>
-                        <text x="28" y="305" text-anchor="start">parametric agent</text>
-                    </g>
-
-                    <!-- Center: DESIGN.md spine -->
-                    <g text-anchor="middle">
-                        <circle cx="320" cy="290" r="92" fill="url(#fwCenterGlow)"/>
-                        <circle cx="320" cy="290" r="74" fill="#0c0f12" stroke="#E8AF00" stroke-width="2"/>
-                        <text class="fw-center-label" x="320" y="282" font-size="15">DESIGN.md</text>
-                        <text class="fw-center-sub" x="320" y="300">CANONICAL RULES</text>
-                        <text class="fw-center-sub" x="320" y="316" font-size="8.5">~65 tokens · agent-readable</text>
-                    </g>
-
-                    <!-- Five orbiting surface nodes (clockwise from top); DESIGN.md spine at center = the 6th -->
-                    <g text-anchor="middle">
-                        <!-- 1. Figma (top) — live surface as of June 2026 -->
-                        <circle cx="320" cy="90" r="58" class="fw-node"/>
-                        <text class="fw-node-label" x="320" y="84">FIGMA</text>
-                        <text class="fw-node-sub" x="320" y="100">visual source</text>
-                        <text class="fw-node-sub fw-node-sub--accent" x="320" y="113">live · in sync</text>
-
-                        <!-- 2. tokens.json (upper right) -->
-                        <circle cx="540" cy="225" r="58" class="fw-node"/>
-                        <text class="fw-node-label" x="540" y="219">TOKENS</text>
-                        <text class="fw-node-label" x="540" y="233" font-size="10">.JSON</text>
-                        <text class="fw-node-sub" x="540" y="247">212 tokens · W3C</text>
-
-                        <!-- 3. main.css (lower right) -->
-                        <circle cx="540" cy="395" r="58" class="fw-node"/>
-                        <text class="fw-node-label" x="540" y="389">MAIN.CSS</text>
-                        <text class="fw-node-sub" x="540" y="405">18,000+ lines</text>
-                        <text class="fw-node-sub" x="540" y="417">→ 4 sites</text>
-
-                        <!-- 4. design-system.html (lower left) -->
-                        <circle cx="100" cy="395" r="58" class="fw-node"/>
-                        <text class="fw-node-label" x="100" y="385">DESIGN</text>
-                        <text class="fw-node-label" x="100" y="398" font-size="10">SYSTEM.HTML</text>
-                        <text class="fw-node-sub" x="100" y="414">live demo · 109 KB</text>
-
-                        <!-- 5. OnShape (upper left) -->
-                        <circle cx="100" cy="225" r="58" class="fw-node"/>
-                        <text class="fw-node-label" x="100" y="219">ONSHAPE</text>
-                        <text class="fw-node-sub" x="100" y="235">54 elements</text>
-                        <text class="fw-node-sub" x="100" y="247">Variable Studio 1</text>
-                    </g>
+                <svg class="flywheel flywheel--radial" viewBox="0 0 840 840" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Six-surface design system flywheel: DESIGN.md spine plus five orbiting surfaces">
+                  <defs>
+                    <marker id="fwArrow" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+                      <path d="M 0 0 L 10 5 L 0 10 z" fill="#E8AF00"/>
+                    </marker>
+                    <radialGradient id="fwCenterGlow" cx="50%" cy="50%" r="50%">
+                      <stop offset="0%" stop-color="#E8AF00" stop-opacity="0.22"/>
+                      <stop offset="70%" stop-color="#E8AF00" stop-opacity="0.05"/>
+                      <stop offset="100%" stop-color="#E8AF00" stop-opacity="0"/>
+                    </radialGradient>
+                  </defs>
+                  <circle cx="420" cy="420" r="240" fill="none" stroke="#E8AF00" stroke-width="1.5" opacity="0.12"/>
+                  <circle cx="420" cy="420" r="310" fill="none" stroke="#E8AF00" stroke-width="1" stroke-dasharray="2 8" opacity="0.16"/>
+                  <g stroke="#E8AF00" stroke-width="1.5" stroke-dasharray="1 6" opacity="0.28">
+                    <line x1="420" y1="332" x2="420" y2="248"/>
+                    <line x1="503.69" y1="392.81" x2="583.58" y2="366.85"/>
+                    <line x1="471.73" y1="491.19" x2="521.1" y2="559.15"/>
+                    <line x1="368.27" y1="491.19" x2="318.9" y2="559.15"/>
+                    <line x1="336.31" y1="392.81" x2="256.42" y2="366.85"/>
+                  </g>
+                  <g class="fw-arrow" marker-end="url(#fwArrow)">
+                    <path d="M 501.97,194.43 A 240 240 0 0 1 609.2,272.34"/>
+                    <path d="M 659.86,428.26 A 240 240 0 0 1 618.9,554.31"/>
+                    <path d="M 486.27,650.67 A 240 240 0 0 1 353.73,650.67"/>
+                    <path d="M 221.1,554.31 A 240 240 0 0 1 180.14,428.26"/>
+                    <path d="M 230.8,272.34 A 240 240 0 0 1 338.03,194.43"/>
+                  </g>
+                  <circle cx="420" cy="420" r="96" fill="url(#fwCenterGlow)"/>
+                  <circle cx="420" cy="420" r="80" fill="#0c0f12" stroke="#E8AF00" stroke-width="2"/>
+                  <g text-anchor="middle">
+                    <text class="fw-center-label" x="420" y="412" font-size="16">DESIGN.md</text>
+                    <text class="fw-center-sub" x="420" y="429">CANONICAL RULES</text>
+                    <text class="fw-center-sub" x="420" y="443" font-size="8.5">~65 tokens · agent-readable</text>
+                  </g>
+                  <g text-anchor="middle">
+                    <circle cx="420" cy="180" r="62" class="fw-node"/>
+                    <text class="fw-node-label" x="420" y="171" font-size="12">FIGMA</text>
+                    <text class="fw-node-sub" x="420" y="187">visual source</text>
+                    <text class="fw-node-sub fw-node-sub--accent" x="420" y="199">live · in sync</text>
+                    <circle cx="648.25" cy="345.84" r="62" class="fw-node"/>
+                    <text class="fw-node-label" x="648.25" y="336.84" font-size="10.5">TOKENS.JSON</text>
+                    <text class="fw-node-sub" x="648.25" y="352.84">212 tokens</text>
+                    <text class="fw-node-sub " x="648.25" y="364.84">W3C · DTCG</text>
+                    <circle cx="561.07" cy="614.16" r="62" class="fw-node"/>
+                    <text class="fw-node-label" x="561.07" y="605.16" font-size="12">MAIN.CSS</text>
+                    <text class="fw-node-sub" x="561.07" y="621.16">18,000+ lines</text>
+                    <text class="fw-node-sub " x="561.07" y="633.16">→ 4 live sites</text>
+                    <circle cx="278.93" cy="614.16" r="62" class="fw-node"/>
+                    <text class="fw-node-label" x="278.93" y="605.16" font-size="9">DESIGN-SYS.HTML</text>
+                    <text class="fw-node-sub" x="278.93" y="621.16">live demo</text>
+                    <text class="fw-node-sub " x="278.93" y="633.16">109 KB</text>
+                    <circle cx="191.75" cy="345.84" r="62" class="fw-node"/>
+                    <text class="fw-node-label" x="191.75" y="336.84" font-size="12">ONSHAPE</text>
+                    <text class="fw-node-sub" x="191.75" y="352.84">54 elements</text>
+                    <text class="fw-node-sub " x="191.75" y="364.84">Variable Studio</text>
+                  </g>
+                  <g class="fw-edge-label">
+                    <text x="609.27" y="159.5" text-anchor="start" dominant-baseline="middle">token-drift audit</text>
+                    <text x="726.24" y="519.5" text-anchor="start" dominant-baseline="middle">cssSyncRequired</text>
+                    <text x="420" y="742" text-anchor="middle" dominant-baseline="middle">design-system-loop.html</text>
+                    <text x="113.76" y="519.5" text-anchor="end" dominant-baseline="middle">parametric agent</text>
+                    <text x="230.73" y="159.5" text-anchor="end" dominant-baseline="middle">MCP audit · next surface</text>
+                  </g>
                 </svg>
 
                 <!-- Mobile: stacked vertical layout, no rotated labels -->
