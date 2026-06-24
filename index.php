@@ -145,7 +145,7 @@
             <nav class="header-nav header-nav-simplified" aria-label="Primary">
                 <ul class="nav-primary">
                     <li><a href="resume.php">RESUME</a></li>
-                    <li><a href="Peter-Bartsch-Portfolio.pdf" target="_blank" rel="noopener">PORTFOLIO</a></li>
+                    <li><a href="Peter-Bartsch-Portfolio.pdf" target="_blank" rel="noopener">PORTFOLIO (PDF)</a></li>
                     <li><a href="#portfolio-carousel">CASE STUDIES</a></li>
                     <li><a href="blog/">WRITINGS</a></li>
                     <li><a href="#contact">CONTACT</a></li>
@@ -173,7 +173,7 @@
             <button id="mobileMenuClose" class="mobile-menu-close" aria-label="Close menu"></button>
             <ul class="mobile-nav-primary">
                 <li><a href="resume.php">RESUME</a></li>
-                <li><a href="Peter-Bartsch-Portfolio.pdf" target="_blank" rel="noopener">PORTFOLIO</a></li>
+                <li><a href="Peter-Bartsch-Portfolio.pdf" target="_blank" rel="noopener">PORTFOLIO (PDF)</a></li>
                 <li><a href="#portfolio-carousel">CASE STUDIES</a></li>
                 <li><a href="blog/">WRITINGS</a></li>
                 <li><a href="#contact">CONTACT</a></li>
