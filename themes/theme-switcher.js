@@ -124,6 +124,12 @@
             btns[b].setAttribute('aria-pressed', isActive ? 'true' : 'false');
         }
 
+        // Keep the era dropdown(s) in sync with the active theme
+        var sels = document.querySelectorAll('.theme-era-select');
+        for (var s = 0; s < sels.length; s++) {
+            if (sels[s].value !== themeId) sels[s].value = themeId;
+        }
+
         // Analytics
         if (typeof gtag === 'function') {
             gtag('event', 'theme_switch', {
@@ -363,6 +369,14 @@
         for (var b = 0; b < btns.length; b++) {
             btns[b].addEventListener('click', function () {
                 setTheme(this.getAttribute('data-theme'));
+            });
+        }
+
+        // Theme era dropdown(s) — header bar
+        var sels = document.querySelectorAll('.theme-era-select');
+        for (var s = 0; s < sels.length; s++) {
+            sels[s].addEventListener('change', function () {
+                setTheme(this.value);
             });
         }
     }

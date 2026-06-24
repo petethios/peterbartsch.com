@@ -3075,6 +3075,74 @@ html:not([data-theme]) .theme-era-btn.active {
 }
 
 /* ========================================
+   Era theme dropdown (header bar)
+   Replaces the 6-button row so the switcher doesn't crowd the header
+   next to the hamburger (901–1100px). Inherits each era's font/colors
+   via theme variables so it stays theme-appropriate. The spacious
+   mobile-drawer "Design Era" buttons are left as-is.
+   ======================================== */
+.theme-era-select-wrap {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    margin-left: 16px;
+}
+.theme-era-select-wrap::after {
+    content: "\25BE"; /* down caret */
+    position: absolute;
+    right: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    font-size: 9px;
+    line-height: 1;
+    color: var(--color-text-muted);
+}
+.theme-era-select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    font-family: var(--font-display);
+    font-size: 11px;
+    letter-spacing: 0.05em;
+    color: var(--color-text-muted);
+    background: transparent;
+    border: 1px solid var(--color-gray-dark);
+    padding: 4px 22px 4px 9px;
+    cursor: pointer;
+    transition: color var(--transition-fast), border-color var(--transition-fast);
+}
+.theme-era-select:hover {
+    color: var(--color-primary);
+    border-color: rgba(134, 216, 221, 0.4);
+}
+.theme-era-select:focus-visible {
+    outline: 2px solid var(--color-primary);
+    outline-offset: 1px;
+}
+@media (max-width: 900px) {
+    .theme-era-select-wrap { display: none; }
+}
+
+/* 80s default (terminal) — match the era buttons' green-on-black look */
+html:not([data-theme]) .theme-era-select {
+    font-family: 'Rombyte', 'Courier New', monospace !important;
+    font-size: 12px;
+    color: #00aa00;
+    border-color: #004400;
+    text-shadow: 0 0 4px rgba(0, 170, 0, 0.4);
+}
+html:not([data-theme]) .theme-era-select:hover {
+    color: #00ff00;
+    border-color: #00aa00;
+}
+html:not([data-theme]) .theme-era-select-wrap::after { color: #00aa00; }
+html:not([data-theme]) .theme-era-select option {
+    background: #0a0a0a;
+    color: #00aa00;
+}
+
+/* ========================================
    Hero Proof Line
    ======================================== */
 .hero-proof {

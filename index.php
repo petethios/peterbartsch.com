@@ -151,14 +151,16 @@
                     <li><a href="#contact">CONTACT</a></li>
                 </ul>
             </nav>
-            <!-- Compact era pill-group — discoverable but doesn't dominate above-the-fold -->
-            <div class="theme-era-buttons theme-era-buttons-nav" role="group" aria-label="Switch design era theme" title="Every era of the web. Built for enterprise. Same operator.">
-                <button class="theme-era-btn" data-theme="80s" aria-label="1980s Retro Terminal" aria-pressed="false">80s</button>
-                <button class="theme-era-btn" data-theme="90s" aria-label="1990s GeoCities" aria-pressed="false">90s</button>
-                <button class="theme-era-btn" data-theme="matrix" aria-label="2000 Matrix Digital Rain" aria-pressed="false">2000</button>
-                <button class="theme-era-btn" data-theme="2000s" aria-label="2000s Web 2.0" aria-pressed="false">00s</button>
-                <button class="theme-era-btn" data-theme="2010s" aria-label="2010s Corporate Memphis" aria-pressed="false">10s</button>
-                <button class="theme-era-btn active" data-theme="2026" aria-label="2026 Modern AI" aria-pressed="true">2026</button>
+            <!-- Compact era dropdown — replaces the 6-button row so the era switcher doesn't crowd the header next to the hamburger -->
+            <div class="theme-era-select-wrap" title="Every era of the web. Built for enterprise. Same operator.">
+                <select class="theme-era-select" aria-label="Switch design era theme">
+                    <option value="80s">1980s &middot; Terminal</option>
+                    <option value="90s">1990s &middot; GeoCities</option>
+                    <option value="matrix">2000 &middot; Matrix</option>
+                    <option value="2000s">2000s &middot; Web 2.0</option>
+                    <option value="2010s">2010s &middot; Memphis</option>
+                    <option value="2026" selected>2026 &middot; Modern AI</option>
+                </select>
             </div>
             <button class="hamburger" id="hamburgerBtn" aria-label="Open menu" aria-expanded="false"
                 aria-controls="mobileMenu">
