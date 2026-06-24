@@ -60,12 +60,16 @@
         <div class="mobile-menu-divider"></div>
         <div class="mobile-menu-header">Case Studies</div>
         <ul>
-            <li><a href="/case-studies/thios.php">Thios: 5-Surface Design System</a></li>
+            <li><a href="/case-studies/thios.php">Thios: 6-Surface Design System</a></li>
             <li><a href="/case-studies/thios-flywheel.php">Thios: Open-Hardware Flywheel</a></li>
             <li><a href="/case-studies/deere-common-ux.php">Deere: Forced Adoption</a></li>
             <li><a href="/case-studies/deere-nav.php">Deere: Platform Unification</a></li>
+            <li><a href="/case-studies/deere-mobile.php">Deere: Mobile</a></li>
             <li><a href="/case-studies/fourkites-tracking.php">FourKites: Data Trust</a></li>
             <li><a href="/case-studies/fourkites-driver.php">FourKites: Incentive Design</a></li>
+            <li><a href="/case-studies/fourkites-mobile.php">FourKites: Mobile</a></li>
+            <li><a href="/case-studies/here-traffic.php">HERE: Real-Time Traffic</a></li>
+            <li><a href="/case-studies/gogo-flight-tracker.php">Gogo: Flight Tracker</a></li>
         </ul>
         <div class="mobile-menu-divider"></div>
         <div class="mobile-menu-header">Design Era</div>
