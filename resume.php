@@ -385,9 +385,9 @@
                     <span class="resume-role-dates">Aug 2024 – Present</span>
                 </div>
                 <p class="resume-role-title">Founder & Lead Designer</p>
-                <p class="resume-role-summary">Open-source modular structures running on a 6-surface design system where I'm the only designer and agents are the engineering team, every surface (DESIGN.md &harr; tokens.json &harr; main.css &harr; design-system.html &harr; OnShape &harr; Figma) ships from one source of truth.</p>
+                <p class="resume-role-summary">Open-source modular structures &mdash; solo designer, AI-augmented engineering team, 6-surface design system from one source of truth.</p>
                 <ul class="resume-role-bullets">
-                    <li><strong>Shipped a complete product ecosystem solo in nearly 2 years</strong> &mdash; 6 sphere variants with CAD models, prototype, first revenue across every surface.</li>
+                    <li><strong>Shipped a complete product ecosystem solo</strong> &mdash; 6 sphere variants with CAD models, prototype, and first revenue across every surface.</li>
                     <li><strong>Designed and built parametric OnShape CAD as the single source of truth</strong> driving BOM and the <a href="https://thios.co/configurator/" target="_blank" rel="noopener">3D configurator at thios.co/configurator</a> &mdash; customers manipulate real geometry with full configuration state (valid/invalid combinations, loading, error, empty, BOM hand-off), not marketing renders</li>
                     <li><strong>Built a 6-surface, dev-grade design system</strong>, published its first Claude Skill (<a href="https://github.com/peterbartsch/AgentDrift/blob/main/skills/audit-design-token-drift/SKILL.md" target="_blank" rel="noopener"><code>audit-design-token-drift</code></a>) that catches design-token drift across canonical surfaces with file:line citations. Design system as dev tooling, not a Figma library nobody opens &mdash; <a href="https://www.thios.co/design-system-architecture.html" target="_blank" rel="noopener">thios.co/design-system-architecture</a></li>
                 </ul>
@@ -399,11 +399,11 @@
                     <span class="resume-role-dates">Aug 2020 – Jul 2024</span>
                 </div>
                 <p class="resume-role-title">Senior Lead UX; Digital Customer Experience</p>
-                <p class="resume-role-summary">Embedded with product teams to modernize 20-year-old systems and drive connected-services revenue across agricultural equipment. Proving enterprise design can move fast with the right frameworks.</p>
+                <p class="resume-role-summary">Embedded with product teams to modernize 20-year-old systems and drive connected-services revenue across agricultural equipment.</p>
                 <ul class="resume-role-bullets">
-                    <li><strong>Redesigned the license management system</strong> for connected ag equipment (Automation/AI services) serving 500K+ users across 12 languages &mdash; mapped flows, license states, and edge cases (expired/renewed/transferred/dealer-managed); +34% monthly active authenticated users, &ndash;16% support tickets, enabled $3.8B in connected-services revenue</li>
+                    <li><strong>Redesigned the license management system</strong> for connected ag equipment (Automation/AI services) serving 500K+ users across 12 languages &mdash; mapped flows, license states, and edge cases (expired/renewed/transferred/dealer-managed); profile completion 34%&rarr;87%, &ndash;16% support tickets, enabled $3.8B in connected-services revenue</li>
+                    <li><strong>Reduced design-to-development time 45%</strong> by building the first dev-ready tokens, prop specs, and full state coverage for the enterprise design system in Figma spanning 6 brands and 40+ product teams globally &mdash; handoffs that shipped</li>
                     <li><strong>Built a unified account and navigation framework</strong> deployed across 8 product lines spanning web, mobile, and embedded equipment systems &mdash; consolidated fragmented experiences into a single customer view; +28% first-contact resolution on dealer support</li>
-                    <li><strong>Contributor to the enterprise design system in Figma</strong> spanning 6 brands and 40+ product teams globally &mdash; produced dev-ready handoffs (tokens, prop specs, full state coverage) that reduced design-to-development time 45% on components that actually shipped</li>
                 </ul>
             </div>
 
