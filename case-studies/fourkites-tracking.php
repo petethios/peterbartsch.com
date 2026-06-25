@@ -8,11 +8,11 @@
     <link rel="canonical" href="https://petebartsch.com/case-studies/fourkites-tracking">
     <link rel="icon" type="image/svg+xml" href="../pblogo.svg">
 
-    <meta property="og:title" content="FourKites: Data Trust Design | Peter Bartsch">
+    <meta property="og:title" content="FourKites: Designing for Uncertainty | Peter Bartsch">
     <meta property="og:description" content="Designing for trust when data is uncertain—predictive analytics 6-12 hours ahead of competitors.">
     <meta property="og:type" content="article">
     <meta property="og:url" content="https://petebartsch.com/case-studies/fourkites-tracking">
-    <meta property="og:image" content="https://petebartsch.com/img/fourkites-01.png">
+    <meta property="og:image" content="https://petebartsch.com/img/og-fourkites-tracking.png">
 
     <link rel="preload" href="../rombyte.ttf" as="font" type="font/ttf" crossorigin>
     <link rel="preload" href="../ari.ttf" as="font" type="font/ttf" crossorigin>
@@ -26,9 +26,9 @@
     </style>
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="FourKites: Data Trust Design | Peter Bartsch">
+    <meta name="twitter:title" content="FourKites: Designing for Uncertainty | Peter Bartsch">
     <meta name="twitter:description" content="Designing for trust when data is uncertain—predictive analytics 6-12 hours ahead of competitors.">
-    <meta name="twitter:image" content="https://petebartsch.com/img/fourkites-01.png">
+    <meta name="twitter:image" content="https://petebartsch.com/img/og-fourkites-tracking.png">
 
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-QB3EL923YF"></script>
     <script src="/analytics.js"></script>

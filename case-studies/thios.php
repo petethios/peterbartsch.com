@@ -12,7 +12,7 @@
     <meta property="og:description" content="Six surfaces, one source of truth. Agent-driven design-system infrastructure for a company of one.">
     <meta property="og:type" content="article">
     <meta property="og:url" content="https://petebartsch.com/case-studies/thios">
-    <meta property="og:image" content="https://petebartsch.com/img/og-thios-agent-rails.png">
+    <meta property="og:image" content="https://petebartsch.com/img/og-thios.png">
 
     <link rel="preload" href="../rombyte.ttf" as="font" type="font/ttf" crossorigin>
     <link rel="preload" href="../ari.ttf" as="font" type="font/ttf" crossorigin>
@@ -26,7 +26,7 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Thios: Design Systems on Agent Rails | Peter Bartsch">
     <meta name="twitter:description" content="Six surfaces, one source of truth. Agent-driven design-system infrastructure for a company of one.">
-    <meta name="twitter:image" content="https://petebartsch.com/img/og-thios-agent-rails.png">
+    <meta name="twitter:image" content="https://petebartsch.com/img/og-thios.png">
 
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-QB3EL923YF"></script>
     <script src="/analytics.js"></script>

@@ -8,11 +8,11 @@
     <link rel="canonical" href="https://petebartsch.com/case-studies/deere-nav">
     <link rel="icon" type="image/svg+xml" href="../pblogo.svg">
 
-    <meta property="og:title" content="John Deere: Platform Unification | Peter Bartsch">
+    <meta property="og:title" content="John Deere: One Nav Across 47 Properties | Peter Bartsch">
     <meta property="og:description" content="Unified navigation across 47 sites with zero-downtime migration.">
     <meta property="og:type" content="article">
     <meta property="og:url" content="https://petebartsch.com/case-studies/deere-nav">
-    <meta property="og:image" content="https://petebartsch.com/img/deere-03.png">
+    <meta property="og:image" content="https://petebartsch.com/img/og-deere-nav.png">
 
     <link rel="preload" href="../rombyte.ttf" as="font" type="font/ttf" crossorigin>
     <link rel="preload" href="../ari.ttf" as="font" type="font/ttf" crossorigin>
@@ -22,9 +22,9 @@
     <?php $themeBasePath = '../'; include('../themes/theme-head.php'); ?>
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="John Deere: Platform Unification | Peter Bartsch">
+    <meta name="twitter:title" content="John Deere: One Nav Across 47 Properties | Peter Bartsch">
     <meta name="twitter:description" content="Unified navigation across 47 sites with zero-downtime migration.">
-    <meta name="twitter:image" content="https://petebartsch.com/img/deere-03.png">
+    <meta name="twitter:image" content="https://petebartsch.com/img/og-deere-nav.png">
 
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-QB3EL923YF"></script>
     <script src="/analytics.js"></script>

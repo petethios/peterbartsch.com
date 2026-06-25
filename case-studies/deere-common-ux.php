@@ -10,10 +10,10 @@
 
     <!-- Open Graph -->
     <meta property="og:title" content="John Deere: Forced Adoption at Scale | Peter Bartsch">
-    <meta property="og:description" content="Driving platform adoption without destroying trust—34% to 87% engagement.">
+    <meta property="og:description" content="Driving platform adoption without destroying trust—profile completion 34% to 87%.">
     <meta property="og:type" content="article">
     <meta property="og:url" content="https://petebartsch.com/case-studies/deere-common-ux">
-    <meta property="og:image" content="https://petebartsch.com/img/deere-01.png">
+    <meta property="og:image" content="https://petebartsch.com/img/og-deere-common-ux.png">
 
     <!-- Fonts -->
     <link rel="preload" href="../rombyte.ttf" as="font" type="font/ttf" crossorigin>
@@ -27,8 +27,8 @@
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="John Deere: Forced Adoption at Scale | Peter Bartsch">
-    <meta name="twitter:description" content="Driving platform adoption without destroying trust—34% to 87% engagement.">
-    <meta name="twitter:image" content="https://petebartsch.com/img/deere-01.png">
+    <meta name="twitter:description" content="Driving platform adoption without destroying trust—profile completion 34% to 87%.">
+    <meta name="twitter:image" content="https://petebartsch.com/img/og-deere-common-ux.png">
 
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-QB3EL923YF"></script>
     <script src="/analytics.js"></script>

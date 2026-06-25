@@ -8,11 +8,11 @@
     <link rel="canonical" href="https://petebartsch.com/case-studies/here-traffic">
     <link rel="icon" type="image/svg+xml" href="../pblogo.svg">
 
-    <meta property="og:title" content="HERE: Real-Time Traffic, Before the World Had It | Peter Bartsch">
+    <meta property="og:title" content="HERE: Real-Time Traffic, Before Live Traffic | Peter Bartsch">
     <meta property="og:description" content="A convention demo of HERE's near-real-time traffic for automakers — a wall of screens that grew 3 to 9. Early to live traffic, before the field moved.">
     <meta property="og:type" content="article">
     <meta property="og:url" content="https://petebartsch.com/case-studies/here-traffic">
-    <meta property="og:image" content="https://petebartsch.com/img/nokia-here-03.png">
+    <meta property="og:image" content="https://petebartsch.com/img/og-here-traffic.png">
 
     <link rel="preload" href="../rombyte.ttf" as="font" type="font/ttf" crossorigin>
     <link rel="preload" href="../ari.ttf" as="font" type="font/ttf" crossorigin>
@@ -22,9 +22,9 @@
     <?php $themeBasePath = '../'; include('../themes/theme-head.php'); ?>
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="HERE: Real-Time Traffic, Before the World Had It | Peter Bartsch">
+    <meta name="twitter:title" content="HERE: Real-Time Traffic, Before Live Traffic | Peter Bartsch">
     <meta name="twitter:description" content="A convention demo of HERE's near-real-time traffic for automakers — early to live traffic, before the field moved.">
-    <meta name="twitter:image" content="https://petebartsch.com/img/nokia-here-03.png">
+    <meta name="twitter:image" content="https://petebartsch.com/img/og-here-traffic.png">
 
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-QB3EL923YF"></script>
     <script src="/analytics.js"></script>

@@ -8,11 +8,11 @@
     <link rel="canonical" href="https://petebartsch.com/case-studies/fourkites-mobile">
     <link rel="icon" type="image/svg+xml" href="../pblogo.svg">
 
-    <meta property="og:title" content="FourKites Mobile: Subtract vs Compress | Peter Bartsch">
+    <meta property="og:title" content="FourKites: Two Opposite Mobile Problems | Peter Bartsch">
     <meta property="og:description" content="One real-time system, two opposite mobile problems. Mobile craft is knowing which one the moment calls for.">
     <meta property="og:type" content="article">
     <meta property="og:url" content="https://petebartsch.com/case-studies/fourkites-mobile">
-    <meta property="og:image" content="https://petebartsch.com/img/fourkites-mobile-dash.png">
+    <meta property="og:image" content="https://petebartsch.com/img/og-fourkites-mobile.png">
 
     <link rel="preload" href="../rombyte.ttf" as="font" type="font/ttf" crossorigin>
     <link rel="preload" href="../ari.ttf" as="font" type="font/ttf" crossorigin>
@@ -22,9 +22,9 @@
     <?php $themeBasePath = '../'; include('../themes/theme-head.php'); ?>
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="FourKites Mobile: Subtract vs Compress | Peter Bartsch">
+    <meta name="twitter:title" content="FourKites: Two Opposite Mobile Problems | Peter Bartsch">
     <meta name="twitter:description" content="One real-time system, two opposite mobile problems.">
-    <meta name="twitter:image" content="https://petebartsch.com/img/fourkites-mobile-dash.png">
+    <meta name="twitter:image" content="https://petebartsch.com/img/og-fourkites-mobile.png">
 
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-QB3EL923YF"></script>
     <script src="/analytics.js"></script>

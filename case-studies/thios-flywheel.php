@@ -12,7 +12,7 @@
     <meta property="og:description" content="One CAD file drives the BoM, the configurator's 3D, and a maker flywheel that scales without building factories.">
     <meta property="og:type" content="article">
     <meta property="og:url" content="https://petebartsch.com/case-studies/thios-flywheel">
-    <meta property="og:image" content="https://petebartsch.com/img/thios-flywheel-configurator.png">
+    <meta property="og:image" content="https://petebartsch.com/img/og-thios-flywheel.png">
 
     <link rel="preload" href="../rombyte.ttf" as="font" type="font/ttf" crossorigin>
     <link rel="preload" href="../ari.ttf" as="font" type="font/ttf" crossorigin>
@@ -26,7 +26,7 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Thios: The Open-Hardware Flywheel | Peter Bartsch">
     <meta name="twitter:description" content="One CAD file drives the BoM, the configurator's 3D, and a maker flywheel that scales without building factories.">
-    <meta name="twitter:image" content="https://petebartsch.com/img/thios-flywheel-configurator.png">
+    <meta name="twitter:image" content="https://petebartsch.com/img/og-thios-flywheel.png">
 
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-QB3EL923YF"></script>
     <script src="/analytics.js"></script>

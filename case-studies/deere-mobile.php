@@ -12,7 +12,7 @@
     <meta property="og:description" content="John Deere's app portfolio, designed for the cab—not the desk.">
     <meta property="og:type" content="article">
     <meta property="og:url" content="https://petebartsch.com/case-studies/deere-mobile">
-    <meta property="og:image" content="https://petebartsch.com/img/deere-mobile-account.png">
+    <meta property="og:image" content="https://petebartsch.com/img/og-deere-mobile.png">
 
     <link rel="preload" href="../rombyte.ttf" as="font" type="font/ttf" crossorigin>
     <link rel="preload" href="../ari.ttf" as="font" type="font/ttf" crossorigin>
@@ -24,7 +24,7 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="John Deere: Running the Farm from a Phone | Peter Bartsch">
     <meta name="twitter:description" content="John Deere's app portfolio, designed for the cab—not the desk.">
-    <meta name="twitter:image" content="https://petebartsch.com/img/deere-mobile-account.png">
+    <meta name="twitter:image" content="https://petebartsch.com/img/og-deere-mobile.png">
 
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-QB3EL923YF"></script>
     <script src="/analytics.js"></script>

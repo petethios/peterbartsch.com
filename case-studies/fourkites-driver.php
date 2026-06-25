@@ -8,11 +8,11 @@
     <link rel="canonical" href="https://petebartsch.com/case-studies/fourkites-driver">
     <link rel="icon" type="image/svg+xml" href="../pblogo.svg">
 
-    <meta property="og:title" content="FourKites: Incentive Design | Peter Bartsch">
+    <meta property="og:title" content="FourKites: Realigning Incentives | Peter Bartsch">
     <meta property="og:description" content="Reconciling competing driver/shipper incentives—32% more tracked shipments.">
     <meta property="og:type" content="article">
     <meta property="og:url" content="https://petebartsch.com/case-studies/fourkites-driver">
-    <meta property="og:image" content="https://petebartsch.com/img/fourkites-05.png">
+    <meta property="og:image" content="https://petebartsch.com/img/og-fourkites-driver.png">
 
     <link rel="preload" href="../rombyte.ttf" as="font" type="font/ttf" crossorigin>
     <link rel="preload" href="../ari.ttf" as="font" type="font/ttf" crossorigin>
@@ -22,9 +22,9 @@
     <?php $themeBasePath = '../'; include('../themes/theme-head.php'); ?>
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="FourKites: Incentive Design | Peter Bartsch">
+    <meta name="twitter:title" content="FourKites: Realigning Incentives | Peter Bartsch">
     <meta name="twitter:description" content="Reconciling competing driver/shipper incentives—32% more tracked shipments.">
-    <meta name="twitter:image" content="https://petebartsch.com/img/fourkites-05.png">
+    <meta name="twitter:image" content="https://petebartsch.com/img/og-fourkites-driver.png">
 
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-QB3EL923YF"></script>
     <script src="/analytics.js"></script>

@@ -12,7 +12,7 @@
     <meta property="og:description" content="An in-flight flight tracker built 0→1 on a local position file — so it answered 'are we there yet?' and kept selling ads even when the air-to-ground connection dropped.">
     <meta property="og:type" content="article">
     <meta property="og:url" content="https://petebartsch.com/case-studies/gogo-flight-tracker">
-    <meta property="og:image" content="https://petebartsch.com/img/gogo-flight-tracker.png">
+    <meta property="og:image" content="https://petebartsch.com/img/og-gogo-flight-tracker.png">
 
     <link rel="preload" href="../rombyte.ttf" as="font" type="font/ttf" crossorigin>
     <link rel="preload" href="../ari.ttf" as="font" type="font/ttf" crossorigin>
@@ -24,7 +24,7 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Gogo: Are We There Yet? | Peter Bartsch">
     <meta name="twitter:description" content="An in-flight flight tracker built 0→1 on a local position file — answering 'are we there yet?' even when the connection dropped.">
-    <meta name="twitter:image" content="https://petebartsch.com/img/gogo-flight-tracker.png">
+    <meta name="twitter:image" content="https://petebartsch.com/img/og-gogo-flight-tracker.png">
 
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-QB3EL923YF"></script>
     <script src="/analytics.js"></script>
