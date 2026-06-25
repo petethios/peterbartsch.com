@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>John Deere: Forced Adoption at Scale | Peter Bartsch Case Study</title>
-    <meta name="description" content="How I drove 34%→87% profile completion across 500K+ users while enabling $3.8B in subscription revenue—without destroying trust.">
+    <meta name="description" content="How I drove 34%→87% profile completion across 500K+ users while enabling $3.8B in connected-services revenue—without destroying trust.">
     <link rel="canonical" href="https://petebartsch.com/case-studies/deere-common-ux">
     <link rel="icon" type="image/svg+xml" href="../pblogo.svg">
 
@@ -38,7 +38,7 @@
       "@context": "https://schema.org",
       "@type": "Article",
       "headline": "John Deere: Forced Adoption at Scale",
-      "description": "How I drove 34%→87% profile completion across 500K+ users while enabling $3.8B in subscription revenue.",
+      "description": "How I drove 34%→87% profile completion across 500K+ users while enabling $3.8B in connected-services revenue.",
       "author": {"@type": "Person", "name": "Peter Bartsch", "url": "https://petebartsch.com"},
       "url": "https://petebartsch.com/case-studies/deere-common-ux"
     }
@@ -52,7 +52,7 @@
             <header class="case-study-header">
                 <nav class="case-study-breadcrumb"><a href="../">Portfolio</a> / <a href="../#right">Case Studies</a> / Forced Adoption</nav>
                 <h1 class="case-study-title">DEERE: FORCED ADOPTION AT SCALE</h1>
-                <p class="case-study-subtitle">Driving platform-wide data adoption across 500K+ users without destroying trust—enabling $3.8B in connected services revenue</p>
+                <p class="case-study-subtitle">Driving platform-wide data adoption across 500K+ users without destroying trust—enabling $3.8B in connected-services revenue</p>
                 <div class="case-study-meta">
                     <div class="case-study-meta-item"><span class="case-study-meta-label">Role</span><span>Senior Lead UX — Enterprise Platforms</span></div>
                     <div class="case-study-meta-item"><span class="case-study-meta-label">Scope</span><span>Account Systems · Identity · Dealer Workflows · Multi-channel Onboarding</span></div>
@@ -115,7 +115,7 @@
                 <h2>Results</h2>
                 <ul>
                     <li>Profile completion increased from <strong>34% to 87%</strong></li>
-                    <li>Enabled <strong>$3.8B in connected services, automation, and AI-driven revenue</strong></li>
+                    <li>Enabled <strong>$3.8B in connected-services revenue</strong></li>
                     <li>Reduced support tickets related to account setup by <strong>16%</strong></li>
                     <li>Improved dealer efficiency by <strong>28%</strong></li>
                     <li>Established a reusable adoption framework used across multiple Deere platforms</li>

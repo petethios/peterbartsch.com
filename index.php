@@ -293,9 +293,9 @@
                         <p class="slide-label">ENTERPRISE · FORCED ADOPTION</p>
                         <h3 class="project-title phosphor-text">DEERE: 34%→87% ADOPTION AT SCALE</h3>
                         <div class="project-structure">
-                            <p class="structure-item"><span class="structure-label">Challenge:</span> 500K users were actively avoiding profile completion — every empty field blocked $3.8B in AI and automation revenue.</p>
+                            <p class="structure-item"><span class="structure-label">Challenge:</span> 500K users were actively avoiding profile completion — every empty field blocked $3.8B in connected-services revenue.</p>
                             <p class="structure-item"><span class="structure-label">Approach:</span> Led design of a multi-channel forced adoption flow across 8 product lines without destroying trust</p>
-                            <p class="structure-item"><span class="structure-label">Result:</span> 34%→87% profile completion in 6 months · $3.8B revenue unlocked</p>
+                            <p class="structure-item"><span class="structure-label">Result:</span> 34%→87% profile completion in 6 months · $3.8B revenue enabled</p>
                         </div>
                         <a href="case-studies/deere-common-ux.php" class="project-link brutalist-link">VIEW CASE STUDY →</a>
                     </div>
@@ -406,7 +406,7 @@
                                 <td></td>
                                 <td colspan="2">
                                     <ul class="inline-bullets">
-                                        <li><strong>Problem:</strong> 500K+ users weren't completing profiles — blocking $3.8B in subscription revenue</li>
+                                        <li><strong>Problem:</strong> 500K+ users weren't completing profiles — blocking $3.8B in connected-services revenue</li>
                                         <li><strong>Result:</strong> 34%→87% completion; unified nav across 8 product lines; design system adopted by 40+ teams</li>
                                         <li><strong>Approach:</strong> Led multi-channel forced adoption; core contributor to enterprise design system adopted by 40+ teams; 45% faster handoffs</li>
                                     </ul>

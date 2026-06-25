@@ -337,7 +337,7 @@
         <header class="resume-header">
             <h1 class="resume-name">Peter Bartsch</h1>
             <p class="resume-title">Staff / Principal Product Designer — design systems · AI-native workflow</p>
-            <p class="resume-summary">Led UX for a $3.8B subscription platform at Deere across web, mobile, and embedded equipment systems (500K users, 12 languages). Built design org 1→10 at FourKites scaling a real-time IoT asset-tracking platform processing 10M+ daily events ($3M→$100M ARR, $1B+ valuation). Now founder of Thios (<a href="https://thios.co" target="_blank" rel="noopener">thios.co</a>) — running an AI-native workflow (Claude, Cursor, Figma Make) to ship a CAD-driven configurator, a dev-grade design system with its own Claude Skill, and physical hardware.</p>
+            <p class="resume-summary">Led UX for a $3.8B platform at Deere across web, mobile, and embedded equipment systems (500K users, 12 languages). Built design org 1→10 at FourKites scaling a real-time IoT asset-tracking platform processing 10M+ daily events ($3M→$100M ARR, $1B+ valuation). Now founder of Thios (<a href="https://thios.co" target="_blank" rel="noopener">thios.co</a>) — running an AI-native workflow (Claude, Cursor, Figma Make) to ship a CAD-driven configurator, a dev-grade design system with its own Claude Skill, and physical hardware.</p>
             <!-- Download dropdown — PDF featured at top; all 7 formats available.
                  Uses <details>/<summary> so the menu open/close is browser-native
                  (no JS needed for that). A tiny script at the bottom closes it
@@ -399,9 +399,9 @@
                     <span class="resume-role-dates">Aug 2020 – Jul 2024</span>
                 </div>
                 <p class="resume-role-title">Senior Lead UX; Digital Customer Experience</p>
-                <p class="resume-role-summary">Embedded with product teams to modernize 20-year-old systems and drive subscription revenue across connected agricultural equipment. Proving enterprise design can move fast with the right frameworks.</p>
+                <p class="resume-role-summary">Embedded with product teams to modernize 20-year-old systems and drive connected-services revenue across agricultural equipment. Proving enterprise design can move fast with the right frameworks.</p>
                 <ul class="resume-role-bullets">
-                    <li><strong>Redesigned the license management system</strong> for connected ag equipment (Automation/AI services) serving 500K+ users across 12 languages &mdash; mapped flows, license states, and edge cases (expired/renewed/transferred/dealer-managed); +34% monthly active authenticated users, &ndash;16% support tickets, enabled $3.8B in subscription revenue</li>
+                    <li><strong>Redesigned the license management system</strong> for connected ag equipment (Automation/AI services) serving 500K+ users across 12 languages &mdash; mapped flows, license states, and edge cases (expired/renewed/transferred/dealer-managed); +34% monthly active authenticated users, &ndash;16% support tickets, enabled $3.8B in connected-services revenue</li>
                     <li><strong>Built a unified account and navigation framework</strong> deployed across 8 product lines spanning web, mobile, and embedded equipment systems &mdash; consolidated fragmented experiences into a single customer view; +28% first-contact resolution on dealer support</li>
                     <li><strong>Contributor to the enterprise design system in Figma</strong> spanning 6 brands and 40+ product teams globally &mdash; produced dev-ready handoffs (tokens, prop specs, full state coverage) that reduced design-to-development time 45% on components that actually shipped</li>
                 </ul>
