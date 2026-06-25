@@ -3462,6 +3462,25 @@ html:not([data-theme]) .theme-era-select option {
     transform: translateY(-2px);
 }
 
+/* Low-key secondary link under the hero CTAs — the interactive (Figma) portfolio
+   as a complement to the PDF download, without competing for the primary CTAs. */
+.hero-cta-note {
+    margin: 12px 0 0 0;
+    font-family: var(--font-body);
+    font-size: 13px;
+    color: var(--color-text-subtle);
+}
+.hero-cta-note a {
+    color: var(--color-text-muted);
+    text-decoration: none;
+    border-bottom: 1px solid rgba(134, 216, 221, 0.4);
+    transition: color var(--transition-fast), border-color var(--transition-fast);
+}
+.hero-cta-note a:hover {
+    color: var(--color-primary);
+    border-bottom-color: var(--color-primary);
+}
+
 /* ========================================
    Flagship Case Study Card
    ======================================== */

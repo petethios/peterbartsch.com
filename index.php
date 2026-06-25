@@ -224,6 +224,7 @@
                             <a href="#portfolio-carousel" class="hero-cta-secondary">See the Work</a>
                             <a href="Peter-Bartsch-Portfolio.pdf" class="hero-cta-secondary" target="_blank" rel="noopener">Download Portfolio (PDF) &darr;</a>
                         </div>
+                        <p class="hero-cta-note">Prefer to click through it? <a href="https://bit.ly/44sEoCW" target="_blank" rel="noopener">View the interactive version (Figma) &nearr;</a></p>
                     </div>
                     <div class="hero-portrait">
                         <picture><source srcset="peterb-hero.webp" type="image/webp"><img src="peterb-hero.png" alt="Peter Bartsch, Staff / Principal Product Designer" width="720" height="343" loading="eager" fetchpriority="high" /></picture>
