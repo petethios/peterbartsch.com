@@ -337,7 +337,7 @@
         <header class="resume-header">
             <h1 class="resume-name">Peter Bartsch</h1>
             <p class="resume-title">Staff / Principal Product Designer — design systems · AI-native workflow</p>
-            <p class="resume-summary">Led UX for a $3.8B platform at Deere across web, mobile, and embedded equipment systems (500K users, 12 languages). Built design org 1→10 at FourKites scaling a real-time IoT asset-tracking platform processing 10M+ daily events ($3M→$100M ARR, $1B+ valuation). Now founder of Thios (<a href="https://thios.co" target="_blank" rel="noopener">thios.co</a>) — running an AI-native workflow (Claude, Cursor, Figma Make) to ship a CAD-driven configurator, a dev-grade design system with its own Claude Skill, and physical hardware.</p>
+            <p class="resume-summary">I make complex enterprise systems usable and get them adopted at scale — then build them, not just spec them: front-end, design systems in code, parametric CAD, and physical hardware, with AI-native tooling to ship solo. Led UX for a $3.8B connected-services platform at Deere (500K users; web, mobile, embedded), built the design org 1→10 at FourKites scaling a real-time IoT platform ($3M→$100M ARR, $1B+ valuation), and now founder of Thios (<a href="https://thios.co" target="_blank" rel="noopener">thios.co</a>) — shipping a CAD-driven product line, a dev-grade design system, and physical hardware end to end.</p>
             <!-- Download dropdown — PDF featured at top; all 7 formats available.
                  Uses <details>/<summary> so the menu open/close is browser-native
                  (no JS needed for that). A tiny script at the bottom closes it
