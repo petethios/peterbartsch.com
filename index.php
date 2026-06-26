@@ -218,7 +218,7 @@
                         <p class="hero-name">PETER BARTSCH</p>
                         <h2 id="title" class="phosphor-text">I make complex systems usable &mdash; and get them adopted &mdash; at scale.</h2>
                         <p class="hero-moat">I solve the adoption problems that stall organizations: <strong>forced adoption, platform fragmentation, trust in uncertain data.</strong></p>
-                        <p class="hero-build">And I don't just design the fix &mdash; <strong>I build it</strong>: enterprise software, hardware, CAD, and the AI-native tooling to ship solo.</p>
+                        <p class="hero-build">And I don't stop at the spec &mdash; <strong>I build it</strong>: the front-end, the design system in code, the parametric CAD, the hardware. AI-native tooling lets me ship solo.</p>
                         <div class="hero-cta-row">
                             <!-- Direct mailto for highest-intent inquiries. Higher conversion than a contact form for senior IC reach-outs. -->
                             <a href="mailto:peter@peterbartsch.com?subject=Reaching%20out%20from%20petebartsch.com" class="hero-cta-primary">Email me &rarr;</a>
