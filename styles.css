@@ -3683,6 +3683,17 @@ html:not([data-theme]) .theme-era-select option {
 }
 .hero-moat strong { color: var(--color-text-primary); font-weight: 800; }
 
+/* Differentiator beat — "I design AND build it" so the breadth lands in ~5 seconds (YC-feedback). */
+.hero-build {
+    font-family: var(--font-readable);
+    font-size: clamp(0.95rem, 1.75vw, 1.18rem);
+    line-height: 1.45;
+    font-weight: 500;
+    color: var(--color-text-muted);
+    margin: -8px 0 24px;
+}
+.hero-build strong { color: var(--color-primary); font-weight: 700; }
+
 /* Loud metric stat blocks */
 .hero-metrics {
     display: grid;
