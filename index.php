@@ -114,12 +114,12 @@
         {
           "@type": "Organization",
           "name": "John Deere",
-          "description": "Senior Lead UX; Digital Customer Experience (2020-2024)"
+          "description": "Senior Lead UX; Digital Customer Experience (2020–2024)"
         },
         {
           "@type": "Organization",
           "name": "FourKites",
-          "description": "Lead UX / Manager (2017-2020)"
+          "description": "Lead UX / Manager (2017–2020)"
         }
       ]
     }
@@ -418,7 +418,7 @@
                         <tbody>
 
                             <tr class="featured-role">
-                                <td class="year-range">2020-2024</td>
+                                <td class="year-range">2020–2024</td>
                                 <td>Senior Lead UX; Digital Customer Experience</td>
                                 <td><a href="#" id="openModal2">John Deere</a></td>
                             </tr>
@@ -434,7 +434,7 @@
                                 </td>
                             </tr>
                             <tr class="featured-role">
-                                <td class="year-range">2017-2020</td>
+                                <td class="year-range">2017–2020</td>
                                 <td>Lead UX / Manager</td>
                                 <td><a href="#" id="openModal3">FourKites</a></td>
                             </tr>
@@ -450,18 +450,18 @@
                                 </td>
                             </tr>
                             <tr>
-                                <td class="year-range">2014-2017</td>
+                                <td class="year-range">2014–2017</td>
                                 <td>Senior UX + Agile Lead</td>
                                 <td><a href="#" id="openModal4">MavenWave Partners</a></td>
                             </tr>
 
                             <tr>
-                                <td class="year-range">2012-2014</td>
+                                <td class="year-range">2012–2014</td>
                                 <td>Product Marketing Manager</td>
                                 <td><a href="#" id="openModal6">Nokia (HERE Maps)</a></td>
                             </tr>
                             <tr>
-                                <td class="year-range">2024-Pres</td>
+                                <td class="year-range">2024–Pres</td>
                                 <td>Designer & Founder</td>
                                 <td><a href="#" id="openModal1">Thios + Co</a></td>
                             </tr>

@@ -9,7 +9,7 @@
     <link rel="icon" type="image/svg+xml" href="../pblogo.svg">
 
     <meta property="og:title" content="FourKites: Designing for Uncertainty | Peter Bartsch">
-    <meta property="og:description" content="Designing for trust when data is uncertain—predictive analytics 6-12 hours ahead of competitors.">
+    <meta property="og:description" content="Designing for trust when data is uncertain—predictive analytics 6–12 hours ahead of competitors.">
     <meta property="og:type" content="article">
     <meta property="og:url" content="https://petebartsch.com/case-studies/fourkites-tracking">
     <meta property="og:image" content="https://petebartsch.com/img/og-fourkites-tracking.png">
@@ -27,7 +27,7 @@
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="FourKites: Designing for Uncertainty | Peter Bartsch">
-    <meta name="twitter:description" content="Designing for trust when data is uncertain—predictive analytics 6-12 hours ahead of competitors.">
+    <meta name="twitter:description" content="Designing for trust when data is uncertain—predictive analytics 6–12 hours ahead of competitors.">
     <meta name="twitter:image" content="https://petebartsch.com/img/og-fourkites-tracking.png">
 
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-QB3EL923YF"></script>
@@ -62,7 +62,7 @@
 
             <div class="case-study-metrics">
                 <div class="case-study-metric"><p class="case-study-metric-value">41%</p><p class="case-study-metric-label">Retention Increase</p></div>
-                <div class="case-study-metric"><p class="case-study-metric-value">6-12hr</p><p class="case-study-metric-label">Earlier Predictions</p></div>
+                <div class="case-study-metric"><p class="case-study-metric-value">6–12hr</p><p class="case-study-metric-label">Earlier Predictions</p></div>
                 <div class="case-study-metric"><p class="case-study-metric-value">$120K</p><p class="case-study-metric-label">Avg Contract Growth</p></div>
                 <div class="case-study-metric"><p class="case-study-metric-value">30+</p><p class="case-study-metric-label">Fortune 2000 Clients</p></div>
             </div>
@@ -104,7 +104,7 @@
                 <ul>
                     <li><strong>Confidence as First-Class Data:</strong> Show data confidence alongside status—users know when to trust and when to verify</li>
                     <li><strong>Progressive Disclosure:</strong> Surface reliable status at a glance; reveal sources, confidence intervals, and alternatives on demand</li>
-                    <li><strong>Predictive, Not Reactive:</strong> Predict problems 6-12 hours before they happen—give users time to act, not just react</li>
+                    <li><strong>Predictive, Not Reactive:</strong> Predict problems 6–12 hours before they happen—give users time to act, not just react</li>
                     <li><strong>Action-First Alerts:</strong> Every notification includes recommended actions, not just status updates</li>
                 </ul>
             </section>
@@ -149,21 +149,21 @@
                         <li class="ct-route" style="--ct-dot:#ef4444;">
                             <span class="ct-dot" aria-hidden="true"></span>
                             <span class="ct-level">LOW</span>
-                            <span class="ct-rule">Flag it &middot; prompt &ldquo;verify&rdquo;</span>
+                            <span class="ct-rule">Flag it &middot; prompt "verify"</span>
                             <span class="ct-action">Confirm before you bet</span>
                         </li>
                         <li class="ct-route" style="--ct-dot:#8b5cf6;">
                             <span class="ct-dot" aria-hidden="true"></span>
                             <span class="ct-level">CONFLICTING</span>
                             <span class="ct-rule">Anomaly alert &middot; escalate</span>
-                            <span class="ct-action">Something&rsquo;s off &mdash; investigate</span>
+                            <span class="ct-action">Something's off &mdash; investigate</span>
                         </li>
                     </ul>
-                    <p class="ct-principle">Never one confident number. The platform you believe at 2am is the one that admits what it doesn&rsquo;t know.</p>
+                    <p class="ct-principle">Never one confident number. The platform you believe at 2am is the one that admits what it doesn't know.</p>
                 </figure>
 
                 <h3 style="font-family: var(--font-display); font-size: 16px; color: var(--color-white); margin: 24px 0 12px 0;">Predictive Analytics Dashboard</h3>
-                <p>Built interfaces that surfaced delays 6-12 hours before traditional ETAs—turning logistics managers from firefighters into planners.</p>
+                <p>Built interfaces that surfaced delays 6–12 hours before traditional ETAs—turning logistics managers from firefighters into planners.</p>
 
                 <h3 style="font-family: var(--font-display); font-size: 16px; color: var(--color-white); margin: 24px 0 12px 0;">Alert System Redesign</h3>
                 <p>Transformed alerts from "something happened" to "here's what happened, why, and what you should do about it."</p>

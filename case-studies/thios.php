@@ -271,7 +271,7 @@
 
             <section class="case-study-section">
                 <h2>What I Got Wrong First: Figma as the Source</h2>
-                <p>The first version did the obvious thing: <strong>Figma was the source of truth, and everything generated down from it</strong> &mdash; tokens, CSS, the docs. It drifted within weeks. A variable moved in Figma and the CSS didn&rsquo;t follow; a hex got hand-tweaked in code and Figma never heard about it. With no engineering team to police the gap, the &ldquo;source of truth&rdquo; quietly stopped being true.</p>
+                <p>The first version did the obvious thing: <strong>Figma was the source of truth, and everything generated down from it</strong> &mdash; tokens, CSS, the docs. It drifted within weeks. A variable moved in Figma and the CSS didn't follow; a hex got hand-tweaked in code and Figma never heard about it. With no engineering team to police the gap, the "source of truth" quietly stopped being true.</p>
                 <p>So I inverted it. <strong>The source of truth became DESIGN.md &mdash; agent-readable text &mdash; and Figma became a surface that gets audited against it like every other.</strong> Rules a human authors; agents are the IC that enforces them. That single inversion is what makes one designer holding six surfaces actually work.</p>
 
                 <figure class="invert-diagram" aria-label="The inversion: from Figma as source of truth to DESIGN.md as the spine">
@@ -296,14 +296,14 @@
 
                 <p style="margin-bottom: 0;">Two faster paths I ruled out along the way:</p>
                 <ul>
-                    <li><strong>Wait for headcount</strong> &mdash; hire engineers to maintain the system. There&rsquo;s no eng team and, by design, there won&rsquo;t be: the agents are the IC.</li>
-                    <li><strong>Hand-sync the surfaces</strong> &mdash; &ldquo;I&rsquo;ll just remember to update all six.&rdquo; That&rsquo;s the willpower problem that breaks at six surfaces across four sites &mdash; the Auxosphere bug below is what silent drift looks like.</li>
+                    <li><strong>Wait for headcount</strong> &mdash; hire engineers to maintain the system. There's no eng team and, by design, there won't be: the agents are the IC.</li>
+                    <li><strong>Hand-sync the surfaces</strong> &mdash; "I'll just remember to update all six." That's the willpower problem that breaks at six surfaces across four sites &mdash; the Auxosphere bug below is what silent drift looks like.</li>
                 </ul>
             </section>
 
             <section class="case-study-section">
                 <h2>How the Surfaces Stay Aligned</h2>
-                <p><strong>DESIGN.md is the spine</strong> &mdash; agent-native markdown; Section 9 is explicitly an &ldquo;Agent Prompt Guide,&rdquo; the first thing any agent reads when generating UI. <strong>tokens.json is the bridge</strong> &mdash; W3C Design Tokens, three layers (primitive / semantic / surface), and now mirrored in a <strong>live Figma Variables surface</strong> (Plus UI re-themed to Thios — primary, gold, status, type, and all six sphere brand tokens audited in sync against tokens.json, June 2026). <strong>main.css is the running code</strong> (18,000+ lines, kept in sync across four subdomains by a deploy gate). <strong>design-system.html is the live spec</strong> (109 KB, every component with working examples). <strong>OnShape is the parametric source</strong> for sphere geometry &mdash; 54 elements driven by one Variable Studio, the same shape as tokens.json flowing into Figma, but for physical product.</p>
+                <p><strong>DESIGN.md is the spine</strong> &mdash; agent-native markdown; Section 9 is explicitly an "Agent Prompt Guide," the first thing any agent reads when generating UI. <strong>tokens.json is the bridge</strong> &mdash; W3C Design Tokens, three layers (primitive / semantic / surface), and now mirrored in a <strong>live Figma Variables surface</strong> (Plus UI re-themed to Thios — primary, gold, status, type, and all six sphere brand tokens audited in sync against tokens.json, June 2026). <strong>main.css is the running code</strong> (18,000+ lines, kept in sync across four subdomains by a deploy gate). <strong>design-system.html is the live spec</strong> (109 KB, every component with working examples). <strong>OnShape is the parametric source</strong> for sphere geometry &mdash; 54 elements driven by one Variable Studio, the same shape as tokens.json flowing into Figma, but for physical product.</p>
                 <p>Each surface gets diffed against the spine on demand. Agents catch drift; the human decides what to fix &mdash; the drift-detection logic is published as an open-source Claude Skill, <a href="https://github.com/peterbartsch/AgentDrift/blob/main/skills/audit-design-token-drift/SKILL.md" target="_blank" rel="noopener"><code>audit-design-token-drift</code></a>. The complete loop is documented at <a href="https://thios.co/design-system-loop.html" target="_blank" rel="noopener">thios.co/design-system-loop.html</a>.</p>
             </section>
 
@@ -319,7 +319,7 @@
                     <li><strong>Six surfaces in sync today</strong> &mdash; all readable by agents, all mutually diffable, all referenced from a single canonical rule layer.</li>
                     <li><strong>4 production subdomains</strong> kept in CSS-sync via a <code>make check-css-sync</code> deploy gate &mdash; no silent rot between thios.co, blog, store, and partners.</li>
                     <li><strong>6 sub-brands</strong> generated from one component template via Figma mode variants &mdash; one design, six brand surfaces.</li>
-                    <li><strong>212 design tokens, three layers</strong> (primitive / semantic / surface) &mdash; the same shape as tokens.json flowing into Figma also flows into OnShape&rsquo;s Variable Studio for physical product.</li>
+                    <li><strong>212 design tokens, three layers</strong> (primitive / semantic / surface) &mdash; the same shape as tokens.json flowing into Figma also flows into OnShape's Variable Studio for physical product.</li>
                 </ul>
             </section>
 
@@ -333,7 +333,7 @@
             </section>
 
             <section class="case-study-section">
-                <p style="font-size: 1.15em; line-height: 1.6; padding: 24px 0; border-top: 1px solid var(--color-light-gray, #eee); margin-top: 16px;">The interesting career question for senior designers in 2026 isn't <em>&ldquo;can you use AI?&rdquo;</em> &mdash; it's <strong>&ldquo;have you written infrastructure agents follow?&rdquo;</strong> The work isn't using AI. The work is writing the rules AI follows.</p>
+                <p style="font-size: 1.15em; line-height: 1.6; padding: 24px 0; border-top: 1px solid var(--color-light-gray, #eee); margin-top: 16px;">The interesting career question for senior designers in 2026 isn't <em>"can you use AI?"</em> &mdash; it's <strong>"have you written infrastructure agents follow?"</strong> The work isn't using AI. The work is writing the rules AI follows.</p>
             </section>
 
             <div class="case-study-cta">

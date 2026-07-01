@@ -94,7 +94,7 @@
 
             <section class="case-study-section">
                 <h2>The System Underneath</h2>
-                <p>Designing the adoption flow meant first modelling the system it lived in &mdash; every state, every transition, every edge case &mdash; so we built for reality, not the happy path.</p>
+                <p>Designing the adoption flow meant first modeling the system it lived in &mdash; every state, every transition, every edge case &mdash; so we built for reality, not the happy path.</p>
 
                 <figure class="license-diagram" aria-label="License lifecycle: Unclaimed to Claimed to Active to Expired, renewed each cycle">
                     <div class="lc-flow">

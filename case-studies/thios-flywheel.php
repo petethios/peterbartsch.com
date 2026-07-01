@@ -281,7 +281,7 @@
                         <tbody>
                             <tr><td><a href="https://cad.onshape.com/documents/ab17885c88d65d0d65156850" target="_blank" rel="noopener">OnShape CAD</a></td><td>The parametric source. Every sphere variant is the same geodesic geometry, differently parametrized.</td><td>54 elements · 26 part studios · 11 assemblies · Variable Studio 1</td></tr>
                             <tr><td>Bill of Materials</td><td>Derived from the CAD, not maintained alongside it. When the CAD changes, the BoM changes.</td><td>Auto-derived per sphere variant</td></tr>
-                            <tr><td><a href="https://thios.co/configurator/" target="_blank" rel="noopener">Configurator</a></td><td>Customer-facing build-your-own. 3D models come from the same CAD &mdash; not a marketing render.</td><td>Metric / Imperial · &ldquo;Get Quotes from Local Builders&rdquo; handoff</td></tr>
+                            <tr><td><a href="https://thios.co/configurator/" target="_blank" rel="noopener">Configurator</a></td><td>Customer-facing build-your-own. 3D models come from the same CAD &mdash; not a marketing render.</td><td>Metric / Imperial · "Get Quotes from Local Builders" handoff</td></tr>
                             <tr><td><a href="https://thios.co/en/builder-tools" target="_blank" rel="noopener">Local maker</a></td><td>Fabrication layer. CERN-OHL-S grants build-and-sell rights; builder tools lower the precision barrier.</td><td>MDF + paper templates (&plusmn;0.1mm CNC) live · 3D-printable jigs + drop-ship kits queued</td></tr>
                             <tr><td>Build (customer)</td><td>Finished sauna, greenhouse, office, shelter. The deliverable.</td><td>6 sphere variants supported</td></tr>
                             <tr><td><a href="https://thios.co/en/first-builders" target="_blank" rel="noopener">Feedback &mdash; share-alike</a></td><td>License-mandated source release on distributed modifications, plus the First Builders program for qualitative signal.</td><td>License live · First Builders program (5 spots) live</td></tr>
@@ -310,7 +310,7 @@
                 <h2>Results &mdash; Where the System Is Today</h2>
                 <ul>
                     <li><strong>Open-hardware license live</strong> &mdash; CERN-OHL-S v2 published at <a href="https://thios.co/en/open-hardware-license" target="_blank" rel="noopener">thios.co/en/open-hardware-license</a>, with source CAD + GitHub linked from the license page.</li>
-                    <li><strong>Configurator live</strong> &mdash; <a href="https://thios.co/configurator/" target="_blank" rel="noopener">thios.co/configurator/</a> with 3D module preview, metric/imperial units, and a &ldquo;Get Quotes from Local Builders&rdquo; handoff.</li>
+                    <li><strong>Configurator live</strong> &mdash; <a href="https://thios.co/configurator/" target="_blank" rel="noopener">thios.co/configurator/</a> with 3D module preview, metric/imperial units, and a "Get Quotes from Local Builders" handoff.</li>
                     <li><strong>Builder tools shipping</strong> &mdash; MDF + paper templates available now (pre-order model: manufactured after 10 orders). 3D-printable jigs + drop-ship jig kits in the queue.</li>
                     <li><strong>First Builders program live</strong> &mdash; 5 spots, lifetime pass + badge + featured profile in exchange for documented build process and honest feedback.</li>
                     <li><strong>6 sphere variants in the system</strong> &mdash; Saunosphere, Agrosphere, Ergosphere, Immosphere, Thiosphere, Auxosphere &mdash; all derived from one parametric geometry.</li>
@@ -320,7 +320,7 @@
             <section class="case-study-section">
                 <h2>Next Loops to Close</h2>
                 <ul>
-                    <li><strong>Maker directory.</strong> The configurator emits &ldquo;Get Quotes from Local Builders&rdquo; but the routing is manual today. Next: a maker registry with location + capability filters so quoting is one-tap rather than a contact form.</li>
+                    <li><strong>Maker directory.</strong> The configurator emits "Get Quotes from Local Builders" but the routing is manual today. Next: a maker registry with location + capability filters so quoting is one-tap rather than a contact form.</li>
                     <li><strong>BoM versioning.</strong> When the CAD updates, downstream BoMs change. Need an explicit version contract so makers fabricating to a v2024.11 build aren't blindsided by a v2026.01 BoM shift.</li>
                     <li><strong>Structured feedback intake.</strong> First Builders honest-feedback is qualitative today. A structured intake (which step took longest, which template was off, what would you change) lets feedback compound into CAD revisions, not anecdotes.</li>
                 </ul>
