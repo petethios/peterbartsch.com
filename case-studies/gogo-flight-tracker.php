@@ -64,6 +64,8 @@
                 <div class="case-study-metric"><p class="case-study-metric-value">Ads stayed live</p><p class="case-study-metric-label">Sponsorship inventory through outages</p></div>
             </div>
 
+            <p class="case-study-outcome">Shipped an in-flight tracker 0&rarr;1 that kept earning when the Wi-Fi dropped.</p>
+
             <div class="case-study-hero"><img src="../img/gogo-flight-tracker.png" alt="Gogo in-flight Flight Tracker — a map showing American Airlines flight 228 from Los Cabos to Chicago O'Hare with departure, arrival, and estimated times, plus a Gogo sponsorship ad"></div>
 
             <section class="case-study-section">

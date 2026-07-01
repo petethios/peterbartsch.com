@@ -97,6 +97,8 @@
                 </div>
             </div>
 
+            <p class="case-study-outcome">Built a complete product company solo &mdash; six surfaces, one source of truth, agents as the team.</p>
+
             <!-- Flywheel diagram (hero) — dark stage so node colors stay legible across all era themes -->
             <figure class="flywheel-stage" aria-labelledby="flywheel-caption">
                 <!-- Desktop / tablet: radial layout -->
@@ -265,6 +267,38 @@
                     </table>
                 </div>
 
+            </section>
+
+            <section class="case-study-section">
+                <h2>What I Got Wrong First: Figma as the Source</h2>
+                <p>The first version did the obvious thing: <strong>Figma was the source of truth, and everything generated down from it</strong> &mdash; tokens, CSS, the docs. It drifted within weeks. A variable moved in Figma and the CSS didn&rsquo;t follow; a hex got hand-tweaked in code and Figma never heard about it. With no engineering team to police the gap, the &ldquo;source of truth&rdquo; quietly stopped being true.</p>
+                <p>So I inverted it. <strong>The source of truth became DESIGN.md &mdash; agent-readable text &mdash; and Figma became a surface that gets audited against it like every other.</strong> Rules a human authors; agents are the IC that enforces them. That single inversion is what makes one designer holding six surfaces actually work.</p>
+
+                <figure class="invert-diagram" aria-label="The inversion: from Figma as source of truth to DESIGN.md as the spine">
+                    <div class="invert-panels">
+                        <div class="invert-panel invert-panel--bad">
+                            <span class="invert-tag invert-tag--bad">&#10007; First version</span>
+                            <span class="invert-node">FIGMA</span>
+                            <span class="invert-rel">&darr; generates down to</span>
+                            <span class="invert-surfaces">tokens &middot; CSS &middot; docs</span>
+                            <span class="invert-note">Source of truth = Figma. Drifted in weeks &mdash; no eng team to police the gap.</span>
+                        </div>
+                        <div class="invert-panel invert-panel--good">
+                            <span class="invert-tag invert-tag--good">&#10003; Inverted</span>
+                            <span class="invert-node">DESIGN.md</span>
+                            <span class="invert-rel">&uarr; every surface audited against</span>
+                            <span class="invert-surfaces">Figma &middot; tokens &middot; CSS &middot; docs &middot; OnShape</span>
+                            <span class="invert-note">Source of truth = agent-readable rules. Agents flag drift; the human decides.</span>
+                        </div>
+                    </div>
+                    <figcaption>The deliverable became the rules, not the pixels.</figcaption>
+                </figure>
+
+                <p style="margin-bottom: 0;">Two faster paths I ruled out along the way:</p>
+                <ul>
+                    <li><strong>Wait for headcount</strong> &mdash; hire engineers to maintain the system. There&rsquo;s no eng team and, by design, there won&rsquo;t be: the agents are the IC.</li>
+                    <li><strong>Hand-sync the surfaces</strong> &mdash; &ldquo;I&rsquo;ll just remember to update all six.&rdquo; That&rsquo;s the willpower problem that breaks at six surfaces across four sites &mdash; the Auxosphere bug below is what silent drift looks like.</li>
+                </ul>
             </section>
 
             <section class="case-study-section">

@@ -63,6 +63,8 @@
                 <div class="case-study-metric"><p class="case-study-metric-value">40+</p><p class="case-study-metric-label">Teams Aligned</p></div>
             </div>
 
+            <p class="case-study-outcome">Consolidated 47 fragmented properties into one platform &mdash; 0 downtime, 40+ teams aligned.</p>
+
             <div class="case-study-hero"><img src="../img/deere-03.png" alt="Deere unified navigation"></div>
 
             <section class="case-study-section">
@@ -93,6 +95,26 @@
                     <li><strong>Value-First Positioning:</strong> Framed unification as "unlocking cross-sell and customer satisfaction" not "enforcing consistency"</li>
                     <li><strong>Platform Flexibility:</strong> Patterns adapted for context—web, mobile, and in-cab displays—while maintaining conceptual coherence</li>
                 </ul>
+
+                <figure class="converge-diagram" aria-label="47 fragmented properties converging into one navigation, migrated in waves">
+                    <div class="converge-flow">
+                        <div class="converge-from">
+                            <span class="converge-chip"><strong>47 PROPERTIES</strong> grown by acquisition</span>
+                            <span class="converge-chip"><strong>6 BRANDS</strong> distinct identities</span>
+                            <span class="converge-chip"><strong>LEGACY STACKS</strong> different tech, APIs, releases</span>
+                            <span class="converge-chip"><strong>WEB &middot; MOBILE &middot; IN-CAB</strong> every surface</span>
+                        </div>
+                        <div class="converge-arrow" aria-hidden="true">
+                            <span class="converge-arrow-glyph">&rarr;</span>
+                            <span class="converge-arrow-label">migrated in waves</span>
+                        </div>
+                        <div class="converge-to">
+                            <span class="converge-to-name">ONE NAVIGATION</span>
+                            <span class="converge-to-sub">a single customer view</span>
+                        </div>
+                    </div>
+                    <p class="lc-callout"><strong>Governance problem first, design problem second.</strong> No top-down mandate, no big-bang &mdash; shared ownership across 40+ teams, migrated wave by wave, <strong>zero downtime</strong>.</p>
+                </figure>
             </section>
 
             <section class="case-study-section">

@@ -4,28 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resume | Peter Bartsch — Staff / Principal Product Designer</title>
-    <meta name="description" content="Peter Bartsch — Staff / Principal Product Designer — design systems · AI-native workflow. Led UX for $3.8B platform at Deere (500K users). Built design org 1→10 at FourKites ($1B+ valuation). Now founder of Thios — AI-native workflow shipping a CAD-driven configurator and dev-grade design system.">
+    <meta name="description" content="Peter Bartsch — Staff / Principal Product Designer (design systems · enterprise platforms). I make complex enterprise systems usable and get them adopted at scale — then build them: front-end, design systems in code, parametric CAD, and hardware. $3.8B connected-services platform at Deere (500K users); design org 1→10 at FourKites ($1B+ valuation); founder of Thios.">
     <link rel="canonical" href="https://petebartsch.com/resume">
     <link rel="icon" type="image/svg+xml" href="pblogo.svg">
 
     <!-- Open Graph -->
     <meta property="og:type" content="profile">
     <meta property="og:url" content="https://petebartsch.com/resume">
-    <meta property="og:title" content="Resume | Peter Bartsch — Staff / Principal Product Designer — design systems · AI-native workflow">
-    <meta property="og:description" content="Design systems · AI-native workflow. $3.8B platform at Deere across web, mobile, embedded. Design org 1→10 at FourKites scaling IoT asset-tracking ($1B+ valuation). Now founder of Thios — AI-native workflow, CAD-driven configurator, dev-grade design system.">
+    <meta property="og:title" content="Resume | Peter Bartsch — Staff / Principal Product Designer — design systems · enterprise platforms">
+    <meta property="og:description" content="I make complex enterprise systems usable and get them adopted at scale — then build them: front-end, design systems in code, parametric CAD, and hardware. $3.8B connected-services platform at Deere (500K users); design org 1→10 at FourKites ($1B+ valuation); now founder of Thios.">
     <meta property="og:site_name" content="Peter Bartsch">
     <meta property="og:image" content="https://petebartsch.com/og-image.png">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
-    <meta property="og:image:alt" content="Peter Bartsch — Staff / Principal Product Designer — design systems · AI-native workflow">
+    <meta property="og:image:alt" content="Peter Bartsch — Staff / Principal Product Designer — design systems · enterprise platforms">
     <meta property="og:locale" content="en_US">
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Resume | Peter Bartsch — Staff / Principal Product Designer — design systems · AI-native workflow">
-    <meta name="twitter:description" content="Design systems · AI-native workflow. $3.8B platform at Deere across web, mobile, embedded. Design org 1→10 at FourKites scaling IoT asset-tracking ($1B+ valuation). Now founder of Thios — AI-native workflow, CAD-driven configurator, dev-grade design system.">
+    <meta name="twitter:title" content="Resume | Peter Bartsch — Staff / Principal Product Designer — design systems · enterprise platforms">
+    <meta name="twitter:description" content="I make complex enterprise systems usable and get them adopted at scale — then build them: front-end, design systems in code, parametric CAD, and hardware. $3.8B connected-services platform at Deere (500K users); design org 1→10 at FourKites ($1B+ valuation); now founder of Thios.">
     <meta name="twitter:image" content="https://petebartsch.com/og-image.png">
-    <meta name="twitter:image:alt" content="Peter Bartsch — Staff / Principal Product Designer — design systems · AI-native workflow">
+    <meta name="twitter:image:alt" content="Peter Bartsch — Staff / Principal Product Designer — design systems · enterprise platforms">
 
     <!-- Fonts -->
     <link rel="preload" href="rombyte.ttf" as="font" type="font/ttf" crossorigin>
@@ -415,7 +415,7 @@
                 <p class="resume-role-title">Lead UX / Manager</p>
                 <p class="resume-role-summary">Employee #28 during hypergrowth, $3M → $100M ARR ($1B+ valuation). Built the design function from scratch &mdash; founding designer to a 10-person global team.</p>
                 <ul class="resume-role-bullets">
-                    <li><strong>Designed flagship IoT asset-tracking platform 0→1</strong> &mdash; real-time supply chain control tower (web) and mobile apps processing 10M+ daily GPS/telematics events for 30+ Fortune 2000 customers (Anheuser-Busch, Georgia-Pacific, Tyson); high-density dashboards with map, list, and timeline views became the primary driver of 3x customer expansion</li>
+                    <li><strong>Designed flagship IoT asset-tracking platform 0→1</strong> &mdash; real-time supply chain control tower (web) and mobile apps processing 10M+ daily GPS/telematics events for 30+ Fortune 2000 customers (Anheuser-Busch, Georgia-Pacific, Tyson); high-density dashboards with map, list, and timeline views helped drive 3× customer expansion</li>
                     <li><strong>Led predictive analytics dashboards</strong> (data viz, anomaly states, alerting workflows) that identified shipment delays 6&ndash;12 hours earlier than competitors; +41% retention, +$120K avg ACV</li>
                     <li><strong>Scaled the design org across Chicago and Chennai</strong> embedded in engineering sprint cadence; established component library, design ops, and hiring framework; &ndash;65% one-off component variants while maintaining startup velocity</li>
                 </ul>
@@ -480,8 +480,12 @@
                 <p class="resume-skills-list">Claude (incl. authoring custom Claude Skill) &middot; Cursor &middot; Figma Make &middot; Adobe Firefly &middot; Midjourney &middot; Obsidian as knowledge base</p>
             </div>
             <div class="resume-skills-category">
+                <h3 class="resume-skills-heading">Build & Technical</h3>
+                <p class="resume-skills-list">Front-end &mdash; HTML &middot; CSS &middot; JavaScript &middot; React / Three.js prototyping &middot; parametric CAD (OnShape) &middot; 3D (Blender) &middot; physical prototyping &amp; fabrication</p>
+            </div>
+            <div class="resume-skills-category">
                 <h3 class="resume-skills-heading">Tools</h3>
-                <p class="resume-skills-list">Figma &middot; OnShape CAD &middot; Blender 3D &middot; HTML/CSS &middot; Adobe Creative Suite</p>
+                <p class="resume-skills-list">Figma &middot; OnShape CAD &middot; Blender 3D &middot; Adobe Creative Suite</p>
             </div>
         </section>
 

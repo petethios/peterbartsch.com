@@ -1787,9 +1787,9 @@
 
         .inline-bullets {
             font-family: var(--font-readable);
-            font-size: 13px;
-            font-weight: 700;
-            line-height: 1.7;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 1.8;
             letter-spacing: 0.2px;
             margin: 0;
             padding-left: 18px;
@@ -2611,11 +2611,11 @@ textarea:focus-visible {
 
 .structure-item {
     font-family: var(--font-readable);
-    font-size: 16px;
-    line-height: 1.6;
+    font-size: 17px;
+    line-height: 1.65;
     color: #ffffff;
-    margin: 10px 0;
-    font-weight: 700;
+    margin: 12px 0;
+    font-weight: 400;
 }
 
 .structure-label {
@@ -2755,8 +2755,8 @@ textarea:focus-visible {
 
 .about-bio {
     font-family: var(--font-readable);
-    font-size: 17px;
-    line-height: 1.5;
+    font-size: 18px;
+    line-height: 1.65;
     font-weight: 600;
     color: #ffffff;
     margin: 0 0 var(--space-lg) 0;
@@ -3634,7 +3634,7 @@ html:not([data-theme]) .theme-era-select option {
    Two-column (text + portrait), dominant headline, loud metric
    blocks, elevated "moat" sub-headline. Mobile-first; desktop @820px.
    ============================================================ */
-.hero-section { padding: 8px 0 28px 0; }
+.hero-section { padding: 8px 0 16px 0; }
 
 .hero-layout {
     display: grid;
@@ -3704,6 +3704,7 @@ html:not([data-theme]) .theme-era-select option {
 .hero-metric {
     padding: 16px 2px;
     border-top: 1px solid var(--color-gray-dark);
+    text-align: center;
 }
 .hero-metric-num {
     display: block;
@@ -3718,9 +3719,10 @@ html:not([data-theme]) .theme-era-select option {
     display: block;
     margin-top: 7px;
     font-size: 12px;
-    letter-spacing: 0.1em;
+    letter-spacing: 0.08em;
     text-transform: uppercase;
     color: var(--color-text-subtle);
+    white-space: nowrap;
 }
 
 /* Small range / build proof line */
@@ -3740,15 +3742,21 @@ html:not([data-theme]) .theme-era-select option {
     }
     .hero-portrait { order: 0; aspect-ratio: 4 / 5; max-height: none; }
     .hero-metrics {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(4, 1fr);
         border-top: 1px solid var(--color-gray-dark);
     }
     .hero-metric {
         border-top: none;
         border-left: 1px solid var(--color-gray-dark);
-        padding: 24px 28px;
+        padding: 24px 14px;
     }
-    .hero-metric:first-child { border-left: none; padding-left: 0; }
+    .hero-metric:first-child { border-left: none; }
+    /* Snug laptops (820–1120px): 2×2 so the wide "34→87%" never clips */
+    @media (max-width: 1119px) {
+        .hero-metrics { grid-template-columns: repeat(2, 1fr); }
+        .hero-metric:nth-child(odd) { border-left: none; }
+        .hero-metric:nth-child(n+3) { border-top: 1px solid var(--color-gray-dark); }
+    }
 }
 
 
@@ -3853,3 +3861,105 @@ html:not([data-theme]) .theme-era-select option {
     padding: 0 var(--space-md);
     text-align: left;
 }
+
+/* ========================================
+   Site-improvement pass — outcome leads, capability strip, philosophy line
+   (theme-safe: uses --color-primary / --color-text-primary which flip per era)
+   ======================================== */
+
+/* Outcome lead on homepage case cards — verbatim deck headline, the punch above Challenge/Approach/Result */
+.case-outcome {
+    font-family: var(--font-readable);
+    font-size: 17px;
+    line-height: 1.5;
+    font-weight: 700;
+    color: var(--color-primary);
+    margin: 0 0 14px 0;
+}
+@media (max-width: 768px) {
+    .case-outcome { font-size: 15px; }
+}
+
+/* Capability strip — makes the cross-discipline range explicit (mirrors the deck closing slide) */
+.capability-strip {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px 14px;
+    max-width: 1080px;
+    margin: var(--space-md) auto 0;
+    padding: 0 var(--space-md);
+}
+.capability-strip span {
+    font-family: var(--font-display);
+    font-size: 12px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--color-primary);
+    border: 1px solid var(--color-primary);
+    padding: 6px 12px;
+    white-space: nowrap;
+}
+@media (max-width: 768px) {
+    .capability-strip span { font-size: 10px; letter-spacing: 1.5px; padding: 5px 9px; }
+}
+
+/* Philosophy line — quiet, large closing statement near contact (mirrors deck final slide) */
+.philosophy-section {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: clamp(48px, 8vw, 96px) var(--space-md);
+    text-align: center;
+}
+.philosophy-line {
+    font-family: var(--font-readable);
+    font-size: clamp(20px, 3vw, 30px);
+    line-height: 1.45;
+    font-weight: 600;
+    color: var(--color-text-primary);
+    margin: 0;
+}
+
+/* ============================================================
+   Calm pass — more air between major sections + lift the case
+   panel so the case studies read as a distinct zone.
+   Spacing/separation only; content untouched.
+   ============================================================ */
+.about-section { margin-top: 28px; }
+.portfolio-carousel { margin-top: 60px; margin-bottom: 60px; }
+.company-logos-section { margin-top: 60px; }
+.configurator-showcase { margin-top: 60px; }
+#songlist { margin-top: 60px; }
+#other-pixels { margin-top: 60px; }
+.contact-section { margin-top: 60px; }
+.case-study-card { margin-bottom: 48px; }
+
+/* Soft lift on the case-studies panel so it separates from the experience blocks (2026 theme) */
+[data-theme="2026"] .portfolio-carousel { box-shadow: 0 2px 28px rgba(17, 17, 17, 0.06); }
+
+/* ============================================================
+   Deck-sync — five-patterns thesis, case-studies intro line, contact CTA
+   (theme-safe vars; mirrors deck slide 2 + slide 22)
+   ============================================================ */
+.patterns-list { list-style: none; max-width: 1080px; margin: 0 auto var(--space-md); padding: 0 var(--space-md); }
+.pattern {
+    display: grid; grid-template-columns: 40px 1fr; column-gap: 16px; align-items: baseline;
+    padding: 16px 0; border-top: 1px solid var(--color-gray-dark);
+}
+.pattern:first-child { border-top: none; }
+.pattern-num { grid-column: 1; grid-row: 1 / span 2; font-family: var(--font-display); font-size: 15px; font-weight: 700; color: var(--color-primary); }
+.pattern-name { grid-column: 2; grid-row: 1; font-family: var(--font-readable); font-size: clamp(16px, 2vw, 19px); font-weight: 600; color: var(--color-text-primary); line-height: 1.3; }
+.pattern-proof { grid-column: 2; grid-row: 2; font-family: var(--font-body); font-size: 14px; color: var(--color-text-muted); margin-top: 3px; }
+.pattern-proof strong { color: var(--color-primary); font-weight: 700; }
+.patterns-payoff { max-width: 1080px; margin: 0 auto; padding: 0 var(--space-md); font-family: var(--font-body); font-size: 14px; font-style: italic; color: var(--color-text-muted); }
+
+/* Case-studies intro (deck Hub cover line) */
+.cases-intro { max-width: 1120px; margin: -4px auto var(--space-md); padding: 0 var(--space-md); font-family: var(--font-body); font-size: clamp(14px, 1.6vw, 16px); font-style: italic; color: var(--color-text-muted); }
+
+/* Contact CTA line (deck closing CTA) — !important to beat the theme's broad `.contact-section p` color */
+.contact-cta-line { font-family: var(--font-readable); font-size: clamp(16px, 2vw, 20px); font-weight: 600; color: var(--color-primary) !important; margin: 6px 0 16px; }
+
+/* Group the capability strip with the hero (it's the hero's "range" tail, not a standalone section) —
+   without this it gets a full section-gap on BOTH sides and floats. Specificity beats `#main > *`. */
+#main > .hero-section { margin-bottom: 24px; }
+#main > .capability-strip { margin-bottom: 56px; }

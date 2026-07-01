@@ -67,6 +67,8 @@
                 <div class="case-study-metric"><p class="case-study-metric-value">30+</p><p class="case-study-metric-label">Fortune 2000 Clients</p></div>
             </div>
 
+            <p class="case-study-outcome">Turned distrusted dashboards into million-dollar calls &mdash; +41% retention, 3× expansion.</p>
+
             <div class="case-study-hero"><img src="../img/fourkites-01.png" alt="FourKites real-time tracking dashboard"></div>
 
             <section class="case-study-section">
@@ -88,6 +90,12 @@
                 <p style="margin-top: 16px; margin-bottom: 0;"><strong>Hiding uncertainty would have been easier. But it would have destroyed trust the moment predictions failed.</strong></p>
             </section>
 
+            <section class="case-study-section">
+                <h2>Why It Worked This Time</h2>
+                <p>Real-time freight visibility had a graveyard behind it—the industry had chased it for years and it never quite held. Two things finally changed: <strong>nearly every driver now carried a phone with GPS</strong>, and <strong>carrier and telematics APIs were maturing</strong> into something you could actually build on. The judgment call wasn't inventing tracking—it was recognizing the enabling conditions had finally arrived, and designing for them before competitors did.</p>
+                <p>But the data still wasn't accurate for free. Each facility needed <strong>custom geo-fences</strong> to turn raw GPS pings into trustworthy "arrived / departed" events, and the predictive models were tuned by <strong>client domain experts feeding in their own operational experience</strong>—the dock supervisor who knows this yard backs up at 6am. We saw exactly how much hand-work accuracy took, location by location. That's precisely why hiding uncertainty was never on the table: we knew where the data was soft.</p>
+            </section>
+
             <p class="highlight-quote">"Never hide uncertainty"</p>
 
             <section class="case-study-section">
@@ -102,9 +110,57 @@
             </section>
 
             <section class="case-study-section">
+                <h2>What We Ruled Out</h2>
+                <p>Three easier paths, each a trap for a data product:</p>
+                <ul>
+                    <li><strong>Show one confident ETA</strong>—the clean single number everyone wanted. It demos beautifully and dies the first time it's wrong; in freight, it's wrong constantly.</li>
+                    <li><strong>Surface every source and confidence interval at once</strong>—honest, but it buries a logistics manager in noise. Trust comes from <em>legible</em> uncertainty, not <em>maximal</em> uncertainty.</li>
+                    <li><strong>Alert on everything</strong>—maximizes "we caught it," guarantees alert fatigue, and trains users to ignore the one alert that mattered.</li>
+                </ul>
+                <p style="margin-bottom: 0;"><strong>The discipline was subtraction:</strong> glance-able status first, confidence and sources on demand, alerts only when there's an action to take.</p>
+                <div style="border-left: 3px solid var(--color-primary); padding: 4px 0 4px 22px; margin: 28px 0 0;">
+                    <p style="margin: 0;"><strong>The bet.</strong> Showing uncertainty looks less impressive than a single confident number—in a demo, it looks like the weaker product. The wager was that <strong>trust compounds and false confidence collapses</strong>: the platform customers believe at 2am, when a load is late and the ETA keeps shifting, is the one that admitted what it didn't know.</p>
+                </div>
+            </section>
+
+            <section class="case-study-section">
                 <h2>Execution</h2>
                 <h3 style="font-family: var(--font-display); font-size: 16px; color: var(--color-white); margin: 24px 0 12px 0;">Real-Time Control Tower</h3>
                 <p>Designed the flagship visibility platform showing shipment status, confidence levels, and predicted exceptions. Users could drill into any data point to understand sources and reliability.</p>
+
+                <figure class="confidence-tree" aria-label="Confidence routing: every signal routed by confidence level to an action">
+                    <div class="ct-source">
+                        <span class="ct-source-name">EVERY SIGNAL</span>
+                        <span class="ct-source-sub">GPS &middot; telematics &middot; carrier APIs &middot; 10M+ events/day</span>
+                    </div>
+                    <ul class="ct-routes">
+                        <li class="ct-route" style="--ct-dot:#10b981;">
+                            <span class="ct-dot" aria-hidden="true"></span>
+                            <span class="ct-level">HIGH</span>
+                            <span class="ct-rule">Show the ETA, solid</span>
+                            <span class="ct-action">Act on it</span>
+                        </li>
+                        <li class="ct-route" style="--ct-dot:#f59e0b;">
+                            <span class="ct-dot" aria-hidden="true"></span>
+                            <span class="ct-level">MEDIUM</span>
+                            <span class="ct-rule">ETA + a confidence band</span>
+                            <span class="ct-action">Plan, but keep watching</span>
+                        </li>
+                        <li class="ct-route" style="--ct-dot:#ef4444;">
+                            <span class="ct-dot" aria-hidden="true"></span>
+                            <span class="ct-level">LOW</span>
+                            <span class="ct-rule">Flag it &middot; prompt &ldquo;verify&rdquo;</span>
+                            <span class="ct-action">Confirm before you bet</span>
+                        </li>
+                        <li class="ct-route" style="--ct-dot:#8b5cf6;">
+                            <span class="ct-dot" aria-hidden="true"></span>
+                            <span class="ct-level">CONFLICTING</span>
+                            <span class="ct-rule">Anomaly alert &middot; escalate</span>
+                            <span class="ct-action">Something&rsquo;s off &mdash; investigate</span>
+                        </li>
+                    </ul>
+                    <p class="ct-principle">Never one confident number. The platform you believe at 2am is the one that admits what it doesn&rsquo;t know.</p>
+                </figure>
 
                 <h3 style="font-family: var(--font-display); font-size: 16px; color: var(--color-white); margin: 24px 0 12px 0;">Predictive Analytics Dashboard</h3>
                 <p>Built interfaces that surfaced delays 6-12 hours before traditional ETAs—turning logistics managers from firefighters into planners.</p>
@@ -120,7 +176,7 @@
                     <li>Boosted <strong>average contract value by $120K</strong> annually</li>
                     <li>Predictive analytics surfaced issues <strong>6–12 hours earlier</strong> than competitors</li>
                     <li>Enabled a <strong>real-time control tower</strong> trusted by 30+ Fortune 2000 enterprises</li>
-                    <li>Made FourKites' platform a <strong>primary driver of 3× customer expansion</strong></li>
+                    <li><strong>Helped drive 3× customer expansion</strong> — the layer customers chose to grow on</li>
                 </ul>
             </section>
 

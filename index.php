@@ -60,6 +60,9 @@
     <!-- Font Preloads -->
     <link rel="preload" href="rombyte.woff2" as="font" type="font/woff2" crossorigin>
 
+    <!-- Hero portrait preload — it's the LCP element; preload so it paints immediately (no empty frame on first load) -->
+    <link rel="preload" as="image" href="peterb-hero.webp" type="image/webp" fetchpriority="high">
+
     <!-- Preconnect to external resources for performance -->
     <!-- Fonts are self-hosted, no preconnect needed -->
     <link rel="preconnect" href="https://www.googletagmanager.com">
@@ -235,21 +238,23 @@
                     <div class="hero-metric"><span class="hero-metric-num">34%&nbsp;&rarr;&nbsp;87%</span><span class="hero-metric-label">Adoption at Deere</span></div>
                     <div class="hero-metric"><span class="hero-metric-num">$3.8B</span><span class="hero-metric-label">Revenue enabled</span></div>
                     <div class="hero-metric"><span class="hero-metric-num">500K</span><span class="hero-metric-label">Users reached</span></div>
+                    <div class="hero-metric"><span class="hero-metric-num">6</span><span class="hero-metric-label">Surfaces in sync</span></div>
                 </div>
-                <p class="hero-proof">Connected vehicles, aviation, logistics, agriculture, open hardware &mdash; built &amp; led design teams 1&rarr;10. I build the systems, not just design them.</p>
-                <p class="hero-open-to">// OPEN TO: Staff, Principal, or hands-on leadership &mdash; I optimize for the team and the work, not the title.</p>
+                <p class="hero-proof">Built &amp; led design teams 1&rarr;10. I build the systems, not just design them.</p>
+                <p class="hero-open-to">// OPEN TO: Staff / Principal or hands-on leadership, <strong>available now</strong> &mdash; ready to bring what I've built solo at Thios to an enterprise team. I optimize for the work, not the title.</p>
             </section>
+
+            <!-- Capability strip — makes the cross-discipline range explicit (mirrors the deck's closing slide) -->
+            <div class="capability-strip" aria-label="Capabilities">
+                <span>DESIGN</span><span>RESEARCH</span><span>FRONT-END</span><span>PROTOTYPING</span><span>HARDWARE / CAD</span><span>SYSTEMS</span>
+            </div>
 
             <!-- About Section -->
             <section id="about" class="about-section">
                 <!-- Heading lifted out of the right column so it spans the full
                      section width, left-aligned to the left edge of the photo
                      and bio rows below. -->
-                <h2 class="about-heading phosphor-text">// WHAT I DO</h2>
-                <p class="about-bio about-lead">
-                    I make complex enterprise systems usable &mdash; and get them adopted &mdash; at scale. The work I take on is the kind that stalls organizations: forced adoption, platform fragmentation, trust in uncertain data. At Deere, that unlocked $3.8B across 500K users on web, mobile, and embedded equipment. At FourKites, I built the design org from 1 to 10 while scaling a real-time IoT platform from $3M to $100M ARR ($1B+ valuation). As founder of <a href="https://thios.co" target="_blank" rel="noopener">Thios</a>, I now design the systems <em>and build them</em> &mdash; a <a href="https://thios.co/configurator/" target="_blank" rel="noopener">CAD-driven 3D configurator</a>, a <a href="case-studies/thios.php">dev-grade design system</a> with its own <a href="https://github.com/peterbartsch/AgentDrift/blob/main/skills/audit-design-token-drift/SKILL.md" target="_blank" rel="noopener">open-source Claude Skill</a>, and real <a href="case-studies/thios-flywheel.php">physical hardware</a>. Hands-on by preference &mdash; with the range to lead and grow teams when the work calls for it.
-                </p>
-                <!-- // HOW I THINK paired with the video poster as a balanced, centered two-column row -->
+                <!-- // HOW I THINK — lead with the philosophy (best copy on the page), paired with the video poster -->
                 <div class="about-think-row">
                     <div id="player" class="about-photo">
                         <div class="cover-art">
@@ -265,6 +270,16 @@
                         <p class="about-bio">Most organizations think they have a UX problem when they actually have a trust problem, an incentives problem, or an alignment problem. Adoption is where those collide &mdash; you can ship a beautiful flow and still watch people route around it. I look for the leverage point where product, business, and user needs intersect, and design from there. AI just means one operator can now build all the way to that point, not just spec it.</p>
                     </div>
                 </div>
+                <h2 class="about-heading phosphor-text">// WHAT I DO</h2>
+                <p class="about-bio about-lead">Five patterns, one job: I make complex systems trustworthy enough to adopt &mdash; at scale.</p>
+                <ol class="patterns-list">
+                    <li class="pattern"><span class="pattern-num">01</span><span class="pattern-name">Making uncertainty understandable</span><span class="pattern-proof"><strong>FourKites</strong> &middot; +41% retention &rarr; 3&times; expansion</span></li>
+                    <li class="pattern"><span class="pattern-num">02</span><span class="pattern-name">Driving adoption without coercion</span><span class="pattern-proof"><strong>Deere</strong> &middot; 34%&rarr;87% completion &middot; $3.8B enabled</span></li>
+                    <li class="pattern"><span class="pattern-num">03</span><span class="pattern-name">Unifying fragmented platforms</span><span class="pattern-proof"><strong>Deere</strong> &middot; 47 properties &middot; 0 downtime &middot; 40+ teams</span></li>
+                    <li class="pattern"><span class="pattern-num">04</span><span class="pattern-name">Finding value inside constraints</span><span class="pattern-proof"><strong>Gogo</strong> &middot; in-flight tracker 0&rarr;1 &middot; always-on revenue</span></li>
+                    <li class="pattern"><span class="pattern-num">05</span><span class="pattern-name">Building systems that stay aligned</span><span class="pattern-proof"><strong>Thios</strong> &middot; design systems as executable specs</span></li>
+                </ol>
+                <p class="patterns-payoff">These patterns repeat across agriculture, aviation, logistics, mobility, healthcare &amp; open hardware.</p>
                 <!-- Strength tags get their own full-width row below the photo+bio,
                      so they don't get squished one-per-line in the right column. -->
                 <div class="about-strengths">
@@ -281,6 +296,7 @@
             <section id="portfolio-carousel" class="portfolio-carousel">
 
                 <h2 class="about-heading phosphor-text">// CASE STUDIES</h2>
+                <p class="cases-intro">Not a highlight reel &mdash; the calls, the tradeoffs, and what I'd do differently.</p>
 
                 <!-- Featured 3 — the unforgettable cases: Deere (heaviest) -> FourKites -> Thios -->
 
@@ -293,6 +309,7 @@
                         <span class="case-num">01</span>
                         <p class="slide-label">ENTERPRISE · FORCED ADOPTION</p>
                         <h3 class="project-title phosphor-text">DEERE: 34%→87% ADOPTION AT SCALE</h3>
+                        <p class="case-outcome">Drove forced adoption 34%&rarr;87% across 500K users &mdash; unlocking $3.8B without breaking trust.</p>
                         <div class="project-structure">
                             <p class="structure-item"><span class="structure-label">Challenge:</span> 500K users were actively avoiding profile completion — every empty field blocked $3.8B in connected-services revenue.</p>
                             <p class="structure-item"><span class="structure-label">Approach:</span> Led design of a multi-channel forced adoption flow across 8 product lines without destroying trust</p>
@@ -311,10 +328,11 @@
                         <span class="case-num">02</span>
                         <p class="slide-label">DATA TRUST</p>
                         <h3 class="project-title">FOURKITES: DESIGNING FOR UNCERTAINTY</h3>
+                        <p class="case-outcome">Turned distrusted dashboards into million-dollar calls &mdash; +41% retention, 3× expansion.</p>
                         <div class="project-structure">
                             <p class="structure-item"><span class="structure-label">Challenge:</span> Enterprise customers were making million-dollar decisions on dashboards they didn't trust — because we hid uncertainty instead of explaining it.</p>
                             <p class="structure-item"><span class="structure-label">Approach:</span> Led redesign introducing confidence levels that showed uncertainty instead of hiding it</p>
-                            <p class="structure-item"><span class="structure-label">Result:</span> 41% retention increase · 3x customer expansion · $1B+ valuation</p>
+                            <p class="structure-item"><span class="structure-label">Result:</span> 41% retention increase · 3× customer expansion · $1B+ valuation</p>
                         </div>
                         <a href="case-studies/fourkites-tracking.php" class="project-link brutalist-link">VIEW CASE STUDY →</a>
                     </div>
@@ -329,6 +347,7 @@
                         <span class="case-num">03</span>
                         <p class="slide-label">FOUNDER · 6-SURFACE SYSTEM</p>
                         <h3 class="project-title">THIOS: ONE SOURCE OF TRUTH, SIX SURFACES</h3>
+                        <p class="case-outcome">Built a complete product company solo &mdash; six surfaces, one source of truth, agents as the team.</p>
                         <div class="project-structure">
                             <p class="structure-item"><span class="structure-label">Challenge:</span> 6 sub-brands across 4 production sites plus an OnShape CAD source. Drift is the default, not a possibility.</p>
                             <p class="structure-item"><span class="structure-label">Approach:</span> Six canonical surfaces (DESIGN.md ↔ tokens.json ↔ main.css ↔ design-system.html ↔ OnShape ↔ Figma) kept aligned by agent-driven audits.</p>
@@ -409,7 +428,7 @@
                                     <ul class="inline-bullets">
                                         <li><strong>Problem:</strong> 500K+ users weren't completing profiles — blocking $3.8B in connected-services revenue</li>
                                         <li><strong>Result:</strong> 34%→87% completion; unified nav across 8 product lines; design system adopted by 40+ teams</li>
-                                        <li><strong>Approach:</strong> Led multi-channel forced adoption; core contributor to enterprise design system adopted by 40+ teams; 45% faster handoffs</li>
+                                        <li><strong>Approach:</strong> Led multi-channel forced adoption; helped establish the enterprise design system 40+ teams now build on; 45% faster handoffs</li>
                                     </ul>
                                     <a href="case-studies/deere-common-ux.php" class="view-more">View Case Study →</a>
                                 </td>
@@ -424,7 +443,7 @@
                                 <td colspan="2">
                                     <ul class="inline-bullets">
                                         <li><strong>Problem:</strong> Customers didn't trust dashboards built on incomplete data</li>
-                                        <li><strong>Result:</strong> $3M→$100M ARR; 41% retention increase; 3x expansion; company reached $1B+ valuation</li>
+                                        <li><strong>Result:</strong> $3M→$100M ARR; 41% retention increase; 3× expansion; company reached $1B+ valuation</li>
                                         <li><strong>Approach:</strong> Led UX redesign showing confidence levels openly; built predictive ETAs ahead of competitors; grew team 1→10</li>
                                     </ul>
                                     <a href="case-studies/fourkites-tracking.php" class="view-more">View Case Study →</a>
@@ -477,7 +496,7 @@
                             ],
                             [
                                 'name'  => 'MyBoards',
-                                'desc'  => 'An open reference database of surf, skate &amp; snowboard geometry &mdash; shape, not brand.',
+                                'desc'  => 'Shape, not brand. Design as taxonomy &mdash; the same systems instinct behind Deere\'s license-state model. 400+ boards rebuilt in 3D, open data (CC0).',
                                 'url'   => 'https://myboards.org',
                                 'label' => 'myboards.org',
                             ],
@@ -494,14 +513,20 @@
                     </ul>
                 </section>
 
+                <!-- Philosophy line — quiet closing statement, mirrors the deck's final slide -->
+                <section class="philosophy-section">
+                    <p class="philosophy-line">Complex systems don't fail because they're technically impossible. They fail because people won't adopt them. That's the problem I've spent my career solving.</p>
+                </section>
+
                 <!-- Contact Section -->
                 <section id="contact" class="contact-section">
                     <div class="contact-inner">
                         <div class="contact-info">
                             <h3 class="phosphor-text">LET'S TALK</h3>
+                            <p class="contact-cta-line">Let's build something that gets adopted.</p>
                             <!-- Hero already states what I'm open to. This section just covers the practical
                                  things a sender needs to know before they hit send. -->
-                            <p class="contact-desc">Chicago-based. Open to remote or relocation. I reply within 1 business day.</p>
+                            <p class="contact-desc"><strong>Available now</strong> for Staff / Principal roles &mdash; Chicago-based, open to remote or relocation. I reply within 1 business day.</p>
                             <p class="contact-direct">Prefer email? <a href="mailto:peter@peterbartsch.com?subject=Reaching%20out%20from%20petebartsch.com">peter@peterbartsch.com</a> &middot; <a href="https://linkedin.com/in/peterbartsch" target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
                             <a href="resume.php" class="sidebar-link">View Resume</a>
                         </div>

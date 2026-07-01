@@ -1,10 +1,10 @@
 
 
-**Staff / Principal Product Designer — design systems · AI-native workflow.** Led UX for a $3.8B platform at Deere across web, mobile, and embedded equipment systems (500K users, 12 languages). Built design org 1→10 at FourKites scaling a real-time IoT asset-tracking platform processing 10M+ daily events ($3M→$100M ARR, $1B+ valuation). Now founder of Thios — running an AI-native workflow (Claude, Cursor, Figma Make) to ship a CAD-driven configurator, a dev-grade design system with its own Claude Skill, and physical hardware.
+**Staff / Principal Product Designer — design systems · enterprise platforms.** I make complex enterprise systems usable and get them adopted at scale — then build them, not just spec them: front-end, design systems in code, parametric CAD, and physical hardware, with AI-native tooling to ship solo. Led UX for a $3.8B connected-services platform at Deere (500K users; web, mobile, embedded), built the design org 1→10 at FourKites scaling a real-time IoT platform ($3M→$100M ARR, $1B+ valuation), and now founder of Thios (thios.co) — shipping a CAD-driven product line, a dev-grade design system, and physical hardware end to end.
 
 **PROFESSIONAL EXPERIENCE**
 
-[**THIOS (thios.co)**](https://thios.co) | **Founder & Lead Designer**  Aug 2024 – Present
+[**THIOS (thios.co)**](https://thios.co) | **Founder & Lead Designer**   Aug 2024 – Present
 
 *Open-source modular structures — solo designer, AI-augmented engineering team, 6-surface design system from one source of truth.*
 
@@ -14,7 +14,7 @@
 
 * Built a 6-surface, dev-grade design system and published its first Claude Skill (audit-design-token-drift) — catches design-token drift across canonical surfaces with file:line citations. Design system as dev tooling, not a Figma library nobody opens — [thios.co/design-system-architecture.html](https://www.thios.co/design-system-architecture.html)
 
-**JOHN DEERE | Senior Lead UX; Digital Customer Experience**  Aug 2020 – Jul 2024
+**JOHN DEERE | Senior Lead UX; Digital Customer Experience**   Aug 2020 – Jul 2024
 
 *Embedded with product teams to modernize 20-year-old systems and drive connected-services revenue across agricultural equipment.*
 
@@ -24,17 +24,17 @@
 
 * Built a unified account and navigation framework deployed across 8 product lines spanning web, mobile, and embedded equipment systems — consolidated fragmented experiences into a single customer view; \+28% first-contact resolution on dealer support.
 
-**FOURKITES | Lead UX / Manager**  Jan 2017 – Jan 2020
+**FOURKITES | Lead UX / Manager**   Jan 2017 – Jan 2020
 
 *Employee \#28 during hypergrowth, $3M → $100M ARR ($1B+ valuation). Built the design function from scratch — founding designer to a 10-person global team.*
 
-* Designed flagship IoT asset-tracking platform 0→1 — real-time supply chain control tower (web) and mobile apps processing 10M+ daily GPS/telematics events for 30+ Fortune 2000 customers (Anheuser-Busch, Georgia-Pacific, Tyson); high-density dashboards with map, list, and timeline views became the primary driver of 3x customer expansion.
+* Designed flagship IoT asset-tracking platform 0→1 — real-time supply chain control tower (web) and mobile apps processing 10M+ daily GPS/telematics events for 30+ Fortune 2000 customers (Anheuser-Busch, Georgia-Pacific, Tyson); high-density dashboards with map, list, and timeline views helped drive 3× customer expansion.
 
 * Led predictive analytics dashboards (data viz, anomaly states, alerting workflows) that identified shipment delays 6–12 hours earlier than competitors; \+41% retention, \+$120K avg ACV.
 
 * Scaled the design org across Chicago and Chennai embedded in engineering sprint cadence; established component library, design ops, and hiring framework; –65% one-off component variants while maintaining startup velocity.
 
-**MAVENWAVE PARTNERS | Senior UX \+ Agile Lead**  Jan 2014 – Jan 2017
+**MAVENWAVE PARTNERS | Senior UX \+ Agile Lead**   Jan 2014 – Jan 2017
 
 *Led digital product design for Fortune 500 healthcare and pharma clients.*
 
@@ -46,9 +46,11 @@
 
 **EARLIER EXPERIENCE**
 
-**NOKIA / HERE MAPS |** Product Marketing Manager, HERE Traffic | GPS probe visualizations, real-time vehicle-telematics data products, and go-to-market for DEMPSY (open-source distributed computing).  Aug 2012 – Jan 2014
+**NOKIA / HERE MAPS |** Product Marketing Manager, HERE Traffic | GPS probe visualizations, real-time vehicle-telematics data products, and go-to-market for DEMPSY (open-source distributed computing).    
+Aug 2012 – Jan 2014
 
-**GOGO INFLIGHT INTERNET |** Product Manager – Signature Services | Launched in-flight internet across major US airlines; onboard hardware UX \+ Air-to-Ground RF network; FAA-approved documentation; 0→1 in-flight tracker driving sponsorship deals.  Apr 2008 – Aug 2012
+**GOGO INFLIGHT INTERNET |** Product Manager – Signature Services | Launched in-flight internet across major US airlines; onboard hardware UX \+ Air-to-Ground RF network; FAA-approved documentation; 0→1 in-flight tracker driving sponsorship deals.    
+Apr 2008 – Aug 2012
 
 **SKILLS**
 
@@ -58,7 +60,9 @@
 
 **AI-Native Workflow:** Claude (incl. authoring custom Claude Skill) · Cursor · Figma Make · Adobe Firefly · Midjourney · Obsidian as knowledge base
 
-**Tools:** Figma · OnShape CAD · Blender 3D · HTML/CSS · Adobe Creative Suite
+**Build & Technical:** Front-end — HTML · CSS · JavaScript · React / Three.js prototyping · parametric CAD (OnShape) · 3D (Blender) · physical prototyping & fabrication
+
+**Tools:** Figma · OnShape CAD · Blender 3D · Adobe Creative Suite
 
 **EDUCATION**
 

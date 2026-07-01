@@ -3,7 +3,7 @@
 .case-study-page {
     max-width: 900px;
     margin: 0 auto;
-    padding: 40px 24px 80px;
+    padding: 48px 32px 96px;
     background: var(--cs-page-bg, rgba(0, 0, 0, 0.75));
     border-left: 1px solid var(--cs-border-color, rgba(134, 216, 221, 0.2));
     border-right: 1px solid var(--cs-border-color, rgba(134, 216, 221, 0.2));
@@ -72,7 +72,7 @@
 }
 
 .case-study-hero {
-    margin: 40px 0;
+    margin: 48px 0;
     border: 2px solid var(--cs-border-color, rgba(134, 216, 221, 0.3));
     overflow: hidden;
 }
@@ -84,14 +84,14 @@
 }
 
 .case-study-section {
-    margin: 48px 0;
+    margin: 64px 0;
 }
 
 .case-study-section h2 {
     font-family: var(--font-display);
     font-size: 20px;
     color: var(--color-primary);
-    margin: 0 0 20px 0;
+    margin: 0 0 24px 0;
     text-transform: uppercase;
     letter-spacing: 1px;
 }
@@ -278,6 +278,14 @@
 .case-study-contact-links a.secondary:hover {
     background-color: rgba(255, 255, 255, 0.1);
     border-color: var(--color-primary);
+}
+
+/* Filled contact CTAs (Email / LinkedIn) always sit on a saturated primary background,
+   so their label must stay white in EVERY era theme. Without this, a light theme's broad
+   `[data-theme="X"] a { color: <primary> }` rule wins (equal specificity, loaded later) and
+   renders the label primary-on-primary — unreadable. The transparent .secondary CTA is excluded. */
+.case-study-contact-links a:not(.secondary) {
+    color: #ffffff !important;
 }
 
 /* Constraints Section - Visual differentiation */
@@ -684,3 +692,125 @@
         border-top: 1pt solid #ccc;
     }
 }
+
+/* Outcome lead — verbatim deck headline, sits above the hero visual (theme-safe) */
+.case-study-outcome {
+    font-family: var(--font-display);
+    font-size: clamp(18px, 2.4vw, 24px);
+    line-height: 1.45;
+    font-weight: 700;
+    color: var(--cs-text-color, #ffffff);
+    border-left: 3px solid var(--color-primary);
+    padding-left: 18px;
+    margin: 0 0 28px 0;
+}
+
+/* ============================================================
+   Thinking diagrams — native, responsive, theme-adaptive.
+   Use --cs-* vars (→ 2026 brief tokens) + --color-primary;
+   confidence dots use fixed semantic (traffic-light) colors.
+   ============================================================ */
+
+/* 1 ─ License lifecycle (Deere) */
+.license-diagram { margin: 28px 0 8px; }
+.lc-flow { display: flex; align-items: stretch; flex-wrap: wrap; gap: 8px; }
+.lc-state {
+    flex: 1 1 0; min-width: 108px;
+    display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 5px;
+    padding: 22px 12px; text-align: center;
+    border: 1px solid var(--cs-border-color, rgba(255,255,255,0.16)); border-radius: 4px;
+    background: rgba(127,127,127,0.04);
+}
+.lc-state-name { font-family: var(--font-display); font-size: 13px; letter-spacing: 1.5px; color: var(--cs-text-color, #fff); }
+.lc-state-tag { font-family: var(--font-body); font-size: 10px; letter-spacing: 1px; text-transform: uppercase; color: var(--color-primary); }
+.lc-state--goal { border: 1.5px solid var(--color-primary); background: rgba(0,102,255,0.05); }
+.lc-arrow { display: flex; align-items: center; font-size: 18px; color: var(--color-primary); flex: 0 0 auto; }
+.lc-loop { margin: 14px 0 0; font-family: var(--font-display); font-size: 11.5px; letter-spacing: 1px; color: var(--cs-muted-color, rgba(255,255,255,0.55)); text-align: right; }
+.lc-callout {
+    margin: 14px 0 0; padding: 12px 16px; border-left: 2px solid var(--color-primary);
+    font-family: var(--font-body); font-size: 14.5px; line-height: 1.5; color: var(--cs-text-color, rgba(255,255,255,0.9));
+}
+.lc-callout-edge { font-family: var(--font-display); font-size: 12px; letter-spacing: 0.5px; color: var(--color-primary); }
+.lc-callout strong { color: var(--color-primary); font-weight: 700; }
+.lc-edges { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 18px; }
+.lc-edge {
+    flex: 1 1 180px; font-family: var(--font-body); font-size: 12.5px; line-height: 1.45;
+    padding: 10px 12px; border: 1px solid var(--cs-border-color, rgba(255,255,255,0.12)); border-radius: 4px;
+    color: var(--cs-muted-color, rgba(255,255,255,0.65));
+}
+.lc-edge strong { font-family: var(--font-display); font-size: 10.5px; letter-spacing: 0.8px; color: var(--cs-text-color, #fff); display: block; margin-bottom: 3px; }
+.license-diagram figcaption {
+    margin-top: 18px; font-family: var(--font-body); font-size: 14px; font-style: italic; color: var(--cs-muted-color, rgba(255,255,255,0.65));
+}
+@media (max-width: 600px) {
+    .lc-flow { flex-direction: column; }
+    .lc-arrow { transform: rotate(90deg); justify-content: center; padding: 2px 0; }
+}
+
+/* 2 ─ Confidence-routing decision tree (FourKites) */
+.confidence-tree { margin: 28px 0 8px; }
+.ct-source {
+    display: inline-flex; flex-direction: column; gap: 4px; padding: 14px 20px;
+    border: 1px solid var(--cs-border-color, rgba(255,255,255,0.16)); border-radius: 4px;
+    background: rgba(127,127,127,0.04);
+}
+.ct-source-name { font-family: var(--font-display); font-size: 13px; letter-spacing: 1.5px; color: var(--cs-text-color, #fff); }
+.ct-source-sub { font-family: var(--font-body); font-size: 12px; color: var(--cs-muted-color, rgba(255,255,255,0.55)); }
+.ct-routes { list-style: none; margin: 14px 0 0; padding: 0; display: flex; flex-direction: column; gap: 8px; }
+.ct-route {
+    display: grid; grid-template-columns: auto 120px 1fr auto; align-items: center; gap: 14px;
+    padding: 12px 16px; border-left: 2px solid var(--ct-dot, var(--color-primary)); border-radius: 0 4px 4px 0;
+    background: rgba(127,127,127,0.03);
+}
+.ct-dot { width: 10px; height: 10px; border-radius: 50%; background: var(--ct-dot, #999); }
+.ct-level { font-family: var(--font-display); font-size: 12.5px; letter-spacing: 1px; color: var(--cs-text-color, #fff); }
+.ct-rule { font-family: var(--font-body); font-size: 13.5px; color: var(--cs-text-color, rgba(255,255,255,0.82)); }
+.ct-action { font-family: var(--font-body); font-size: 13px; font-style: italic; color: var(--color-primary); white-space: nowrap; }
+.ct-principle {
+    margin: 18px 0 0; padding: 14px 18px; border-left: 3px solid var(--color-primary);
+    font-family: var(--font-body); font-size: 15px; line-height: 1.55; font-weight: 600; color: var(--cs-text-color, #fff);
+}
+@media (max-width: 600px) {
+    .ct-route { grid-template-columns: auto 1fr; grid-template-areas: "dot level" "rule rule" "action action"; gap: 4px 12px; }
+    .ct-dot { grid-area: dot; } .ct-level { grid-area: level; } .ct-rule { grid-area: rule; } .ct-action { grid-area: action; white-space: normal; }
+}
+
+/* 3 ─ Convergence "many → one" (Deere platform unification) */
+.converge-diagram { margin: 28px 0 8px; }
+.converge-flow { display: flex; align-items: center; gap: 16px; flex-wrap: wrap; }
+.converge-from { flex: 1 1 240px; display: flex; flex-direction: column; gap: 6px; }
+.converge-chip {
+    font-family: var(--font-body); font-size: 12.5px; line-height: 1.4;
+    padding: 9px 12px; border: 1px solid var(--cs-border-color, rgba(255,255,255,0.12)); border-radius: 4px;
+    color: var(--cs-muted-color, rgba(255,255,255,0.65)); background: rgba(127,127,127,0.04);
+}
+.converge-chip strong { font-family: var(--font-display); font-size: 10.5px; letter-spacing: 0.8px; color: var(--cs-text-color, #fff); margin-right: 6px; }
+.converge-arrow { flex: 0 0 auto; display: flex; flex-direction: column; align-items: center; gap: 4px; color: var(--color-primary); }
+.converge-arrow-glyph { font-size: 24px; line-height: 1; }
+.converge-arrow-label { font-family: var(--font-display); font-size: 9.5px; letter-spacing: 0.5px; text-transform: uppercase; white-space: nowrap; }
+.converge-to {
+    flex: 1 1 200px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 6px;
+    padding: 30px 18px; text-align: center;
+    border: 1.5px solid var(--color-primary); border-radius: 4px; background: rgba(0,102,255,0.05);
+}
+.converge-to-name { font-family: var(--font-display); font-size: 15px; letter-spacing: 1.5px; color: var(--cs-text-color, #fff); }
+.converge-to-sub { font-family: var(--font-body); font-size: 12px; color: var(--color-primary); }
+@media (max-width: 600px) {
+    .converge-flow { flex-direction: column; align-items: stretch; }
+    .converge-arrow-glyph { transform: rotate(90deg); }
+}
+
+/* 4 ─ Before/after inversion (Thios) */
+.invert-diagram { margin: 28px 0; }
+.invert-panels { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.invert-panel { padding: 18px; border: 1px solid var(--cs-border-color, rgba(255,255,255,0.14)); border-radius: 4px; background: rgba(127,127,127,0.04); display: flex; flex-direction: column; gap: 4px; }
+.invert-panel--good { border-color: var(--color-primary); background: rgba(0,102,255,0.04); }
+.invert-tag { font-family: var(--font-display); font-size: 11px; letter-spacing: 1px; text-transform: uppercase; margin-bottom: 8px; }
+.invert-tag--bad { color: var(--cs-muted-color, rgba(255,255,255,0.55)); }
+.invert-tag--good { color: var(--color-primary); }
+.invert-node { font-family: var(--font-display); font-size: 14px; letter-spacing: 1px; color: var(--cs-text-color, #fff); }
+.invert-rel { font-family: var(--font-body); font-size: 12px; color: var(--cs-muted-color, rgba(255,255,255,0.6)); }
+.invert-surfaces { font-family: var(--font-body); font-size: 12.5px; color: var(--cs-text-color, rgba(255,255,255,0.82)); }
+.invert-note { font-family: var(--font-body); font-size: 12px; line-height: 1.45; font-style: italic; color: var(--cs-muted-color, rgba(255,255,255,0.6)); margin-top: 8px; }
+.invert-diagram figcaption { font-family: var(--font-body); font-size: 14px; font-style: italic; color: var(--cs-muted-color, rgba(255,255,255,0.65)); margin-top: 14px; }
+@media (max-width: 600px) { .invert-panels { grid-template-columns: 1fr; } }
