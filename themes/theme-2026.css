@@ -530,7 +530,16 @@ html[data-theme="2026"] {
     background-color: #ffffff !important;
     border: 1px solid #e5e5e5 !important;
     border-radius: 6px !important;
-    padding: 24px !important;
+    padding: 24px 16px !important; /* horiz 16 (was 24) lands card content on the 206 page spine */
+}
+
+/* The heading + intro carry their OWN 16px padding on top of the card's, so they
+   sat 16px right of the case cards. Zero it so they align to the card edge / cards
+   and to // WHAT I DO above. */
+[data-theme="2026"] #portfolio-carousel > .about-heading,
+[data-theme="2026"] #portfolio-carousel > .cases-intro {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
 }
 
 [data-theme="2026"] .portfolio-carousel .slide-label {

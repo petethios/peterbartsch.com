@@ -3558,7 +3558,7 @@ html:not([data-theme]) .theme-era-select option {
 .other-pixels-section {
     max-width: var(--container-max-width, 1200px);
     margin: 0 auto;
-    padding: 48px 24px 8px;
+    padding: 48px 16px 8px; /* horiz 16 (was 24) to land the heading on the 206 page spine */
     border-top: 1px solid rgba(128, 128, 128, 0.25);
 }
 .other-pixels-heading {
@@ -3810,11 +3810,11 @@ html:not([data-theme]) .theme-era-select option {
 .about-think-row {
     display: flex;
     flex-direction: row;
-    align-items: center;
-    justify-content: center;
+    align-items: flex-start;      /* top-align the HOW-I-THINK label with the video's top edge */
+    justify-content: flex-start;  /* left-align to the same spine as // WHAT I DO / patterns below */
     gap: var(--space-xl);
     max-width: 1080px;
-    margin: var(--space-md) auto 0;
+    margin: var(--space-md) auto var(--space-2xl); /* breathing room before // WHAT I DO */
     padding: 0 var(--space-md);
     flex-wrap: wrap;
 }
@@ -3884,7 +3884,7 @@ html:not([data-theme]) .theme-era-select option {
 .capability-strip {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: flex-start;  /* pack pills to the left spine; avoids the centered orphan on wrap */
     gap: 10px 14px;
     max-width: 1080px;
     margin: var(--space-md) auto 0;
